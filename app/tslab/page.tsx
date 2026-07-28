@@ -6,7 +6,7 @@ import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/Con
 import TasksTab, { TSLAB_DEFAULT_TASKS } from '../components/TasksTab';
 import TSLabPerformance from '../components/TSLabPerformance';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -16,6 +16,7 @@ const tabs = [
   { id: 'personas', label: 'Buyer Personas', icon: Users },
   { id: 'campaigns', label: 'Campaigns', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
 
@@ -143,6 +144,7 @@ export default function TSLabPage() {
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'campaigns' && <CampaignsTab />}
           {activeTab === 'performance' && <TSLabPerformance />}
+          {activeTab === 'documents' && <DocumentsTab />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="tslab" defaultTasks={TSLAB_DEFAULT_TASKS} />
           )}
@@ -858,6 +860,75 @@ function CampaignsTab() {
               </div>
             </div>
           ))}
+        </div>
+      </ContentSection>
+    </>
+  );
+}
+
+function DocumentsTab() {
+  return (
+    <>
+      <ContentSection title="Lead Database" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p className="text-slate-600">
+            Download the complete database of all leads targeted across all TS Lab campaigns.
+            This file contains first name, last name, email, position, company information, and LinkedIn profiles.
+          </p>
+
+          <div className="bg-white border border-slate-200 rounded-lg p-6 hover:border-green-500 transition-colors">
+            <a
+              href="/data/tslab-leads.csv"
+              download="tslab-leads.csv"
+              className="flex items-center justify-between group"
+            >
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg
+                    className="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 group-hover:text-green-600 transition-colors">
+                    Download Lead Database
+                  </h3>
+                  <p className="text-sm text-slate-500">CSV file • 3,021 leads across 12 campaigns</p>
+                </div>
+              </div>
+              <div className="text-green-600 group-hover:translate-x-1 transition-transform">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="text-sm text-blue-900">
+              <strong>Note:</strong> This database is updated regularly as new campaigns are launched.
+              Last updated: Check the file timestamp after download.
+            </p>
+          </div>
         </div>
       </ContentSection>
     </>
