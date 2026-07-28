@@ -205,15 +205,6 @@ export default function TSLabPerformance() {
         </div>
       </div>
 
-      {/* Update Instructions */}
-      <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-        <p className="font-semibold text-blue-900 mb-1">How to Update Stats</p>
-        <p className="text-blue-800 text-sm">
-          Run <code className="bg-blue-100 px-1.5 py-0.5 rounded">node .smartlead/fetch-tslab-stats.js</code> from the project root,
-          then copy <code className="bg-blue-100 px-1.5 py-0.5 rounded">.smartlead/tslab-stats.json</code> to <code className="bg-blue-100 px-1.5 py-0.5 rounded">public/data/tslab-stats.json</code>,
-          commit and push to GitHub.
-        </p>
-      </div>
     </div>
   );
 }
