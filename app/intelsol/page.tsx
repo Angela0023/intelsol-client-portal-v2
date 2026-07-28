@@ -643,6 +643,83 @@ function ICPTab() {
         </div>
       </ContentSection>
 
+      {/* Clay Filters for Updated ICP */}
+      <ContentSection title="Clay Search Criteria (Updated ICP)" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Primary Location" value="United States (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
+            <InfoCard label="Business Type" value="Manufacturing (40%), B2B Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
+          </div>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Size:</h4>
+          <ul className="space-y-2">
+            <ListItem>10-50 employees (primary - 50% of searches)</ListItem>
+            <ListItem>51-100 employees (primary - 40% of searches)</ListItem>
+            <ListItem>101-150 employees (secondary - 10%, manufacturing only)</ListItem>
+          </ul>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters:</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            {[
+              'Industrial Machinery Manufacturing',
+              'Automation Machinery Manufacturing',
+              'Medical Equipment Manufacturing',
+              'Food and Beverage Manufacturing',
+              'Consumer Goods Manufacturing',
+              'Cosmetics Manufacturing',
+              'Personal Care Product Manufacturing',
+              'Chemical Manufacturing',
+              'Plastics Manufacturing',
+              'Tier 1 & Tier 2 Automotive Suppliers',
+              'Advertising Services (specialized)',
+              'Design Services',
+              'Healthcare B2B Services',
+              'Staffing and Recruiting',
+              'Logistics and Supply Chain',
+              'Wholesale Building Materials',
+              'Wholesale Machinery',
+              'Wholesale Food and Beverage',
+              'Wholesale Consumer Goods',
+              'Vertical SaaS',
+              'AI Product Development',
+              'Artificial Intelligence and Machine Learning',
+            ].map((industry) => (
+              <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm border border-slate-200">
+                {industry}
+              </div>
+            ))}
+          </div>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Keywords (Manufacturing Focus):</h4>
+          <CodeBlock code={`("B2B manufacturer" OR "contract manufacturing" OR "private label" OR "white label" OR "OEM" OR "tier 1 supplier" OR "tier 2 supplier") AND (B2B OR "business to business" OR industrial)`} />
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Revenue Filter:</h4>
+          <ul className="space-y-2">
+            <ListItem>$10M - $50M (primary target)</ListItem>
+            <ListItem>$5M - $10M (growing companies)</ListItem>
+            <ListItem>$50M - $100M (manufacturing 100+ employees only)</ListItem>
+          </ul>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Additional Filters:</h4>
+          <ul className="space-y-2">
+            <ListItem type="check">Has active website</ListItem>
+            <ListItem type="check">B2B filter enabled</ListItem>
+            <ListItem type="check">LinkedIn company page active</ListItem>
+            <ListItem type="cross">Exclude: Companies with "SDR team" or "BDR team" in description</ListItem>
+            <ListItem type="cross">Exclude: Marketing agencies (meta ads, Google ads, SEO, WordPress)</ListItem>
+          </ul>
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded mt-4">
+            <p className="font-semibold text-green-900 mb-2">Manufacturing Companies (High-Priority - 40%):</p>
+            <p className="text-green-800 text-sm">
+              Companies doing contract manufacturing, private/white label, OEM, or tier 1/2 supplier work.
+              Look for mentions of "B2B manufacturer", "custom manufacturing", or specific industry manufacturing
+              (food/beverage, cosmetics, industrial equipment, medical devices, consumer goods sold to retailers).
+            </p>
+          </div>
+        </div>
+      </ContentSection>
+
       {/* Sales Navigator Search Templates */}
       <ContentSection title="Sales Navigator Search Templates" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-6">
