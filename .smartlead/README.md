@@ -55,7 +55,47 @@ git commit -m "Update: TSLab campaign stats $(date +'%Y-%m-%d')" && \
 git push origin main
 ```
 
+## How to Update Leads Database
+
+### For TSLab
+
+1. **Fetch all leads from SmartLead:**
+   ```bash
+   node .smartlead/fetch-tslab-leads.js
+   ```
+
+   This will:
+   - Connect to SmartLead API
+   - Find all campaigns with "TS Lab" in the name
+   - Fetch ALL leads from each campaign (with pagination)
+   - Export to CSV with all available data: first name, last name, email, position, company, LinkedIn, etc.
+   - Save results to `.smartlead/tslab-leads.csv`
+
+2. **Copy to public directory:**
+   ```bash
+   cp .smartlead/tslab-leads.csv public/data/tslab-leads.csv
+   ```
+
+3. **Commit and push to GitHub:**
+   ```bash
+   git add public/data/tslab-leads.csv
+   git commit -m "Update: TSLab leads database"
+   git push origin main
+   ```
+
+### One-Command Update (TSLab Leads)
+
+```bash
+node .smartlead/fetch-tslab-leads.js && \
+cp .smartlead/tslab-leads.csv public/data/tslab-leads.csv && \
+git add public/data/tslab-leads.csv && \
+git commit -m "Update: TSLab leads database $(date +'%Y-%m-%d')" && \
+git push origin main
+```
+
 ## Data Structure
+
+### Campaign Stats JSON
 
 The stats JSON file contains:
 
@@ -85,6 +125,29 @@ The stats JSON file contains:
   }
 }
 ```
+
+### Leads Database CSV
+
+The leads CSV file contains all leads from all campaigns with these columns:
+
+- `campaign_name` - Name of the campaign the lead is in
+- `campaign_id` - SmartLead campaign ID
+- `campaign_status` - Lead status in campaign (STARTED, INPROGRESS, COMPLETED)
+- `first_name` - Lead's first name
+- `last_name` - Lead's last name
+- `email` - Lead's email address
+- `company_name` - Company name
+- `website` - Company website
+- `linkedin_profile` - Lead's LinkedIn profile URL
+- `phone_number` - Phone number (if available)
+- `location` - Lead location
+- `lead_id` - SmartLead lead ID
+- `is_unsubscribed` - Unsubscribe status
+- `date_added` - When lead was added to campaign
+- `Job_Title` - Position/job title (from custom fields)
+- Additional custom fields as available
+
+Example: 3,021 total leads across 12 TSLab campaigns
 
 ## Adding More Clients
 
