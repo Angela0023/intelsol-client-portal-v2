@@ -1129,8 +1129,8 @@ function FiltersTab() {
       <ContentSection title="Clay Search Criteria" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard label="Primary Location" value="Belgium, Netherlands, Germany, Austria, Switzerland, France" color="bg-violet-600 text-white" />
-            <InfoCard label="Business Type" value="B2B Services, SaaS, & Industrial Products" color="bg-violet-600 text-white" />
+            <InfoCard label="Primary Location" value="BE, NL, DE, AT, CH, FR" color="bg-violet-600 text-white" />
+            <InfoCard label="Business Type" value="B2B Services, SaaS, Industrial" color="bg-violet-600 text-white" />
           </div>
 
           <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Size:</h4>
