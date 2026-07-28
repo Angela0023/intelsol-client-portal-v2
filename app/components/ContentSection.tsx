@@ -61,7 +61,7 @@ export function InfoCard({ label, value, color = 'bg-blue-50 text-blue-700' }: I
       <p className="text-xs font-medium text-slate-500 uppercase tracking-wide mb-1">
         {label}
       </p>
-      <div className={`text-sm font-semibold ${color}`}>
+      <div className={`text-sm font-semibold ${color} break-words`}>
         {value}
       </div>
     </div>
