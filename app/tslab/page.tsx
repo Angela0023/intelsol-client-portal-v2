@@ -6,6 +6,8 @@ import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/Con
 import TasksTab, { TSLAB_DEFAULT_TASKS } from '../components/TasksTab';
 import TSLabPerformance from '../components/TSLabPerformance';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import FileUpload from '../components/FileUpload';
+import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen } from 'lucide-react';
 
 const tabs = [
@@ -867,8 +869,29 @@ function CampaignsTab() {
 }
 
 function DocumentsTab() {
+  const [refreshTrigger, setRefreshTrigger] = useState(0);
+
+  const handleUploadComplete = () => {
+    setRefreshTrigger(prev => prev + 1);
+  };
+
   return (
     <>
+      {/* Uploaded Documents Section */}
+      <ContentSection title="Uploaded Documents" icon={<FolderOpen className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <p className="text-slate-600">
+              Upload and manage documents for TS Lab. All uploaded files will be available for download.
+            </p>
+            <FileUpload clientId="tslab" onUploadComplete={handleUploadComplete} />
+          </div>
+
+          <FileList clientId="tslab" refreshTrigger={refreshTrigger} />
+        </div>
+      </ContentSection>
+
+      {/* Lead Database Section */}
       <ContentSection title="Lead Database" icon={<FileText className="w-5 h-5" />}>
         <div className="space-y-4">
           <p className="text-slate-600">
