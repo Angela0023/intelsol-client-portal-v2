@@ -48,23 +48,15 @@ export default function FileList({ clientId, refreshTrigger }: FileListProps) {
     fetchFiles();
   }, [clientId, refreshTrigger]);
 
-  const handleDownload = async (file: FileMetadata) => {
-    try {
-      const response = await fetch(`/api/download/${encodeURIComponent(file.fileName)}`);
-      if (!response.ok) throw new Error('Download failed');
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${file.customName}.${file.fileName.split('.').pop()}`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
-    } catch (err) {
-      alert('Failed to download file');
-    }
+  const handleDownload = (file: FileMetadata) => {
+    // Files are served directly from /uploads/{clientId}/{fileName}
+    const downloadUrl = `/uploads/${file.clientId}/${file.fileName}`;
+    const a = document.createElement('a');
+    a.href = downloadUrl;
+    a.download = `${file.customName}.${file.fileName.split('.').pop()}`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   };
 
   const handleDelete = async (file: FileMetadata) => {
@@ -78,7 +70,7 @@ export default function FileList({ clientId, refreshTrigger }: FileListProps) {
       const response = await fetch('/api/delete', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fileName: file.fileName }),
+        body: JSON.stringify({ fileName: file.fileName, clientId: file.clientId }),
       });
 
       const data = await response.json();
