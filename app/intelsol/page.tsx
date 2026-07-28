@@ -1195,8 +1195,12 @@ function FiltersTab() {
       <ContentSection title="Clay Search Criteria (Updated ICP - July 2026)" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard label="Primary Location" value="US (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
-            <InfoCard label="Business Type" value="Manufacturing (40%), Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
+            <InfoCard label="Primary Location" value="US, UK, DE, NL, BE, AT, CH, Nordics, France" color="bg-violet-600 text-white" />
+            <InfoCard label="Business Type" value="Manufacturing, Services, Distribution, Tech/AI" color="bg-violet-600 text-white" />
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 p-3 rounded text-sm mt-2">
+            <p className="text-blue-900"><strong>Volume Distribution:</strong> US 60%, Europe 30%, Nordics/France 10% | Manufacturing 40%, Services 30%, Distribution 15%, Tech/AI 15%</p>
           </div>
 
           <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Size:</h4>
