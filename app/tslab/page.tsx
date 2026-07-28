@@ -374,33 +374,73 @@ Only answer "Yes" if you are confident this company:
 }
 
 function PersonasTab() {
-  const positions = [
-    'account director', 'associate manager of purchasing', 'assistant manager of purchasing', 'board member', 'business owner', 'business unit director', 'business unit manager', 'buyer', 'category lead', 'category manager', 'chairman', 'chairman of the board', 'chairperson', 'chief business officer', 'chief commercial officer', 'chief executive officer', 'chief growth officer', 'chief innovation officer', 'chief operating officer', 'chief procurement officer', 'chief purchasing officer', 'chief strategy officer', 'chief supply chain officer', 'chief sourcing officer', 'chief supply officer', 'chief operations officer', 'chief product officer', 'chief revenue officer', 'CEO', 'COO', 'CPO', 'CCO', 'CSO', 'co-founder', 'co-founder & CEO', 'commodity buyer', 'commodity manager', 'contract manager', 'contracts manager', 'country director', 'country manager', 'deputy general manager of purchase', 'deputy general manager of purchasing', 'deputy head of procurement', 'deputy head of procurement department', 'deputy manager of purchasing', 'director', 'director of operations', 'director of procurement', 'director of product', 'director of product development', 'director of purchasing', 'director of sales', 'director of sourcing', 'division director', 'division manager', 'executive chairman', 'executive director', 'executive vice president', 'EVP', 'founder', 'founder & CEO', 'founder & managing director', 'founder and CEO', 'founder and managing director', 'founder/CEO', 'general manager', 'general partner', 'general purchasing manager', 'general procurement manager', 'global head of procurement', 'global procurement director', 'global procurement manager', 'global sourcing director', 'global sourcing manager', 'group CEO', 'group head of procurement', 'group procurement director', 'group procurement manager', 'head of operations', 'head of procurement', 'head of procurement & contracts', 'head of procurement & logistics', 'head of procurement & operations', 'head of procurement & supply chain', 'head of procurement administration', 'head of procurement and administration', 'head of procurement and contracts', 'head of procurement and logistics', 'head of procurement and logistics department', 'head of procurement and supply chain', 'head of procurement and supply chain management', 'head of procurement department', 'head of procurement division', 'head of procurement Europe', 'head of procurement excellence', 'head of procurement operations', 'head of procurement section', 'head of procurement services', 'head of procurement unit', 'head of purchasing', 'head of sourcing', 'head of supply chain', 'interim head of procurement', 'inventory manager', 'lead buyer', 'logistics director', 'logistics manager', 'manager of purchase', 'manager of purchase department', 'manager of purchases', 'manager of purchasing', 'manager of purchasing & risk management', 'manager of purchasing and contracts', 'manager of purchasing and inventory', 'manager of purchasing and logistic', 'manager of purchasing and logistics', 'manager of purchasing and logistics department', 'manager of purchasing and materials', 'manager of purchasing and stores', 'manager of purchasing department', 'manager of fleet and facilities', 'managing director', 'managing owner', 'managing partner', 'materials manager', 'operations director', 'operations manager', 'owner', 'partner', 'president', 'president & CEO', 'principal CEO', 'procurement', 'procurement analyst', 'procurement business partner', 'procurement category manager', 'procurement consultant', 'procurement coordinator', 'procurement director', 'procurement engineer', 'procurement executive', 'procurement lead', 'procurement manager', 'procurement officer', 'procurement operations manager', 'procurement specialist', 'procurement supervisor', 'project manager of purchasing', 'project procurement manager', 'purchase manager', 'purchasing director', 'purchasing lead', 'purchasing manager', 'purchasing specialist', 'regional director', 'regional procurement manager', 'regional sourcing manager', 'senior buyer', 'senior manager of purchasing', 'senior managing director', 'senior procurement manager', 'senior sourcing manager', 'senior vice president', 'sourcing director', 'sourcing lead', 'sourcing manager', 'sourcing specialist', 'strategic buyer', 'strategic sourcing director', 'strategic sourcing manager', 'supplier development manager', 'supplier quality manager', 'supplier relationship manager', 'supply chain director', 'supply chain manager', 'supply manager', 'technical buyer', 'vice president', 'vice president of operations', 'vice president of procurement', 'vice president of product', 'vice president of purchasing', 'vice president of sales', 'vice president of sourcing', 'vendor manager'
+  const decisionMakers = [
+    'board member', 'business owner', 'business unit director', 'business unit manager', 'CEO', 'CCO', 'chairman', 'chairman of the board', 'chairperson', 'chief business officer', 'chief commercial officer', 'chief executive officer', 'chief growth officer', 'chief innovation officer', 'chief operating officer', 'chief product officer', 'chief revenue officer', 'chief strategy officer', 'COO', 'co-founder', 'co-founder & CEO', 'country director', 'country manager', 'director', 'director of operations', 'director of product', 'director of product development', 'director of sales', 'division director', 'division manager', 'EVP', 'executive chairman', 'executive director', 'executive vice president', 'founder', 'founder & CEO', 'founder & managing director', 'founder and CEO', 'founder and managing director', 'founder/CEO', 'general manager', 'general partner', 'group CEO', 'managing director', 'managing owner', 'managing partner', 'operations director', 'operations manager', 'owner', 'partner', 'president', 'president & CEO', 'principal CEO', 'regional director', 'senior managing director', 'senior vice president', 'vice president', 'vice president of operations', 'vice president of product', 'vice president of sales'
+  ];
+
+  const procurement = [
+    'account director', 'assistant manager of purchasing', 'associate manager of purchasing', 'buyer', 'category lead', 'category manager', 'chief operations officer', 'chief procurement officer', 'chief purchasing officer', 'chief sourcing officer', 'chief supply chain officer', 'chief supply officer', 'commodity buyer', 'commodity manager', 'contract manager', 'contracts manager', 'CPO', 'CSO', 'deputy general manager of purchase', 'deputy general manager of purchasing', 'deputy head of procurement', 'deputy head of procurement department', 'deputy manager of purchasing', 'director of procurement', 'director of purchasing', 'director of sourcing', 'general procurement manager', 'general purchasing manager', 'global head of procurement', 'global procurement director', 'global procurement manager', 'global sourcing director', 'global sourcing manager', 'group head of procurement', 'group procurement director', 'group procurement manager', 'head of operations', 'head of procurement', 'head of procurement & contracts', 'head of procurement & logistics', 'head of procurement & operations', 'head of procurement & supply chain', 'head of procurement administration', 'head of procurement and administration', 'head of procurement and contracts', 'head of procurement and logistics', 'head of procurement and logistics department', 'head of procurement and supply chain', 'head of procurement and supply chain management', 'head of procurement department', 'head of procurement division', 'head of procurement Europe', 'head of procurement excellence', 'head of procurement operations', 'head of procurement section', 'head of procurement services', 'head of procurement unit', 'head of purchasing', 'head of sourcing', 'head of supply chain', 'interim head of procurement', 'inventory manager', 'lead buyer', 'logistics director', 'logistics manager', 'manager of fleet and facilities', 'manager of purchase', 'manager of purchase department', 'manager of purchases', 'manager of purchasing', 'manager of purchasing & risk management', 'manager of purchasing and contracts', 'manager of purchasing and inventory', 'manager of purchasing and logistic', 'manager of purchasing and logistics', 'manager of purchasing and logistics department', 'manager of purchasing and materials', 'manager of purchasing and stores', 'manager of purchasing department', 'materials manager', 'procurement', 'procurement analyst', 'procurement business partner', 'procurement category manager', 'procurement consultant', 'procurement coordinator', 'procurement director', 'procurement engineer', 'procurement executive', 'procurement lead', 'procurement manager', 'procurement officer', 'procurement operations manager', 'procurement specialist', 'procurement supervisor', 'project manager of purchasing', 'project procurement manager', 'purchase manager', 'purchasing director', 'purchasing lead', 'purchasing manager', 'purchasing specialist', 'regional procurement manager', 'regional sourcing manager', 'senior buyer', 'senior manager of purchasing', 'senior procurement manager', 'senior sourcing manager', 'sourcing director', 'sourcing lead', 'sourcing manager', 'sourcing specialist', 'strategic buyer', 'strategic sourcing director', 'strategic sourcing manager', 'supplier development manager', 'supplier quality manager', 'supplier relationship manager', 'supply chain director', 'supply chain manager', 'supply manager', 'technical buyer', 'vendor manager', 'vice president of procurement', 'vice president of purchasing', 'vice president of sourcing'
   ];
 
   return (
     <>
       <ContentSection title="Target Job Titles / Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
             <p className="font-semibold text-green-900 mb-2">Target Positions for TS Lab</p>
             <p className="text-green-800 text-sm">
-              The following job titles represent decision-makers in procurement, purchasing, supply chain, and executive roles at food supplement and health product companies. These are the exact positions to target when sourcing leads.
+              The following job titles represent decision-makers and procurement professionals at food supplement and health product companies. These are the exact positions to target when sourcing leads.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-            {positions.map((position, index) => (
-              <div key={index} className="bg-slate-50 border border-slate-200 rounded px-2 py-1.5 text-xs">
-                {position}
+          {/* Decision Makers */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                <span className="text-blue-600 font-bold text-sm">1</span>
               </div>
-            ))}
+              <h4 className="font-semibold text-slate-900 text-lg">Decision Makers ({decisionMakers.length})</h4>
+            </div>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
+              <p className="text-blue-900 text-sm">
+                C-level executives, founders, owners, and senior management who make final purchasing decisions or approve budgets.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {decisionMakers.map((position, index) => (
+                <div key={index} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
-            <p className="font-semibold text-blue-900 mb-2">Total Positions: {positions.length}</p>
-            <p className="text-blue-800 text-sm">
-              When searching in Sales Navigator or Apollo, use these exact job titles to find the right decision-makers. Focus on procurement, purchasing, supply chain, and executive roles.
+          {/* Procurement */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <span className="text-green-600 font-bold text-sm">2</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">Procurement & Supply Chain ({procurement.length})</h4>
+            </div>
+            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
+              <p className="text-green-900 text-sm">
+                Procurement managers, purchasing directors, sourcing specialists, and supply chain professionals who identify suppliers and manage vendor relationships.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {procurement.map((position, index) => (
+                <div key={index} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
+            <p className="font-semibold text-violet-900 mb-2">Total Positions: {decisionMakers.length + procurement.length}</p>
+            <p className="text-violet-800 text-sm">
+              When searching in Sales Navigator or Apollo, use these exact job titles. For smaller companies (20-50 employees), focus on Decision Makers. For larger companies (50-100+ employees), target both Decision Makers and Procurement roles.
             </p>
           </div>
         </div>
