@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab, { TSLAB_DEFAULT_TASKS } from '../components/TasksTab';
-import PerformanceTab, { EMPTY_METRICS } from '../components/PerformanceTab';
+import TSLabPerformance from '../components/TSLabPerformance';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap } from 'lucide-react';
 
@@ -142,9 +142,7 @@ export default function TSLabPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'campaigns' && <CampaignsTab />}
-          {activeTab === 'performance' && (
-            <PerformanceTab clientId="tslab" defaultMetrics={EMPTY_METRICS} hasData={false} />
-          )}
+          {activeTab === 'performance' && <TSLabPerformance />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="tslab" defaultTasks={TSLAB_DEFAULT_TASKS} />
           )}
@@ -825,4 +823,3 @@ function CampaignsTab() {
     </>
   );
 }
-// Force deployment Tue Jul 28 18:31:42 CEST 2026
