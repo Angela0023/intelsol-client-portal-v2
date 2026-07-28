@@ -1191,6 +1191,95 @@ function FiltersTab() {
           </div>
         </div>
       </ContentSection>
+
+      <ContentSection title="Clay Search Criteria (Updated ICP - July 2026)" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Primary Location" value="US (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
+            <InfoCard label="Business Type" value="Manufacturing (40%), Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
+          </div>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Size:</h4>
+          <ul className="space-y-2">
+            <ListItem>10-50 employees (50% of volume)</ListItem>
+            <ListItem>51-100 employees (40% of volume)</ListItem>
+            <ListItem>101-150 employees (10% - manufacturing only)</ListItem>
+          </ul>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters (22+ industries):</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            {[
+              'Consumer Goods Manufacturing',
+              'Cosmetics and Personal Care Manufacturing',
+              'Beverage Manufacturing',
+              'Food and Beverage Manufacturing',
+              'Industrial Machinery Manufacturing',
+              'Automation Machinery Manufacturing',
+              'Medical Equipment Manufacturing',
+              'Pharmaceutical Manufacturing',
+              'Chemical Manufacturing',
+              'Packaging and Containers Manufacturing',
+              'Wholesale Building Materials',
+              'Wholesale Machinery',
+              'Wholesale Electronics',
+              'Wholesale Food and Beverage',
+              'Tier 1 & Tier 2 Suppliers',
+              'Specialized B2B Services (Healthcare, Creative, Logistics)',
+              'Staffing and Recruiting',
+              'AI Companies (selling AI products)',
+              'Niche SaaS',
+              'Professional Services (NOT marketing agencies)',
+              'Engineering Services',
+              'Technical Consulting',
+            ].map((industry) => (
+              <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm border border-slate-200">
+                {industry}
+              </div>
+            ))}
+          </div>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Keywords:</h4>
+          <CodeBlock code={`("B2B manufacturer" OR "contract manufacturing" OR "private label" OR "white label" OR "tier 1 supplier" OR "tier 2 supplier" OR "OEM manufacturer" OR "consumer goods manufacturer" OR "cosmetics manufacturer" OR "beverage manufacturer") AND (B2B OR "business to business" OR wholesale OR distributor)`} />
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Revenue Filter:</h4>
+          <ul className="space-y-2">
+            <ListItem>$5M - $50M (manufacturing sweet spot)</ListItem>
+            <ListItem>$10M - $50M (services sweet spot)</ListItem>
+            <ListItem>$50M - $100M (upper mid-market)</ListItem>
+          </ul>
+          <p className="text-sm text-slate-600 mt-2">
+            High-ticket B2B: Manufacturing companies selling $20K+ orders to distributors/retailers
+          </p>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Additional Filters:</h4>
+          <ul className="space-y-2">
+            <ListItem type="check">Has active website</ListItem>
+            <ListItem type="check">B2B filter enabled</ListItem>
+            <ListItem type="check">LinkedIn company page active</ListItem>
+            <ListItem type="check">Sells to other businesses (NOT direct-to-consumer)</ListItem>
+          </ul>
+
+          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Exclusions (DO NOT TARGET):</h4>
+          <ul className="space-y-2">
+            <ListItem type="cross">Marketing services (meta ads, Google ads, SEO, WordPress sites)</ListItem>
+            <ListItem type="cross">Direct-to-consumer (B2C) retailers</ListItem>
+            <ListItem type="cross">eCommerce selling consumer products directly</ListItem>
+            <ListItem type="cross">Generic IT consulting (moved away from heavy IT focus)</ListItem>
+            <ListItem type="cross">Companies with large in-house SDR/BDR teams</ListItem>
+          </ul>
+
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded mt-4">
+            <p className="font-semibold text-violet-900 mb-2">Key Focus Areas (July 2026 Update):</p>
+            <ul className="space-y-1 text-violet-800">
+              <li>• <strong>US Market Priority:</strong> 60% of volume - highest quality leads</li>
+              <li>• <strong>Manufacturing Focus:</strong> 40% of all searches - replicate TS Lab success</li>
+              <li>• <strong>Consumer Goods Welcome:</strong> As long as they sell B2B to distributors/retailers</li>
+              <li>• <strong>Staffing/Recruiting:</strong> Now included as valid targets (like PeopleFocus)</li>
+              <li>• <strong>AI Companies:</strong> 5% experimental focus - hungry for leads</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
     </>
   );
 }
