@@ -57,11 +57,11 @@ interface InfoCardProps {
 
 export function InfoCard({ label, value, color = 'bg-blue-50 text-blue-700' }: InfoCardProps) {
   return (
-    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+    <div className="bg-slate-50 rounded-lg p-4 border border-slate-200 min-w-0 overflow-hidden">
       <p className="text-xs font-medium text-slate-500 uppercase tracking-wide mb-1">
         {label}
       </p>
-      <div className={`text-sm font-semibold ${color} break-words`}>
+      <div className={`text-sm font-semibold ${color} break-words overflow-wrap-anywhere`}>
         {value}
       </div>
     </div>

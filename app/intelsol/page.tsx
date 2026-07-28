@@ -89,7 +89,7 @@ export default function IntelsolPage() {
 
   return (
     <ClientLayout>
-      <div className="p-4 lg:p-8">
+      <div className="p-4 lg:p-8 max-w-7xl mx-auto w-full overflow-x-hidden">
         {/* Page Header */}
         <div className="mb-6">
           <div className="flex items-center space-x-3 mb-2">
@@ -169,7 +169,7 @@ function OverviewTab() {
             methodology for ourselves that we deliver to clients.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
             <InfoCard label="Industry" value="B2B Lead Generation Services" />
             <InfoCard label="Business Model" value="Agency (Service-Based)" />
             <InfoCard label="Location" value="Ljubljana, Slovenia" />
@@ -557,7 +557,7 @@ function ICPTab() {
       </ContentSection>
 
       <ContentSection title="Core Requirements & Deal Breakers" icon={<CheckSquare className="w-5 h-5" />}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
           <div>
             <h4 className="font-semibold text-green-900 mb-3">✅ Core Requirements (All Companies Must Have)</h4>
             <ul className="space-y-2">
@@ -583,7 +583,7 @@ function ICPTab() {
       </ContentSection>
 
       <ContentSection title="ICP Match Signals" icon={<TrendingUp className="w-5 h-5" />}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
           <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
             <p className="font-semibold text-green-900 mb-3">Strong Positive Signals (High Value)</p>
             <ul className="space-y-1 text-sm">
@@ -646,7 +646,7 @@ function ICPTab() {
       {/* Clay Filters for Updated ICP */}
       <ContentSection title="Clay Search Criteria (Updated ICP)" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
             <InfoCard label="Primary Location" value="United States (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
             <InfoCard label="Business Type" value="Manufacturing (40%), B2B Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
           </div>
@@ -659,7 +659,7 @@ function ICPTab() {
           </ul>
 
           <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
             {[
               'Industrial Machinery Manufacturing',
               'Automation Machinery Manufacturing',
@@ -1128,7 +1128,7 @@ function FiltersTab() {
     <>
       <ContentSection title="Clay Search Criteria" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
             <InfoCard label="Primary Location" value="Belgium, Netherlands, Germany, Austria, Switzerland, France" color="bg-violet-600 text-white" />
             <InfoCard label="Business Type" value="B2B Services, SaaS, & Industrial Products" color="bg-violet-600 text-white" />
           </div>
@@ -1141,7 +1141,7 @@ function FiltersTab() {
           </ul>
 
           <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
             {[
               'IT Services and IT Consulting',
               'Software Development',
@@ -1194,7 +1194,7 @@ function FiltersTab() {
 
       <ContentSection title="Clay Search Criteria (Updated ICP - July 2026)" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
             <InfoCard label="Primary Location" value="US (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
             <InfoCard label="Business Type" value="Manufacturing (40%), Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
           </div>
@@ -1207,7 +1207,7 @@ function FiltersTab() {
           </ul>
 
           <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters (22+ industries):</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
             {[
               'Consumer Goods Manufacturing',
               'Cosmetics and Personal Care Manufacturing',
