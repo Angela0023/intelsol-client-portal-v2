@@ -1193,89 +1193,276 @@ function FiltersTab() {
       </ContentSection>
 
       <ContentSection title="Clay Search Criteria (Updated ICP - July 2026)" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
-            <InfoCard label="Primary Location" value="US (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
-            <InfoCard label="Business Type" value="Manufacturing (40%), Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
+            <InfoCard label="Geography" value="US (60%), UK/DE/NL/BE/AT/CH (30%), Nordics/France (10%)" color="bg-violet-600 text-white" />
+            <InfoCard label="Volume Distribution" value="Manufacturing (40%), Services (30%), Distribution (15%), Tech/AI (15%)" color="bg-violet-600 text-white" />
           </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Size:</h4>
-          <ul className="space-y-2">
-            <ListItem>10-50 employees (50% of volume)</ListItem>
-            <ListItem>51-100 employees (40% of volume)</ListItem>
-            <ListItem>101-150 employees (10% - manufacturing only)</ListItem>
-          </ul>
+          {/* Manufacturing Companies - 40% */}
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <h4 className="font-bold text-blue-900 mb-3">1. Manufacturing Companies (40% - 800 leads)</h4>
+            <p className="text-sm text-blue-800 mb-3">Like TS Lab - B2B manufacturing, manual sales processes</p>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters (22+ industries):</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
-            {[
-              'Consumer Goods Manufacturing',
-              'Cosmetics and Personal Care Manufacturing',
-              'Beverage Manufacturing',
-              'Food and Beverage Manufacturing',
-              'Industrial Machinery Manufacturing',
-              'Automation Machinery Manufacturing',
-              'Medical Equipment Manufacturing',
-              'Pharmaceutical Manufacturing',
-              'Chemical Manufacturing',
-              'Packaging and Containers Manufacturing',
-              'Wholesale Building Materials',
-              'Wholesale Machinery',
-              'Wholesale Electronics',
-              'Wholesale Food and Beverage',
-              'Tier 1 & Tier 2 Suppliers',
-              'Specialized B2B Services (Healthcare, Creative, Logistics)',
-              'Staffing and Recruiting',
-              'AI Companies (selling AI products)',
-              'Niche SaaS',
-              'Professional Services (NOT marketing agencies)',
-              'Engineering Services',
-              'Technical Consulting',
-            ].map((industry) => (
-              <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm border border-slate-200">
-                {industry}
+            <div className="space-y-3">
+              <div>
+                <p className="font-semibold text-blue-900 text-sm mb-2">Company Size:</p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 [&>*]:min-w-0">
+                  <div className="bg-white px-3 py-2 rounded text-sm">10-50 employees (50%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (40%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">101-150 employees (10%)</div>
+                </div>
               </div>
-            ))}
+
+              <div>
+                <p className="font-semibold text-blue-900 text-sm mb-2">Industries:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  {[
+                    'Industrial Machinery Manufacturing',
+                    'Automation Machinery Manufacturing',
+                    'Medical Equipment Manufacturing',
+                    'Pharmaceutical Manufacturing',
+                    'Food and Beverage Manufacturing',
+                    'Beverage Manufacturing',
+                    'Consumer Goods Manufacturing',
+                    'Cosmetics Manufacturing',
+                    'Personal Care Product Manufacturing',
+                    'Chemical Manufacturing',
+                    'Packaging and Containers Manufacturing',
+                    'Plastics Manufacturing',
+                    'Tier 1/2 Suppliers (Automotive, Industrial)',
+                  ].map((industry) => (
+                    <div key={industry} className="bg-white px-3 py-2 rounded text-xs border border-blue-200">
+                      {industry}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-blue-900 text-sm mb-2">Keywords:</p>
+                <CodeBlock code={`("B2B manufacturer" OR "contract manufacturing" OR "private label" OR "white label" OR "OEM" OR "tier 1 supplier" OR "tier 2 supplier" OR "custom manufacturing") AND (B2B OR "business to business")`} />
+              </div>
+
+              <div>
+                <p className="font-semibold text-blue-900 text-sm mb-2">Revenue:</p>
+                <p className="text-sm text-blue-800">$5M - $50M (primary), $50M - $100M (100+ employees only)</p>
+              </div>
+            </div>
           </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Keywords:</h4>
-          <CodeBlock code={`("B2B manufacturer" OR "contract manufacturing" OR "private label" OR "white label" OR "tier 1 supplier" OR "tier 2 supplier" OR "OEM manufacturer" OR "consumer goods manufacturer" OR "cosmetics manufacturer" OR "beverage manufacturer") AND (B2B OR "business to business" OR wholesale OR distributor)`} />
+          {/* Specialized B2B Services - 30% */}
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <h4 className="font-bold text-green-900 mb-3">2. Specialized B2B Services (30% - 600 leads)</h4>
+            <p className="text-sm text-green-800 mb-3">Like Xpose, BeeIT, WULF - specialized services, NOT generic IT/marketing</p>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Revenue Filter:</h4>
-          <ul className="space-y-2">
-            <ListItem>$5M - $50M (manufacturing sweet spot)</ListItem>
-            <ListItem>$10M - $50M (services sweet spot)</ListItem>
-            <ListItem>$50M - $100M (upper mid-market)</ListItem>
-          </ul>
-          <p className="text-sm text-slate-600 mt-2">
-            High-ticket B2B: Manufacturing companies selling $20K+ orders to distributors/retailers
-          </p>
+            <div className="space-y-3">
+              <div>
+                <p className="font-semibold text-green-900 text-sm mb-2">Company Size:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  <div className="bg-white px-3 py-2 rounded text-sm">10-50 employees (50%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (50%)</div>
+                </div>
+              </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Additional Filters:</h4>
-          <ul className="space-y-2">
-            <ListItem type="check">Has active website</ListItem>
-            <ListItem type="check">B2B filter enabled</ListItem>
-            <ListItem type="check">LinkedIn company page active</ListItem>
-            <ListItem type="check">Sells to other businesses (NOT direct-to-consumer)</ListItem>
-          </ul>
+              <div>
+                <p className="font-semibold text-green-900 text-sm mb-2">Industries:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  {[
+                    'Healthcare B2B Services (tech/mgmt)',
+                    'Medical Device Services',
+                    'Advertising Services (NOT generic marketing)',
+                    'Design Services',
+                    'PR and Communications',
+                    'Events Services',
+                    'Computer Games',
+                    'Animation and Post-production',
+                    'Specialized Consulting',
+                    'Logistics and Supply Chain',
+                    'Staffing and Recruiting (IT, Manufacturing)',
+                    'Facilities Services',
+                  ].map((industry) => (
+                    <div key={industry} className="bg-white px-3 py-2 rounded text-xs border border-green-200">
+                      {industry}
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Exclusions (DO NOT TARGET):</h4>
-          <ul className="space-y-2">
-            <ListItem type="cross">Marketing services (meta ads, Google ads, SEO, WordPress sites)</ListItem>
-            <ListItem type="cross">Direct-to-consumer (B2C) retailers</ListItem>
-            <ListItem type="cross">eCommerce selling consumer products directly</ListItem>
-            <ListItem type="cross">Generic IT consulting (moved away from heavy IT focus)</ListItem>
-            <ListItem type="cross">Companies with large in-house SDR/BDR teams</ListItem>
-          </ul>
+              <div>
+                <p className="font-semibold text-green-900 text-sm mb-2">Keywords:</p>
+                <CodeBlock code={`("specialized in" OR "experts in" OR "boutique" OR "niche") AND "B2B services"`} />
+              </div>
 
-          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded mt-4">
-            <p className="font-semibold text-violet-900 mb-2">Key Focus Areas (July 2026 Update):</p>
-            <ul className="space-y-1 text-violet-800">
-              <li>• <strong>US Market Priority:</strong> 60% of volume - highest quality leads</li>
-              <li>• <strong>Manufacturing Focus:</strong> 40% of all searches - replicate TS Lab success</li>
-              <li>• <strong>Consumer Goods Welcome:</strong> As long as they sell B2B to distributors/retailers</li>
-              <li>• <strong>Staffing/Recruiting:</strong> Now included as valid targets (like PeopleFocus)</li>
-              <li>• <strong>AI Companies:</strong> 5% experimental focus - hungry for leads</li>
+              <div>
+                <p className="font-semibold text-green-900 text-sm mb-2">Revenue:</p>
+                <p className="text-sm text-green-800">$10M - $50M (sweet spot)</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-green-900 text-sm mb-2">⛔ EXCLUDE:</p>
+                <div className="space-y-1 text-xs text-green-800">
+                  <p>❌ Meta ads, Google ads, SEO agencies</p>
+                  <p>❌ WordPress/website builders</p>
+                  <p>❌ Generic IT consulting/MSPs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Distribution & Wholesale - 15% */}
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+            <h4 className="font-bold text-amber-900 mb-3">3. Distribution & Wholesale (15% - 300 leads)</h4>
+            <p className="text-sm text-amber-800 mb-3">B2B sales to businesses/retailers, manual processes</p>
+
+            <div className="space-y-3">
+              <div>
+                <p className="font-semibold text-amber-900 text-sm mb-2">Company Size:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  <div className="bg-white px-3 py-2 rounded text-sm">10-50 employees (50%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (50%)</div>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-amber-900 text-sm mb-2">Industries:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  {[
+                    'Wholesale Building Materials',
+                    'Wholesale Machinery',
+                    'Wholesale Food and Beverage',
+                    'Wholesale Import and Export',
+                    'Wholesale Chemicals',
+                    'Wholesale Metals and Minerals',
+                    'Wholesale Electronics',
+                    'Wholesale Consumer Goods (B2B only)',
+                  ].map((industry) => (
+                    <div key={industry} className="bg-white px-3 py-2 rounded text-xs border border-amber-200">
+                      {industry}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-amber-900 text-sm mb-2">Keywords:</p>
+                <CodeBlock code={`("B2B distributor" OR "B2B distribution" OR "industrial distribution" OR "wholesale") AND B2B`} />
+              </div>
+
+              <div>
+                <p className="font-semibold text-amber-900 text-sm mb-2">Revenue:</p>
+                <p className="text-sm text-amber-800">$10M - $50M (sweet spot)</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-amber-900 text-sm mb-2">⛔ EXCLUDE:</p>
+                <p className="text-xs text-amber-800">❌ Direct-to-consumer retailers, B2C eCommerce</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Niche SaaS/Technology - 10% */}
+          <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+            <h4 className="font-bold text-purple-900 mb-3">4. Niche SaaS/Technology (10% - 200 leads)</h4>
+            <p className="text-sm text-purple-800 mb-3">Use sparingly - moving away from tech focus</p>
+
+            <div className="space-y-3">
+              <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">Company Size:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  <div className="bg-white px-3 py-2 rounded text-sm">10-50 employees (60%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (40%)</div>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">Industries:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  {[
+                    'Computer and Network Security',
+                    'IT System Data Services',
+                    'Vertical SaaS (industry-specific)',
+                    'Compliance/Regulatory Software',
+                  ].map((industry) => (
+                    <div key={industry} className="bg-white px-3 py-2 rounded text-xs border border-purple-200">
+                      {industry}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">Keywords:</p>
+                <CodeBlock code={`("vertical SaaS" OR "industry-specific software" OR "niche B2B software") AND B2B`} />
+              </div>
+
+              <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">Revenue:</p>
+                <p className="text-sm text-purple-800">$10M - $50M</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">⛔ EXCLUDE:</p>
+                <p className="text-xs text-purple-800">❌ HR tech, marketing automation, CRM platforms (saturated)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* AI Companies - 5% */}
+          <div className="bg-rose-50 border-l-4 border-rose-500 p-4 rounded">
+            <h4 className="font-bold text-rose-900 mb-3">5. AI Companies (5% - 100 leads)</h4>
+            <p className="text-sm text-rose-800 mb-3">New AI companies hungry for leads - experimental focus</p>
+
+            <div className="space-y-3">
+              <div>
+                <p className="font-semibold text-rose-900 text-sm mb-2">Company Size:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  <div className="bg-white px-3 py-2 rounded text-sm">10-50 employees (70%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (30%)</div>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-rose-900 text-sm mb-2">Industries:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
+                  {[
+                    'AI Product Development',
+                    'Artificial Intelligence and Machine Learning',
+                    'AI SaaS Platforms',
+                    'Industry-specific AI Solutions',
+                  ].map((industry) => (
+                    <div key={industry} className="bg-white px-3 py-2 rounded text-xs border border-rose-200">
+                      {industry}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-rose-900 text-sm mb-2">Keywords:</p>
+                <CodeBlock code={`("AI product" OR "AI platform" OR "artificial intelligence" OR "machine learning solution") AND B2B`} />
+              </div>
+
+              <div>
+                <p className="font-semibold text-rose-900 text-sm mb-2">Revenue:</p>
+                <p className="text-sm text-rose-800">$5M - $50M</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-rose-900 text-sm mb-2">Target Profile:</p>
+                <p className="text-xs text-rose-800">Founded in last 2-3 years, developing AI products, struggling with customer acquisition</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
+            <p className="font-semibold text-violet-900 mb-2">All Categories - Common Filters:</p>
+            <ul className="space-y-1 text-sm text-violet-800">
+              <li>✓ Has active website</li>
+              <li>✓ B2B filter enabled in Clay</li>
+              <li>✓ LinkedIn company page active</li>
+              <li>✓ NOT using advanced sales tools (manual sales processes)</li>
+              <li>✓ No large in-house SDR/BDR teams</li>
             </ul>
           </div>
         </div>
