@@ -47,11 +47,11 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
         throw new Error(data.error || 'Failed to load tasks');
       }
 
-      // Use fetched tasks if available, otherwise use defaults
-      setTasks(data.tasks.length > 0 ? data.tasks : defaultTasks);
+      // Use fetched tasks from GitHub
+      setTasks(data.tasks);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load tasks');
-      setTasks(defaultTasks);
+      setTasks([]);
     } finally {
       setLoading(false);
     }
