@@ -8,7 +8,6 @@ import StatusBadge, {
   DEFAULT_STATUSES,
   type ClientStatus,
 } from '../components/StatusBadge';
-import { getAllTasks } from '../components/TasksTab';
 import { Building2, Users, Target, TrendingUp, CheckSquare, Square, User, Calendar } from 'lucide-react';
 import Link from 'next/link';
 
@@ -26,9 +25,49 @@ export default function AdminPage() {
     }
     setStatuses(loadedStatuses);
 
-    // Load recent tasks
-    const allTasks = getAllTasks();
-    setRecentTasks(allTasks.slice(0, 5));
+    // Fetch recent tasks from all clients
+    const fetchAllTasks = async () => {
+      const clientIds = ['xpose', 'tslab', 'beeit', 'intelsol', 'peoplefocus', 'wulf'];
+      const clientNames: Record<string, string> = {
+        xpose: 'Xpose Solutions',
+        tslab: 'TS Lab',
+        beeit: 'BeeIt',
+        intelsol: 'Intelsol',
+        peoplefocus: 'PeopleFocus',
+        wulf: 'Wulf'
+      };
+
+      const allTasks: any[] = [];
+
+      for (const clientId of clientIds) {
+        try {
+          const response = await fetch(`/api/tasks/get?clientId=${clientId}`);
+          const data = await response.json();
+
+          if (response.ok && data.tasks) {
+            data.tasks.forEach((task: any) => {
+              allTasks.push({
+                clientId,
+                clientName: clientNames[clientId],
+                task
+              });
+            });
+          }
+        } catch (err) {
+          // Skip on error
+        }
+      }
+
+      // Sort by due date (soonest first), pending first
+      allTasks.sort((a, b) => {
+        if (a.task.status !== b.task.status) return a.task.status === 'pending' ? -1 : 1;
+        return a.task.dueDate.localeCompare(b.task.dueDate);
+      });
+
+      setRecentTasks(allTasks.slice(0, 5));
+    };
+
+    fetchAllTasks();
   }, []);
 
   const handleStatusChange = (clientId: string, newStatus: ClientStatus) => {
