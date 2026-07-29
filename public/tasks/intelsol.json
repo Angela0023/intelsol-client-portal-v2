@@ -1,0 +1,23 @@
+[
+  {
+    "id": "intelsol_1",
+    "description": "Set up SmartLead API integration for campaign tracking",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-06-01"
+  },
+  {
+    "id": "intelsol_2",
+    "description": "Review campaign performance for week 1 and adjust messaging",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-06-05"
+  },
+  {
+    "id": "intelsol_3",
+    "description": "Prepare lead export report for monthly review",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-06-08"
+  }
+]

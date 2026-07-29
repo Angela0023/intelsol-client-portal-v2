@@ -1,0 +1,23 @@
+[
+  {
+    "id": "xpose_1",
+    "description": "Launch Tier 2 campaign targeting mid-size dermatology clinics",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-06-02"
+  },
+  {
+    "id": "xpose_2",
+    "description": "Review ad detection enrichment accuracy in Clay",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-06-06"
+  },
+  {
+    "id": "xpose_3",
+    "description": "Export verified leads to SmartLead for sequencing",
+    "assignedTo": "Matej",
+    "status": "done",
+    "dueDate": "2026-05-23"
+  }
+]

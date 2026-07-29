@@ -1,0 +1,23 @@
+[
+  {
+    "id": "tslab_1",
+    "description": "Run ICP matching once Anthropic credits are added",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-06-04"
+  },
+  {
+    "id": "tslab_2",
+    "description": "Build lead list for remaining EU countries (Sweden, Norway, Ireland)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-06-10"
+  },
+  {
+    "id": "tslab_3",
+    "description": "Verify Apollo enrichment quality for UK leads batch",
+    "assignedTo": "Frosina",
+    "status": "done",
+    "dueDate": "2026-05-20"
+  }
+]

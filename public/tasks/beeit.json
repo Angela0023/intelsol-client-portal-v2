@@ -1,0 +1,23 @@
+[
+  {
+    "id": "beeit_1",
+    "description": "Review Track B ICP documentation with client",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-06-03"
+  },
+  {
+    "id": "beeit_2",
+    "description": "Start Tier 2 agency scraping for Benelux region",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-06-09"
+  },
+  {
+    "id": "beeit_3",
+    "description": "Set up Clay table for DACH market Tier 1 agencies",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-06-12"
+  }
+]
