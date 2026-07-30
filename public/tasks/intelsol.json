@@ -19,5 +19,26 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-06-08"
+  },
+  {
+    "id": "task_1785420551522_658mayx",
+    "description": "Create Demo dashboard",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-07-30"
+  },
+  {
+    "id": "task_1785420655527_4u7j9lk",
+    "description": "Create Dashboard for Eblissai.com",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-07-30"
+  },
+  {
+    "id": "task_1785420678576_ejax7kn",
+    "description": "Create Dashboard for https://plantryx.com/index.html",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-07-30"
   }
 ]
