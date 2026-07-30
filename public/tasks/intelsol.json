@@ -40,5 +40,19 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-07-31"
+  },
+  {
+    "id": "task_1785432235857_iykohhs",
+    "description": "Close UW contract",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31"
+  },
+  {
+    "id": "task_1785432278082_ukybt1y",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-03"
   }
 ]
