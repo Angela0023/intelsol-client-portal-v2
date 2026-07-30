@@ -40,5 +40,19 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-03"
+  },
+  {
+    "id": "task_1785432318537_0yk9pkg",
+    "description": "Activate Email Guard Pro plan",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31"
+  },
+  {
+    "id": "task_1785432335413_pe4b80p",
+    "description": "Purchase more sending accounts",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31"
   }
 ]
