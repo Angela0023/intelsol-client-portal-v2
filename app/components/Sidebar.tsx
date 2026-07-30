@@ -13,6 +13,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
   const isAdmin = clientAccess.includes('admin');
 
   const clients = [
+    { id: 'demo', name: 'Demo (Sample)', icon: Building2, color: 'text-cyan-600' },
     { id: 'xpose', name: 'Xpose Solutions', icon: Building2, color: 'text-blue-600' },
     { id: 'tslab', name: 'TS Lab', icon: Building2, color: 'text-green-600' },
     { id: 'beeit', name: 'BeeIt', icon: Building2, color: 'text-amber-600' },

@@ -79,6 +79,7 @@ export function setClientStatus(clientId: string, status: ClientStatus): void {
 
 // Default statuses
 export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
+  demo: 'Active',
   xpose: 'Active',
   tslab: 'Active',
   beeit: 'Onboarding',
