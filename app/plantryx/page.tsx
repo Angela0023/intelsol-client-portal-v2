@@ -7,7 +7,7 @@ import TasksTab from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertCircle } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -15,8 +15,7 @@ const tabs = [
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'signals', label: 'Buying Signals', icon: AlertCircle },
-  { id: 'messaging', label: 'Messaging', icon: Zap },
+  { id: 'campaigns', label: 'Campaigns', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -136,8 +135,7 @@ export default function PlantryxPage() {
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'signals' && <BuyingSignalsTab />}
-          {activeTab === 'messaging' && <MessagingTab />}
+          {activeTab === 'campaigns' && <CampaignsTab />}
           {activeTab === 'performance' && <PerformanceTab />}
           {activeTab === 'documents' && <DocumentsTab />}
           {activeTab === 'tasks' && (
@@ -188,6 +186,55 @@ function OverviewTab() {
             or fabricated metals verticals. Target geographies: Netherlands, Nordics, Poland (priority),
             and DACH (secondary).
           </p>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Messaging Guidelines" icon={<Zap className="w-5 h-5" />}>
+        <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded mb-4">
+          <p className="font-semibold text-indigo-900 mb-2">Note from Plantryx:</p>
+          <p className="text-indigo-800 text-sm">
+            You run outreach campaigns daily and we don't — if your experience suggests a different approach,
+            we want to hear it. Treat the positioning and claims-discipline points below as fixed; everything
+            else is open for your input at kickoff.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Email 1 - Lead with Pitch (Not Survey):</h4>
+            <ul className="space-y-1 text-sm text-slate-700">
+              <li>• AI-native demand forecasting, supply planning, and inventory optimization</li>
+              <li>• ERP stays as system of record</li>
+              <li>• Plantryx replaces the Excel/manual planning layer</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">CTA Structure:</h4>
+            <ul className="space-y-1 text-sm text-slate-700">
+              <li>• Low-friction interest question (e.g., "worth a look?")</li>
+              <li>• Reply-based CTAs in early touches</li>
+              <li>• No links in email 1 (deliverability)</li>
+              <li>• Planning Maturity Diagnostic (5-min, ungated) as follow-up asset</li>
+            </ul>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+            <p className="font-semibold text-red-900 text-sm mb-1">Claims Discipline (FIXED):</p>
+            <ul className="space-y-1 text-red-800 text-xs">
+              <li>✓ Only live capabilities: forecasting, demand/supply planning, inventory optimization</li>
+              <li>✗ No roadmap features</li>
+              <li>✗ Never frame as ERP replacement</li>
+              <li>✗ No "AI replaces your planners" framing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Approval Required:</h4>
+            <p className="text-sm text-slate-700">
+              All copy and a 50-row lead list sample approved by Plantryx before first send.
+            </p>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -323,6 +370,55 @@ function ICPTab() {
               </div>
             </div>
           ))}
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Buying Signals — Rank Leads by Signal Strength" icon={<TrendingUp className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div>
+            <div className="flex items-center space-x-2 mb-3">
+              <div className="w-7 h-7 bg-green-100 rounded-full flex items-center justify-center">
+                <span className="text-green-600 font-bold text-sm">S</span>
+              </div>
+              <h4 className="font-semibold text-slate-900">Strong Signals (Any ONE Qualifies as Priority)</h4>
+            </div>
+            <ul className="space-y-1 text-sm text-slate-700">
+              <ListItem type="check">Open job posting for demand/supply planner, S&OP manager, production planner, or materials manager</ListItem>
+              <ListItem type="check">ERP implementation or migration underway/recently completed</ListItem>
+              <ListItem type="check">New plant, facility expansion, or capacity investment announcement</ListItem>
+              <ListItem type="check">New VP/Director of Supply Chain or Operations hired within last 6 months</ListItem>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex items-center space-x-2 mb-3">
+              <div className="w-7 h-7 bg-amber-100 rounded-full flex items-center justify-center">
+                <span className="text-amber-600 font-bold text-sm">M</span>
+              </div>
+              <h4 className="font-semibold text-slate-900">Medium Signals (TWO or More Required)</h4>
+            </div>
+            <ul className="space-y-1 text-sm text-slate-700">
+              <ListItem>Ops/supply chain headcount growth &gt;10% YoY</ListItem>
+              <ListItem>New market entry or product-line launch (SKU proliferation)</ListItem>
+              <ListItem>Posts about forecast accuracy, excess inventory, stockouts, lead-time volatility, S&OP maturity</ListItem>
+              <ListItem>Recent PE acquisition or ownership change (working-capital pressure)</ListItem>
+              <ListItem>Supply base restructuring (tariffs, reshoring, energy costs)</ListItem>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex items-center space-x-2 mb-3">
+              <div className="w-7 h-7 bg-slate-100 rounded-full flex items-center justify-center">
+                <span className="text-slate-600 font-bold text-sm">W</span>
+              </div>
+              <h4 className="font-semibold text-slate-900">Weak Signals (Context Only — Never Qualifying Alone)</h4>
+            </div>
+            <ul className="space-y-1 text-sm text-slate-600">
+              <ListItem>Generic "digital transformation" language</ListItem>
+              <ListItem>Supply chain event/webinar attendance</ListItem>
+              <ListItem>Follows planning-software vendors on LinkedIn</ListItem>
+            </ul>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -461,8 +557,8 @@ function PersonasTab() {
           <p className="font-semibold text-violet-900 mb-2">Important:</p>
           <p className="text-violet-800 text-sm">
             Each tier is a distinct segment with its own messaging angle. Structure campaigns and reporting
-            at the tier level, not as one flat title list. Within-account sequencing: start Tier 2 for smaller
-            accounts ($100–300M), start Tier 1 for larger accounts.
+            at the tier level. Within-account sequencing: start Tier 2 for smaller accounts ($100–300M),
+            start Tier 1 for larger accounts.
           </p>
         </div>
 
@@ -645,170 +741,39 @@ function PersonasTab() {
   );
 }
 
-function BuyingSignalsTab() {
+function CampaignsTab() {
   return (
     <>
-      <ContentSection title="Buying Signals — Rank Leads by Signal Strength" icon={<AlertCircle className="w-5 h-5" />}>
-        <div className="space-y-6">
-          {/* Strong Signals */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                <span className="text-green-600 font-bold text-sm">S</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Strong Signals (Any ONE Qualifies as Priority)</h4>
-            </div>
-            <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded mb-3">
-              <p className="text-green-900 text-sm">
-                Leads with any one strong signal should be prioritized for immediate outreach.
-              </p>
-            </div>
-            <ul className="space-y-2">
-              <ListItem type="check">Open job posting for demand planner, supply planner, S&OP manager, production planner, or materials manager (stronger if posting mentions Excel, forecasting improvement, or named ERP)</ListItem>
-              <ListItem type="check">ERP implementation or migration underway or recently completed</ListItem>
-              <ListItem type="check">New plant, facility expansion, or capacity investment announcement</ListItem>
-              <ListItem type="check">New VP/Director of Supply Chain or Operations hired within last 6 months</ListItem>
-            </ul>
-          </div>
-
-          {/* Medium Signals */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
-                <span className="text-amber-600 font-bold text-sm">M</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Medium Signals (TWO or More Required to Qualify)</h4>
-            </div>
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-3">
-              <p className="text-amber-900 text-sm">
-                Leads need at least 2 medium signals combined to qualify for priority outreach.
-              </p>
-            </div>
-            <ul className="space-y-2">
-              <ListItem>Ops/supply chain headcount growth &gt;10% YoY</ListItem>
-              <ListItem>New market entry or product-line launch (SKU proliferation)</ListItem>
-              <ListItem>Executive or company posts referencing forecast accuracy, excess inventory, stockouts, lead-time volatility, or S&OP maturity</ListItem>
-              <ListItem>Recent PE acquisition or ownership change (working-capital pressure)</ListItem>
-              <ListItem>Supply base restructuring driven by tariffs, reshoring/nearshoring, or energy costs (highly relevant for EU metals, electrical, automotive suppliers)</ListItem>
-            </ul>
-          </div>
-
-          {/* Weak Signals */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center">
-                <span className="text-slate-600 font-bold text-sm">W</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Weak Signals (Supporting Context Only — Never Qualifying Alone)</h4>
-            </div>
-            <div className="bg-slate-50 border-l-4 border-slate-400 p-4 rounded mb-3">
-              <p className="text-slate-700 text-sm">
-                These signals provide context but should never be used as sole qualification criteria.
-              </p>
-            </div>
-            <ul className="space-y-2">
-              <ListItem>Generic "digital transformation" language</ListItem>
-              <ListItem>Supply chain event/webinar attendance</ListItem>
-              <ListItem>Follows planning-software vendors on LinkedIn</ListItem>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-    </>
-  );
-}
-
-function MessagingTab() {
-  return (
-    <>
-      <ContentSection title="Messaging Direction" icon={<Zap className="w-5 h-5" />}>
-        <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded mb-6">
-          <p className="font-semibold text-indigo-900 mb-2">Note from Plantryx:</p>
-          <p className="text-indigo-800 text-sm">
-            This section reflects our current thinking on structure and framing. You run outreach campaigns daily
-            and we don't — if your experience suggests a different sequence structure, CTA approach, or framing
-            that converts better with this audience, we want to hear it. Treat the positioning and claims-discipline
-            points below as fixed; everything else is open for your input at kickoff.
+      <ContentSection title="Campaign Overview" icon={<Zap className="w-5 h-5" />}>
+        <div className="bg-slate-50 border border-slate-200 rounded-lg p-8 text-center">
+          <p className="text-slate-600 mb-4">
+            No campaigns have been launched yet for Plantryx.
+          </p>
+          <p className="text-sm text-slate-500">
+            Once campaigns are active, they will be listed here with performance metrics and links to SmartLead.
           </p>
         </div>
+      </ContentSection>
 
-        <div className="space-y-6">
-          {/* Lead with Pitch */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Lead with the Pitch, Not a Survey</h4>
-            <div className="bg-white border border-slate-200 rounded-lg p-4">
-              <p className="text-slate-700 text-sm mb-3">
-                Email 1 introduces Plantryx and one pain-specific insight:
-              </p>
-              <ul className="space-y-2">
-                <ListItem type="check">AI-native demand forecasting, supply planning, and inventory optimization for mid-market manufacturers</ListItem>
-                <ListItem type="check">The ERP stays as the system of record</ListItem>
-                <ListItem type="check">Plantryx replaces the Excel/manual planning layer on top of it</ListItem>
-              </ul>
-            </div>
+      <ContentSection title="Campaign Planning Notes" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+            <p className="font-semibold text-indigo-900 mb-2">Sequencing Strategy:</p>
+            <ul className="space-y-1 text-indigo-800 text-sm">
+              <li>• Small accounts ($100–300M): Start with Tier 2 (Manufacturing Planning)</li>
+              <li>• Larger accounts: Start with Tier 1 (Corporate Planning)</li>
+              <li>• Tier 4 (ERP/IT) as second wave or first where no planning title exists</li>
+              <li>• Sequence contacts at the same account rather than emailing several in parallel</li>
+            </ul>
           </div>
 
-          {/* CTA Structure */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">CTA Structure (Hypothesis — Open to Your View)</h4>
-            <div className="bg-white border border-slate-200 rounded-lg p-4">
-              <ul className="space-y-2">
-                <ListItem type="check">Primary CTA is a low-friction interest/permission question (e.g., "worth a look?" or "want me to send our 5-minute planning maturity check?")</ListItem>
-                <ListItem type="check">Reply-based CTAs in early touches</ListItem>
-                <ListItem type="check">No links in email 1 for deliverability reasons</ListItem>
-              </ul>
-            </div>
-          </div>
-
-          {/* Planning Maturity Diagnostic */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Planning Maturity Diagnostic (Core Follow-Up Asset)</h4>
-            <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-              <ul className="space-y-2 text-green-900 text-sm">
-                <li>• 5-minute self-assessment</li>
-                <li>• Ungated results</li>
-                <li>• Offered on reply</li>
-                <li>• Featured as its own touch mid-sequence</li>
-                <li>• 20-minute founder call is the CTA for engaged repliers</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Claims Discipline */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Claims Discipline (FIXED — Non-Negotiable)</h4>
-            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="text-red-900 font-semibold mb-2">Only Live Capabilities in Copy:</p>
-              <ul className="space-y-1 text-red-800 text-sm">
-                <li>✓ Forecasting</li>
-                <li>✓ Demand/supply planning</li>
-                <li>✓ Inventory optimization</li>
-                <li>✗ No roadmap features</li>
-                <li>✗ Never frame Plantryx as an ERP replacement</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Tone */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Tone (FIXED)</h4>
-            <div className="bg-white border border-slate-200 rounded-lg p-4">
-              <ul className="space-y-2">
-                <ListItem type="check">Specific and honest</ListItem>
-                <ListItem type="cross">No "AI replaces your planners" framing</ListItem>
-                <ListItem type="check">One idea per email</ListItem>
-              </ul>
-            </div>
-          </div>
-
-          {/* Approval */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Approval Process</h4>
-            <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
-              <p className="text-violet-900 text-sm">
-                <strong>Required before first send:</strong> All copy and a 50-row lead list sample approved by Plantryx
-              </p>
-            </div>
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
+            <p className="font-semibold text-violet-900 mb-2">Pre-Launch Requirements:</p>
+            <ul className="space-y-1 text-violet-800 text-sm">
+              <li>• All copy approved by Plantryx</li>
+              <li>• 50-row lead list sample approved</li>
+              <li>• Leads prioritized by buying signal strength (Strong &gt; Medium &gt; Weak)</li>
+            </ul>
           </div>
         </div>
       </ContentSection>
@@ -898,9 +863,8 @@ function PerformanceTab() {
               <div>
                 <p className="font-medium text-red-900 mb-1">1. Technically Unreliable</p>
                 <p className="text-red-800 text-sm">
-                  Apple Mail Privacy Protection (large share of B2B recipients) pre-fetches tracking pixels automatically,
-                  registering an "open" whether or not a human ever read the email. Corporate security gateways and
-                  link scanners (Microsoft Defender, Proofpoint, Mimecast) do the same for both opens and clicks.
+                  Apple Mail Privacy Protection and corporate security gateways (Microsoft Defender, Proofpoint, Mimecast)
+                  auto-fetch tracking pixels, registering "opens" whether or not a human read the email.
                 </p>
               </div>
               <div>
@@ -914,7 +878,7 @@ function PerformanceTab() {
                 <p className="font-medium text-red-900 mb-1">3. Practical Consequence</p>
                 <p className="text-red-800 text-sm">
                   Warm-lead triggers or optimization decisions based on opens will chase noise. Reply-based signals
-                  should drive prioritization, follow-up, and Month-2 optimization.
+                  should drive prioritization and Month-2 optimization.
                 </p>
               </div>
             </div>
