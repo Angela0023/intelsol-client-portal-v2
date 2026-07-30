@@ -163,12 +163,12 @@ function OverviewTab() {
         <div className="space-y-4">
           <p>
             TS Lab is a Slovenia-based food supplement capsule manufacturer. They produce capsules for other
-            companies through B2B white-label manufacturing services.
+            companies through B2B private-label manufacturing services.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <InfoCard label="Industry" value="Food Supplement Manufacturing" />
-            <InfoCard label="Business Model" value="B2B White-Label Manufacturing" />
+            <InfoCard label="Business Model" value="B2B Private-Label Manufacturing" />
             <InfoCard label="Location" value="Slovenia" />
             <InfoCard label="Service Type" value="Capsule/Tablet Production" />
           </div>
@@ -177,7 +177,7 @@ function OverviewTab() {
 
       <ContentSection title="What TS Lab Offers" icon={<TrendingUp className="w-5 h-5" />}>
         <ul className="space-y-2">
-          <ListItem type="check">White-label capsule and tablet manufacturing</ListItem>
+          <ListItem type="check">Private-label capsule and tablet manufacturing</ListItem>
           <ListItem type="check">Custom supplement formulation</ListItem>
           <ListItem type="check">Production capacity for companies needing additional manufacturing</ListItem>
           <ListItem type="check">B2B partnerships with supplement brands</ListItem>
@@ -225,7 +225,6 @@ function ICPTab() {
         <ul className="space-y-2">
           <ListItem type="cross">Only sells protein powders or bars (no capsules)</ListItem>
           <ListItem type="cross">Private label (PL) manufacturing facilities</ListItem>
-          <ListItem type="cross">White label (WL) manufacturing facilities</ListItem>
           <ListItem type="cross">Only pharmacy selling prescription drugs</ListItem>
           <ListItem type="cross">MLM companies</ListItem>
           <ListItem type="cross">Website is old or broken</ListItem>
