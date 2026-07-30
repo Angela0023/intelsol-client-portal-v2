@@ -1,7 +1,7 @@
 // Simple authentication for client portal
 // In production, use proper authentication (NextAuth.js, Auth0, etc.)
 
-export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus';
+export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx';
 
 export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   admin: 'intelsol2026', // Matej + team access
@@ -11,6 +11,7 @@ export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   intelsol: 'intelsol2026',
   wulf: 'wulf2026',
   peoplefocus: 'peoplefocus2026',
+  plantryx: 'plantryx2026',
 };
 
 export function validateAccess(client: ClientAccess, password: string): boolean {
@@ -24,7 +25,7 @@ export function checkAdminAccess(password: string): boolean {
 export function getAllowedClients(password: string): ClientAccess[] {
   // Admin can access all
   if (checkAdminAccess(password)) {
-    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus'];
+    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus', 'plantryx'];
   }
 
   // Check individual client access
