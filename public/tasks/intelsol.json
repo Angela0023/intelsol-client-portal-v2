@@ -14,13 +14,6 @@
     "dueDate": "2026-06-05"
   },
   {
-    "id": "intelsol_3",
-    "description": "Prepare lead export report for monthly review",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-06-08"
-  },
-  {
     "id": "task_1785420551522_658mayx",
     "description": "Create Demo dashboard",
     "assignedTo": "Frosina",
