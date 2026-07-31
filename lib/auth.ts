@@ -4,13 +4,13 @@
 export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'demo';
 
 export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
-  admin: 'intelsol2026', // Matej + team access
-  xpose: 'xpose2026',
-  tslab: 'tslab2026',
-  beeit: 'beeit2026',
-  intelsol: 'intelsol2026',
-  wulf: 'wulf2026',
-  peoplefocus: 'peoplefocus2026',
+  admin: 'Portal.Master.24', // Matej + team access
+  xpose: 'Beauty.Leads.47',
+  tslab: 'Capsule.Supply.29',
+  beeit: 'Agency.Track.56',
+  intelsol: 'Portal.Master.24',
+  wulf: 'Mountain.Path.83',
+  peoplefocus: 'Talent.Team.91',
   plantryx: 'plantryx2026',
   demo: 'demo2026', // Demo dashboard for presentations
 };

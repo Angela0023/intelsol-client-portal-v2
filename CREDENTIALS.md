@@ -5,25 +5,29 @@
 ## Login Passwords
 
 ### Admin Access (Full Dashboard)
-- Password: `intelsol2026`
+- Password: `Portal.Master.24`
 - Access: All client dashboards
 
 ### Client-Specific Access
 
 **Xpose Solutions**
-- Password: `xpose2026`
+- Password: `Beauty.Leads.47`
 - Access: Xpose dashboard only
 
 **TS Lab**
-- Password: `tslab2026`
+- Password: `Capsule.Supply.29`
 - Access: TS Lab dashboard only
 
 **BeeIt**
-- Password: `beeit2026`
+- Password: `Agency.Track.56`
 - Access: BeeIt dashboard only
 
+**Wulf**
+- Password: `Mountain.Path.83`
+- Access: Wulf dashboard only
+
 **People Focus**
-- Password: `peoplefocus2026`
+- Password: `Talent.Team.91`
 - Access: People Focus dashboard only
 
 ---
@@ -35,4 +39,4 @@
 
 ---
 
-**Last Updated:** July 2, 2026
+**Last Updated:** July 31, 2026
