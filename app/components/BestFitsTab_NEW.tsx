@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { ExternalLink, Building2, MapPin, Users, TrendingUp, Award, ChevronDown, ChevronUp } from 'lucide-react';
 
-// Import validated lead data
+// This will be populated with actual data
 const BEST_FITS_DATA = [
   {
     "name": "Hooijsma, Rene",
@@ -632,183 +632,242 @@ export default function BestFitsTab() {
   const strongFit = BEST_FITS_DATA.filter(l => l.icp_score === '4/5');
   const goodFit = BEST_FITS_DATA.filter(l => l.icp_score === '3/5');
 
-  const getConfidenceBadge = (score: string) => {
-    if (score === '5/5') return { bg: 'bg-green-600', text: 'text-white', label: 'Perfect Fit 5/5' };
-    if (score === '4/5') return { bg: 'bg-blue-600', text: 'text-white', label: 'Strong Fit 4/5' };
-    return { bg: 'bg-amber-600', text: 'text-white', label: 'Good Fit 3/5' };
-  };
+  const allLeads = [...perfectFit, ...strongFit, ...goodFit];
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="bg-white border-2 border-gray-300 rounded-lg p-6">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">
-          26 Hand-Picked Leads for Plantryx
-        </h2>
-        <p className="text-gray-700 text-lg mb-4">
-          Every lead validated with revenue research. ICP fit scored. All within $100M-$1B revenue band.
-        </p>
+    <div className="space-y-8">
+      {/* Page Header */}
+      <div className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 rounded-xl p-8 text-white">
+        <div className="mb-6">
+          <h1 className="text-4xl font-bold mb-3">26 Hand-Picked Leads for Plantryx</h1>
+          <p className="text-lg text-slate-300">
+            Every lead validated with revenue research. ICP fit scored. All within $100M-$1B revenue band.
+          </p>
+        </div>
 
-        {/* Summary Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-          <div className="bg-green-50 border-2 border-green-600 rounded-lg p-4">
-            <div className="text-green-900 font-bold text-sm mb-1">PERFECT FIT 5/5</div>
-            <div className="text-4xl font-bold text-green-700">{perfectFit.length}</div>
-            <div className="text-xs text-green-800 mt-1">Highest confidence, all criteria met</div>
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
+                <Award className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold">{perfectFit.length}</div>
+                <div className="text-sm text-slate-300">Perfect Fit 5/5</div>
+              </div>
+            </div>
+            <div className="text-xs text-slate-400">Highest confidence, all criteria met</div>
           </div>
-          <div className="bg-blue-50 border-2 border-blue-600 rounded-lg p-4">
-            <div className="text-blue-900 font-bold text-sm mb-1">STRONG FIT 4/5</div>
-            <div className="text-4xl font-bold text-blue-700">{strongFit.length}</div>
-            <div className="text-xs text-blue-800 mt-1">High confidence, minor gaps</div>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
+                <TrendingUp className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold">{strongFit.length}</div>
+                <div className="text-sm text-slate-300">Strong Fit 4/5</div>
+              </div>
+            </div>
+            <div className="text-xs text-slate-400">High confidence, minor gaps</div>
           </div>
-          <div className="bg-amber-50 border-2 border-amber-600 rounded-lg p-4">
-            <div className="text-amber-900 font-bold text-sm mb-1">GOOD FIT 3/5</div>
-            <div className="text-4xl font-bold text-amber-700">{goodFit.length}</div>
-            <div className="text-xs text-amber-800 mt-1">Promising, needs verification</div>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
+                <Building2 className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <div className="text-2xl font-bold">{goodFit.length}</div>
+                <div className="text-sm text-slate-300">Good Fit 3/5</div>
+              </div>
+            </div>
+            <div className="text-xs text-slate-400">Promising, needs verification</div>
           </div>
         </div>
       </div>
 
-      {/* Leads Table */}
-      {[...perfectFit, ...strongFit, ...goodFit].map((lead, index) => {
+      {/* Leads */}
+      {allLeads.map((lead, index) => {
         const isExpanded = expandedLeads.has(index);
-        const badge = getConfidenceBadge(lead.icp_score);
+        const getHeaderColor = (score: string) => {
+          if (score === '5/5') return 'from-green-700 via-green-600 to-green-700';
+          if (score === '4/5') return 'from-blue-700 via-blue-600 to-blue-700';
+          return 'from-amber-700 via-amber-600 to-amber-700';
+        };
+
+        const extractRevenue = (rev: string) => {
+          // Extract just the number part for big display
+          const match = rev.match(/[€$£]?[\d,]+\.?\d*[MBK]?/);
+          return match ? match[0] : rev;
+        };
 
         return (
-          <div key={index} className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden">
-            {/* Lead Header - Always Visible */}
-            <div className="p-6">
-              <div className="flex items-start justify-between gap-4 mb-4">
+          <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
+            {/* Header - Dark gradient like reference */}
+            <div className={`bg-gradient-to-r ${getHeaderColor(lead.icp_score)} p-6 text-white`}>
+              <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className={`${badge.bg} ${badge.text} text-xs font-bold px-3 py-1 rounded-full`}>
-                      {badge.label}
-                    </span>
+                  <div className="text-xs uppercase tracking-wider text-white/80 mb-2 font-semibold">
+                    PREPARED FOR
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    <a href={lead.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 inline-flex items-center gap-2">
-                      {lead.name}
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </h3>
-                  <p className="text-gray-700 font-medium mb-1">{lead.title}</p>
-                  <p className="text-lg font-bold text-gray-900">
-                    <a href={lead.company_website} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 inline-flex items-center gap-2">
-                      {lead.company}
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
+                  <h2 className="text-3xl font-bold mb-3">{lead.company}</h2>
+
+                  <div className="flex items-start gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl font-bold">{lead.name.charAt(0)}</span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-lg">{lead.name}</div>
+                      <div className="text-sm text-white/90">{lead.title}</div>
+                      <div className="text-xs text-white/70 mt-1">
+                        {lead.company} - {lead.location}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-right">
+                  <div className={`inline-block px-4 py-2 rounded-full text-sm font-bold ${
+                    lead.icp_score === '5/5' ? 'bg-green-500' :
+                    lead.icp_score === '4/5' ? 'bg-blue-500' : 'bg-amber-500'
+                  } text-white`}>
+                    {lead.confidence_level} {lead.icp_score}
+                  </div>
+                </div>
+              </div>
+
+              {/* Key Info Pills */}
+              <div className="flex flex-wrap gap-2">
+                <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
+                  <span className="font-semibold">Sector:</span> {lead.vertical || lead.industry || 'Manufacturing'}
+                </div>
+                <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
+                  <span className="font-semibold">Est. revenue:</span> {extractRevenue(lead.revenue)}
+                </div>
+                <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
+                  <span className="font-semibold">Start-date:</span> Immediate
+                </div>
+              </div>
+            </div>
+
+            {/* Main Content - White section like reference */}
+            <div className="p-8 bg-white">
+              {/* Big Revenue Display */}
+              <div className="mb-8">
+                <div className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">
+                  YOU ARE LEAVING THIS ON THE TABLE EVERY MONTH
+                </div>
+                <div className="text-6xl font-bold text-gray-900 mb-4">
+                  {extractRevenue(lead.revenue)}
+                </div>
+
+                <div className="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-4 rounded-r-lg mb-6">
+                  <p className="text-gray-800 font-medium leading-relaxed">
+                    {lead.why_fit}
                   </p>
                 </div>
-              </div>
 
-              {/* Key Info Grid - Always Visible */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-gray-50 rounded-lg mb-4">
-                <div>
-                  <div className="text-xs font-bold text-gray-600 uppercase mb-1">Location</div>
-                  <div className="text-sm font-medium text-gray-900">{lead.location}</div>
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-gray-600 uppercase mb-1">Employees</div>
-                  <div className="text-sm font-medium text-gray-900">{lead.employees}</div>
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-gray-600 uppercase mb-1">Revenue</div>
-                  <div className="text-sm font-bold text-green-700">{lead.revenue}</div>
-                  <div className="text-xs text-gray-600 mt-0.5">{lead.revenue_source}</div>
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-gray-600 uppercase mb-1">Persona</div>
-                  <div className="text-sm font-medium text-gray-900">{lead.persona_tier || 'N/A'}</div>
-                </div>
-              </div>
-
-              {lead.industry && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                {/* Quick Stats Grid */}
+                <div className="grid grid-cols-4 gap-4 mb-6">
                   <div>
-                    <div className="text-xs font-bold text-gray-600 uppercase mb-1">Industry</div>
-                    <div className="text-sm text-gray-900">{lead.industry}</div>
+                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Location</div>
+                    <div className="text-sm font-bold text-gray-900">{lead.location}</div>
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-gray-600 uppercase mb-1">Vertical</div>
-                    <div className="text-sm text-gray-900">{lead.vertical}</div>
+                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Employees</div>
+                    <div className="text-sm font-bold text-gray-900">{lead.employees}</div>
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Persona</div>
+                    <div className="text-sm font-bold text-gray-900">{lead.persona_tier || 'Tier 1'}</div>
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Revenue Source</div>
+                    <div className="text-xs text-gray-600">{lead.revenue_source}</div>
                   </div>
                 </div>
-              )}
+              </div>
 
-              {/* Why Perfect Fit - Always Visible */}
-              {lead.why_fit && (
-                <div className="mb-4">
-                  <div className="text-xs font-bold text-gray-600 uppercase mb-2">Why This Lead Is A Fit</div>
-                  <p className="text-sm text-gray-800 leading-relaxed">{lead.why_fit}</p>
-                </div>
-              )}
-
-              {/* Expandable Details */}
-              {lead.key_strengths.length > 0 && (
-                <div>
+              {/* What we found section */}
+              {lead.key_strengths && lead.key_strengths.length > 0 && (
+                <div className="mb-6">
                   <button
                     onClick={() => toggleLead(index)}
-                    className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-2"
+                    className="w-full text-left"
                   >
-                    {isExpanded ? (
-                      <>
-                        <ChevronUp className="w-4 h-4" />
-                        Hide Detailed Analysis
-                      </>
-                    ) : (
-                      <>
-                        <ChevronDown className="w-4 h-4" />
-                        Show Detailed Analysis ({lead.key_strengths.length} key points)
-                      </>
-                    )}
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-4 rounded-lg flex items-center justify-between hover:from-gray-600 hover:to-gray-700 transition-all cursor-pointer">
+                      <h3 className="text-lg font-semibold">What we found about you</h3>
+                      {isExpanded ? (
+                        <ChevronUp className="w-5 h-5" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5" />
+                      )}
+                    </div>
                   </button>
 
                   {isExpanded && (
-                    <div className="mt-4 space-y-4 border-t-2 border-gray-200 pt-4">
-                      <div>
-                        <h4 className="text-sm font-bold text-gray-900 uppercase mb-3">Detailed ICP Analysis</h4>
-                        <div className="space-y-3">
-                          {lead.key_strengths.map((strength, idx) => (
-                            <div key={idx} className="flex gap-3">
-                              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">
-                                {idx + 1}
-                              </div>
-                              <p className="text-sm text-gray-800 leading-relaxed flex-1">{strength}</p>
-                            </div>
-                          ))}
+                    <div className="mt-4 space-y-3">
+                      {lead.key_strengths.map((strength, idx) => (
+                        <div key={idx} className="flex gap-3 items-start">
+                          <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
+                            </svg>
+                          </div>
+                          <p className="text-sm text-gray-700 leading-relaxed flex-1">{strength}</p>
                         </div>
-                      </div>
+                      ))}
 
-                      {lead.concerns && lead.concerns !== 'None' && lead.concerns !== 'None identified in analysis' && (
-                        <div className="bg-amber-50 border-l-4 border-amber-500 p-4">
-                          <h5 className="text-sm font-bold text-amber-900 mb-2">Concerns / Gaps</h5>
+                      {lead.concerns && lead.concerns !== 'None' && (
+                        <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r">
+                          <div className="font-semibold text-amber-900 mb-1">Concerns / Gaps:</div>
                           <p className="text-sm text-amber-800">{lead.concerns}</p>
                         </div>
                       )}
-
-                      {/* Links */}
-                      <div className="flex flex-wrap gap-4 pt-3 border-t border-gray-200">
-                        <a href={lead.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-1">
-                          LinkedIn Profile <ExternalLink className="w-3 h-3" />
-                        </a>
-                        <a href={lead.company_website} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-1">
-                          Company Website <ExternalLink className="w-3 h-3" />
-                        </a>
-                        <a href={lead.company_linkedin} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-1">
-                          Company LinkedIn <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </div>
                     </div>
                   )}
                 </div>
               )}
+
+              {/* Links */}
+              <div className="flex flex-wrap gap-4 pt-4 border-t border-gray-200">
+                <a
+                  href={lead.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-1.5"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  LinkedIn Profile
+                </a>
+                <a
+                  href={lead.company_website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-1.5"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Company Website
+                </a>
+                <a
+                  href={lead.company_linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-1.5"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Company LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         );
       })}
 
       {/* Footer */}
-      <div className="bg-gray-100 border-2 border-gray-300 rounded-lg p-6 text-sm text-gray-800">
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 text-sm text-gray-700">
         <p className="mb-3">
           <span className="font-bold text-gray-900">Methodology:</span> All 26 companies validated via web research using public financial reports, company announcements, and business intelligence sources. Revenue figures confirmed for FY2024-2025 where available.
         </p>
