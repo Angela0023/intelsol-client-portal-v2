@@ -8,11 +8,12 @@ import SequencesTab from '../components/SequencesTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail, Award, MapPin, Building2, Briefcase } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
   { id: 'icp', label: 'ICP Profile', icon: Target },
+  { id: 'bestfits', label: 'Best Fits', icon: Award },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'personas', label: 'Buyer Personas', icon: Users },
@@ -134,6 +135,7 @@ export default function PlantryxPage() {
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'bestfits' && <BestFitsTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
@@ -424,6 +426,421 @@ function ICPTab() {
           </div>
         </div>
       </ContentSection>
+    </>
+  );
+}
+
+function BestFitsTab() {
+  // Best fits data from analysis
+  const bestFits = [
+    {
+      rank: 1,
+      name: "Michael Stortelers",
+      job_title: "Supply Chain Director global Amazon account",
+      company_name: "Philips Domestic Appliances (Versuni)",
+      employee_count: "10,001+",
+      location: "Amsterdam, NL",
+      country: "NL",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Netherlands-based electrical & industrial automation manufacturer with Supply Chain Director role. Perfect Tier 1 corporate planning persona in priority geography and vertical."
+    },
+    {
+      rank: 2,
+      name: "Tony Grondin",
+      job_title: "Director of Supply Chain - North America",
+      company_name: "Frontmatec",
+      employee_count: "1,001-5,000",
+      location: "Kolding, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer (1,001-5,000 employees) with Director of Supply Chain role. Tier 1 target in priority geography."
+    },
+    {
+      rank: 3,
+      name: "Mark Journell",
+      job_title: "Global Director of Supply Chain-Data Center Technologies",
+      company_name: "Munters",
+      employee_count: "1,001-5,000",
+      location: "Stockholm, SE",
+      country: "SE",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Sweden-based mechanical/industrial engineering manufacturer focused on data center technologies. Perfect electrical equipment vertical fit with Tier 1 persona."
+    },
+    {
+      rank: 4,
+      name: "Tommi Väänänen",
+      job_title: "Director, Supply Chain",
+      company_name: "Ponsse Oyj",
+      employee_count: "1,001-5,000",
+      location: "Vieremä, FI",
+      country: "FI",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Finland-based machinery manufacturer (1,001-5,000 employees) with Director, Supply Chain role. Tier 1 persona in Nordic priority geography."
+    },
+    {
+      rank: 5,
+      name: "sudhir gupta",
+      job_title: "Production and Supply Chain Director",
+      company_name: "Normet Group",
+      employee_count: "1,001-5,000",
+      location: "Espoo, FI",
+      country: "FI",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Finland-based machinery manufacturer with dual Production and Supply Chain Director role. Excellent Tier 1 fit with both planning and operations responsibility."
+    },
+    {
+      rank: 6,
+      name: "Christian Evers",
+      job_title: "Director of Group Supply Chain",
+      company_name: "HydraSpecma",
+      employee_count: "1,001-5,000",
+      location: "Skjern, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer with Group-level Supply Chain Director role. Enterprise-scale Tier 1 persona."
+    },
+    {
+      rank: 7,
+      name: "Grzegorz Sroka, MBA",
+      job_title: "Supply Chain Director",
+      company_name: "BROEN Valve Technologies",
+      employee_count: "501-1,000",
+      location: "Assens, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer (501-1,000 employees). Mid-market sweet spot with Tier 1 Supply Chain Director."
+    },
+    {
+      rank: 8,
+      name: "Kenneth Berwald Pedersen",
+      job_title: "Director, Supply Chain",
+      company_name: "Semco Maritime",
+      employee_count: "1,001-5,000",
+      location: "Nørresundby, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer serving maritime sector. Tier 1 persona with strong industrial automation vertical fit."
+    },
+    {
+      rank: 9,
+      name: "Mirja Koivuoja",
+      job_title: "Supply Chain Director",
+      company_name: "Scanfil plc",
+      employee_count: "1,001-5,000",
+      location: "Sievi, FI",
+      country: "FI",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Finland-based electrical & electronic manufacturing company. Perfect fit for electrical equipment vertical with Tier 1 Supply Chain Director."
+    },
+    {
+      rank: 10,
+      name: "Rene Hooijsma",
+      job_title: "Alfen Group Supply Chain director",
+      company_name: "Alfen",
+      employee_count: "501-1,000",
+      location: "Almere, NL",
+      country: "NL",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Netherlands-based electrical & electronic manufacturing (grid/power equipment). Priority #1 vertical with Tier 1 Group Supply Chain Director."
+    },
+    {
+      rank: 11,
+      name: "Musa Kilic",
+      job_title: "Director, Supply Chain",
+      company_name: "Hamamatsu Photonics A/S",
+      employee_count: "201-500",
+      location: "Birkerød, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based electrical & electronic manufacturing (photonics/semiconductor adjacent). High-tech vertical fit with Tier 1 persona despite smaller size."
+    },
+    {
+      rank: 12,
+      name: "Erno Ranta",
+      job_title: "Supply Chain Director",
+      company_name: "Vaisala",
+      employee_count: "1,001-5,000",
+      location: "Vantaa, FI",
+      country: "FI",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Finland-based electrical equipment manufacturer (environmental/industrial measurement). Perfect electrical equipment vertical with Tier 1 Supply Chain Director."
+    },
+    {
+      rank: 13,
+      name: "Kaisa Säde",
+      job_title: "Supply Chain Director",
+      company_name: "Halton Group",
+      employee_count: "1,001-5,000",
+      location: "Helsinki, FI",
+      country: "FI",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Finland-based mechanical/industrial engineering manufacturer specializing in indoor air solutions. Industrial automation vertical with Tier 1 persona."
+    },
+    {
+      rank: 14,
+      name: "Filip Eisenreich",
+      job_title: "Executive Director - Supply Chain",
+      company_name: "Norican Group",
+      employee_count: "1,001-5,000",
+      location: "Taastrup, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer with Executive Director-level Supply Chain role. Senior Tier 1 persona with strategic influence."
+    },
+    {
+      rank: 15,
+      name: "HF Bredesen",
+      job_title: "Director of Supply Chain",
+      company_name: "CTEK",
+      employee_count: "201-500",
+      location: "Falun, SE",
+      country: "SE",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Sweden-based automotive & electrical manufacturing company. Dual vertical fit (automotive + electrical equipment) with Tier 1 Supply Chain Director."
+    },
+    {
+      rank: 16,
+      name: "Thomas Wiesgickl",
+      job_title: "Director Supply Chain",
+      company_name: "Väderstad AB",
+      employee_count: "1,001-5,000",
+      location: "Väderstad, SE",
+      country: "SE",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Sweden-based mechanical/industrial engineering manufacturer (agricultural machinery). Industrial machinery vertical with Tier 1 Director persona."
+    },
+    {
+      rank: 17,
+      name: "Paul Marshall MCIPS MITOL",
+      job_title: "Director Supply Chain Excellence Transformation",
+      company_name: "Hiab",
+      employee_count: "1,001-5,000",
+      location: "Helsinki, FI",
+      country: "FI",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Finland-based mechanical/industrial engineering manufacturer with transformation-focused Supply Chain Director. Strong digital transformation signal - prime for AI planning adoption."
+    },
+    {
+      rank: 18,
+      name: "Robert Siverby",
+      job_title: "Supply Chain Director",
+      company_name: "Swegon AB",
+      employee_count: "1,001-5,000",
+      location: "Gothenburg, SE",
+      country: "SE",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Sweden-based building materials & mechanical engineering manufacturer. Industrial automation (HVAC) vertical with Tier 1 Supply Chain Director."
+    },
+    {
+      rank: 19,
+      name: "Harald Kremer",
+      job_title: "Supply Chain Director",
+      company_name: "Royal SMIT Transformers B.V.",
+      employee_count: "501-1,000",
+      location: "Nijmegen, NL",
+      country: "NL",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Netherlands-based electrical equipment manufacturer specializing in transformers. PERFECT vertical fit (Priority #1: transformers/power distribution) with Tier 1 persona."
+    },
+    {
+      rank: 20,
+      name: "Alexander Maurice Carnol",
+      job_title: "Director, Supply Chain Business Support and Procurement Controlling",
+      company_name: "Danfoss Climate Solutions",
+      employee_count: "10,001+",
+      location: "Nordborg, DK",
+      country: "DK",
+      persona_tier: "Tier 1",
+      icp_score: 10.0,
+      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer (climate/automation solutions). Enterprise-scale Tier 1 persona with planning and controlling responsibility."
+    }
+  ];
+
+  const stats = {
+    totalLeads: 681,
+    analyzed: 681,
+    bestFits: 20,
+    averageScore: 10.0,
+    geography: {
+      DK: 7,
+      FI: 7,
+      SE: 4,
+      NL: 2
+    }
+  };
+
+  return (
+    <>
+      {/* Hero Section */}
+      <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 rounded-xl p-8 mb-6">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <div className="flex items-center space-x-2 mb-2">
+              <Award className="w-6 h-6 text-green-400" />
+              <span className="text-green-400 text-sm font-semibold uppercase tracking-wide">AI-POWERED LEAD ANALYSIS</span>
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-2">
+              Your <span className="text-green-400">20 Best Fits</span> are ready.
+            </h2>
+            <p className="text-indigo-200 text-lg">
+              Hand-picked from {stats.totalLeads} total leads using strict ICP validation
+            </p>
+          </div>
+          <div className="text-right">
+            <div className="text-6xl font-bold text-white mb-1">{stats.bestFits}</div>
+            <div className="text-indigo-200 text-sm">Perfect Matches</div>
+          </div>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-4 gap-4">
+          <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+            <div className="text-white text-2xl font-bold">{stats.totalLeads}</div>
+            <div className="text-indigo-200 text-sm">Total Analyzed</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+            <div className="text-green-400 text-2xl font-bold">{stats.averageScore}/10</div>
+            <div className="text-indigo-200 text-sm">Avg ICP Score</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+            <div className="text-white text-2xl font-bold">100%</div>
+            <div className="text-indigo-200 text-sm">Tier 1 Personas</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
+            <div className="text-white text-2xl font-bold">4</div>
+            <div className="text-indigo-200 text-sm">EU Countries</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Geographic Breakdown */}
+      <ContentSection title="Geographic Distribution" icon={<MapPin className="w-5 h-5" />}>
+        <div className="grid grid-cols-4 gap-4">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">{stats.geography.DK}</div>
+            <div className="text-sm text-blue-900 font-medium">Denmark</div>
+            <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">{stats.geography.FI}</div>
+            <div className="text-sm text-blue-900 font-medium">Finland</div>
+            <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+            <div className="text-3xl font-bold text-blue-600 mb-1">{stats.geography.SE}</div>
+            <div className="text-sm text-blue-900 font-medium">Sweden</div>
+            <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
+          </div>
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+            <div className="text-3xl font-bold text-green-600 mb-1">{stats.geography.NL}</div>
+            <div className="text-sm text-green-900 font-medium">Netherlands</div>
+            <div className="text-xs text-green-600 mt-1">Priority 1 Geography</div>
+          </div>
+        </div>
+      </ContentSection>
+
+      {/* Best Fits List */}
+      <ContentSection title="Top 20 Best-Fit Leads" icon={<Award className="w-5 h-5" />}>
+        <div className="space-y-4">
+          {bestFits.map((lead) => (
+            <div
+              key={lead.rank}
+              className="bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg transition-shadow"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-start space-x-4">
+                  {/* Rank Badge */}
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">#{lead.rank}</span>
+                  </div>
+
+                  {/* Lead Info */}
+                  <div className="flex-1">
+                    <h4 className="text-lg font-bold text-slate-900 mb-1">{lead.name}</h4>
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Briefcase className="w-4 h-4 text-indigo-600" />
+                      <span className="text-sm text-slate-700 font-medium">{lead.job_title}</span>
+                    </div>
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Building2 className="w-4 h-4 text-slate-500" />
+                      <span className="text-sm text-slate-600">{lead.company_name}</span>
+                      <span className="text-xs text-slate-400">•</span>
+                      <span className="text-sm text-slate-600">{lead.employee_count} employees</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <MapPin className="w-4 h-4 text-slate-500" />
+                      <span className="text-sm text-slate-600">{lead.location}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Badges */}
+                <div className="flex flex-col items-end space-y-2">
+                  <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold">
+                    ICP: {lead.icp_score}/10
+                  </div>
+                  <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">
+                    {lead.persona_tier}
+                  </div>
+                </div>
+              </div>
+
+              {/* Why Perfect Fit */}
+              <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+                <p className="text-sm text-green-900">
+                  <span className="font-semibold">Why Perfect Fit:</span> {lead.why_perfect_fit}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </ContentSection>
+
+      {/* CTA Section */}
+      <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-xl p-8 text-center">
+        <Award className="w-12 h-12 text-violet-200 mx-auto mb-4" />
+        <h3 className="text-2xl font-bold text-white mb-2">Ready to reach out?</h3>
+        <p className="text-violet-100 mb-6 max-w-2xl mx-auto">
+          These 20 leads represent the absolute highest-quality prospects for Plantryx. All meet every ICP criterion
+          with Tier 1 decision-maker personas in priority EU geographies. Export to SmartLead and begin your outreach.
+        </p>
+        <div className="flex items-center justify-center space-x-4">
+          <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-lg border border-white/30">
+            <div className="text-white text-sm">
+              <span className="font-bold">100%</span> ICP Match Rate
+            </div>
+          </div>
+          <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-lg border border-white/30">
+            <div className="text-white text-sm">
+              <span className="font-bold">20/20</span> Tier 1 Personas
+            </div>
+          </div>
+          <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-lg border border-white/30">
+            <div className="text-white text-sm">
+              <span className="font-bold">Priority</span> Geographies Only
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
