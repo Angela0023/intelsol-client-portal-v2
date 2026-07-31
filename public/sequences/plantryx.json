@@ -10,7 +10,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it â manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization â replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it Ã¢ÂÂ manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization Ã¢ÂÂ replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
@@ -22,7 +22,7 @@
         "emailNumber": 3,
         "type": "Follow-Up (Decision Speed)",
         "subject": "Re: AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nOne pattern we see among mid-sized and large manufacturers: S&OP runs monthly, but by the time the plan is agreed across functions, it's already 10–15 days stale.\n\nThe bottleneck is rarely the ERP – it's the manual demand-supply balancing that happens in spreadsheets before decisions are finalized.\n\nPlantryx compresses that lag from weeks to hours. The ERP stays as your system of record; we replace the Excel planning layer with AI-driven forecasting and supply-demand optimization that runs continuously, not monthly.\n\nIf decision speed in your planning cycle is something you'd like to improve, I can walk you through how this works in a quick 20-minute chat.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nOne pattern we see among mid-sized and large manufacturers: S&OP runs monthly, but by the time the plan is agreed across functions, it's already 10â15 days stale.\n\nThe bottleneck is rarely the ERP â it's the manual demand-supply balancing that happens in spreadsheets before decisions are finalized.\n\nPlantryx compresses that lag from weeks to hours. The ERP stays as your system of record; we replace the Excel planning layer with AI-driven forecasting and supply-demand optimization that runs continuously, not monthly.\n\nIf decision speed in your planning cycle is something you'd like to improve, I can walk you through how this works in a quick 20-minute chat.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
       }
     ]
   },
@@ -43,7 +43,7 @@
         "emailNumber": 2,
         "type": "Follow-Up (MRP Noise Focus)",
         "subject": "Re: Fewer expedites, more stable schedules at [Company Name]",
-        "body": "Hi [First Name],\n\nQuick follow-up - most production planners and master schedulers we work with describe the same problem: MRP generates too much noise.\n\nThe system flags 200 exceptions. Maybe 30 are real. You spend your day filtering signal from noise instead of solving real planning problems.\n\nPlantryx cleans that up. It runs on top of your existing ERP and uses AI to separate real demand signals from MRP noise, so you're only working the exceptions that matter.\n\nWe built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that shows where planning noise is costing you the most time. Want me to send it?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nQuick follow-up - most production planners and master schedulers we work with describe the same problem: MRP generates too much noise.\n\nThe system flags 200 exceptions. Maybe 30 are real. You spend your day filtering signal from noise instead of solving real planning problems.\n\nPlantryx cleans that up. It runs on top of your existing ERP and uses AI to separate real demand signals from MRP noise, allowing your team to focus on the exceptions that matter.\n\nWe put together a 5-minute Planning Maturity Assessment (self-assessment, no forms) that highlights where planning noise is taking up the most time. Happy to send it if it's of interest.\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 3,
