@@ -635,7 +635,7 @@ export default function BestFitsTab() {
   const allLeads = [...perfectFit, ...strongFit, ...goodFit];
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Page Header */}
       <div className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 rounded-xl p-8 text-white">
         <div className="mb-6">
@@ -753,24 +753,24 @@ export default function BestFitsTab() {
             </div>
 
             {/* Main Content - White section like reference */}
-            <div className="p-8 bg-white">
+            <div className="p-6 bg-white">
               {/* Big Revenue Display */}
-              <div className="mb-8">
-                <div className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">
+              <div className="mb-4">
+                <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">
                   ANNUAL REVENUE
                 </div>
-                <div className="text-6xl font-bold text-gray-900 mb-4">
+                <div className="text-5xl font-bold text-gray-900 mb-3">
                   {extractRevenue(lead.revenue)}
                 </div>
 
-                <div className="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-4 rounded-r-lg mb-6">
-                  <p className="text-gray-800 font-medium leading-relaxed">
+                <div className="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-3 rounded-r-lg mb-4">
+                  <p className="text-sm text-gray-800 font-medium leading-snug">
                     {lead.why_fit}
                   </p>
                 </div>
 
                 {/* Quick Stats Grid */}
-                <div className="grid grid-cols-4 gap-4 mb-6">
+                <div className="grid grid-cols-4 gap-3 mb-4">
                   <div>
                     <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Location</div>
                     <div className="text-sm font-bold text-gray-900">{lead.location}</div>
@@ -792,13 +792,13 @@ export default function BestFitsTab() {
 
               {/* More Details section */}
               {lead.key_strengths && lead.key_strengths.length > 0 && (
-                <div className="mb-6">
+                <div className="mb-4">
                   <button
                     onClick={() => toggleLead(index)}
                     className="w-full text-left"
                   >
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-4 rounded-lg flex items-center justify-between hover:from-gray-600 hover:to-gray-700 transition-all cursor-pointer">
-                      <h3 className="text-lg font-semibold">More Details - Why This Lead</h3>
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-3 rounded-lg flex items-center justify-between hover:from-gray-600 hover:to-gray-700 transition-all cursor-pointer">
+                      <h3 className="text-base font-semibold">More Details - Why This Lead</h3>
                       {isExpanded ? (
                         <ChevronUp className="w-5 h-5" />
                       ) : (
@@ -808,22 +808,22 @@ export default function BestFitsTab() {
                   </button>
 
                   {isExpanded && (
-                    <div className="mt-4 space-y-3">
+                    <div className="mt-2 space-y-1.5 bg-gray-50 p-3 rounded-lg">
                       {lead.key_strengths.map((strength, idx) => (
-                        <div key={idx} className="flex gap-3 items-start">
-                          <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div key={idx} className="flex gap-2 items-start">
+                          <div className="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg className="w-2.5 h-2.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                             </svg>
                           </div>
-                          <p className="text-sm text-gray-700 leading-relaxed flex-1">{strength}</p>
+                          <p className="text-xs text-gray-700 leading-snug flex-1">{strength}</p>
                         </div>
                       ))}
 
                       {lead.concerns && lead.concerns !== 'None' && (
-                        <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r">
-                          <div className="font-semibold text-amber-900 mb-1">Concerns / Gaps:</div>
-                          <p className="text-sm text-amber-800">{lead.concerns}</p>
+                        <div className="mt-2 bg-amber-50 border-l-4 border-amber-500 p-2 rounded-r">
+                          <div className="font-semibold text-amber-900 text-xs mb-0.5">Concerns / Gaps:</div>
+                          <p className="text-xs text-amber-800">{lead.concerns}</p>
                         </div>
                       )}
                     </div>
@@ -832,7 +832,7 @@ export default function BestFitsTab() {
               )}
 
               {/* Links */}
-              <div className="flex flex-wrap gap-4 pt-4 border-t border-gray-200">
+              <div className="flex flex-wrap gap-3 pt-3 border-t border-gray-200">
                 <a
                   href={lead.linkedin}
                   target="_blank"
