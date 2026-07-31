@@ -405,7 +405,7 @@ const BEST_FITS_DATA = [
     "name": "Sara Lorenzen",
     "title": "Corporate senior manager Supply Chain Processes",
     "company": "LINAK",
-    "linkedin": "https://www.linkedin.com/in/sara-lorenzen-25b55129/",
+    "linkedin": "https://www.linkedin.com/in/sara-lorenzen-20706b14/",
     "company_website": "https://www.linak.com/",
     "company_linkedin": "https://www.linkedin.com/company/linak",
     "location": "Nordborg, DK",
