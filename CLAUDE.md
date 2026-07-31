@@ -14,15 +14,27 @@
 2. ICP Profile
 3. Clay Filters
 4. AI Prompts
-5. Campaigns
-6. Performance
-7. Lead Lists
-8. Documents
-9. Tasks
+5. Buyer Personas
+6. Email Sequences
+7. Campaigns
+8. Performance
+9. Documents
+10. Tasks
 
 **Why:** Consistency is critical. Breaking this confuses users and creates maintenance nightmares.
 
 **Lesson Learned (2026-07-30):** Created "Buying Signals" and "Messaging" tabs for Plantryx only. User immediately flagged this as wrong. Moved content into existing tabs instead.
+
+**Lesson Learned (2026-07-31):** Added "Email Sequences" as new standard tab between Buyer Personas and Campaigns. Logical flow: know your personas → write sequences for them → launch campaigns.
+
+**Email Sequences Tab Format:**
+- Organize by persona tier or campaign type
+- Each sequence = 3 emails (Initial + 2 follow-ups)
+- Display: Subject line + Body for each email
+- Use monospace font for copy-paste friendly format
+- Color-code different tiers/personas
+- Include sequence design principles at top
+- Make it scannable: clear visual separation between sequences
 
 ---
 
@@ -444,4 +456,4 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
 
 ---
 
-Last updated: 2026-07-31
+Last updated: 2026-07-31 (Added Email Sequences tab to standard structure)
