@@ -489,7 +489,7 @@ const BEST_FITS_DATA = [
     "name": "Martin Ott",
     "title": "Director of Materials Management and Supply Chain Excellence",
     "company": "ZwickRoell",
-    "linkedin": "https://www.linkedin.com/in/martin-ott-19b22b96/",
+    "linkedin": "https://www.linkedin.com/in/martin-ott-2321811a1/",
     "company_website": "https://www.zwickroell.com/",
     "company_linkedin": "https://www.linkedin.com/company/zwickroell-gmbh-co-kg",
     "location": "Ulm, DE",
