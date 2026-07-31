@@ -49,7 +49,7 @@
         "emailNumber": 3,
         "type": "Follow-Up (Schedule Stability)",
         "subject": "Re: Fewer expedites, more stable schedules at [Company Name]",
-        "body": "Hi [First Name],\n\nLast note on this - one metric we track with customers: how often the weekly production schedule changes after it's published.\n\nFor most plants, it's 30-40% of line items. Not because demand actually changed, but because the demand forecast feeding MRP was noisy to begin with.\n\nPlantryx stabilizes that. AI-driven demand forecasting on top of your ERP means fewer false signals, fewer last-minute changes, and less firefighting on the shop floor.\n\nIf schedule stability is something you'd like to improve, I can show you how this works in a 20-minute chat.\n\nWorth talking?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nLast note on this - one metric we track with customers: how often the weekly production schedule changes after it's published.\n\nFor most plants, it's 30-40 % of line items. Not because demand actually changed, but because the demand forecast feeding MRP was noisy to begin with.\n\nPlantryx stabilizes that. AI-driven demand forecasting on top of your ERP means fewer false signals, fewer last-minute changes, and less firefighting on the shop floor.\n\nIf schedule stability is something you'd like to improve, I can show you how this works in a 20-minute chat.\n\nWorth talking?\n\nBest,\n[Your Name]"
       }
     ]
   }
