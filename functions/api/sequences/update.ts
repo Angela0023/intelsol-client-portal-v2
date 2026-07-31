@@ -51,7 +51,17 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // Update sequences file
-    const content = btoa(JSON.stringify(sequences, null, 2));
+    // Properly encode UTF-8 strings to base64 (btoa alone fails with non-ASCII chars)
+    let content: string;
+    try {
+      const jsonString = JSON.stringify(sequences, null, 2);
+      // Escape UTF-8 characters for btoa compatibility
+      const escapedString = unescape(encodeURIComponent(jsonString));
+      content = btoa(escapedString);
+    } catch (encodeError) {
+      console.error('Base64 encoding error:', encodeError);
+      throw new Error('Failed to encode sequences data. Check for invalid characters.');
+    }
     const updateResponse = await fetch(
       `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${sequencesPath}`,
       {
@@ -72,7 +82,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     if (!updateResponse.ok) {
       const errorData = await updateResponse.json();
-      throw new Error(errorData.message || 'Failed to update sequences');
+      console.error('GitHub API error:', errorData);
+      throw new Error(errorData.message || `GitHub API returned ${updateResponse.status}`);
     }
 
     return new Response(JSON.stringify({
