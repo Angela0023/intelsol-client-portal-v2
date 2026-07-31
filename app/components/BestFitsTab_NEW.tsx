@@ -250,7 +250,7 @@ const BEST_FITS_DATA = [
     "name": "Abu Kamara",
     "title": "Supply Chain Director",
     "company": "iwis",
-    "linkedin": "https://www.linkedin.com/in/abu-kamara-27551236/",
+    "linkedin": "https://www.linkedin.com/in/abu-kamara-0aa08064/",
     "company_website": "https://www.iwis.com/",
     "company_linkedin": "https://www.linkedin.com/company/iwis-group",
     "location": "München, DE",
