@@ -82,7 +82,8 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
         throw new Error(data.error || 'Failed to save sequences');
       }
 
-      setSequences(updatedSequences);
+      // Refetch from GitHub to get the updated SHA
+      await fetchSequences();
       setEditingId(null);
       setIsAdding(false);
     } catch (err) {
