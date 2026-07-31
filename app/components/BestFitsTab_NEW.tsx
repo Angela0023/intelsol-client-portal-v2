@@ -9,7 +9,7 @@ const BEST_FITS_DATA = [
     "name": "Hooijsma, Rene",
     "title": "Alfen Group Supply Chain director",
     "company": "Alfen",
-    "linkedin": "https://www.linkedin.com/in/rene-hooijsma-9a80841/",
+    "linkedin": "https://www.linkedin.com/in/hooijsma-rene-144ab48/",
     "company_website": "https://alfen.com/",
     "company_linkedin": "https://www.linkedin.com/company/alfen",
     "location": "Almere, NL",
