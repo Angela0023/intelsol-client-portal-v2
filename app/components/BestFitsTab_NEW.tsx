@@ -757,7 +757,7 @@ export default function BestFitsTab() {
               {/* Big Revenue Display */}
               <div className="mb-8">
                 <div className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-semibold">
-                  YOU ARE LEAVING THIS ON THE TABLE EVERY MONTH
+                  ANNUAL REVENUE
                 </div>
                 <div className="text-6xl font-bold text-gray-900 mb-4">
                   {extractRevenue(lead.revenue)}
@@ -790,7 +790,7 @@ export default function BestFitsTab() {
                 </div>
               </div>
 
-              {/* What we found section */}
+              {/* More Details section */}
               {lead.key_strengths && lead.key_strengths.length > 0 && (
                 <div className="mb-6">
                   <button
@@ -798,7 +798,7 @@ export default function BestFitsTab() {
                     className="w-full text-left"
                   >
                     <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-4 rounded-lg flex items-center justify-between hover:from-gray-600 hover:to-gray-700 transition-all cursor-pointer">
-                      <h3 className="text-lg font-semibold">What we found about you</h3>
+                      <h3 className="text-lg font-semibold">More Details - Why This Lead</h3>
                       {isExpanded ? (
                         <ChevronUp className="w-5 h-5" />
                       ) : (
