@@ -208,7 +208,7 @@ const BEST_FITS_DATA = [
     "name": "Kaisa Säde",
     "title": "Supply Chain Director",
     "company": "Halton Group",
-    "linkedin": "https://www.linkedin.com/in/kaisa-s%C3%A4de-ba7a9816/",
+    "linkedin": "https://www.linkedin.com/in/kaisa-säde-7568071/",
     "company_website": "https://www.halton.com/",
     "company_linkedin": "https://www.linkedin.com/company/halton-group",
     "location": "Helsinki, FI",
