@@ -447,7 +447,7 @@ const BEST_FITS_DATA = [
     "name": "Robert Lagosz",
     "title": "Supply Chain Director",
     "company": "Fideltronik",
-    "linkedin": "https://www.linkedin.com/in/robert-lagosz-aa2606b/",
+    "linkedin": "https://www.linkedin.com/in/robert-lagosz-5b0b44b/",
     "company_website": "https://www.fideltronik.com/",
     "company_linkedin": "https://www.linkedin.com/company/fideltronik",
     "location": "Sucha Beskidzka, PL",
