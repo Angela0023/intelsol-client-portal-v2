@@ -265,17 +265,23 @@ intelsol-client-portal/
 │   ├── [clientname]/page.tsx    # Client dashboards
 │   ├── admin/page.tsx            # Admin dashboard
 │   ├── components/               # Reusable UI components
+│   │   ├── SequencesTab.tsx     # Email sequences CRUD component
+│   │   └── ...                   # Other components
 │   └── page.tsx                  # Landing page
 ├── functions/
 │   └── api/                      # Cloudflare Functions (API endpoints)
 │       ├── files.ts              # List files
 │       ├── upload.ts             # Upload files
 │       ├── delete.ts             # Delete files
+│       ├── sequences/
+│       │   ├── get.ts            # Get email sequences
+│       │   └── update.ts         # Update email sequences
 │       └── tasks/
 │           ├── get.ts            # Get tasks
 │           └── update.ts         # Update tasks
 ├── public/
 │   ├── tasks/                    # Task storage (JSON files)
+│   ├── sequences/                # Email sequences storage (JSON files)
 │   ├── uploads/                  # Document storage
 │   └── _redirects                # Cloudflare Pages routing
 ├── lib/
@@ -297,6 +303,114 @@ intelsol-client-portal/
 3. They use GitHub API to read/write files
 4. `GITHUB_TOKEN` environment variable provides authentication
 5. Functions automatically override `_redirects` fallback rule
+
+---
+
+## 📧 Email Sequences Feature
+
+**Overview:** The Email Sequences tab allows admins to create, edit, and delete email sequences directly in the portal. Each sequence contains 3 emails (Initial + 2 follow-ups) organized by persona tier or campaign type.
+
+### Architecture
+
+**Component:** `/app/components/SequencesTab.tsx` (reusable across all clients)
+
+**API Endpoints:**
+- `GET /api/sequences/get?clientId=[id]` - Fetches sequences from GitHub
+- `POST /api/sequences/update` - Saves sequences to GitHub
+
+**Storage:** `/public/sequences/[clientId].json` - JSON files in GitHub repo
+
+**Data Structure:**
+```typescript
+interface Email {
+  emailNumber: number;      // 1, 2, or 3
+  type: string;             // e.g., "Initial Outreach", "Follow-Up"
+  subject: string;          // Email subject line
+  body: string;             // Email body (supports \n for line breaks)
+}
+
+interface Sequence {
+  id: string;               // Unique ID (e.g., "tier-1-corporate")
+  tierName: string;         // Display name (e.g., "TIER 1: Corporate Planning")
+  tierColor: string;        // Color theme: blue, green, amber, purple, indigo
+  targetPersonas: string;   // Target audience description
+  messagingAngle: string;   // Key messaging points
+  emails: Email[];          // Array of 3 emails
+}
+```
+
+### Features
+
+**Admin-Only Edit Mode:**
+- Only visible when user is admin AND edit mode is enabled
+- Edit mode controlled via `EditModeContext`
+- Add sequence button appears in header when not editing
+- Cancel button reverts changes without saving
+
+**CRUD Operations:**
+- **Create:** Click "Add Sequence" → new sequence with 3 empty emails
+- **Edit:** Click edit icon → inline editing of all fields
+- **Delete:** Click delete icon → confirmation dialog before deletion
+- **Save:** Validates all fields → saves to GitHub via API
+
+**Validation:**
+- Tier name required (cannot be empty)
+- All 3 emails must have subject and body
+- Alert shown if validation fails
+
+**Color Coding:**
+- Blue: Tier 1 / Primary personas
+- Green: Tier 2 / Secondary personas
+- Amber: Tier 3 / Tertiary personas
+- Purple: Tier 4 / Specialized personas
+- Indigo: Executive layer / High-level personas
+
+**Display:**
+- Monospace font for email subject and body (copy-paste friendly)
+- Color-coded backgrounds for each tier
+- Visual separation between sequences
+- Email numbers shown as badges
+
+### Adding Sequences to New Clients
+
+When creating a new client dashboard:
+
+1. **Create sequences file:**
+   ```bash
+   echo "[]" > public/sequences/[clientname].json
+   ```
+
+2. **Add to client page:**
+   ```typescript
+   import SequencesTab from '../components/SequencesTab';
+   import { Mail } from 'lucide-react';
+
+   const tabs = [
+     // ... other tabs
+     { id: 'sequences', label: 'Email Sequences', icon: Mail },
+   ];
+
+   // In render:
+   {activeTab === 'sequences' && <SequencesTab clientId="[clientname]" />}
+   ```
+
+3. **Commit to GitHub** before first use (API cannot create files)
+
+### Troubleshooting
+
+**Issue: Sequences not loading**
+- Check `/public/sequences/[clientId].json` exists in repo
+- Check API response in browser console
+- Verify `GITHUB_TOKEN` has `repo` access
+
+**Issue: Sequences not saving**
+- Check browser console for API errors
+- Verify all validation passes (tier name, email subjects/bodies)
+- Check GitHub API rate limits
+
+**Issue: 404 on API endpoint**
+- Verify Cloudflare Functions deployed
+- Check `_redirects` has fallback rule: `/* /index.html 200`
 
 ---
 
@@ -436,6 +550,60 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
 - **Fix:** Created upload directories for all clients
 - **Lesson:** Upload directory must exist BEFORE first upload
 
+### 2026-07-31: Email Sequences Feature Implementation
+
+**Feature:** Added editable Email Sequences tab to all client dashboards
+
+**Implementation Approach:**
+1. **Reusable Component:** Created `/app/components/SequencesTab.tsx` (583 lines)
+   - Full CRUD functionality (Create, Read, Update, Delete)
+   - Admin-only edit mode via EditModeContext
+   - Color-coded tiers (blue, green, amber, purple, indigo)
+   - Inline editing with validation
+   - Monospace display for copy-paste friendly format
+
+2. **API Endpoints:** Created sequences API in `/functions/api/sequences/`
+   - `get.ts` - Fetches sequences from GitHub (handles 404 gracefully)
+   - `update.ts` - Saves sequences to GitHub with SHA conflict handling
+
+3. **Data Storage:** Created `/public/sequences/` directory
+   - Each client has own JSON file: `[clientId].json`
+   - Files must exist BEFORE first use (API cannot create files)
+
+4. **Data Structure:**
+   ```typescript
+   interface Sequence {
+     id: string;
+     tierName: string;
+     tierColor: string;
+     targetPersonas: string;
+     messagingAngle: string;
+     emails: Email[];  // Array of 3 emails
+   }
+   ```
+
+5. **Client Integration:** Added sequences tab to all 8 clients
+   - plantryx, demo, xpose, tslab, beeit, intelsol, wulf, peoplefocus
+   - Position: Tab #6 (after Buyer Personas)
+   - Import: `import SequencesTab from '../components/SequencesTab'`
+   - Render: `{activeTab === 'sequences' && <SequencesTab clientId="[id]" />}`
+
+**Key Decisions:**
+- **Why reusable component?** Ensures consistency across all clients, easier to maintain
+- **Why GitHub storage?** Matches existing architecture (tasks, documents also in GitHub)
+- **Why 3 emails per sequence?** Standard outreach pattern: Initial + 2 follow-ups
+- **Why color-coded?** Visual organization for different persona tiers
+- **Why admin-only?** Prevents clients from accidentally modifying sequences
+
+**Lessons:**
+1. **File must exist before API use** - Created empty `[]` files for all clients upfront
+2. **Replace static implementations** - Removed 262-line static SequencesTab from Plantryx, replaced with component import
+3. **Build validation** - Ran `npm run build` to catch TypeScript errors before committing
+4. **Git conflicts** - Used `git pull --rebase` when remote changes exist
+5. **Comprehensive documentation** - Added dedicated section in CLAUDE.md with architecture, troubleshooting, and examples
+
+**Result:** All clients can now add/edit/delete email sequences directly in portal. Plantryx has 2 complete sequences (Tier 1 + Tier 2) with all 3 emails populated.
+
 ---
 
 ## 🔄 Update This File
@@ -456,4 +624,4 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
 
 ---
 
-Last updated: 2026-07-31 (Added Email Sequences tab to standard structure)
+Last updated: 2026-07-31 (Implemented Email Sequences feature with full CRUD functionality across all clients)
