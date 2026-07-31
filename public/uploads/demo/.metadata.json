@@ -1,0 +1,29 @@
+[
+  {
+    "fileName": "campaign-brief-q1-2026.pdf",
+    "customName": "Campaign Brief - Q1 2026",
+    "originalName": "campaign-brief-q1-2026.pdf",
+    "size": 2100,
+    "type": "application/pdf",
+    "uploadedAt": "2026-01-15T10:30:00Z",
+    "clientId": "demo"
+  },
+  {
+    "fileName": "icp-analysis-document.pdf",
+    "customName": "ICP Analysis Document",
+    "originalName": "icp-analysis-document.pdf",
+    "size": 2650,
+    "type": "application/pdf",
+    "uploadedAt": "2026-01-10T14:15:00Z",
+    "clientId": "demo"
+  },
+  {
+    "fileName": "performance-report-december.pdf",
+    "customName": "Performance Report - December",
+    "originalName": "performance-report-december.pdf",
+    "size": 3200,
+    "type": "application/pdf",
+    "uploadedAt": "2026-01-05T09:00:00Z",
+    "clientId": "demo"
+  }
+]

@@ -5,6 +5,8 @@ import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import FileUpload from '../components/FileUpload';
+import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertTriangle } from 'lucide-react';
 
 const tabs = [
@@ -684,86 +686,31 @@ function PerformanceTab() {
 }
 
 function DocumentsTab() {
+  const [refreshTrigger, setRefreshTrigger] = useState(0);
+
+  const handleUploadComplete = () => {
+    setRefreshTrigger(prev => prev + 1);
+  };
+
   return (
     <>
       <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
-        <p className="font-semibold text-amber-900 mb-1">Demo Notice:</p>
+        <p className="font-semibold text-amber-900 mb-1">Demo Dashboard - Full Functionality:</p>
         <p className="text-amber-800 text-sm">
-          In your actual dashboard, you'll be able to upload and download documents here (campaign briefs, ICP sheets, performance reports, etc.).
+          This demo includes real file upload and download. Files shown below are sample documents. Try uploading a file to see how it works!
         </p>
       </div>
 
       <ContentSection title="Uploaded Documents" icon={<FolderOpen className="w-5 h-5" />}>
         <div className="space-y-4">
-          <p className="text-slate-600 mb-4">
-            Upload and manage documents for your campaigns. All uploaded files will be available for download.
-          </p>
-
-          {/* Demo Sample Documents */}
-          <div className="space-y-3">
-            <div className="bg-white border border-slate-200 rounded-lg p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-5 h-5 text-cyan-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-slate-900">Campaign Brief - Q1 2026</h4>
-                    <div className="flex items-center space-x-3 text-xs text-slate-500 mt-1">
-                      <span>245 KB</span>
-                      <span>•</span>
-                      <span>Jan 15, 2026</span>
-                    </div>
-                  </div>
-                </div>
-                <span className="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
-                  Demo Sample
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-white border border-slate-200 rounded-lg p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-5 h-5 text-cyan-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-slate-900">ICP Analysis Document</h4>
-                    <div className="flex items-center space-x-3 text-xs text-slate-500 mt-1">
-                      <span>892 KB</span>
-                      <span>•</span>
-                      <span>Jan 10, 2026</span>
-                    </div>
-                  </div>
-                </div>
-                <span className="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
-                  Demo Sample
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-white border border-slate-200 rounded-lg p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-5 h-5 text-cyan-600" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-slate-900">Performance Report - December</h4>
-                    <div className="flex items-center space-x-3 text-xs text-slate-500 mt-1">
-                      <span>1.2 MB</span>
-                      <span>•</span>
-                      <span>Jan 5, 2026</span>
-                    </div>
-                  </div>
-                </div>
-                <span className="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">
-                  Demo Sample
-                </span>
-              </div>
-            </div>
+          <div className="flex items-center justify-between">
+            <p className="text-slate-600">
+              Upload and manage documents for your campaigns. All uploaded files will be available for download.
+            </p>
+            <FileUpload clientId="demo" onUploadComplete={handleUploadComplete} />
           </div>
+
+          <FileList clientId="demo" refreshTrigger={refreshTrigger} />
         </div>
       </ContentSection>
     </>
