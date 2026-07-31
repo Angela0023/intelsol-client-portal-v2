@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab, { XPOSE_DEFAULT_TASKS } from '../components/TasksTab';
+import SequencesTab from '../components/SequencesTab';
 import PerformanceTab, { EMPTY_METRICS } from '../components/PerformanceTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Mail } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -15,6 +16,7 @@ const tabs = [
   { id: 'filters', label: 'Lead Sourcing', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'personas', label: 'Buyer Personas', icon: Users },
+  { id: 'sequences', label: 'Email Sequences', icon: Mail },
   { id: 'signals', label: 'Buying Signals', icon: Briefcase },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -126,6 +128,7 @@ export default function PeopleFocusPage() {
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
+          {activeTab === 'sequences' && <SequencesTab clientId="peoplefocus" />}
           {activeTab === 'signals' && <SignalsTab />}
           {activeTab === 'performance' && (
             <PerformanceTab clientId="peoplefocus" defaultMetrics={EMPTY_METRICS} hasData={false} />

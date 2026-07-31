@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab from '../components/TasksTab';
+import SequencesTab from '../components/SequencesTab';
 import PerformanceTab, { EMPTY_METRICS } from '../components/PerformanceTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { FileText, BarChart3, CheckSquare, Mail, AlertTriangle, Target, Users, MessageSquare } from 'lucide-react';
@@ -11,6 +12,7 @@ import { FileText, BarChart3, CheckSquare, Mail, AlertTriangle, Target, Users, M
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
   { id: 'spam-check', label: 'Email Content | Spam Check', icon: Mail },
+  { id: 'sequences', label: 'Email Sequences', icon: MessageSquare },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
@@ -109,6 +111,7 @@ export default function WulfPage() {
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'spam-check' && <SpamCheckTab />}
+          {activeTab === 'sequences' && <SequencesTab clientId="wulf" />}
           {activeTab === 'performance' && (
             <PerformanceTab clientId="wulf" defaultMetrics={EMPTY_METRICS} hasData={false} />
           )}
