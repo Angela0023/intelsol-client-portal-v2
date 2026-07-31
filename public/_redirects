@@ -1,12 +1,14 @@
 # Cloudflare Pages SPA routing
 # Serve the base page for all sub-routes, but keep the URL intact
 
+/demo/* /demo 200
 /tslab/* /tslab 200
 /intelsol/* /intelsol 200
 /xpose/* /xpose 200
 /beeit/* /beeit 200
 /wulf/* /wulf 200
 /peoplefocus/* /peoplefocus 200
+/plantryx/* /plantryx 200
 /admin/* /admin 200
 
 # Fallback for any other routes
