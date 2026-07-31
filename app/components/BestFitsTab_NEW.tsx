@@ -552,7 +552,7 @@ const BEST_FITS_DATA = [
     "name": "Matthias Maurer",
     "title": "Head of Engineering - Minerals & Metals",
     "company": "Hosokawa Alpine Aktiengesellschaft",
-    "linkedin": "https://www.linkedin.com/in/matthias-maurer-08b5a717/",
+    "linkedin": "https://www.linkedin.com/in/matthias-maurer-a91b822b/",
     "company_website": "https://www.hosokawa-alpine.com/",
     "company_linkedin": "https://www.linkedin.com/company/hosokawa-alpine",
     "location": "Augsburg, DE",
