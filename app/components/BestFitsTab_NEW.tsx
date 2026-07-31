@@ -313,7 +313,7 @@ const BEST_FITS_DATA = [
     "name": "Mirja Koivuoja",
     "title": "Supply Chain Director",
     "company": "Scanfil plc",
-    "linkedin": "https://www.linkedin.com/in/mirja-koivuoja-4b788514/",
+    "linkedin": "https://www.linkedin.com/in/mirja-koivuoja-9125224/",
     "company_website": "https://www.scanfil.com/",
     "company_linkedin": "https://www.linkedin.com/company/scanfil",
     "location": "Sievi, FI",
