@@ -229,7 +229,7 @@ const BEST_FITS_DATA = [
     "name": "Thomas Stahlhuth",
     "title": "Bereichsleiter Materialwirtschaft, Produktion und Logistik",
     "company": "BEKO TECHNOLOGIES",
-    "linkedin": "https://www.linkedin.com/in/thomas-stahlhuth-30b99612/",
+    "linkedin": "https://www.linkedin.com/in/thomas-stahlhuth-a292b527b/",
     "company_website": "https://www.beko-technologies.com/",
     "company_linkedin": "https://www.linkedin.com/company/beko-technologies",
     "location": "Neuss, DE",
