@@ -10,7 +10,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it ÃÂ¢ÃÂÃÂ manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization ÃÂ¢ÃÂÃÂ replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it â manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization â replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
@@ -22,7 +22,7 @@
         "emailNumber": 3,
         "type": "Follow-Up (Decision Speed)",
         "subject": "Re: AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nOne pattern we see among mid-sized and large manufacturers: S&OP runs monthly, but by the time the plan is agreed across functions, it's already 10Ã¢ÂÂ15 days stale.\n\nThe bottleneck is rarely the ERP Ã¢ÂÂ it's the manual demand-supply balancing that happens in spreadsheets before decisions are finalized.\n\nPlantryx compresses that lag from weeks to hours. The ERP stays as your system of record; we replace the Excel planning layer with AI-driven forecasting and supply-demand optimization that runs continuously, not monthly.\n\nIf decision speed in your planning cycle is something you'd like to improve, I can walk you through how this works in a quick 20-minute chat.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nOne pattern we see among mid-sized and large manufacturers: S&OP runs monthly, but by the time the plan is agreed across functions, it's already 10ÃÂ¢ÃÂÃÂ15 days stale.\n\nThe bottleneck is rarely the ERP, it's the manual demand-supply balancing that happens in spreadsheets before decisions are finalized.\n\nPlantryx compresses that lag from weeks to hours. The ERP stays as your system of record; we replace the Excel planning layer with AI-driven forecasting and supply-demand optimization that runs continuously, not monthly.\n\nIf decision speed in your planning cycle is something you'd like to improve, I can walk you through how this works in a quick 20-minute chat.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
       }
     ]
   },
