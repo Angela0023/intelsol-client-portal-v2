@@ -384,7 +384,7 @@ const BEST_FITS_DATA = [
     "name": "Tom Carlsen",
     "title": "Director, Supply Chain, Production Development & Support",
     "company": "FOSS",
-    "linkedin": "https://www.linkedin.com/in/tom-carlsen-3ba3002a/",
+    "linkedin": "https://www.linkedin.com/in/tom-carlsen-4b17202/",
     "company_website": "https://www.fossanalytics.com/",
     "company_linkedin": "https://www.linkedin.com/company/foss",
     "location": "Hillerød, DK",
