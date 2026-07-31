@@ -10,3 +10,6 @@
 /peoplefocus/* /peoplefocus 200
 /plantryx/* /plantryx 200
 /admin/* /admin 200
+
+# Fallback - SPA routing (Functions in /api/* take precedence automatically)
+/* /index.html 200
