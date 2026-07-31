@@ -431,48 +431,224 @@ function ICPTab() {
 function FiltersTab() {
   return (
     <>
-      <ContentSection title="Clay Search Criteria" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900 mb-3">Revenue Filter:</h4>
-          <ul className="space-y-2">
-            <ListItem>$100M–$1B USD (€90M–€900M)</ListItem>
-            <ListItem>Exclude: &lt;$50M and &gt;$1B</ListItem>
-          </ul>
-
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Location (Priority 1):</h4>
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
-            <p className="font-semibold text-amber-900 mb-1">Important:</p>
-            <p className="text-amber-800 text-sm">
-              Select <strong>ONE country at a time</strong> from: Netherlands, Sweden, Denmark, Finland, Norway, Poland
+      <ContentSection title="LinkedIn Sales Navigator — Lead Search Filters" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+            <p className="font-semibold text-indigo-900 mb-2">Search Strategy:</p>
+            <p className="text-indigo-800 text-sm">
+              Run separate searches by <strong>company size</strong> and <strong>vertical</strong>.
+              Small companies (€90M-€300M) target Tier 2 personas. Large companies (€300M-€900M) target Tier 1 personas.
             </p>
           </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Industry Filters (LinkedIn):</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            {[
-              'Electrical/Electronic Manufacturing',
-              'Industrial Automation',
-              'Machinery Manufacturing',
-              'Semiconductor Manufacturing',
-              'Motor Vehicle Manufacturing',
-              'Motor Vehicle Parts Manufacturing',
-              'Fabricated Metal Products',
-              'Industrial Machinery Manufacturing',
-            ].map((industry) => (
-              <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm border border-slate-200">
-                {industry}
+          {/* Search Type A: Small Companies */}
+          <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4">
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">A</span>
               </div>
-            ))}
+              <h4 className="font-semibold text-slate-900 text-lg">SMALL Companies (€90M-€300M) → Target Tier 2 Personas</h4>
+            </div>
+
+            <div className="bg-white rounded p-4 mb-4">
+              <h5 className="font-semibold text-slate-900 mb-3">Company Filters:</h5>
+              <div className="space-y-2 text-sm">
+                <div><strong>Headcount:</strong> 201-500, 501-1,000</div>
+                <div><strong>Geography:</strong> Netherlands, Sweden, Denmark, Finland, Norway, Poland, Germany</div>
+                <div><strong>Seniority Level:</strong> Manager, Senior, Director</div>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-4">
+              <p className="text-amber-900 text-sm font-medium">
+                Job Titles (Tier 2 — Manufacturing-Native Planning):
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4">
+              {[
+                'Master Scheduler',
+                'Master Production Scheduler',
+                'Production Planning Manager',
+                'Director of Production Planning',
+                'Production Control Manager',
+                'Planning & Scheduling Manager',
+                'Materials Manager',
+                'Director of Materials Management',
+                'Materials Planning Manager',
+                'Plant Manager',
+                'Director of Manufacturing',
+                'Director of Operations',
+              ].map((title) => (
+                <div key={title} className="bg-green-100 border border-green-200 rounded px-2 py-1.5 text-xs">
+                  {title}
+                </div>
+              ))}
+            </div>
+
+            <h5 className="font-semibold text-slate-900 mb-3">Run 5 Searches (One Per Vertical):</h5>
+
+            <div className="space-y-3">
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search A1: Electrical Equipment</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Electrical/Electronic Manufacturing, Electric Lighting Equipment Manufacturing, Utilities, Industrial Machinery Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> transformer OR switchgear OR power OR electrical OR cable</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search A2: Automation & Industrial Machinery</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Industrial Automation, Machinery Manufacturing, Packaging and Containers Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "packaging machinery" OR "motion control" OR robotics OR automation</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search A3: Motor Vehicle / Auto Parts</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Motor Vehicle Manufacturing, Automotive, Motor Vehicle Parts Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "tier 1" OR "tier 2" OR "automotive supplier" OR OEM</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search A4: Fabricated Metals / Machining</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Machinery Manufacturing, Primary Metal & Steel Manufacturing, Fabricated Metal Products</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "precision machining" OR CNC OR "metal fabrication"</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search A5: Semiconductor / High-Tech</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Semiconductors, Electrical/Electronic Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "test equipment" OR "precision components" OR metrology</p>
+              </div>
+            </div>
           </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Technologies (ERP):</h4>
-          <CodeBlock code={`SAP OR "Dynamics 365" OR Infor OR IFS OR Epicor OR Oracle OR NetSuite OR QAD OR proALPHA OR abas`} />
+          {/* Search Type B: Large Companies */}
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-4">
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">B</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">LARGE Companies (€300M-€900M) → Target Tier 1 Personas</h4>
+            </div>
 
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
-            <p className="font-semibold text-red-900 mb-2">CRITICAL:</p>
-            <p className="text-red-800 text-sm">
-              Companies with no ERP signal must be filtered out. Use technology filters or company description analysis to confirm ERP presence.
-            </p>
+            <div className="bg-white rounded p-4 mb-4">
+              <h5 className="font-semibold text-slate-900 mb-3">Company Filters:</h5>
+              <div className="space-y-2 text-sm">
+                <div><strong>Headcount:</strong> 1,001-5,000</div>
+                <div><strong>Geography:</strong> Netherlands, Sweden, Denmark, Finland, Norway, Poland, Germany</div>
+                <div><strong>Seniority Level:</strong> Director, VP, Senior</div>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-4">
+              <p className="text-amber-900 text-sm font-medium">
+                Job Titles (Tier 1 — Corporate Planning):
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4">
+              {[
+                'Director of Supply Chain',
+                'VP Supply Chain',
+                'Sr. Manager Supply Chain',
+                'Director of Demand Planning',
+                'Demand Planning Director',
+                'Director of Supply Planning',
+                'Supply Planning Director',
+                'S&OP Director',
+                'IBP Director',
+                'Sr. Manager of Demand Planning',
+                'Sr. Manager of Supply Planning',
+              ].map((title) => (
+                <div key={title} className="bg-blue-100 border border-blue-200 rounded px-2 py-1.5 text-xs">
+                  {title}
+                </div>
+              ))}
+            </div>
+
+            <h5 className="font-semibold text-slate-900 mb-3">Run 5 Searches (One Per Vertical):</h5>
+
+            <div className="space-y-3">
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search B1: Electrical Equipment</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Electrical/Electronic Manufacturing, Electric Lighting Equipment Manufacturing, Utilities, Industrial Machinery Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> transformer OR switchgear OR power OR electrical OR cable</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search B2: Automation & Industrial Machinery</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Industrial Automation, Machinery Manufacturing, Packaging and Containers Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "packaging machinery" OR "motion control" OR robotics OR automation</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search B3: Motor Vehicle / Auto Parts</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Motor Vehicle Manufacturing, Automotive, Motor Vehicle Parts Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "tier 1" OR "tier 2" OR "automotive supplier" OR OEM</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search B4: Fabricated Metals / Machining</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Machinery Manufacturing, Primary Metal & Steel Manufacturing, Fabricated Metal Products</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "precision machining" OR CNC OR "metal fabrication"</p>
+              </div>
+
+              <div className="bg-white border border-slate-200 rounded p-3">
+                <p className="font-medium text-slate-900 text-sm mb-2">Search B5: Semiconductor / High-Tech</p>
+                <p className="text-xs text-slate-600 mb-2"><strong>Industries:</strong> Semiconductors, Electrical/Electronic Manufacturing</p>
+                <p className="text-xs text-slate-600"><strong>Keywords:</strong> "test equipment" OR "precision components" OR metrology</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Search Type C: ERP/IT Owners */}
+          <div className="bg-indigo-50 border-2 border-indigo-200 rounded-lg p-4">
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm">C</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">ERP/IT Owners (All Company Sizes) → Tier 4 Separate Sequence</h4>
+            </div>
+
+            <div className="bg-white rounded p-4 mb-4">
+              <h5 className="font-semibold text-slate-900 mb-3">Company Filters:</h5>
+              <div className="space-y-2 text-sm">
+                <div><strong>Headcount:</strong> 201-5,000</div>
+                <div><strong>Geography:</strong> Netherlands, Sweden, Denmark, Finland, Norway, Poland, Germany</div>
+                <div><strong>Seniority Level:</strong> Manager, Director, VP</div>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-4">
+              <p className="text-amber-900 text-sm font-medium">
+                Job Titles (Tier 4 — ERP/IT):
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+              {[
+                'IT Manager',
+                'IT Director',
+                'ERP Manager',
+                'ERP Project Manager',
+                'Business Systems Manager',
+                'CIO',
+              ].map((title) => (
+                <div key={title} className="bg-indigo-100 border border-indigo-200 rounded px-2 py-1.5 text-xs">
+                  {title}
+                </div>
+              ))}
+            </div>
+
+            <p className="text-xs text-slate-600 mt-3">Run same 5 vertical searches (C1-C5) using these job titles</p>
+          </div>
+
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
+            <p className="font-semibold text-violet-900 mb-2">Export Strategy:</p>
+            <ul className="space-y-1 text-violet-800 text-sm">
+              <li>• Export all results from each search (up to 2,500 per search)</li>
+              <li>• Include: First Name, Last Name, Title, Company Name, Company LinkedIn, LinkedIn Profile, Company Size</li>
+              <li>• Send all CSVs for evaluation and de-duplication</li>
+            </ul>
           </div>
         </div>
       </ContentSection>
