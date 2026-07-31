@@ -342,7 +342,7 @@ const BEST_FITS_DATA = [
     "name": "Alexander Haugsted Urth",
     "title": "Senior Supply Chain Manager",
     "company": "Universal Robots",
-    "linkedin": "https://www.linkedin.com/in/alexander-haugsted-urth-3916a44/",
+    "linkedin": "https://www.linkedin.com/in/alexander-haugsted-urth-36494622/",
     "company_website": "https://www.universal-robots.com/",
     "company_linkedin": "https://www.linkedin.com/company/universal-robots",
     "location": "Odense S, DK",
