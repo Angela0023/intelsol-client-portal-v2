@@ -531,7 +531,7 @@ const BEST_FITS_DATA = [
     "name": "Craig Cox ii",
     "title": "Materials Manager",
     "company": "Bucher Hydraulics",
-    "linkedin": "https://www.linkedin.com/in/craig-cox-ii-27a14414/",
+    "linkedin": "https://www.linkedin.com/in/craig-cox-ii-72712545/",
     "company_website": "https://www.bucherhydraulics.com/",
     "company_linkedin": "https://www.linkedin.com/company/bucher-hydraulics",
     "location": "Klettgau, DE",
