@@ -468,7 +468,7 @@ const BEST_FITS_DATA = [
     "name": "Andreas Eberhardt",
     "title": "Supply Chain Director, Member of the Executive Board",
     "company": "Grünbeck AG",
-    "linkedin": "https://www.linkedin.com/in/andreas-eberhardt-9a58b9128/",
+    "linkedin": "https://www.linkedin.com/in/andreas-eberhardt-2b01a1193/",
     "company_website": "https://www.gruenbeck.com/",
     "company_linkedin": "https://www.linkedin.com/company/gruenbeck-water-treatment-b-v-",
     "location": "Höchstädt, DE",
