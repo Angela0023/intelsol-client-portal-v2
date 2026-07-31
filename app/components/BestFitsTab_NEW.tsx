@@ -187,7 +187,7 @@ const BEST_FITS_DATA = [
     "name": "Erno Ranta",
     "title": "Supply Chain Director",
     "company": "Vaisala",
-    "linkedin": "https://www.linkedin.com/in/erno-ranta-7b70ab8/",
+    "linkedin": "https://www.linkedin.com/in/ernoranta/",
     "company_website": "https://www.vaisala.com/",
     "company_linkedin": "https://www.linkedin.com/company/vaisala",
     "location": "Vantaa, FI",
