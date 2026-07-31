@@ -10,7 +10,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it - manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization - replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it — manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization — replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
