@@ -635,55 +635,55 @@ export default function BestFitsTab() {
   const allLeads = [...perfectFit, ...strongFit, ...goodFit];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 rounded-xl p-8 text-white">
-        <div className="mb-6">
-          <h1 className="text-4xl font-bold mb-3">26 Hand-Picked Leads for Plantryx</h1>
-          <p className="text-lg text-slate-300">
+      <div className="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 rounded-lg p-5 text-white">
+        <div className="mb-4">
+          <h1 className="text-2xl font-bold mb-2">26 Hand-Picked Leads for Plantryx</h1>
+          <p className="text-sm text-slate-300">
             Every lead validated with revenue research. ICP fit scored. All within $100M-$1B revenue band.
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
-                <Award className="w-5 h-5 text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center">
+                <Award className="w-4 h-4 text-white" />
               </div>
               <div>
-                <div className="text-2xl font-bold">{perfectFit.length}</div>
-                <div className="text-sm text-slate-300">Perfect Fit 5/5</div>
+                <div className="text-xl font-bold">{perfectFit.length}</div>
+                <div className="text-xs text-slate-300">Perfect Fit 5/5</div>
               </div>
             </div>
-            <div className="text-xs text-slate-400">Highest confidence, all criteria met</div>
+            <div className="text-xs text-slate-400">Highest confidence</div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-white" />
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                <TrendingUp className="w-4 h-4 text-white" />
               </div>
               <div>
-                <div className="text-2xl font-bold">{strongFit.length}</div>
-                <div className="text-sm text-slate-300">Strong Fit 4/5</div>
+                <div className="text-xl font-bold">{strongFit.length}</div>
+                <div className="text-xs text-slate-300">Strong Fit 4/5</div>
               </div>
             </div>
-            <div className="text-xs text-slate-400">High confidence, minor gaps</div>
+            <div className="text-xs text-slate-400">Minor gaps only</div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-white" />
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center">
+                <Building2 className="w-4 h-4 text-white" />
               </div>
               <div>
-                <div className="text-2xl font-bold">{goodFit.length}</div>
-                <div className="text-sm text-slate-300">Good Fit 3/5</div>
+                <div className="text-xl font-bold">{goodFit.length}</div>
+                <div className="text-xs text-slate-300">Good Fit 3/5</div>
               </div>
             </div>
-            <div className="text-xs text-slate-400">Promising, needs verification</div>
+            <div className="text-xs text-slate-400">Needs verification</div>
           </div>
         </div>
       </div>
@@ -704,126 +704,99 @@ export default function BestFitsTab() {
         };
 
         return (
-          <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-            {/* Header - Dark gradient like reference */}
-            <div className={`bg-gradient-to-r ${getHeaderColor(lead.icp_score)} p-6 text-white`}>
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <div className="text-xs uppercase tracking-wider text-white/80 mb-2 font-semibold">
-                    PREPARED FOR
+          <div key={index} className="bg-white rounded-lg overflow-hidden shadow border border-gray-200">
+            {/* Header - Compact */}
+            <div className={`bg-gradient-to-r ${getHeaderColor(lead.icp_score)} p-3 text-white`}>
+              <div className="flex items-start justify-between">
+                <div className="flex items-start gap-2 flex-1">
+                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
+                    <span className="text-sm font-bold">{lead.name.charAt(0)}</span>
                   </div>
-                  <h2 className="text-3xl font-bold mb-3">{lead.company}</h2>
-
-                  <div className="flex items-start gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl font-bold">{lead.name.charAt(0)}</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-lg">{lead.name}</div>
-                      <div className="text-sm text-white/90">{lead.title}</div>
-                      <div className="text-xs text-white/70 mt-1">
-                        {lead.company} - {lead.location}
-                      </div>
-                    </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="font-bold text-base">{lead.company}</div>
+                    <div className="text-xs text-white/90 truncate">{lead.name} • {lead.title}</div>
+                    <div className="text-xs text-white/70">{lead.location}</div>
                   </div>
                 </div>
 
-                <div className="text-right">
-                  <div className={`inline-block px-4 py-2 rounded-full text-sm font-bold ${
-                    lead.icp_score === '5/5' ? 'bg-green-500' :
-                    lead.icp_score === '4/5' ? 'bg-blue-500' : 'bg-amber-500'
-                  } text-white`}>
-                    {lead.confidence_level} {lead.icp_score}
-                  </div>
-                </div>
-              </div>
-
-              {/* Key Info Pills */}
-              <div className="flex flex-wrap gap-2">
-                <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
-                  <span className="font-semibold">Sector:</span> {lead.vertical || lead.industry || 'Manufacturing'}
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
-                  <span className="font-semibold">Est. revenue:</span> {extractRevenue(lead.revenue)}
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">
-                  <span className="font-semibold">Start-date:</span> Immediate
+                <div className={`px-2 py-1 rounded text-xs font-bold whitespace-nowrap ${
+                  lead.icp_score === '5/5' ? 'bg-green-500' :
+                  lead.icp_score === '4/5' ? 'bg-blue-500' : 'bg-amber-500'
+                } text-white`}>
+                  {lead.icp_score}
                 </div>
               </div>
             </div>
 
-            {/* Main Content - White section like reference */}
-            <div className="p-6 bg-white">
-              {/* Big Revenue Display */}
-              <div className="mb-4">
-                <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">
-                  ANNUAL REVENUE
-                </div>
-                <div className="text-5xl font-bold text-gray-900 mb-3">
-                  {extractRevenue(lead.revenue)}
-                </div>
-
-                <div className="bg-gradient-to-r from-red-50 to-pink-50 border-l-4 border-red-500 p-3 rounded-r-lg mb-4">
-                  <p className="text-sm text-gray-800 font-medium leading-snug">
-                    {lead.why_fit}
-                  </p>
+            {/* Main Content - Compact grid layout */}
+            <div className="p-3 bg-white">
+              {/* Compact info grid */}
+              <div className="grid grid-cols-2 gap-3 mb-3">
+                {/* Left: Revenue */}
+                <div>
+                  <div className="text-xs text-gray-500 mb-1">REVENUE</div>
+                  <div className="text-2xl font-bold text-gray-900">{extractRevenue(lead.revenue)}</div>
+                  <div className="text-xs text-gray-500 mt-0.5">{lead.revenue_source}</div>
                 </div>
 
-                {/* Quick Stats Grid */}
-                <div className="grid grid-cols-4 gap-3 mb-4">
+                {/* Right: Key stats */}
+                <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
-                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Location</div>
-                    <div className="text-sm font-bold text-gray-900">{lead.location}</div>
+                    <div className="text-gray-500">Employees</div>
+                    <div className="font-semibold text-gray-900">{lead.employees}</div>
                   </div>
                   <div>
-                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Employees</div>
-                    <div className="text-sm font-bold text-gray-900">{lead.employees}</div>
+                    <div className="text-gray-500">Persona</div>
+                    <div className="font-semibold text-gray-900">{lead.persona_tier || 'Tier 1'}</div>
                   </div>
-                  <div>
-                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Persona</div>
-                    <div className="text-sm font-bold text-gray-900">{lead.persona_tier || 'Tier 1'}</div>
-                  </div>
-                  <div>
-                    <div className="text-xs uppercase tracking-wider text-gray-500 mb-1 font-semibold">Revenue Source</div>
-                    <div className="text-xs text-gray-600">{lead.revenue_source}</div>
+                  <div className="col-span-2">
+                    <div className="text-gray-500">Vertical</div>
+                    <div className="font-semibold text-gray-900">{lead.vertical || lead.industry || 'Manufacturing'}</div>
                   </div>
                 </div>
               </div>
 
-              {/* More Details section */}
+              {/* Why fit - compact */}
+              <div className="bg-gradient-to-r from-red-50 to-pink-50 border-l-2 border-red-500 p-2 rounded-r mb-3">
+                <p className="text-xs text-gray-800 leading-snug">
+                  {lead.why_fit}
+                </p>
+              </div>
+
+              {/* More Details section - ultra compact */}
               {lead.key_strengths && lead.key_strengths.length > 0 && (
-                <div className="mb-4">
+                <div className="mb-2">
                   <button
                     onClick={() => toggleLead(index)}
                     className="w-full text-left"
                   >
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white p-3 rounded-lg flex items-center justify-between hover:from-gray-600 hover:to-gray-700 transition-all cursor-pointer">
-                      <h3 className="text-base font-semibold">More Details - Why This Lead</h3>
+                    <div className="bg-gray-700 text-white p-2 rounded flex items-center justify-between hover:bg-gray-600 transition-all cursor-pointer">
+                      <h3 className="text-xs font-semibold">Why This Lead</h3>
                       {isExpanded ? (
-                        <ChevronUp className="w-5 h-5" />
+                        <ChevronUp className="w-4 h-4" />
                       ) : (
-                        <ChevronDown className="w-5 h-5" />
+                        <ChevronDown className="w-4 h-4" />
                       )}
                     </div>
                   </button>
 
                   {isExpanded && (
-                    <div className="mt-2 space-y-1.5 bg-gray-50 p-3 rounded-lg">
+                    <div className="mt-1 space-y-1 bg-gray-50 p-2 rounded text-xs">
                       {lead.key_strengths.map((strength, idx) => (
-                        <div key={idx} className="flex gap-2 items-start">
-                          <div className="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <svg className="w-2.5 h-2.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div key={idx} className="flex gap-1.5 items-start">
+                          <div className="w-3 h-3 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg className="w-2 h-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                             </svg>
                           </div>
-                          <p className="text-xs text-gray-700 leading-snug flex-1">{strength}</p>
+                          <p className="text-gray-700 leading-tight flex-1">{strength}</p>
                         </div>
                       ))}
 
                       {lead.concerns && lead.concerns !== 'None' && (
-                        <div className="mt-2 bg-amber-50 border-l-4 border-amber-500 p-2 rounded-r">
-                          <div className="font-semibold text-amber-900 text-xs mb-0.5">Concerns / Gaps:</div>
-                          <p className="text-xs text-amber-800">{lead.concerns}</p>
+                        <div className="mt-1 bg-amber-50 border-l-2 border-amber-500 p-1.5 rounded-r">
+                          <div className="font-semibold text-amber-900 mb-0.5">Concerns:</div>
+                          <p className="text-amber-800">{lead.concerns}</p>
                         </div>
                       )}
                     </div>
@@ -831,8 +804,8 @@ export default function BestFitsTab() {
                 </div>
               )}
 
-              {/* Links */}
-              <div className="flex flex-wrap gap-3 pt-3 border-t border-gray-200">
+              {/* Links - compact */}
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-200 text-xs">
                 <a
                   href={lead.linkedin}
                   target="_blank"
