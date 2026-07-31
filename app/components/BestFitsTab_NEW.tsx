@@ -510,7 +510,7 @@ const BEST_FITS_DATA = [
     "name": "Alina Nikodem",
     "title": "Supply Chain Director",
     "company": "Schaltbau GmbH",
-    "linkedin": "https://www.linkedin.com/in/alina-nikodem-038a71188/",
+    "linkedin": "https://www.linkedin.com/in/alina-nikodem-3046611/",
     "company_website": "https://schaltbaugroup.com/",
     "company_linkedin": "https://www.linkedin.com/company/schaltbau-gmbh",
     "location": "München, DE",
