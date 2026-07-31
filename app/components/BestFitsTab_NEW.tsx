@@ -80,7 +80,13 @@ const BEST_FITS_DATA = [
     "industry": "['Mechanical Or Industrial Engineering']",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Other",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $530M USD within target band, verified from company press release FY2025",
+      "Discrete manufacturer: Agricultural machinery (tillage, seeding equipment) with four production sites across Sweden, Canada, USA",
+      "Geography: Sweden (Priority 1 Nordic market)",
+      "Complex supply chain: Multi-site manufacturing selling to 40+ countries, high-value capital equipment requiring sophisticated production planning",
+      "Gap: Vertical is agricultural machinery, not exact match to priority verticals but adjacent to Automation & Industrial Machinery"
+    ],
     "why_fit": "Swedish agricultural machinery manufacturer (tillage and seeding equipment) with SEK 5.9 billion revenue (€520M) and 2,000+ employees. Four production sites (Sweden, Canada, USA) selling to 40+ countries. High-value capital equipment ($100K-$500K per machine) requiring multi-site production planning and global supply chain coordination.",
     "concerns": "None"
   },
@@ -101,7 +107,13 @@ const BEST_FITS_DATA = [
     "industry": "['Industrial Automation']",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $370.6M (ZoomInfo estimate), within target $100M-$1B band",
+      "Discrete manufacturer: 10 manufacturing sites across Europe, USA, Canada, Asia producing conveyor belts for automotive, food, logistics",
+      "Geography: Netherlands (Priority 1 market)",
+      "Global scale: 3,000+ employees serving 150 countries with complex multi-site supply chain",
+      "Gap: Persona is Tier 2 (Materials Manager) not Tier 1 director level"
+    ],
     "why_fit": "Dutch conveyor belt manufacturer with 3,000+ employees and 10 manufacturing sites across Europe, USA, Canada, and Asia. Global leader in process and conveyor belts for automotive, food processing, and logistics. Serves 150 countries with complex supply chain requiring advanced S&OP for synthetic belts, modular belts, and engineered timing belts.",
     "concerns": "None"
   },
@@ -122,7 +134,13 @@ const BEST_FITS_DATA = [
     "industry": "['Mechanical Or Industrial Engineering']",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €483M (company report 2024, 5% growth), within target band",
+      "Discrete manufacturer: Complete production lines for glass and building materials, 90% of world's plate glass uses Grenzebach systems",
+      "Geography: Germany (Priority 2 market)",
+      "Global manufacturing: Sites in Germany, Romania, USA, Greece, India, China with high-ticket capital projects ($5M-$50M+)",
+      "Strong buying signal: North American Supply Chain Director recently hired, expansion phase"
+    ],
     "why_fit": "German industrial automation manufacturer with 1,600 employees producing complete production lines for glass and building materials. 90% of world's plate glass produced on Grenzebach systems. Manufacturing sites in Germany, Romania, USA, Greece, India, China. High-ticket capital projects ($5M-$50M+) requiring sophisticated project-based supply chain and materials planning.",
     "concerns": "None"
   },
@@ -200,7 +218,13 @@ const BEST_FITS_DATA = [
     "industry": "Electrical & Electronic Manufacturing",
     "vertical": "Electrical Equipment / Grid / Power",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €596.9M in 2025 (up from €565M in 2024), strong growth trajectory within target band",
+      "Electronics manufacturer: Environmental and industrial measurement instruments with complex manufacturing processes",
+      "Geography: Finland (Priority 1 Nordic market)",
+      "Vertical match: Electrical & Electronic Manufacturing aligns with priority vertical Electrical Equipment/Grid/Power",
+      "Tier 1 persona: Supply Chain Director, ideal decision-maker level"
+    ],
     "why_fit": "Finnish manufacturer of environmental and industrial measurement products. €596.9M revenue in 2025, up from €565M in 2024. Headquartered in Vantaa. Produces instruments and intelligence for climate and industrial measurement. Complex electronics manufacturing requiring sophisticated demand planning.",
     "concerns": "None"
   },
@@ -221,7 +245,13 @@ const BEST_FITS_DATA = [
     "industry": "Mechanical Or Industrial Engineering",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €316M in 2024, within target band",
+      "Manufacturer: Indoor environment solutions with production and R&D facilities across multiple countries",
+      "Geography: Finland (Priority 1 Nordic market)",
+      "Tier 1 persona: Supply Chain Director, ideal level for S&OP decisions",
+      "Complex supply chain: 2,000 employees in 35+ countries requiring advanced planning"
+    ],
     "why_fit": "Finnish indoor environment solutions manufacturer. €316M turnover in 2024, 2,000 employees in 35+ countries. Founded 1969, family-owned, production and R&D facilities across multiple countries. Supplies ventilation, air quality, and kitchen solutions requiring complex supply chain management.",
     "concerns": "None"
   },
@@ -242,7 +272,13 @@ const BEST_FITS_DATA = [
     "industry": "Industrial Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $115M, at lower end of target band but within range",
+      "Manufacturer: Compressed air quality components and systems, independent family-owned",
+      "Geography: Germany (Priority 2 market)",
+      "Strong European presence requiring advanced materials management",
+      "Gap: Tier 2 persona (Bereichsleiter Materialwirtschaft), not director level"
+    ],
     "why_fit": "German manufacturer of compressed air quality components and systems. $127.8M revenue, 501-1000 employees. Independent family-owned company developing, manufacturing, selling systems for optimised compressed air quality. Strong European market presence requiring advanced materials management.",
     "concerns": "None"
   },
@@ -263,7 +299,13 @@ const BEST_FITS_DATA = [
     "industry": "Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $940.7M (ZoomInfo estimate), high end of target band",
+      "Manufacturer: Precision chain systems for automotive and industrial applications with complex manufacturing",
+      "Geography: Germany (Priority 2 market)",
+      "Tier 1 persona: Supply Chain Director, ideal decision-maker",
+      "Two divisions (motorsysteme for automotive, antriebssysteme for industrial) requiring sophisticated S&OP"
+    ],
     "why_fit": "German leading supplier of precision chain systems for power transmission and product conveying. $940.7M revenue, 1,000-5,000 employees. Headquarters in Munich. Two divisions: motorsysteme (automotive engine timing drives) and antriebssysteme (industrial precision roller/conveyor chains). Complex manufacturing requiring sophisticated S&OP.",
     "concerns": "None"
   },
@@ -284,7 +326,13 @@ const BEST_FITS_DATA = [
     "industry": "['Mechanical Or Industrial Engineering']",
     "vertical": "Fabricated Metals / Precision Machining",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €500M+ in 2024, solidly within target band",
+      "Manufacturer: Foundry technology with 5 global brands and 15,000+ active customers in 100 countries",
+      "Geography: Denmark (Priority 1 market)",
+      "Complex multi-site manufacturing across foundry equipment, surface preparation, sand systems",
+      "Gap: 3/5 score due to vertical (Fabricated Metals) being adjacent but not exact match to priorities"
+    ],
     "why_fit": "Danish foundry technology leader with 1,000-5,000 employees serving automotive and aerospace industries. Operates five global brands (DISA, StrikoWestofen, Wheelabrator, Simpson, Monitizer) with 15,000+ active customers in 100 countries. Complex multi-site manufacturing requiring advanced S&OP, IBP, and production planning across foundry equipment, surface preparation, and sand preparation systems.",
     "concerns": "None"
   },
@@ -305,7 +353,13 @@ const BEST_FITS_DATA = [
     "industry": "['Mechanical Or Industrial Engineering']",
     "vertical": "Fabricated Metals / Precision Machining",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €500M+ in 2024, solidly within target band",
+      "Manufacturer: Foundry technology with 5 global brands and 15,000+ active customers in 100 countries",
+      "Geography: Denmark (Priority 1 market)",
+      "Complex multi-site manufacturing across foundry equipment, surface preparation, sand systems",
+      "Gap: 3/5 score due to vertical (Fabricated Metals) being adjacent but not exact match to priorities"
+    ],
     "why_fit": "Danish foundry technology leader with 1,000-5,000 employees serving automotive and aerospace industries. Operates five global brands (DISA, StrikoWestofen, Wheelabrator, Simpson, Monitizer) with 15,000+ active customers in 100 countries. Complex multi-site manufacturing requiring advanced S&OP, IBP, and production planning across foundry equipment, surface preparation, and sand preparation systems.",
     "concerns": "None"
   },
@@ -355,7 +409,13 @@ const BEST_FITS_DATA = [
     "industry": "Automation Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $293M (Teradyne parent 2024), within target band",
+      "Manufacturer: Collaborative robots (cobots) with 100,000+ units sold to NVIDIA, Siemens, Ford",
+      "Geography: Denmark (Priority 1 market)",
+      "Complex manufacturing with global supply chain for industrial automation",
+      "Gap: Tier 2 persona (Senior Supply Chain Manager) not director level, and 3/5 score"
+    ],
     "why_fit": "Danish leader in collaborative robotic arms (cobots), part of Teradyne Robotics. $293M revenue in 2024. Sold 100,000+ cobots worldwide to NVIDIA, Siemens, L'Oréal, Ford, Stellantis. Industrial-grade automation solutions across electronics, metal fabrication, logistics. Complex manufacturing with global supply chain.",
     "concerns": "None"
   },
@@ -376,7 +436,13 @@ const BEST_FITS_DATA = [
     "industry": "Mechanical Or Industrial Engineering",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $122.2M (ZoomInfo), within target band",
+      "Manufacturer: Energy efficient valve technologies across 4 continents",
+      "Geography: Denmark (Priority 1 market)",
+      "Tier 1 persona: Supply Chain Director",
+      "Gap: 3/5 score, smaller scale and part of larger Aalberts N.V. group"
+    ],
     "why_fit": "Danish global leader in energy efficient valve technologies for water, air, and gas control. $122M revenue, 258 employees across 4 continents. Founded 75+ years ago, acquired by Aalberts N.V. in 1993. Serves building installations, district energy, natural gas, marine & power sectors. Complex manufacturing requiring production planning.",
     "concerns": "None"
   },
@@ -397,7 +463,13 @@ const BEST_FITS_DATA = [
     "industry": "Measuring and Control Instrument Manufacturing",
     "vertical": "Semiconductor / High-Tech Adjacent",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €347M in 2024, 99% from exports, within target band",
+      "Manufacturer: Analytical solutions using flow cytometry, FTIR, NIR, X-ray technologies",
+      "Geography: Denmark (Priority 1 market)",
+      "Tier 1 persona: Director level covering Supply Chain, Production Development & Support",
+      "High-tech manufacturing (1,700+ employees worldwide) requiring advanced S&OP, 125+ years in business"
+    ],
     "why_fit": "Danish provider of analytical solutions for agricultural and food industries. €347M revenue in 2024, 1,700+ employees worldwide, 99% revenue from exports. Founded 1956. Technologies include flow cytometry, FTIR, NIR, X-ray analysis. Complex high-tech manufacturing requiring advanced S&OP.",
     "concerns": "None"
   },
@@ -418,7 +490,13 @@ const BEST_FITS_DATA = [
     "industry": "Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $590M USD (DKK 4.1B, 2024), within target band",
+      "Manufacturer: Electric linear actuators with production in Denmark, Slovakia, China, Thailand, USA",
+      "Geography: Denmark (Priority 1 market)",
+      "Global scale: Subsidiaries in 35+ countries, complex multi-site production planning",
+      "Gap: Tier 2 persona (Corporate senior manager) not director level, contributing to 3/5 score"
+    ],
     "why_fit": "Danish manufacturer of electric linear actuators. KR 4.1B revenue (2024), 2,500+ employees. Production facilities in Denmark, Slovakia, China, Thailand, USA. Subsidiaries in 35+ countries. Designs and manufactures actuator systems for movement requiring complex production planning.",
     "concerns": "None"
   },
@@ -439,7 +517,13 @@ const BEST_FITS_DATA = [
     "industry": "Battery Manufacturing",
     "vertical": "Electrical Equipment / Grid / Power",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $624.6M (RocketReach 2026), within target band",
+      "Manufacturer: Battery systems for power tools, e-bikes, electric buses with R&D capabilities",
+      "Geography: Poland (Priority 2 market)",
+      "Tier 1 persona: Supply Chain Director with PhD and CPIM certification (high qualification)",
+      "Gap: 3/5 score due to battery manufacturing being adjacent to but not exact match for priority verticals"
+    ],
     "why_fit": "Polish battery manufacturer in Gliwice. $624.6M revenue, 800+ employees. Supplies batteries for power tools, garden tools, electric buses, bicycles, scooters, medical applications. Strategic partner with Daimler Buses for next-gen electric bus batteries. Complex electronics manufacturing with R&D department.",
     "concerns": "None"
   },
@@ -460,7 +544,13 @@ const BEST_FITS_DATA = [
     "industry": "Semiconductor and Electronic Component Manufacturing",
     "vertical": "Electrical Equipment / Grid / Power",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $380M USD (PLN 1.49B, 2025), within target band",
+      "Manufacturer: EMS provider, largest in Poland with 40 years experience in semiconductor and electronic components",
+      "Geography: Poland (Priority 2 market)",
+      "Tier 1 persona: Supply Chain Director",
+      "Gap: 3/5 score, EMS (contract manufacturing) model differs from discrete manufacturer ICP"
+    ],
     "why_fit": "Polish EMS provider with 40 years experience. $337.5M revenue (2024), 1,001-5,000 employees. Largest Polish EMS providing end-to-end services worldwide. Semiconductor and electronic component manufacturing requiring sophisticated supply chain planning.",
     "concerns": "None"
   },
@@ -481,7 +571,13 @@ const BEST_FITS_DATA = [
     "industry": "Industrial Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue: Not publicly available (private company owned by Guldager NV), estimated €120M annual turnover",
+      "Manufacturer: Water treatment systems, independent medium-sized company with 70+ years experience",
+      "Geography: Germany, Bavaria (Priority 2 market)",
+      "Tier 1 persona: Supply Chain Director and Member of Executive Board (high influence)",
+      "Gap: 3/5 score primarily due to lack of public revenue verification and smaller scale"
+    ],
     "why_fit": "German water treatment manufacturer. €120M annual turnover, independent medium-sized company. Headquarters in Bavaria (Höchstädt), 70+ years experience in water treatment sector. Changed legal form to AG in 2024. Manufacturing water treatment systems requiring production planning.",
     "concerns": "None"
   },
@@ -502,7 +598,13 @@ const BEST_FITS_DATA = [
     "industry": "Industrial Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €311M in 2025, within target band",
+      "Manufacturer: Materials testing equipment with 85%+ in-house production depth, 1,800 employees across 50+ countries",
+      "Geography: Germany, Ulm (Priority 2 market)",
+      "Tier 1 persona: Director of Materials Management and Supply Chain Excellence",
+      "Production facilities in Germany, UK, China, Czech Republic, Austria with 125+ years in business"
+    ],
     "why_fit": "German materials testing manufacturer. €311M revenue (2025), 1,800 employees across 50+ countries. Headquarters in Ulm with 85%+ in-house production depth. Medium-sized family business with production facilities in Germany, UK, China, Czech Republic, Austria. Complex manufacturing requiring materials management excellence.",
     "concerns": "None"
   },
@@ -523,7 +625,13 @@ const BEST_FITS_DATA = [
     "industry": "Rail Transportation Equipment Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $513M (Dec 2024 TTM), within target band",
+      "Manufacturer: Rail technology and industrial components with six sites worldwide",
+      "Geography: Germany, Munich (Priority 2 market)",
+      "Tier 1 persona: Supply Chain Director",
+      "Gap: 3/5 score due to vertical (Rail Transportation Equipment) being adjacent to priority verticals"
+    ],
     "why_fit": "German rail technology and industrial components manufacturer. $513M revenue (Dec 2024 TTM). Founded 1929, six sites worldwide, 60+ sales partners. Supplies door systems, boarding systems, interior fittings for buses, trains, commercial vehicles. Mobile and stationary transportation technology requiring complex supply chain.",
     "concerns": "None"
   },
@@ -544,7 +652,13 @@ const BEST_FITS_DATA = [
     "industry": "Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $700M (segment of Bucher Industries), within target band",
+      "Manufacturer: Hydraulic components and electrohydraulic systems worldwide",
+      "Geography: Germany main operations (Klettgau-Griessen), parent Swiss",
+      "Global reach: Serves mobile machinery and industrial applications worldwide",
+      "Gap: Tier 2 persona (Materials Manager) and 3/5 score due to being division of larger Swiss parent"
+    ],
     "why_fit": "Hydraulic division of Swiss Bucher Industries, main operations in Klettgau-Griessen, Germany. $702.9M revenue, worldwide provider of hydraulic components and electrohydraulic systems. Serves mobile machinery and industrial applications. Complex manufacturing requiring advanced materials management.",
     "concerns": "None"
   },
@@ -565,7 +679,13 @@ const BEST_FITS_DATA = [
     "industry": "Industrial Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 2",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue €255M (2023/2024), within target band",
+      "Manufacturer: Machinery for powder/particle processing and blown film extrusion, 840 employees",
+      "Geography: Germany, Augsburg (Priority 2 market)",
+      "80% export revenue, 125+ years in business, subsidiary of Hosokawa Micron Corporation since 1987",
+      "Gap: Tier 2 persona (Head of Engineering) not supply chain director level, contributing to 3/5 score"
+    ],
     "why_fit": "German manufacturer of machinery/systems for powder/particle processing and blown film extrusion. €255M revenue, 840 employees, 125+ years in business. Headquartered in Augsburg, subsidiary of Hosokawa Micron Corporation since 1987. 80% export revenue. Serves chemicals, pharmaceuticals, food, minerals, metals.",
     "concerns": "None"
   },
@@ -586,7 +706,13 @@ const BEST_FITS_DATA = [
     "industry": "Industrial Machinery Manufacturing",
     "vertical": "Automation & Industrial Machinery",
     "persona_tier": "Tier 1",
-    "key_strengths": [],
+    "key_strengths": [
+      "Revenue $140.1M (RocketReach 2026), within target band",
+      "Manufacturer: World-leading BOPP film extrusion lines, part of family-owned Brückner Group",
+      "Geography: Germany, Bavaria (Priority 2 market)",
+      "Tier 1 persona: Director Supply Chain & Production",
+      "Gap: 3/5 score due to smaller scale ($140M) and niche vertical (plastic film production equipment)"
+    ],
     "why_fit": "German world-leading supplier of lines for oriented plastic film production. $140.1M revenue, 355 employees. Part of family-owned Brückner Group based in Siegsdorf, Bavaria. Major manufacturer of BOPP film extrusion lines serving global plastics industry. Complex capital equipment requiring sophisticated production planning.",
     "concerns": "None"
   }
