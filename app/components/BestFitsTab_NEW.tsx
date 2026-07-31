@@ -573,7 +573,7 @@ const BEST_FITS_DATA = [
     "name": "Hubert Wörgötter",
     "title": "Director Supply Chain & Production",
     "company": "Brückner Maschinenbau",
-    "linkedin": "https://www.linkedin.com/in/hubert-w%C3%B6rg%C3%B6tter-07a25913/",
+    "linkedin": "https://www.linkedin.com/in/hubert-wörgötter-a27877125/",
     "company_website": "https://www.brueckner.com/",
     "company_linkedin": "https://www.linkedin.com/company/brueckner-maschinenbau",
     "location": "Siegsdorf, DE",
