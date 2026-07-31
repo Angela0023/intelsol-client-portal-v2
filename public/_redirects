@@ -10,6 +10,3 @@
 /peoplefocus/* /peoplefocus 200
 /plantryx/* /plantryx 200
 /admin/* /admin 200
-
-# Fallback for any other routes
-/* /index.html 200
