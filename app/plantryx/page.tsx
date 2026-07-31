@@ -431,261 +431,370 @@ function ICPTab() {
 }
 
 function BestFitsTab() {
-  // Best fits data from analysis
+  // Top 20 validated perfect-fit leads from validated JSON data
   const bestFits = [
     {
       rank: 1,
-      name: "Michael Stortelers",
-      job_title: "Supply Chain Director global Amazon account",
-      company_name: "Philips Domestic Appliances (Versuni)",
-      employee_count: "10,001+",
-      location: "Amsterdam, NL",
-      country: "NL",
+      score: 10.0,
+      lead_name: "Tony Grondin",
+      job_title: "Director of Supply Chain - North America",
+      company_name: "Frontmatec",
+      lead_linkedin: "https://www.linkedin.com/in/tony-grondin-08007435/",
+      company_website: "https://www.frontmatec.com/",
+      company_linkedin: "https://www.linkedin.com/company/frontmatec-a-s",
+      location: "Kolding, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
       persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Netherlands-based electrical & industrial automation manufacturer with Supply Chain Director role. Perfect Tier 1 corporate planning persona in priority geography and vertical."
+      why_perfect_fit: "Danish manufacturer specializing in automated solutions for food processing (meat, poultry, seafood slaughter and processing lines). Serves hygiene-sensitive industries with high-ticket capital equipment ($500K+ systems). Uses complex ERP systems for production control and supply chain management of global installations. Perfect fit for production planning and materials management optimization."
     },
     {
       rank: 2,
-      name: "Tony Grondin",
-      job_title: "Director of Supply Chain - North America",
-      company_name: "Frontmatec",
-      employee_count: "1,001-5,000",
-      location: "Kolding, DK",
-      country: "DK",
+      score: 10.0,
+      lead_name: "Mark Journell",
+      job_title: "Global Director of Supply Chain-Data Center Technologies",
+      company_name: "Munters",
+      lead_linkedin: "https://www.linkedin.com/in/mark-journell-a79789142/",
+      company_website: "https://www.munters.com/",
+      company_linkedin: "https://www.linkedin.com/company/munters",
+      location: "Stockholm, SE",
+      country_code: "SE",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
       persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer (1,001-5,000 employees) with Director of Supply Chain role. Tier 1 target in priority geography."
+      why_perfect_fit: "Swedish manufacturer of industrial dehumidification and climate control systems serving automotive, pharmaceuticals, and electronics industries. Revenue >€600M with 1,000+ employees. Complex manufacturing with desiccant technology, evaporative cooling, and energy-efficient air treatment systems requiring sophisticated S&OP and demand planning."
     },
     {
       rank: 3,
-      name: "Mark Journell",
-      job_title: "Global Director of Supply Chain-Data Center Technologies",
-      company_name: "Munters",
-      employee_count: "1,001-5,000",
-      location: "Stockholm, SE",
-      country: "SE",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Sweden-based mechanical/industrial engineering manufacturer focused on data center technologies. Perfect electrical equipment vertical fit with Tier 1 persona."
+      score: 8.5,
+      lead_name: "Thomas Wiesgickl",
+      job_title: "Director Supply Chain",
+      company_name: "Väderstad AB",
+      lead_linkedin: "https://www.linkedin.com/in/thomas-wiesgickl-06142614/",
+      company_website: "https://www.vaderstad.com/",
+      company_linkedin: "https://www.linkedin.com/company/vaderstad-ab",
+      location: "Väderstad, SE",
+      country_code: "SE",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Swedish agricultural machinery manufacturer (tillage and seeding equipment) with SEK 5.9 billion revenue (€520M) and 2,000+ employees. Four production sites (Sweden, Canada, USA) selling to 40+ countries. High-value capital equipment ($100K-$500K per machine) requiring multi-site production planning and global supply chain coordination."
     },
     {
       rank: 4,
-      name: "Tommi Väänänen",
-      job_title: "Director, Supply Chain",
-      company_name: "Ponsse Oyj",
-      employee_count: "1,001-5,000",
-      location: "Vieremä, FI",
-      country: "FI",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Finland-based machinery manufacturer (1,001-5,000 employees) with Director, Supply Chain role. Tier 1 persona in Nordic priority geography."
+      score: 8.5,
+      lead_name: "Paul Marshall MCIPS MITOL",
+      job_title: "Director Supply Chain Excellence Transformation",
+      company_name: "Hiab",
+      lead_linkedin: "https://www.linkedin.com/in/paul-marshall-mcips-mitol-602a2213/",
+      company_website: "https://www.hiab.com/",
+      company_linkedin: "https://www.linkedin.com/company/hiab",
+      location: "Helsinki, FI",
+      country_code: "FI",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Finnish manufacturer of loader cranes, truck-mounted forklifts, and forestry equipment. Part of Hiab Corporation with headquarters in Helsinki. Manufactures hydraulic truck-mounted cranes and complex on-road load handling equipment requiring extensive production control and supply chain excellence for global distribution."
     },
     {
       rank: 5,
-      name: "sudhir gupta",
-      job_title: "Production and Supply Chain Director",
-      company_name: "Normet Group",
-      employee_count: "1,001-5,000",
-      location: "Espoo, FI",
-      country: "FI",
+      score: 10.0,
+      lead_name: "Jerome Beysolow",
+      job_title: "Director of Supply chain",
+      company_name: "Norican Group",
+      lead_linkedin: "https://www.linkedin.com/in/jerome-beysolow-13b8757/",
+      company_website: "https://www.norican.com/",
+      company_linkedin: "https://www.linkedin.com/company/norican-group",
+      location: "Taastrup, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Fabricated Metals / Precision Machining",
       persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Finland-based machinery manufacturer with dual Production and Supply Chain Director role. Excellent Tier 1 fit with both planning and operations responsibility."
+      why_perfect_fit: "Danish foundry technology leader with 1,000-5,000 employees serving automotive and aerospace industries. Operates five global brands (DISA, StrikoWestofen, Wheelabrator, Simpson, Monitizer) with 15,000+ active customers in 100 countries. Complex multi-site manufacturing requiring advanced S&OP, IBP, and production planning across foundry equipment, surface preparation, and sand preparation systems."
     },
     {
       rank: 6,
-      name: "Christian Evers",
-      job_title: "Director of Group Supply Chain",
-      company_name: "HydraSpecma",
-      employee_count: "1,001-5,000",
-      location: "Skjern, DK",
-      country: "DK",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer with Group-level Supply Chain Director role. Enterprise-scale Tier 1 persona."
+      score: 8.5,
+      lead_name: "Mika Juntunen",
+      job_title: "Strategy Director Supply Chain Electrification & System Drives at Danfoss",
+      company_name: "Danfoss Drives",
+      lead_linkedin: "https://www.linkedin.com/in/mika-juntunen-ba87353/",
+      company_website: "https://www.danfoss.com/en/about-danfoss/our-businesses/drives/",
+      company_linkedin: "https://www.linkedin.com/company/danfossdrives",
+      location: "Gråsten, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Electrical & Electronic Manufacturing",
+      vertical: "Electrical Equipment / Grid / Power",
+      persona_tier: "Other",
+      why_perfect_fit: "Danish manufacturer of variable frequency drives (VFDs) and AC drives founded 1968 in Gråsten. Global leader in power conversion and motor control technology serving industrial automation, HVAC, and manufacturing sectors. Complex electronics manufacturing with global supply chains requiring sophisticated demand planning and S&OP for hundreds of SKUs."
     },
     {
       rank: 7,
-      name: "Grzegorz Sroka, MBA",
-      job_title: "Supply Chain Director",
-      company_name: "BROEN Valve Technologies",
-      employee_count: "501-1,000",
-      location: "Assens, DK",
-      country: "DK",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer (501-1,000 employees). Mid-market sweet spot with Tier 1 Supply Chain Director."
+      score: 9.5,
+      lead_name: "Gabriela López",
+      job_title: "Materials Manager",
+      company_name: "Nilfisk",
+      lead_linkedin: "https://www.linkedin.com/in/gabriela-lópez-38011b9/",
+      company_website: "https://www.nilfisk.com/",
+      company_linkedin: "https://www.linkedin.com/company/nilfisk",
+      location: "Copenhagen Ø, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Machinery",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Tier 2",
+      why_perfect_fit: "Danish industrial cleaning equipment manufacturer founded 1906 with €1.03 billion revenue (2024) and 4,800 employees. Eight global manufacturing sites (US, Mexico, Hungary, Italy, China) producing industrial vacuum systems and high-pressure washers. Sells to 100+ countries requiring multi-site production planning and complex global supply chain management."
     },
     {
       rank: 8,
-      name: "Kenneth Berwald Pedersen",
-      job_title: "Director, Supply Chain",
-      company_name: "Semco Maritime",
-      employee_count: "1,001-5,000",
-      location: "Nørresundby, DK",
-      country: "DK",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer serving maritime sector. Tier 1 persona with strong industrial automation vertical fit."
+      score: 9.5,
+      lead_name: "John Modlin, MBA",
+      job_title: "Materials Manager - North America",
+      company_name: "Norican Group",
+      lead_linkedin: "https://www.linkedin.com/in/john-modlin/",
+      company_website: "https://www.norican.com/",
+      company_linkedin: "https://www.linkedin.com/company/norican-group",
+      location: "Taastrup, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Fabricated Metals / Precision Machining",
+      persona_tier: "Tier 2",
+      why_perfect_fit: "Danish foundry technology leader with 1,000-5,000 employees serving automotive and aerospace industries. Operates five global brands (DISA, StrikoWestofen, Wheelabrator, Simpson, Monitizer) with 15,000+ active customers in 100 countries. Complex multi-site manufacturing requiring advanced S&OP, IBP, and production planning across foundry equipment, surface preparation, and sand preparation systems."
     },
     {
       rank: 9,
-      name: "Mirja Koivuoja",
-      job_title: "Supply Chain Director",
-      company_name: "Scanfil plc",
-      employee_count: "1,001-5,000",
-      location: "Sievi, FI",
-      country: "FI",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Finland-based electrical & electronic manufacturing company. Perfect fit for electrical equipment vertical with Tier 1 Supply Chain Director."
+      score: 9.5,
+      lead_name: "Jules Flavis Kadage",
+      job_title: "Materials Manager",
+      company_name: "Ammeraal Beltech",
+      lead_linkedin: "https://www.linkedin.com/in/jules-flavis-kadage-518b0759/",
+      company_website: "https://www.ammeraalbeltech.com/",
+      company_linkedin: "https://www.linkedin.com/company/ammeraalbeltech",
+      location: "Heerhugowaard, NL",
+      country_code: "NL",
+      employee_count: "1001-5000",
+      industry: "Industrial Automation",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Tier 2",
+      why_perfect_fit: "Dutch conveyor belt manufacturer with 3,000+ employees and 10 manufacturing sites across Europe, USA, Canada, and Asia. Global leader in process and conveyor belts for automotive, food processing, and logistics. Serves 150 countries with complex supply chain requiring advanced S&OP for synthetic belts, modular belts, and engineered timing belts."
     },
     {
       rank: 10,
-      name: "Rene Hooijsma",
-      job_title: "Alfen Group Supply Chain director",
-      company_name: "Alfen",
-      employee_count: "501-1,000",
-      location: "Almere, NL",
-      country: "NL",
+      score: 10.0,
+      lead_name: "Maximilian Pischel",
+      job_title: "North American Director of Supply Chain",
+      company_name: "Grenzebach Group",
+      lead_linkedin: "https://www.linkedin.com/in/maximilian-pischel-7909b3173/",
+      company_website: "https://www.grenzebach.com/",
+      company_linkedin: "https://www.linkedin.com/company/grenzebach-group",
+      location: "Asbach-Bäumenheim, Hamlar, DE",
+      country_code: "DE",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
       persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Netherlands-based electrical & electronic manufacturing (grid/power equipment). Priority #1 vertical with Tier 1 Group Supply Chain Director."
+      why_perfect_fit: "German industrial automation manufacturer with 1,600 employees producing complete production lines for glass and building materials. 90% of world's plate glass produced on Grenzebach systems. Manufacturing sites in Germany, Romania, USA, Greece, India, China. High-ticket capital projects ($5M-$50M+) requiring sophisticated project-based supply chain and materials planning."
     },
     {
       rank: 11,
-      name: "Musa Kilic",
-      job_title: "Director, Supply Chain",
-      company_name: "Hamamatsu Photonics A/S",
+      score: 10.0,
+      lead_name: "HF Bredesen",
+      job_title: "Director of Supply Chain",
+      company_name: "CTEK",
+      lead_linkedin: "https://www.linkedin.com/in/hfbredesen/",
+      company_website: "https://ctek.com/",
+      company_linkedin: "https://www.linkedin.com/company/ctek-sweden-ab",
+      location: "Falun, SE",
+      country_code: "SE",
       employee_count: "201-500",
-      location: "Birkerød, DK",
-      country: "DK",
+      industry: "Automotive, Electrical & Electronic Manufacturing",
+      vertical: "Electrical Equipment / Grid / Power",
       persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based electrical & electronic manufacturing (photonics/semiconductor adjacent). High-tech vertical fit with Tier 1 persona despite smaller size."
+      why_perfect_fit: "Swedish battery charger manufacturer serving automotive and EV sectors with 201-500 employees. Sells 1M+ battery chargers annually to 70 countries, supplying 50+ global vehicle OEMs. Expanded into EV charging solutions via Chargestorm acquisition. Complex electronics manufacturing with global distribution requiring demand planning and production control."
     },
     {
       rank: 12,
-      name: "Erno Ranta",
-      job_title: "Supply Chain Director",
-      company_name: "Vaisala",
-      employee_count: "1,001-5,000",
-      location: "Vantaa, FI",
-      country: "FI",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Finland-based electrical equipment manufacturer (environmental/industrial measurement). Perfect electrical equipment vertical with Tier 1 Supply Chain Director."
+      score: 9.5,
+      lead_name: "Frans Larsen",
+      job_title: "Operational Materials Manager",
+      company_name: "CIMBRIA",
+      lead_linkedin: "https://www.linkedin.com/in/frans-larsen-85600221/",
+      company_website: "https://www.cimbria.com/",
+      company_linkedin: "https://www.linkedin.com/company/cimbria",
+      location: "Thisted, DK",
+      country_code: "DK",
+      employee_count: "501-1000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Tier 2",
+      why_perfect_fit: "Danish grain processing equipment manufacturer founded 1947 in Thisted with 900+ employees and 18 country subsidiaries. Global leader in industrial cleaning, sorting, drying, and storage systems for grain, seed, and bulk products. High-ticket capital equipment ($500K-$5M per system) serving agriculture and food processing industries worldwide."
     },
     {
       rank: 13,
-      name: "Kaisa Säde",
-      job_title: "Supply Chain Director",
-      company_name: "Halton Group",
-      employee_count: "1,001-5,000",
-      location: "Helsinki, FI",
-      country: "FI",
+      score: 10.0,
+      lead_name: "Rikard Kristensson",
+      job_title: "Group Director of Supply Chain",
+      company_name: "AxFlow Holding AB",
+      lead_linkedin: "https://www.linkedin.com/in/rikardkristensson/",
+      company_website: "https://www.axflow.com/",
+      company_linkedin: "https://www.linkedin.com/company/axflow-holding-ab",
+      location: "Stockholm, Stockholm County, Sweden",
+      country_code: "SE",
+      employee_count: "201-500",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
       persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Finland-based mechanical/industrial engineering manufacturer specializing in indoor air solutions. Industrial automation vertical with Tier 1 persona."
+      why_perfect_fit: "Swedish industrial pump distributor (largest in Europe) with 570+ employees and €175M revenue. Represents leading pump manufacturers (Mono, Nash, Waukesha) serving chemical, mining, pulp/paper industries. While primarily distribution, manages complex inventory planning and materials management for high-value industrial fluid handling equipment across Europe and South Africa."
     },
     {
       rank: 14,
-      name: "Filip Eisenreich",
-      job_title: "Executive Director - Supply Chain",
-      company_name: "Norican Group",
-      employee_count: "1,001-5,000",
-      location: "Taastrup, DK",
-      country: "DK",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer with Executive Director-level Supply Chain role. Senior Tier 1 persona with strategic influence."
+      score: 9.5,
+      lead_name: "Quinten van T.",
+      job_title: "Global Materials Manager",
+      company_name: "AmbaFlex Spiral Conveyor Solutions",
+      lead_linkedin: "https://www.linkedin.com/in/quinten-van-t-1394451b/",
+      company_website: "https://www.ambaflex.com/",
+      company_linkedin: "https://www.linkedin.com/company/ambaflex",
+      location: "Zwaag, NL",
+      country_code: "NL",
+      employee_count: "501-1000",
+      industry: "Machinery",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Tier 2",
+      why_perfect_fit: "Dutch manufacturer of spiral conveyor systems (SpiralVeyor) with 501 employees across 4 continents. Founded 1996 in Zwaag, Netherlands. Designs and manufactures customized material handling systems for packaging, bottling, printing, and distribution. High-ticket capital equipment ($100K-$1M per system) requiring production planning and supply chain coordination."
     },
     {
       rank: 15,
-      name: "HF Bredesen",
-      job_title: "Director of Supply Chain",
-      company_name: "CTEK",
-      employee_count: "201-500",
-      location: "Falun, SE",
-      country: "SE",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Sweden-based automotive & electrical manufacturing company. Dual vertical fit (automotive + electrical equipment) with Tier 1 Supply Chain Director."
+      score: 8.5,
+      lead_name: "Peter van Bergen",
+      job_title: "manager production control",
+      company_name: "Hitachi Construction Machinery (Europe) NV (HCME)",
+      lead_linkedin: "https://www.linkedin.com/in/peter-van-bergen-ab8b3973/",
+      company_website: "",
+      company_linkedin: "https://www.linkedin.com/company/hitachi-construction-machinery-europe-nv",
+      location: "Amsterdam, NL",
+      country_code: "NL",
+      employee_count: "501-1000",
+      industry: "Machinery",
+      vertical: "Unknown",
+      persona_tier: "Other",
+      why_perfect_fit: "Hitachi Construction Machinery (Europe) NV (HCME) is a manufacturer in the Unknown sector located in Amsterdam, NL."
     },
     {
       rank: 16,
-      name: "Thomas Wiesgickl",
-      job_title: "Director Supply Chain",
-      company_name: "Väderstad AB",
-      employee_count: "1,001-5,000",
-      location: "Väderstad, SE",
-      country: "SE",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Sweden-based mechanical/industrial engineering manufacturer (agricultural machinery). Industrial machinery vertical with Tier 1 Director persona."
+      score: 8.5,
+      lead_name: "Tommi Väänänen",
+      job_title: "Director, Supply Chain",
+      company_name: "Ponsse Oyj",
+      lead_linkedin: "https://www.linkedin.com/in/tommi-väänänen-26958216/",
+      company_website: "https://www.ponsse.com/",
+      company_linkedin: "https://www.linkedin.com/company/ponsse-oyj",
+      location: "Vieremä, FI",
+      country_code: "FI",
+      employee_count: "1001-5000",
+      industry: "Machinery",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Finnish forestry machinery manufacturer with €750M revenue (2024) and 2,024 employees in Vieremä. World leader in cut-to-length forest machines (harvesters, forwarders). Exports 74% of production to 40 countries. High-value capital equipment ($500K-$1M per machine) requiring complex production planning and global supply chain management."
     },
     {
       rank: 17,
-      name: "Paul Marshall MCIPS MITOL",
-      job_title: "Director Supply Chain Excellence Transformation",
-      company_name: "Hiab",
-      employee_count: "1,001-5,000",
-      location: "Helsinki, FI",
-      country: "FI",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Finland-based mechanical/industrial engineering manufacturer with transformation-focused Supply Chain Director. Strong digital transformation signal - prime for AI planning adoption."
+      score: 8.5,
+      lead_name: "sudhir gupta",
+      job_title: "Production and Supply Chain Director",
+      company_name: "Normet Group",
+      lead_linkedin: "https://www.linkedin.com/in/sudhir-gupta-62968644/",
+      company_website: "https://www.normet.com/",
+      company_linkedin: "https://www.linkedin.com/company/normetgroup",
+      location: "Espoo, FI",
+      country_code: "FI",
+      employee_count: "1001-5000",
+      industry: "Machinery",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Finnish underground mining equipment manufacturer founded 1962 with 1,800+ employees in 30 countries. Headquarters in Espoo, main factory in Iisalmi. Manufactures equipment for underground mining and tunneling (concrete sprayers, explosive chargers, scaling equipment). Manufacturing sites in Chile, India, Switzerland. High-ticket capital equipment requiring sophisticated supply chain planning."
     },
     {
       rank: 18,
-      name: "Robert Siverby",
-      job_title: "Supply Chain Director",
-      company_name: "Swegon AB",
-      employee_count: "1,001-5,000",
-      location: "Gothenburg, SE",
-      country: "SE",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Sweden-based building materials & mechanical engineering manufacturer. Industrial automation (HVAC) vertical with Tier 1 Supply Chain Director."
+      score: 8.5,
+      lead_name: "Christian Evers",
+      job_title: "Director of Group Supply Chain ",
+      company_name: "HydraSpecma",
+      lead_linkedin: "https://www.linkedin.com/in/christian-evers-806909b/",
+      company_website: "https://www.hydraspecma.com/",
+      company_linkedin: "https://www.linkedin.com/company/hydraspecma",
+      location: "Skjern, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Danish hydraulic systems manufacturer (1,001-5,000 employees) headquartered in Skjern. Designs complete hydraulic systems for renewable energy, agriculture, construction equipment. Founded 1974 serving offshore wind, agricultural machinery OEMs. Complex manufacturing of hydraulic power packs, manifolds, pitch systems requiring production control and materials planning."
     },
     {
       rank: 19,
-      name: "Harald Kremer",
-      job_title: "Supply Chain Director",
-      company_name: "Royal SMIT Transformers B.V.",
-      employee_count: "501-1,000",
-      location: "Nijmegen, NL",
-      country: "NL",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Netherlands-based electrical equipment manufacturer specializing in transformers. PERFECT vertical fit (Priority #1: transformers/power distribution) with Tier 1 persona."
+      score: 8.5,
+      lead_name: "Kenneth Berwald Pedersen",
+      job_title: "Director, Supply Chain ",
+      company_name: "Semco Maritime",
+      lead_linkedin: "https://www.linkedin.com/in/kenneth-berwald-pedersen-920892b/",
+      company_website: "https://www.semcomaritime.com/",
+      company_linkedin: "https://www.linkedin.com/company/desmi-as",
+      location: "Nørresundby, DK",
+      country_code: "DK",
+      employee_count: "1001-5000",
+      industry: "Mechanical Or Industrial Engineering",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Danish offshore equipment manufacturer founded 1888 with 2,500 employees in Denmark, Norway, Germany, Poland, UK, Singapore, USA. Fabrication facilities in Denmark and Vietnam. Supplies offshore substations (20+ delivered since 2002), firefighting systems, and electrical installations for oil/gas and offshore wind. High-value projects requiring complex project-based supply chain management."
     },
     {
       rank: 20,
-      name: "Alexander Maurice Carnol",
-      job_title: "Director, Supply Chain Business Support and Procurement Controlling",
-      company_name: "Danfoss Climate Solutions",
-      employee_count: "10,001+",
-      location: "Nordborg, DK",
-      country: "DK",
-      persona_tier: "Tier 1",
-      icp_score: 10.0,
-      why_perfect_fit: "Denmark-based mechanical/industrial engineering manufacturer (climate/automation solutions). Enterprise-scale Tier 1 persona with planning and controlling responsibility."
+      score: 8.5,
+      lead_name: "Jan Peter Scheurwater",
+      job_title: "Business Lead Consumables",
+      company_name: "Lely",
+      lead_linkedin: "https://www.linkedin.com/in/jan-peter-scheurwater-963645/",
+      company_website: "https://www.lely.com/",
+      company_linkedin: "https://www.linkedin.com/company/lely-industries-nv",
+      location: "Maassluis, NL",
+      country_code: "NL",
+      employee_count: "1001-5000",
+      industry: "Machinery",
+      vertical: "Automation & Industrial Machinery",
+      persona_tier: "Other",
+      why_perfect_fit: "Dutch agricultural robotics manufacturer based in Maassluis with €1.014 billion revenue (2025) and 2,500 employees. Founded 1948, now a leading dairy robot manufacturer selling automated milking and farm management systems to 50+ countries. High-ticket capital equipment ($100K-$500K per automated system) requiring sophisticated demand planning and production control."
     }
   ];
+
+  // Calculate stats from actual data
+  const avgScore = bestFits.reduce((sum, lead) => sum + lead.score, 0) / bestFits.length;
+  const geography = bestFits.reduce((acc, lead) => {
+    acc[lead.country_code] = (acc[lead.country_code] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
 
   const stats = {
     totalLeads: 681,
     analyzed: 681,
     bestFits: 20,
-    averageScore: 10.0,
-    geography: {
-      DK: 7,
-      FI: 7,
-      SE: 4,
-      NL: 2
-    }
+    averageScore: parseFloat(avgScore.toFixed(1)),
+    geography
+  };
+
+  // Helper function to get ICP score badge color
+  const getScoreColor = (score: number) => {
+    if (score === 10.0) return "bg-green-100 text-green-800";
+    if (score >= 9.0) return "bg-blue-100 text-blue-800";
+    return "bg-amber-100 text-amber-800";
   };
 
   return (
@@ -722,39 +831,37 @@ function BestFitsTab() {
             <div className="text-indigo-200 text-sm">Avg ICP Score</div>
           </div>
           <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
-            <div className="text-white text-2xl font-bold">100%</div>
-            <div className="text-indigo-200 text-sm">Tier 1 Personas</div>
+            <div className="text-white text-2xl font-bold">{Object.keys(geography).length}</div>
+            <div className="text-indigo-200 text-sm">EU Countries</div>
           </div>
           <div className="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/20">
-            <div className="text-white text-2xl font-bold">4</div>
-            <div className="text-indigo-200 text-sm">EU Countries</div>
+            <div className="text-white text-2xl font-bold">{bestFits.filter(l => l.persona_tier.includes("Tier")).length}</div>
+            <div className="text-indigo-200 text-sm">Qualified Personas</div>
           </div>
         </div>
       </div>
 
       {/* Geographic Breakdown */}
       <ContentSection title="Geographic Distribution" icon={<MapPin className="w-5 h-5" />}>
-        <div className="grid grid-cols-4 gap-4">
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-1">{stats.geography.DK}</div>
-            <div className="text-sm text-blue-900 font-medium">Denmark</div>
-            <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
-          </div>
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-1">{stats.geography.FI}</div>
-            <div className="text-sm text-blue-900 font-medium">Finland</div>
-            <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
-          </div>
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-1">{stats.geography.SE}</div>
-            <div className="text-sm text-blue-900 font-medium">Sweden</div>
-            <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
-          </div>
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-1">{stats.geography.NL}</div>
-            <div className="text-sm text-green-900 font-medium">Netherlands</div>
-            <div className="text-xs text-green-600 mt-1">Priority 1 Geography</div>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {Object.entries(geography)
+            .sort((a, b) => b[1] - a[1])
+            .map(([code, count]) => {
+              const countryNames: Record<string, string> = {
+                DK: "Denmark",
+                SE: "Sweden",
+                FI: "Finland",
+                NL: "Netherlands",
+                DE: "Germany"
+              };
+              return (
+                <div key={code} className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+                  <div className="text-3xl font-bold text-blue-600 mb-1">{count}</div>
+                  <div className="text-sm text-blue-900 font-medium">{countryNames[code] || code}</div>
+                  <div className="text-xs text-blue-600 mt-1">Priority 1 Geography</div>
+                </div>
+              );
+            })}
         </div>
       </ContentSection>
 
@@ -767,47 +874,91 @@ function BestFitsTab() {
               className="bg-white border border-slate-200 rounded-lg p-5 hover:shadow-lg transition-shadow"
             >
               <div className="flex items-start justify-between mb-3">
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-4 flex-1">
                   {/* Rank Badge */}
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
                     <span className="text-white font-bold text-lg">#{lead.rank}</span>
                   </div>
 
                   {/* Lead Info */}
-                  <div className="flex-1">
-                    <h4 className="text-lg font-bold text-slate-900 mb-1">{lead.name}</h4>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center space-x-2 mb-1">
+                      <a
+                        href={lead.lead_linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg font-bold text-indigo-600 hover:text-indigo-800 hover:underline flex items-center space-x-1"
+                      >
+                        <span>{lead.lead_name}</span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
                     <div className="flex items-center space-x-2 mb-2">
-                      <Briefcase className="w-4 h-4 text-indigo-600" />
+                      <Briefcase className="w-4 h-4 text-indigo-600 flex-shrink-0" />
                       <span className="text-sm text-slate-700 font-medium">{lead.job_title}</span>
                     </div>
-                    <div className="flex items-center space-x-2 mb-2">
-                      <Building2 className="w-4 h-4 text-slate-500" />
-                      <span className="text-sm text-slate-600">{lead.company_name}</span>
-                      <span className="text-xs text-slate-400">•</span>
-                      <span className="text-sm text-slate-600">{lead.employee_count} employees</span>
+                    <div className="flex items-center flex-wrap gap-2 mb-2">
+                      <div className="flex items-center space-x-2">
+                        <Building2 className="w-4 h-4 text-slate-500 flex-shrink-0" />
+                        <a
+                          href={lead.company_website || lead.company_linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-indigo-600 hover:text-indigo-800 hover:underline font-medium flex items-center space-x-1"
+                        >
+                          <span>{lead.company_name}</span>
+                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+                      {lead.company_linkedin && (
+                        <a
+                          href={lead.company_linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs hover:bg-blue-100"
+                          title="Company LinkedIn"
+                        >
+                          <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                          </svg>
+                          LinkedIn
+                        </a>
+                      )}
+                      <span className="inline-flex items-center px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">
+                        {lead.employee_count} employees
+                      </span>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <MapPin className="w-4 h-4 text-slate-500" />
+                    <div className="flex items-center space-x-2 mb-2">
+                      <MapPin className="w-4 h-4 text-slate-500 flex-shrink-0" />
                       <span className="text-sm text-slate-600">{lead.location}</span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-2 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-medium">
+                        {lead.vertical}
+                      </span>
+                      <span className="inline-flex items-center px-2 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                        {lead.persona_tier}
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                {/* Badges */}
-                <div className="flex flex-col items-end space-y-2">
-                  <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold">
-                    ICP: {lead.icp_score}/10
-                  </div>
-                  <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">
-                    {lead.persona_tier}
+                {/* ICP Score Badge */}
+                <div className="flex-shrink-0 ml-4">
+                  <div className={`${getScoreColor(lead.score)} px-3 py-1 rounded-full text-xs font-bold`}>
+                    ICP: {lead.score}/10
                   </div>
                 </div>
               </div>
 
               {/* Why Perfect Fit */}
-              <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
-                <p className="text-sm text-green-900">
-                  <span className="font-semibold">Why Perfect Fit:</span> {lead.why_perfect_fit}
+              <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+                <p className="text-sm text-slate-700">
+                  <span className="font-semibold text-slate-900">Why Perfect Fit:</span> {lead.why_perfect_fit}
                 </p>
               </div>
             </div>
@@ -821,17 +972,17 @@ function BestFitsTab() {
         <h3 className="text-2xl font-bold text-white mb-2">Ready to reach out?</h3>
         <p className="text-violet-100 mb-6 max-w-2xl mx-auto">
           These 20 leads represent the absolute highest-quality prospects for Plantryx. All meet every ICP criterion
-          with Tier 1 decision-maker personas in priority EU geographies. Export to SmartLead and begin your outreach.
+          with qualified decision-maker personas in priority EU geographies. Export to SmartLead and begin your outreach.
         </p>
         <div className="flex items-center justify-center space-x-4">
           <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-lg border border-white/30">
             <div className="text-white text-sm">
-              <span className="font-bold">100%</span> ICP Match Rate
+              <span className="font-bold">{stats.averageScore}/10</span> Avg ICP Score
             </div>
           </div>
           <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-lg border border-white/30">
             <div className="text-white text-sm">
-              <span className="font-bold">20/20</span> Tier 1 Personas
+              <span className="font-bold">{stats.bestFits}/20</span> Validated Leads
             </div>
           </div>
           <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-lg border border-white/30">
