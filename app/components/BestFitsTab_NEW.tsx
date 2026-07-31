@@ -363,7 +363,7 @@ const BEST_FITS_DATA = [
     "name": "Grzegorz Sroka, MBA",
     "title": "Supply Chain Director",
     "company": "BROEN Valve Technologies",
-    "linkedin": "https://www.linkedin.com/in/grzegorz-sroka-mba-b6902614/",
+    "linkedin": "https://www.linkedin.com/in/grzegorz-sroka-mba-7b17b912b/",
     "company_website": "https://www.broen.com/",
     "company_linkedin": "https://www.linkedin.com/company/broenvalves",
     "location": "Assens, DK",
