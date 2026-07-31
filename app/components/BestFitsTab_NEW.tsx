@@ -426,7 +426,7 @@ const BEST_FITS_DATA = [
     "name": "Antoni Skrobol, PhD, CPIM",
     "title": "Supply Chain Director",
     "company": "BMZ Poland",
-    "linkedin": "https://www.linkedin.com/in/antoni-skrobol-phd-cpim-47aa8b7/",
+    "linkedin": "https://www.linkedin.com/in/antoni-skrobol-phd-cpim-b882385/",
     "company_website": "https://www.bmz-group.com/",
     "company_linkedin": "https://www.linkedin.com/company/bmz-poland",
     "location": "Gliwice, PL",
