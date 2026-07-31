@@ -10,19 +10,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it — manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization — replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nMost mid-market manufacturers we work with run S&OP in SAP/Dynamics/[ERP] but still plan demand and supply in Excel. The ERP holds the data, but the real planning decisions happen outside it - manual forecasts, spreadsheet-based supply plans, slow iteration cycles.\n\nPlantryx is an AI-native planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization - replacing the Excel layer, not the ERP.\n\nThe result: faster S&OP cycles, better forecast accuracy, and fewer surprises between planning rounds.\n\nWorth a look for [Company Name]?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up (Planning Maturity Focus)",
         "subject": "Re: AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nFollowing up on Plantryx — we built a 5-minute Planning Maturity Diagnostic that most supply chain leaders find useful even if they're not evaluating new tools right now.\n\nIt's a self-assessment (ungated, instant results) that benchmarks your current planning process across forecast accuracy, cycle time, cross-functional alignment, and decision lag.\n\nNo forms, no sales pitch — just a quick snapshot of where your S&OP maturity sits relative to peers in [vertical, e.g., \"electrical equipment manufacturing\" or \"automation & machinery\"].\n\nWant me to send it over?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nFollowing up on Plantryx - we built a 5-minute Planning Maturity Diagnostic that most supply chain leaders find useful even if they're not evaluating new tools right now.\n\nIt's a self-assessment (ungated, instant results) that benchmarks your current planning process across forecast accuracy, cycle time, cross-functional alignment, and decision lag.\n\nNo forms, no sales pitch - just a quick snapshot of where your S&OP maturity sits relative to peers in [vertical, e.g., \"electrical equipment manufacturing\" or \"automation & machinery\"].\n\nWant me to send it over?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up (Decision Speed)",
         "subject": "Re: AI planning layer for [Company Name]'s S&OP cycle",
-        "body": "Hi [First Name],\n\nOne pattern we see at $100M–$1B manufacturers: S&OP runs monthly, but by the time the plan is agreed across functions, it's already 10–15 days stale.\n\nThe bottleneck is rarely the ERP — it's the manual demand-supply balancing that happens in spreadsheets before decisions get locked in.\n\nPlantryx compresses that lag from weeks to hours. The ERP stays as your system of record; we replace the Excel planning layer with AI-driven forecasting and supply-demand optimization that runs continuously, not monthly.\n\nIf decision speed in your planning cycle is something you'd like to improve, I can walk you through how this works in a quick 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nOne pattern we see at $100M-$1B manufacturers: S&OP runs monthly, but by the time the plan is agreed across functions, it's already 10-15 days stale.\n\nThe bottleneck is rarely the ERP - it's the manual demand-supply balancing that happens in spreadsheets before decisions get locked in.\n\nPlantryx compresses that lag from weeks to hours. The ERP stays as your system of record; we replace the Excel planning layer with AI-driven forecasting and supply-demand optimization that runs continuously, not monthly.\n\nIf decision speed in your planning cycle is something you'd like to improve, I can walk you through how this works in a quick 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
       }
     ]
   },
@@ -31,25 +31,25 @@
     "tierName": "TIER 2: Manufacturing-Native Planning Owners",
     "tierColor": "green",
     "targetPersonas": "Master Scheduler/MPS, Director/Manager of Production Planning, Production Control Manager, Planning & Scheduling Manager, Materials Manager, Plant Manager, Director of Manufacturing/Operations",
-    "messagingAngle": "Shortages, expedites, schedule stability, MRP noise — operational language, NOT corporate S&OP framing",
+    "messagingAngle": "Shortages, expedites, schedule stability, MRP noise - operational language, NOT corporate S&OP framing",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Fewer expedites, more stable schedules at [Company Name]",
-        "body": "Hi [First Name],\n\nIf you're running [SAP/Dynamics/Epicor/ERP] for MRP and scheduling, you're likely dealing with: constant expedites, shortages that show up too late, and weekly schedule thrashing because demand changes faster than the system adapts.\n\nPlantryx is an AI planning layer that sits on top of your ERP. It doesn't replace [ERP] — it replaces the manual demand adjustments and shortage chasing you're doing outside the system.\n\nBetter demand signals → fewer phantom shortages → more stable production schedules.\n\nWorth a look?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nIf you're running [SAP/Dynamics/Epicor/ERP] for MRP and scheduling, you're likely dealing with: constant expedites, shortages that show up too late, and weekly schedule thrashing because demand changes faster than the system adapts.\n\nPlantryx is an AI planning layer that sits on top of your ERP. It doesn't replace [ERP] - it replaces the manual demand adjustments and shortage chasing you're doing outside the system.\n\nBetter demand signals -> fewer phantom shortages -> more stable production schedules.\n\nWorth a look?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up (MRP Noise Focus)",
         "subject": "Re: Fewer expedites, more stable schedules at [Company Name]",
-        "body": "Hi [First Name],\n\nQuick follow-up — most production planners and master schedulers we work with describe the same problem: MRP generates too much noise.\n\nThe system flags 200 exceptions. Maybe 30 are real. You spend your day filtering signal from noise instead of solving real planning problems.\n\nPlantryx cleans that up. It runs on top of your existing ERP and uses AI to separate real demand signals from MRP noise, so you're only working the exceptions that matter.\n\nWe built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that shows where planning noise is costing you the most time. Want me to send it?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nQuick follow-up - most production planners and master schedulers we work with describe the same problem: MRP generates too much noise.\n\nThe system flags 200 exceptions. Maybe 30 are real. You spend your day filtering signal from noise instead of solving real planning problems.\n\nPlantryx cleans that up. It runs on top of your existing ERP and uses AI to separate real demand signals from MRP noise, so you're only working the exceptions that matter.\n\nWe built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that shows where planning noise is costing you the most time. Want me to send it?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up (Schedule Stability)",
         "subject": "Re: Fewer expedites, more stable schedules at [Company Name]",
-        "body": "Hi [First Name],\n\nLast note on this — one metric we track with customers: how often the weekly production schedule changes after it's published.\n\nFor most plants, it's 30–40% of line items. Not because demand actually changed, but because the demand forecast feeding MRP was noisy to begin with.\n\nPlantryx stabilizes that. AI-driven demand forecasting on top of your ERP means fewer false signals, fewer last-minute changes, and less firefighting on the shop floor.\n\nIf schedule stability is something you'd like to improve, I can show you how this works in a 20-minute call.\n\nWorth talking?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nLast note on this - one metric we track with customers: how often the weekly production schedule changes after it's published.\n\nFor most plants, it's 30-40% of line items. Not because demand actually changed, but because the demand forecast feeding MRP was noisy to begin with.\n\nPlantryx stabilizes that. AI-driven demand forecasting on top of your ERP means fewer false signals, fewer last-minute changes, and less firefighting on the shop floor.\n\nIf schedule stability is something you'd like to improve, I can show you how this works in a 20-minute call.\n\nWorth talking?\n\nBest,\n[Your Name]"
       }
     ]
   }
