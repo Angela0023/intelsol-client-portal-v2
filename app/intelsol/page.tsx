@@ -1781,29 +1781,43 @@ function CampaignsTab() {
       </ContentSection>
 
       <ContentSection title="Monthly Breakdown - 2026" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-3 mb-4">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+            <p className="text-sm text-blue-900">
+              <strong>Monthly Goal:</strong> 25,000 leads per month
+            </p>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {monthlyBreakdown.map((item) => (
-            <div key={item.month} className="bg-white rounded-lg border border-slate-200 p-4 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-slate-600 font-medium">{item.month}</p>
-                  <p className="text-2xl font-bold text-slate-900 mt-1">{item.leads.toLocaleString()} leads</p>
-                  <p className="text-xs text-slate-500 mt-1">{item.campaigns} campaigns</p>
+          {monthlyBreakdown.map((item) => {
+            const monthlyGoal = 25000;
+            const percentageOfGoal = Math.round((item.leads / monthlyGoal) * 100);
+            const progressWidth = Math.min((item.leads / monthlyGoal) * 100, 100);
+
+            return (
+              <div key={item.month} className="bg-white rounded-lg border border-slate-200 p-4 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm text-slate-600 font-medium">{item.month}</p>
+                    <p className="text-2xl font-bold text-slate-900 mt-1">{item.leads.toLocaleString()} leads</p>
+                    <p className="text-xs text-slate-500 mt-1">{item.campaigns} campaigns</p>
+                    <p className="text-xs text-slate-400 mt-0.5">Goal: {monthlyGoal.toLocaleString()}</p>
+                  </div>
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-lg font-bold text-green-600">
+                      {percentageOfGoal}%
+                    </span>
+                  </div>
                 </div>
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-lg font-bold text-green-600">
-                    {Math.round((item.leads / totalLeads) * 100)}%
-                  </span>
+                <div className="mt-3 w-full bg-slate-200 rounded-full h-2">
+                  <div
+                    className="bg-green-600 h-2 rounded-full transition-all"
+                    style={{ width: `${progressWidth}%` }}
+                  ></div>
                 </div>
               </div>
-              <div className="mt-3 w-full bg-slate-200 rounded-full h-2">
-                <div
-                  className="bg-green-600 h-2 rounded-full transition-all"
-                  style={{ width: `${(item.leads / totalLeads) * 100}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </ContentSection>
     </>
