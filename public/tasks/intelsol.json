@@ -3,7 +3,7 @@
     "id": "task_1785420551522_658mayx",
     "description": "Create Demo dashboard",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-07-30"
   },
   {
@@ -17,14 +17,14 @@
     "id": "task_1785420678576_ejax7kn",
     "description": "Create Dashboard for https://plantryx.com/index.html",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-07-30"
   },
   {
     "id": "task_1785432200681_ve4fap2",
     "description": "Add a lead volume summary for all clients",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-07-31"
   },
   {
