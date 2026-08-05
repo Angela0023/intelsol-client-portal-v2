@@ -54,5 +54,12 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-07-31"
+  },
+  {
+    "id": "task_1785955970197_1t9qmsy",
+    "description": "Fix Clay row limit",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06"
   }
 ]
