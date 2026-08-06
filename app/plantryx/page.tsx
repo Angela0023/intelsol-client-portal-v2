@@ -12,6 +12,7 @@ import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail, Award, MapPin, Building2, Briefcase, Gift, CheckCircle } from 'lucide-react';
 import BestFitsTab from '../components/BestFitsTab_NEW';
+import CampaignsTabContent from './CampaignsTabContent';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -143,8 +144,13 @@ export default function PlantryxPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="plantryx" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="plantryx" />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="plantryx" />}
+          {activeTab === 'campaigns' && <CampaignsTabContent />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="plantryx" />
+              <CampaignsTabDynamic clientId="plantryx" />
+            </>
+          )}
           {activeTab === 'documents' && <DocumentsTab />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="plantryx" defaultTasks={[]} />
