@@ -9,66 +9,12 @@
     "comments": []
   },
   {
-    "id": "task_1786023828012_vvz0lp8",
-    "description": "Send Eblissai.com ICP",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-08-06",
-    "order": 1,
-    "comments": []
-  },
-  {
-    "id": "task_1785420655527_4u7j9lk",
-    "description": "Create Dashboard for Eblissai.com",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-07-30",
-    "order": 2,
-    "comments": []
-  },
-  {
-    "id": "task_1785432278082_ukybt1y",
-    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-03",
-    "order": 3,
-    "comments": []
-  },
-  {
-    "id": "task_1785432318537_0yk9pkg",
-    "description": "Activate Email Guard Pro plan",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-07-31",
-    "order": 4,
-    "comments": []
-  },
-  {
-    "id": "task_1785432335413_pe4b80p",
-    "description": "Purchase more sending accounts",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-07-31",
-    "order": 5,
-    "comments": []
-  },
-  {
     "id": "task_1785955970197_1t9qmsy",
     "description": "Fix Clay row limit",
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06",
-    "order": 6,
-    "comments": []
-  },
-  {
-    "id": "task_1786009825593_zyv2gsl",
-    "description": "Pay invoice for 27 July - 02 August",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-08-06",
-    "order": 7,
+    "order": 1,
     "comments": []
   },
   {
@@ -77,25 +23,16 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06",
-    "order": 8,
+    "order": 2,
     "comments": []
   },
   {
-    "id": "task_1786021360751_8rsw7fq",
-    "description": "Send Eblissai.com ICP documentation",
-    "assignedTo": "Matej",
+    "id": "task_1786022433641_au0y5s8",
+    "description": "Update Plantryx Dashboard and documentation based on their feedback",
+    "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-06",
-    "order": 9,
-    "comments": []
-  },
-  {
-    "id": "task_1786022195222_ttqbljc",
-    "description": "Send AD Signer ICP documentation",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-08-06",
-    "order": 10,
+    "order": 3,
     "comments": []
   },
   {
@@ -104,25 +41,79 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-06",
-    "order": 11,
+    "order": 4,
+    "comments": []
+  },
+  {
+    "id": "task_1786022195222_ttqbljc",
+    "description": "Send ICP documentation for AD Signer (https://www.adsigner.com/en)",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06",
+    "order": 5,
     "comments": []
   },
   {
     "id": "task_1786022382435_omrq65o",
-    "description": "Set up a Dshboard for https://www.adsigner.com/en",
+    "description": "Set up a Dshboard for AD Signer (https://www.adsigner.com/en)",
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-07",
-    "order": 12,
+    "order": 6,
     "comments": []
   },
   {
-    "id": "task_1786022433641_au0y5s8",
-    "description": "Update Plantryx Dashbaord and documentation based on their feedback",
-    "assignedTo": "Frosina",
+    "id": "task_1786021360751_8rsw7fq",
+    "description": "Send Eblissai.com ICP documentation",
+    "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06",
-    "order": 13,
+    "order": 7,
+    "comments": []
+  },
+  {
+    "id": "task_1785420655527_4u7j9lk",
+    "description": "Create Dashboard for Eblissai.com",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-07-30",
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1785432335413_pe4b80p",
+    "description": "Purchase more sending accounts",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31",
+    "order": 9,
+    "comments": []
+  },
+  {
+    "id": "task_1785432318537_0yk9pkg",
+    "description": "Activate Email Guard Pro plan",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31",
+    "order": 10,
+    "comments": []
+  },
+  {
+    "id": "task_1785432278082_ukybt1y",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-03",
+    "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1786009825593_zyv2gsl",
+    "description": "Pay invoice for 27 July - 02 August",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06",
+    "order": 12,
     "comments": []
   },
   {
