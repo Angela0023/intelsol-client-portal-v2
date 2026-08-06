@@ -7,7 +7,8 @@ import { BarChart3, TrendingUp, Mail, MousePointerClick, Reply, AlertCircle } fr
 interface Campaign {
   campaignName: string;
   dateLaunched: string;
-  leadsAdded: number;
+  totalLeads: number;
+  leadsEmailed: number;
   month: string;
   status?: string;
   performance?: {
@@ -22,6 +23,7 @@ interface Campaign {
     bounceRate: string;
     unsubscribed: number;
     interested: number;
+    interestedRate: string;
     notInterested: number;
   };
 }
@@ -84,7 +86,8 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   }
 
   // Calculate overall metrics
-  const totalLeads = campaigns.reduce((sum, c) => sum + c.leadsAdded, 0);
+  const totalLeadsInCampaigns = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
+  const totalLeadsEmailed = campaigns.reduce((sum, c) => sum + c.leadsEmailed, 0);
   const totalEmailsSent = campaigns.reduce((sum, c) => sum + (c.performance?.emailsSent || 0), 0);
   const totalOpens = campaigns.reduce((sum, c) => sum + (c.performance?.opens || 0), 0);
   const totalClicks = campaigns.reduce((sum, c) => sum + (c.performance?.clicks || 0), 0);
@@ -92,10 +95,11 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   const totalBounces = campaigns.reduce((sum, c) => sum + (c.performance?.bounces || 0), 0);
   const totalInterested = campaigns.reduce((sum, c) => sum + (c.performance?.interested || 0), 0);
 
-  const avgOpenRate = totalLeads > 0 ? ((totalOpens / totalLeads) * 100).toFixed(2) : '0.00';
-  const avgClickRate = totalLeads > 0 ? ((totalClicks / totalLeads) * 100).toFixed(2) : '0.00';
-  const avgReplyRate = totalLeads > 0 ? ((totalReplies / totalLeads) * 100).toFixed(2) : '0.00';
-  const avgBounceRate = totalLeads > 0 ? ((totalBounces / totalLeads) * 100).toFixed(2) : '0.00';
+  const avgOpenRate = totalLeadsEmailed > 0 ? ((totalOpens / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
+  const avgClickRate = totalLeadsEmailed > 0 ? ((totalClicks / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
+  const avgReplyRate = totalLeadsEmailed > 0 ? ((totalReplies / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
+  const avgBounceRate = totalLeadsEmailed > 0 ? ((totalBounces / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
+  const avgInterestedRate = totalLeadsEmailed > 0 ? ((totalInterested / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
 
   return (
     <>
@@ -107,8 +111,8 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
               <Mail className="w-4 h-4 text-blue-600" />
               <p className="text-xs text-blue-700 font-medium">Total Leads</p>
             </div>
-            <p className="text-xl lg:text-3xl font-bold text-blue-900">{totalLeads.toLocaleString()}</p>
-            <p className="text-xs text-blue-600 mt-1">{totalEmailsSent.toLocaleString()} emails sent</p>
+            <p className="text-xl lg:text-3xl font-bold text-blue-900">{totalLeadsInCampaigns.toLocaleString()}</p>
+            <p className="text-xs text-blue-600 mt-1">{totalLeadsEmailed.toLocaleString()} emailed</p>
           </div>
 
           {/* Open Rate */}
@@ -131,14 +135,14 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
             <p className="text-xs text-purple-600 mt-1">{totalReplies.toLocaleString()} replies</p>
           </div>
 
-          {/* Interested Leads */}
+          {/* Interested Rate */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg border border-amber-200 p-3 lg:p-4 shadow-sm">
             <div className="flex items-center space-x-2 mb-1">
               <TrendingUp className="w-4 h-4 text-amber-600" />
-              <p className="text-xs text-amber-700 font-medium">Interested</p>
+              <p className="text-xs text-amber-700 font-medium">Positive Rate</p>
             </div>
-            <p className="text-xl lg:text-3xl font-bold text-amber-900">{totalInterested}</p>
-            <p className="text-xs text-amber-600 mt-1">Positive replies</p>
+            <p className="text-xl lg:text-3xl font-bold text-amber-900">{avgInterestedRate}%</p>
+            <p className="text-xs text-amber-600 mt-1">{totalInterested} positive</p>
           </div>
         </div>
 
@@ -183,11 +187,17 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                   <p className="text-sm font-medium text-slate-900 flex-1">{campaign.campaignName}</p>
                   <span className="text-xs text-slate-500 ml-2 whitespace-nowrap">{campaign.dateLaunched}</span>
                 </div>
-                <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="grid grid-cols-2 gap-2 text-xs mb-2">
                   <div>
-                    <span className="text-slate-500">Leads:</span>
-                    <span className="font-semibold text-slate-900 ml-1">{campaign.leadsAdded.toLocaleString()}</span>
+                    <span className="text-slate-500">Total:</span>
+                    <span className="font-semibold text-slate-900 ml-1">{campaign.totalLeads.toLocaleString()}</span>
                   </div>
+                  <div>
+                    <span className="text-slate-500">Emailed:</span>
+                    <span className="font-semibold text-blue-700 ml-1">{campaign.leadsEmailed.toLocaleString()}</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
                     <span className="text-slate-500">Opens:</span>
                     <span className="font-semibold text-green-700 ml-1">{campaign.performance?.openRate || '0'}%</span>
@@ -202,7 +212,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                   </div>
                   <div>
                     <span className="text-slate-500">Positive:</span>
-                    <span className="font-semibold text-amber-700 ml-1">{campaign.performance?.interested || 0}</span>
+                    <span className="font-semibold text-amber-700 ml-1">{campaign.performance?.interestedRate || '0'}%</span>
                   </div>
                 </div>
               </div>
@@ -223,7 +233,10 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     Date
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                    Leads
+                    Total
+                  </th>
+                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
+                    Emailed
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
                     Opens
@@ -249,7 +262,10 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                       {campaign.dateLaunched}
                     </td>
                     <td className="px-4 py-3 text-xs text-center font-semibold text-slate-900 whitespace-nowrap">
-                      {campaign.leadsAdded.toLocaleString()}
+                      {campaign.totalLeads.toLocaleString()}
+                    </td>
+                    <td className="px-4 py-3 text-xs text-center font-semibold text-blue-700 whitespace-nowrap">
+                      {campaign.leadsEmailed.toLocaleString()}
                     </td>
                     <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
                       <div className="font-semibold text-green-700">{campaign.performance?.openRate || '0'}%</div>
@@ -263,8 +279,9 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                       <div className="font-semibold text-purple-700">{campaign.performance?.replyRate || '0'}%</div>
                       <div className="text-slate-500 text-[10px]">{campaign.performance?.replies || 0}</div>
                     </td>
-                    <td className="px-4 py-3 text-xs text-center font-semibold text-amber-700 whitespace-nowrap">
-                      {campaign.performance?.interested || 0}
+                    <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
+                      <div className="font-semibold text-amber-700">{campaign.performance?.interestedRate || '0'}%</div>
+                      <div className="text-slate-500 text-[10px]">{campaign.performance?.interested || 0}</div>
                     </td>
                   </tr>
                 ))}

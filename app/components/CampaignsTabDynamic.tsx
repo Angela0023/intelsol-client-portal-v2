@@ -7,7 +7,8 @@ import { BarChart3, Zap, Target } from 'lucide-react';
 interface Campaign {
   campaignName: string;
   dateLaunched: string;
-  leadsAdded: number;
+  totalLeads: number;
+  leadsEmailed: number;
   month: string;
   status?: string;
   performance?: {
@@ -22,6 +23,7 @@ interface Campaign {
     bounceRate: string;
     unsubscribed: number;
     interested: number;
+    interestedRate: string;
     notInterested: number;
   };
 }
@@ -53,7 +55,7 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
       });
   }, [clientId]);
 
-  const totalLeads = campaigns.reduce((sum, c) => sum + c.leadsAdded, 0);
+  const totalLeads = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
   const totalCampaigns = campaigns.length;
 
   // Get unique months and calculate breakdown
@@ -66,7 +68,7 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
   const monthlyBreakdown = uniqueMonths
     .map(month => ({
       month: `${month} ${currentYear}`,
-      leads: campaigns.filter(c => c.month === month).reduce((sum, c) => sum + c.leadsAdded, 0),
+      leads: campaigns.filter(c => c.month === month).reduce((sum, c) => sum + c.totalLeads, 0),
       campaigns: campaigns.filter(c => c.month === month).length
     }))
     .sort((a, b) => {
@@ -131,7 +133,7 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
                 </div>
                 <div className="flex items-center justify-between text-xs text-slate-600 mt-2 pt-2 border-t border-slate-200">
                   <span>{campaign.dateLaunched}</span>
-                  <span className="font-semibold text-green-700">{campaign.leadsAdded.toLocaleString()} leads</span>
+                  <span className="font-semibold text-green-700">{campaign.totalLeads.toLocaleString()} leads</span>
                 </div>
               </div>
             ))}
@@ -173,7 +175,7 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
                       {campaign.dateLaunched}
                     </td>
                     <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm font-semibold text-right whitespace-nowrap">
-                      <span className="text-green-700">{campaign.leadsAdded.toLocaleString()}</span>
+                      <span className="text-green-700">{campaign.totalLeads.toLocaleString()}</span>
                     </td>
                   </tr>
                 ))}

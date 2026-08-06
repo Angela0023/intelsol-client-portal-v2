@@ -113,8 +113,9 @@ async function processCampaignsForClient(clientId, allCampaigns) {
 
       const analytics = await fetchAPI(`/campaigns/${campaign.id}/analytics`);
 
-      // Use unique_sent_count as the "imported leads" metric
-      const leadsAdded = parseInt(analytics.unique_sent_count || 0);
+      // Get total leads in campaign and leads emailed so far
+      const totalLeads = parseInt(analytics.total_lead_count || analytics.unique_sent_count || 0);
+      const leadsEmailed = parseInt(analytics.unique_sent_count || 0);
       const emailsSent = parseInt(analytics.sent_count || 0);
       const opens = parseInt(analytics.unique_open_count || 0);
       const clicks = parseInt(analytics.unique_click_count || 0);
@@ -124,16 +125,18 @@ async function processCampaignsForClient(clientId, allCampaigns) {
       const interested = analytics.campaign_lead_stats?.interested || 0;
       const notInterested = analytics.campaign_lead_stats?.not_interested || 0;
 
-      // Calculate rates
-      const openRate = leadsAdded > 0 ? ((opens / leadsAdded) * 100).toFixed(2) : '0.00';
-      const clickRate = leadsAdded > 0 ? ((clicks / leadsAdded) * 100).toFixed(2) : '0.00';
-      const replyRate = leadsAdded > 0 ? ((replies / leadsAdded) * 100).toFixed(2) : '0.00';
-      const bounceRate = leadsAdded > 0 ? ((bounces / leadsAdded) * 100).toFixed(2) : '0.00';
+      // Calculate rates based on leads emailed (not total campaign size)
+      const openRate = leadsEmailed > 0 ? ((opens / leadsEmailed) * 100).toFixed(2) : '0.00';
+      const clickRate = leadsEmailed > 0 ? ((clicks / leadsEmailed) * 100).toFixed(2) : '0.00';
+      const replyRate = leadsEmailed > 0 ? ((replies / leadsEmailed) * 100).toFixed(2) : '0.00';
+      const bounceRate = leadsEmailed > 0 ? ((bounces / leadsEmailed) * 100).toFixed(2) : '0.00';
+      const interestedRate = leadsEmailed > 0 ? ((interested / leadsEmailed) * 100).toFixed(2) : '0.00';
 
       processed.push({
         campaignName: campaign.name,
         dateLaunched: formatDate(campaign.created_at),
-        leadsAdded: leadsAdded,
+        totalLeads: totalLeads,
+        leadsEmailed: leadsEmailed,
         month: getMonthName(campaign.created_at),
         status: campaign.status,
         performance: {
@@ -148,6 +151,7 @@ async function processCampaignsForClient(clientId, allCampaigns) {
           bounceRate: bounceRate,
           unsubscribed: unsubscribed,
           interested: interested,
+          interestedRate: interestedRate,
           notInterested: notInterested,
         }
       });
@@ -158,7 +162,8 @@ async function processCampaignsForClient(clientId, allCampaigns) {
       processed.push({
         campaignName: campaign.name,
         dateLaunched: formatDate(campaign.created_at),
-        leadsAdded: 0,
+        totalLeads: 0,
+        leadsEmailed: 0,
         month: getMonthName(campaign.created_at),
         status: campaign.status,
         performance: {
@@ -173,17 +178,18 @@ async function processCampaignsForClient(clientId, allCampaigns) {
           bounceRate: '0.00',
           unsubscribed: 0,
           interested: 0,
+          interestedRate: '0.00',
           notInterested: 0,
         }
       });
     }
   }
 
-  // Sort by date (oldest first)
+  // Sort campaigns by date (newest first)
   processed.sort((a, b) => {
     const dateA = new Date(a.dateLaunched);
     const dateB = new Date(b.dateLaunched);
-    return dateA.getTime() - dateB.getTime();
+    return dateB - dateA; // Descending order (newest first)
   });
 
   return processed;
@@ -218,14 +224,14 @@ async function main() {
       console.log(`   ✅ Saved ${campaignData.length} campaigns to ${outputPath}`);
 
       // Summary
-      const totalLeads = campaignData.reduce((sum, c) => sum + c.leadsAdded, 0);
+      const totalLeads = campaignData.reduce((sum, c) => sum + c.totalLeads, 0);
       console.log(`   📊 Total leads: ${totalLeads.toLocaleString()}`);
     }
 
     console.log('\n✅ All client campaigns synced successfully!');
     console.log('\n📊 Summary:');
     for (const [clientId, data] of Object.entries(results)) {
-      const totalLeads = data.reduce((sum, c) => sum + c.leadsAdded, 0);
+      const totalLeads = data.reduce((sum, c) => sum + c.totalLeads, 0);
       console.log(`   ${clientId}: ${data.length} campaigns, ${totalLeads.toLocaleString()} leads`);
     }
 
