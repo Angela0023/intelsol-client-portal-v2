@@ -75,5 +75,12 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786013480785_sgmpxi2",
+    "description": "Add Apollo credits",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06"
   }
 ]
