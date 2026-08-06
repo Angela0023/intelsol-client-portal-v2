@@ -179,7 +179,10 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
           <div className="space-y-3">
             {campaigns.map((campaign, index) => (
               <div key={index} className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-                <p className="text-sm font-medium text-slate-900 mb-3">{campaign.campaignName}</p>
+                <div className="flex items-start justify-between mb-2">
+                  <p className="text-sm font-medium text-slate-900 flex-1">{campaign.campaignName}</p>
+                  <span className="text-xs text-slate-500 ml-2 whitespace-nowrap">{campaign.dateLaunched}</span>
+                </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
                     <span className="text-slate-500">Leads:</span>
@@ -197,6 +200,10 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     <span className="text-slate-500">Replies:</span>
                     <span className="font-semibold text-purple-700 ml-1">{campaign.performance?.replyRate || '0'}%</span>
                   </div>
+                  <div>
+                    <span className="text-slate-500">Positive:</span>
+                    <span className="font-semibold text-amber-700 ml-1">{campaign.performance?.interested || 0}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -213,6 +220,9 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     Campaign
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
+                    Date
+                  </th>
+                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
                     Leads
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
@@ -225,7 +235,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     Replies
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                    Interested
+                    Positive
                   </th>
                 </tr>
               </thead>
@@ -234,6 +244,9 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                   <tr key={index} className="hover:bg-slate-50 transition-colors">
                     <td className="px-4 py-3 text-xs text-slate-700 max-w-md truncate">
                       {campaign.campaignName}
+                    </td>
+                    <td className="px-4 py-3 text-xs text-center text-slate-600 whitespace-nowrap">
+                      {campaign.dateLaunched}
                     </td>
                     <td className="px-4 py-3 text-xs text-center font-semibold text-slate-900 whitespace-nowrap">
                       {campaign.leadsAdded.toLocaleString()}
