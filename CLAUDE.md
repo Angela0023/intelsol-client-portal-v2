@@ -36,6 +36,29 @@
 - Include sequence design principles at top
 - Make it scannable: clear visual separation between sequences
 
+**UPCOMING TAB STRUCTURE CHANGE:**
+- **Campaigns tab**: Will contain rules and guidelines for campaigns (not campaign data)
+- **Performance tab**: Will consolidate both campaign lists AND performance metrics into one tab
+- This change will apply to ALL clients for consistency
+
+---
+
+### 1A. NEVER Remove Tab Content Without Explicit Instruction
+
+**HARD RULE:** NEVER remove sections, content, or components from any client's tabs unless explicitly instructed to do so by the user.
+
+**Why:** Each tab's content has been carefully designed and approved. Removing content breaks client workflows and loses important information.
+
+**VIOLATION EXAMPLE (2026-08-06):**
+- Removed sections from Plantryx Campaigns tab during campaign sync work
+- User immediately flagged this as a critical mistake
+- **This must NEVER happen again**
+
+**Correct Approach:**
+- If you think content should be moved or consolidated, ASK FIRST
+- If you're unsure whether to keep something, KEEP IT and ask
+- Only remove content when user explicitly says "remove [specific thing]"
+
 ---
 
 ### 2. Adding a New Client Requires Multiple Files
@@ -604,6 +627,37 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
 
 **Result:** All clients can now add/edit/delete email sequences directly in portal. Plantryx has 2 complete sequences (Tier 1 + Tier 2) with all 3 emails populated.
 
+### 2026-08-06: Critical Mistakes and Corrections
+
+**Issue #1: CRITICAL VIOLATION - Removed Tab Content Without Permission**
+- **Problem:** Removed sections from Plantryx Campaigns tab while working on campaign sync
+- **User Feedback:** "You removed sections from the campaigns tab. You should never do that. It's a hard rule to never do that."
+- **Impact:** Lost user-approved content from client dashboard
+- **Fix:** Added HARD RULE 1A: "NEVER Remove Tab Content Without Explicit Instruction"
+- **Lesson:** ALWAYS preserve existing tab content unless user explicitly says to remove it. When in doubt, ASK FIRST.
+
+**Issue #2: Fixed Smartlead Campaign Prefixes**
+- **Problem:** Campaign sync script had incorrect emoji prefixes for TSLab, Xpose, and PeopleFocus
+- **Diagnosis:**
+  - Script was using 🏆 for all clients
+  - Actual prefixes: TSLab uses 🧪, Xpose uses 💥, PeopleFocus uses 🎯
+- **Fix:**
+  - Fetched all 80 campaigns to identify actual naming patterns
+  - Updated CLIENT_PREFIXES in sync script
+  - Re-ran sync to populate campaign data for all clients
+- **Result:**
+  - Intelsol: 65 campaigns, 32,772 leads
+  - TS Lab: 12 campaigns, 1,053 leads (newly found)
+  - Xpose: 2 campaigns (DRAFTED status)
+  - PeopleFocus: 1 campaign (DRAFTED status)
+- **Lesson:** Always verify actual data before assuming naming patterns
+
+**Information Update: Future Tab Structure Change**
+- **Campaigns tab** will contain rules and guidelines for campaigns (not campaign data)
+- **Performance tab** will consolidate both campaign lists AND performance metrics
+- This change will apply to ALL clients for consistency
+- Documented in HARD RULE #1 as "UPCOMING TAB STRUCTURE CHANGE"
+
 ---
 
 ## 🔄 Update This File
@@ -624,4 +678,4 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
 
 ---
 
-Last updated: 2026-07-31 (Implemented Email Sequences feature with full CRUD functionality across all clients)
+Last updated: 2026-08-06 (Added HARD RULE: Never remove tab content without explicit instruction. Fixed Smartlead campaign prefixes for all clients. Documented upcoming tab structure changes.)
