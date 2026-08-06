@@ -52,5 +52,113 @@
         "body": "Hi [First Name],\n\nLast note on this - one metric we track with customers: how often the weekly production schedule changes after it's published.\n\nFor most plants, it's 30-40 % of line items. Not because demand actually changed, but because the demand forecast feeding MRP was noisy to begin with.\n\nPlantryx stabilizes that. AI-driven demand forecasting on top of your ERP means fewer false signals, fewer last-minute changes, and less firefighting on the shop floor.\n\nIf schedule stability is something you'd like to improve, I can show you how this works in a 20-minute chat.\n\nWorth talking?\n\nBest,\n[Your Name]"
       }
     ]
+  },
+  {
+    "id": "track-3-executives",
+    "tierName": "TRACK 3: Executives (Manufacturing)",
+    "tierColor": "amber",
+    "targetPersonas": "VP Supply Chain, VP Operations, COO (at $100M-$300M companies)",
+    "messagingAngle": "Working capital optimization, service levels at scale, planning as competitive capability, scalable systems (not headcount-dependent)",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Planning as a competitive capability at [Company Name]",
+        "body": "Hi [First Name],\n\nMost $100M-$1B manufacturers we work with have invested in ERP, WMS, and MES - but demand and supply planning still runs in Excel.\n\nThat gap shows up as: excess working capital in slow SKUs, stockouts in fast movers, and service levels that depend on heroic effort from your planning team.\n\nPlantryx is an AI planning layer that sits on top of your ERP. It handles demand forecasting, supply planning, and inventory optimization - turning planning from a manual fire drill into a scalable capability.\n\nThe result: better service levels, lower working capital, and planning decisions that keep pace with your growth.\n\nWorth exploring?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (Working Capital & Service Levels)",
+        "subject": "Re: Planning as a competitive capability at [Company Name]",
+        "body": "Hi [First Name],\n\nFollowing up - we built a 5-minute Planning Maturity Diagnostic (self-assessment, ungated) that most supply chain and ops executives find valuable.\n\nIt benchmarks your planning process across forecast accuracy, working capital efficiency, service levels, and planning-cycle speed relative to peers in [vertical, e.g., \"electrical equipment manufacturing\"].\n\nNo forms, no pitch - just a snapshot of where planning capability can move the needle for [Company Name].\n\nWant me to send it over?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (Planning as Competitive Capability)",
+        "subject": "Re: Planning as a competitive capability at [Company Name]",
+        "body": "Hi [First Name],\n\nOne last thought - at $100M-$1B scale, planning becomes a competitive differentiator.\n\nThe companies that can forecast demand accurately, balance supply-demand volatility, and optimize working capital without heroic manual effort scale faster and with better margins.\n\nPlantryx makes that capability scalable. AI-driven planning on top of your ERP means you're not adding planners every time you add complexity - you're building a system that grows with you.\n\nIf planning capability is on your roadmap, I can walk through how this works in a 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "track-4-planning-inventory",
+    "tierName": "TRACK 4: Planning & Inventory (Non-Manufacturing)",
+    "tierColor": "purple",
+    "targetPersonas": "Demand Planning, Inventory Planning, Merchandising Planning, Replenishment Manager, Supply Chain Dir/Sr. Mgr (retail/distribution context)",
+    "messagingAngle": "Inventory turnover optimization, stockout reduction without excess carrying costs, demand forecasting for seasonal/promotional SKUs, replenishment automation",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Smarter inventory planning for [Company Name]",
+        "body": "Hi [First Name],\n\nMost retail/distribution companies we work with run their inventory in [ERP/system], but demand forecasting and replenishment decisions still happen in Excel - especially for seasonal SKUs, promotions, or high-variability items.\n\nThe result: too much inventory in slow movers, not enough in what's actually selling, and a lot of manual firefighting to balance the two.\n\nPlantryx is an AI planning layer that sits on top of your existing ERP or inventory system. It handles demand forecasting, replenishment optimization, and safety stock calculation - replacing the Excel layer with AI-driven planning.\n\nBetter forecasts -> smarter stock levels -> fewer stockouts without carrying excess.\n\nWorth exploring for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (Inventory Turnover Focus)",
+        "subject": "Re: Smarter inventory planning for [Company Name]",
+        "body": "Hi [First Name],\n\nQuick follow-up - we built a 5-minute Planning Maturity Diagnostic (self-assessment, ungated) that most inventory and planning leaders in retail/distribution find valuable.\n\nIt benchmarks your planning process across forecast accuracy, inventory turnover, stockout frequency, and working capital efficiency relative to peers in [sector, e.g., \"e-commerce\" or \"CPG distribution\"].\n\nNo forms, no sales pitch - just a quick snapshot of where your inventory planning sits today and where the biggest opportunities are.\n\nWant me to send it over?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (Seasonal & Promotional SKUs)",
+        "subject": "Re: Smarter inventory planning for [Company Name]",
+        "body": "Hi [First Name],\n\nOne last thought - the hardest part of inventory planning in retail/distribution isn't the steady-state SKUs. It's the seasonal items, promotional spikes, and high-variability products that make or break your inventory turns.\n\nTraditional ERP forecasting doesn't handle that well. It's built for manufacturing demand patterns, not retail volatility.\n\nPlantryx is built specifically for high-variability demand. AI-driven forecasting that adapts to seasonality, promotions, and rapid SKU changes - running on top of your ERP or inventory system without ripping it out.\n\nIf improving inventory planning for your high-volatility SKUs is a priority, I can show you how this works in a quick 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "track-5-ops-leadership",
+    "tierName": "TRACK 5: Ops Leadership (Non-Manufacturing)",
+    "tierColor": "indigo",
+    "targetPersonas": "VP Operations (retail/distribution/CPG), General Manager (GM), COO, Director of Operations",
+    "messagingAngle": "Operational efficiency in distribution, service level management (OTIF), working capital optimization for distributors, multi-location inventory balancing",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Better service levels without excess inventory at [Company Name]",
+        "body": "Hi [First Name],\n\nMost $100M-$1B distribution and retail companies we work with face the same challenge: hitting 95%+ service levels (on-time, in-full) without tying up excess working capital in inventory.\n\nThe bottleneck is usually demand planning - relying on historical averages or manual adjustments in Excel doesn't keep pace with today's SKU complexity and customer expectations.\n\nPlantryx is an AI planning layer that sits on top of your ERP or inventory system. It handles demand forecasting, replenishment optimization, and multi-location balancing - replacing manual planning with AI-driven intelligence.\n\nThe result: better service levels, lower carrying costs, and inventory that's where you need it, when you need it.\n\nWorth exploring for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (OTIF & Working Capital)",
+        "subject": "Re: Better service levels without excess inventory at [Company Name]",
+        "body": "Hi [First Name],\n\nFollowing up - we built a 5-minute Planning Maturity Diagnostic (self-assessment, ungated) that most ops and supply chain leaders in distribution find valuable.\n\nIt benchmarks your planning process across service level performance, working capital efficiency, forecast accuracy, and multi-location inventory optimization.\n\nNo forms, no pitch - just a snapshot of where planning capability can move the needle for [Company Name].\n\nWant me to send it over?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (Multi-Location Balancing)",
+        "subject": "Re: Better service levels without excess inventory at [Company Name]",
+        "body": "Hi [First Name],\n\nOne last thought - if you're running multiple DCs or warehouses, you know the challenge: one location has excess, another is out of stock, and by the time you balance it, the demand has shifted again.\n\nPlantryx handles multi-location inventory optimization on top of your existing ERP. AI-driven demand forecasting at the SKU-location level, with automated replenishment and transfer recommendations.\n\nYou maintain service levels without bloating total inventory across the network.\n\nIf multi-location balancing or OTIF improvement is a priority for you, I can walk through how this works in a 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-erp-it",
+    "tierName": "TIER 4: ERP/IT System Owners (Cross-Segment)",
+    "tierColor": "slate",
+    "targetPersonas": "IT Manager, IT Director, ERP Manager/Project Manager, Business Systems Manager, CIO (smaller companies)",
+    "messagingAngle": "AI planning layer on existing ERP, no rip-and-replace, no new master data project, IT-light deployment",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "AI planning layer for [Company Name]'s [ERP] stack",
+        "body": "Hi [First Name],\n\nMost manufacturers and distributors run demand planning and supply planning outside the ERP - usually Excel, sometimes a legacy APS that never got fully adopted.\n\nThe ERP holds the data, but the real planning decisions happen elsewhere.\n\nPlantryx is an AI planning layer that sits on top of [SAP/Dynamics/Epicor/ERP]. It handles demand forecasting, supply planning, and inventory optimization - replacing the Excel layer, not the ERP.\n\nKey for IT: no new master data project, no rip-and-replace, API-based integration. Your ERP stays as the system of record.\n\nWorth a look?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (IT-Light Deployment)",
+        "subject": "Re: AI planning layer for [Company Name]'s [ERP] stack",
+        "body": "Hi [First Name],\n\nQuick follow-up - most IT leaders we talk to have the same concern when they hear \"AI planning tool\": they assume it means a big implementation project, new master data, or a replacement for the ERP.\n\nPlantryx doesn't work that way. It's an API-based layer on top of your existing ERP:\n- Reads demand history, inventory, and supply data from [ERP]\n- Runs AI-driven forecasting and planning\n- Writes optimized plans back into [ERP] for execution\n\nNo rip-and-replace. No new master data. Typical deployment: 4-6 weeks from kickoff to first production forecasts.\n\nWe built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that shows where AI planning can have the biggest impact in your environment. Want me to send it?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (No ERP Replacement)",
+        "subject": "Re: AI planning layer for [Company Name]'s [ERP] stack",
+        "body": "Hi [First Name],\n\nLast note - one thing we're very clear about with IT stakeholders: Plantryx is not an ERP replacement.\n\nYour ERP is the system of record for orders, inventory, BOMs, and execution. Plantryx is the planning brain that sits on top - AI-native forecasting and supply-demand optimization that most ERPs don't do well (because they weren't built for it).\n\nThink of it as replacing the Excel planning layer, not the ERP.\n\nIf you'd like to see how the integration works in practice, I can walk through a technical overview in a 20-minute call.\n\nWorth talking?\n\nBest,\n[Your Name]"
+      }
+    ]
   }
 ]

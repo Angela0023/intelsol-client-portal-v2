@@ -379,6 +379,226 @@ function ICPTab() {
         </div>
       </ContentSection>
 
+      <ContentSection title="NEW: Segment A/B Framework (EXPANSION)" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <p className="font-semibold text-green-900 mb-2">🆕 Expanded ICP Structure (Aug 2026):</p>
+            <p className="text-green-800 text-sm">
+              This is an <strong>ADDITION</strong> to the original 5 verticals and persona tiers above, not a replacement.
+              All original ICPs and titles remain active. This framework expands targeting to include non-manufacturing companies.
+            </p>
+          </div>
+
+          {/* Segment A: Manufacturing */}
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-5">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg">A</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900 text-lg">Segment A: Manufacturing</h4>
+                <p className="text-sm text-slate-600">Includes previous 5 ICPs + any company considered a manufacturer</p>
+              </div>
+            </div>
+
+            {/* Track 1 */}
+            <div className="bg-white border border-blue-200 rounded-lg p-4 mb-3">
+              <div className="flex items-center space-x-2 mb-3">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-sm">1</span>
+                </div>
+                <h5 className="font-semibold text-slate-900">Track 1: Planning & S&OP</h5>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <p className="font-medium text-slate-700 mb-1">Key Titles:</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {[
+                      'Demand Planning / Supply Planning',
+                      'S&OP / IBP roles',
+                      'Supply Chain Director / Sr. Manager',
+                    ].map((title) => (
+                      <div key={title} className="bg-blue-50 px-2 py-1 rounded text-xs">
+                        {title}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-2 rounded mt-2">
+                  <p className="text-blue-900 text-xs">
+                    <strong>Maps to Original:</strong> Tier 1 (Corporate Planning)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Track 2 */}
+            <div className="bg-white border border-blue-200 rounded-lg p-4 mb-3">
+              <div className="flex items-center space-x-2 mb-3">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-sm">2</span>
+                </div>
+                <h5 className="font-semibold text-slate-900">Track 2: Ops Floor</h5>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <p className="font-medium text-slate-700 mb-1">Key Titles:</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {[
+                      'Master Scheduler',
+                      'Production Planning / Control',
+                      'Materials Manager',
+                      'Inventory Control',
+                      'Plant Manager',
+                    ].map((title) => (
+                      <div key={title} className="bg-blue-50 px-2 py-1 rounded text-xs">
+                        {title}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-2 rounded mt-2">
+                  <p className="text-blue-900 text-xs">
+                    <strong>Maps to Original:</strong> Tier 2 (Manufacturing-Native) + Tier 3 (Inventory)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Track 3 */}
+            <div className="bg-white border border-blue-200 rounded-lg p-4">
+              <div className="flex items-center space-x-2 mb-3">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-sm">3</span>
+                </div>
+                <h5 className="font-semibold text-slate-900">Track 3: Executives</h5>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <p className="font-medium text-slate-700 mb-1">Key Titles:</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {[
+                      'VP Supply Chain',
+                      'VP Operations',
+                      'COO',
+                    ].map((title) => (
+                      <div key={title} className="bg-blue-50 px-2 py-1 rounded text-xs">
+                        {title}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-2 rounded mt-2">
+                  <p className="text-blue-900 text-xs">
+                    <strong>Maps to Original:</strong> Tier 5 (Executive Layer)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Segment B: Non-Manufacturing (NEW) */}
+          <div className="bg-purple-50 border-2 border-purple-200 rounded-lg p-5">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg">B</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900 text-lg">Segment B: Non-Manufacturing (NEW)</h4>
+                <p className="text-sm text-slate-600">Retail / Ecommerce / CPG / Distribution</p>
+              </div>
+            </div>
+
+            {/* Track 4 */}
+            <div className="bg-white border border-purple-200 rounded-lg p-4 mb-3">
+              <div className="flex items-center space-x-2 mb-3">
+                <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-sm">4</span>
+                </div>
+                <h5 className="font-semibold text-slate-900">Track 4: Planning & Inventory</h5>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <p className="font-medium text-slate-700 mb-1">Key Titles:</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {[
+                      'Demand Planning / Inventory Planning',
+                      'Merchandising Planning',
+                      'Replenishment Manager',
+                      'Supply Chain Dir / Sr. Mgr (retail/distribution)',
+                    ].map((title) => (
+                      <div key={title} className="bg-purple-50 px-2 py-1 rounded text-xs">
+                        {title}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="bg-purple-50 border-l-4 border-purple-400 p-2 rounded mt-2">
+                  <p className="text-purple-900 text-xs">
+                    <strong>NEW CATEGORY:</strong> Non-manufacturing planning roles
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Track 5 */}
+            <div className="bg-white border border-purple-200 rounded-lg p-4">
+              <div className="flex items-center space-x-2 mb-3">
+                <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-sm">5</span>
+                </div>
+                <h5 className="font-semibold text-slate-900">Track 5: Ops Leadership</h5>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <p className="font-medium text-slate-700 mb-1">Key Titles:</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    {[
+                      'VP Operations (retail/distribution)',
+                      'General Manager (GM)',
+                      'COO',
+                      'Director of Operations',
+                    ].map((title) => (
+                      <div key={title} className="bg-purple-50 px-2 py-1 rounded text-xs">
+                        {title}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="bg-purple-50 border-l-4 border-purple-400 p-2 rounded mt-2">
+                  <p className="text-purple-900 text-xs">
+                    <strong>NEW CATEGORY:</strong> Non-manufacturing ops leadership
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cross-Segment Note */}
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-4 rounded">
+            <p className="font-semibold text-slate-900 mb-2">Cross-Segment: ERP/IT System Owners</p>
+            <p className="text-slate-700 text-sm">
+              <strong>Tier 4 (ERP/IT)</strong> remains a separate sequence applicable to BOTH Segment A and Segment B.
+              This includes IT Managers, ERP Managers, Business Systems Managers, and CIOs. Represents ~10-15% of volume.
+            </p>
+          </div>
+
+          {/* Sequencing Strategy */}
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+            <p className="font-semibold text-amber-900 mb-2">Within-Account Sequencing:</p>
+            <ul className="space-y-1 text-amber-800 text-sm">
+              <li><strong>Manufacturing (Segment A):</strong></li>
+              <li className="ml-4">• $100M–$300M companies: Start Track 2 (Ops Floor)</li>
+              <li className="ml-4">• $300M–$1B companies: Start Track 1 (Planning & S&OP)</li>
+              <li className="ml-4">• No planning title: Use Tier 4 (ERP/IT) as entry</li>
+              <li className="mt-2"><strong>Non-Manufacturing (Segment B):</strong></li>
+              <li className="ml-4">• Start Track 4 (Planning & Inventory) for most companies</li>
+              <li className="ml-4">• Use Track 5 (Ops Leadership) for &lt;$300M or when no planning role exists</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
       <ContentSection title="Buying Signals — Rank Leads by Signal Strength" icon={<TrendingUp className="w-5 h-5" />}>
         <div className="space-y-4">
           <div>
