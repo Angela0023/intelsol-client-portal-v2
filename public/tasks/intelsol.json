@@ -30,7 +30,7 @@
     "id": "task_1786022433641_au0y5s8",
     "description": "Update Plantryx Dashboard and documentation based on their feedback",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-06",
     "order": 3,
     "comments": [
@@ -157,6 +157,15 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 9,
+    "comments": []
+  },
+  {
+    "id": "task_1786030453719_91yvhwr",
+    "description": "Connect Intelsol mailboxes back to campaigns",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-06",
+    "order": 13,
     "comments": []
   }
 ]
