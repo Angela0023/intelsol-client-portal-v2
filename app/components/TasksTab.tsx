@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useEditMode } from './EditModeContext';
-import { CheckSquare, Square, Trash2, Plus, Save, User, Calendar, Loader, RefreshCw, Edit2, MessageSquare, X, Send, GripVertical } from 'lucide-react';
+import { CheckSquare, Square, Trash2, Plus, Save, User, Calendar, Loader, RefreshCw, Edit2, MessageSquare, X, Send, GripVertical, ChevronDown, ChevronUp } from 'lucide-react';
 import {
   DndContext,
   closestCenter,
@@ -96,6 +96,19 @@ function SortableTaskItem({
 
   const isEditing = editingTaskId === task.id;
   const showComments = showCommentsForTask === task.id;
+  const [expandedComments, setExpandedComments] = useState<Set<string>>(new Set());
+
+  const toggleCommentExpansion = (commentId: string) => {
+    setExpandedComments((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(commentId)) {
+        newSet.delete(commentId);
+      } else {
+        newSet.add(commentId);
+      }
+      return newSet;
+    });
+  };
 
   return (
     <div ref={setNodeRef} style={style}>
@@ -171,26 +184,51 @@ function SortableTaskItem({
               {/* Existing Comments */}
               {task.comments && task.comments.length > 0 && (
                 <div className="space-y-2">
-                  {task.comments.map((comment) => (
-                    <div key={comment.id} className="bg-white rounded-lg p-3 shadow-sm">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <p className="text-sm text-slate-900">{comment.text}</p>
-                          <p className="text-xs text-slate-500 mt-1">
-                            {comment.createdBy} • {new Date(comment.createdAt).toLocaleDateString()}
-                          </p>
+                  {task.comments.map((comment) => {
+                    const isExpanded = expandedComments.has(comment.id);
+                    const isLongComment = comment.text.length > 150;
+
+                    return (
+                      <div key={comment.id} className="bg-white rounded-lg p-3 shadow-sm">
+                        <div className="flex items-start justify-between gap-2">
+                          <div className="flex-1 min-w-0">
+                            <p className={`text-sm text-slate-900 ${!isExpanded && isLongComment ? 'line-clamp-3' : ''}`}>
+                              {comment.text}
+                            </p>
+                            {isLongComment && (
+                              <button
+                                onClick={() => toggleCommentExpansion(comment.id)}
+                                className="text-xs text-[#1a2647] hover:text-[#2a3757] mt-1 flex items-center gap-1 font-medium"
+                              >
+                                {isExpanded ? (
+                                  <>
+                                    <ChevronUp className="w-3 h-3" />
+                                    Show less
+                                  </>
+                                ) : (
+                                  <>
+                                    <ChevronDown className="w-3 h-3" />
+                                    Show more
+                                  </>
+                                )}
+                              </button>
+                            )}
+                            <p className="text-xs text-slate-500 mt-1">
+                              {comment.createdBy} • {new Date(comment.createdAt).toLocaleDateString()}
+                            </p>
+                          </div>
+                          {canEdit && (
+                            <button
+                              onClick={() => onDeleteComment(task.id, comment.id)}
+                              className="text-slate-400 hover:text-red-600 transition-colors flex-shrink-0"
+                            >
+                              <X className="w-4 h-4" />
+                            </button>
+                          )}
                         </div>
-                        {canEdit && (
-                          <button
-                            onClick={() => onDeleteComment(task.id, comment.id)}
-                            className="text-slate-400 hover:text-red-600 transition-colors"
-                          >
-                            <X className="w-4 h-4" />
-                          </button>
-                        )}
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
 
