@@ -1650,6 +1650,35 @@ function PersonasTab() {
 
 function CampaignsTab() {
   const campaigns = [
+    // April 2026
+    { campaignName: '🏆 Intelsol | Generic sequence | HR + SRB', dateLaunched: '4/1/2026', leadsAdded: 868, month: 'April' },
+    { campaignName: '🏆 Intelsol | Generic sequence | EU Mix List', dateLaunched: '4/1/2026', leadsAdded: 1004, month: 'April' },
+    { campaignName: '🏆 Intelsol | Sequence | HR + SRB | Old Leads', dateLaunched: '4/10/2026', leadsAdded: 615, month: 'April' },
+    { campaignName: '🏆 Intelsol | Generic sequence | Ne, Den, Sw, No', dateLaunched: '4/13/2026', leadsAdded: 359, month: 'April' },
+    { campaignName: '🏆 Intelsol | Sequence 17.4. | HR + SRB | Old Leads', dateLaunched: '4/17/2026', leadsAdded: 1173, month: 'April' },
+    { campaignName: '🏆 Intelsol | Sequence 20.4. | HR + SRB | Old Leads', dateLaunched: '4/20/2026', leadsAdded: 1578, month: 'April' },
+    { campaignName: '🏆 Intelsol | Generic sequence | Ne, Den, Sw, No - copy', dateLaunched: '4/20/2026', leadsAdded: 922, month: 'April' },
+    // May 2026
+    { campaignName: '🏆 Intelsol | Sequence 12.5. | HR + SRB | Old Leads', dateLaunched: '5/12/2026', leadsAdded: 1286, month: 'May' },
+    { campaignName: '🏆 Intelsol | Sequence 21.5. | HR + SRB | Old Leads', dateLaunched: '5/21/2026', leadsAdded: 1521, month: 'May' },
+    // June 2026
+    { campaignName: '🏆 Intelsol | Sequence 2.6. | HR + SRB | Old Leads', dateLaunched: '6/2/2026', leadsAdded: 1073, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 4.6. | IT/Software - Personalized', dateLaunched: '6/4/2026', leadsAdded: 853, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 4.6. | IT/Software - Unpersonalized', dateLaunched: '6/4/2026', leadsAdded: 433, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 8.6. | IT/Software - Personalized', dateLaunched: '6/8/2026', leadsAdded: 359, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 10.6. | IT/Software - Unpersonalised | USA Content', dateLaunched: '6/10/2026', leadsAdded: 480, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 10.6. | IT/Software - Unpersonalised | EU Content', dateLaunched: '6/10/2026', leadsAdded: 442, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 11.6. | Manufacturing - Unpersonalised | USA Content', dateLaunched: '6/11/2026', leadsAdded: 271, month: 'June' },
+    { campaignName: '🏆 Intelsol | Belgium | 11.6. | Manufacturing - Unpersonalised | EU Content', dateLaunched: '6/11/2026', leadsAdded: 226, month: 'June' },
+    { campaignName: '🏆 Intelsol | L3 | Personalized - Netherland 500 leads | Software and IT | 16/Jun/26', dateLaunched: '6/16/2026', leadsAdded: 255, month: 'June' },
+    { campaignName: '🏆 Intelsol | L3.1 | Personalized - Netherland 500 leads | Manufacturing | 16/Jun/26', dateLaunched: '6/16/2026', leadsAdded: 300, month: 'June' },
+    { campaignName: '🏆 Intelsol | L3.2 US | 17/Jun/26 | Software & IT - Unpersonalised | USA Content', dateLaunched: '6/17/2026', leadsAdded: 393, month: 'June' },
+    { campaignName: '🏆 Intelsol | L3.2 US | 17/Jun/26 | Software & IT | Personalized', dateLaunched: '6/17/2026', leadsAdded: 525, month: 'June' },
+    { campaignName: '🏆 Intelsol | NEW L3 | Personalized - Netherland 500 leads | Software and IT | 17/Jun/26', dateLaunched: '6/17/2026', leadsAdded: 96, month: 'June' },
+    { campaignName: '🏆 Intelsol | NEW L3.1 | Personalized - Netherland 500 leads | Manufacturing | 17/Jun/26', dateLaunched: '6/17/2026', leadsAdded: 235, month: 'June' },
+    { campaignName: '🏆 Intelsol | Sequence 25.6. | HR + SRB | Old Leads', dateLaunched: '6/25/2026', leadsAdded: 1296, month: 'June' },
+    { campaignName: '🏆 Intelsol | L4.1 US | 29/Jun/26 | Software & IT | Personalized | Prospeo & ZeroBounce', dateLaunched: '6/29/2026', leadsAdded: 589, month: 'June' },
+    // July 2026
     { campaignName: '🏆 Intelsol | L4.1 US | 01/Jul/26 | Software & IT | Personalized | Expandi & MillionVerifier', dateLaunched: '7/1/2026', leadsAdded: 269, month: 'July' },
     { campaignName: '🏆 Intelsol | L4.1 US | 02/Jul/26 | Personalized | Software & IT | Prospeo & MillionVerifier', dateLaunched: '7/2/2026', leadsAdded: 466, month: 'July' },
     { campaignName: '🏆 Intelsol | L4.1 W2 US | 07/Jun/2026 | NEW USA Unpersonalized', dateLaunched: '7/6/2026', leadsAdded: 2165, month: 'July' },
@@ -1679,9 +1708,11 @@ function CampaignsTab() {
     { campaignName: '🏆 Intelsol | US Sales Nav | 30/Jul/26 | Machinery Manufacturing 10-50 | $5M - $50M | Personalized V1', dateLaunched: '7/30/2026', leadsAdded: 628, month: 'July' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 30/Jul/26 | Machinery Manufacturing 10-50 | $5M - $50M | Personalized V2', dateLaunched: '7/30/2026', leadsAdded: 631, month: 'July' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 30/Jul/26 | IT/Software - Unpersonalized', dateLaunched: '7/30/2026', leadsAdded: 194, month: 'July' },
+    // August 2026
     { campaignName: '🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V1', dateLaunched: '8/2/2026', leadsAdded: 144, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V2', dateLaunched: '8/2/2026', leadsAdded: 193, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M - Unpersonalized', dateLaunched: '8/2/2026', leadsAdded: 159, month: 'August' },
+    { campaignName: '🏆 Intelsol | Sequence | 5.8. | Slovenia | Apollo/Ample - Sales', dateLaunched: '8/5/2026', leadsAdded: 588, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. | Personalized V1', dateLaunched: '8/6/2026', leadsAdded: 421, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. | Personalized V2', dateLaunched: '8/6/2026', leadsAdded: 430, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. - Unpersonalized', dateLaunched: '8/6/2026', leadsAdded: 259, month: 'August' },
@@ -1695,6 +1726,9 @@ function CampaignsTab() {
 
   // Calculate monthly breakdown
   const monthlyBreakdown = [
+    { month: 'April 2026', leads: campaigns.filter(c => c.month === 'April').reduce((sum, c) => sum + c.leadsAdded, 0), campaigns: campaigns.filter(c => c.month === 'April').length },
+    { month: 'May 2026', leads: campaigns.filter(c => c.month === 'May').reduce((sum, c) => sum + c.leadsAdded, 0), campaigns: campaigns.filter(c => c.month === 'May').length },
+    { month: 'June 2026', leads: campaigns.filter(c => c.month === 'June').reduce((sum, c) => sum + c.leadsAdded, 0), campaigns: campaigns.filter(c => c.month === 'June').length },
     { month: 'July 2026', leads: campaigns.filter(c => c.month === 'July').reduce((sum, c) => sum + c.leadsAdded, 0), campaigns: campaigns.filter(c => c.month === 'July').length },
     { month: 'August 2026', leads: campaigns.filter(c => c.month === 'August').reduce((sum, c) => sum + c.leadsAdded, 0), campaigns: campaigns.filter(c => c.month === 'August').length },
   ];
@@ -1715,22 +1749,24 @@ function CampaignsTab() {
       </ContentSection>
 
       <ContentSection title="Campaign Details" icon={<Zap className="w-5 h-5" />}>
-        {/* Mobile: Card Layout */}
-        <div className="lg:hidden space-y-3">
-          {campaigns.map((campaign, index) => (
-            <div key={index} className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-              <div className="flex items-start justify-between mb-2">
-                <p className="text-sm font-medium text-slate-900 break-words flex-1">{campaign.campaignName}</p>
+        {/* Mobile: Card Layout - Scrollable */}
+        <div className="lg:hidden max-h-[500px] overflow-y-auto pr-2">
+          <div className="space-y-3">
+            {campaigns.map((campaign, index) => (
+              <div key={index} className="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                <div className="flex items-start justify-between mb-2">
+                  <p className="text-sm font-medium text-slate-900 break-words flex-1">{campaign.campaignName}</p>
+                </div>
+                <div className="flex items-center justify-between text-xs text-slate-600 mt-2 pt-2 border-t border-slate-200">
+                  <span>{campaign.dateLaunched}</span>
+                  <span className="font-semibold text-green-700">{campaign.leadsAdded.toLocaleString()} leads</span>
+                </div>
               </div>
-              <div className="flex items-center justify-between text-xs text-slate-600 mt-2 pt-2 border-t border-slate-200">
-                <span>{campaign.dateLaunched}</span>
-                <span className="font-semibold text-green-700">{campaign.leadsAdded.toLocaleString()} leads</span>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
-          {/* Totals card for mobile */}
-          <div className="bg-slate-100 rounded-lg p-3 border-2 border-slate-300">
+          {/* Totals card for mobile - Fixed at bottom */}
+          <div className="sticky bottom-0 bg-slate-100 rounded-lg p-3 border-2 border-slate-300 mt-3">
             <div className="flex items-center justify-between">
               <span className="text-sm font-semibold text-slate-900">Total Leads:</span>
               <span className="text-lg font-bold text-green-700">{totalLeads.toLocaleString()}</span>
@@ -1738,50 +1774,48 @@ function CampaignsTab() {
           </div>
         </div>
 
-        {/* Desktop: Table Layout */}
+        {/* Desktop: Table Layout - Scrollable */}
         <div className="hidden lg:block bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
-          <div className="overflow-x-auto">
-            <div className="inline-block min-w-full align-middle">
-              <table className="min-w-full">
-                <thead>
-                  <tr className="bg-slate-50 border-b border-slate-200">
-                    <th className="text-left px-2 lg:px-4 py-2 lg:py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                      Campaign Name
-                    </th>
-                    <th className="text-center px-2 lg:px-4 py-2 lg:py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                      Date
-                    </th>
-                    <th className="text-right px-2 lg:px-4 py-2 lg:py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                      Leads
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100">
-                  {campaigns.map((campaign, index) => (
-                    <tr key={index} className="hover:bg-slate-50 transition-colors">
-                      <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-slate-700">
-                        {campaign.campaignName}
-                      </td>
-                      <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-slate-700 text-center whitespace-nowrap">
-                        {campaign.dateLaunched}
-                      </td>
-                      <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm font-semibold text-right whitespace-nowrap">
-                        <span className="text-green-700">{campaign.leadsAdded.toLocaleString()}</span>
-                      </td>
-                    </tr>
-                  ))}
-                  {/* Totals row */}
-                  <tr className="bg-slate-50 border-t-2 border-slate-200 font-semibold">
-                    <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-slate-900" colSpan={2}>
-                      Total
+          <div className="max-h-[600px] overflow-y-auto">
+            <table className="min-w-full">
+              <thead className="sticky top-0 bg-slate-50 z-10">
+                <tr className="border-b border-slate-200">
+                  <th className="text-left px-2 lg:px-4 py-2 lg:py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                    Campaign Name
+                  </th>
+                  <th className="text-center px-2 lg:px-4 py-2 lg:py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
+                    Date
+                  </th>
+                  <th className="text-right px-2 lg:px-4 py-2 lg:py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
+                    Leads
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {campaigns.map((campaign, index) => (
+                  <tr key={index} className="hover:bg-slate-50 transition-colors">
+                    <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-slate-700">
+                      {campaign.campaignName}
                     </td>
-                    <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-green-900 text-right">
-                      {totalLeads.toLocaleString()}
+                    <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-slate-700 text-center whitespace-nowrap">
+                      {campaign.dateLaunched}
+                    </td>
+                    <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm font-semibold text-right whitespace-nowrap">
+                      <span className="text-green-700">{campaign.leadsAdded.toLocaleString()}</span>
                     </td>
                   </tr>
-                </tbody>
-              </table>
-            </div>
+                ))}
+                {/* Totals row - Sticky at bottom */}
+                <tr className="sticky bottom-0 bg-slate-50 border-t-2 border-slate-200 font-semibold">
+                  <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-slate-900" colSpan={2}>
+                    Total
+                  </td>
+                  <td className="px-2 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm text-green-900 text-right">
+                    {totalLeads.toLocaleString()}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </ContentSection>
