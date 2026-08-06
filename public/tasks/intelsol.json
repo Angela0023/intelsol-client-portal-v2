@@ -110,5 +110,12 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-07"
+  },
+  {
+    "id": "task_1786022433641_au0y5s8",
+    "description": "Update Plantryx Dashbaord and documentation based on their feedback",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-06"
   }
 ]
