@@ -103,5 +103,12 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786022382435_omrq65o",
+    "description": "Set up a Dshboard for https://www.adsigner.com/en",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-07"
   }
 ]
