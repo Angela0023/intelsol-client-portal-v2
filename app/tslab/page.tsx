@@ -7,6 +7,7 @@ import TasksTab, { TSLAB_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
@@ -148,8 +149,13 @@ export default function TSLabPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="tslab" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="tslab" />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="tslab" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="tslab" />
+              <CampaignsTabDynamic clientId="tslab" />
+            </>
+          )}
           {activeTab === 'documents' && <DocumentsTab />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="tslab" defaultTasks={TSLAB_DEFAULT_TASKS} />

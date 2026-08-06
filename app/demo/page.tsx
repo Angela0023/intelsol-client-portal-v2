@@ -7,6 +7,7 @@ import TasksTab from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
@@ -164,8 +165,13 @@ export default function DemoPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="demo" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="demo" />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="demo" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="demo" />
+              <CampaignsTabDynamic clientId="demo" />
+            </>
+          )}
           {activeTab === 'documents' && <DocumentsTab />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="demo" defaultTasks={[]} />

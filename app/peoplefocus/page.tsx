@@ -7,6 +7,7 @@ import TasksTab, { XPOSE_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Zap, Mail } from 'lucide-react';
 
@@ -131,9 +132,14 @@ export default function PeopleFocusPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="peoplefocus" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="peoplefocus" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
           {activeTab === 'signals' && <SignalsTab />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="peoplefocus" />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="peoplefocus" />
+              <CampaignsTabDynamic clientId="peoplefocus" />
+            </>
+          )}
           {activeTab === 'tasks' && (
             <TasksTab clientId="peoplefocus" defaultTasks={PEOPLEFOCUS_DEFAULT_TASKS} />
           )}

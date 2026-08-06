@@ -7,6 +7,7 @@ import TasksTab, { INTELSOL_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { FileText, BarChart3, CheckSquare, TrendingUp, Target, Filter, Code, Users, BookOpen, Mail, Zap } from 'lucide-react';
 
@@ -146,9 +147,14 @@ export default function IntelsolPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="intelsol" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="intelsol" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
           {activeTab === 'sops' && <SOPsTab />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="intelsol" />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="intelsol" />
+              <CampaignsTabDynamic clientId="intelsol" />
+            </>
+          )}
           {activeTab === 'tasks' && (
             <TasksTab clientId="intelsol" defaultTasks={INTELSOL_DEFAULT_TASKS} />
           )}

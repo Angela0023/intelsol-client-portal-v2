@@ -7,6 +7,7 @@ import TasksTab, { XPOSE_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, Mail } from 'lucide-react';
 
@@ -148,8 +149,13 @@ export default function XposePage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="xpose" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="xpose" />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="xpose" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="xpose" />
+              <CampaignsTabDynamic clientId="xpose" />
+            </>
+          )}
           {activeTab === 'tasks' && (
             <TasksTab clientId="xpose" defaultTasks={XPOSE_DEFAULT_TASKS} />
           )}

@@ -7,6 +7,7 @@ import TasksTab, { BEEIT_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, Layers, CheckSquare, BarChart3, Zap, Mail } from 'lucide-react';
 
@@ -139,9 +140,14 @@ export default function BeeItPage() {
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="beeit" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="beeit" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
           {activeTab === 'tracking' && <TrackingTab />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="beeit" />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="beeit" />
+              <CampaignsTabDynamic clientId="beeit" />
+            </>
+          )}
           {activeTab === 'tasks' && (
             <TasksTab clientId="beeit" defaultTasks={BEEIT_DEFAULT_TASKS} />
           )}

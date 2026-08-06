@@ -36,10 +36,43 @@
 - Include sequence design principles at top
 - Make it scannable: clear visual separation between sequences
 
-**UPCOMING TAB STRUCTURE CHANGE:**
-- **Campaigns tab**: Will contain rules and guidelines for campaigns (not campaign data)
-- **Performance tab**: Will consolidate both campaign lists AND performance metrics into one tab
-- This change will apply to ALL clients for consistency
+**Campaigns & Performance Tab Organization (IMPLEMENTED 2026-08-06):**
+
+**CAMPAIGNS TAB** = Campaign Planning & Strategy (HOW to run campaigns)
+- Contains: Campaign structure, sequencing rules, messaging frameworks, CTAs, validation workflows
+- Component: `CampaignsTabGeneric` (generic) OR custom component (e.g., Plantryx uses `CampaignsTabContent`)
+- Purpose: Playbook for planning campaigns BEFORE launch
+- Shows: Strategic guidelines, not execution data
+
+**PERFORMANCE TAB** = Campaign Execution & Results (WHAT's running + metrics)
+- Contains: Active campaign metrics + campaign execution data (both PerformanceTabDynamic AND CampaignsTabDynamic)
+- Components:
+  ```tsx
+  <PerformanceTabDynamic clientId="[client]" />
+  <CampaignsTabDynamic clientId="[client]" />
+  ```
+- Purpose: Dashboard for ACTIVE campaigns and their results
+- Shows: Metrics, campaign lists, performance data, monthly breakdowns
+
+**Why This Separation:**
+- **Campaigns tab** = "How do we plan this?"
+- **Performance tab** = "What's running and how is it performing?"
+- Consistent across ALL clients
+- No confusion about where content belongs
+
+**Implementation Pattern:**
+```tsx
+// Campaigns tab - Planning content
+{activeTab === 'campaigns' && <CampaignsTabGeneric />}
+
+// Performance tab - Execution + Metrics
+{activeTab === 'performance' && (
+  <>
+    <PerformanceTabDynamic clientId="clientname" />
+    <CampaignsTabDynamic clientId="clientname" />
+  </>
+)}
+```
 
 ---
 
@@ -652,11 +685,62 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
   - PeopleFocus: 1 campaign (DRAFTED status)
 - **Lesson:** Always verify actual data before assuming naming patterns
 
-**Information Update: Future Tab Structure Change**
-- **Campaigns tab** will contain rules and guidelines for campaigns (not campaign data)
-- **Performance tab** will consolidate both campaign lists AND performance metrics
-- This change will apply to ALL clients for consistency
-- Documented in HARD RULE #1 as "UPCOMING TAB STRUCTURE CHANGE"
+### 2026-08-06: Campaigns/Performance Tab Reorganization (ALL CLIENTS)
+
+**Problem:** Campaigns tab showed different content for different clients - some showed active campaign lists, some showed planning content. This was inconsistent and confusing.
+
+**Solution:** Reorganized tabs across ALL clients to separate planning from execution:
+- **Campaigns tab** = Campaign planning & strategy (HOW to plan campaigns)
+- **Performance tab** = Campaign execution & metrics (WHAT's running + results)
+
+**Implementation Details:**
+
+1. **Created Generic Campaigns Component** (`/app/components/CampaignsTabGeneric.tsx`):
+   - Pre-launch checklist
+   - Universal within-account sequencing rules
+   - Placeholder for client-specific campaign guidelines
+   - Used by all clients except those with custom planning content
+
+2. **Created Custom Campaigns Component for Plantryx** (`/app/plantryx/CampaignsTabContent.tsx`):
+   - Campaign Structure by Segment (Manufacturing + Non-Manufacturing)
+   - Within-Account Sequencing Strategy (both segments)
+   - CTA Options (Planning Maturity Diagnostic + Demo Video)
+   - 100-Lead Validation Workflow
+
+3. **Updated Performance Tab for ALL Clients**:
+   - Now shows BOTH PerformanceTabDynamic + CampaignsTabDynamic
+   - Combined execution metrics with campaign lists
+   - Provides complete view of active campaigns and their results
+
+4. **Clients Updated:**
+   - ✅ plantryx (custom CampaignsTabContent)
+   - ✅ demo, beeit, wulf, peoplefocus, xpose, intelsol, tslab (generic CampaignsTabGeneric)
+
+**Result:**
+- Consistent tab structure across all clients
+- Clear separation: planning (Campaigns) vs. execution (Performance)
+- No content lost or removed
+- All clients now follow same organizational pattern
+
+**Key Lessons:**
+1. **Consistency is critical** - Same tab structure prevents confusion
+2. **Separation of concerns** - Planning vs. execution belong in different tabs
+3. **Generic + Custom approach** - Generic component for most clients, custom for those with specific needs
+4. **Document changes immediately** - Updated CLAUDE.md with implementation details and patterns
+
+**Implementation Pattern (for future clients):**
+```tsx
+// Campaigns tab
+{activeTab === 'campaigns' && <CampaignsTabGeneric />}
+
+// Performance tab
+{activeTab === 'performance' && (
+  <>
+    <PerformanceTabDynamic clientId="clientname" />
+    <CampaignsTabDynamic clientId="clientname" />
+  </>
+)}
+```
 
 ---
 

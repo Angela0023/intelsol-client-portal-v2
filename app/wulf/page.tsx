@@ -7,6 +7,7 @@ import TasksTab from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { FileText, BarChart3, CheckSquare, Mail, AlertTriangle, Target, Users, MessageSquare, Zap } from 'lucide-react';
 
@@ -114,8 +115,13 @@ export default function WulfPage() {
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'spam-check' && <SpamCheckTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="wulf" />}
-          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="wulf" />}
-          {activeTab === 'performance' && <PerformanceTabDynamic clientId="wulf" />}
+          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="wulf" />
+              <CampaignsTabDynamic clientId="wulf" />
+            </>
+          )}
           {activeTab === 'tasks' && (
             <TasksTab clientId="wulf" defaultTasks={[]} />
           )}
