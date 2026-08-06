@@ -82,5 +82,12 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786021360751_8rsw7fq",
+    "description": "Send Eblissai.com ICP documentation",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06"
   }
 ]
