@@ -33,7 +33,14 @@
     "status": "pending",
     "dueDate": "2026-08-06",
     "order": 3,
-    "comments": []
+    "comments": [
+      {
+        "id": "comment_1786024006958_cn5t2hl",
+        "text": "Hi Matej,  Thanks for providing the access credentials.  Following our conversation about expanding the ICP, I added to the master doc a new section that segments the ICP as follows: Segment A: Manufacturing (this should include the previous 5 ICPs plus any company considered a manufacturer) Track1: Planning & S&OP (Demand/Supply Planning, S&OP/IBP, Supply Chain Director/Sr. Manager) Track2: Ops Floor (Master Scheduler, Production Planning/Control, Materials Manager, Inventory Control, Plant Manager) Track3: Executives (VP Supply Chain, VP Operations, COO) Segment B: Non-manufacturing (Retail/Ecommerce/CPG/Distribution) Track4: Planning & Inventory (Demand/Inventory/Merch Planning, Replenishment, Supply Chain Dir/Sr. Mgr) Track5: Ops Leadership (VP Operations, GM, COO, Director of Operations)  Please consider the above an addition to the previously shared ICPs and titles, not a replacement. I also included messaging examples for each segment/track so, you can refer to them when building the campaigns.  By the way, the hand-picked sample of leads currently showing in the platform looks good to me. Once you load the new ICPs, let's pick a random sample of 100 leads for validation, and we will take it from there.   As part of messaging, we can offer a short demo video or a free planning maturity diagnosis. Let me know if those CTAs would be helpful.  Thanks,",
+        "createdAt": "2026-08-06T13:46:46.959Z",
+        "createdBy": "Admin"
+      }
+    ]
   },
   {
     "id": "task_1786022347132_ank8nmi",
