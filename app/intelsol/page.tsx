@@ -1682,6 +1682,12 @@ function CampaignsTab() {
     { campaignName: '🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V1', dateLaunched: '8/2/2026', leadsAdded: 144, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V2', dateLaunched: '8/2/2026', leadsAdded: 193, month: 'August' },
     { campaignName: '🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M - Unpersonalized', dateLaunched: '8/2/2026', leadsAdded: 159, month: 'August' },
+    { campaignName: '🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. | Personalized V1', dateLaunched: '8/6/2026', leadsAdded: 421, month: 'August' },
+    { campaignName: '🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. | Personalized V2', dateLaunched: '8/6/2026', leadsAdded: 430, month: 'August' },
+    { campaignName: '🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. - Unpersonalized', dateLaunched: '8/6/2026', leadsAdded: 259, month: 'August' },
+    { campaignName: '🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. | Personalized V1', dateLaunched: '8/6/2026', leadsAdded: 45, month: 'August' },
+    { campaignName: '🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. | Personalized V2', dateLaunched: '8/6/2026', leadsAdded: 46, month: 'August' },
+    { campaignName: '🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. - Unpersonalized', dateLaunched: '8/6/2026', leadsAdded: 94, month: 'August' },
   ];
 
   const totalLeads = campaigns.reduce((sum, c) => sum + c.leadsAdded, 0);
