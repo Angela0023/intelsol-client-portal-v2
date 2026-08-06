@@ -12,13 +12,13 @@
  *
  * Clients and their prefixes:
  * - Intelsol: 🏆 Intelsol
- * - TSLab: 🏆 TS Lab
- * - Demo: 🏆 Demo
- * - Xpose: 🏆 Xpose
- * - BeeIT: 🏆 BeeIT
- * - Wulf: 🏆 Wulf
- * - PeopleFocus: 🏆 PeopleFocus
- * - Plantryx: 🏆 Plantryx
+ * - TSLab: 🧪 TS Lab
+ * - Demo: 🏆 Demo (no campaigns yet)
+ * - Xpose: 💥 Xpose
+ * - BeeIT: 🏆 BeeIT (no campaigns yet)
+ * - Wulf: 🏆 Wulf (no campaigns yet)
+ * - PeopleFocus: 🎯 People Focus
+ * - Plantryx: 🏆 Plantryx (no campaigns yet)
  *
  * Usage: node .smartlead/sync-all-campaigns.js
  */
@@ -36,12 +36,12 @@ const { apiKey, baseUrl } = credentials;
 // Client prefixes
 const CLIENT_PREFIXES = {
   'intelsol': '🏆 Intelsol',
-  'tslab': '🏆 TS Lab',
+  'tslab': '🧪 TS Lab',
   'demo': '🏆 Demo',
-  'xpose': '🏆 Xpose',
+  'xpose': '💥 Xpose',
   'beeit': '🏆 BeeIT',
   'wulf': '🏆 Wulf',
-  'peoplefocus': '🏆 PeopleFocus',
+  'peoplefocus': '🎯 People Focus',
   'plantryx': '🏆 Plantryx',
 };
 

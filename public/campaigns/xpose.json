@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "campaignName": "💥 Xpose - Tier 3 -MedSpa US",
+    "dateLaunched": "5/19/2026",
+    "totalLeads": 0,
+    "leadsEmailed": 0,
+    "month": "May",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
+    "campaignName": "💥 Xpose - Tier 3 - Cosmetic Derm US",
+    "dateLaunched": "5/13/2026",
+    "totalLeads": 0,
+    "leadsEmailed": 0,
+    "month": "May",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  }
+]
