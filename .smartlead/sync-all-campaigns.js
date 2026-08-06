@@ -115,12 +115,41 @@ async function processCampaignsForClient(clientId, allCampaigns) {
 
       // Use unique_sent_count as the "imported leads" metric
       const leadsAdded = parseInt(analytics.unique_sent_count || 0);
+      const emailsSent = parseInt(analytics.sent_count || 0);
+      const opens = parseInt(analytics.unique_open_count || 0);
+      const clicks = parseInt(analytics.unique_click_count || 0);
+      const replies = parseInt(analytics.reply_count || 0);
+      const bounces = parseInt(analytics.bounce_count || 0);
+      const unsubscribed = parseInt(analytics.unsubscribed_count || 0);
+      const interested = analytics.campaign_lead_stats?.interested || 0;
+      const notInterested = analytics.campaign_lead_stats?.not_interested || 0;
+
+      // Calculate rates
+      const openRate = leadsAdded > 0 ? ((opens / leadsAdded) * 100).toFixed(2) : '0.00';
+      const clickRate = leadsAdded > 0 ? ((clicks / leadsAdded) * 100).toFixed(2) : '0.00';
+      const replyRate = leadsAdded > 0 ? ((replies / leadsAdded) * 100).toFixed(2) : '0.00';
+      const bounceRate = leadsAdded > 0 ? ((bounces / leadsAdded) * 100).toFixed(2) : '0.00';
 
       processed.push({
         campaignName: campaign.name,
         dateLaunched: formatDate(campaign.created_at),
         leadsAdded: leadsAdded,
         month: getMonthName(campaign.created_at),
+        status: campaign.status,
+        performance: {
+          emailsSent: emailsSent,
+          opens: opens,
+          openRate: openRate,
+          clicks: clicks,
+          clickRate: clickRate,
+          replies: replies,
+          replyRate: replyRate,
+          bounces: bounces,
+          bounceRate: bounceRate,
+          unsubscribed: unsubscribed,
+          interested: interested,
+          notInterested: notInterested,
+        }
       });
 
     } catch (error) {
@@ -131,6 +160,21 @@ async function processCampaignsForClient(clientId, allCampaigns) {
         dateLaunched: formatDate(campaign.created_at),
         leadsAdded: 0,
         month: getMonthName(campaign.created_at),
+        status: campaign.status,
+        performance: {
+          emailsSent: 0,
+          opens: 0,
+          openRate: '0.00',
+          clicks: 0,
+          clickRate: '0.00',
+          replies: 0,
+          replyRate: '0.00',
+          bounces: 0,
+          bounceRate: '0.00',
+          unsubscribed: 0,
+          interested: 0,
+          notInterested: 0,
+        }
       });
     }
   }

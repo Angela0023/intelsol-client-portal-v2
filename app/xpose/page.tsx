@@ -5,9 +5,10 @@ import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab, { XPOSE_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
-import PerformanceTab, { EMPTY_METRICS } from '../components/PerformanceTab';
+import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
+import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Mail } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, Mail } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -17,6 +18,7 @@ const tabs = [
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'personas', label: 'Buyer Personas', icon: Users },
   { id: 'sequences', label: 'Email Sequences', icon: Mail },
+  { id: 'campaigns', label: 'Campaigns', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
@@ -146,9 +148,8 @@ export default function XposePage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="xpose" />}
-          {activeTab === 'performance' && (
-            <PerformanceTab clientId="xpose" defaultMetrics={EMPTY_METRICS} hasData={false} />
-          )}
+          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="xpose" />}
+          {activeTab === 'performance' && <PerformanceTabDynamic clientId="xpose" />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="xpose" defaultTasks={XPOSE_DEFAULT_TASKS} />
           )}

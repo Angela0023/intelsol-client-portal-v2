@@ -5,9 +5,10 @@ import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab, { XPOSE_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
-import PerformanceTab, { EMPTY_METRICS } from '../components/PerformanceTab';
+import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
+import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Mail } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Zap, Mail } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -17,6 +18,7 @@ const tabs = [
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'personas', label: 'Buyer Personas', icon: Users },
   { id: 'sequences', label: 'Email Sequences', icon: Mail },
+  { id: 'campaigns', label: 'Campaigns', icon: Zap },
   { id: 'signals', label: 'Buying Signals', icon: Briefcase },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -129,10 +131,9 @@ export default function PeopleFocusPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="peoplefocus" />}
+          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="peoplefocus" />}
           {activeTab === 'signals' && <SignalsTab />}
-          {activeTab === 'performance' && (
-            <PerformanceTab clientId="peoplefocus" defaultMetrics={EMPTY_METRICS} hasData={false} />
-          )}
+          {activeTab === 'performance' && <PerformanceTabDynamic clientId="peoplefocus" />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="peoplefocus" defaultTasks={PEOPLEFOCUS_DEFAULT_TASKS} />
           )}

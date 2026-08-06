@@ -3,390 +3,1365 @@
     "campaignName": "🏆 Intelsol | Generic sequence | EU Mix List ",
     "dateLaunched": "4/1/2026",
     "leadsAdded": 1004,
-    "month": "April"
+    "month": "April",
+    "status": "STOPPED",
+    "performance": {
+      "emailsSent": 2501,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 23,
+      "replyRate": "2.29",
+      "bounces": 4,
+      "bounceRate": "0.40",
+      "unsubscribed": 0,
+      "interested": 2,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Generic sequence | HR + SRB ",
     "dateLaunched": "4/1/2026",
     "leadsAdded": 868,
-    "month": "April"
+    "month": "April",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 2483,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 98,
+      "replyRate": "11.29",
+      "bounces": 6,
+      "bounceRate": "0.69",
+      "unsubscribed": 0,
+      "interested": 58,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence | HR + SRB | Old Leads",
     "dateLaunched": "4/10/2026",
     "leadsAdded": 615,
-    "month": "April"
+    "month": "April",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1797,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 44,
+      "replyRate": "7.15",
+      "bounces": 2,
+      "bounceRate": "0.33",
+      "unsubscribed": 0,
+      "interested": 23,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Generic sequence | Ne, Den, Sw, No",
     "dateLaunched": "4/13/2026",
     "leadsAdded": 359,
-    "month": "April"
+    "month": "April",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 359,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "0.56",
+      "bounces": 13,
+      "bounceRate": "3.62",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence 17.4. | HR + SRB | Old Leads ",
     "dateLaunched": "4/17/2026",
     "leadsAdded": 1173,
-    "month": "April"
+    "month": "April",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 3338,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 94,
+      "replyRate": "8.01",
+      "bounces": 46,
+      "bounceRate": "3.92",
+      "unsubscribed": 0,
+      "interested": 41,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Generic sequence | Ne, Den, Sw, No - copy",
     "dateLaunched": "4/20/2026",
     "leadsAdded": 922,
-    "month": "April"
+    "month": "April",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 1628,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 5,
+      "replyRate": "0.54",
+      "bounces": 7,
+      "bounceRate": "0.76",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence 20.4. | HR + SRB | Old Leads",
     "dateLaunched": "4/20/2026",
     "leadsAdded": 1578,
-    "month": "April"
+    "month": "April",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 4537,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 94,
+      "replyRate": "5.96",
+      "bounces": 49,
+      "bounceRate": "3.11",
+      "unsubscribed": 0,
+      "interested": 34,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence 12.5. | HR + SRB | Old Leads",
     "dateLaunched": "5/12/2026",
     "leadsAdded": 1286,
-    "month": "May"
+    "month": "May",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 3658,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 116,
+      "replyRate": "9.02",
+      "bounces": 40,
+      "bounceRate": "3.11",
+      "unsubscribed": 0,
+      "interested": 64,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence 21.5. | HR + SRB | Old Leads",
     "dateLaunched": "5/21/2026",
     "leadsAdded": 1521,
-    "month": "May"
+    "month": "May",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 4329,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 103,
+      "replyRate": "6.77",
+      "bounces": 57,
+      "bounceRate": "3.75",
+      "unsubscribed": 0,
+      "interested": 49,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence 2.6. | HR + SRB | Old Leads ",
     "dateLaunched": "6/2/2026",
     "leadsAdded": 1073,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 3049,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 94,
+      "replyRate": "8.76",
+      "bounces": 30,
+      "bounceRate": "2.80",
+      "unsubscribed": 0,
+      "interested": 54,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 4.6. | IT/Software - Unpersonalized",
     "dateLaunched": "6/4/2026",
     "leadsAdded": 433,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1277,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 12,
+      "replyRate": "2.77",
+      "bounces": 6,
+      "bounceRate": "1.39",
+      "unsubscribed": 0,
+      "interested": 2,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 4.6. | IT/Software - Personalized",
     "dateLaunched": "6/4/2026",
     "leadsAdded": 853,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 2522,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 18,
+      "replyRate": "2.11",
+      "bounces": 7,
+      "bounceRate": "0.82",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 8.6. | IT/Software - Personalized",
     "dateLaunched": "6/8/2026",
     "leadsAdded": 359,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 704,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 9,
+      "replyRate": "2.51",
+      "bounces": 10,
+      "bounceRate": "2.79",
+      "unsubscribed": 0,
+      "interested": 3,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 10.6. | IT/Software - Unpersonalised | EU Content",
     "dateLaunched": "6/10/2026",
     "leadsAdded": 442,
-    "month": "June"
+    "month": "June",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 699,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 4,
+      "replyRate": "0.90",
+      "bounces": 3,
+      "bounceRate": "0.68",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 10.6. | IT/Software - Unpersonalised | USA Content",
     "dateLaunched": "6/10/2026",
     "leadsAdded": 480,
-    "month": "June"
+    "month": "June",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 692,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "0.42",
+      "bounces": 2,
+      "bounceRate": "0.42",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 11.6. | Manufacturing - Unpersonalised | EU Content",
     "dateLaunched": "6/11/2026",
     "leadsAdded": 226,
-    "month": "June"
+    "month": "June",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 484,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.44",
+      "bounces": 1,
+      "bounceRate": "0.44",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Belgium | 11.6. | Manufacturing - Unpersonalised | USA Content",
     "dateLaunched": "6/11/2026",
     "leadsAdded": 271,
-    "month": "June"
+    "month": "June",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 473,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.37",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L3.1 | Personalized - Netherland 500 leads | Manufacturing | 16/Jun/26",
     "dateLaunched": "6/16/2026",
     "leadsAdded": 300,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 546,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 3,
+      "replyRate": "1.00",
+      "bounces": 9,
+      "bounceRate": "3.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L3 | Personalized - Netherland 500 leads | Software and IT | 16/Jun/26",
     "dateLaunched": "6/16/2026",
     "leadsAdded": 255,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 460,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 4,
+      "replyRate": "1.57",
+      "bounces": 10,
+      "bounceRate": "3.92",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | NEW L3.1 | Personalized - Netherland 500 leads | Manufacturing | 17/Jun/26",
     "dateLaunched": "6/17/2026",
     "leadsAdded": 235,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 468,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 5,
+      "replyRate": "2.13",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | NEW L3 | Personalized - Netherland 500 leads | Software and IT | 17/Jun/26",
     "dateLaunched": "6/17/2026",
     "leadsAdded": 96,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 189,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "1.04",
+      "bounces": 2,
+      "bounceRate": "2.08",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L3.2 US | 17/Jun/26 | Software & IT | Personalized",
     "dateLaunched": "6/17/2026",
     "leadsAdded": 525,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1047,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 12,
+      "replyRate": "2.29",
+      "bounces": 1,
+      "bounceRate": "0.19",
+      "unsubscribed": 0,
+      "interested": 3,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L3.2 US | 17/Jun/26 | Software & IT - Unpersonalised | USA Content",
     "dateLaunched": "6/17/2026",
     "leadsAdded": 393,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1164,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 3,
+      "replyRate": "0.76",
+      "bounces": 7,
+      "bounceRate": "1.78",
+      "unsubscribed": 0,
+      "interested": 1,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence 25.6. | HR + SRB | Old Leads",
     "dateLaunched": "6/25/2026",
     "leadsAdded": 1296,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 3652,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 93,
+      "replyRate": "7.18",
+      "bounces": 67,
+      "bounceRate": "5.17",
+      "unsubscribed": 0,
+      "interested": 17,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L4.1 US | 29/Jun/26 | Software & IT | Personalized | Prospeo & ZeroBounce",
     "dateLaunched": "6/29/2026",
     "leadsAdded": 589,
-    "month": "June"
+    "month": "June",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1750,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 5,
+      "replyRate": "0.85",
+      "bounces": 10,
+      "bounceRate": "1.70",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L4.1 US | 01/Jul/26 | Software & IT | Personalized | Expandi & MillionVerifier",
     "dateLaunched": "7/1/2026",
     "leadsAdded": 269,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 802,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.37",
+      "bounces": 4,
+      "bounceRate": "1.49",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L4.1 US | 02/Jul/26 | Personalized | Software & IT | Prospeo & MillionVerifier",
     "dateLaunched": "7/2/2026",
     "leadsAdded": 466,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1386,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 13,
+      "replyRate": "2.79",
+      "bounces": 5,
+      "bounceRate": "1.07",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L4.1 W2 US | 06/Jun/26 | Software & IT | Unpersonalised | USA Content",
     "dateLaunched": "7/6/2026",
     "leadsAdded": 1909,
-    "month": "July"
+    "month": "July",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 3484,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 3,
+      "replyRate": "0.16",
+      "bounces": 265,
+      "bounceRate": "13.88",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence | 6.7. | Slovenia | 11-50 Prospeo",
     "dateLaunched": "7/6/2026",
     "leadsAdded": 593,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1657,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 73,
+      "replyRate": "12.31",
+      "bounces": 21,
+      "bounceRate": "3.54",
+      "unsubscribed": 0,
+      "interested": 17,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L4.1 W2 US | 07/Jun/2026 | NEW USA Unpersonalized",
     "dateLaunched": "7/6/2026",
     "leadsAdded": 1246,
-    "month": "July"
+    "month": "July",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 3028,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 13,
+      "replyRate": "1.04",
+      "bounces": 16,
+      "bounceRate": "1.28",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | L4.1 W2 US | 07/Jul/26 | Software and IT | Personalized",
     "dateLaunched": "7/7/2026",
     "leadsAdded": 1707,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 4917,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 7,
+      "replyRate": "0.41",
+      "bounces": 252,
+      "bounceRate": "14.76",
+      "unsubscribed": 0,
+      "interested": 3,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Seq. 7.6. | HR + SRB | New Leads Scraped",
     "dateLaunched": "7/7/2026",
     "leadsAdded": 205,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 542,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 13,
+      "replyRate": "6.34",
+      "bounces": 37,
+      "bounceRate": "18.05",
+      "unsubscribed": 0,
+      "interested": 7,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence | 13.7. | Slovenia | Apollo Scraped",
     "dateLaunched": "7/13/2026",
     "leadsAdded": 464,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1343,
+      "opens": 198,
+      "openRate": "42.67",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 44,
+      "replyRate": "9.48",
+      "bounces": 3,
+      "bounceRate": "0.65",
+      "unsubscribed": 0,
+      "interested": 9,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sales Nav | 15/Jul/26 | Software and IT | Personalized",
     "dateLaunched": "7/15/2026",
     "leadsAdded": 475,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 1416,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.21",
+      "bounces": 15,
+      "bounceRate": "3.16",
+      "unsubscribed": 0,
+      "interested": 1,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sales Nav | 15/Jul/26 | Software & IT | Unpersonalised | USA Content",
     "dateLaunched": "7/15/2026",
     "leadsAdded": 395,
-    "month": "July"
+    "month": "July",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 625,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 169,
+      "bounceRate": "42.78",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sales Nav | 15/Jul/2026 | NEW USA Unpersonalized",
     "dateLaunched": "7/15/2026",
     "leadsAdded": 520,
-    "month": "July"
+    "month": "July",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 818,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "0.38",
+      "bounces": 4,
+      "bounceRate": "0.77",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Claude Leads | 15/Jul/26 | Software and IT | Personalized",
     "dateLaunched": "7/15/2026",
     "leadsAdded": 94,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 274,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 4,
+      "bounceRate": "4.26",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Claude Leads | 15/Jul/26 | Software & IT | Unpersonalised | USA Content",
     "dateLaunched": "7/15/2026",
     "leadsAdded": 128,
-    "month": "July"
+    "month": "July",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 251,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 96,
+      "bounceRate": "75.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Claude Leads | 15/Jul/2026 | NEW USA Unpersonalized",
     "dateLaunched": "7/15/2026",
     "leadsAdded": 111,
-    "month": "July"
+    "month": "July",
+    "status": "PAUSED",
+    "performance": {
+      "emailsSent": 220,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 2,
+      "bounceRate": "1.80",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Austria | 20/Jul/2026 | IT/Software - Personalized - Claude",
     "dateLaunched": "7/20/2026",
     "leadsAdded": 43,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 129,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence | 20.7. | Slovenia | Prospeo",
     "dateLaunched": "7/20/2026",
     "leadsAdded": 553,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1554,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 79,
+      "replyRate": "14.29",
+      "bounces": 27,
+      "bounceRate": "4.88",
+      "unsubscribed": 0,
+      "interested": 23,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 21/Jul/26 | IT/Software - Unpersonalized",
     "dateLaunched": "7/21/2026",
     "leadsAdded": 240,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 710,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.42",
+      "bounces": 4,
+      "bounceRate": "1.67",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 21/Jul/26 | Software and IT | Personalized V2",
     "dateLaunched": "7/21/2026",
     "leadsAdded": 285,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 831,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 4,
+      "replyRate": "1.40",
+      "bounces": 38,
+      "bounceRate": "13.33",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 21/Jul/26 | Software and IT | Personalized V1",
     "dateLaunched": "7/21/2026",
     "leadsAdded": 289,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 856,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "0.69",
+      "bounces": 64,
+      "bounceRate": "22.15",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | UK Sales Nav | 21/Jul/26 | IT/Software - Unpersonalized",
     "dateLaunched": "7/21/2026",
     "leadsAdded": 112,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 332,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "1.79",
+      "bounces": 1,
+      "bounceRate": "0.89",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | UK Sales Nav | 21/Jul/26 | Software and IT | Personalized V2",
     "dateLaunched": "7/21/2026",
     "leadsAdded": 175,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 518,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "1.14",
+      "bounces": 8,
+      "bounceRate": "4.57",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | UK Sales Nav | 21/Jul/26 | Software and IT | Personalized V1",
     "dateLaunched": "7/21/2026",
     "leadsAdded": 189,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 561,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "1.06",
+      "bounces": 9,
+      "bounceRate": "4.76",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Austria | 21/Jul/26 | IT/Software - Unpersonalized - Sales Nav",
     "dateLaunched": "7/22/2026",
     "leadsAdded": 598,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 1711,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 21,
+      "replyRate": "3.51",
+      "bounces": 10,
+      "bounceRate": "1.67",
+      "unsubscribed": 0,
+      "interested": 3,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Austria | 22/Jul/2026 | IT/Software - Personalized - Sales Nav V2",
     "dateLaunched": "7/22/2026",
     "leadsAdded": 452,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 1327,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 17,
+      "replyRate": "3.76",
+      "bounces": 6,
+      "bounceRate": "1.33",
+      "unsubscribed": 0,
+      "interested": 1,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Austria | 22/Jul/2026 | IT/Software - Personalized - Sales Nav V1",
     "dateLaunched": "7/22/2026",
     "leadsAdded": 507,
-    "month": "July"
+    "month": "July",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 1509,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 10,
+      "replyRate": "1.97",
+      "bounces": 4,
+      "bounceRate": "0.79",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Seq. 29.7. | HR | Smartlead Manufacturing",
     "dateLaunched": "7/29/2026",
     "leadsAdded": 276,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 783,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 21,
+      "replyRate": "7.61",
+      "bounces": 10,
+      "bounceRate": "3.62",
+      "unsubscribed": 0,
+      "interested": 5,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence | 29.7. | Slovenia | Smartlead - Manufacturing",
     "dateLaunched": "7/29/2026",
     "leadsAdded": 330,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 957,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 45,
+      "replyRate": "13.64",
+      "bounces": 7,
+      "bounceRate": "2.12",
+      "unsubscribed": 0,
+      "interested": 3,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 30/Jul/26 | Machinery Manufacturing 10-50 | $5M - $50M - Unpersonalized",
     "dateLaunched": "7/30/2026",
     "leadsAdded": 194,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 383,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 5,
+      "replyRate": "2.58",
+      "bounces": 2,
+      "bounceRate": "1.03",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 30/Jul/26 | Machinery Manufacturing 10-50 | $5M - $50M | Personalized V2",
     "dateLaunched": "7/30/2026",
     "leadsAdded": 631,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 1203,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 9,
+      "replyRate": "1.43",
+      "bounces": 215,
+      "bounceRate": "34.07",
+      "unsubscribed": 0,
+      "interested": 1,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 30/Jul/26 | Machinery Manufacturing 10-50 | $5M - $50M | Personalized V1",
     "dateLaunched": "7/30/2026",
     "leadsAdded": 628,
-    "month": "July"
+    "month": "July",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 1202,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 8,
+      "replyRate": "1.27",
+      "bounces": 236,
+      "bounceRate": "37.58",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M - Unpersonalized",
     "dateLaunched": "8/2/2026",
     "leadsAdded": 159,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 194,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.63",
+      "bounces": 1,
+      "bounceRate": "0.63",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V2",
     "dateLaunched": "8/2/2026",
     "leadsAdded": 193,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 232,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.52",
+      "bounces": 8,
+      "bounceRate": "4.15",
+      "unsubscribed": 0,
+      "interested": 1,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V1",
     "dateLaunched": "8/3/2026",
     "leadsAdded": 144,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 151,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "0.69",
+      "bounces": 5,
+      "bounceRate": "3.47",
+      "unsubscribed": 0,
+      "interested": 1,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. - Unpersonalized",
     "dateLaunched": "8/5/2026",
     "leadsAdded": 200,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 200,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 4,
+      "bounceRate": "2.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. | Personalized V2",
     "dateLaunched": "8/5/2026",
     "leadsAdded": 72,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 72,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 05/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 10-50 empl. | Personalized V1",
     "dateLaunched": "8/5/2026",
     "leadsAdded": 79,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 79,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "1.27",
+      "bounces": 1,
+      "bounceRate": "1.27",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | Sequence | 5.8. | Slovenia | Apollo/Ample - Sales",
     "dateLaunched": "8/5/2026",
     "leadsAdded": 520,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 520,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 41,
+      "replyRate": "7.88",
+      "bounces": 2,
+      "bounceRate": "0.38",
+      "unsubscribed": 0,
+      "interested": 9,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. - Unpersonalized",
     "dateLaunched": "8/6/2026",
     "leadsAdded": 93,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 93,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 4,
+      "bounceRate": "4.30",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. | Personalized V2",
     "dateLaunched": "8/6/2026",
     "leadsAdded": 39,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 39,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   },
   {
     "campaignName": "🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. | Personalized V1",
     "dateLaunched": "8/6/2026",
     "leadsAdded": 37,
-    "month": "August"
+    "month": "August",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 37,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "notInterested": 0
+    }
   }
 ]

@@ -5,9 +5,10 @@ import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab, { BEEIT_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
-import PerformanceTab, { EMPTY_METRICS } from '../components/PerformanceTab';
+import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
+import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, Layers, CheckSquare, BarChart3, Mail } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, Layers, CheckSquare, BarChart3, Zap, Mail } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -16,6 +17,7 @@ const tabs = [
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'sequences', label: 'Email Sequences', icon: Mail },
+  { id: 'campaigns', label: 'Campaigns', icon: Zap },
   { id: 'tracking', label: 'Search Tracking', icon: Target },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -137,10 +139,9 @@ export default function BeeItPage() {
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="beeit" />}
+          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="beeit" />}
           {activeTab === 'tracking' && <TrackingTab />}
-          {activeTab === 'performance' && (
-            <PerformanceTab clientId="beeit" defaultMetrics={EMPTY_METRICS} hasData={false} />
-          )}
+          {activeTab === 'performance' && <PerformanceTabDynamic clientId="beeit" />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="beeit" defaultTasks={BEEIT_DEFAULT_TASKS} />
           )}

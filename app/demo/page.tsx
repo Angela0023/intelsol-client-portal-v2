@@ -5,6 +5,8 @@ import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
+import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
+import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
@@ -162,8 +164,8 @@ export default function DemoPage() {
           {activeTab === 'prompts' && <PromptsTab />}
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="demo" />}
-          {activeTab === 'campaigns' && <CampaignsTab />}
-          {activeTab === 'performance' && <PerformanceTab />}
+          {activeTab === 'campaigns' && <CampaignsTabDynamic clientId="demo" />}
+          {activeTab === 'performance' && <PerformanceTabDynamic clientId="demo" />}
           {activeTab === 'documents' && <DocumentsTab />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="demo" defaultTasks={[]} />
@@ -520,174 +522,6 @@ function PersonasTab() {
     </>
   );
 }
-
-function CampaignsTab() {
-  const campaigns = [
-    {
-      list: 'Texas Construction Companies',
-      listUrl: null,
-      campaignName: 'Acme Corp | Texas | Decision Makers | Oct 2026',
-      campaignUrl: null,
-      dateLaunched: '15/Oct/26',
-      leadsAdded: 250,
-      launched: true,
-    },
-    {
-      list: 'Texas Construction Companies',
-      listUrl: null,
-      campaignName: 'Acme Corp | Texas | Equipment Managers | Oct 2026',
-      campaignUrl: null,
-      dateLaunched: '15/Oct/26',
-      leadsAdded: 180,
-      launched: true,
-    },
-    {
-      list: 'Canada Mining Operators',
-      listUrl: null,
-      campaignName: 'Acme Corp | Canada | Decision Makers | Oct 2026',
-      campaignUrl: null,
-      dateLaunched: '22/Oct/26',
-      leadsAdded: 120,
-      launched: true,
-    },
-    {
-      list: 'California Heavy Civil',
-      listUrl: null,
-      campaignName: '',
-      campaignUrl: null,
-      dateLaunched: '',
-      leadsAdded: 0,
-      launched: false,
-    },
-  ];
-
-  const launchedCampaigns = campaigns.filter(c => c.launched);
-  const totalLeads = launchedCampaigns.reduce((sum, c) => sum + c.leadsAdded, 0);
-  const totalCampaigns = launchedCampaigns.length;
-
-  return (
-    <>
-      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
-        <p className="font-semibold text-amber-900 mb-1">Demo Notice:</p>
-        <p className="text-amber-800 text-sm">
-          These are sample campaign metrics for demonstration purposes.
-        </p>
-      </div>
-
-      <ContentSection title="Campaign Summary" icon={<BarChart3 className="w-5 h-5" />}>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-lg border border-cyan-200 p-3 lg:p-6 shadow-sm">
-            <p className="text-xs lg:text-sm text-cyan-700 font-medium mb-1">Total Leads</p>
-            <p className="text-xl lg:text-4xl font-bold text-cyan-900">{totalLeads.toLocaleString()}</p>
-          </div>
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 p-3 lg:p-6 shadow-sm">
-            <p className="text-xs lg:text-sm text-blue-700 font-medium mb-1">Campaigns</p>
-            <p className="text-xl lg:text-4xl font-bold text-blue-900">{totalCampaigns}</p>
-          </div>
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg border border-purple-200 p-3 lg:p-6 shadow-sm">
-            <p className="text-xs lg:text-sm text-purple-700 font-medium mb-1">Markets</p>
-            <p className="text-xl lg:text-4xl font-bold text-purple-900">2</p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Campaign Details" icon={<Zap className="w-5 h-5" />}>
-        <div className="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="min-w-full">
-              <thead>
-                <tr className="bg-slate-50 border-b border-slate-200">
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-slate-500 uppercase">List / Market</th>
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-slate-500 uppercase">Campaign Name</th>
-                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase">Date</th>
-                  <th className="text-right px-4 py-3 text-xs font-semibold text-slate-500 uppercase">Leads</th>
-                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase">Status</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {campaigns.map((campaign, index) => (
-                  <tr key={index} className="hover:bg-slate-50">
-                    <td className="px-4 py-3 text-sm font-medium text-slate-900">{campaign.list}</td>
-                    <td className="px-4 py-3 text-sm text-slate-700">
-                      {campaign.campaignName || <span className="text-slate-400 italic">Not created yet</span>}
-                    </td>
-                    <td className="px-4 py-3 text-sm text-slate-700 text-center">{campaign.dateLaunched || '—'}</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-right">
-                      <span className={campaign.leadsAdded > 0 ? 'text-cyan-700' : 'text-slate-400'}>
-                        {campaign.leadsAdded.toLocaleString()}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-center">
-                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                        campaign.launched ? 'bg-green-100 text-green-800' : 'bg-amber-100 text-amber-800'
-                      }`}>
-                        {campaign.launched ? 'Launched' : 'Pending'}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </ContentSection>
-    </>
-  );
-}
-
-function PerformanceTab() {
-  return (
-    <>
-      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
-        <p className="font-semibold text-amber-900 mb-1">Demo Notice:</p>
-        <p className="text-amber-800 text-sm">
-          These are sample performance metrics for demonstration purposes.
-        </p>
-      </div>
-
-      <ContentSection title="Campaign Performance Metrics" icon={<BarChart3 className="w-5 h-5" />}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="bg-white border border-slate-200 rounded-lg p-4">
-            <p className="text-sm text-slate-600 mb-1">Emails Sent</p>
-            <p className="text-2xl font-bold text-slate-900">12,450</p>
-          </div>
-          <div className="bg-white border border-slate-200 rounded-lg p-4">
-            <p className="text-sm text-slate-600 mb-1">Reply Rate</p>
-            <p className="text-2xl font-bold text-green-600">8.2%</p>
-          </div>
-          <div className="bg-white border border-slate-200 rounded-lg p-4">
-            <p className="text-sm text-slate-600 mb-1">Positive Replies</p>
-            <p className="text-2xl font-bold text-blue-600">247</p>
-          </div>
-          <div className="bg-white border border-slate-200 rounded-lg p-4">
-            <p className="text-sm text-slate-600 mb-1">Meetings Booked</p>
-            <p className="text-2xl font-bold text-cyan-600">42</p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Recent Activity" icon={<TrendingUp className="w-5 h-5" />}>
-        <div className="space-y-3">
-          {[
-            { date: '2026-10-28', event: 'Meeting booked with Johnson Construction', type: 'success' },
-            { date: '2026-10-27', event: 'Positive reply from Alberta Mining Corp', type: 'success' },
-            { date: '2026-10-26', event: 'Meeting booked with Southwest Heavy Equipment', type: 'success' },
-            { date: '2026-10-25', event: 'Follow-up sequence started for 50 prospects', type: 'info' },
-          ].map((activity, index) => (
-            <div key={index} className="bg-white border border-slate-200 rounded-lg p-4 flex items-center space-x-4">
-              <div className={`w-2 h-2 rounded-full ${activity.type === 'success' ? 'bg-green-500' : 'bg-blue-500'}`} />
-              <div className="flex-1">
-                <p className="text-sm font-medium text-slate-900">{activity.event}</p>
-                <p className="text-xs text-slate-500">{activity.date}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </ContentSection>
-    </>
-  );
-}
-
 function DocumentsTab() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
 
