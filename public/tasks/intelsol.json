@@ -61,5 +61,19 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786009788243_dp7l3t1",
+    "description": "Send Frosina the correct name & address for invoices. ",
+    "assignedTo": "Matej",
+    "status": "done",
+    "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786009825593_zyv2gsl",
+    "description": "Pay invoice for 27 July - 02 August",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06"
   }
 ]
