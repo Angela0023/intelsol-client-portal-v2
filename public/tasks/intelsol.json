@@ -89,5 +89,19 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786022195222_ttqbljc",
+    "description": "Send AD Signer ICP documentation",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06"
+  },
+  {
+    "id": "task_1786022347132_ank8nmi",
+    "description": "Finish TS Lab Webhook setup",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-06"
   }
 ]
