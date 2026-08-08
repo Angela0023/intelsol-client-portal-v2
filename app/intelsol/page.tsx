@@ -246,7 +246,7 @@ function ICPTab() {
           <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
             <p className="font-semibold text-violet-900 mb-2">Primary Target</p>
             <p className="text-violet-800">
-              B2B companies (10-200 employees) that rely on outbound sales but don't have an in-house
+              B2B companies (2-200 employees) that rely on outbound sales but don't have an in-house
               SDR team or are looking to scale their pipeline without hiring.
             </p>
           </div>
@@ -254,7 +254,7 @@ function ICPTab() {
           <h4 className="font-semibold text-slate-900 mt-6 mb-3">Must-Have Characteristics:</h4>
           <ul className="space-y-2">
             <ListItem type="check">B2B company selling to other businesses</ListItem>
-            <ListItem type="check">20-200 employees (sweet spot: 50-100)</ListItem>
+            <ListItem type="check">2-200 employees (sweet spots: 2-10, 10-50)</ListItem>
             <ListItem type="check">Sells services, SaaS, OR physical/industrial B2B products</ListItem>
             <ListItem type="check">High-ticket offers ($20K+ per deal)</ListItem>
             <ListItem type="check">Active sales process (not just distributors)</ListItem>
@@ -290,7 +290,7 @@ function ICPTab() {
         <ul className="space-y-2">
           <ListItem type="cross">B2C companies (selling to consumers)</ListItem>
           <ListItem type="cross">eCommerce selling low-ticket consumer goods</ListItem>
-          <ListItem type="cross">Companies under 20 employees or over 200 employees</ListItem>
+          <ListItem type="cross">Companies under 2 employees or over 200 employees</ListItem>
           <ListItem type="cross">Recruitment/staffing agencies</ListItem>
           <ListItem type="cross">Companies selling only through distributors (no direct sales)</ListItem>
           <ListItem type="cross">Commodity/low-margin businesses</ListItem>
@@ -1490,7 +1490,6 @@ MUST HAVE (all criteria required):
   • SaaS products, OR
   • Service companies (IT consulting, management consulting, professional services), OR
   • Physical/industrial B2B products (manufacturing equipment, industrial machinery, medical equipment, automation systems, wholesale)
-- Employee Count: 20-200 employees (ideal range: 50-100 employees)
 - Deal Size: High-ticket offers valued at $20,000+ per transaction
 - Sales Model: Active outbound sales process (must prospect for new clients, not purely distributor/partner-driven)
 - Website: Clear value proposition, professional appearance, functional
@@ -1499,12 +1498,13 @@ MUST HAVE (all criteria required):
 DISQUALIFIERS (reject if any apply):
 - B2C companies (selling directly to consumers)
 - eCommerce sites selling low-ticket consumer goods
-- Employee count under 20 or over 200
+- One-man band (solo founder with no team)
+- Very large enterprises (500+ employees or multinational corporations)
 - Recruitment agencies or staffing firms
 - Distributor-only sales model (no direct sales team)
 - Commodity or low-margin businesses
 - Outdated, broken, or non-functional website
-- Large in-house SDR/sales teams (50+ person sales orgs)
+- Large in-house SDR/sales teams (clear signs of mature sales organization)
 - Non-EU website with no European market presence
 
 EVALUATION CRITERIA:
