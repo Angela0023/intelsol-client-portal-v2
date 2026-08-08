@@ -1482,33 +1482,40 @@ function FiltersTab() {
 }
 
 function PromptsTab() {
-  const icpPrompt = `Determine whether this company matches the ICP for Intelsol lead generation services.
+  const icpPrompt = `Analyze this company's website to determine if they match Intelsol's Ideal Customer Profile for B2B lead generation services.
 
-A match should be:
-- B2B company (sells to other businesses, NOT consumers)
-- Offers one of the following:
-  • Service company (IT services, consulting, professional services)
-  • SaaS product
-  • Physical/industrial products sold B2B (manufacturing, industrial equipment, wholesale, machinery, medical equipment, automation, etc.)
-- 20-200 employees (sweet spot: 50-100 employees)
-- High-ticket offers - Products/services valued at $20K+ per deal
-- Active sales process - Need to prospect and acquire new clients (not just passive/distributor model)
-- Has a clear value proposition on their website
-- Could benefit from outbound email campaigns to grow their pipeline
-- Geographic focus: Belgium, Netherlands, Germany, Austria, Switzerland, France (primary); UK, Nordics, other EU (secondary)
+MUST HAVE (all criteria required):
+- B2B company selling to other businesses (NOT direct to consumers)
+- Product/Service Type:
+  • SaaS products, OR
+  • Service companies (IT consulting, management consulting, professional services), OR
+  • Physical/industrial B2B products (manufacturing equipment, industrial machinery, medical equipment, automation systems, wholesale)
+- Employee Count: 20-200 employees (ideal range: 50-100 employees)
+- Deal Size: High-ticket offers valued at $20,000+ per transaction
+- Sales Model: Active outbound sales process (must prospect for new clients, not purely distributor/partner-driven)
+- Website: Clear value proposition, professional appearance, functional
+- Geography: Located in Belgium, Netherlands, Germany, Austria, Switzerland, France, UK, Nordics, or other EU countries
 
-Not a match if:
-- B2C company (sells to consumers)
-- eCommerce selling low-ticket consumer goods
-- Under 20 employees or over 200 employees
-- Recruitment/staffing agencies
-- Companies selling only through distributors (no direct sales)
-- Commodity/low-margin businesses
-- Website is outdated or broken
-- Already has a large in-house SDR/sales team (unlikely to outsource)
-- Non-English/non-EU website with no European market presence
+DISQUALIFIERS (reject if any apply):
+- B2C companies (selling directly to consumers)
+- eCommerce sites selling low-ticket consumer goods
+- Employee count under 20 or over 200
+- Recruitment agencies or staffing firms
+- Distributor-only sales model (no direct sales team)
+- Commodity or low-margin businesses
+- Outdated, broken, or non-functional website
+- Large in-house SDR/sales teams (50+ person sales orgs)
+- Non-EU website with no European market presence
 
-Only use information visible on the domain.`;
+EVALUATION CRITERIA:
+Use only information visible on the company's website. Do not make assumptions.
+
+OUTPUT FORMAT:
+- Match: Yes / No / Uncertain
+- Reason: 2-3 sentences explaining the decision, including what products/services they sell and why they fit or don't fit the ICP
+- Confidence: High / Medium / Low
+
+Only answer "Yes" if you have high confidence this company needs outbound lead generation and matches ALL must-have criteria.`;
 
   const personalizationPrompt = `Based on the company website and LinkedIn data provided, write a personalized opening sentence for a cold email.
 
