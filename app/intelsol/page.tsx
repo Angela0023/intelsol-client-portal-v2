@@ -1482,31 +1482,34 @@ function FiltersTab() {
 }
 
 function PromptsTab() {
-  const icpPrompt = `Determine whether this company matches the ICP for Intelsol lead generation services.
+  const icpPrompt = `Determine whether this company matches the ICP for Intelsol lead generation services (Updated July 2026).
 
-A match should be:
-- B2B company (sells to other businesses, NOT consumers)
-- Offers one of the following:
-  • Service company (IT services, consulting, professional services)
-  • SaaS product
-  • Physical/industrial products sold B2B (manufacturing, industrial equipment, wholesale, machinery, medical equipment, automation, etc.)
-- High-ticket offers - Products/services valued at $20K+ per deal
-- Active sales process - Need to prospect and acquire new clients (not just passive/distributor model)
-- Has a clear value proposition on their website
-- Could benefit from outbound email campaigns to grow their pipeline
-- Geographic focus: Belgium, Netherlands, Germany, Austria, Switzerland, France (primary); UK, Nordics, other EU (secondary)
+TARGET INDUSTRIES (Priority Order):
+1. Manufacturing (40% priority): B2B manufacturers, contract manufacturing, private label, white label, OEM, tier 1/2 suppliers, industrial automation, medical equipment, food/beverage, cosmetics, consumer goods mfg, chemicals, plastics, automotive parts
+2. Specialized B2B Services (30%): Healthcare B2B, advertising, design, PR, events, specialized consulting, logistics, staffing/recruiting (NOT generic IT consulting, marketing agencies, MSPs)
+3. Distribution & Wholesale (15%): Building materials, machinery, food/beverage, chemicals, metals, electronics wholesale
+4. Niche SaaS (10%): Vertical/industry-specific SaaS, compliance software (NOT generic HR tech, marketing automation, CRM)
+5. AI Companies (5%): AI product companies founded 2022-2026, industry-specific AI solutions
 
-Not a match if:
+A MATCH should have:
+- B2B business model (sells to businesses, NOT consumers)
+- 10-150 employees (sweet spots: 10-50 or 51-100; 101-150 only for manufacturing)
+- Active sales process (need to prospect, not just passive/distributor-only model)
+- Geographic location: United States (primary), UK/Germany/Netherlands/Belgium/Austria/Switzerland (secondary), or Nordics/France (tertiary)
+- Clear website with value proposition
+- Growth-focused, doing sales manually (no mention of large SDR/BDR teams)
+
+NOT a match if:
 - B2C company (sells to consumers)
-- eCommerce selling low-ticket consumer goods
-- One-man band (solo founder with no team)
-- Very large enterprises (500+ employees or multinational corporations)
-- Recruitment/staffing agencies
-- Companies selling only through distributors (no direct sales)
-- Commodity/low-margin businesses
-- Website is outdated or broken
-- Already has a large in-house SDR/sales team (unlikely to outsource)
-- Non-English/non-EU website with no European market presence
+- Marketing agencies (meta ads, Google ads, SEO, WordPress development)
+- Generic IT consulting or managed services (MSP)
+- Under 10 employees or over 150 employees
+- Already has SDR team or BDR team (mentions this on website)
+- Sells only through distributors with no direct sales
+- Outdated or broken website (5+ years old design)
+- Large corporate structure (200+ employees)
+
+POSITIVE SIGNALS: Manufacturing company, founder-led sales, mentions "manual processes" or "custom solutions", private label/contract manufacturing/OEM, niche market focus
 
 Only use information visible on the domain.`;
 
