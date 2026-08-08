@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ContentSection } from './ContentSection';
-import { BarChart3, TrendingUp, Mail, MousePointerClick, Reply, AlertCircle } from 'lucide-react';
+import { BarChart3, TrendingUp, Mail, Reply, AlertCircle } from 'lucide-react';
 
 interface Campaign {
   campaignName: string;
@@ -89,14 +89,10 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   const totalLeadsInCampaigns = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
   const totalLeadsEmailed = campaigns.reduce((sum, c) => sum + c.leadsEmailed, 0);
   const totalEmailsSent = campaigns.reduce((sum, c) => sum + (c.performance?.emailsSent || 0), 0);
-  const totalOpens = campaigns.reduce((sum, c) => sum + (c.performance?.opens || 0), 0);
-  const totalClicks = campaigns.reduce((sum, c) => sum + (c.performance?.clicks || 0), 0);
   const totalReplies = campaigns.reduce((sum, c) => sum + (c.performance?.replies || 0), 0);
   const totalBounces = campaigns.reduce((sum, c) => sum + (c.performance?.bounces || 0), 0);
   const totalInterested = campaigns.reduce((sum, c) => sum + (c.performance?.interested || 0), 0);
 
-  const avgOpenRate = totalLeadsEmailed > 0 ? ((totalOpens / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
-  const avgClickRate = totalLeadsEmailed > 0 ? ((totalClicks / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgReplyRate = totalLeadsEmailed > 0 ? ((totalReplies / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgBounceRate = totalLeadsEmailed > 0 ? ((totalBounces / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgInterestedRate = totalLeadsEmailed > 0 ? ((totalInterested / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
@@ -104,7 +100,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   return (
     <>
       <ContentSection title="Overall Performance" icon={<TrendingUp className="w-5 h-5" />}>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4">
           {/* Total Leads */}
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 p-3 lg:p-4 shadow-sm">
             <div className="flex items-center space-x-2 mb-1">
@@ -113,16 +109,6 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
             </div>
             <p className="text-xl lg:text-3xl font-bold text-blue-900">{totalLeadsInCampaigns.toLocaleString()}</p>
             <p className="text-xs text-blue-600 mt-1">{totalLeadsEmailed.toLocaleString()} emailed</p>
-          </div>
-
-          {/* Open Rate */}
-          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg border border-green-200 p-3 lg:p-4 shadow-sm">
-            <div className="flex items-center space-x-2 mb-1">
-              <Mail className="w-4 h-4 text-green-600" />
-              <p className="text-xs text-green-700 font-medium">Open Rate</p>
-            </div>
-            <p className="text-xl lg:text-3xl font-bold text-green-900">{avgOpenRate}%</p>
-            <p className="text-xs text-green-600 mt-1">{totalOpens.toLocaleString()} opens</p>
           </div>
 
           {/* Reply Rate */}
@@ -147,16 +133,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
         </div>
 
         {/* Additional Metrics Row */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4 mt-4">
-          <div className="bg-white rounded-lg border border-slate-200 p-3 lg:p-4">
-            <div className="flex items-center space-x-2 mb-1">
-              <MousePointerClick className="w-4 h-4 text-slate-600" />
-              <p className="text-xs text-slate-700 font-medium">Click Rate</p>
-            </div>
-            <p className="text-lg lg:text-2xl font-bold text-slate-900">{avgClickRate}%</p>
-            <p className="text-xs text-slate-500 mt-1">{totalClicks.toLocaleString()} clicks</p>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-4 mt-4">
           <div className="bg-white rounded-lg border border-slate-200 p-3 lg:p-4">
             <div className="flex items-center space-x-2 mb-1">
               <AlertCircle className="w-4 h-4 text-slate-600" />
@@ -199,14 +176,6 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
-                    <span className="text-slate-500">Opens:</span>
-                    <span className="font-semibold text-green-700 ml-1">{campaign.performance?.openRate || '0'}%</span>
-                  </div>
-                  <div>
-                    <span className="text-slate-500">Clicks:</span>
-                    <span className="font-semibold text-blue-700 ml-1">{campaign.performance?.clickRate || '0'}%</span>
-                  </div>
-                  <div>
                     <span className="text-slate-500">Replies:</span>
                     <span className="font-semibold text-purple-700 ml-1">{campaign.performance?.replyRate || '0'}%</span>
                   </div>
@@ -239,12 +208,6 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     Emailed
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                    Opens
-                  </th>
-                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-                    Clicks
-                  </th>
-                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
                     Replies
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
@@ -266,14 +229,6 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     </td>
                     <td className="px-4 py-3 text-xs text-center font-semibold text-blue-700 whitespace-nowrap">
                       {campaign.leadsEmailed.toLocaleString()}
-                    </td>
-                    <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
-                      <div className="font-semibold text-green-700">{campaign.performance?.openRate || '0'}%</div>
-                      <div className="text-slate-500 text-[10px]">{campaign.performance?.opens || 0}</div>
-                    </td>
-                    <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
-                      <div className="font-semibold text-blue-700">{campaign.performance?.clickRate || '0'}%</div>
-                      <div className="text-slate-500 text-[10px]">{campaign.performance?.clicks || 0}</div>
                     </td>
                     <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
                       <div className="font-semibold text-purple-700">{campaign.performance?.replyRate || '0'}%</div>
