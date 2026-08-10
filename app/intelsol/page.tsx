@@ -1486,41 +1486,53 @@ function PromptsTab() {
 
 CRITICAL: The company must have a CONSTANT, ONGOING NEED for new clients. Industry category alone is not enough - evaluate their business model.
 
-STRONG YES - Companies that NEED outbound prospecting:
+GOOD FIT - Companies that actively sell to businesses and need new clients:
+• B2B SaaS companies - selling software subscriptions to businesses, growing aggressively
 • Private label / White label manufacturers (like TS Lab - our best client)
-• Contract manufacturing / OEM services
-• B2B service companies selling custom/consultative solutions
-• Companies with "Get a Quote", "Request Demo", "Contact Sales" CTAs on website
-• Staffing/recruiting agencies (constantly need new clients)
+• Contract manufacturing / OEM services / Specialized manufacturing (packaging, components)
+• IT consulting & managed services - national/regional firms looking for long-term clients (NOT local MSPs serving one area only)
+• Recruitment & staffing agencies - constantly looking for new clients, high-value placements
+• Accounting, CFO & finance services - specialized, high LTV
+• Fintech & payment solutions - B2B focused
+• Legal tech, HR tech, proptech - SaaS selling to businesses
+• B2B service companies selling custom/consultative solutions (advertising, design, PR, events, healthcare B2B, logistics)
 • Wholesale distributors actively selling to new B2B buyers
-• Niche SaaS with clear lead-gen focused website
-• Service businesses with visible sales process (case studies, client work, portfolios)
+• Companies with "Get a Quote", "Request Demo", "Contact Sales", "Book a Demo" CTAs on website
+• Service businesses with visible sales process (case studies, client work, portfolios, pricing page)
 
-STRONG NO - Companies that DON'T need constant lead flow:
-• Traditional manufacturers selling through distributors and trade shows (long sales cycles, established channels)
+BAD FIT - Companies that DON'T need constant lead flow:
+• Passive suppliers - raw materials, commodity chemicals, bulk suppliers waiting for inbound demand
+• Traditional manufacturers selling ONLY through distributors and trade shows (long sales cycles, no direct sales)
+• Local service businesses - serving only a local area, no interest in expansion
 • Companies focused on repeat orders from existing clients only
 • Businesses with passive sales models (no CTAs, no visible sales process)
 • Enterprise-focused with 1-2 major clients only
+• Raw material or commodity companies - relationship/referral driven
 
 COMPANY PROFILE REQUIREMENTS:
-- 10-150 employees (sweet spots: 10-50 or 51-100; 101-150 only for manufacturing)
+- 5-150 employees (sweet spots: 5-25, 25-50, 51-100)
+- Estimated revenue: $500k-$50M
 - Located in: United States (primary), UK/Germany/Netherlands/Belgium/Austria/Switzerland (secondary), or Nordics/France (tertiary)
-- B2B business model (NOT B2C/consumer-facing)
-- Clear website with value proposition
+- B2B business model (sells to businesses, NOT consumers)
+- Clear value proposition visible on website
+- Founder, CEO, Head of Sales, or VP Sales appears to be the decision maker
 
 AUTOMATIC DISQUALIFIERS:
-- B2C / eCommerce selling to consumers
-- Marketing agencies (meta ads, Google ads, SEO, WordPress)
-- Generic IT consulting or managed services (MSP)
-- Under 10 or over 150 employees
-- Website mentions "SDR team" or "BDR team" (already has sales infrastructure)
+- B2C companies - selling to individual consumers
+- Marketing agencies (meta ads, Google ads, SEO, WordPress development)
+- Local IT MSPs - serving local clients only, not looking for new pipeline
+- Nonprofit organizations
+- Under 5 employees or over 150 employees
+- Companies with 500+ employees (long procurement cycles, founder not decision maker)
+- Website mentions "SDR team" or "BDR team" (already has large sales infrastructure)
+- Sells ONLY through distributors with no direct sales
 - Outdated/broken website (5+ years old design)
 
 EVALUATE & ANSWER THESE:
-1. Has "Book a Demo", "Get a Quote", "Request Consultation", or similar CTA? YES/NO
+1. Has "Book a Demo", "Get a Quote", "Request Consultation", pricing page, or similar CTA? YES/NO
 2. Actively selling to other businesses (not just servicing existing clients)? YES/NO
 3. Business model requires constant flow of new clients? YES/NO
-4. ICP MATCH (all 3 above are YES + meets requirements)? YES/NO
+4. ICP MATCH (all 3 above are YES + meets profile requirements + no disqualifiers)? YES/NO
 
 OUTPUT: Answer the 4 questions above. Only mark ICP MATCH as YES if you're confident this company needs outbound lead generation.
 
