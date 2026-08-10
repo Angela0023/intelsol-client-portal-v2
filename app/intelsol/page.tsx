@@ -1482,36 +1482,49 @@ function FiltersTab() {
 }
 
 function PromptsTab() {
-  const icpPrompt = `Determine whether this company matches the ICP for Intelsol lead generation services (Updated July 2026).
+  const icpPrompt = `Analyze this company to determine ICP match for Intelsol lead generation services.
 
-TARGET INDUSTRIES (Priority Order):
-1. Manufacturing (40% priority): B2B manufacturers, contract manufacturing, private label, white label, OEM, tier 1/2 suppliers, industrial automation, medical equipment, food/beverage, cosmetics, consumer goods mfg, chemicals, plastics, automotive parts
-2. Specialized B2B Services (30%): Healthcare B2B, advertising, design, PR, events, specialized consulting, logistics, staffing/recruiting (NOT generic IT consulting, marketing agencies, MSPs)
-3. Distribution & Wholesale (15%): Building materials, machinery, food/beverage, chemicals, metals, electronics wholesale
-4. Niche SaaS (10%): Vertical/industry-specific SaaS, compliance software (NOT generic HR tech, marketing automation, CRM)
-5. AI Companies (5%): AI product companies founded 2022-2026, industry-specific AI solutions
+CRITICAL: The company must have a CONSTANT, ONGOING NEED for new clients. Industry category alone is not enough - evaluate their business model.
 
-A MATCH should have:
-- B2B business model (sells to businesses, NOT consumers)
+STRONG YES - Companies that NEED outbound prospecting:
+• Private label / White label manufacturers (like TS Lab - our best client)
+• Contract manufacturing / OEM services
+• B2B service companies selling custom/consultative solutions
+• Companies with "Get a Quote", "Request Demo", "Contact Sales" CTAs on website
+• Staffing/recruiting agencies (constantly need new clients)
+• Wholesale distributors actively selling to new B2B buyers
+• Niche SaaS with clear lead-gen focused website
+• Service businesses with visible sales process (case studies, client work, portfolios)
+
+STRONG NO - Companies that DON'T need constant lead flow:
+• Traditional manufacturers selling through distributors and trade shows (long sales cycles, established channels)
+• Companies focused on repeat orders from existing clients only
+• Businesses with passive sales models (no CTAs, no visible sales process)
+• Enterprise-focused with 1-2 major clients only
+
+COMPANY PROFILE REQUIREMENTS:
 - 10-150 employees (sweet spots: 10-50 or 51-100; 101-150 only for manufacturing)
-- Active sales process (need to prospect, not just passive/distributor-only model)
-- Geographic location: United States (primary), UK/Germany/Netherlands/Belgium/Austria/Switzerland (secondary), or Nordics/France (tertiary)
+- Located in: United States (primary), UK/Germany/Netherlands/Belgium/Austria/Switzerland (secondary), or Nordics/France (tertiary)
+- B2B business model (NOT B2C/consumer-facing)
 - Clear website with value proposition
-- Growth-focused, doing sales manually (no mention of large SDR/BDR teams)
 
-NOT a match if:
-- B2C company (sells to consumers)
-- Marketing agencies (meta ads, Google ads, SEO, WordPress development)
+AUTOMATIC DISQUALIFIERS:
+- B2C / eCommerce selling to consumers
+- Marketing agencies (meta ads, Google ads, SEO, WordPress)
 - Generic IT consulting or managed services (MSP)
-- Under 10 employees or over 150 employees
-- Already has SDR team or BDR team (mentions this on website)
-- Sells only through distributors with no direct sales
-- Outdated or broken website (5+ years old design)
-- Large corporate structure (200+ employees)
+- Under 10 or over 150 employees
+- Website mentions "SDR team" or "BDR team" (already has sales infrastructure)
+- Outdated/broken website (5+ years old design)
 
-POSITIVE SIGNALS: Manufacturing company, founder-led sales, mentions "manual processes" or "custom solutions", private label/contract manufacturing/OEM, niche market focus
+EVALUATE & ANSWER THESE:
+1. Has "Book a Demo", "Get a Quote", "Request Consultation", or similar CTA? YES/NO
+2. Actively selling to other businesses (not just servicing existing clients)? YES/NO
+3. Business model requires constant flow of new clients? YES/NO
+4. ICP MATCH (all 3 above are YES + meets requirements)? YES/NO
 
-Only use information visible on the domain.`;
+OUTPUT: Answer the 4 questions above. Only mark ICP MATCH as YES if you're confident this company needs outbound lead generation.
+
+Only use information visible on the company website.`;
 
   const personalizationPrompt = `Based on the company website and LinkedIn data provided, write a personalized opening sentence for a cold email.
 
