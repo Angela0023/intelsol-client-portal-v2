@@ -1482,61 +1482,29 @@ function FiltersTab() {
 }
 
 function PromptsTab() {
-  const icpPrompt = `Analyze this company to determine ICP match for Intelsol lead generation services.
+  const icpPrompt = `Determine if this company is a good fit for Intelsol's B2B lead generation services.
 
-CRITICAL: The company must have a CONSTANT, ONGOING NEED for new clients. Industry category alone is not enough - evaluate their business model.
+A match should be:
+- Sells to businesses (B2B) - NOT consumers
+- Needs constant flow of new clients to grow (SaaS, manufacturing, B2B services, staffing, consulting, etc.)
+- 5-150 employees
+- Revenue $500k-$50M
+- Located in: US, UK, Germany, Netherlands, Belgium, Austria, Switzerland, Nordics, or France
 
-GOOD FIT - Companies that actively sell to businesses and need new clients:
-• B2B SaaS companies - selling software subscriptions to businesses, growing aggressively
-• Private label / White label manufacturers (like TS Lab - our best client)
-• Contract manufacturing / OEM services / Specialized manufacturing (packaging, components)
-• IT consulting & managed services - national/regional firms looking for long-term clients (NOT local MSPs serving one area only)
-• Recruitment & staffing agencies - constantly looking for new clients, high-value placements
-• Accounting, CFO & finance services - specialized, high LTV
-• Fintech & payment solutions - B2B focused
-• Legal tech, HR tech, proptech - SaaS selling to businesses
-• B2B service companies selling custom/consultative solutions (advertising, design, PR, events, healthcare B2B, logistics)
-• Wholesale distributors actively selling to new B2B buyers
-• Companies with "Get a Quote", "Request Demo", "Contact Sales", "Book a Demo" CTAs on website
-• Service businesses with visible sales process (case studies, client work, portfolios, pricing page)
+Not a match if:
+- Sells to consumers (B2C)
+- Marketing agency doing meta ads, Google ads, SEO, or WordPress development
+- Nonprofit organization
+- Under 5 or over 150 employees
+- Passive business model (only serves existing clients, no active sales)
 
-BAD FIT - Companies that DON'T need constant lead flow:
-• Passive suppliers - raw materials, commodity chemicals, bulk suppliers waiting for inbound demand
-• Traditional manufacturers selling ONLY through distributors and trade shows (long sales cycles, no direct sales)
-• Local service businesses - serving only a local area, no interest in expansion
-• Companies focused on repeat orders from existing clients only
-• Businesses with passive sales models (no CTAs, no visible sales process)
-• Enterprise-focused with 1-2 major clients only
-• Raw material or commodity companies - relationship/referral driven
+OUTPUT FORMAT:
+1. Sells to businesses? YES/NO
+2. Needs constant new clients? YES/NO
+3. Meets size/location requirements? YES/NO
+4. ICP MATCH? YES/NO (only YES if all 3 above are YES and not disqualified)
 
-COMPANY PROFILE REQUIREMENTS:
-- 5-150 employees (sweet spots: 5-25, 25-50, 51-100)
-- Estimated revenue: $500k-$50M
-- Located in: United States (primary), UK/Germany/Netherlands/Belgium/Austria/Switzerland (secondary), or Nordics/France (tertiary)
-- B2B business model (sells to businesses, NOT consumers)
-- Clear value proposition visible on website
-- Founder, CEO, Head of Sales, or VP Sales appears to be the decision maker
-
-AUTOMATIC DISQUALIFIERS:
-- B2C companies - selling to individual consumers
-- Marketing agencies (meta ads, Google ads, SEO, WordPress development)
-- Local IT MSPs - serving local clients only, not looking for new pipeline
-- Nonprofit organizations
-- Under 5 employees or over 150 employees
-- Companies with 500+ employees (long procurement cycles, founder not decision maker)
-- Website mentions "SDR team" or "BDR team" (already has large sales infrastructure)
-- Sells ONLY through distributors with no direct sales
-- Outdated/broken website (5+ years old design)
-
-EVALUATE & ANSWER THESE:
-1. Has "Book a Demo", "Get a Quote", "Request Consultation", pricing page, or similar CTA? YES/NO
-2. Actively selling to other businesses (not just servicing existing clients)? YES/NO
-3. Business model requires constant flow of new clients? YES/NO
-4. ICP MATCH (all 3 above are YES + meets profile requirements + no disqualifiers)? YES/NO
-
-OUTPUT: Answer the 4 questions above. Only mark ICP MATCH as YES if you're confident this company needs outbound lead generation.
-
-Only use information visible on the company website.`;
+Use only information visible on the company website.`;
 
   const personalizationPrompt = `Based on the company website and LinkedIn data provided, write a personalized opening sentence for a cold email.
 
