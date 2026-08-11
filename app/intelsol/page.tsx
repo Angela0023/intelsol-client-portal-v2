@@ -1482,13 +1482,11 @@ function FiltersTab() {
 }
 
 function PromptsTab() {
-  const icpPrompt = `Determine if this company is a good fit for Intelsol's B2B lead generation services.
+  const icpPrompt = `Determine if this company matches Intelsol's ICP for B2B lead generation services.
 
 A match should be:
-- Sells to businesses (B2B) - NOT consumers
-- Needs constant flow of new clients to grow (SaaS, manufacturing, B2B services, staffing, consulting, etc.)
+- Sells to businesses (B2B), not consumers
 - 5-150 employees
-- Revenue $500k-$50M
 - Located in: US, UK, Germany, Netherlands, Belgium, Austria, Switzerland, Nordics, or France
 
 Not a match if:
@@ -1496,13 +1494,12 @@ Not a match if:
 - Marketing agency doing meta ads, Google ads, SEO, or WordPress development
 - Nonprofit organization
 - Under 5 or over 150 employees
-- Passive business model (only serves existing clients, no active sales)
 
 OUTPUT FORMAT:
-1. Sells to businesses? YES/NO
-2. Needs constant new clients? YES/NO
-3. Meets size/location requirements? YES/NO
-4. ICP MATCH? YES/NO (only YES if all 3 above are YES and not disqualified)
+1. B2B company? YES/NO
+2. Right size (5-150 employees)? YES/NO
+3. Right location? YES/NO
+4. ICP MATCH? YES/NO (only YES if all 3 above are YES and not a marketing agency/nonprofit/B2C)
 
 Use only information visible on the company website.`;
 
