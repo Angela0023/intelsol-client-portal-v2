@@ -1482,6 +1482,27 @@ function FiltersTab() {
 }
 
 function PromptsTab() {
+  const initialClayPrompt = `Determine if this company matches Intelsol's ICP for B2B lead generation services.
+
+DISQUALIFY ONLY IF:
+- Clearly sells to consumers (B2C) - e-commerce stores, consumer products, retail
+- Marketing agency doing meta ads, Google ads, SEO, or WordPress development
+- Nonprofit organization
+- Explicitly states 500+ employees or Fortune 500 company
+
+A MATCH if:
+- Sells to businesses (B2B) or appears to be B2B
+- No evidence of above disqualifiers
+
+OUTPUT FORMAT:
+1. B2B company (or appears to be B2B)? true/false
+2. Any disqualifiers present? true/false
+3. ICP MATCH? YES/NO (YES if B2B and no disqualifiers)
+
+DEFAULT TO YES unless there is clear evidence the company does NOT fit.
+
+Use only information visible in the provided content.`;
+
   const icpPrompt = `Determine if this company matches Intelsol's ICP for B2B lead generation services.
 
 A match should be:
@@ -1516,6 +1537,16 @@ Output only the personalized sentence, nothing else.`;
 
   return (
     <>
+      <ContentSection title="Initial Clay Website Match" icon={<Code className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p className="text-sm text-slate-600">
+            Use this prompt FIRST in Clay to do initial filtering based on website content only.
+            Defaults to YES unless company is clearly B2C, marketing agency, nonprofit, or enterprise (500+ employees).
+          </p>
+          <CodeBlock code={initialClayPrompt} language="text" />
+        </div>
+      </ContentSection>
+
       <ContentSection title="ICP Matching Prompt (Anthropic)" icon={<Code className="w-5 h-5" />}>
         <div className="space-y-4">
           <p className="text-sm text-slate-600">
