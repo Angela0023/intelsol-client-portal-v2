@@ -81,6 +81,7 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
         'Authorization': `Bearer ${env.GITHUB_TOKEN}`,
         'X-GitHub-Api-Version': '2022-11-28',
         'Content-Type': 'application/json',
+        'User-Agent': 'Intelsol-Client-Portal',
       },
       body: JSON.stringify({
         ref: 'main',
