@@ -1,0 +1,194 @@
+name: Sync Client Data (Generic)
+
+on:
+  # Allow manual triggering with client parameter
+  workflow_dispatch:
+    inputs:
+      client_id:
+        description: 'Client ID to sync (intelsol, tslab, xpose, etc.)'
+        required: true
+        type: choice
+        options:
+          - intelsol
+          - tslab
+          - demo
+          - xpose
+          - beeit
+          - wulf
+          - peoplefocus
+          - plantryx
+          - all
+
+  # Run daily at 4 AM CEST (2 AM UTC) for all clients
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  sync-client-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          pip install requests python-dotenv
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Create Python sync script
+        run: |
+          cat > sync_client_leads.py << 'PYTHON_SCRIPT'
+          #!/usr/bin/env python3
+          import os
+          import sys
+          import csv
+          import io
+          import requests
+
+          API_KEY = os.getenv('SMARTLEAD_API_KEY')
+          BASE_URL = 'https://server.smartlead.ai/api/v1'
+
+          CLIENT_PREFIXES = {
+              'intelsol': '🏆 Intelsol',
+              'tslab': '🧪 TS Lab',
+              'demo': '🏆 Demo',
+              'xpose': '💥 Xpose',
+              'beeit': '🏆 BeeIT',
+              'wulf': '🏆 Wulf',
+              'peoplefocus': '🎯 People Focus',
+              'plantryx': '🏆 Plantryx',
+          }
+
+          def sync_client(client_id):
+              prefix = CLIENT_PREFIXES.get(client_id)
+              if not prefix:
+                  print(f"Unknown client: {client_id}")
+                  return False
+
+              print(f"\n🔄 Syncing {client_id} ({prefix})...")
+
+              response = requests.get(f"{BASE_URL}/campaigns", params={'api_key': API_KEY})
+              campaigns = response.json()
+
+              client_campaigns = [c for c in campaigns if c.get('name', '').startswith(prefix)]
+              print(f"Found {len(client_campaigns)} campaigns")
+
+              if len(client_campaigns) == 0:
+                  print(f"⚠️  No campaigns for {client_id}, skipping")
+                  return False
+
+              all_leads = []
+              seen_emails = set()
+
+              for i, camp in enumerate(client_campaigns, 1):
+                  try:
+                      url = f"{BASE_URL}/campaigns/{camp['id']}/leads-export"
+                      r = requests.get(url, params={'api_key': API_KEY}, timeout=30)
+
+                      if r.status_code == 200 and r.text.strip():
+                          reader = csv.DictReader(io.StringIO(r.text))
+
+                          for row in reader:
+                              email = row.get('email', row.get('Email', ''))
+                              if email and email not in seen_emails:
+                                  seen_emails.add(email)
+                                  all_leads.append({
+                                      'first_name': row.get('first_name', row.get('firstName', '')),
+                                      'last_name': row.get('last_name', row.get('lastName', '')),
+                                      'email': email,
+                                      'company_name': row.get('company_name', row.get('companyName', row.get('company', ''))),
+                                      'website': row.get('website', row.get('companyWebsite', '')),
+                                      'linkedin_url': row.get('linkedin_url', row.get('linkedinUrl', row.get('linkedin', ''))),
+                                      'campaign_name': camp['name']
+                                  })
+                  except Exception as e:
+                      print(f"  Error on campaign {i}: {e}")
+
+              print(f"Total leads: {len(all_leads)}")
+
+              if all_leads:
+                  os.makedirs('public/data', exist_ok=True)
+                  with open(f'public/data/{client_id}-database.csv', 'w', newline='', encoding='utf-8') as f:
+                      writer = csv.DictWriter(f, ['first_name', 'last_name', 'email', 'company_name', 'website', 'linkedin_url', 'campaign_name'])
+                      writer.writeheader()
+                      writer.writerows(all_leads)
+                  print(f"✅ Updated public/data/{client_id}-database.csv")
+                  return True
+
+              return False
+
+          if __name__ == '__main__':
+              client = sys.argv[1] if len(sys.argv) > 1 else 'all'
+
+              if client == 'all':
+                  updated = []
+                  for cid in CLIENT_PREFIXES.keys():
+                      if sync_client(cid):
+                          updated.append(cid)
+                  print(f"\n✅ Updated: {', '.join(updated)}")
+              else:
+                  sync_client(client)
+          PYTHON_SCRIPT
+
+      - name: Determine clients to sync
+        id: clients
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.client_id }}" = "all" ]; then
+            echo "clients=all" >> $GITHUB_OUTPUT
+          else
+            echo "clients=${{ github.event.inputs.client_id }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Sync Leads Database
+        env:
+          SMARTLEAD_API_KEY: ${{ secrets.SMARTLEAD_API_KEY }}
+        run: |
+          python3 sync_client_leads.py "${{ steps.clients.outputs.clients }}"
+
+      - name: Sync Campaign Stats
+        run: |
+          mkdir -p .smartlead
+          cat > .smartlead/credentials.json << 'EOF'
+          {
+            "apiKey": "${{ secrets.SMARTLEAD_API_KEY }}",
+            "baseUrl": "https://server.smartlead.ai/api/v1"
+          }
+          EOF
+
+          node .smartlead/sync-all-campaigns.js
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code public/ || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add public/data/*.csv public/campaigns/*.json
+          git commit -m "Auto-update: Client data sync at $(date -u +'%Y-%m-%d %H:%M UTC')
+
+          Synced: ${{ steps.clients.outputs.clients }}
+          - Updated lead databases
+          - Updated campaign stats
+
+          Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+          git push
+
+      - name: No changes detected
+        if: steps.git-check.outputs.changes != 'true'
+        run: echo "No changes detected. All client data is up to date."

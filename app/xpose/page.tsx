@@ -9,7 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, Mail } from 'lucide-react';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, Mail, FolderOpen } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -21,6 +22,7 @@ const tabs = [
   { id: 'sequences', label: 'Email Sequences', icon: Mail },
   { id: 'campaigns', label: 'Campaigns', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
 
@@ -155,6 +157,15 @@ export default function XposePage() {
               <PerformanceTabDynamic clientId="xpose" />
               <CampaignsTabDynamic clientId="xpose" />
             </>
+          )}
+          {activeTab === 'documents' && (
+            <DocumentsTabGeneric
+              clientId="xpose"
+              clientName="Xpose Solutions"
+              totalLeads={1477}
+              totalCampaigns={2}
+              accentColor="blue"
+            />
           )}
           {activeTab === 'tasks' && (
             <TasksTab clientId="xpose" defaultTasks={XPOSE_DEFAULT_TASKS} />

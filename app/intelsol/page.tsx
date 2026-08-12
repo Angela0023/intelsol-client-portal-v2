@@ -8,8 +8,7 @@ import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
-import FileUpload from '../components/FileUpload';
-import FileList from '../components/FileList';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { FileText, BarChart3, CheckSquare, TrendingUp, Target, Filter, Code, Users, BookOpen, Mail, Zap, FolderOpen } from 'lucide-react';
 
@@ -150,7 +149,15 @@ export default function IntelsolPage() {
           {activeTab === 'personas' && <PersonasTab />}
           {activeTab === 'sequences' && <SequencesTab clientId="intelsol" />}
           {activeTab === 'campaigns' && <CampaignsTabGeneric />}
-          {activeTab === 'documents' && <DocumentsTab />}
+          {activeTab === 'documents' && (
+            <DocumentsTabGeneric
+              clientId="intelsol"
+              clientName="Intelsol"
+              totalLeads={37635}
+              totalCampaigns={70}
+              accentColor="violet"
+            />
+          )}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="intelsol" />
@@ -1709,135 +1716,6 @@ function PersonasTab() {
             <ListItem type="check">Company Name</ListItem>
             <ListItem type="check">Company Website</ListItem>
           </ul>
-        </div>
-      </ContentSection>
-    </>
-  );
-}
-
-
-function DocumentsTab() {
-  const [refreshTrigger, setRefreshTrigger] = useState(0);
-  const [syncing, setSyncing] = useState(false);
-  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
-
-  const handleUploadComplete = () => {
-    setRefreshTrigger(prev => prev + 1);
-  };
-
-  const handleUpdateDatabase = async () => {
-    setSyncing(true);
-    try {
-      // Trigger GitHub Actions workflow
-      const response = await fetch('/api/sync-intelsol-data', {
-        method: 'POST',
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        setLastUpdated(new Date().toLocaleString());
-        alert('Database and performance stats updated successfully!');
-        // Reload page to show updated data
-        window.location.reload();
-      } else {
-        alert('Failed to trigger update. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error triggering update:', error);
-      alert('Error triggering update. Please try again.');
-    } finally {
-      setSyncing(false);
-    }
-  };
-
-  return (
-    <>
-      {/* Uploaded Documents Section */}
-      <ContentSection title="Uploaded Documents" icon={<FolderOpen className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <p className="text-slate-600">
-              Upload and manage documents for Intelsol. All uploaded files will be available for download.
-            </p>
-            <FileUpload clientId="intelsol" onUploadComplete={handleUploadComplete} />
-          </div>
-
-          <FileList clientId="intelsol" refreshTrigger={refreshTrigger} />
-        </div>
-      </ContentSection>
-
-      {/* Lead Database Section */}
-      <ContentSection title="Lead Database" icon={<FileText className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <p className="text-slate-600">
-            Download the complete database of all leads targeted across all Intelsol campaigns.
-            This file contains first name, last name, email, company information, and LinkedIn profiles.
-          </p>
-
-          <div className="bg-white border border-slate-200 rounded-lg p-6 hover:border-violet-500 transition-colors">
-            <div className="flex items-center justify-between group">
-              <div className="flex items-center space-x-4 flex-1">
-                <div className="w-12 h-12 bg-violet-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-6 h-6 text-violet-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
-                    />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center space-x-3">
-                    <a
-                      href="/data/intelsol-database.csv"
-                      download="intelsol-database.csv"
-                      className="text-lg font-semibold text-slate-900 hover:text-violet-600 transition-colors"
-                    >
-                      Download Lead Database
-                    </a>
-                  </div>
-                  <p className="text-sm text-slate-500 mt-1">CSV file • 37,635 leads across 70 campaigns</p>
-                  {lastUpdated && (
-                    <p className="text-xs text-slate-400 mt-1">Last updated: {lastUpdated}</p>
-                  )}
-                </div>
-              </div>
-              
-              <button
-                onClick={handleUpdateDatabase}
-                disabled={syncing}
-                className="ml-4 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
-              >
-                {syncing ? (
-                  <>
-                    <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <span>Syncing...</span>
-                  </>
-                ) : (
-                  <>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Update Database</span>
-                  </>
-                )}
-              </button>
-            </div>
-          </div>
-
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <p className="text-sm text-blue-900">
-              <strong>How it works:</strong> Click "Update Database" to fetch the latest leads from SmartLead.
-              This will update both the database file and performance metrics. The sync typically takes 2-3 minutes.
             </p>
           </div>
         </div>
