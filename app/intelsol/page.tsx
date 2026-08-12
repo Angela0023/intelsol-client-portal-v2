@@ -1716,8 +1716,6 @@ function PersonasTab() {
             <ListItem type="check">Company Name</ListItem>
             <ListItem type="check">Company Website</ListItem>
           </ul>
-            </p>
-          </div>
         </div>
       </ContentSection>
     </>
