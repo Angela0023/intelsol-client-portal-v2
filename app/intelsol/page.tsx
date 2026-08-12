@@ -1056,8 +1056,8 @@ function ICPTab() {
           {/* Template 11 */}
           <div className="bg-white border border-slate-200 rounded-lg p-4">
             <div className="flex items-center justify-between mb-3">
-              <h5 className="font-bold text-slate-900">Template 11: US Vertical SaaS 20-50</h5>
-              <span className="bg-orange-600 text-white px-2 py-1 rounded text-xs font-bold">Tech</span>
+              <h5 className="font-bold text-slate-900">Template 11: US B2B SaaS 10-75</h5>
+              <span className="bg-orange-600 text-white px-2 py-1 rounded text-xs font-bold">SaaS</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
               <div>
@@ -1066,24 +1066,31 @@ function ICPTab() {
               </div>
               <div>
                 <p className="font-semibold text-slate-700 mb-1">Headcount:</p>
-                <p className="text-slate-600">20-50</p>
+                <p className="text-slate-600">10-75</p>
               </div>
               <div className="md:col-span-2">
                 <p className="font-semibold text-slate-700 mb-1">Industry:</p>
-                <p className="text-slate-600">Technology, Information and Media, IT System Data Services</p>
+                <p className="text-slate-600">Software Development, IT Services and IT Consulting, Technology Information and Internet, IT System Data Services, Computer and Network Security</p>
               </div>
               <div className="md:col-span-2">
                 <p className="font-semibold text-slate-700 mb-1">Company Keywords:</p>
-                <CodeBlock code={`"vertical SaaS" OR "industry-specific" OR "niche SaaS"`} />
+                <CodeBlock code={`("SaaS" OR "software platform" OR "B2B software" OR "vertical SaaS") AND ("subscription" OR "B2B") AND -"marketing agency" AND -"SEO" AND -"meta ads" AND -"WordPress"`} />
               </div>
               <div className="md:col-span-2">
                 <p className="font-semibold text-slate-700 mb-1">Negative Keywords:</p>
-                <CodeBlock code={`"HR tech" OR "marketing automation" OR "CRM platform"`} />
+                <CodeBlock code={`"HR tech" OR "recruiting software" OR "marketing automation" OR "CRM platform" OR "project management" OR "B2C app" OR "SDR team" OR "BDR team"`} />
+              </div>
+              <div className="md:col-span-2">
+                <p className="font-semibold text-slate-700 mb-1">Good Fit Examples:</p>
+                <p className="text-xs text-slate-600">✅ IT operations/automation ✅ Supply chain software ✅ Email/communication tools ✅ Corporate wellness ✅ Compliance/regulatory ✅ Industry-specific vertical SaaS</p>
               </div>
             </div>
             <div className="mt-3 flex items-center justify-between">
-              <p className="text-xs text-slate-500">Expected Results: 150-300 companies</p>
-              <p className="text-xs font-semibold text-orange-600">Save As: "Intelsol - US Vertical SaaS 20-50"</p>
+              <p className="text-xs text-slate-500">Expected Results: 200-400 companies</p>
+              <p className="text-xs font-semibold text-orange-600">Save As: "Intelsol - US B2B SaaS 10-75"</p>
+            </div>
+            <div className="mt-2 bg-orange-50 border-l-4 border-orange-500 p-2 rounded">
+              <p className="text-xs text-orange-900 font-medium">Based on ideal customers: eBlissAI, Plantryx, AdSigner, Zen2Fit - growing SaaS companies need constant new client flow</p>
             </div>
           </div>
 
@@ -1371,17 +1378,18 @@ function FiltersTab() {
             </div>
           </div>
 
-          {/* Niche SaaS/Technology - 10% */}
+          {/* B2B SaaS - 10% */}
           <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
-            <h4 className="font-bold text-purple-900 mb-3">4. Niche SaaS/Technology (10% - 200 leads)</h4>
-            <p className="text-sm text-purple-800 mb-3">Use sparingly - moving away from tech focus</p>
+            <h4 className="font-bold text-purple-900 mb-3">4. B2B SaaS & Software (10% - 200 leads)</h4>
+            <p className="text-sm text-purple-800 mb-3">Ideal customers: eBlissAI, Plantryx, AdSigner, Zen2Fit - SaaS companies selling subscriptions to businesses, need constant new client flow</p>
 
             <div className="space-y-3">
               <div>
                 <p className="font-semibold text-purple-900 text-sm mb-2">Company Size:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
-                  <div className="bg-white px-3 py-2 rounded text-sm">10-50 employees (60%)</div>
-                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (40%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">5-25 employees (40%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">25-50 employees (35%)</div>
+                  <div className="bg-white px-3 py-2 rounded text-sm">51-100 employees (25%)</div>
                 </div>
               </div>
 
@@ -1389,10 +1397,14 @@ function FiltersTab() {
                 <p className="font-semibold text-purple-900 text-sm mb-2">Industries:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 [&>*]:min-w-0">
                   {[
-                    'Computer and Network Security',
+                    'Software Development',
+                    'IT Services and IT Consulting',
+                    'Technology, Information and Internet',
                     'IT System Data Services',
+                    'Computer and Network Security',
                     'Vertical SaaS (industry-specific)',
-                    'Compliance/Regulatory Software',
+                    'Enterprise Software',
+                    'Business Intelligence Platforms',
                   ].map((industry) => (
                     <div key={industry} className="bg-white px-3 py-2 rounded text-xs border border-purple-200">
                       {industry}
@@ -1402,18 +1414,42 @@ function FiltersTab() {
               </div>
 
               <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">Good Fit Examples:</p>
+                <div className="space-y-1 text-xs text-purple-800">
+                  <p>✅ Vertical SaaS for specific industries (healthcare, supply chain, logistics, finance)</p>
+                  <p>✅ IT operations/automation platforms</p>
+                  <p>✅ Email/communication tools for businesses</p>
+                  <p>✅ Corporate wellness/employee platforms</p>
+                  <p>✅ Industry-specific compliance/regulatory software</p>
+                  <p>✅ Supply chain/planning software</p>
+                </div>
+              </div>
+
+              <div>
                 <p className="font-semibold text-purple-900 text-sm mb-2">Keywords:</p>
-                <CodeBlock code={`("vertical SaaS" OR "industry-specific software" OR "niche B2B software") AND B2B`} />
+                <CodeBlock code={`("SaaS" OR "software platform" OR "B2B software" OR "enterprise software" OR "vertical SaaS") AND ("subscription" OR "recurring revenue" OR "B2B") AND -"marketing agency" AND -"SEO" AND -"meta ads"`} />
               </div>
 
               <div>
                 <p className="font-semibold text-purple-900 text-sm mb-2">Revenue:</p>
-                <p className="text-sm text-purple-800">$10M - $50M</p>
+                <p className="text-sm text-purple-800">$500K - $50M (wide range to catch early-stage SaaS)</p>
               </div>
 
               <div>
                 <p className="font-semibold text-purple-900 text-sm mb-2">⛔ EXCLUDE:</p>
-                <p className="text-xs text-purple-800">❌ HR tech, marketing automation, CRM platforms (saturated)</p>
+                <div className="space-y-1 text-xs text-purple-800">
+                  <p>❌ HR tech / Recruiting software (saturated, sophisticated buyers)</p>
+                  <p>❌ Marketing automation / Email marketing platforms (saturated)</p>
+                  <p>❌ CRM platforms (saturated, competitive)</p>
+                  <p>❌ Project management tools (saturated)</p>
+                  <p>❌ B2C apps / Consumer software</p>
+                  <p>❌ Companies with large SDR/BDR teams already</p>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-purple-900 text-sm mb-2">🎯 Target Profile:</p>
+                <p className="text-xs text-purple-800">Growing B2B SaaS companies selling subscriptions to businesses, founder-led sales transitioning to scalable outbound, manual sales processes, need constant new pipeline</p>
               </div>
             </div>
           </div>
