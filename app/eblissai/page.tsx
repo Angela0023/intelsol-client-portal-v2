@@ -553,9 +553,9 @@ function FiltersTab() {
 function PromptsTab() {
   return (
     <>
-      <ContentSection title="AI-Powered Prospect Research" icon={<Code className="w-5 h-5" />}>
+      <ContentSection title="Technographic & Stack Signals" icon={<Code className="w-5 h-5" />}>
         <p className="text-slate-600 mb-4">
-          AI prompts for identifying buying signals and prioritizing prospects based on the 5 signal categories.
+          Identify companies with mature IT ops tooling that signals budget and process maturity, but lack full automation.
         </p>
 
         <div className="space-y-4">
@@ -568,7 +568,15 @@ function PromptsTab() {
             <h4 className="font-semibold text-slate-900 mb-2">AI-Ops Gap Signal</h4>
             <CodeBlock code="Check if this company has implemented AI-powered IT operations automation or self-healing endpoint capabilities. Look for mentions of autonomous IT ops, AI-driven support, or predictive resolution in their technology stack. Return YES if they already have AI-ops automation (no gap), NO if they are still using traditional/reactive ITSM (gap exists)." />
           </div>
+        </div>
+      </ContentSection>
 
+      <ContentSection title="Hiring & Pain Signals" icon={<Users className="w-5 h-5" />}>
+        <p className="text-slate-600 mb-4">
+          High support hiring volume indicates acute ticket load - the exact cost center eBlissAI automates.
+        </p>
+
+        <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">L1/L2 Support Hiring Volume Signal</h4>
             <CodeBlock code="Search this company's job board or careers page for IT support hiring. Count open positions for: Help Desk Technician, IT Support Specialist, L1 Support, L2 Support, Service Desk Analyst. Return the count. If 3+ positions open = HIGH PRIORITY signal. If 1-2 positions = MEDIUM signal. If 0 positions = NO signal." />
@@ -578,7 +586,15 @@ function PromptsTab() {
             <h4 className="font-semibold text-slate-900 mb-2">IT Operations Leadership Hiring Signal</h4>
             <CodeBlock code="Check if this company is hiring for IT Operations Manager, VP IT Operations, Head of Digital Workplace, or EUC Lead positions. Return YES if these leadership roles are open (suggests organizational strain or expansion), NO if not." />
           </div>
+        </div>
+      </ContentSection>
 
+      <ContentSection title="Growth & Event-Based Signals" icon={<TrendingUp className="w-5 h-5" />}>
+        <p className="text-slate-600 mb-4">
+          Expansion and leadership changes create urgency to automate before support costs spiral or new budget opens.
+        </p>
+
+        <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Growth/Expansion Signal</h4>
             <CodeBlock code="Look for recent announcements about this company opening new offices, expanding to new locations, or significant headcount growth in the last 6-12 months. Check press releases, LinkedIn company updates, or news articles. Return YES if clear growth/expansion signals found, NO if not." />
@@ -588,7 +604,15 @@ function PromptsTab() {
             <h4 className="font-semibold text-slate-900 mb-2">New Leadership Signal (Event-Based)</h4>
             <CodeBlock code="Search for recent leadership changes at this company. Check if they have a new CIO, VP IT Operations, or Head of Digital Workplace appointed in the last 3-6 months. Look at LinkedIn, press releases, company announcements. Return YES with name and date if found, NO if not." />
           </div>
+        </div>
+      </ContentSection>
 
+      <ContentSection title="Company Profile Verification" icon={<Building2 className="w-5 h-5" />}>
+        <p className="text-slate-600 mb-4">
+          Verify the company matches enterprise scale and target industry profile.
+        </p>
+
+        <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Distributed Workforce/Fleet Size Signal</h4>
             <CodeBlock code="Analyze this company's structure to estimate endpoint fleet size. Look for: number of locations, branch networks, retail stores, employee count, remote workforce mentions. Industries like financial services (branches), healthcare (facilities), retail (stores) typically indicate large device fleets. Return estimated fleet size category: LARGE (10,000+ endpoints), MEDIUM (1,000-10,000), SMALL (under 1,000), or UNKNOWN." />
