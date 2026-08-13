@@ -141,6 +141,55 @@ const visibleTabs = isAdmin
 
 ---
 
+### 1C. NEVER Use Em Dashes or Special Characters in Email Sequences
+
+**HARD RULE:** Email sequences MUST use only standard ASCII characters. NO em dashes (—), en dashes (–), smart quotes (" " ' '), or any other special Unicode characters.
+
+**Why:** Special characters cause encoding issues in email clients, appearing as corrupted text like "â" or other gibberish. This makes emails look unprofessional and damages deliverability.
+
+**Correct Characters to Use:**
+- ✅ Regular hyphen: `-` (ASCII 45)
+- ✅ Regular apostrophe: `'` (ASCII 39)
+- ✅ Regular quotes: `"` (ASCII 34)
+- ✅ Standard punctuation: `. , ! ? : ;`
+
+**NEVER Use:**
+- ❌ Em dash: `—` (Unicode 2014)
+- ❌ En dash: `–` (Unicode 2013)
+- ❌ Smart quotes: `" "` (Unicode 201C, 201D)
+- ❌ Smart apostrophes: `' '` (Unicode 2018, 2019)
+- ❌ Any other Unicode special characters
+
+**Validation:**
+- Before saving any email sequence, verify ALL characters are standard ASCII
+- Use regular hyphens instead of em dashes for pauses or breaks
+- Use regular quotes/apostrophes instead of smart typography
+
+**Example:**
+```
+❌ WRONG: "I'm curious — how are you managing..."
+✅ CORRECT: "I'm curious - how are you managing..."
+
+❌ WRONG: "Here's what we typically see:"
+✅ CORRECT: "Here's what we typically see:"
+```
+
+**VIOLATION EXAMPLE (2026-08-13):**
+- AdSigner sequences contained em dashes that appeared as "â" in email clients
+- User immediately flagged this as unacceptable
+- **This must NEVER happen again**
+
+**Correct Approach:**
+- Always use plain ASCII text in email body content
+- Test sequences in multiple email clients before deployment
+- Use find/replace to remove all special characters before saving
+
+**Rule Established:** 2026-08-13
+
+**This is a CRITICAL rule - corrupted characters destroy email credibility**
+
+---
+
 ### 2. Adding a New Client Requires Multiple Files
 
 **When creating a new client dashboard, you MUST update:**
