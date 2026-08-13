@@ -187,6 +187,7 @@ jobs:
           - Updated campaign stats
 
           Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+          git pull --rebase origin main
           git push
 
       - name: No changes detected
