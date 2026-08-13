@@ -97,6 +97,24 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   const avgBounceRate = totalLeadsEmailed > 0 ? ((totalBounces / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgInterestedRate = totalLeadsEmailed > 0 ? ((totalInterested / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
 
+  // Calculate max values for heat map coloring
+  const maxReplyRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.replyRate || '0')));
+  const maxInterestedRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.interestedRate || '0')));
+
+  // Heat map color function: returns color class based on value relative to max
+  const getHeatMapColor = (value: number, max: number): string => {
+    if (max === 0) return 'text-slate-500'; // All zeros, use neutral color
+    const ratio = value / max;
+
+    if (ratio === 0) return 'text-red-700'; // Worst
+    if (ratio <= 0.2) return 'text-red-600';
+    if (ratio <= 0.4) return 'text-orange-600';
+    if (ratio <= 0.6) return 'text-yellow-600';
+    if (ratio <= 0.8) return 'text-lime-600';
+    if (ratio < 1.0) return 'text-green-600';
+    return 'text-green-700'; // Best
+  };
+
   return (
     <>
       <ContentSection title="Overall Performance" icon={<TrendingUp className="w-5 h-5" />}>
@@ -177,11 +195,15 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
                     <span className="text-slate-500">Replies:</span>
-                    <span className="font-semibold text-purple-700 ml-1">{campaign.performance?.replyRate || '0'}%</span>
+                    <span className={`font-semibold ml-1 ${getHeatMapColor(parseFloat(campaign.performance?.replyRate || '0'), maxReplyRate)}`}>
+                      {campaign.performance?.replyRate || '0'}%
+                    </span>
                   </div>
                   <div>
                     <span className="text-slate-500">Positive:</span>
-                    <span className="font-semibold text-amber-700 ml-1">{campaign.performance?.interestedRate || '0'}%</span>
+                    <span className={`font-semibold ml-1 ${getHeatMapColor(parseFloat(campaign.performance?.interestedRate || '0'), maxInterestedRate)}`}>
+                      {campaign.performance?.interestedRate || '0'}%
+                    </span>
                   </div>
                 </div>
               </div>
@@ -231,11 +253,15 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                       {campaign.leadsEmailed.toLocaleString()}
                     </td>
                     <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
-                      <div className="font-semibold text-purple-700">{campaign.performance?.replyRate || '0'}%</div>
+                      <div className={`font-semibold ${getHeatMapColor(parseFloat(campaign.performance?.replyRate || '0'), maxReplyRate)}`}>
+                        {campaign.performance?.replyRate || '0'}%
+                      </div>
                       <div className="text-slate-500 text-[10px]">{campaign.performance?.replies || 0}</div>
                     </td>
                     <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
-                      <div className="font-semibold text-amber-700">{campaign.performance?.interestedRate || '0'}%</div>
+                      <div className={`font-semibold ${getHeatMapColor(parseFloat(campaign.performance?.interestedRate || '0'), maxInterestedRate)}`}>
+                        {campaign.performance?.interestedRate || '0'}%
+                      </div>
                       <div className="text-slate-500 text-[10px]">{campaign.performance?.interested || 0}</div>
                     </td>
                   </tr>
