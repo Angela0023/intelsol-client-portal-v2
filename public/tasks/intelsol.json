@@ -248,5 +248,14 @@
     "dueDate": "2026-08-17",
     "order": 15,
     "comments": []
+  },
+  {
+    "id": "task_1786624324797_kp0r6oe",
+    "description": "Send People Focus ICP documents",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 16,
+    "comments": []
   }
 ]
