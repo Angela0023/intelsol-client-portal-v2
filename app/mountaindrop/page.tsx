@@ -173,57 +173,69 @@ export default function MountaindropPage() {
 function OverviewTab() {
   return (
     <>
-      <ContentSection title="Client Overview">
+      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
         <div className="space-y-4">
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Company</h4>
-            <p className="text-slate-700">
-              <strong>Mountaindrop</strong> - Premium, third-party lab-tested Himalayan & Altai Shilajit resin and adaptogen-based wellness blends.
-            </p>
-            <p className="text-slate-600 text-sm mt-2">
-              Manufactured & filled by BTI KI TRENING d.o.o., Škofja Loka, Slovenia
+          <p>
+            <strong>Mountaindrop</strong> offers premium, third-party lab-tested Himalayan & Altai Shilajit resin
+            and adaptogen-based wellness blends to B2B supplement retailers across Europe.
+          </p>
+
+          <div className="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded">
+            <p className="font-semibold text-emerald-900 mb-2">Manufacturing Partner:</p>
+            <p className="text-emerald-800">
+              BTI KI TRENING d.o.o., Škofja Loka, Slovenia - GMP, HACCP, IFS and ISO 9001 certified facility
             </p>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Products Offered</h4>
-            <ul className="list-disc list-inside space-y-2 text-slate-700">
-              <li><strong>Core Product:</strong> Himalayan & Altai Shilajit resin (authentic resin, not powder/capsules)</li>
-              <li><strong>Shilajit Blends:</strong> Ashwagandha Plus, Flourish, Genius, Microbion, Prime</li>
-              <li><strong>Additional:</strong> Energy bar and natural skincare products</li>
-              <li><strong>Manufacturing:</strong> GMP, HACCP, IFS and ISO 9001 certified facility</li>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Core Product" value="Himalayan & Altai Shilajit Resin" />
+            <InfoCard label="Product Format" value="Authentic Resin (not powder/capsules)" />
+            <InfoCard label="Certifications" value="6+ Independent Lab Tests" />
+            <InfoCard label="Track Record" value="25,000+ Jars Delivered" />
+            <InfoCard label="Customer Rating" value="4.8/5 from 1,000+ Reviews" />
+            <InfoCard label="Distribution" value="Multiple Countries Active" />
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Product Line" icon={<Layers className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Shilajit Products:</h4>
+            <ul className="space-y-2">
+              <ListItem type="check">Pure Himalayan & Altai Shilajit Resin (30g and 60g jars)</ListItem>
+              <ListItem type="check">Ashwagandha Plus (Shilajit + Ashwagandha blend)</ListItem>
+              <ListItem type="check">Flourish (Women's wellness blend)</ListItem>
+              <ListItem type="check">Genius (Cognitive support blend)</ListItem>
+              <ListItem type="check">Microbion (Gut health blend)</ListItem>
+              <ListItem type="check">Prime (Men's vitality blend)</ListItem>
             </ul>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Key Strengths</h4>
-            <div className="space-y-3">
-              <div>
-                <h5 className="font-semibold text-emerald-700 mb-1">Premium Positioning</h5>
-                <p className="text-slate-700">Authentic resin format (not powder/capsules), altitude-certified sourcing, triple-purification process, 6+ independent lab certifications</p>
-              </div>
-              <div>
-                <h5 className="font-semibold text-emerald-700 mb-1">Proven at Scale</h5>
-                <p className="text-slate-700">25,000+ jars delivered worldwide, 4.8/5 rating from 1,000+ five-star reviews</p>
-              </div>
-              <div>
-                <h5 className="font-semibold text-emerald-700 mb-1">Established Distribution</h5>
-                <p className="text-slate-700">Existing distributor network already live in multiple countries (Albania, Australia, and expanding) - retailers join an established brand, not an unproven one</p>
-              </div>
-            </div>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Additional Products:</h4>
+            <ul className="space-y-2">
+              <ListItem>Energy bars</ListItem>
+              <ListItem>Natural skincare products</ListItem>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Campaign Focus" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Outbound B2B Strategy:</p>
+            <p className="text-blue-800">
+              Reaching existing multi-brand supplement retailers who could add Mountaindrop to their portfolio
+            </p>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Campaign Focus</h4>
-            <p className="text-slate-700">
-              <strong>Outbound B2B</strong> - Reaching existing multi-brand supplement retailers who could add Mountaindrop to their portfolio
-            </p>
-            <p className="text-slate-600 mt-2">
-              <strong>Target Markets:</strong> Croatia and Serbia (primary), DACH (Germany, Austria, Switzerland), with wider EU as expansion
-            </p>
-            <p className="text-slate-600 mt-1">
-              <strong>Language:</strong> English (primary), local language for HR/SRB/DACH outreach where available
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Primary Markets" value="Croatia & Serbia" />
+            <InfoCard label="Secondary Markets" value="DACH (Germany, Austria, Switzerland)" />
+            <InfoCard label="Expansion" value="Wider EU" />
+            <InfoCard label="Language" value="English + Local (HR/SRB/DACH)" />
           </div>
         </div>
       </ContentSection>
@@ -269,50 +281,54 @@ function OverviewTab() {
 function ICPAndPersonasTab() {
   return (
     <>
-      <ContentSection title="Company-Level ICP">
-        <div className="space-y-4">
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Target Geography</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li><strong>Primary:</strong> Croatia and Serbia</li>
-              <li><strong>Secondary:</strong> DACH (Germany, Austria, Switzerland)</li>
-              <li><strong>Expansion:</strong> Wider EU markets</li>
-            </ul>
+      <ContentSection title="Company-Level ICP" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Target Geography:</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <InfoCard label="Primary" value="Croatia & Serbia" color="bg-emerald-50 text-emerald-700" />
+              <InfoCard label="Secondary" value="DACH Region" color="bg-blue-50 text-blue-700" />
+              <InfoCard label="Expansion" value="Wider EU" color="bg-slate-50 text-slate-700" />
+            </div>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Company Type - Multi-Brand Supplement Retailers</h4>
-            <p className="text-slate-700 mb-3">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Company Type - Multi-Brand Supplement Retailers:</h4>
+            <p className="text-slate-700 mb-4">
               Retailers that already sell food supplements to end customers and carry multiple third-party brands - not exclusively their own private label.
             </p>
 
-            <h5 className="font-semibold text-slate-900 mb-2">Include:</h5>
-            <ul className="list-disc list-inside space-y-1 text-slate-700 mb-4">
-              <li>Specialized supplement / sports nutrition stores (physical and/or online)</li>
-              <li>Health food & wellness stores that stock supplement brands</li>
-              <li>Pharmacies or wellness retailers with a multi-brand supplement section</li>
-              <li>Online supplement shops / webshops carrying multiple brands</li>
-            </ul>
+            <div className="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded mb-4">
+              <p className="font-semibold text-emerald-900 mb-2">Include:</p>
+              <ul className="text-emerald-800 text-sm space-y-1">
+                <ListItem>Specialized supplement / sports nutrition stores (physical and/or online)</ListItem>
+                <ListItem>Health food & wellness stores that stock supplement brands</ListItem>
+                <ListItem>Pharmacies or wellness retailers with a multi-brand supplement section</ListItem>
+                <ListItem>Online supplement shops / webshops carrying multiple brands</ListItem>
+              </ul>
+            </div>
 
-            <h5 className="font-semibold text-red-700 mb-2">Exclude:</h5>
-            <ul className="list-disc list-inside space-y-1 text-red-600">
-              <li>Shilajit producers/brands (direct competitors)</li>
-              <li>Supplement manufacturers in general</li>
-              <li>White label / private label production companies</li>
-              <li>Retailers that sell exclusively their own private-label products (no multi-brand portfolio)</li>
-            </ul>
+            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+              <p className="font-semibold text-red-900 mb-2">Exclude:</p>
+              <ul className="text-red-800 text-sm space-y-1">
+                <ListItem type="cross">Shilajit producers/brands (direct competitors)</ListItem>
+                <ListItem type="cross">Supplement manufacturers in general</ListItem>
+                <ListItem type="cross">White label / private label production companies</ListItem>
+                <ListItem type="cross">Retailers selling exclusively their own private-label products</ListItem>
+              </ul>
+            </div>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Industries / Verticals</h4>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Industries / Verticals:</h4>
             <div className="space-y-3">
-              <div>
-                <h5 className="font-semibold text-emerald-700 mb-1">Primary</h5>
-                <p className="text-slate-700">Sports nutrition retailers, health food & supplement stores, specialty wellness retailers</p>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+                <p className="font-semibold text-blue-900 text-sm mb-1">Primary:</p>
+                <p className="text-blue-800 text-sm">Sports nutrition retailers, health food & supplement stores, specialty wellness retailers</p>
               </div>
-              <div>
-                <h5 className="font-semibold text-emerald-700 mb-1">Secondary</h5>
-                <p className="text-slate-700">Online supplement webshops/marketplaces, gyms or fitness centers with a retail corner that sells third-party products</p>
+              <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+                <p className="font-semibold text-slate-900 text-sm mb-1">Secondary:</p>
+                <p className="text-slate-700 text-sm">Online supplement webshops/marketplaces, gyms or fitness centers with retail corners selling third-party products</p>
               </div>
             </div>
           </div>
@@ -396,25 +412,25 @@ function ICPAndPersonasTab() {
         </div>
       </ContentSection>
 
-      <ContentSection title="How We Identify Target Companies">
+      <ContentSection title="How We Identify Target Companies" icon={<Users className="w-5 h-5" />}>
         <div className="space-y-4">
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Firmographic Fit</h4>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Firmographic Fit:</h4>
             <p className="text-slate-700">
               Multi-brand supplement/sports nutrition retailer (store and/or webshop) selling to end customers in Croatia, Serbia, DACH or the wider EU; not a producer or private-label-only retailer.
             </p>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Decision-Maker Contacts</h4>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Decision-Maker Contacts:</h4>
             <p className="text-slate-700">
               Owner or purchasing/category manager per persona definitions; e-commerce manager for webshop-led retailers.
             </p>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Prioritization</h4>
-            <p className="text-slate-700">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Prioritization:</p>
+            <p className="text-blue-800">
               Retailers matching a Tier 1 signal (actively expanding brands, no Shilajit yet) are sequenced first; the rest of the fitting list is worked through in parallel rather than excluded.
             </p>
           </div>
@@ -427,39 +443,39 @@ function ICPAndPersonasTab() {
 function FiltersTab() {
   return (
     <>
-      <ContentSection title="Data Enrichment Filters">
+      <ContentSection title="Data Enrichment Filters" icon={<Filter className="w-5 h-5" />}>
         <p className="text-slate-600 mb-4">
           Standard B2B data enrichment and web research to identify multi-brand supplement retailers in target geographies.
         </p>
 
         <div className="space-y-4">
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Firmographic Filters</h4>
-            <ul className="list-disc list-inside space-y-2 text-slate-700">
-              <li><strong>Geography:</strong> Croatia, Serbia (primary); Germany, Austria, Switzerland (DACH); wider EU (expansion)</li>
-              <li><strong>Company Type:</strong> Supplement retailers, health food stores, pharmacies with supplement sections, online supplement webshops</li>
-              <li><strong>Business Model:</strong> Multi-brand retailers (not private-label-only or manufacturers)</li>
-              <li><strong>Customer Type:</strong> B2C retailers selling to end customers (not B2B producers/wholesalers)</li>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Firmographic Filters:</h4>
+            <ul className="space-y-2">
+              <ListItem><strong>Geography:</strong> Croatia, Serbia (primary); Germany, Austria, Switzerland (DACH); wider EU (expansion)</ListItem>
+              <ListItem><strong>Company Type:</strong> Supplement retailers, health food stores, pharmacies with supplement sections, online supplement webshops</ListItem>
+              <ListItem><strong>Business Model:</strong> Multi-brand retailers (not private-label-only or manufacturers)</ListItem>
+              <ListItem><strong>Customer Type:</strong> B2C retailers selling to end customers (not B2B producers/wholesalers)</ListItem>
             </ul>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Exclusion Filters</h4>
-            <ul className="list-disc list-inside space-y-2 text-red-600">
-              <li>Shilajit producers/brands (direct competitors)</li>
-              <li>Supplement manufacturers</li>
-              <li>White label / private label production companies</li>
-              <li>Retailers selling exclusively own private-label products</li>
-              <li>Existing Mountaindrop distributors/retailers</li>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Exclusion Filters:</h4>
+            <ul className="space-y-2">
+              <ListItem type="cross">Shilajit producers/brands (direct competitors)</ListItem>
+              <ListItem type="cross">Supplement manufacturers</ListItem>
+              <ListItem type="cross">White label / private label production companies</ListItem>
+              <ListItem type="cross">Retailers selling exclusively own private-label products</ListItem>
+              <ListItem type="cross">Existing Mountaindrop distributors/retailers</ListItem>
             </ul>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <h4 className="font-semibold text-slate-900 mb-2">Contact Data Requirements</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li><strong>Job Titles:</strong> Owner, Founder, Managing Director, Purchasing Manager, Category Manager, Buyer, E-commerce Manager, Online Store Manager</li>
-              <li><strong>Email Required:</strong> Yes (business email preferred)</li>
-              <li><strong>LinkedIn:</strong> Optional but helpful for verification</li>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Contact Data Requirements:</h4>
+            <ul className="space-y-2">
+              <ListItem><strong>Job Titles:</strong> Owner, Founder, Managing Director, Purchasing Manager, Category Manager, Buyer, E-commerce Manager, Online Store Manager</ListItem>
+              <ListItem><strong>Email Required:</strong> Yes (business email preferred)</ListItem>
+              <ListItem><strong>LinkedIn:</strong> Optional but helpful for verification</ListItem>
             </ul>
           </div>
         </div>
@@ -471,7 +487,7 @@ function FiltersTab() {
 function PromptsTab() {
   return (
     <>
-      <ContentSection title="AI-Powered Prospect Research">
+      <ContentSection title="AI-Powered Prospect Research" icon={<Code className="w-5 h-5" />}>
         <p className="text-slate-600 mb-4">
           AI prompts for identifying buying signals and prioritizing prospects.
         </p>
