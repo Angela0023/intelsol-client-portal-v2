@@ -223,15 +223,6 @@
     "comments": []
   },
   {
-    "id": "task_1786624097375_zojo61c",
-    "description": "Find 1K Leads for eBliss AI",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-14",
-    "order": 12,
-    "comments": []
-  },
-  {
     "id": "task_1786624117375_q0v1blf",
     "description": "Find 1K Leads for Montaindrop",
     "assignedTo": "Frosina",
@@ -247,6 +238,15 @@
     "status": "pending",
     "dueDate": "2026-08-14",
     "order": 14,
+    "comments": []
+  },
+  {
+    "id": "task_1786624242747_66xzuqy",
+    "description": "Find 1K Leads for eBliss AI",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-17",
+    "order": 15,
     "comments": []
   }
 ]
