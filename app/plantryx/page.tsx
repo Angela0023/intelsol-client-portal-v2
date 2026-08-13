@@ -111,6 +111,14 @@ export default function PlantryxPage() {
               <p className="text-sm lg:text-base text-slate-600 break-words">AI-Native Demand Forecasting & Supply Planning (EU Manufacturing)</p>
             </div>
           </div>
+          <a
+            href="https://plantryx.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-green-600 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
         </div>
 
         {/*Tabs*/}

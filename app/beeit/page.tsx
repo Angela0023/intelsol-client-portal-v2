@@ -109,6 +109,14 @@ export default function BeeItPage() {
               <p className="text-slate-600">eCommerce Development Agency Partner Program</p>
             </div>
           </div>
+          <a
+            href="https://beeit.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-green-600 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
         </div>
 
         {/* Tabs */}

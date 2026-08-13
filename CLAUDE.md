@@ -190,6 +190,39 @@ const visibleTabs = isAdmin
 
 ---
 
+### 1D. ALWAYS Add Client Website to Dashboard
+
+**HARD RULE:** Every client dashboard MUST include a clickable website link in the header section. If you don't have the website URL or are unsure about it, ASK the user for it.
+
+**Why:** Client website links provide quick reference and professional appearance. Missing website links look incomplete and unprofessional.
+
+**Correct Implementation:**
+```tsx
+<div className="flex items-center gap-3">
+  <h1 className="text-2xl font-bold text-gray-900">[Client Name]</h1>
+  <a
+    href="https://[client-website].com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-sm text-green-600 hover:underline inline-block"
+  >
+    Visit Website →
+  </a>
+</div>
+```
+
+**Checklist:**
+- [ ] Website link added to client dashboard header
+- [ ] Link opens in new tab (`target="_blank"`)
+- [ ] Security attributes included (`rel="noopener noreferrer"`)
+- [ ] URL verified with user if uncertain
+
+**Rule Established:** 2026-08-13
+
+**This is a MANDATORY rule - every client dashboard must have their website link**
+
+---
+
 ### 2. Adding a New Client Requires Multiple Files
 
 **When creating a new client dashboard, you MUST update:**
@@ -858,4 +891,4 @@ curl https://intelsol.pages.dev/api/files?clientId=demo
 
 ---
 
-Last updated: 2026-08-06 (Added HARD RULE: Never remove tab content without explicit instruction. Fixed Smartlead campaign prefixes for all clients. Documented upcoming tab structure changes.)
+Last updated: 2026-08-13 (Added HARD RULES: Never use Unicode characters in email sequences (1C), Always add client website to dashboard (1D). Fixed AdSigner sequence corruption. Removed all internal tool names from client-visible tabs.)
