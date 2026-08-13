@@ -11,6 +11,7 @@
 /peoplefocus/* /peoplefocus 200
 /plantryx/* /plantryx 200
 /mountaindrop/* /mountaindrop 200
+/eblissai/* /eblissai 200
 /admin/* /admin 200
 
 # Fallback - SPA routing (Functions in /api/* take precedence automatically)

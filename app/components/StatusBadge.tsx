@@ -88,4 +88,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   wulf: 'Onboarding',
   plantryx: 'Onboarding',
   mountaindrop: 'Onboarding',
+  eblissai: 'Onboarding',
 };
