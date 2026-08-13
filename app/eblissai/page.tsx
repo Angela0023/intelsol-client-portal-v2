@@ -561,12 +561,20 @@ function PromptsTab() {
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Technographic Signal Check</h4>
-            <CodeBlock code="Does this company use ServiceNow, Tanium, Nexthink, BMC Helix, Ivanti, Lakeside SysTrack, or 1E for IT service management or endpoint monitoring? Look for technology stack mentions on their website, job postings, or press releases. Return YES if any of these tools are confirmed, NO if not found." />
+            <CodeBlock code={`Does this company use ServiceNow, Tanium, Nexthink, BMC Helix, Ivanti, Lakeside SysTrack, or 1E for IT service management or endpoint monitoring?
+
+Look for technology stack mentions on their website, job postings, or press releases.
+
+Return YES if any of these tools are confirmed, NO if not found.`} />
           </div>
 
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">AI-Ops Gap Signal</h4>
-            <CodeBlock code="Check if this company has implemented AI-powered IT operations automation or self-healing endpoint capabilities. Look for mentions of autonomous IT ops, AI-driven support, or predictive resolution in their technology stack. Return YES if they already have AI-ops automation (no gap), NO if they are still using traditional/reactive ITSM (gap exists)." />
+            <CodeBlock code={`Check if this company has implemented AI-powered IT operations automation or self-healing endpoint capabilities.
+
+Look for mentions of autonomous IT ops, AI-driven support, or predictive resolution in their technology stack.
+
+Return YES if they already have AI-ops automation (no gap), NO if they are still using traditional/reactive ITSM (gap exists).`} />
           </div>
         </div>
       </ContentSection>
@@ -579,12 +587,26 @@ function PromptsTab() {
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">L1/L2 Support Hiring Volume Signal</h4>
-            <CodeBlock code="Search this company's job board or careers page for IT support hiring. Count open positions for: Help Desk Technician, IT Support Specialist, L1 Support, L2 Support, Service Desk Analyst. Return the count. If 3+ positions open = HIGH PRIORITY signal. If 1-2 positions = MEDIUM signal. If 0 positions = NO signal." />
+            <CodeBlock code={`Search this company's job board or careers page for IT support hiring.
+
+Count open positions for:
+- Help Desk Technician
+- IT Support Specialist
+- L1 Support
+- L2 Support
+- Service Desk Analyst
+
+Return the count:
+- If 3+ positions open = HIGH PRIORITY signal
+- If 1-2 positions = MEDIUM signal
+- If 0 positions = NO signal`} />
           </div>
 
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">IT Operations Leadership Hiring Signal</h4>
-            <CodeBlock code="Check if this company is hiring for IT Operations Manager, VP IT Operations, Head of Digital Workplace, or EUC Lead positions. Return YES if these leadership roles are open (suggests organizational strain or expansion), NO if not." />
+            <CodeBlock code={`Check if this company is hiring for IT Operations Manager, VP IT Operations, Head of Digital Workplace, or EUC Lead positions.
+
+Return YES if these leadership roles are open (suggests organizational strain or expansion), NO if not.`} />
           </div>
         </div>
       </ContentSection>
@@ -597,12 +619,28 @@ function PromptsTab() {
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Growth/Expansion Signal</h4>
-            <CodeBlock code="Look for recent announcements about this company opening new offices, expanding to new locations, or significant headcount growth in the last 6-12 months. Check press releases, LinkedIn company updates, or news articles. Return YES if clear growth/expansion signals found, NO if not." />
+            <CodeBlock code={`Look for recent announcements about this company opening new offices, expanding to new locations, or significant headcount growth in the last 6-12 months.
+
+Check:
+- Press releases
+- LinkedIn company updates
+- News articles
+
+Return YES if clear growth/expansion signals found, NO if not.`} />
           </div>
 
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">New Leadership Signal (Event-Based)</h4>
-            <CodeBlock code="Search for recent leadership changes at this company. Check if they have a new CIO, VP IT Operations, or Head of Digital Workplace appointed in the last 3-6 months. Look at LinkedIn, press releases, company announcements. Return YES with name and date if found, NO if not." />
+            <CodeBlock code={`Search for recent leadership changes at this company.
+
+Check if they have a new CIO, VP IT Operations, or Head of Digital Workplace appointed in the last 3-6 months.
+
+Look at:
+- LinkedIn
+- Press releases
+- Company announcements
+
+Return YES with name and date if found, NO if not.`} />
           </div>
         </div>
       </ContentSection>
@@ -615,12 +653,37 @@ function PromptsTab() {
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Distributed Workforce/Fleet Size Signal</h4>
-            <CodeBlock code="Analyze this company's structure to estimate endpoint fleet size. Look for: number of locations, branch networks, retail stores, employee count, remote workforce mentions. Industries like financial services (branches), healthcare (facilities), retail (stores) typically indicate large device fleets. Return estimated fleet size category: LARGE (10,000+ endpoints), MEDIUM (1,000-10,000), SMALL (under 1,000), or UNKNOWN." />
+            <CodeBlock code={`Analyze this company's structure to estimate endpoint fleet size.
+
+Look for:
+- Number of locations
+- Branch networks
+- Retail stores
+- Employee count
+- Remote workforce mentions
+
+Industries like financial services (branches), healthcare (facilities), retail (stores) typically indicate large device fleets.
+
+Return estimated fleet size category:
+- LARGE (10,000+ endpoints)
+- MEDIUM (1,000-10,000)
+- SMALL (under 1,000)
+- UNKNOWN`} />
           </div>
 
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Industry Fit Verification</h4>
-            <CodeBlock code="Confirm this company's primary industry. Is it one of the high-fit sectors: Financial Services, Insurance, Healthcare, Multi-Location Retail, Technology, or Telecom? Return the industry category if it matches high-fit sectors, or return OTHER if it does not match." />
+            <CodeBlock code={`Confirm this company's primary industry.
+
+Is it one of the high-fit sectors:
+- Financial Services
+- Insurance
+- Healthcare
+- Multi-Location Retail
+- Technology
+- Telecom
+
+Return the industry category if it matches high-fit sectors, or return OTHER if it does not match.`} />
           </div>
         </div>
       </ContentSection>
