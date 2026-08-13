@@ -9,6 +9,96 @@
     "comments": []
   },
   {
+    "id": "task_1785432335413_pe4b80p",
+    "description": "Purchase more sending accounts",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31",
+    "order": 1,
+    "comments": []
+  },
+  {
+    "id": "task_1785432318537_0yk9pkg",
+    "description": "Activate Email Guard Pro plan",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-07-31",
+    "order": 2,
+    "comments": []
+  },
+  {
+    "id": "task_1786009825593_zyv2gsl",
+    "description": "Pay invoice for 27 July - 02 August",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-06",
+    "order": 3,
+    "comments": []
+  },
+  {
+    "id": "task_1786022382435_omrq65o",
+    "description": "Create Dashboard for AD Signer (https://www.adsigner.com/en)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-07",
+    "order": 4,
+    "comments": []
+  },
+  {
+    "id": "task_1785420655527_4u7j9lk",
+    "description": "Create Dashboard w/ Sequences for Eblissai.com",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-07-30",
+    "order": 5,
+    "comments": []
+  },
+  {
+    "id": "task_1786620359333_9hr9h6s",
+    "description": "Create Dashboard w/ Sequences for Mountaindrop",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 6,
+    "comments": []
+  },
+  {
+    "id": "task_1786620390116_10j0gnd",
+    "description": "Find Best Fits and push to Dashboard for Mountaindrop",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 7,
+    "comments": []
+  },
+  {
+    "id": "task_1785432278082_ukybt1y",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-03",
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1786620403129_7ozfvko",
+    "description": "Find Best Fits and push to Dashboard for eBliss AI",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 9,
+    "comments": []
+  },
+  {
+    "id": "task_1786620414011_izj4ams",
+    "description": "Find Best Fits and push to Dashboard for AdSigner",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 10,
+    "comments": []
+  },
+  {
     "id": "task_1786022195222_ttqbljc",
     "description": "Send ICP documentation for AD Signer (https://www.adsigner.com/en)",
     "assignedTo": "Matej",
@@ -24,60 +114,6 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 2,
-    "comments": []
-  },
-  {
-    "id": "task_1785432335413_pe4b80p",
-    "description": "Purchase more sending accounts",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-07-31",
-    "order": 3,
-    "comments": []
-  },
-  {
-    "id": "task_1785432318537_0yk9pkg",
-    "description": "Activate Email Guard Pro plan",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-07-31",
-    "order": 4,
-    "comments": []
-  },
-  {
-    "id": "task_1786009825593_zyv2gsl",
-    "description": "Pay invoice for 27 July - 02 August",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-08-06",
-    "order": 5,
-    "comments": []
-  },
-  {
-    "id": "task_1786022382435_omrq65o",
-    "description": "Create Dashboard for AD Signer (https://www.adsigner.com/en)",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-07",
-    "order": 6,
-    "comments": []
-  },
-  {
-    "id": "task_1785420655527_4u7j9lk",
-    "description": "Create Dashboard for Eblissai.com",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-07-30",
-    "order": 7,
-    "comments": []
-  },
-  {
-    "id": "task_1785432278082_ukybt1y",
-    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-03",
-    "order": 8,
     "comments": []
   },
   {
