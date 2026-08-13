@@ -175,42 +175,46 @@ function OverviewTab() {
     <>
       <ContentSection title="Client Overview">
         <div className="space-y-4">
-          <InfoCard title="Company">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Company</h4>
             <p className="text-slate-700">
               <strong>Mountaindrop</strong> - Premium, third-party lab-tested Himalayan & Altai Shilajit resin and adaptogen-based wellness blends.
             </p>
             <p className="text-slate-600 text-sm mt-2">
               Manufactured & filled by BTI KI TRENING d.o.o., Škofja Loka, Slovenia
             </p>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Products Offered">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Products Offered</h4>
             <ul className="list-disc list-inside space-y-2 text-slate-700">
               <li><strong>Core Product:</strong> Himalayan & Altai Shilajit resin (authentic resin, not powder/capsules)</li>
               <li><strong>Shilajit Blends:</strong> Ashwagandha Plus, Flourish, Genius, Microbion, Prime</li>
               <li><strong>Additional:</strong> Energy bar and natural skincare products</li>
               <li><strong>Manufacturing:</strong> GMP, HACCP, IFS and ISO 9001 certified facility</li>
             </ul>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Key Strengths">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Key Strengths</h4>
             <div className="space-y-3">
               <div>
-                <h4 className="font-semibold text-emerald-700 mb-1">Premium Positioning</h4>
+                <h5 className="font-semibold text-emerald-700 mb-1">Premium Positioning</h5>
                 <p className="text-slate-700">Authentic resin format (not powder/capsules), altitude-certified sourcing, triple-purification process, 6+ independent lab certifications</p>
               </div>
               <div>
-                <h4 className="font-semibold text-emerald-700 mb-1">Proven at Scale</h4>
+                <h5 className="font-semibold text-emerald-700 mb-1">Proven at Scale</h5>
                 <p className="text-slate-700">25,000+ jars delivered worldwide, 4.8/5 rating from 1,000+ five-star reviews</p>
               </div>
               <div>
-                <h4 className="font-semibold text-emerald-700 mb-1">Established Distribution</h4>
+                <h5 className="font-semibold text-emerald-700 mb-1">Established Distribution</h5>
                 <p className="text-slate-700">Existing distributor network already live in multiple countries (Albania, Australia, and expanding) - retailers join an established brand, not an unproven one</p>
               </div>
             </div>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Campaign Focus">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Campaign Focus</h4>
             <p className="text-slate-700">
               <strong>Outbound B2B</strong> - Reaching existing multi-brand supplement retailers who could add Mountaindrop to their portfolio
             </p>
@@ -220,7 +224,7 @@ function OverviewTab() {
             <p className="text-slate-600 mt-1">
               <strong>Language:</strong> English (primary), local language for HR/SRB/DACH outreach where available
             </p>
-          </InfoCard>
+          </div>
         </div>
       </ContentSection>
 
@@ -267,20 +271,22 @@ function ICPAndPersonasTab() {
     <>
       <ContentSection title="Company-Level ICP">
         <div className="space-y-4">
-          <InfoCard title="Target Geography">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Target Geography</h4>
             <ul className="list-disc list-inside space-y-1 text-slate-700">
               <li><strong>Primary:</strong> Croatia and Serbia</li>
               <li><strong>Secondary:</strong> DACH (Germany, Austria, Switzerland)</li>
               <li><strong>Expansion:</strong> Wider EU markets</li>
             </ul>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Company Type - Multi-Brand Supplement Retailers">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Company Type - Multi-Brand Supplement Retailers</h4>
             <p className="text-slate-700 mb-3">
               Retailers that already sell food supplements to end customers and carry multiple third-party brands - not exclusively their own private label.
             </p>
 
-            <h4 className="font-semibold text-slate-900 mb-2">Include:</h4>
+            <h5 className="font-semibold text-slate-900 mb-2">Include:</h5>
             <ul className="list-disc list-inside space-y-1 text-slate-700 mb-4">
               <li>Specialized supplement / sports nutrition stores (physical and/or online)</li>
               <li>Health food & wellness stores that stock supplement brands</li>
@@ -288,27 +294,28 @@ function ICPAndPersonasTab() {
               <li>Online supplement shops / webshops carrying multiple brands</li>
             </ul>
 
-            <h4 className="font-semibold text-red-700 mb-2">Exclude:</h4>
+            <h5 className="font-semibold text-red-700 mb-2">Exclude:</h5>
             <ul className="list-disc list-inside space-y-1 text-red-600">
               <li>Shilajit producers/brands (direct competitors)</li>
               <li>Supplement manufacturers in general</li>
               <li>White label / private label production companies</li>
               <li>Retailers that sell exclusively their own private-label products (no multi-brand portfolio)</li>
             </ul>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Industries / Verticals">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Industries / Verticals</h4>
             <div className="space-y-3">
               <div>
-                <h4 className="font-semibold text-emerald-700 mb-1">Primary</h4>
+                <h5 className="font-semibold text-emerald-700 mb-1">Primary</h5>
                 <p className="text-slate-700">Sports nutrition retailers, health food & supplement stores, specialty wellness retailers</p>
               </div>
               <div>
-                <h4 className="font-semibold text-emerald-700 mb-1">Secondary</h4>
+                <h5 className="font-semibold text-emerald-700 mb-1">Secondary</h5>
                 <p className="text-slate-700">Online supplement webshops/marketplaces, gyms or fitness centers with a retail corner that sells third-party products</p>
               </div>
             </div>
-          </InfoCard>
+          </div>
         </div>
       </ContentSection>
 
@@ -391,23 +398,26 @@ function ICPAndPersonasTab() {
 
       <ContentSection title="How We Identify Target Companies">
         <div className="space-y-4">
-          <InfoCard title="Firmographic Fit">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Firmographic Fit</h4>
             <p className="text-slate-700">
               Multi-brand supplement/sports nutrition retailer (store and/or webshop) selling to end customers in Croatia, Serbia, DACH or the wider EU; not a producer or private-label-only retailer.
             </p>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Decision-Maker Contacts">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Decision-Maker Contacts</h4>
             <p className="text-slate-700">
               Owner or purchasing/category manager per persona definitions; e-commerce manager for webshop-led retailers.
             </p>
-          </InfoCard>
+          </div>
 
-          <InfoCard title="Prioritization">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Prioritization</h4>
             <p className="text-slate-700">
               Retailers matching a Tier 1 signal (actively expanding brands, no Shilajit yet) are sequenced first; the rest of the fitting list is worked through in parallel rather than excluded.
             </p>
-          </InfoCard>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -422,32 +432,37 @@ function FiltersTab() {
           Standard B2B data enrichment and web research to identify multi-brand supplement retailers in target geographies.
         </p>
 
-        <InfoCard title="Firmographic Filters">
-          <ul className="list-disc list-inside space-y-2 text-slate-700">
-            <li><strong>Geography:</strong> Croatia, Serbia (primary); Germany, Austria, Switzerland (DACH); wider EU (expansion)</li>
-            <li><strong>Company Type:</strong> Supplement retailers, health food stores, pharmacies with supplement sections, online supplement webshops</li>
-            <li><strong>Business Model:</strong> Multi-brand retailers (not private-label-only or manufacturers)</li>
-            <li><strong>Customer Type:</strong> B2C retailers selling to end customers (not B2B producers/wholesalers)</li>
-          </ul>
-        </InfoCard>
+        <div className="space-y-4">
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Firmographic Filters</h4>
+            <ul className="list-disc list-inside space-y-2 text-slate-700">
+              <li><strong>Geography:</strong> Croatia, Serbia (primary); Germany, Austria, Switzerland (DACH); wider EU (expansion)</li>
+              <li><strong>Company Type:</strong> Supplement retailers, health food stores, pharmacies with supplement sections, online supplement webshops</li>
+              <li><strong>Business Model:</strong> Multi-brand retailers (not private-label-only or manufacturers)</li>
+              <li><strong>Customer Type:</strong> B2C retailers selling to end customers (not B2B producers/wholesalers)</li>
+            </ul>
+          </div>
 
-        <InfoCard title="Exclusion Filters">
-          <ul className="list-disc list-inside space-y-2 text-red-600">
-            <li>Shilajit producers/brands (direct competitors)</li>
-            <li>Supplement manufacturers</li>
-            <li>White label / private label production companies</li>
-            <li>Retailers selling exclusively own private-label products</li>
-            <li>Existing Mountaindrop distributors/retailers</li>
-          </ul>
-        </InfoCard>
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Exclusion Filters</h4>
+            <ul className="list-disc list-inside space-y-2 text-red-600">
+              <li>Shilajit producers/brands (direct competitors)</li>
+              <li>Supplement manufacturers</li>
+              <li>White label / private label production companies</li>
+              <li>Retailers selling exclusively own private-label products</li>
+              <li>Existing Mountaindrop distributors/retailers</li>
+            </ul>
+          </div>
 
-        <InfoCard title="Contact Data Requirements">
-          <ul className="list-disc list-inside space-y-1 text-slate-700">
-            <li><strong>Job Titles:</strong> Owner, Founder, Managing Director, Purchasing Manager, Category Manager, Buyer, E-commerce Manager, Online Store Manager</li>
-            <li><strong>Email Required:</strong> Yes (business email preferred)</li>
-            <li><strong>LinkedIn:</strong> Optional but helpful for verification</li>
-          </ul>
-        </InfoCard>
+          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-900 mb-2">Contact Data Requirements</h4>
+            <ul className="list-disc list-inside space-y-1 text-slate-700">
+              <li><strong>Job Titles:</strong> Owner, Founder, Managing Director, Purchasing Manager, Category Manager, Buyer, E-commerce Manager, Online Store Manager</li>
+              <li><strong>Email Required:</strong> Yes (business email preferred)</li>
+              <li><strong>LinkedIn:</strong> Optional but helpful for verification</li>
+            </ul>
+          </div>
+        </div>
       </ContentSection>
     </>
   );
@@ -462,29 +477,25 @@ function PromptsTab() {
         </p>
 
         <div className="space-y-4">
-          <InfoCard title="Portfolio Expansion Signal (Tier 1)">
-            <CodeBlock>
-              Does this retailer's website show evidence of actively adding new supplement brands? Look for: "new arrivals" sections, "new brands" pages, recently added product listings, announcements about expanding their catalog. Return YES if clear evidence found, NO if not.
-            </CodeBlock>
-          </InfoCard>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Portfolio Expansion Signal (Tier 1)</h4>
+            <CodeBlock code="Does this retailer's website show evidence of actively adding new supplement brands? Look for: 'new arrivals' sections, 'new brands' pages, recently added product listings, announcements about expanding their catalog. Return YES if clear evidence found, NO if not." />
+          </div>
 
-          <InfoCard title="Shilajit Gap Signal (Tier 1)">
-            <CodeBlock>
-              Search this retailer's product catalog for Shilajit or adaptogen products (Shilajit, Ashwagandha, Rhodiola, etc.). Return YES if they currently have NO Shilajit or adaptogen products (gap in catalog), NO if they already stock these categories.
-            </CodeBlock>
-          </InfoCard>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Shilajit Gap Signal (Tier 1)</h4>
+            <CodeBlock code="Search this retailer's product catalog for Shilajit or adaptogen products (Shilajit, Ashwagandha, Rhodiola, etc.). Return YES if they currently have NO Shilajit or adaptogen products (gap in catalog), NO if they already stock these categories." />
+          </div>
 
-          <InfoCard title="Premium/Quality Positioning Signal (Tier 2)">
-            <CodeBlock>
-              Analyze this retailer's branding and messaging. Do they emphasize quality, lab-testing, premium sourcing, certifications, or "verified" products? Look for mentions of third-party testing, quality standards, premium positioning. Return YES if quality-focused, NO if price-focused or unclear.
-            </CodeBlock>
-          </InfoCard>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Premium/Quality Positioning Signal (Tier 2)</h4>
+            <CodeBlock code="Analyze this retailer's branding and messaging. Do they emphasize quality, lab-testing, premium sourcing, certifications, or 'verified' products? Look for mentions of third-party testing, quality standards, premium positioning. Return YES if quality-focused, NO if price-focused or unclear." />
+          </div>
 
-          <InfoCard title="Wellness/Adaptogen Content Signal (Tier 3)">
-            <CodeBlock>
-              Check if this retailer publishes content (blog, social media, newsletters) about wellness trends, biohacking, adaptogens, or natural supplements. Return YES if they actively create content in these areas, NO if not.
-            </CodeBlock>
-          </InfoCard>
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Wellness/Adaptogen Content Signal (Tier 3)</h4>
+            <CodeBlock code="Check if this retailer publishes content (blog, social media, newsletters) about wellness trends, biohacking, adaptogens, or natural supplements. Return YES if they actively create content in these areas, NO if not." />
+          </div>
         </div>
       </ContentSection>
     </>
