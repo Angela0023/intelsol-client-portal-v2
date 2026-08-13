@@ -39,10 +39,7 @@ export default function DocumentsTabGeneric({
 
       if (response.ok) {
         const data = await response.json();
-        setLastUpdated(new Date().toLocaleString());
-        alert(`${clientName} database and performance stats updated successfully!`);
-        // Reload page to show updated data
-        window.location.reload();
+        alert(`${clientName} sync started successfully!\n\nThe database and performance stats are now updating. This process takes 3-5 minutes.\n\nPlease refresh the page in a few minutes to see the updated data.`);
       } else {
         const error = await response.json();
         alert(`Failed to trigger update: ${error.error || 'Unknown error'}`);
