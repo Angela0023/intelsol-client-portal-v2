@@ -27,11 +27,12 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
         tslab: 'TS Lab',
+        adsigner: 'AdSigner',
         beeit: 'BeeIt',
         intelsol: 'Intelsol',
         peoplefocus: 'PeopleFocus',
@@ -103,6 +104,14 @@ export default function AdminPage() {
       bgColor: 'bg-green-50',
     },
     {
+      id: 'adsigner',
+      name: 'AdSigner',
+      industry: 'Email Signature Marketing Platform',
+      color: 'bg-teal-100 text-teal-600',
+      borderColor: 'border-teal-200',
+      bgColor: 'bg-teal-50',
+    },
+    {
       id: 'beeit',
       name: 'BeeIt',
       industry: 'eCommerce Development',
@@ -141,7 +150,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '7',
+      value: '8',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',

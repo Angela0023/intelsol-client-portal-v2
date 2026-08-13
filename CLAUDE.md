@@ -94,6 +94,43 @@
 
 ---
 
+### 1B. NEVER Expose Internal Tool Names to Clients
+
+**HARD RULE:** Internal tabs containing tool names (Clay Filters, AI Prompts) MUST be hidden from non-admin users. Only admin users can see these tabs.
+
+**Why:** Clients should not see references to internal tools (Clay, Anthropic, Apollo, SmartLead, etc.). This is proprietary information and process details they don't need to know.
+
+**Internal Tabs (Admin-Only):**
+- Clay Filters
+- AI Prompts
+
+**Client-Visible Tabs:**
+- Overview
+- ICP Profile
+- Buyer Personas
+- Email Sequences
+- Campaigns
+- Performance
+- Documents
+- Tasks
+
+**Implementation Pattern:**
+```tsx
+// Define which tabs are internal
+const internalTabs = ['filters', 'prompts'];
+
+// Filter tabs based on admin access
+const visibleTabs = isAdmin
+  ? tabs
+  : tabs.filter(tab => !internalTabs.includes(tab.id));
+```
+
+**Rule Established:** 2026-08-13
+
+**This is a CRITICAL rule - violation exposes proprietary process to clients**
+
+---
+
 ### 2. Adding a New Client Requires Multiple Files
 
 **When creating a new client dashboard, you MUST update:**

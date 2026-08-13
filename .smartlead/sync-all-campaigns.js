@@ -39,6 +39,7 @@ const CLIENT_PREFIXES = {
   'tslab': '🧪 TS Lab',
   'demo': '🏆 Demo',
   'xpose': '💥 Xpose',
+  'adsigner': '📧 AdSigner',
   'beeit': '🏆 BeeIT',
   'wulf': '🏆 Wulf',
   'peoplefocus': '🎯 People Focus',

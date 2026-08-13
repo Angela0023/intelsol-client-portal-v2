@@ -13,6 +13,7 @@ on:
           - tslab
           - demo
           - xpose
+          - adsigner
           - beeit
           - wulf
           - peoplefocus
@@ -65,6 +66,7 @@ jobs:
               'tslab': '🧪 TS Lab',
               'demo': '🏆 Demo',
               'xpose': '💥 Xpose',
+              'adsigner': '📧 AdSigner',
               'beeit': '🏆 BeeIT',
               'wulf': '🏆 Wulf',
               'peoplefocus': '🎯 People Focus',

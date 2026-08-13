@@ -18,6 +18,7 @@ const VALID_CLIENTS = [
   'tslab',
   'demo',
   'xpose',
+  'adsigner',
   'beeit',
   'wulf',
   'peoplefocus',
