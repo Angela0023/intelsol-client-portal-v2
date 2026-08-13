@@ -46,7 +46,7 @@
   },
   {
     "id": "task_1785420655527_4u7j9lk",
-    "description": "Create Dashboard w/ Sequences for eBliss AI (eblissai.com)",
+    "description": "Create Dashboard w/ Sequences for eBliss AI",
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-07-30",
@@ -82,7 +82,7 @@
   },
   {
     "id": "task_1786620403129_7ozfvko",
-    "description": "Find Best Fits and push to Dashboard for eBliss AI (eblissai.com)",
+    "description": "Find Best Fits and push to Dashboard for eBliss AI",
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-13",
@@ -220,6 +220,33 @@
     "status": "pending",
     "dueDate": "2026-08-17",
     "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1786624097375_zojo61c",
+    "description": "Find 1K Leads for eBliss AI",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-14",
+    "order": 12,
+    "comments": []
+  },
+  {
+    "id": "task_1786624117375_q0v1blf",
+    "description": "Find 1K Leads for Montaindrop",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-14",
+    "order": 13,
+    "comments": []
+  },
+  {
+    "id": "task_1786624131701_6ps219u",
+    "description": "Find 1K Leads for AdSigner",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-14",
+    "order": 14,
     "comments": []
   }
 ]
