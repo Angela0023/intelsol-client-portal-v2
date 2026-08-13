@@ -17,9 +17,7 @@ const tabs = [
   { id: 'icp', label: 'ICP Profile', icon: Target },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -143,12 +141,10 @@ export default function AdSignerPage() {
         {/*Tab Content*/}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="adsigner" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="adsigner" />
@@ -216,7 +212,7 @@ function OverviewTab() {
   );
 }
 
-function ICPTab() {
+function ICPAndPersonasTab() {
   return (
     <>
       <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
@@ -274,6 +270,136 @@ function ICPTab() {
               <li>• Marketing team growth or new CMO</li>
             </ul>
           </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-teal-50 border-l-4 border-teal-500 p-4 rounded">
+            <p className="font-semibold text-teal-900 mb-2">Multi-Stakeholder Decision</p>
+            <p className="text-teal-800 text-sm">
+              Email signature solutions typically require buy-in from multiple departments: Marketing wants brand control,
+              IT needs technical feasibility, and executives care about ROI. Target all personas in your outreach strategy.
+            </p>
+          </div>
+
+          {[
+            {
+              tier: 1,
+              name: 'Marketing Lead',
+              color: 'blue',
+              description: 'CMO, Marketing Director, Head of Marketing, VP Marketing',
+              painPoints: [
+                'Brand inconsistency across employee emails',
+                'Missed marketing opportunities in email footers',
+                'No visibility into email signature compliance',
+                'Difficulty promoting campaigns to existing email audiences'
+              ],
+              value: 'Marketing leaders see every employee email as untapped marketing real estate'
+            },
+            {
+              tier: 2,
+              name: 'IT Lead',
+              color: 'green',
+              description: 'CTO, IT Director, IT Manager, Head of IT',
+              painPoints: [
+                'Manual signature updates are time-consuming',
+                'Security and compliance risks with unmanaged signatures',
+                'Inconsistent implementation across email platforms',
+                'Support tickets for signature changes'
+              ],
+              value: 'IT teams want centralized management and reduced manual work'
+            },
+            {
+              tier: 3,
+              name: 'HR Lead',
+              color: 'purple',
+              description: 'HR Director, Head of People, HR Manager',
+              painPoints: [
+                'Onboarding includes manual signature setup',
+                'Keeping signatures updated when people change roles',
+                'Ensuring company policies in signatures',
+                'Managing signature changes at scale'
+              ],
+              value: 'HR wants automated onboarding and role change processes'
+            },
+            {
+              tier: 4,
+              name: 'Sales Lead',
+              color: 'amber',
+              description: 'VP Sales, Sales Director, Head of Sales',
+              painPoints: [
+                'Inconsistent messaging from sales team emails',
+                'Missed opportunities to promote events/webinars',
+                'No way to A/B test signature CTAs',
+                'Difficulty tracking signature click-through'
+              ],
+              value: 'Sales leaders want every email to support pipeline generation'
+            },
+            {
+              tier: 5,
+              name: 'SEO/Digital Marketing',
+              color: 'indigo',
+              description: 'Digital Marketing Manager, SEO Specialist, Growth Marketer',
+              painPoints: [
+                'Untapped channel for content promotion',
+                'No data on email signature performance',
+                'Missing attribution for signature-driven traffic',
+                'Lack of integration with marketing stack'
+              ],
+              value: 'Digital marketers see signatures as high-ROI channel'
+            },
+            {
+              tier: 6,
+              name: 'C-Level / CEO',
+              color: 'teal',
+              description: 'CEO, Managing Director, COO, CFO',
+              painPoints: [
+                'Brand inconsistency damages company image',
+                'Wasted marketing opportunity in daily emails',
+                'Compliance and legal risks',
+                'Inefficient processes across departments'
+              ],
+              value: 'Executives want brand consistency and operational efficiency'
+            }
+          ].map((persona) => {
+            const colorClasses: Record<string, { bg: string; border: string; text: string }> = {
+              blue: { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-600' },
+              green: { bg: 'bg-green-50', border: 'border-green-200', text: 'text-green-600' },
+              purple: { bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-600' },
+              amber: { bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-600' },
+              indigo: { bg: 'bg-indigo-50', border: 'border-indigo-200', text: 'text-indigo-600' },
+              teal: { bg: 'bg-teal-50', border: 'border-teal-200', text: 'text-teal-600' },
+            };
+            const colors = colorClasses[persona.color];
+            return (
+              <div key={persona.tier} className={`${colors.bg} border-l-4 ${colors.border} rounded-lg p-4`}>
+                <div className="flex items-start space-x-3 mb-3">
+                  <div className={`w-8 h-8 ${colors.bg} rounded-full flex items-center justify-center border-2 ${colors.border}`}>
+                    <span className={`${colors.text} font-bold text-sm`}>{persona.tier}</span>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className={`font-semibold ${colors.text} text-lg`}>{persona.name}</h4>
+                    <p className="text-slate-600 text-sm">{persona.description}</p>
+                  </div>
+                </div>
+
+                <div className="ml-11">
+                  <p className="font-medium text-slate-900 text-sm mb-2">Pain Points:</p>
+                  <ul className="space-y-1 mb-3">
+                    {persona.painPoints.map((pain, idx) => (
+                      <li key={idx} className="text-slate-700 text-sm">• {pain}</li>
+                    ))}
+                  </ul>
+
+                  <div className={`${colors.bg} border ${colors.border} rounded p-2`}>
+                    <p className="text-slate-900 text-sm font-medium">Value Proposition:</p>
+                    <p className="text-slate-700 text-sm mt-1">{persona.value}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </ContentSection>
     </>
@@ -413,141 +539,13 @@ Only answer "Yes" if confident they:
   );
 }
 
-function PersonasTab() {
-  const personas = [
-    {
-      tier: 1,
-      name: 'Marketing Lead',
-      color: 'blue',
-      description: 'CMO, Marketing Director, Head of Marketing, VP Marketing',
-      painPoints: [
-        'Brand inconsistency across employee emails',
-        'Missed marketing opportunities in email footers',
-        'No visibility into email signature compliance',
-        'Difficulty promoting campaigns to existing email audiences'
-      ],
-      value: 'Marketing leaders see every employee email as untapped marketing real estate'
-    },
-    {
-      tier: 2,
-      name: 'IT Lead',
-      color: 'green',
-      description: 'CTO, IT Director, IT Manager, Head of IT',
-      painPoints: [
-        'Manual signature updates are time-consuming',
-        'Security and compliance risks with unmanaged signatures',
-        'Inconsistent implementation across email platforms',
-        'Support tickets for signature changes'
-      ],
-      value: 'IT teams want centralized management and reduced manual work'
-    },
-    {
-      tier: 3,
-      name: 'HR Lead',
-      color: 'purple',
-      description: 'HR Director, Head of People, HR Manager',
-      painPoints: [
-        'Onboarding includes manual signature setup',
-        'Keeping signatures updated when people change roles',
-        'Ensuring company policies in signatures',
-        'Managing signature changes at scale'
-      ],
-      value: 'HR wants automated onboarding and role change processes'
-    },
-    {
-      tier: 4,
-      name: 'Sales Lead',
-      color: 'amber',
-      description: 'VP Sales, Sales Director, Head of Sales',
-      painPoints: [
-        'Inconsistent messaging from sales team emails',
-        'Missed opportunities to promote events/webinars',
-        'No way to A/B test signature CTAs',
-        'Difficulty tracking signature click-through'
-      ],
-      value: 'Sales leaders want every email to support pipeline generation'
-    },
-    {
-      tier: 5,
-      name: 'SEO/Digital Marketing',
-      color: 'indigo',
-      description: 'Digital Marketing Manager, SEO Specialist, Growth Marketer',
-      painPoints: [
-        'Untapped channel for content promotion',
-        'No data on email signature performance',
-        'Missing attribution for signature-driven traffic',
-        'Lack of integration with marketing stack'
-      ],
-      value: 'Digital marketers see signatures as high-ROI channel'
-    },
-    {
-      tier: 6,
-      name: 'C-Level / CEO',
-      color: 'teal',
-      description: 'CEO, Managing Director, COO, CFO',
-      painPoints: [
-        'Brand inconsistency damages company image',
-        'Wasted marketing opportunity in daily emails',
-        'Compliance and legal risks',
-        'Inefficient processes across departments'
-      ],
-      value: 'Executives want brand consistency and operational efficiency'
-    }
-  ];
-
-  const colorClasses: Record<string, { bg: string; border: string; text: string }> = {
-    blue: { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-600' },
-    green: { bg: 'bg-green-50', border: 'border-green-200', text: 'text-green-600' },
-    purple: { bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-600' },
-    amber: { bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-600' },
-    indigo: { bg: 'bg-indigo-50', border: 'border-indigo-200', text: 'text-indigo-600' },
-    teal: { bg: 'bg-teal-50', border: 'border-teal-200', text: 'text-teal-600' },
-  };
-
+function CampaignsSequencesTab() {
   return (
     <>
-      <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div className="bg-teal-50 border-l-4 border-teal-500 p-4 rounded">
-            <p className="font-semibold text-teal-900 mb-2">Multi-Stakeholder Decision</p>
-            <p className="text-teal-800 text-sm">
-              Email signature solutions typically require buy-in from multiple departments: Marketing wants brand control,
-              IT needs technical feasibility, and executives care about ROI. Target all personas in your outreach strategy.
-            </p>
-          </div>
-
-          {personas.map((persona) => {
-            const colors = colorClasses[persona.color];
-            return (
-              <div key={persona.tier} className={`${colors.bg} border-l-4 ${colors.border} rounded-lg p-4`}>
-                <div className="flex items-start space-x-3 mb-3">
-                  <div className={`w-8 h-8 ${colors.bg} rounded-full flex items-center justify-center border-2 ${colors.border}`}>
-                    <span className={`${colors.text} font-bold text-sm`}>{persona.tier}</span>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className={`font-semibold ${colors.text} text-lg`}>{persona.name}</h4>
-                    <p className="text-slate-600 text-sm">{persona.description}</p>
-                  </div>
-                </div>
-
-                <div className="ml-11">
-                  <p className="font-medium text-slate-900 text-sm mb-2">Pain Points:</p>
-                  <ul className="space-y-1 mb-3">
-                    {persona.painPoints.map((pain, idx) => (
-                      <li key={idx} className="text-slate-700 text-sm">• {pain}</li>
-                    ))}
-                  </ul>
-
-                  <div className={`${colors.bg} border ${colors.border} rounded p-2`}>
-                    <p className="text-slate-900 text-sm font-medium">Value Proposition:</p>
-                    <p className="text-slate-700 text-sm mt-1">{persona.value}</p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </ContentSection>
+      <SequencesTab clientId="adsigner" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
+      </div>
     </>
   );
 }
