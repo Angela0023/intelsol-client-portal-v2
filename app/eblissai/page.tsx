@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import SequencesTab from '../components/SequencesTab';
@@ -9,6 +9,7 @@ import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import TasksTab from '../components/TasksTab';
+import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import {
   FileText,
   Target,
@@ -24,50 +25,123 @@ import {
   Building2,
 } from 'lucide-react';
 
+const tabs = [
+  { id: 'overview', label: 'Overview', icon: FileText },
+  { id: 'icp', label: 'ICP Profile', icon: Target },
+  { id: 'filters', label: 'Clay Filters', icon: Filter },
+  { id: 'prompts', label: 'AI Prompts', icon: Code },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
+  { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
+  { id: 'tasks', label: 'Tasks', icon: CheckSquare },
+];
+
 export default function EblissAIPage() {
   const [activeTab, setActiveTab] = useState('overview');
+  const [status, setStatus] = useState<ClientStatus>('Active');
+  const [isAdmin, setIsAdmin] = useState(false);
 
-  const tabs = [
-    { id: 'overview', label: 'Overview', icon: FileText },
-    { id: 'icp', label: 'ICP Profile', icon: Target },
-    { id: 'filters', label: 'Clay Filters', icon: Filter },
-    { id: 'prompts', label: 'AI Prompts', icon: Code },
-    { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
-    { id: 'performance', label: 'Performance', icon: BarChart3 },
-    { id: 'documents', label: 'Documents', icon: FolderOpen },
-    { id: 'tasks', label: 'Tasks', icon: CheckSquare },
-  ];
+  useEffect(() => {
+    setStatus(getClientStatus('eblissai', DEFAULT_STATUSES.eblissai));
+
+    // Check if user is admin
+    const access = sessionStorage.getItem('clientAccess');
+    let userIsAdmin = false;
+    if (access) {
+      try {
+        const parsedAccess = JSON.parse(access);
+        userIsAdmin = parsedAccess.includes('admin');
+        setIsAdmin(userIsAdmin);
+      } catch {
+        setIsAdmin(false);
+      }
+    }
+
+    // Internal tabs that should be hidden from non-admin users
+    const internalTabs = ['filters', 'prompts'];
+
+    // Read initial tab from URL pathname
+    const path = window.location.pathname;
+    const tabFromPath = path.split('/').pop();
+    const validTab = tabs.find(t => t.id === tabFromPath);
+    // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+    if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+      setActiveTab(validTab.id);
+    }
+
+    // Handle browser back/forward
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const tabFromPath = path.split('/').pop();
+      const validTab = tabs.find(t => t.id === tabFromPath);
+      // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+      if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+        setActiveTab(validTab.id);
+      } else {
+        setActiveTab('overview');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const handleStatusChange = (newStatus: ClientStatus) => {
+    setStatus(newStatus);
+    setClientStatus('eblissai', newStatus);
+  };
+
+  const handleTabChange = (tabId: string) => {
+    setActiveTab(tabId);
+    // Update URL without page reload
+    const newPath = tabId === 'overview' ? '/eblissai' : `/eblissai/${tabId}`;
+    window.history.pushState({}, '', newPath);
+  };
+
+  // Filter tabs based on admin access
+  // Hide internal tabs (filters, prompts) from non-admin users
+  const visibleTabs = isAdmin
+    ? tabs
+    : tabs.filter(tab => !['filters', 'prompts'].includes(tab.id));
 
   return (
     <ClientLayout>
       <div className="p-4 lg:p-8">
         {/* Page Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3">
-            <h1 className="text-2xl font-bold text-gray-900">eBlissAI</h1>
-            <a
-              href="https://eblissai.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-sky-600 hover:underline inline-block"
-            >
-              Visit Website →
-            </a>
+        <div className="mb-6">
+          <div className="flex items-center space-x-3 mb-2">
+            <div className="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center">
+              <span className="text-2xl font-bold text-sky-600">e</span>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center space-x-3">
+                <h1 className="text-3xl font-bold text-slate-900">eBlissAI</h1>
+                <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+              </div>
+              <p className="text-slate-600">AI-Native Autonomous IT Operations Platform</p>
+            </div>
           </div>
-          <p className="text-gray-600 mt-1">AI-Native Autonomous IT Operations Platform</p>
+          <a
+            href="https://eblissai.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-sky-600 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
         </div>
 
         {/* Tabs */}
-        <div className="border-b border-gray-200 mb-6">
-          <div className="flex space-x-6 overflow-x-auto">
-            {tabs.map((tab) => (
+        <div className="border-b border-slate-200 mb-6">
+          <div className="flex space-x-1 overflow-x-auto scrollbar-hide">
+            {visibleTabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`pb-3 px-1 font-medium text-sm whitespace-nowrap border-b-2 transition-colors flex items-center space-x-2 ${
+                onClick={() => handleTabChange(tab.id)}
+                className={`flex items-center space-x-2 px-4 py-3 border-b-2 transition-colors whitespace-nowrap ${
                   activeTab === tab.id
-                    ? 'border-[#1a2647] text-[#1a2647]'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    ? 'border-[#1a2647] text-[#1a2647] font-medium'
+                    : 'border-transparent text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <tab.icon className="w-4 h-4" />
