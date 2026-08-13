@@ -37,7 +37,7 @@
   },
   {
     "id": "task_1786022382435_omrq65o",
-    "description": "Create Dashboard for AD Signer (https://www.adsigner.com/en)",
+    "description": "Create Dashboard w/ Sequences for AD Signer (https://www.adsigner.com/en)",
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-07",
@@ -46,7 +46,7 @@
   },
   {
     "id": "task_1785420655527_4u7j9lk",
-    "description": "Create Dashboard w/ Sequences for Eblissai.com",
+    "description": "Create Dashboard w/ Sequences for eBliss AI (eblissai.com)",
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-07-30",
@@ -63,12 +63,30 @@
     "comments": []
   },
   {
+    "id": "task_1786620414011_izj4ams",
+    "description": "Find Best Fits and push to Dashboard for AdSigner",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 7,
+    "comments": []
+  },
+  {
     "id": "task_1786620390116_10j0gnd",
     "description": "Find Best Fits and push to Dashboard for Mountaindrop",
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-13",
-    "order": 7,
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1786620403129_7ozfvko",
+    "description": "Find Best Fits and push to Dashboard for eBliss AI (eblissai.com)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-13",
+    "order": 9,
     "comments": []
   },
   {
@@ -77,24 +95,6 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-03",
-    "order": 8,
-    "comments": []
-  },
-  {
-    "id": "task_1786620403129_7ozfvko",
-    "description": "Find Best Fits and push to Dashboard for eBliss AI",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-13",
-    "order": 9,
-    "comments": []
-  },
-  {
-    "id": "task_1786620414011_izj4ams",
-    "description": "Find Best Fits and push to Dashboard for AdSigner",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-13",
     "order": 10,
     "comments": []
   },
