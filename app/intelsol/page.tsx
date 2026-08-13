@@ -176,7 +176,7 @@ function OverviewTab() {
         <div className="space-y-4">
           <p>
             Intelsol is a B2B lead generation agency based in Slovenia. We help companies build
-            outbound sales pipelines through targeted cold email campaigns, Clay-based lead enrichment,
+            outbound sales pipelines through targeted cold email campaigns, lead enrichment,
             and AI-powered ICP qualification.
           </p>
           <p>
@@ -188,7 +188,7 @@ function OverviewTab() {
             <InfoCard label="Industry" value="B2B Lead Generation Services" />
             <InfoCard label="Business Model" value="Agency (Service-Based)" />
             <InfoCard label="Location" value="Ljubljana, Slovenia" />
-            <InfoCard label="Channel" value="Cold Email via SmartLead" />
+            <InfoCard label="Channel" value="Cold Email Outreach" />
           </div>
         </div>
       </ContentSection>
@@ -198,10 +198,10 @@ function OverviewTab() {
           <h4 className="font-semibold text-slate-900">What Intelsol Sells:</h4>
           <ul className="space-y-2">
             <ListItem type="check">B2B lead generation and prospecting</ListItem>
-            <ListItem type="check">Cold email campaign management (SmartLead)</ListItem>
-            <ListItem type="check">ICP development and Clay enrichment pipelines</ListItem>
-            <ListItem type="check">AI-powered lead qualification (Anthropic via Clay)</ListItem>
-            <ListItem type="check">Apollo email enrichment and verification</ListItem>
+            <ListItem type="check">Cold email campaign management</ListItem>
+            <ListItem type="check">ICP development and data enrichment pipelines</ListItem>
+            <ListItem type="check">AI-powered lead qualification</ListItem>
+            <ListItem type="check">Email enrichment and verification</ListItem>
             <ListItem type="check">Campaign monitoring and reply management</ListItem>
           </ul>
         </div>
@@ -213,21 +213,21 @@ function OverviewTab() {
             <span className="w-8 h-8 bg-violet-100 text-violet-600 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
             <div>
               <h4 className="font-semibold text-slate-900">Build Lead Lists</h4>
-              <p className="text-sm text-slate-600">Use Clay to identify and enrich companies matching our ICP across EU, UK, and USA markets.</p>
+              <p className="text-sm text-slate-600">Identify and enrich companies matching our ICP across EU, UK, and USA markets.</p>
             </div>
           </div>
           <div className="flex items-start space-x-3">
             <span className="w-8 h-8 bg-violet-100 text-violet-600 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
             <div>
               <h4 className="font-semibold text-slate-900">Qualify with AI</h4>
-              <p className="text-sm text-slate-600">Run Anthropic-powered ICP matching to score and filter leads before adding to sequences.</p>
+              <p className="text-sm text-slate-600">Run AI-powered ICP matching to score and filter leads before adding to sequences.</p>
             </div>
           </div>
           <div className="flex items-start space-x-3">
             <span className="w-8 h-8 bg-violet-100 text-violet-600 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
             <div>
               <h4 className="font-semibold text-slate-900">Launch Sequences</h4>
-              <p className="text-sm text-slate-600">Deploy multi-step email sequences via SmartLead with personalized messaging.</p>
+              <p className="text-sm text-slate-600">Deploy multi-step email sequences with personalized messaging.</p>
             </div>
           </div>
           <div className="flex items-start space-x-3">
@@ -1590,7 +1590,7 @@ function FiltersTab() {
         </div>
       </ContentSection>
 
-      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+      <ContentSection title="Contact Data Requirements" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
           <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
           <ul className="space-y-2">

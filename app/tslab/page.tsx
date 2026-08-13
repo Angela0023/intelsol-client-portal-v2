@@ -337,13 +337,13 @@ function ICPAndPersonasTab() {
           <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
             <p className="font-semibold text-violet-900 mb-2">Total Positions: {decisionMakers.length + procurement.length}</p>
             <p className="text-violet-800 text-sm">
-              When searching in Sales Navigator or Apollo, use these exact job titles. For smaller companies (20-50 employees), focus on Decision Makers. For larger companies (50-100+ employees), target both Decision Makers and Procurement roles.
+              Use these exact job titles when identifying prospects. For smaller companies (20-50 employees), focus on Decision Makers. For larger companies (50-100+ employees), target both Decision Makers and Procurement roles.
             </p>
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+      <ContentSection title="Contact Data Requirements" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
           <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
           <ul className="space-y-2">

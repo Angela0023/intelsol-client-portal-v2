@@ -317,7 +317,7 @@ function ICPAndPersonasTab() {
         </div>
       </ContentSection>
 
-      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+      <ContentSection title="Contact Data Requirements" icon={<Filter className="w-5 h-5" />}>
         <div className="space-y-4">
           <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
           <ul className="space-y-2">
