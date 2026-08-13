@@ -87,4 +87,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   intelsol: 'Active',
   wulf: 'Onboarding',
   plantryx: 'Onboarding',
+  mountaindrop: 'Onboarding',
 };

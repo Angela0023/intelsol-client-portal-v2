@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -37,7 +37,8 @@ export default function AdminPage() {
         intelsol: 'Intelsol',
         peoplefocus: 'PeopleFocus',
         wulf: 'Wulf',
-        plantryx: 'Plantryx'
+        plantryx: 'Plantryx',
+        mountaindrop: 'Mountaindrop'
       };
 
       const allTasks: any[] = [];
@@ -143,6 +144,14 @@ export default function AdminPage() {
       borderColor: 'border-indigo-200',
       bgColor: 'bg-indigo-50',
     },
+    {
+      id: 'mountaindrop',
+      name: 'Mountaindrop',
+      industry: 'Premium Supplements & Wellness',
+      color: 'bg-emerald-100 text-emerald-600',
+      borderColor: 'border-emerald-200',
+      bgColor: 'bg-emerald-50',
+    },
   ];
 
   const activeCount = Object.values(statuses).filter((s) => s === 'Active').length;
@@ -150,7 +159,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '8',
+      value: '9',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',

@@ -21,6 +21,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'intelsol', name: 'Intelsol', icon: Building2, color: 'text-violet-600' },
     { id: 'wulf', name: 'WULF Arts', icon: Building2, color: 'text-orange-600' },
     { id: 'plantryx', name: 'Plantryx', icon: Building2, color: 'text-indigo-600' },
+    { id: 'mountaindrop', name: 'Mountaindrop', icon: Building2, color: 'text-emerald-600' },
   ];
 
   const filteredClients = clients.filter(

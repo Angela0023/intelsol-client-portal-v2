@@ -1,0 +1,83 @@
+[
+  {
+    "id": "store-owner-premium-line",
+    "tierName": "SEQUENCE 1: Store Owner - Premium Line Addition",
+    "tierColor": "blue",
+    "targetPersonas": "Owner, Founder, Managing Director",
+    "messagingAngle": "Fill the Shilajit gap in your portfolio with a proven, lab-tested premium brand - established quality without the risk of an unverified newcomer",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Premium Shilajit line for {{store_name}}",
+        "body": "Hi {{first_name}},\n\nI noticed {{store_name}} carries a strong selection of supplement brands, but I didn't see Shilajit or adaptogens in your catalog.\n\nShilajit is one of the fastest-growing wellness categories right now - customers are actively looking for it. But most retailers hesitate because the market is flooded with unverified products and questionable sourcing.\n\nMountaindrop is different:\n- Triple-purified Himalayan & Altai Shilajit resin (authentic resin, not powder/capsules)\n- 6+ independent lab certifications (heavy metals, fulvic acid, purity)\n- GMP, HACCP, IFS and ISO 9001 certified manufacturing\n- 25,000+ jars delivered worldwide, 4.8/5 rating from 1,000+ reviews\n\nWe already supply distributors in multiple countries - you'd be adding an established brand with a proven track record, not taking a risk on an unknown.\n\nWorth a short call to discuss wholesale partnership terms?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Premium Shilajit line for {{store_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about adding Mountaindrop to {{store_name}}'s portfolio.\n\nI understand you need to be selective about new brands - shelf space is valuable, and you can't afford to stock products that won't move or that compromise your store's quality reputation.\n\nThat's exactly why we built Mountaindrop the way we did:\n\nProven demand:\n- 25,000+ jars delivered across multiple countries\n- 1,000+ five-star reviews from real customers\n- 4.8/5 average rating\n\nVerified quality:\n- 6+ independent lab certifications (not just our own claims)\n- GMP, HACCP, IFS and ISO 9001 certified manufacturing\n- Triple-purification process, altitude-certified sourcing\n\nEstablished brand:\n- Already supplied through distributors in countries like Albania, Australia\n- Professional packaging, ready marketing materials\n- Reliable supply chain from our Slovenia-based facility\n\nThis isn't an experiment - it's a premium line that's already proven at scale.\n\nCan we schedule a 15-minute call to discuss wholesale terms and how this would fit into {{store_name}}'s portfolio?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Last note - Mountaindrop for {{store_name}}",
+        "body": "Hi {{first_name}},\n\nLast follow-up from me - I know you're busy running {{store_name}}.\n\nIf you're looking to add a premium Shilajit and adaptogen line without the usual sourcing and quality risks, this is worth a conversation.\n\nWhat makes this simple:\n- Low minimum order to start (test the market without major commitment)\n- Wholesale pricing with healthy margins for retail\n- Product certifications and lab reports ready to share with customers\n- Marketing materials and content provided\n\nWe're not asking you to bet on an unproven brand. Mountaindrop has already delivered 25,000+ jars with a 4.8/5 rating - we're just expanding our retail network.\n\nInterested in a quick partnership discussion?\n\nBest regards,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "purchasing-manager-proven-brand",
+    "tierName": "SEQUENCE 2: Purchasing Manager - Proven Brand Track Record",
+    "tierColor": "green",
+    "targetPersonas": "Purchasing Manager, Category Manager (Supplements/Health), Buyer",
+    "messagingAngle": "Growing category with verified supply reliability - lab-tested brand with existing multi-country distribution, not an unproven newcomer",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Shilajit & adaptogens - verified brand for {{company_name}}",
+        "body": "Hi {{first_name}},\n\nShilajit and adaptogens are trending hard in the wellness supplement category - customer demand is growing, but the market is full of low-quality products with questionable sourcing.\n\nAs a buyer, you need brands that won't create quality issues or hurt {{company_name}}'s reputation. That's where most Shilajit suppliers fail.\n\nMountaindrop is built differently:\n- 6+ independent lab certifications (heavy metals, fulvic acid, purity testing)\n- GMP, HACCP, IFS and ISO 9001 certified manufacturing facility\n- 25,000+ jars delivered across multiple countries with a 4.8/5 rating\n- Existing distributor network already live (Albania, Australia, and expanding)\n\nWe're not a startup testing the market. We're an established brand with verified quality and proven demand, looking to expand our retail partnerships in your region.\n\nWorth a brief call to discuss wholesale terms and how Mountaindrop fits into {{company_name}}'s supplement strategy?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Supply reliability + certifications",
+        "body": "Hi {{first_name}},\n\nFollowing up - I know you evaluate a lot of new brand pitches, so let me get straight to what matters for a purchasing decision:\n\nSupply reliability:\n- Manufactured in Slovenia at a GMP/HACCP/IFS/ISO 9001 certified facility\n- Consistent supply chain - we've delivered 25,000+ jars with no major quality or availability issues\n- Already supplying distributors in multiple countries (this isn't our first retail partnership)\n\nQuality verification:\n- 6+ independent third-party lab certifications (not just internal testing)\n- Triple-purification process, altitude-certified Himalayan & Altai sourcing\n- Full traceability and documentation for compliance\n\nMarket validation:\n- 1,000+ five-star customer reviews (4.8/5 average)\n- Growing category (Shilajit searches and demand are up across wellness retail)\n- Premium positioning - this isn't competing on price, it's competing on verified quality\n\nMargins:\n- Wholesale pricing structured for healthy retail margins\n- Premium product allows premium pricing (customers expect to pay more for lab-tested, certified Shilajit)\n\nI can walk through product specs, certifications, and partnership terms in a 15-minute call. Does that work for you?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Final note - Mountaindrop for {{company_name}}",
+        "body": "Hi {{first_name}},\n\nLast follow-up from me.\n\nIf {{company_name}} is looking to add Shilajit and adaptogens to your supplement portfolio, you have two options:\n\n1. Stock an unverified brand and hope the quality holds up\n2. Partner with an established brand that's already proven at scale\n\nMountaindrop is option 2 - 25,000+ jars delivered, 6+ independent lab certifications, GMP/HACCP/IFS/ISO certified manufacturing, and an existing multi-country distributor network.\n\nWe're expanding retail partnerships in your region. If verified quality, supply reliability, and healthy margins matter to your category strategy, this is worth 15 minutes.\n\nOpen to a quick call?\n\nBest regards,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "ecommerce-manager-online-ready",
+    "tierName": "SEQUENCE 3: E-commerce Manager - Online-Ready Premium Brand",
+    "tierColor": "amber",
+    "targetPersonas": "E-commerce Manager, Online Store Manager",
+    "messagingAngle": "High-converting product with ready content, reviews, and proven online performance - premium Shilajit that's already validated in multiple markets",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "High-converting Shilajit line for {{webshop_name}}",
+        "body": "Hi {{first_name}},\n\nShilajit is one of the fastest-growing search terms in the wellness supplement category - customers are actively looking for it online.\n\nBut most Shilajit products have weak conversion because customers don't trust the quality or sourcing. They see cheap powder capsules with no certifications and click away.\n\nMountaindrop solves that problem:\n- Premium resin format (not powder/capsules) - visually distinct, perceived as higher quality\n- 6+ independent lab certifications - addresses customer trust concerns immediately\n- 1,000+ five-star reviews (4.8/5 average) - social proof already built\n- Professional product photos and content ready for your webshop\n\nWe've already delivered 25,000+ jars across multiple countries with strong online performance. This isn't an untested product - it's a proven line that converts.\n\nWorth a quick call to discuss wholesale terms and how Mountaindrop would perform in {{webshop_name}}'s catalog?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Product content + specs for {{webshop_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up - I know you need more than just a good product pitch. You need content, specs, and proof that a product will actually convert in your webshop.\n\nHere's what you'd get with Mountaindrop:\n\nReady-to-use content:\n- Professional product photography (lifestyle + detail shots)\n- Product descriptions and benefit copy (proven messaging, not generic fluff)\n- Lab certifications and test results (customers can verify quality themselves)\n- FAQ content addressing common Shilajit questions\n\nSocial proof:\n- 1,000+ verified customer reviews (4.8/5 average)\n- Testimonials and before/after feedback\n- Active customer base across multiple countries\n\nProduct specs:\n- Triple-purified Himalayan & Altai Shilajit resin (30g and 60g jars)\n- Shilajit-based blends: Ashwagandha Plus, Flourish, Genius, Microbion, Prime\n- GMP, HACCP, IFS and ISO 9001 certified manufacturing\n- Full ingredient transparency and traceability\n\nThis isn't a product you'll need to educate your audience on from scratch - the content, proof, and positioning are already built.\n\nCan we schedule a 15-minute call to walk through the product lineup and discuss wholesale partnership terms?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Last note - Mountaindrop for {{webshop_name}}",
+        "body": "Hi {{first_name}},\n\nLast follow-up from me.\n\nIf you're looking to add Shilajit and adaptogens to {{webshop_name}}, you need a product that:\n- Converts well online (professional content, strong reviews, clear differentiation)\n- Has verified quality (lab certifications, GMP compliance)\n- Won't create customer service headaches (proven track record, reliable supply)\n\nMountaindrop checks all three - 25,000+ jars delivered, 4.8/5 rating from 1,000+ reviews, 6+ independent lab certifications, and content/photography ready for your catalog.\n\nWe're expanding our online retail partnerships. If adding a high-converting, premium Shilajit line makes sense for {{webshop_name}}, let's talk.\n\nInterested in a quick partnership call?\n\nBest regards,\n{{sender_name}}"
+      }
+    ]
+  }
+]
