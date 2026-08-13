@@ -18,9 +18,7 @@ const tabs = [
   { id: 'icp', label: 'ICP Profile', icon: Target },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -160,12 +158,10 @@ export default function DemoPage() {
         {/*Tab Content*/}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="demo" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="demo" />
@@ -231,7 +227,7 @@ function OverviewTab() {
   );
 }
 
-function ICPTab() {
+function ICPAndPersonasTab() {
   return (
     <>
       <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
@@ -285,6 +281,115 @@ function ICPTab() {
               {industry}
             </div>
           ))}
+        </div>
+      </ContentSection>
+
+      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6 mt-8">
+        <p className="font-semibold text-amber-900 mb-1">Demo Notice:</p>
+        <p className="text-amber-800 text-sm">
+          These are sample buyer personas for demonstration purposes.
+        </p>
+      </div>
+
+      <ContentSection title="Target Job Titles / Buyer Personas" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded">
+            <p className="font-semibold text-cyan-900 mb-2">Target Positions for Acme Corporation</p>
+            <p className="text-cyan-800 text-sm">
+              The following job titles represent decision-makers at construction and mining companies.
+            </p>
+          </div>
+
+          {/* Decision Makers */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                <span className="text-blue-600 font-bold text-sm">1</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">Executive Decision Makers</h4>
+            </div>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
+              <p className="text-blue-900 text-sm">
+                C-level executives and senior management who approve major equipment purchases.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {[
+                'CEO',
+                'President',
+                'VP of Operations',
+                'VP of Equipment',
+                'Director of Operations',
+                'General Manager',
+                'COO',
+                'Owner',
+              ].map((position, index) => (
+                <div key={index} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Equipment Managers */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <span className="text-green-600 font-bold text-sm">2</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">Equipment & Fleet Managers</h4>
+            </div>
+            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
+              <p className="text-green-900 text-sm">
+                Managers responsible for fleet operations, equipment procurement, and maintenance.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {[
+                'Equipment Manager',
+                'Fleet Manager',
+                'Equipment Director',
+                'Fleet Director',
+                'Equipment Coordinator',
+                'Asset Manager',
+                'Maintenance Manager',
+                'Operations Manager',
+              ].map((position, index) => (
+                <div key={index} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Procurement */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                <span className="text-purple-600 font-bold text-sm">3</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">Procurement & Purchasing</h4>
+            </div>
+            <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded mb-3">
+              <p className="text-purple-900 text-sm">
+                Procurement professionals who source equipment and negotiate vendor contracts.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {[
+                'Procurement Manager',
+                'Purchasing Manager',
+                'Director of Procurement',
+                'Senior Buyer',
+                'Procurement Director',
+                'Purchasing Director',
+              ].map((position, index) => (
+                <div key={index} className="bg-purple-50 border border-purple-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -414,120 +519,17 @@ Only answer "Yes" if confident the company:
   );
 }
 
-function PersonasTab() {
+function CampaignsSequencesTab() {
   return (
     <>
-      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
-        <p className="font-semibold text-amber-900 mb-1">Demo Notice:</p>
-        <p className="text-amber-800 text-sm">
-          These are sample buyer personas for demonstration purposes.
-        </p>
+      <SequencesTab clientId="demo" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
       </div>
-
-      <ContentSection title="Target Job Titles / Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div className="bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded">
-            <p className="font-semibold text-cyan-900 mb-2">Target Positions for Acme Corporation</p>
-            <p className="text-cyan-800 text-sm">
-              The following job titles represent decision-makers at construction and mining companies.
-            </p>
-          </div>
-
-          {/* Decision Makers */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">1</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Executive Decision Makers</h4>
-            </div>
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
-              <p className="text-blue-900 text-sm">
-                C-level executives and senior management who approve major equipment purchases.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {[
-                'CEO',
-                'President',
-                'VP of Operations',
-                'VP of Equipment',
-                'Director of Operations',
-                'General Manager',
-                'COO',
-                'Owner',
-              ].map((position, index) => (
-                <div key={index} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Equipment Managers */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                <span className="text-green-600 font-bold text-sm">2</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Equipment & Fleet Managers</h4>
-            </div>
-            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
-              <p className="text-green-900 text-sm">
-                Managers responsible for fleet operations, equipment procurement, and maintenance.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {[
-                'Equipment Manager',
-                'Fleet Manager',
-                'Equipment Director',
-                'Fleet Director',
-                'Equipment Coordinator',
-                'Asset Manager',
-                'Maintenance Manager',
-                'Operations Manager',
-              ].map((position, index) => (
-                <div key={index} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Procurement */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                <span className="text-purple-600 font-bold text-sm">3</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Procurement & Purchasing</h4>
-            </div>
-            <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded mb-3">
-              <p className="text-purple-900 text-sm">
-                Procurement professionals who source equipment and negotiate vendor contracts.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {[
-                'Procurement Manager',
-                'Purchasing Manager',
-                'Director of Procurement',
-                'Senior Buyer',
-                'Procurement Director',
-                'Purchasing Director',
-              ].map((position, index) => (
-                <div key={index} className="bg-purple-50 border border-purple-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </ContentSection>
     </>
   );
 }
+
 function DocumentsTab() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
 
