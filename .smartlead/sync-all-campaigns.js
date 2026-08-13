@@ -113,8 +113,9 @@ async function processCampaignsForClient(clientId, allCampaigns) {
 
       const analytics = await fetchAPI(`/campaigns/${campaign.id}/analytics`);
 
-      // Get total leads in campaign and leads emailed so far
-      const totalLeads = parseInt(analytics.total_lead_count || analytics.unique_sent_count || 0);
+      // Get total leads in campaign (from campaign object itself, not analytics)
+      // and leads emailed so far (from analytics)
+      const totalLeads = parseInt(campaign.total_leads || analytics.total_lead_count || 0);
       const leadsEmailed = parseInt(analytics.unique_sent_count || 0);
       const emailsSent = parseInt(analytics.sent_count || 0);
       const opens = parseInt(analytics.unique_open_count || 0);
