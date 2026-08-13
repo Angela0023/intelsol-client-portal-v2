@@ -16,7 +16,7 @@
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Missed marketing opportunity in your team's emails",
-        "body": "Hi {{first_name}},\n\nQuick follow-up - wanted to share a data point that might resonate:\n\nThe average company with 200 employees sends ~40,000 external emails per month. If your team is similar, that's 480,000 brand impressions per year happening in email signatures.\n\nRight now, most companies:\n[NO] Have inconsistent signatures across the team\n[NO] Miss opportunities to promote webinars, case studies, events\n[NO] Have no visibility into signature engagement\n\nWith centralized signature management:\n[YES] Brand consistency enforced automatically\n[YES] Marketing banners rotated based on campaigns\n[YES] Analytics on clicks and engagement\n\nNo extra ad spend. Just better use of existing email volume.\n\nInterested in seeing how {{company_name}} could activate this channel?\n\nBest,\n{{sender_name}}"
+        "body": "Hi {{first_name}},\n\nQuick follow-up - wanted to share a data point that might resonate:\n\nThe average company with 200 employees sends ~40,000 external emails per month. If your team is similar, that's 480,000 brand impressions per year happening in email signatures.\n\nMost companies struggle with:\n- Inconsistent signatures across the team\n- Missed opportunities to promote webinars, case studies, events\n- No visibility into signature engagement\n\nCentralized signature management solves this:\n- Brand consistency enforced automatically\n- Marketing banners rotated based on campaigns\n- Analytics on clicks and engagement\n\nNo extra ad spend. Just better use of existing email volume.\n\nInterested in seeing how {{company_name}} could activate this channel?\n\nBest,\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
@@ -43,7 +43,7 @@
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Reducing IT overhead at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about signature management.\n\nHere's what centralized deployment typically solves for IT teams:\n\n[YES] One-time setup, then fully automated\n[YES] New hire signatures auto-generated from AD/HR system\n[YES] Role changes update signatures automatically\n[YES] Consistent across all platforms (desktop, mobile, webmail)\n[YES] Compliance-friendly (GDPR disclaimers, legal text)\n\nThe average IT team saves 10-15 hours/month by eliminating manual signature work.\n\nFor a team your size, that adds up quickly.\n\nWould you be open to a 15-minute technical walkthrough?\n\nBest,\n{{sender_name}}"
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about signature management.\n\nHere's what centralized deployment typically solves for IT teams:\n\n- One-time setup, then fully automated\n- New hire signatures auto-generated from AD/HR system\n- Role changes update signatures automatically\n- Consistent across all platforms (desktop, mobile, webmail)\n- Compliance-friendly (GDPR disclaimers, legal text)\n\nThe average IT team saves 10-15 hours/month by eliminating manual signature work.\n\nFor a team your size, that adds up quickly.\n\nWould you be open to a 15-minute technical walkthrough?\n\nBest,\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
