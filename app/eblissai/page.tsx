@@ -2,15 +2,12 @@
 
 import { useState } from 'react';
 import ClientLayout from '../components/ClientLayout';
-import ContentSection from '../components/ContentSection';
-import InfoCard from '../components/InfoCard';
-import ListItem from '../components/ListItem';
-import CodeBlock from '../components/CodeBlock';
+import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
-import DocumentsTab from '../components/DocumentsTab';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import TasksTab from '../components/TasksTab';
 import {
   FileText,
@@ -93,7 +90,7 @@ export default function EblissAIPage() {
               <CampaignsTabDynamic clientId="eblissai" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTab clientId="eblissai" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="eblissai" />}
           {activeTab === 'tasks' && <TasksTab clientId="eblissai" />}
         </div>
       </div>
