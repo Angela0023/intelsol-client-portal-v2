@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "vp-it-ops-ticket-volume",
+    "tierName": "SEQUENCE 1: VP IT Operations - Ticket Volume Reduction",
+    "tierColor": "blue",
+    "targetPersonas": "VP IT Operations, Head of IT Operations",
+    "messagingAngle": "Self-healing automation reduces helpdesk ticket volume and L1/L2 support costs - measurable ROI in 2-3 months",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Reducing {{company_name}}'s IT support ticket volume",
+        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} is hiring for Help Desk and L1/L2 support roles - which usually signals high ticket volume and strain on your IT ops team.\n\nWe work with Fortune 500 IT organizations running ServiceNow or BMC Helix to automate the repetitive L1/L2 workload before tickets are even created. Self-healing endpoints, predictive resolution, and autonomous ops.\n\nTypical results in 2-3 months:\n- 40-60% reduction in helpdesk ticket volume\n- Lower MTTR across the board\n- Defer or eliminate support hiring needs\n\nWorth a 20-minute call to see if there's a fit?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Reducing {{company_name}}'s IT support ticket volume",
+        "body": "Hi {{first_name}},\n\nFollowing up on my note below about automating your L1/L2 support workload.\n\nI ask because companies with your profile - mature ITSM stack (ServiceNow/BMC), large distributed device fleet, active support hiring - typically have the problem quantified already (ticket volume, MTTR data) but haven't automated it yet.\n\nThat's the exact profile where we see fast ROI. If you already track tickets and MTTR, the business case builds itself.\n\nQuick call to explore?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Reducing {{company_name}}'s IT support ticket volume",
+        "body": "Hi {{first_name}},\n\nLast note on this - I understand your calendar is full.\n\nIf ticket volume or L1/L2 support headcount is becoming a problem, we've helped organizations like {{company_name}} automate 40-60% of that workload in under 90 days.\n\nHappy to share a quick case study if that's helpful. Just let me know.\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "gsi-partner-portfolio",
+    "tierName": "SEQUENCE 2: GSI Partner - Client Portfolio Opportunity",
+    "tierColor": "green",
+    "targetPersonas": "Partner Manager, Alliance Manager, Digital Workplace Practice Lead",
+    "messagingAngle": "One partner relationship opens entire GSI client portfolio - AI-native IT ops complements your digital workplace practice",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "AI-native IT ops for {{company_name}}'s digital workplace practice",
+        "body": "Hi {{first_name}},\n\nI wanted to reach out about a potential fit between eBlissAI and {{company_name}}'s digital workplace / EUC practice.\n\nWe're an AI-native autonomous IT operations platform - self-healing endpoints, predictive resolution, and personalized support across enterprise device fleets. We reduce helpdesk ticket volume 40-60% and cut IT ops costs while improving employee experience.\n\nOur sweet spot: Fortune 500 clients already running ServiceNow or BMC Helix, who have the problem quantified (ticket volume, MTTR) but haven't automated it yet.\n\nThat overlaps heavily with the clients your digital workplace practice already serves. One signed partnership opens your entire client portfolio.\n\nWorth a conversation?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: AI-native IT ops for {{company_name}}'s digital workplace practice",
+        "body": "Hi {{first_name}},\n\nFollowing up on my note below about partnering with {{company_name}}'s digital workplace practice.\n\nWhat makes this interesting:\n- Your clients already have mature ITSM stacks (ServiceNow, BMC Helix) and large device fleets\n- They're already paying for reactive IT ops tooling - we layer AI-driven automation on top\n- Fast ROI (2-3 months) makes this an easy upsell or transformation add-on\n\nWe've built partnerships with GSIs like yours where one relationship opens 10-20+ qualified client engagements.\n\nQuick call to explore the model?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: AI-native IT ops for {{company_name}}'s digital workplace practice",
+        "body": "Hi {{first_name}},\n\nLast note - if autonomous IT ops or AI-driven endpoint automation is something your digital workplace clients are asking about, we'd be a natural fit to explore.\n\nHappy to share how we've structured partnerships with other GSIs. No pressure - just a resource if it's relevant.\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "head-digital-workplace-employee-experience",
+    "tierName": "SEQUENCE 3: Head of Digital Workplace - Employee Experience",
+    "tierColor": "purple",
+    "targetPersonas": "Head of Digital Workplace, EUC Lead",
+    "messagingAngle": "AI-native personalized support improves employee experience while reducing IT ops cost - win-win for EX and budget",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Improving employee experience at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI wanted to reach out about a dual win for your digital workplace program: better employee experience AND lower IT ops costs.\n\nWe're eBlissAI - AI-native autonomous IT operations. Self-healing endpoints, predictive issue resolution, and personalized support across your device fleet.\n\nWhat this means for EX:\n- Employees get issues resolved before they notice (predictive, proactive)\n- Personalized support experience (not generic scripted responses)\n- Faster resolution when they do need help\n\nWhat this means for your budget:\n- 40-60% reduction in helpdesk ticket volume\n- Lower L1/L2 support headcount needs\n- Better MTTR across the board\n\nWorth a quick call to see if there's a fit?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Improving employee experience at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on my note below about autonomous IT ops for your digital workplace program.\n\nI ask because companies with your profile - large distributed device fleet, mature ITSM stack (ServiceNow/BMC), focus on employee experience - typically see fast ROI when they automate the reactive support workload.\n\nYour employees stop waiting on tickets, your IT ops team stops firefighting, and your budget gets relief from support hiring pressure.\n\nQuick call to explore?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Improving employee experience at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nLast note - if improving employee experience while managing IT ops costs is on your roadmap, we'd be a natural conversation.\n\nHappy to share a quick case study with a company similar to {{company_name}}. Just let me know.\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  }
+]
