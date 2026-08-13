@@ -111,11 +111,20 @@ async function processCampaignsForClient(clientId, allCampaigns) {
       // Small delay to avoid rate limiting
       await new Promise(resolve => setTimeout(resolve, 200));
 
+      // Fetch analytics to get contacted leads count
       const analytics = await fetchAPI(`/campaigns/${campaign.id}/analytics`);
 
-      // Get total leads in campaign (from campaign object itself, not analytics)
-      // and leads emailed so far (from analytics)
-      const totalLeads = parseInt(campaign.total_leads || analytics.total_lead_count || 0);
+      // Small delay between API calls to avoid rate limiting
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Fetch leads to get TOTAL uploaded lead count (not just contacted)
+      // Use limit=1 to get just the count without downloading all leads
+      const leadsResponse = await fetchAPI(`/campaigns/${campaign.id}/leads?limit=1&offset=0`);
+
+      // Get total uploaded leads from the leads API response
+      const totalLeads = parseInt(leadsResponse.total_leads || leadsResponse.total_count || 0);
+
+      // Get contacted leads from analytics
       const leadsEmailed = parseInt(analytics.unique_sent_count || 0);
       const emailsSent = parseInt(analytics.sent_count || 0);
       const opens = parseInt(analytics.unique_open_count || 0);
