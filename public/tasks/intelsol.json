@@ -257,5 +257,23 @@
     "dueDate": "2026-08-13",
     "order": 16,
     "comments": []
+  },
+  {
+    "id": "task_1786624367835_kdrtdv9",
+    "description": "Create Dashboard for People Focus",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-14",
+    "order": 17,
+    "comments": []
+  },
+  {
+    "id": "task_1786624375112_5lhqto8",
+    "description": "Find 1K Leads for People Focus",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-17",
+    "order": 18,
+    "comments": []
   }
 ]
