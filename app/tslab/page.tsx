@@ -17,9 +17,7 @@ const tabs = [
   { id: 'icp', label: 'ICP Profile', icon: Target },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -143,12 +141,10 @@ export default function TSLabPage() {
         {/*Tab Content*/}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="tslab" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="tslab" />
@@ -214,7 +210,15 @@ function OverviewTab() {
   );
 }
 
-function ICPTab() {
+function ICPAndPersonasTab() {
+  const decisionMakers = [
+    'board member', 'business owner', 'business unit director', 'business unit manager', 'CEO', 'CCO', 'chairman', 'chairman of the board', 'chairperson', 'chief business officer', 'chief commercial officer', 'chief executive officer', 'chief growth officer', 'chief innovation officer', 'chief operating officer', 'chief product officer', 'chief revenue officer', 'chief strategy officer', 'COO', 'co-founder', 'co-founder & CEO', 'country director', 'country manager', 'director', 'director of operations', 'director of product', 'director of product development', 'director of sales', 'division director', 'division manager', 'EVP', 'executive chairman', 'executive director', 'executive vice president', 'founder', 'founder & CEO', 'founder & managing director', 'founder and CEO', 'founder and managing director', 'founder/CEO', 'general manager', 'general partner', 'group CEO', 'managing director', 'managing owner', 'managing partner', 'operations director', 'operations manager', 'owner', 'partner', 'president', 'president & CEO', 'principal CEO', 'regional director', 'senior managing director', 'senior vice president', 'vice president', 'vice president of operations', 'vice president of product', 'vice president of sales'
+  ];
+
+  const procurement = [
+    'account director', 'assistant manager of purchasing', 'associate manager of purchasing', 'buyer', 'category lead', 'category manager', 'chief operations officer', 'chief procurement officer', 'chief purchasing officer', 'chief sourcing officer', 'chief supply chain officer', 'chief supply officer', 'commodity buyer', 'commodity manager', 'contract manager', 'contracts manager', 'CPO', 'CSO', 'deputy general manager of purchase', 'deputy general manager of purchasing', 'deputy head of procurement', 'deputy head of procurement department', 'deputy manager of purchasing', 'director of procurement', 'director of purchasing', 'director of sourcing', 'general procurement manager', 'general purchasing manager', 'global head of procurement', 'global procurement director', 'global procurement manager', 'global sourcing director', 'global sourcing manager', 'group head of procurement', 'group procurement director', 'group procurement manager', 'head of operations', 'head of procurement', 'head of procurement & contracts', 'head of procurement & logistics', 'head of procurement & operations', 'head of procurement & supply chain', 'head of procurement administration', 'head of procurement and administration', 'head of procurement and contracts', 'head of procurement and logistics', 'head of procurement and logistics department', 'head of procurement and supply chain', 'head of procurement and supply chain management', 'head of procurement department', 'head of procurement division', 'head of procurement Europe', 'head of procurement excellence', 'head of procurement operations', 'head of procurement section', 'head of procurement services', 'head of procurement unit', 'head of purchasing', 'head of sourcing', 'head of supply chain', 'interim head of procurement', 'inventory manager', 'lead buyer', 'logistics director', 'logistics manager', 'manager of fleet and facilities', 'manager of purchase', 'manager of purchase department', 'manager of purchases', 'manager of purchasing', 'manager of purchasing & risk management', 'manager of purchasing and contracts', 'manager of purchasing and inventory', 'manager of purchasing and logistic', 'manager of purchasing and logistics', 'manager of purchasing and logistics department', 'manager of purchasing and materials', 'manager of purchasing and stores', 'manager of purchasing department', 'materials manager', 'procurement', 'procurement analyst', 'procurement business partner', 'procurement category manager', 'procurement consultant', 'procurement coordinator', 'procurement director', 'procurement engineer', 'procurement executive', 'procurement lead', 'procurement manager', 'procurement officer', 'procurement operations manager', 'procurement specialist', 'procurement supervisor', 'project manager of purchasing', 'project procurement manager', 'purchase manager', 'purchasing director', 'purchasing lead', 'purchasing manager', 'purchasing specialist', 'regional procurement manager', 'regional sourcing manager', 'senior buyer', 'senior manager of purchasing', 'senior procurement manager', 'senior sourcing manager', 'sourcing director', 'sourcing lead', 'sourcing manager', 'sourcing specialist', 'strategic buyer', 'strategic sourcing director', 'strategic sourcing manager', 'supplier development manager', 'supplier quality manager', 'supplier relationship manager', 'supply chain director', 'supply chain manager', 'supply manager', 'technical buyer', 'vendor manager', 'vice president of procurement', 'vice president of purchasing', 'vice president of sourcing'
+  ];
+
   return (
     <>
       <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
@@ -274,6 +278,82 @@ function ICPTab() {
           <p className="text-amber-800 text-sm">
             France is excluded due to language concerns (no French speakers at TS Lab).
           </p>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Target Job Titles / Buyer Personas" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <p className="font-semibold text-green-900 mb-2">Target Positions for TS Lab</p>
+            <p className="text-green-800 text-sm">
+              The following job titles represent decision-makers and procurement professionals at food supplement and health product companies. These are the exact positions to target when sourcing leads.
+            </p>
+          </div>
+
+          {/* Decision Makers */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                <span className="text-blue-600 font-bold text-sm">1</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">Decision Makers ({decisionMakers.length})</h4>
+            </div>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
+              <p className="text-blue-900 text-sm">
+                C-level executives, founders, owners, and senior management who make final purchasing decisions or approve budgets.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {decisionMakers.map((position, index) => (
+                <div key={index} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Procurement */}
+          <div>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <span className="text-green-600 font-bold text-sm">2</span>
+              </div>
+              <h4 className="font-semibold text-slate-900 text-lg">Procurement & Supply Chain ({procurement.length})</h4>
+            </div>
+            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
+              <p className="text-green-900 text-sm">
+                Procurement managers, purchasing directors, sourcing specialists, and supply chain professionals who identify suppliers and manage vendor relationships.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              {procurement.map((position, index) => (
+                <div key={index} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
+                  {position}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
+            <p className="font-semibold text-violet-900 mb-2">Total Positions: {decisionMakers.length + procurement.length}</p>
+            <p className="text-violet-800 text-sm">
+              When searching in Sales Navigator or Apollo, use these exact job titles. For smaller companies (20-50 employees), focus on Decision Makers. For larger companies (50-100+ employees), target both Decision Makers and Procurement roles.
+            </p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
+          <ul className="space-y-2">
+            <ListItem type="check">First Name</ListItem>
+            <ListItem type="check">Last Name</ListItem>
+            <ListItem type="check">Job Title</ListItem>
+            <ListItem type="check">Email Address</ListItem>
+            <ListItem type="check">LinkedIn URL</ListItem>
+            <ListItem type="check">Company Name</ListItem>
+          </ul>
         </div>
       </ContentSection>
     </>
@@ -393,92 +473,13 @@ Only answer "Yes" if you are confident this company:
   );
 }
 
-function PersonasTab() {
-  const decisionMakers = [
-    'board member', 'business owner', 'business unit director', 'business unit manager', 'CEO', 'CCO', 'chairman', 'chairman of the board', 'chairperson', 'chief business officer', 'chief commercial officer', 'chief executive officer', 'chief growth officer', 'chief innovation officer', 'chief operating officer', 'chief product officer', 'chief revenue officer', 'chief strategy officer', 'COO', 'co-founder', 'co-founder & CEO', 'country director', 'country manager', 'director', 'director of operations', 'director of product', 'director of product development', 'director of sales', 'division director', 'division manager', 'EVP', 'executive chairman', 'executive director', 'executive vice president', 'founder', 'founder & CEO', 'founder & managing director', 'founder and CEO', 'founder and managing director', 'founder/CEO', 'general manager', 'general partner', 'group CEO', 'managing director', 'managing owner', 'managing partner', 'operations director', 'operations manager', 'owner', 'partner', 'president', 'president & CEO', 'principal CEO', 'regional director', 'senior managing director', 'senior vice president', 'vice president', 'vice president of operations', 'vice president of product', 'vice president of sales'
-  ];
-
-  const procurement = [
-    'account director', 'assistant manager of purchasing', 'associate manager of purchasing', 'buyer', 'category lead', 'category manager', 'chief operations officer', 'chief procurement officer', 'chief purchasing officer', 'chief sourcing officer', 'chief supply chain officer', 'chief supply officer', 'commodity buyer', 'commodity manager', 'contract manager', 'contracts manager', 'CPO', 'CSO', 'deputy general manager of purchase', 'deputy general manager of purchasing', 'deputy head of procurement', 'deputy head of procurement department', 'deputy manager of purchasing', 'director of procurement', 'director of purchasing', 'director of sourcing', 'general procurement manager', 'general purchasing manager', 'global head of procurement', 'global procurement director', 'global procurement manager', 'global sourcing director', 'global sourcing manager', 'group head of procurement', 'group procurement director', 'group procurement manager', 'head of operations', 'head of procurement', 'head of procurement & contracts', 'head of procurement & logistics', 'head of procurement & operations', 'head of procurement & supply chain', 'head of procurement administration', 'head of procurement and administration', 'head of procurement and contracts', 'head of procurement and logistics', 'head of procurement and logistics department', 'head of procurement and supply chain', 'head of procurement and supply chain management', 'head of procurement department', 'head of procurement division', 'head of procurement Europe', 'head of procurement excellence', 'head of procurement operations', 'head of procurement section', 'head of procurement services', 'head of procurement unit', 'head of purchasing', 'head of sourcing', 'head of supply chain', 'interim head of procurement', 'inventory manager', 'lead buyer', 'logistics director', 'logistics manager', 'manager of fleet and facilities', 'manager of purchase', 'manager of purchase department', 'manager of purchases', 'manager of purchasing', 'manager of purchasing & risk management', 'manager of purchasing and contracts', 'manager of purchasing and inventory', 'manager of purchasing and logistic', 'manager of purchasing and logistics', 'manager of purchasing and logistics department', 'manager of purchasing and materials', 'manager of purchasing and stores', 'manager of purchasing department', 'materials manager', 'procurement', 'procurement analyst', 'procurement business partner', 'procurement category manager', 'procurement consultant', 'procurement coordinator', 'procurement director', 'procurement engineer', 'procurement executive', 'procurement lead', 'procurement manager', 'procurement officer', 'procurement operations manager', 'procurement specialist', 'procurement supervisor', 'project manager of purchasing', 'project procurement manager', 'purchase manager', 'purchasing director', 'purchasing lead', 'purchasing manager', 'purchasing specialist', 'regional procurement manager', 'regional sourcing manager', 'senior buyer', 'senior manager of purchasing', 'senior procurement manager', 'senior sourcing manager', 'sourcing director', 'sourcing lead', 'sourcing manager', 'sourcing specialist', 'strategic buyer', 'strategic sourcing director', 'strategic sourcing manager', 'supplier development manager', 'supplier quality manager', 'supplier relationship manager', 'supply chain director', 'supply chain manager', 'supply manager', 'technical buyer', 'vendor manager', 'vice president of procurement', 'vice president of purchasing', 'vice president of sourcing'
-  ];
-
+function CampaignsSequencesTab() {
   return (
     <>
-      <ContentSection title="Target Job Titles / Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-            <p className="font-semibold text-green-900 mb-2">Target Positions for TS Lab</p>
-            <p className="text-green-800 text-sm">
-              The following job titles represent decision-makers and procurement professionals at food supplement and health product companies. These are the exact positions to target when sourcing leads.
-            </p>
-          </div>
-
-          {/* Decision Makers */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">1</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Decision Makers ({decisionMakers.length})</h4>
-            </div>
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
-              <p className="text-blue-900 text-sm">
-                C-level executives, founders, owners, and senior management who make final purchasing decisions or approve budgets.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {decisionMakers.map((position, index) => (
-                <div key={index} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Procurement */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                <span className="text-green-600 font-bold text-sm">2</span>
-              </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Procurement & Supply Chain ({procurement.length})</h4>
-            </div>
-            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
-              <p className="text-green-900 text-sm">
-                Procurement managers, purchasing directors, sourcing specialists, and supply chain professionals who identify suppliers and manage vendor relationships.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {procurement.map((position, index) => (
-                <div key={index} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
-            <p className="font-semibold text-violet-900 mb-2">Total Positions: {decisionMakers.length + procurement.length}</p>
-            <p className="text-violet-800 text-sm">
-              When searching in Sales Navigator or Apollo, use these exact job titles. For smaller companies (20-50 employees), focus on Decision Makers. For larger companies (50-100+ employees), target both Decision Makers and Procurement roles.
-            </p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
-          <ul className="space-y-2">
-            <ListItem type="check">First Name</ListItem>
-            <ListItem type="check">Last Name</ListItem>
-            <ListItem type="check">Job Title</ListItem>
-            <ListItem type="check">Email Address</ListItem>
-            <ListItem type="check">LinkedIn URL</ListItem>
-            <ListItem type="check">Company Name</ListItem>
-          </ul>
-        </div>
-      </ContentSection>
+      <SequencesTab clientId="tslab" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
+      </div>
     </>
   );
 }

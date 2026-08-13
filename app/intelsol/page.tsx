@@ -17,11 +17,9 @@ const tabs = [
   { id: 'icp', label: 'ICP Profile', icon: Target },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
-  { id: 'documents', label: 'Documents', icon: FolderOpen },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
 
@@ -143,12 +141,10 @@ export default function IntelsolPage() {
         {/* Tab Content */}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="intelsol" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'documents' && (
             <DocumentsTabGeneric
               clientId="intelsol"
@@ -247,7 +243,7 @@ function OverviewTab() {
   );
 }
 
-function ICPTab() {
+function ICPAndPersonasTab() {
   return (
     <>
       <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
@@ -1522,6 +1518,92 @@ function FiltersTab() {
           </div>
         </div>
       </ContentSection>
+
+      <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
+            <p className="font-semibold text-violet-900 mb-2">Primary Decision-Makers</p>
+            <p className="text-violet-800 text-sm">
+              Target the people who own revenue growth and sales pipeline. They feel the pain of
+              not having enough leads and have budget authority to hire an agency.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3 flex items-center">
+              <span className="w-8 h-8 bg-violet-100 text-violet-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
+              Founders & CEOs (Companies 10-50 employees)
+            </h4>
+            <ul className="ml-10 space-y-2">
+              <ListItem>CEO / Founder / Co-Founder</ListItem>
+              <ListItem>Managing Director</ListItem>
+              <ListItem>Owner</ListItem>
+              <ListItem>General Manager</ListItem>
+            </ul>
+            <div className="ml-10 mt-3 bg-slate-50 border-l-4 border-slate-300 p-3 rounded">
+              <p className="text-sm text-slate-700">
+                <strong>Why:</strong> At this size, the founder typically owns sales and pipeline.
+                They are doing outbound themselves and want to offload it.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3 flex items-center">
+              <span className="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
+              Sales Leaders (Companies 50-200 employees)
+            </h4>
+            <ul className="ml-10 space-y-2">
+              <ListItem>VP of Sales</ListItem>
+              <ListItem>Head of Sales</ListItem>
+              <ListItem>Sales Director</ListItem>
+              <ListItem>Head of Business Development</ListItem>
+              <ListItem>Director of Growth</ListItem>
+              <ListItem>Revenue Operations Manager</ListItem>
+            </ul>
+            <div className="ml-10 mt-3 bg-slate-50 border-l-4 border-slate-300 p-3 rounded">
+              <p className="text-sm text-slate-700">
+                <strong>Why:</strong> At this size, a dedicated sales leader owns pipeline targets.
+                They need more leads than their SDR team can generate.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3 flex items-center">
+              <span className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
+              Marketing Leaders (Secondary)
+            </h4>
+            <ul className="ml-10 space-y-2">
+              <ListItem>VP of Marketing</ListItem>
+              <ListItem>Head of Demand Generation</ListItem>
+              <ListItem>Marketing Director</ListItem>
+              <ListItem>Growth Marketing Manager</ListItem>
+            </ul>
+            <div className="ml-10 mt-3 bg-slate-50 border-l-4 border-slate-300 p-3 rounded">
+              <p className="text-sm text-slate-700">
+                <strong>Why:</strong> In some companies, marketing owns lead generation including outbound.
+                Secondary target — only if sales leader not available.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
+          <ul className="space-y-2">
+            <ListItem type="check">First Name</ListItem>
+            <ListItem type="check">Last Name</ListItem>
+            <ListItem type="check">Job Title</ListItem>
+            <ListItem type="check">Email Address</ListItem>
+            <ListItem type="check">LinkedIn URL</ListItem>
+            <ListItem type="check">Company Name</ListItem>
+            <ListItem type="check">Company Website</ListItem>
+          </ul>
+        </div>
+      </ContentSection>
     </>
   );
 }
@@ -1630,94 +1712,11 @@ Output only the personalized sentence, nothing else.`;
   );
 }
 
-function PersonasTab() {
+function CampaignsSequencesTab() {
   return (
     <>
-      <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded">
-            <p className="font-semibold text-violet-900 mb-2">Primary Decision-Makers</p>
-            <p className="text-violet-800 text-sm">
-              Target the people who own revenue growth and sales pipeline. They feel the pain of
-              not having enough leads and have budget authority to hire an agency.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3 flex items-center">
-              <span className="w-8 h-8 bg-violet-100 text-violet-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
-              Founders & CEOs (Companies 10-50 employees)
-            </h4>
-            <ul className="ml-10 space-y-2">
-              <ListItem>CEO / Founder / Co-Founder</ListItem>
-              <ListItem>Managing Director</ListItem>
-              <ListItem>Owner</ListItem>
-              <ListItem>General Manager</ListItem>
-            </ul>
-            <div className="ml-10 mt-3 bg-slate-50 border-l-4 border-slate-300 p-3 rounded">
-              <p className="text-sm text-slate-700">
-                <strong>Why:</strong> At this size, the founder typically owns sales and pipeline.
-                They are doing outbound themselves and want to offload it.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3 flex items-center">
-              <span className="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
-              Sales Leaders (Companies 50-200 employees)
-            </h4>
-            <ul className="ml-10 space-y-2">
-              <ListItem>VP of Sales</ListItem>
-              <ListItem>Head of Sales</ListItem>
-              <ListItem>Sales Director</ListItem>
-              <ListItem>Head of Business Development</ListItem>
-              <ListItem>Director of Growth</ListItem>
-              <ListItem>Revenue Operations Manager</ListItem>
-            </ul>
-            <div className="ml-10 mt-3 bg-slate-50 border-l-4 border-slate-300 p-3 rounded">
-              <p className="text-sm text-slate-700">
-                <strong>Why:</strong> At this size, a dedicated sales leader owns pipeline targets.
-                They need more leads than their SDR team can generate.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3 flex items-center">
-              <span className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
-              Marketing Leaders (Secondary)
-            </h4>
-            <ul className="ml-10 space-y-2">
-              <ListItem>VP of Marketing</ListItem>
-              <ListItem>Head of Demand Generation</ListItem>
-              <ListItem>Marketing Director</ListItem>
-              <ListItem>Growth Marketing Manager</ListItem>
-            </ul>
-            <div className="ml-10 mt-3 bg-slate-50 border-l-4 border-slate-300 p-3 rounded">
-              <p className="text-sm text-slate-700">
-                <strong>Why:</strong> In some companies, marketing owns lead generation including outbound.
-                Secondary target — only if sales leader not available.
-              </p>
-            </div>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
-          <ul className="space-y-2">
-            <ListItem type="check">First Name</ListItem>
-            <ListItem type="check">Last Name</ListItem>
-            <ListItem type="check">Job Title</ListItem>
-            <ListItem type="check">Email Address</ListItem>
-            <ListItem type="check">LinkedIn URL</ListItem>
-            <ListItem type="check">Company Name</ListItem>
-            <ListItem type="check">Company Website</ListItem>
-          </ul>
-        </div>
-      </ContentSection>
+      <SequencesTab clientId="intelsol" />
+      <CampaignsTabGeneric />
     </>
   );
 }

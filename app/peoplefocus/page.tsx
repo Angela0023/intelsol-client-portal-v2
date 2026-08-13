@@ -8,20 +8,18 @@ import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Zap, Mail } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Zap, Mail, FolderOpen } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
-  { id: 'value-prop', label: 'Value Proposition', icon: TrendingUp },
   { id: 'icp', label: 'ICP Profile', icon: Target },
-  { id: 'filters', label: 'Lead Sourcing', icon: Filter },
+  { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
-  { id: 'signals', label: 'Buying Signals', icon: Briefcase },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
 
@@ -126,14 +124,19 @@ export default function PeopleFocusPage() {
         {/* Tab Content */}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'value-prop' && <ValuePropTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="peoplefocus" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
-          {activeTab === 'signals' && <SignalsTab />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
+          {activeTab === 'documents' && (
+            <DocumentsTabGeneric
+              clientId="peoplefocus"
+              clientName="People Focus"
+              totalLeads={0}
+              totalCampaigns={1}
+              accentColor="purple"
+            />
+          )}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="peoplefocus" />
@@ -205,61 +208,7 @@ function OverviewTab() {
   );
 }
 
-function ValuePropTab() {
-  return (
-    <>
-      <ContentSection title="Core Value Proposition" icon={<TrendingUp className="w-5 h-5" />}>
-        <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
-          <p className="font-semibold text-purple-900 mb-2">Main Message:</p>
-          <p className="text-purple-800 text-lg italic">
-            "We connect DACH companies with vetted senior IT talent from Serbia — in weeks, not months."
-          </p>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Proof Points" icon={<Target className="w-5 h-5" />}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-blue-50 p-4 rounded">
-            <p className="font-semibold text-blue-900">4,000+ Candidates</p>
-            <p className="text-blue-700 text-sm">Active candidates in database (last 2 years)</p>
-          </div>
-          <div className="bg-green-50 p-4 rounded">
-            <p className="font-semibold text-green-900">1,000+ Interviews/Year</p>
-            <p className="text-green-700 text-sm">Rigorous candidate vetting process</p>
-          </div>
-          <div className="bg-amber-50 p-4 rounded">
-            <p className="font-semibold text-amber-900">20+ Years Experience</p>
-            <p className="text-amber-700 text-sm">Management experience in recruitment</p>
-          </div>
-          <div className="bg-purple-50 p-4 rounded">
-            <p className="font-semibold text-purple-900">Top 500 University</p>
-            <p className="text-purple-700 text-sm">University of Belgrade (Shanghai Ranking)</p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Campaign Messaging" icon={<Code className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900">Tone & Style:</h4>
-          <ul className="space-y-2">
-            <ListItem>Professional, direct, consultative — not salesy</ListItem>
-            <ListItem>Mirror DACH business communication style (formal but efficient)</ListItem>
-            <ListItem>Reference specific job postings when possible</ListItem>
-            <ListItem>Mention growth signals (funding, headcount increase)</ListItem>
-          </ul>
-
-          <h4 className="font-semibold text-slate-900 mt-4">Language Strategy:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard label="Primary Language" value="English" color="bg-blue-600 text-white" />
-            <InfoCard label="Secondary Language" value="German (for CEOs/Geschäftsführer)" color="bg-blue-600 text-white" />
-          </div>
-        </div>
-      </ContentSection>
-    </>
-  );
-}
-
-function ICPTab() {
+function ICPAndPersonasTab() {
   return (
     <>
       <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
@@ -324,6 +273,141 @@ function ICPTab() {
           <ListItem type="cross">Existing People Focus clients</ListItem>
           <ListItem type="cross">Companies that have responded negatively or unsubscribed</ListItem>
         </ul>
+      </ContentSection>
+
+      <ContentSection title="Decision Maker Personas" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+            <p className="font-semibold text-purple-900 mb-2">Primary Target (Companies 100+ employees)</p>
+            <p className="text-purple-800 text-sm font-medium mb-2">HR Directors & Talent Leaders</p>
+            <ul className="ml-4 space-y-1 text-sm text-purple-800">
+              <ListItem>HR Director</ListItem>
+              <ListItem>Head of Talent Acquisition</ListItem>
+              <ListItem>VP People</ListItem>
+              <ListItem>HR Manager</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Secondary Target (Companies 50-100 employees)</p>
+            <p className="text-blue-800 text-sm font-medium mb-2">CEOs & Founders (no dedicated HR)</p>
+            <ul className="ml-4 space-y-1 text-sm text-blue-800">
+              <ListItem>CEO</ListItem>
+              <ListItem>Founder</ListItem>
+              <ListItem>Geschäftsführer</ListItem>
+              <ListItem>Managing Director</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <p className="font-semibold text-green-900 mb-2">Tertiary Target (CC / Warm Intro)</p>
+            <p className="text-green-800 text-sm font-medium mb-2">CTOs & Engineering Leaders</p>
+            <ul className="ml-4 space-y-1 text-sm text-green-800">
+              <ListItem>CTO</ListItem>
+              <ListItem>VP Engineering</ListItem>
+              <ListItem>Head of Engineering</ListItem>
+              <ListItem>Tech Lead</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-4 rounded mt-4">
+            <p className="font-semibold text-slate-900 mb-2">Targeting Strategy:</p>
+            <p className="text-slate-700 text-sm">
+              Primary outreach to HR Directors (100+ employees) or CEOs (50-100 employees).
+              Use CTOs as CC or for warm introductions after initial HR contact.
+            </p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
+          <ul className="space-y-2">
+            <ListItem type="check">First Name</ListItem>
+            <ListItem type="check">Last Name</ListItem>
+            <ListItem type="check">Job Title</ListItem>
+            <ListItem type="check">Email Address</ListItem>
+            <ListItem type="check">LinkedIn URL</ListItem>
+            <ListItem type="check">Company Name</ListItem>
+            <ListItem type="check">Company Size</ListItem>
+          </ul>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+            <p className="font-semibold text-blue-900 mb-1">Note:</p>
+            <p className="text-blue-800 text-sm">
+              Use Apollo enrichment first (1 credit per contact). Only use Clay waterfall if Apollo doesn't provide enough emails (more expensive at 5-6 credits).
+            </p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Buying Signals Framework" icon={<Briefcase className="w-5 h-5" />}>
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
+          <p className="font-semibold text-amber-900 mb-2">CRITICAL RULE:</p>
+          <p className="text-amber-800">
+            Only contact companies that show at least <strong>ONE Tier 1 signal</strong>, or <strong>TWO or more Tier 2/3 signals</strong> combined.
+            <br />
+            <strong>Do NOT spray — signal-based targeting only.</strong>
+          </p>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Tier 1 Signals (Highest Priority)" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+            <p className="font-semibold text-red-900 mb-2">Active IT Job Postings</p>
+            <ul className="ml-4 space-y-1 text-sm text-red-800">
+              <ListItem>Open IT roles on LinkedIn, Indeed, Xing, Stepstone posted <strong>30+ days ago</strong></ListItem>
+              <ListItem>Keywords: Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java Developer, Python Developer, IT Manager</ListItem>
+              <ListItem><strong>Same job reposted multiple times</strong> — strong signal of failed internal hiring</ListItem>
+              <ListItem><strong>Job ad available in multiple languages</strong> — signal they are looking outside Germany/Austria/Switzerland</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-orange-50 border-l-4 border-orange-500 p-4 rounded">
+            <p className="font-semibold text-orange-900 mb-2">Posting for Internal Recruiter</p>
+            <p className="text-orange-800 text-sm mb-2">
+              Company advertising for 'Talent Acquisition Manager' or 'IT Recruiter' — they have a pipeline problem
+            </p>
+            <p className="text-orange-700 text-sm">
+              <strong>Opportunity:</strong> Position People Focus as faster & more cost-effective than building internal function
+            </p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Tier 2 Signals" icon={<TrendingUp className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Company Growth Signals</p>
+            <ul className="ml-4 space-y-1 text-sm text-blue-800">
+              <ListItem>LinkedIn headcount grew <strong>20%+ in last 6 months</strong></ListItem>
+              <ListItem>Recent <strong>Series A or B funding</strong> (last 12 months) — needs to scale team fast</ListItem>
+              <ListItem>New office opening or new product line announced</ListItem>
+              <ListItem><strong>New CTO or VP Engineering appointed</strong> (last 90 days) — often triggers new hiring approach</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <p className="font-semibold text-green-900 mb-2">Market Entry / Expansion</p>
+            <ul className="ml-4 space-y-1 text-sm text-green-800">
+              <ListItem>DACH company expanding to new European market</ListItem>
+              <ListItem>Recent press release about new product or partnership requiring tech build-out</ListItem>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Tier 3 Signals" icon={<FileText className="w-5 h-5" />}>
+        <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+          <p className="font-semibold text-purple-900 mb-2">Frustration Signals</p>
+          <ul className="ml-4 space-y-1 text-sm text-purple-800">
+            <ListItem>Glassdoor / Kununu reviews mentioning 'understaffed', 'too slow to hire', 'overworked team'</ListItem>
+            <ListItem>CTO or CEO LinkedIn post about hiring challenges or talent shortage</ListItem>
+            <ListItem><strong>Job ad older than 90 days still active</strong> — high frustration signal</ListItem>
+          </ul>
+        </div>
       </ContentSection>
     </>
   );
@@ -485,6 +569,15 @@ OUTPUT:
           <CodeBlock code={signalDetectionPrompt} language="text" />
         </div>
       </ContentSection>
+    </>
+  );
+}
+
+function CampaignsSequencesTab() {
+  return (
+    <>
+      <SequencesTab clientId="peoplefocus" />
+      <CampaignsTabGeneric />
     </>
   );
 }

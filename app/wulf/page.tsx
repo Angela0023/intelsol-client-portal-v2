@@ -14,8 +14,7 @@ import { FileText, BarChart3, CheckSquare, Mail, AlertTriangle, Target, Users, M
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
   { id: 'spam-check', label: 'Email Content | Spam Check', icon: Mail },
-  { id: 'sequences', label: 'Email Sequences', icon: MessageSquare },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
@@ -114,8 +113,7 @@ export default function WulfPage() {
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'spam-check' && <SpamCheckTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="wulf" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="wulf" />
@@ -533,6 +531,17 @@ function SpamCheckTab() {
           />
         </div>
       )}
+    </>
+  );
+}
+
+function CampaignsSequencesTab() {
+  return (
+    <>
+      <SequencesTab clientId="wulf" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
+      </div>
     </>
   );
 }

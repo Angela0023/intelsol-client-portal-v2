@@ -14,13 +14,10 @@ import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChar
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
-  { id: 'value-prop', label: 'Value Proposition', icon: TrendingUp },
   { id: 'icp', label: 'ICP Profile', icon: Target },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -145,13 +142,10 @@ export default function XposePage() {
         {/* Tab Content */}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'value-prop' && <ValuePropTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="xpose" />}
-          {activeTab === 'campaigns' && <CampaignsTabGeneric />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="xpose" />
@@ -226,91 +220,8 @@ function OverviewTab() {
   );
 }
 
-function ValuePropTab() {
-  return (
-    <>
-      <ContentSection title="Value Propositions" icon={<TrendingUp className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2 flex items-center">
-              <span className="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">1</span>
-              End-to-End Ownership Model
-            </h4>
-            <ul className="ml-10 space-y-1">
-              <ListItem>Takes full responsibility for coordination process</ListItem>
-              <ListItem>Outcome ownership, not just task delivery</ListItem>
-              <ListItem>Clinic staff focus on patient care, not coordination</ListItem>
-            </ul>
-          </div>
 
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2 flex items-center">
-              <span className="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">2</span>
-              Integration-First Approach
-            </h4>
-            <ul className="ml-10 space-y-1">
-              <ListItem>No need to replace existing vendors</ListItem>
-              <ListItem>Works with current systems and tools</ListItem>
-              <ListItem>Minimal disruption to operations</ListItem>
-              <ListItem>Complements existing marketing agencies</ListItem>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2 flex items-center">
-              <span className="w-8 h-8 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">3</span>
-              Practical & Accessible
-            </h4>
-            <ul className="ml-10 space-y-1">
-              <ListItem>Built for standard clinic operations teams</ListItem>
-              <ListItem>No technical expertise required</ListItem>
-              <ListItem>Easy implementation with low training burden</ListItem>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2 flex items-center">
-              <span className="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-sm font-bold mr-2">4</span>
-              Stabilization Before Growth
-            </h4>
-            <ul className="ml-10 space-y-1">
-              <ListItem>Improves existing systems first</ListItem>
-              <ListItem>Reduces chaos before adding complexity</ListItem>
-              <ListItem>Cleaner handoffs and reduced manual burden</ListItem>
-              <ListItem>Operational stability over growth-at-all-costs</ListItem>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Messaging Hooks" icon={<Target className="w-5 h-5" />}>
-        <div className="space-y-3">
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
-            <p className="font-medium text-blue-900 mb-1">Inquiry Leakage Hook</p>
-            <p className="text-blue-800 text-sm italic">"Already generating inquiries but losing them to slow follow-up?"</p>
-          </div>
-
-          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
-            <p className="font-medium text-green-900 mb-1">Front Desk Overwhelm Hook</p>
-            <p className="text-green-800 text-sm italic">"Your front desk drowning in coordination tasks?"</p>
-          </div>
-
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded">
-            <p className="font-medium text-amber-900 mb-1">Conversion Gap Hook</p>
-            <p className="text-amber-800 text-sm italic">"Spending on ads but losing momentum between inquiry and booking?"</p>
-          </div>
-
-          <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded">
-            <p className="font-medium text-purple-900 mb-1">ROI Hook</p>
-            <p className="text-purple-800 text-sm italic">"Improve your marketing ROI without spending more on ads"</p>
-          </div>
-        </div>
-      </ContentSection>
-    </>
-  );
-}
-
-function ICPTab() {
+function ICPAndPersonasTab() {
   return (
     <>
       <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
@@ -371,6 +282,59 @@ function ICPTab() {
           <p className="text-amber-700 text-sm mt-2">
             Lead enrichment must detect if the clinic is using these advertising platforms.
           </p>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Primary Target</p>
+            <p className="text-blue-800 text-sm">
+              For cosmetic dermatology practices (5-15 employees), target founders, owners, and medical directors who own or operate the practice.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Target Job Titles:</h4>
+            <ul className="ml-4 space-y-2">
+              <ListItem>Practice Owner</ListItem>
+              <ListItem>Founder</ListItem>
+              <ListItem>Medical Director</ListItem>
+              <ListItem>Managing Director</ListItem>
+              <ListItem>Practice Manager (if owner not available)</ListItem>
+              <ListItem>Chief Medical Officer</ListItem>
+              <ListItem>Board-Certified Dermatologist (if solo or partner)</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-4 rounded mt-4">
+            <p className="font-semibold text-slate-900 mb-2">Why These Personas:</p>
+            <p className="text-slate-700 text-sm">
+              These are the decision-makers who control patient acquisition processes and can authorize new systems.
+              They are experiencing the pain points Xpose solves (inquiry leakage, booking gaps, front desk overwhelm).
+            </p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
+          <ul className="space-y-2">
+            <ListItem type="check">First Name</ListItem>
+            <ListItem type="check">Last Name</ListItem>
+            <ListItem type="check">Job Title</ListItem>
+            <ListItem type="check">Email Address</ListItem>
+            <ListItem type="check">LinkedIn URL</ListItem>
+            <ListItem type="check">Company Name</ListItem>
+          </ul>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+            <p className="font-semibold text-blue-900 mb-1">Note:</p>
+            <p className="text-blue-800 text-sm">
+              Use Apollo enrichment first (1 credit per contact). Only use Clay waterfall if Apollo doesn't provide enough emails (more expensive at 5-6 credits).
+            </p>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -494,61 +458,13 @@ OUTPUT:
   );
 }
 
-function PersonasTab() {
+function CampaignsSequencesTab() {
   return (
     <>
-      <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <p className="font-semibold text-blue-900 mb-2">Primary Target</p>
-            <p className="text-blue-800 text-sm">
-              For cosmetic dermatology practices (5-15 employees), target founders, owners, and medical directors who own or operate the practice.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Target Job Titles:</h4>
-            <ul className="ml-4 space-y-2">
-              <ListItem>Practice Owner</ListItem>
-              <ListItem>Founder</ListItem>
-              <ListItem>Medical Director</ListItem>
-              <ListItem>Managing Director</ListItem>
-              <ListItem>Practice Manager (if owner not available)</ListItem>
-              <ListItem>Chief Medical Officer</ListItem>
-              <ListItem>Board-Certified Dermatologist (if solo or partner)</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-slate-50 border-l-4 border-slate-400 p-4 rounded mt-4">
-            <p className="font-semibold text-slate-900 mb-2">Why These Personas:</p>
-            <p className="text-slate-700 text-sm">
-              These are the decision-makers who control patient acquisition processes and can authorize new systems.
-              They are experiencing the pain points Xpose solves (inquiry leakage, booking gaps, front desk overwhelm).
-            </p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Apollo Enrichment Settings" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900 mb-2">Required Fields:</h4>
-          <ul className="space-y-2">
-            <ListItem type="check">First Name</ListItem>
-            <ListItem type="check">Last Name</ListItem>
-            <ListItem type="check">Job Title</ListItem>
-            <ListItem type="check">Email Address</ListItem>
-            <ListItem type="check">LinkedIn URL</ListItem>
-            <ListItem type="check">Company Name</ListItem>
-          </ul>
-
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
-            <p className="font-semibold text-blue-900 mb-1">Note:</p>
-            <p className="text-blue-800 text-sm">
-              Use Apollo enrichment first (1 credit per contact). Only use Clay waterfall if Apollo doesn't provide enough emails (more expensive at 5-6 credits).
-            </p>
-          </div>
-        </div>
-      </ContentSection>
+      <SequencesTab clientId="xpose" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
+      </div>
     </>
   );
 }

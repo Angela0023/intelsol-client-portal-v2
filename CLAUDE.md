@@ -9,17 +9,15 @@
 ### 1. Tab Structure Must Be Identical for All Clients
 **Rule:** ALL client dashboards MUST have the exact same tabs. Never create unique tabs for individual clients.
 
-**Standard Tabs (in order):**
+**Standard Tabs (in order):** *(Consolidated from 10 to 8 tabs on 2026-08-13)*
 1. Overview
-2. ICP Profile
+2. ICP Profile *(includes Buyer Personas)*
 3. Clay Filters
 4. AI Prompts
-5. Buyer Personas
-6. Email Sequences
-7. Campaigns
-8. Performance
-9. Documents
-10. Tasks
+5. Campaigns & Sequences *(consolidated tab)*
+6. Performance
+7. Documents
+8. Tasks
 
 **Why:** Consistency is critical. Breaking this confuses users and creates maintenance nightmares.
 
@@ -27,25 +25,31 @@
 
 **Lesson Learned (2026-07-31):** Added "Email Sequences" as new standard tab between Buyer Personas and Campaigns. Logical flow: know your personas → write sequences for them → launch campaigns.
 
-**Email Sequences Tab Format:**
-- Organize by persona tier or campaign type
-- Each sequence = 3 emails (Initial + 2 follow-ups)
-- Display: Subject line + Body for each email
-- Use monospace font for copy-paste friendly format
-- Color-code different tiers/personas
-- Include sequence design principles at top
-- Make it scannable: clear visual separation between sequences
+**Lesson Learned (2026-08-13):** Consolidated tabs for better organization:
+- Moved Buyer Personas content into ICP Profile tab (related persona targeting information)
+- Merged Email Sequences and Campaigns into single "Campaigns & Sequences" tab (complete campaign workflow)
+- Reduced from 10 tabs to 8 tabs across ALL client dashboards
 
-**Campaigns & Performance Tab Organization (IMPLEMENTED 2026-08-06):**
+**ICP Profile Tab Structure:**
+- Contains all ICP criteria (company-level, geography, verticals, etc.)
+- Includes Buyer Personas section at the end
+- All persona tiers with job titles, messaging angles, and targeting rules
+- Single comprehensive view of WHO to target
 
-**CAMPAIGNS TAB** = Campaign Planning & Strategy (HOW to run campaigns)
-- Contains: Campaign structure, sequencing rules, messaging frameworks, CTAs, validation workflows
-- Component: `CampaignsTabGeneric` (generic) OR custom component (e.g., Plantryx uses `CampaignsTabContent`)
-- Purpose: Playbook for planning campaigns BEFORE launch
-- Shows: Strategic guidelines, not execution data
+**Campaigns & Sequences Tab Structure:**
+- **Email Sequences** section first (using SequencesTab component)
+  - Organize by persona tier or campaign type
+  - Each sequence = 3 emails (Initial + 2 follow-ups)
+  - Display: Subject line + Body for each email
+  - Use monospace font for copy-paste friendly format
+  - Color-code different tiers/personas
+- **Campaign Planning** section below (using CampaignsTabGeneric or custom component)
+  - Campaign structure, sequencing rules, messaging frameworks
+  - CTAs, validation workflows, pre-launch checklists
+  - Complete campaign planning playbook
 
-**PERFORMANCE TAB** = Campaign Execution & Results (WHAT's running + metrics)
-- Contains: Active campaign metrics + campaign execution data (both PerformanceTabDynamic AND CampaignsTabDynamic)
+**Performance Tab:**
+- Contains: Active campaign metrics + campaign execution data
 - Components:
   ```tsx
   <PerformanceTabDynamic clientId="[client]" />
@@ -54,16 +58,24 @@
 - Purpose: Dashboard for ACTIVE campaigns and their results
 - Shows: Metrics, campaign lists, performance data, monthly breakdowns
 
-**Why This Separation:**
-- **Campaigns tab** = "How do we plan this?"
-- **Performance tab** = "What's running and how is it performing?"
-- Consistent across ALL clients
-- No confusion about where content belongs
-
 **Implementation Pattern:**
 ```tsx
-// Campaigns tab - Planning content
-{activeTab === 'campaigns' && <CampaignsTabGeneric />}
+// ICP Profile tab - ICP + Personas combined
+{activeTab === 'icp' && <ICPAndPersonasTab />}
+
+// Campaigns & Sequences tab - Sequences + Campaign planning
+{activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
+
+function CampaignsSequencesTab() {
+  return (
+    <>
+      <SequencesTab clientId="clientname" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />  {/* or custom CampaignsTabContent */}
+      </div>
+    </>
+  );
+}
 
 // Performance tab - Execution + Metrics
 {activeTab === 'performance' && (
@@ -106,10 +118,8 @@
 
 **Client-Visible Tabs:**
 - Overview
-- ICP Profile
-- Buyer Personas
-- Email Sequences
-- Campaigns
+- ICP Profile *(includes Buyer Personas)*
+- Campaigns & Sequences
 - Performance
 - Documents
 - Tasks

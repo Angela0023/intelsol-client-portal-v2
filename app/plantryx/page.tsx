@@ -20,9 +20,7 @@ const tabs = [
   { id: 'bestfits', label: 'Best Fits', icon: Award },
   { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'personas', label: 'Buyer Personas', icon: Users },
-  { id: 'sequences', label: 'Email Sequences', icon: Mail },
-  { id: 'campaigns', label: 'Campaigns', icon: Zap },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
@@ -138,13 +136,11 @@ export default function PlantryxPage() {
         {/*Tab Content*/}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'bestfits' && <BestFitsTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'personas' && <PersonasTab />}
-          {activeTab === 'sequences' && <SequencesTab clientId="plantryx" />}
-          {activeTab === 'campaigns' && <CampaignsTabContent />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="plantryx" />
@@ -255,7 +251,7 @@ function OverviewTab() {
   );
 }
 
-function ICPTab() {
+function ICPAndPersonasTab() {
   return (
     <>
       <ContentSection title="Company-Level ICP" icon={<Target className="w-5 h-5" />}>
@@ -655,6 +651,192 @@ function ICPTab() {
           </div>
         </div>
       </ContentSection>
+
+      <ContentSection title="Persona Tiers — Campaign Structure" icon={<Users className="w-5 h-5" />}>
+        <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded mb-6">
+          <p className="font-semibold text-violet-900 mb-2">Important:</p>
+          <p className="text-violet-800 text-sm">
+            Each tier is a distinct segment with its own messaging angle. Structure campaigns and reporting
+            at the tier level. Within-account sequencing: start Tier 2 for smaller accounts ($100–300M),
+            start Tier 1 for larger accounts.
+          </p>
+        </div>
+
+        {/* Tier 1 */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 mb-4">
+            <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+              <span className="text-blue-600 font-bold text-sm">1</span>
+            </div>
+            <h4 className="font-semibold text-slate-900 text-lg">Tier 1 — Corporate Planning (Core Volume)</h4>
+          </div>
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
+            <p className="text-blue-900 text-sm font-medium mb-1">Messaging Angle:</p>
+            <p className="text-blue-800 text-sm">Forecast accuracy, S&OP maturity, planning-cycle speed, decision lag</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {[
+              'Director of Supply Chain',
+              'Sr. Manager of Supply Chain',
+              'Director of Demand Planning',
+              'Sr. Manager of Demand Planning',
+              'Director of Supply Planning',
+              'Sr. Manager of Supply Planning',
+              'Director of S&OP',
+              'Director of IBP',
+              'Sr. Manager of S&OP',
+              'Sr. Manager of IBP',
+            ].map((title) => (
+              <div key={title} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
+                {title}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Tier 2 */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 mb-4">
+            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+              <span className="text-green-600 font-bold text-sm">2</span>
+            </div>
+            <h4 className="font-semibold text-slate-900 text-lg">Tier 2 — Manufacturing-Native Planning (Core Volume — Do Not Skip)</h4>
+          </div>
+          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
+            <p className="text-green-900 text-sm font-medium mb-1">Messaging Angle:</p>
+            <p className="text-green-800 text-sm">Shortages, expedites, schedule stability, MRP noise — operational language, not corporate S&OP framing</p>
+          </div>
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-3">
+            <p className="text-amber-900 text-sm">
+              <strong>Note:</strong> Many target companies have no "demand planner" title at all. Master Scheduler owns MRP daily despite non-Director title.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {[
+              'Master Scheduler',
+              'Master Production Scheduler',
+              'Director of Production Planning',
+              'Manager of Production Planning',
+              'Production Control Manager',
+              'Planning & Scheduling Manager',
+              'Materials Manager',
+              'Director of Materials Management',
+              'Materials Planning Manager',
+              'Plant Manager',
+              'Director of Manufacturing (site-level)',
+              'Director of Operations (site-level)',
+            ].map((title) => (
+              <div key={title} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
+                {title}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Tier 3 */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 mb-4">
+            <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+              <span className="text-purple-600 font-bold text-sm">3</span>
+            </div>
+            <h4 className="font-semibold text-slate-900 text-lg">Tier 3 — Inventory & MRO</h4>
+          </div>
+          <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded mb-3">
+            <p className="text-purple-900 text-sm font-medium mb-1">Messaging Angle:</p>
+            <p className="text-purple-800 text-sm">Excess stock, working capital, stockout-vs-overstock tradeoff</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {[
+              'Director of Inventory Controls',
+              'Inventory Control Manager',
+              'MRO Sourcing Director',
+              'MRO Planning Director',
+              'Sr. Manager of MRO Sourcing',
+              'Sr. Manager of MRO Planning',
+            ].map((title) => (
+              <div key={title} className="bg-purple-50 border border-purple-200 rounded px-2 py-1.5 text-xs">
+                {title}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Tier 4 */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 mb-4">
+            <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+              <span className="text-indigo-600 font-bold text-sm">4</span>
+            </div>
+            <h4 className="font-semibold text-slate-900 text-lg">Tier 4 — ERP/IT System Owners (~10–15% of volume, separate sequence)</h4>
+          </div>
+          <div className="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded mb-3">
+            <p className="text-indigo-900 text-sm font-medium mb-1">Messaging Angle:</p>
+            <p className="text-indigo-800 text-sm">Systems framing — AI planning layer on existing ERP, no rip-and-replace, no new master-data project, IT-light deployment</p>
+          </div>
+          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded mb-3">
+            <p className="text-red-900 text-sm">
+              <strong>Exclude:</strong> Developer titles with generic software stacks and no ERP signal; independent consultants not tied to a qualified account
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {[
+              'IT Manager',
+              'IT Director',
+              'ERP Manager',
+              'ERP Project Manager',
+              'Business Systems Manager',
+              'CIO (smaller companies)',
+              'SAP Consultant (in-house)',
+              'Dynamics Consultant (in-house)',
+              'ERP Developer (with ERP/planning stack)',
+            ].map((title) => (
+              <div key={title} className="bg-indigo-50 border border-indigo-200 rounded px-2 py-1.5 text-xs">
+                {title}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Executive Layer */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 mb-4">
+            <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
+              <span className="text-amber-600 font-bold text-sm">E</span>
+            </div>
+            <h4 className="font-semibold text-slate-900 text-lg">Executive Layer (Light Volume, Peer Tone)</h4>
+          </div>
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-3">
+            <p className="text-amber-900 text-sm font-medium mb-1">Messaging Angle:</p>
+            <p className="text-amber-800 text-sm">Strategic — working capital, service levels, planning as competitive capability. No survey-style asks.</p>
+          </div>
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
+            <p className="text-blue-900 text-sm">
+              Weighted toward $100–300M companies where executives are closer to operations
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {[
+              'VP Supply Chain',
+              'VP Operations',
+              'COO',
+            ].map((title) => (
+              <div key={title} className="bg-amber-50 border border-amber-200 rounded px-2 py-1.5 text-xs">
+                {title}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Do Not Contact */}
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+          <p className="font-semibold text-red-900 mb-2">Do NOT Contact:</p>
+          <ul className="space-y-1 text-red-800 text-sm">
+            <li>• Planners/analysts below Sr. level (Master Scheduler is the one exception)</li>
+            <li>• Procurement-only titles</li>
+            <li>• Sales, finance, or HR at any level</li>
+          </ul>
+        </div>
+      </ContentSection>
     </>
   );
 }
@@ -960,194 +1142,13 @@ Only answer "Yes" if you are confident this company:
   );
 }
 
-function PersonasTab() {
+function CampaignsSequencesTab() {
   return (
     <>
-      <ContentSection title="Persona Tiers — Campaign Structure" icon={<Users className="w-5 h-5" />}>
-        <div className="bg-violet-50 border-l-4 border-violet-500 p-4 rounded mb-6">
-          <p className="font-semibold text-violet-900 mb-2">Important:</p>
-          <p className="text-violet-800 text-sm">
-            Each tier is a distinct segment with its own messaging angle. Structure campaigns and reporting
-            at the tier level. Within-account sequencing: start Tier 2 for smaller accounts ($100–300M),
-            start Tier 1 for larger accounts.
-          </p>
-        </div>
-
-        {/* Tier 1 */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-              <span className="text-blue-600 font-bold text-sm">1</span>
-            </div>
-            <h4 className="font-semibold text-slate-900 text-lg">Tier 1 — Corporate Planning (Core Volume)</h4>
-          </div>
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
-            <p className="text-blue-900 text-sm font-medium mb-1">Messaging Angle:</p>
-            <p className="text-blue-800 text-sm">Forecast accuracy, S&OP maturity, planning-cycle speed, decision lag</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {[
-              'Director of Supply Chain',
-              'Sr. Manager of Supply Chain',
-              'Director of Demand Planning',
-              'Sr. Manager of Demand Planning',
-              'Director of Supply Planning',
-              'Sr. Manager of Supply Planning',
-              'Director of S&OP',
-              'Director of IBP',
-              'Sr. Manager of S&OP',
-              'Sr. Manager of IBP',
-            ].map((title) => (
-              <div key={title} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
-                {title}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Tier 2 */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-              <span className="text-green-600 font-bold text-sm">2</span>
-            </div>
-            <h4 className="font-semibold text-slate-900 text-lg">Tier 2 — Manufacturing-Native Planning (Core Volume — Do Not Skip)</h4>
-          </div>
-          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
-            <p className="text-green-900 text-sm font-medium mb-1">Messaging Angle:</p>
-            <p className="text-green-800 text-sm">Shortages, expedites, schedule stability, MRP noise — operational language, not corporate S&OP framing</p>
-          </div>
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-3">
-            <p className="text-amber-900 text-sm">
-              <strong>Note:</strong> Many target companies have no "demand planner" title at all. Master Scheduler owns MRP daily despite non-Director title.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {[
-              'Master Scheduler',
-              'Master Production Scheduler',
-              'Director of Production Planning',
-              'Manager of Production Planning',
-              'Production Control Manager',
-              'Planning & Scheduling Manager',
-              'Materials Manager',
-              'Director of Materials Management',
-              'Materials Planning Manager',
-              'Plant Manager',
-              'Director of Manufacturing (site-level)',
-              'Director of Operations (site-level)',
-            ].map((title) => (
-              <div key={title} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
-                {title}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Tier 3 */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-              <span className="text-purple-600 font-bold text-sm">3</span>
-            </div>
-            <h4 className="font-semibold text-slate-900 text-lg">Tier 3 — Inventory & MRO</h4>
-          </div>
-          <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded mb-3">
-            <p className="text-purple-900 text-sm font-medium mb-1">Messaging Angle:</p>
-            <p className="text-purple-800 text-sm">Excess stock, working capital, stockout-vs-overstock tradeoff</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {[
-              'Director of Inventory Controls',
-              'Inventory Control Manager',
-              'MRO Sourcing Director',
-              'MRO Planning Director',
-              'Sr. Manager of MRO Sourcing',
-              'Sr. Manager of MRO Planning',
-            ].map((title) => (
-              <div key={title} className="bg-purple-50 border border-purple-200 rounded px-2 py-1.5 text-xs">
-                {title}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Tier 4 */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
-              <span className="text-indigo-600 font-bold text-sm">4</span>
-            </div>
-            <h4 className="font-semibold text-slate-900 text-lg">Tier 4 — ERP/IT System Owners (~10–15% of volume, separate sequence)</h4>
-          </div>
-          <div className="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded mb-3">
-            <p className="text-indigo-900 text-sm font-medium mb-1">Messaging Angle:</p>
-            <p className="text-indigo-800 text-sm">Systems framing — AI planning layer on existing ERP, no rip-and-replace, no new master-data project, IT-light deployment</p>
-          </div>
-          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded mb-3">
-            <p className="text-red-900 text-sm">
-              <strong>Exclude:</strong> Developer titles with generic software stacks and no ERP signal; independent consultants not tied to a qualified account
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {[
-              'IT Manager',
-              'IT Director',
-              'ERP Manager',
-              'ERP Project Manager',
-              'Business Systems Manager',
-              'CIO (smaller companies)',
-              'SAP Consultant (in-house)',
-              'Dynamics Consultant (in-house)',
-              'ERP Developer (with ERP/planning stack)',
-            ].map((title) => (
-              <div key={title} className="bg-indigo-50 border border-indigo-200 rounded px-2 py-1.5 text-xs">
-                {title}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Executive Layer */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
-              <span className="text-amber-600 font-bold text-sm">E</span>
-            </div>
-            <h4 className="font-semibold text-slate-900 text-lg">Executive Layer (Light Volume, Peer Tone)</h4>
-          </div>
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded mb-3">
-            <p className="text-amber-900 text-sm font-medium mb-1">Messaging Angle:</p>
-            <p className="text-amber-800 text-sm">Strategic — working capital, service levels, planning as competitive capability. No survey-style asks.</p>
-          </div>
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
-            <p className="text-blue-900 text-sm">
-              Weighted toward $100–300M companies where executives are closer to operations
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {[
-              'VP Supply Chain',
-              'VP Operations',
-              'COO',
-            ].map((title) => (
-              <div key={title} className="bg-amber-50 border border-amber-200 rounded px-2 py-1.5 text-xs">
-                {title}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Do Not Contact */}
-        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-          <p className="font-semibold text-red-900 mb-2">Do NOT Contact:</p>
-          <ul className="space-y-1 text-red-800 text-sm">
-            <li>• Planners/analysts below Sr. level (Master Scheduler is the one exception)</li>
-            <li>• Procurement-only titles</li>
-            <li>• Sales, finance, or HR at any level</li>
-          </ul>
-        </div>
-      </ContentSection>
+      <SequencesTab clientId="plantryx" />
+      <div className="mt-8">
+        <CampaignsTabContent />
+      </div>
     </>
   );
 }
