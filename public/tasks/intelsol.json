@@ -39,7 +39,7 @@
     "id": "task_1786022382435_omrq65o",
     "description": "Create Dashboard w/ Sequences for AD Signer (https://www.adsigner.com/en)",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-07",
     "order": 4,
     "comments": []
@@ -211,6 +211,15 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 13,
+    "comments": []
+  },
+  {
+    "id": "task_1786620525639_b35avyg",
+    "description": "Add 25K Leads for Intelsol | August",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-17",
+    "order": 11,
     "comments": []
   }
 ]
