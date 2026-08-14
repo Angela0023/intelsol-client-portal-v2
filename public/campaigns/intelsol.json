@@ -414,29 +414,6 @@
     }
   },
   {
-    "campaignName": "🏆 Intelsol | US Sales Nav | 02/Aug/26 | Pharmaceutical Mfg 10-50 | $5M - $50M | Personalized V2",
-    "dateLaunched": "8/2/2026",
-    "totalLeads": 193,
-    "leadsEmailed": 193,
-    "month": "August",
-    "status": "ACTIVE",
-    "performance": {
-      "emailsSent": 410,
-      "opens": 0,
-      "openRate": "0.00",
-      "clicks": 0,
-      "clickRate": "0.00",
-      "replies": 1,
-      "replyRate": "0.52",
-      "bounces": 59,
-      "bounceRate": "30.57",
-      "unsubscribed": 0,
-      "interested": 1,
-      "interestedRate": "0.52",
-      "notInterested": 0
-    }
-  },
-  {
     "campaignName": "🏆 Intelsol | US Sales Nav | 30/Jul/26 | Machinery Manufacturing 10-50 | $5M - $50M - Unpersonalized",
     "dateLaunched": "7/30/2026",
     "totalLeads": 194,
