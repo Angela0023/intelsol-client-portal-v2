@@ -284,5 +284,14 @@
     "dueDate": "2026-08-17",
     "order": 15,
     "comments": []
+  },
+  {
+    "id": "task_1786710057291_x4y1fwn",
+    "description": "Add variations in 3rd sequence: Intelsol | Test Variations",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-17",
+    "order": 16,
+    "comments": []
   }
 ]
