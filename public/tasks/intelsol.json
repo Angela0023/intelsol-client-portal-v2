@@ -36,21 +36,12 @@
     "comments": []
   },
   {
-    "id": "task_1785420655527_4u7j9lk",
-    "description": "Create Dashboard w/ Sequences for eBliss AI",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-07-30",
-    "order": 4,
-    "comments": []
-  },
-  {
-    "id": "task_1786620359333_9hr9h6s",
-    "description": "Create Dashboard w/ Sequences for Mountaindrop",
-    "assignedTo": "Frosina",
+    "id": "task_1786624324797_kp0r6oe",
+    "description": "Send People Focus ICP documents",
+    "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-13",
-    "order": 5,
+    "order": 4,
     "comments": []
   },
   {
@@ -59,7 +50,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-13",
-    "order": 6,
+    "order": 5,
     "comments": []
   },
   {
@@ -68,7 +59,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-13",
-    "order": 7,
+    "order": 6,
     "comments": []
   },
   {
@@ -77,7 +68,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-13",
-    "order": 8,
+    "order": 7,
     "comments": []
   },
   {
@@ -86,7 +77,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-03",
-    "order": 9,
+    "order": 8,
     "comments": []
   },
   {
@@ -95,7 +86,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-17",
-    "order": 10,
+    "order": 9,
     "comments": []
   },
   {
@@ -104,7 +95,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-14",
-    "order": 11,
+    "order": 10,
     "comments": []
   },
   {
@@ -113,15 +104,24 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-08-14",
+    "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1786624242747_66xzuqy",
+    "description": "Find 1K Leads for eBliss AI",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-17",
     "order": 12,
     "comments": []
   },
   {
-    "id": "task_1786624324797_kp0r6oe",
-    "description": "Send People Focus ICP documents",
-    "assignedTo": "Matej",
+    "id": "task_1786624375112_5lhqto8",
+    "description": "Find 1K Leads for People Focus",
+    "assignedTo": "Frosina",
     "status": "pending",
-    "dueDate": "2026-08-13",
+    "dueDate": "2026-08-17",
     "order": 13,
     "comments": []
   },
@@ -135,21 +135,21 @@
     "comments": []
   },
   {
-    "id": "task_1786624242747_66xzuqy",
-    "description": "Find 1K Leads for eBliss AI",
+    "id": "task_1785420655527_4u7j9lk",
+    "description": "Create Dashboard w/ Sequences for eBliss AI",
     "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-17",
-    "order": 15,
+    "status": "done",
+    "dueDate": "2026-07-30",
+    "order": 4,
     "comments": []
   },
   {
-    "id": "task_1786624375112_5lhqto8",
-    "description": "Find 1K Leads for People Focus",
+    "id": "task_1786620359333_9hr9h6s",
+    "description": "Create Dashboard w/ Sequences for Mountaindrop",
     "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-17",
-    "order": 16,
+    "status": "done",
+    "dueDate": "2026-08-13",
+    "order": 5,
     "comments": []
   },
   {
