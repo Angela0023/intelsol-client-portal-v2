@@ -275,5 +275,14 @@
     "dueDate": "2026-08-06",
     "order": 13,
     "comments": []
+  },
+  {
+    "id": "task_1786709758636_tu7jj3p",
+    "description": "Connect mailboxes for AdSigner.",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-17",
+    "order": 15,
+    "comments": []
   }
 ]
