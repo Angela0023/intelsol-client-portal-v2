@@ -1,0 +1,107 @@
+[
+  {
+    "id": "seq1",
+    "name": "HR Directors - Retention & ROI",
+    "description": "Target: HR Director, Head of People, CHRO (100+ employees). Messaging: Retention, reduced turnover cost, measurable engagement, employer brand differentiation, consolidating wellness spend. Hook: New HR leader trigger, benefits stack review.",
+    "targetPersona": "HR Director / Head of People / CHRO",
+    "companySize": "100+ employees",
+    "primaryGoal": "Reduce turnover cost and build measurable employee engagement program",
+    "color": "purple",
+    "emails": [
+      {
+        "subject": "Re: Retention strategy at [Company Name]",
+        "preview": "Hi [First Name], I noticed [Company Name] has been growing quickly in the Tech/SaaS space. I wanted to reach out because we work with HR leaders at similar-stage companies who are looking to reduce turnover cost and build measurable engagement programs that actually move the retention dial...",
+        "body": "Hi [First Name],\n\nI noticed [Company Name] has been growing quickly in the Tech/SaaS space.\n\nI wanted to reach out because we work with HR leaders at similar-stage companies (100-250 employees) who are looking to reduce turnover cost and build measurable engagement programs that actually move the retention dial.\n\nThe pattern we see: fragmented wellness spend across multiple point solutions (mental health app here, gym discount there, ad-hoc lunch-and-learns) - hard to measure impact, low adoption, and zero visibility into what's actually driving retention.\n\nZen2Fit consolidates that into one platform with 4,000+ on-demand videos (fitness, mental health, nutrition, mindfulness), gamification that drives daily usage, and a GDPR-compliant dashboard that gives you real engagement data to tie back to pulse surveys and exit interview themes.\n\n70+ companies across Central and Northern Europe (predominantly Tech/SaaS) use it to build employer brand differentiation and reduce the \"we don't invest in our people\" narrative that shows up in Glassdoor reviews.\n\nWorth a 20-minute conversation to see if it fits your retention strategy?\n\nBook a time here: [Calendly Link]\n\nBest,\n[Your Name]",
+        "dayOffset": 0,
+        "callToAction": "Book a 20-minute demo to discuss retention strategy",
+        "triggers": ["New HR leader in last 3-6 months", "Rapid hiring / headcount growth", "Glassdoor reviews mentioning wellness/culture"]
+      },
+      {
+        "subject": "Re: ROI on wellness spend",
+        "preview": "Hi [First Name], following up on my note about reducing turnover cost. One thing that resonates with HR leaders we work with: the ability to calculate actual ROI on wellness spend...",
+        "body": "Hi [First Name],\n\nFollowing up on my note about reducing turnover cost at [Company Name].\n\nOne thing that resonates with HR leaders we work with: the ability to calculate actual ROI on wellness spend.\n\nMost wellness initiatives fail the CFO test because engagement is invisible. You spend on gym memberships or app licenses, but you can't prove utilization or tie it back to retention metrics.\n\nZen2Fit's GDPR dashboard gives you:\n- Weekly active usage by department\n- Most-used content categories (fitness vs mental health vs nutrition)\n- Engagement trends over time\n- Anonymous feedback loops\n\nThat data becomes the input for your quarterly HR reports and the retention narrative you present to leadership. Instead of \"we offer wellness benefits,\" you can say \"73% of Engineering used mental health content in Q1, and our exit interview data shows wellness access as a top-3 retention driver.\"\n\nThe platform costs less than the sum of fragmented point solutions, and adoption rates are 3-5x higher because employees actually use it (gamification, variety, mobile-first design).\n\nWorth exploring?\n\nBook a quick call: [Calendly Link]\n\nBest,\n[Your Name]",
+        "dayOffset": 3,
+        "callToAction": "Book a call to discuss ROI visibility",
+        "triggers": ["Budget review season", "CFO pressure to justify HR spend", "Low adoption on existing wellness tools"]
+      },
+      {
+        "subject": "Re: Employer brand differentiation",
+        "preview": "Hi [First Name], last note from me. I wanted to share one specific example that might resonate: a Tech/SaaS company in your size range (150 employees) used Zen2Fit to solve a specific employer brand problem...",
+        "body": "Hi [First Name],\n\nLast note from me.\n\nI wanted to share one specific example that might resonate: a Tech/SaaS company in your size range (150 employees, hybrid team across Poland and Denmark) used Zen2Fit to solve a specific employer brand problem.\n\nTheir Glassdoor and exit interviews kept surfacing the same theme: \"company doesn't invest in employee wellbeing beyond standard health insurance.\" They were losing mid-level engineers to competitors who had visible wellness programs.\n\nThey launched Zen2Fit as part of their benefits refresh. Within 90 days:\n- 68% weekly active usage (vs 12% on their previous gym discount program)\n- Wellbeing became a top-3 positive mention in new hire surveys\n- They started using engagement data in recruiting pitches (\"here's what our team actually uses\")\n\nThe program paid for itself in retention - one prevented exit at mid-level engineer salary covers the annual license cost.\n\nIf employer brand differentiation is on your radar for 2026, worth a conversation.\n\nBook here: [Calendly Link]\n\nOtherwise, I'll close the loop. Thanks for your time.\n\nBest,\n[Your Name]",
+        "dayOffset": 7,
+        "callToAction": "Book a final call to discuss employer brand use case",
+        "triggers": ["Negative Glassdoor reviews mentioning wellness", "Losing candidates to competitors", "Employer brand refresh initiative"]
+      }
+    ]
+  },
+  {
+    "id": "seq2",
+    "name": "People & Culture Leads - Employee Adoption",
+    "description": "Target: People & Culture Lead, Employee Experience Lead, Wellbeing Lead (Champions). Messaging: Platform employees actually use, replacing low-adoption initiatives, pulse-survey data for impact visibility. Hook: Day-to-day problem owner, most likely to reply.",
+    "targetPersona": "People & Culture Lead / Employee Experience Lead / Wellbeing Lead",
+    "companySize": "100-500 employees",
+    "primaryGoal": "Replace low-adoption wellness initiatives with a platform employees actually use",
+    "color": "blue",
+    "emails": [
+      {
+        "subject": "Re: Employee wellness adoption at [Company Name]",
+        "preview": "Hi [First Name], I work with People & Culture teams at Tech/SaaS companies who are tired of launching wellness initiatives that nobody uses. The pattern: you negotiate a gym discount or license a meditation app, announce it in Slack, and... 8% adoption...",
+        "body": "Hi [First Name],\n\nI work with People & Culture teams at Tech/SaaS companies who are tired of launching wellness initiatives that nobody uses.\n\nThe pattern: you negotiate a gym discount or license a meditation app, announce it in Slack, and... 8% adoption. Leadership asks \"is this working?\" and you don't have data to show impact.\n\nZen2Fit solves the adoption problem by giving employees something they actually want to use:\n- 4,000+ on-demand videos (fitness, yoga, mental health, nutrition, mindfulness)\n- Gamification with challenges, leaderboards, and streaks (think Duolingo for wellness)\n- Mobile-first, works on any device, no app download required\n- Multi-language support (English, Slovenian, Hungarian, Polish, Danish, Norwegian)\n\nAdoption rates: 60-70% monthly active users (vs industry average of 12-15% for point solutions).\n\nThe dashboard gives you engagement data you can tie back to pulse surveys: which departments are using it, what content resonates, trends over time. That becomes your proof that the program is working.\n\n70+ companies across Central and Northern Europe use it. Most are Tech/SaaS, 100-500 employees, hybrid teams.\n\nWorth a quick call to see if it fits?\n\nBook here: [Calendly Link]\n\nBest,\n[Your Name]",
+        "dayOffset": 0,
+        "callToAction": "Book a 20-minute call to discuss adoption strategy",
+        "triggers": ["Recent pulse survey showing low wellness benefit awareness", "Failed wellness initiative launch", "Hybrid/remote workforce"]
+      },
+      {
+        "subject": "Re: Proving impact to leadership",
+        "preview": "Hi [First Name], following up on my note about employee adoption. One thing I hear from People & Culture leads: the hardest part isn't finding a wellness solution, it's proving to leadership that it's actually making a difference...",
+        "body": "Hi [First Name],\n\nFollowing up on my note about employee adoption at [Company Name].\n\nOne thing I hear from People & Culture leads: the hardest part isn't finding a wellness solution, it's proving to leadership that it's actually making a difference.\n\nYou're measured on engagement, retention, and culture scores - but most wellness tools don't give you data you can present in quarterly reviews.\n\nZen2Fit's GDPR dashboard gives you:\n- Weekly/monthly active users by team\n- Most-used content (so you can double down on what resonates)\n- Anonymous feedback from users\n- Engagement trends you can correlate with pulse survey results\n\nExample: One People & Culture Lead we work with (Tech company, 180 employees, Poland + Denmark) used the data to show that mental health content usage spiked during Q4 crunch, and teams with higher engagement had 15% better scores on the \"company cares about wellbeing\" pulse question.\n\nThat data became her proof point when requesting budget for year 2.\n\nThe platform is designed to make you look good internally. High adoption, visible impact, quantifiable results.\n\nWorth exploring?\n\nBook a call: [Calendly Link]\n\nBest,\n[Your Name]",
+        "dayOffset": 3,
+        "callToAction": "Book a call to see the dashboard and impact metrics",
+        "triggers": ["Upcoming quarterly review or board presentation", "Leadership asking for wellness ROI", "Budget planning season"]
+      },
+      {
+        "subject": "Re: Case study - 68% adoption in 90 days",
+        "preview": "Hi [First Name], last note from me. I wanted to share a specific case study that might resonate: a Tech/SaaS company in Slovenia (120 employees, hybrid team) launched Zen2Fit to replace their fragmented wellness setup...",
+        "body": "Hi [First Name],\n\nLast note from me.\n\nI wanted to share a specific case study that might resonate:\n\nA Tech/SaaS company in Slovenia (120 employees, hybrid team) launched Zen2Fit to replace their fragmented wellness setup (gym discount nobody used, one-off yoga sessions, ad-hoc mental health talks).\n\nTheir People & Culture Lead wanted something employees would actually engage with and data she could show leadership.\n\nResults after 90 days:\n- 68% of employees actively using the platform (vs 11% on previous gym discount)\n- Mental health and mindfulness content were the top categories (not what they expected - they thought fitness would dominate)\n- Pulse survey scores on \"company invests in wellbeing\" went from 52% to 78%\n- She presented engagement data in the quarterly all-hands and got budget approved for year 2 on the spot\n\nThe key: gamification drove daily usage (streaks, challenges, team leaderboards), and the variety meant everyone found something they wanted (parents used short 10-min workouts, engineers loved mindfulness for focus, sales team did group challenges).\n\nIf replacing low-adoption wellness initiatives is on your roadmap for 2026, worth a conversation.\n\nBook here: [Calendly Link]\n\nOtherwise, I'll close the loop. Thanks for your time.\n\nBest,\n[Your Name]",
+        "dayOffset": 7,
+        "callToAction": "Book a final call to discuss implementation plan",
+        "triggers": ["Planning 2026 wellness strategy", "Recent employee survey showing wellness gaps", "Hybrid/remote team engagement challenges"]
+      }
+    ]
+  },
+  {
+    "id": "seq3",
+    "name": "CEO/Founders - Simple Launch",
+    "description": "Target: CEO, Founder, Managing Director (50-100 employees without HR). Messaging: Simple ready-to-launch way to show team investment without building HR function first. Hook: Small companies, fast decision maker.",
+    "targetPersona": "CEO / Founder / Managing Director",
+    "companySize": "50-100 employees (no dedicated HR)",
+    "primaryGoal": "Launch employee wellness program without HR overhead",
+    "color": "green",
+    "emails": [
+      {
+        "subject": "Re: Team wellness at [Company Name]",
+        "preview": "Hi [First Name], I work with CEOs and Founders at Tech/SaaS companies (50-100 employees) who want to show their team they're invested in them, but don't have the HR bandwidth to build and manage a wellness program from scratch...",
+        "body": "Hi [First Name],\n\nI work with CEOs and Founders at Tech/SaaS companies (50-100 employees) who want to show their team they're invested in them, but don't have the HR bandwidth to build and manage a wellness program from scratch.\n\nThe pattern: you know wellness matters for retention and culture, but piecing together gym discounts, mental health apps, and one-off initiatives takes time you don't have - and adoption ends up low anyway.\n\nZen2Fit is a ready-to-launch corporate wellness platform:\n- 4,000+ on-demand videos (fitness, mental health, nutrition, mindfulness)\n- Gamification that drives daily usage (challenges, streaks, leaderboards)\n- GDPR-compliant, works on any device, no app download\n- Multi-language support (English, Slovenian, Hungarian, Polish, Danish, Norwegian)\n\nYou launch it, announce it to the team, and it runs itself. No admin overhead, no ongoing management.\n\nAdoption rates: 60-70% of employees actively use it (vs 10-15% for typical gym discounts).\n\n70+ companies across Central and Northern Europe use it - most are Tech/SaaS, founder-led, 50-250 employees.\n\nWorth a 15-minute conversation to see if it fits?\n\nBook here: [Calendly Link]\n\nBest,\n[Your Name]",
+        "dayOffset": 0,
+        "callToAction": "Book a 15-minute call to discuss simple implementation",
+        "triggers": ["Recent funding round", "Rapid hiring / scaling team", "Founder-led company without HR function"]
+      },
+      {
+        "subject": "Re: No HR overhead required",
+        "preview": "Hi [First Name], following up on my note about team wellness at [Company Name]. One thing that resonates with founders I talk to: you don't need an HR team to launch this...",
+        "body": "Hi [First Name],\n\nFollowing up on my note about team wellness at [Company Name].\n\nOne thing that resonates with founders I talk to: you don't need an HR team to launch this.\n\nZen2Fit is designed for companies at your stage - you want to invest in your team, but you don't have the bandwidth to manage vendors, track adoption, or build a wellness strategy from scratch.\n\nThe implementation:\n1. We onboard your team (one email invitation, 5 minutes)\n2. Employees create accounts and start using the platform (self-serve, no training needed)\n3. You get a GDPR dashboard showing engagement (who's using it, what content resonates)\n4. That's it. No ongoing admin work.\n\nMost founders use it as part of their recruiting pitch (\"here's what we offer beyond salary\") and retention narrative (shows you're investing in the team before you have a full HR function).\n\nThe cost is less than hiring one additional person, and the ROI is retention - one prevented exit at senior engineer level pays for the annual license.\n\nWorth exploring?\n\nBook a quick call: [Calendly Link]\n\nBest,\n[Your Name]",
+        "dayOffset": 3,
+        "callToAction": "Book a call to discuss zero-overhead implementation",
+        "triggers": ["Scaling team without HR headcount", "Competitor offering better benefits", "Losing candidates due to benefits gap"]
+      },
+      {
+        "subject": "Re: Launch in 48 hours",
+        "preview": "Hi [First Name], last note from me. I wanted to share one thing that surprises founders: you can launch Zen2Fit in 48 hours. No implementation project, no vendor meetings, no training sessions...",
+        "body": "Hi [First Name],\n\nLast note from me.\n\nI wanted to share one thing that surprises founders: you can launch Zen2Fit in 48 hours.\n\nNo implementation project, no vendor meetings, no training sessions.\n\nHere's the timeline:\n- Day 1: We set up your company account and send invitation emails to your team\n- Day 2: Employees start using the platform (self-serve onboarding, mobile-first design, no friction)\n- Week 1: You check the dashboard and see who's engaged\n\nThat's it.\n\nOne founder we work with (Tech startup, 75 employees, Hungary) launched it on a Friday, announced it in the Monday all-hands, and had 60% of the team actively using it by end of week.\n\nHe uses it in recruiting conversations now: \"We offer Zen2Fit - 4,000+ wellness videos, mental health support, gamified challenges. Here's our engagement data.\" (Shows he's investing in culture before he has an HR team.)\n\nThe annual cost is less than one additional headcount, and retention impact covers it.\n\nIf you want to show your team you're invested in them without the HR overhead, worth a conversation.\n\nBook here: [Calendly Link]\n\nOtherwise, I'll close the loop. Thanks for your time.\n\nBest,\n[Your Name]",
+        "dayOffset": 7,
+        "callToAction": "Book a final call to discuss rapid launch plan",
+        "triggers": ["Upcoming team offsite or all-hands", "New year benefits refresh", "Recent team feedback about wellness"]
+      }
+    ]
+  }
+]

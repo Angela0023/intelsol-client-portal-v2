@@ -24,6 +24,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'plantryx', name: 'Plantryx', icon: Building2, color: 'text-indigo-600' },
     { id: 'mountaindrop', name: 'Mountaindrop', icon: Building2, color: 'text-emerald-600' },
     { id: 'eblissai', name: 'eBlissAI', icon: Building2, color: 'text-sky-600' },
+    { id: 'zen2fit', name: 'Zen2Fit', icon: Building2, color: 'text-pink-600' },
   ];
 
   const filteredClients = clients.filter(

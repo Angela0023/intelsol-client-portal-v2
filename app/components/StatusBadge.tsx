@@ -90,4 +90,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   plantryx: 'Onboarding',
   mountaindrop: 'Onboarding',
   eblissai: 'Onboarding',
+  zen2fit: 'Onboarding',
 };

@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -39,7 +39,8 @@ export default function AdminPage() {
         wulf: 'Wulf',
         plantryx: 'Plantryx',
         mountaindrop: 'Mountaindrop',
-        eblissai: 'eBlissAI'
+        eblissai: 'eBlissAI',
+        zen2fit: 'Zen2Fit'
       };
 
       const allTasks: any[] = [];
@@ -161,6 +162,14 @@ export default function AdminPage() {
       borderColor: 'border-sky-200',
       bgColor: 'bg-sky-50',
     },
+    {
+      id: 'zen2fit',
+      name: 'Zen2Fit',
+      industry: 'Corporate Wellness SaaS Platform',
+      color: 'bg-pink-100 text-pink-600',
+      borderColor: 'border-pink-200',
+      bgColor: 'bg-pink-50',
+    },
   ];
 
   const activeCount = Object.values(statuses).filter((s) => s === 'Active').length;
@@ -168,7 +177,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '10',
+      value: '11',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',
