@@ -284,5 +284,14 @@
     "dueDate": "2026-08-18",
     "order": 14,
     "comments": []
+  },
+  {
+    "id": "task_1787062675963_pzbpkib",
+    "description": "Create dashboard for Panorate Media",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-18",
+    "order": 15,
+    "comments": []
   }
 ]
