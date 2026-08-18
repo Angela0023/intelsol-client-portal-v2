@@ -86,6 +86,7 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   beeit: 'Onboarding',
   intelsol: 'Active',
   wulf: 'Onboarding',
+  peoplefocus: 'Onboarding',
   plantryx: 'Onboarding',
   mountaindrop: 'Onboarding',
   eblissai: 'Onboarding',

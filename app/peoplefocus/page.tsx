@@ -34,15 +34,33 @@ const PEOPLEFOCUS_DEFAULT_TASKS = [
 export default function PeopleFocusPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    setStatus(getClientStatus('peoplefocus', 'Active'));
+    setStatus(getClientStatus('peoplefocus', DEFAULT_STATUSES.peoplefocus));
+
+    // Check if user is admin
+    const access = sessionStorage.getItem('clientAccess');
+    let userIsAdmin = false;
+    if (access) {
+      try {
+        const parsedAccess = JSON.parse(access);
+        userIsAdmin = parsedAccess.includes('admin');
+        setIsAdmin(userIsAdmin);
+      } catch {
+        setIsAdmin(false);
+      }
+    }
+
+    // Internal tabs that should be hidden from non-admin users
+    const internalTabs = ['filters', 'prompts'];
 
     // Read initial tab from URL pathname
     const path = window.location.pathname;
     const tabFromPath = path.split('/').pop();
     const validTab = tabs.find(t => t.id === tabFromPath);
-    if (validTab) {
+    // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+    if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
       setActiveTab(validTab.id);
     }
 
@@ -51,7 +69,8 @@ export default function PeopleFocusPage() {
       const path = window.location.pathname;
       const tabFromPath = path.split('/').pop();
       const validTab = tabs.find(t => t.id === tabFromPath);
-      if (validTab) {
+      // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+      if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
         setActiveTab(validTab.id);
       } else {
         setActiveTab('overview');
@@ -74,48 +93,54 @@ export default function PeopleFocusPage() {
     window.history.pushState({}, '', newPath);
   };
 
+  // Filter tabs based on admin access
+  // Hide internal tabs (filters, prompts) from non-admin users
+  const visibleTabs = isAdmin
+    ? tabs
+    : tabs.filter(tab => !['filters', 'prompts'].includes(tab.id));
+
   return (
     <ClientLayout>
       <div className="p-4 lg:p-8">
         {/* Page Header */}
         <div className="mb-6">
-          <div className="flex items-center space-x-3 mb-2">
-            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-              <span className="text-2xl font-bold text-purple-600">PF</span>
+          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-xl lg:text-2xl font-bold text-purple-600">PF</span>
             </div>
-            <div className="flex-1">
-              <div className="flex items-center space-x-3">
-                <h1 className="text-3xl font-bold text-slate-900">People Focus</h1>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
+                <h1 className="text-xl lg:text-3xl font-bold text-slate-900">People Focus</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
               </div>
-              <p className="text-slate-600">IT & Executive Recruitment for DACH Companies</p>
+              <p className="text-sm lg:text-base text-slate-600 break-words">IT & Executive Recruitment for DACH Companies</p>
             </div>
           </div>
           <a
             href="https://peoplefocus.rs"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-blue-600 hover:underline"
+            className="text-sm text-purple-600 hover:underline inline-block"
           >
             Visit Website →
           </a>
         </div>
 
         {/* Tabs */}
-        <div className="border-b border-slate-200 mb-6">
-          <div className="flex space-x-1 overflow-x-auto scrollbar-hide">
-            {tabs.map((tab) => (
+        <div className="border-b border-slate-200 mb-6 -mx-4 px-4 lg:mx-0 lg:px-0">
+          <div className="flex space-x-1 overflow-x-auto scrollbar-hide pb-px">
+            {visibleTabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => handleTabChange(tab.id)}
-                className={`flex items-center space-x-2 px-4 py-3 border-b-2 transition-colors whitespace-nowrap ${
+                className={`flex items-center space-x-1 lg:space-x-2 px-2 lg:px-4 py-2 lg:py-3 border-b-2 transition-colors whitespace-nowrap text-sm lg:text-base flex-shrink-0 ${
                   activeTab === tab.id
                     ? 'border-[#1a2647] text-[#1a2647] font-medium'
                     : 'border-transparent text-slate-600 hover:text-slate-900'
                 }`}
               >
                 <tab.icon className="w-4 h-4" />
-                <span>{tab.label}</span>
+                <span className="hidden sm:inline">{tab.label}</span>
               </button>
             ))}
           </div>
@@ -577,7 +602,9 @@ function CampaignsSequencesTab() {
   return (
     <>
       <SequencesTab clientId="peoplefocus" />
-      <CampaignsTabGeneric />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
+      </div>
     </>
   );
 }

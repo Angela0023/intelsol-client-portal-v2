@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "tier-1-hr-directors",
+    "tierName": "TIER 1: HR Directors - Hiring Pipeline Problem",
+    "tierColor": "purple",
+    "targetPersonas": "HR Director, Head of Talent Acquisition, VP People, HR Manager (companies 100+ employees)",
+    "messagingAngle": "Speed + quality + access to untapped talent pool - solve DACH IT hiring bottleneck in weeks, not months",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Senior IT talent for [Company Name] - weeks, not months",
+        "body": "Hi [First Name],\n\nI noticed [Company Name] has been hiring for [specific IT role, e.g., Backend Developer / DevOps Engineer] - and the posting has been active for a while.\n\nMost DACH companies we work with face the same challenge: open IT roles stay unfilled for 3-6 months because the local talent market is oversaturated with demand.\n\nPeople Focus connects DACH companies with vetted senior IT talent from Serbia - developers, engineers, and technical managers from University of Belgrade and top Serbian tech companies.\n\nTypical timeline: 2-4 weeks from brief to shortlist, not months.\n\nWorth a 20-minute conversation to see if there's a fit?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (Speed & Quality)",
+        "subject": "Re: Senior IT talent for [Company Name] - weeks, not months",
+        "body": "Hi [First Name],\n\nFollowing up on my note below about IT hiring.\n\nWhat makes our approach different:\n\n- Speed: We maintain an active pipeline of 4,000+ candidates - most roles filled in 2-4 weeks, not 3-6 months\n- Quality: Senior developers and engineers from University of Belgrade (Top 500 globally) and established Serbian tech companies\n- Cultural fit: 20+ years of experience working with DACH companies - we understand German, Austrian, and Swiss business culture\n- Cost: Competitive rates compared to local DACH talent, no compromise on seniority or quality\n\nWe conduct 1,000+ candidate interviews per year. When we send a shortlist, they're vetted.\n\nIf hiring speed and quality are priorities for [Company Name], happy to walk through how this works.\n\nWorth a quick call?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (Proven Track Record)",
+        "subject": "Re: Senior IT talent for [Company Name] - weeks, not months",
+        "body": "Hi [First Name],\n\nLast note - I understand your hiring pipeline is full. Just wanted to share one data point that might be relevant:\n\nMost DACH companies we work with have tried local recruiters, LinkedIn outreach, and internal hiring - and still have IT roles open for 90+ days.\n\nThe bottleneck isn't process. It's supply. There simply aren't enough senior IT professionals available locally in Germany, Austria, and Switzerland to meet demand.\n\nPeople Focus solves the supply problem. We give you access to Serbia's strong IT talent pool - University of Belgrade graduates, experienced engineers from top Serbian companies, and technical managers ready to work with DACH organizations.\n\nIf open IT roles are creating a bottleneck for [Company Name], I can show you how we've solved this for other companies in a 20-minute call.\n\nWorth talking?\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-ceo-founders",
+    "tierName": "TIER 2: CEO/Founders - Growth Bottleneck",
+    "tierColor": "blue",
+    "targetPersonas": "CEO, Founder, Geschäftsführer, Managing Director (companies 50-100 employees without dedicated HR)",
+    "messagingAngle": "Scaling engineering team without local hiring constraints - fast, cost-effective, no overhead of building internal recruiting function",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Scaling [Company Name]'s tech team without local hiring constraints",
+        "body": "Hi [First Name],\n\nMost DACH tech companies at [Company Name]'s stage face the same growth bottleneck: you need to scale your engineering team, but hiring locally takes 4-6 months per role - and by the time you fill one position, you need three more.\n\nPeople Focus connects DACH companies with vetted senior IT talent from Serbia - developers, engineers, and technical leads from University of Belgrade and established Serbian tech companies.\n\nWhat this means for [Company Name]:\n\n- Speed: 2-4 weeks from brief to shortlist (not months)\n- Quality: Senior-level talent, vetted through 1,000+ annual interviews\n- Cost: Competitive rates vs. local DACH talent\n- No overhead: You don't build an internal recruiting function - we are your DACH-Serbia IT talent bridge\n\nWorth a 20-minute conversation?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (Cost & Speed)",
+        "subject": "Re: Scaling [Company Name]'s tech team without local hiring constraints",
+        "body": "Hi [First Name],\n\nQuick follow-up - most founders and CEOs we talk to at [Company Name]'s stage (50-100 employees, growing fast) face a decision:\n\nOption A: Keep trying to hire locally - spend 4-6 months per role, compete with every other DACH tech company for the same limited talent pool, pay premium local rates.\n\nOption B: Access Serbia's IT talent market - 2-4 week hiring cycles, strong technical depth (University of Belgrade is Top 500 globally), competitive pricing, cultural alignment with DACH business standards.\n\nPeople Focus has placed senior developers, DevOps engineers, and technical managers with DACH companies for 20+ years. We understand both markets.\n\nIf scaling your tech team without the 6-month local hiring cycle is a priority, I can show you how this works in a quick call.\n\nWorth talking?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (No Internal Recruiting Overhead)",
+        "subject": "Re: Scaling [Company Name]'s tech team without local hiring constraints",
+        "body": "Hi [First Name],\n\nLast note on this - one thing that resonates with most CEOs and founders we work with:\n\nAt 50-100 employees, you're too small to justify a full internal recruiting function, but too big to rely on ad-hoc hiring when you need to scale fast.\n\nPeople Focus solves that. We are your dedicated IT recruiting pipeline for DACH-Serbia talent:\n\n- 4,000+ active candidate pipeline (no cold sourcing per role)\n- 1,000+ candidate interviews per year (we know who's available and qualified)\n- 20+ years working with DACH companies (we understand your business culture and standards)\n- No retainer, no internal overhead - you only pay when we place someone\n\nIf hiring senior IT talent is blocking [Company Name]'s growth, I can walk through how this works in a 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-cto-engineering",
+    "tierName": "TIER 3: CTO/VP Engineering - Technical Quality & Cultural Fit",
+    "tierColor": "green",
+    "targetPersonas": "CTO, VP Engineering, Head of Engineering, Tech Lead (use as CC or warm intro after HR contact)",
+    "messagingAngle": "Technical depth + cultural fit - University of Belgrade talent, proven DACH collaboration experience, strong engineering standards",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Senior engineering talent from University of Belgrade for [Company Name]",
+        "body": "Hi [First Name],\n\nMost CTOs and engineering leaders at DACH tech companies tell us the same thing: local hiring for senior developers and engineers takes 4-6 months, and even then, the candidate pool is limited.\n\nPeople Focus connects DACH companies with senior IT talent from Serbia - specifically University of Belgrade (Top 500 globally) graduates and engineers from established Serbian tech companies.\n\nWhat we focus on:\n\n- Technical depth: Senior developers in Java, Python, .NET, React, Node.js, AWS/Azure/GCP, DevOps/Kubernetes\n- Proven DACH collaboration: 20+ years placing engineers with German, Austrian, and Swiss companies\n- Cultural fit: Engineers who understand DACH business standards, communication styles, and quality expectations\n- Speed: 2-4 weeks from technical brief to shortlist\n\nWorth a 20-minute technical conversation to see if there's a fit for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (University of Belgrade + Tech Stack)",
+        "subject": "Re: Senior engineering talent from University of Belgrade for [Company Name]",
+        "body": "Hi [First Name],\n\nFollowing up - one thing that sets our candidate pool apart:\n\nUniversity of Belgrade is ranked Top 500 globally and produces some of the strongest computer science and engineering graduates in Europe. Serbia also has a mature tech ecosystem (companies like Microsoft, Nordeus, and Vega IT have R&D centers there).\n\nWhat that means for [Company Name]:\n\n- Senior-level engineers with strong theoretical foundations (not just bootcamp graduates)\n- Experience with modern tech stacks: Java, Python, .NET, React, Node.js, AWS/Azure/GCP, DevOps, Kubernetes\n- Proven ability to work in distributed teams with DACH companies (cultural and communication alignment)\n- Competitive rates vs. local DACH talent, no compromise on seniority or quality\n\nWe conduct 1,000+ technical interviews per year. When we send a shortlist, they're vetted against DACH engineering standards.\n\nIf technical quality and hiring speed are priorities, happy to walk through how this works.\n\nWorth a call?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (Engineering Standards)",
+        "subject": "Re: Senior engineering talent from University of Belgrade for [Company Name]",
+        "body": "Hi [First Name],\n\nLast note - the most common concern we hear from CTOs and engineering leaders: \"How do I know the quality will match our standards?\"\n\nFair question. Here's how we address it:\n\n- Technical vetting: We conduct in-depth technical interviews (1,000+ per year) before anyone reaches your shortlist\n- DACH experience: 20+ years placing engineers with German, Austrian, and Swiss companies - we know your quality bar\n- University of Belgrade pipeline: Access to Top 500 globally graduates with strong CS foundations\n- Trial periods: Most of our placements include a trial period so you can validate fit before committing long-term\n\nPeople Focus isn't a staffing agency throwing CVs at you. We are a technical recruiting partner focused on DACH-Serbia IT talent.\n\nIf hiring senior engineers without the 6-month local cycle is something [Company Name] needs, I can walk through our vetting process in a 20-minute call.\n\nWorth talking?\n\nBest,\n[Your Name]"
+      }
+    ]
+  }
+]
