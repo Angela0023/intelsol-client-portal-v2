@@ -275,5 +275,14 @@
     "dueDate": "2026-08-06",
     "order": 13,
     "comments": []
+  },
+  {
+    "id": "task_1787058675049_057ti7c",
+    "description": "Connect Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-18",
+    "order": 14,
+    "comments": []
   }
 ]
