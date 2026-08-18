@@ -91,4 +91,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   mountaindrop: 'Onboarding',
   eblissai: 'Onboarding',
   zen2fit: 'Onboarding',
+  panorate: 'Onboarding',
 };
