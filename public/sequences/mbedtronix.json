@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "sequence-1787155840634",
+    "tierName": "CTO / Head of Development - Embedded Engineering Support",
+    "tierColor": "blue",
+    "targetPersonas": "CTO / Head of Development",
+    "messagingAngle": "Messaging angle here",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Embedded development support for {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} is working on {{product/device/technology}} and wanted to reach out.\n\nMany hardware companies reach a point where their internal team is managing multiple projects and additional embedded expertise would help them move faster.\n\nMBEDTRONIX supports companies with embedded software, firmware, and electronics development when they need additional engineering capacity without adding full-time hires.\n\nWould it make sense to explore if external development support could be useful for your current or upcoming projects?\n\nBest regards, "
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up ",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous message.\n\nWe usually work with companies that already have strong engineering teams but need additional support when:\n\n- internal developers are overloaded\n- a new product requires embedded expertise\n- project timelines require additional capacity\n\nMBEDTRONIX provides embedded firmware and electronics development support, from early development stages through product validation.\n\nWould a short introduction call make sense?\n\nBest regards"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up ",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nLast follow-up from my side.\n\nNot sure if external embedded development support is something {{company_name}} is considering right now.\n\nIf you ever need additional capacity for firmware, electronics development, or connected products, happy to have a quick conversation and see if there is a fit.\n\nThanks,\n"
+      }
+    ]
+  }
+]
