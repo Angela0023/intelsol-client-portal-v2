@@ -15,14 +15,14 @@
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Missed marketing opportunity in your team's emails",
-        "body": "Hi {{first_name}},\n\nQuick follow-up - wanted to share a data point that might resonate:\n\nThe average company with 200 employees sends ~40,000 external emails per month. If your team is similar, that's 480,000 brand impressions per year happening in email signatures.\n\nMost companies struggle with:\n- Inconsistent signatures across the team\n- Missed opportunities to promote webinars, case studies, events\n- No visibility into signature engagement\n\nCentralized signature management solves this:\n- Brand consistency enforced automatically\n- Marketing banners rotated based on campaigns\n- Analytics on clicks and engagement\n\nNo extra ad spend. Just better use of existing email volume.\n\nInterested in seeing how {{company_name}} could activate this channel?\n\nBest,\n{{sender_name}}"
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nJust following up on my previous email.\n\nThe reason I reached out is that many companies already have thousands of external email conversations happening every month, but signatures are usually treated only as contact information.\n\nAdSigner helps turn those existing emails into a controlled marketing channel while keeping branding consistent across the team.\n\nWould this be relevant for {{company_name}}?\n\nHappy to share a quick overview if useful.\n\nBest,\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: {{company_name}} + email signature ROI",
-        "body": "Hi {{first_name}},\n\nLast note from me - I know you're busy.\n\nIf brand consistency and maximizing existing channels matter to {{company_name}}, this is worth 15 minutes.\n\nWhat we typically see:\n- 3-5% CTR on signature banners (higher than most ads)\n- 80% reduction in IT time spent on signature updates\n- 100% brand compliance within 48 hours of rollout\n\nHappy to show you a quick demo of what this looks like for companies your size.\n\nFree slot this week?\n\nBest,\n{{sender_name}}"
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nI’ll close the loop here.\n\nNot sure if improving email signature management or using employee emails as an additional marketing channel is something you’re looking at right now.\n\nIf it is, happy to show you how companies use AdSigner to manage signatures and run banner campaigns from one place.\n\nWould a quick 15-minute intro be useful?\n\nBest,\n{{sender_name}}"
       }
     ]
   },
