@@ -25,5 +25,32 @@
         "body": "Hi {{first_name}},\n\nLast follow-up from my side.\n\nNot sure if external embedded development support is something {{company_name}} is considering right now.\n\nIf you ever need additional capacity for firmware, electronics development, or connected products, happy to have a quick conversation and see if there is a fit.\n\nThanks,\n"
       }
     ]
+  },
+  {
+    "id": "sequence-1787156088454",
+    "tierName": "SI Version: CTO / Head of Development - Embedded Engineering Support",
+    "tierColor": "blue",
+    "targetPersonas": "CTO / Head of Development",
+    "messagingAngle": "Messaging angle here",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Dodatna razvojna kapaciteta za {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\nopazil sem, da se v podjetju {{company_name}} ukvarjate z razvojem {{produkt/naprava/tehnologija}} in sem vas želel na kratko kontaktirati.\n\nVeliko podjetij, ki razvijajo fizične produkte, pride v fazo, ko ima razvojna ekipa več projektov hkrati in bi dodatna embedded strokovna podpora pomagala pri hitrejšem napredku.\n\nV MBEDTRONIX pomagamo podjetjem z razvojem:\n- embedded programske opreme in firmware-a\n- elektronskih rešitev\n- razvoja in validacije produktov\n\nPredvsem takrat, ko potrebujejo dodatno razvojno kapaciteto brez zaposlovanja dodatnega inženirja za polni delovni čas.\n\nBi bilo smiselno preveriti, ali bi bila takšna podpora lahko zanimiva za vaše trenutne ali prihodnje projekte?\n\nLep pozdrav,"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Pozdravljeni {{first_name}},\n\nsamo preverjam, ali ste uspeli pogledati moje prejšnje sporočilo.\n\nNajpogosteje sodelujemo s podjetji, ki imajo lastne razvojne ekipe, vendar potrebujejo dodatno podporo, ko:\n\n- so interni razvijalci preobremenjeni z več projekti,\n- potrebujejo specifično embedded znanje,\n- želijo pospešiti razvoj novega produkta.\n\nMBEDTRONIX pokriva razvoj firmware-a in elektronike, od začetnih razvojnih faz do validacije rešitev.\n\nBi bilo smiselno narediti kratek uvodni pogovor in preveriti, ali bi lahko bili v prihodnje relevantni za vas?\n\nLep pozdrav,"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Pozdravljeni {{first_name}},\n\nzadnje sporočilo z moje strani.\n\nNe vem, ali je zunanja embedded razvojna podpora trenutno nekaj, kar iščete.\n\nČe boste v prihodnje potrebovali dodatne kapacitete pri firmware-u, elektroniki ali razvoju povezanih naprav, se lahko kadarkoli pogovorimo in preverimo, ali obstaja priložnost za sodelovanje.\n\nHvala za vaš čas.\n\nLep pozdrav,"
+      }
+    ]
   }
 ]
