@@ -9,8 +9,8 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Re: {{company_name}}'s email signature consistency",
-        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} has a strong brand presence online, but I'm curious - how are you managing email signature consistency across your {{employee_count}}+ team?\n\nMost marketing leaders don't realize that employee emails are the highest-volume touchpoint with customers and prospects. Every signature is an opportunity to:\n\n- Ensure brand consistency across all employee communication\n- Promote campaigns, events, or content without ad spend\n- Track engagement and attribution from email signatures\n\nWe help companies like {{competitor_1}} and {{competitor_2}} turn every employee email into a brand-consistent marketing channel.\n\nWorth a 15-minute conversation?\n\nBest,\n{{sender_name}}"
+        "subject": "Quick question about {{company_name}}'s email signatures",
+        "body": "Hi {{first_name}},\n\nQuick question - how are you currently managing email signatures across {{company_name}}?\n\nWith growing teams, keeping signatures consistent across everyone can become difficult. At the same time, every email your team sends to clients and prospects is a potential branded touchpoint.\n\nAdSigner helps companies:\n- keep email signatures consistent across the organization\n- promote campaigns, events, and content directly through email signatures\n- manage everything centrally without changing employees' daily workflow\n\nWould it make sense to show you how this works?\n\nBest regards,\n{{sender_name}}"
       },
       {
         "emailNumber": 2,
