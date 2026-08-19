@@ -92,4 +92,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   eblissai: 'Onboarding',
   zen2fit: 'Onboarding',
   panorate: 'Onboarding',
+  mbedtronix: 'Onboarding',
 };
