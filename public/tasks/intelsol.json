@@ -302,5 +302,14 @@
     "dueDate": "2026-08-19",
     "order": 15,
     "comments": []
+  },
+  {
+    "id": "task_1788181182966_tprteu6",
+    "description": "Build best fit list for Intelsol - contact on SmartLead & HeyReach - use Exa?",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 15,
+    "comments": []
   }
 ]
