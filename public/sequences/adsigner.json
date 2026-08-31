@@ -22,7 +22,7 @@
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: {{previous_subject}}",
-        "body": "Hi {{first_name}},\n\nIÃ¢ÂÂll close the loop here.\n\nNot sure if improving email signature management or using employee emails as an additional marketing channel is something you're looking at right now.\n\nIf it is, happy to show you how companies use AdSigner to manage signatures and run banner campaigns from one place.\n\nWould a quick 15-minute intro be useful?\n\nBest,\n{{sender_name}}"
+        "body": "Hi {{first_name}},\n\nI'll close the loop here.\n\nNot sure if improving email signature management or using employee emails as an additional marketing channel is something you're looking at right now.\n\nIf it is, happy to show you how companies use AdSigner to manage signatures and run banner campaigns from one place.\n\nWould a quick 15-minute intro be useful?\n\nBest,\n{{sender_name}}"
       }
     ]
   },
