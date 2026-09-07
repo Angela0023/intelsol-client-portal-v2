@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Mail, Server, TrendingUp, Calendar, AlertCircle, ChevronDown, ChevronRight } from 'lucide-react';
+import { useState, useEffect, useMemo } from 'react';
+import { Mail, Server, TrendingUp, Calendar, AlertCircle, ChevronDown, ChevronRight, X } from 'lucide-react';
 
 interface MailboxDetail {
   email: string;
@@ -52,6 +52,21 @@ export default function ClientsTab() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedClient, setExpandedClient] = useState<string | null>(null);
+
+  // Filter states
+  const [filters, setFilters] = useState({
+    clientName: '',
+    mailboxesMin: '',
+    mailboxesMax: '',
+    capacityMin: '',
+    capacityMax: '',
+    remainingLeadsMin: '',
+    remainingLeadsMax: '',
+    daysLeftMin: '',
+    daysLeftMax: '',
+    activeCampaignsMin: '',
+    activeCampaignsMax: '',
+  });
 
   useEffect(() => {
     fetchAllMetrics();
@@ -115,6 +130,80 @@ export default function ClientsTab() {
     return '';
   };
 
+  // Filter metrics based on active filters
+  const filteredMetrics = useMemo(() => {
+    return allMetrics.filter(client => {
+      // Client name filter
+      if (filters.clientName && !client.clientName.toLowerCase().includes(filters.clientName.toLowerCase())) {
+        return false;
+      }
+
+      // Mailboxes filter
+      if (filters.mailboxesMin && client.mailboxCount < parseInt(filters.mailboxesMin)) {
+        return false;
+      }
+      if (filters.mailboxesMax && client.mailboxCount > parseInt(filters.mailboxesMax)) {
+        return false;
+      }
+
+      // Capacity filter
+      if (filters.capacityMin && client.totalCapacity < parseInt(filters.capacityMin)) {
+        return false;
+      }
+      if (filters.capacityMax && client.totalCapacity > parseInt(filters.capacityMax)) {
+        return false;
+      }
+
+      // Remaining leads filter
+      if (filters.remainingLeadsMin && client.remainingLeads < parseInt(filters.remainingLeadsMin)) {
+        return false;
+      }
+      if (filters.remainingLeadsMax && client.remainingLeads > parseInt(filters.remainingLeadsMax)) {
+        return false;
+      }
+
+      // Days left filter
+      if (filters.daysLeftMin && client.daysRemaining < parseInt(filters.daysLeftMin)) {
+        return false;
+      }
+      if (filters.daysLeftMax && client.daysRemaining > parseInt(filters.daysLeftMax)) {
+        return false;
+      }
+
+      // Active campaigns filter
+      if (filters.activeCampaignsMin && client.activeCampaigns < parseInt(filters.activeCampaignsMin)) {
+        return false;
+      }
+      if (filters.activeCampaignsMax && client.activeCampaigns > parseInt(filters.activeCampaignsMax)) {
+        return false;
+      }
+
+      return true;
+    });
+  }, [allMetrics, filters]);
+
+  const handleFilterChange = (field: string, value: string) => {
+    setFilters(prev => ({ ...prev, [field]: value }));
+  };
+
+  const clearFilters = () => {
+    setFilters({
+      clientName: '',
+      mailboxesMin: '',
+      mailboxesMax: '',
+      capacityMin: '',
+      capacityMax: '',
+      remainingLeadsMin: '',
+      remainingLeadsMax: '',
+      daysLeftMin: '',
+      daysLeftMax: '',
+      activeCampaignsMin: '',
+      activeCampaignsMax: '',
+    });
+  };
+
+  const hasActiveFilters = Object.values(filters).some(value => value !== '');
+
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
@@ -141,7 +230,7 @@ export default function ClientsTab() {
   }
 
   // Count clients needing attention
-  const clientsNeedingAttention = allMetrics.filter(m => m.remainingLeads > 0 && m.daysRemaining <= 7).length;
+  const clientsNeedingAttention = filteredMetrics.filter(m => m.remainingLeads > 0 && m.daysRemaining <= 7).length;
 
   return (
     <div className="space-y-6">
@@ -149,7 +238,7 @@ export default function ClientsTab() {
       <div>
         <h2 className="text-2xl font-bold text-slate-900">All Clients - Capacity Overview</h2>
         <p className="text-slate-600 mt-1">
-          Mailbox metrics and lead capacity for all clients
+          Mailbox metrics and lead capacity for all clients {hasActiveFilters && `(${filteredMetrics.length} of ${allMetrics.length} shown)`}
         </p>
       </div>
 
@@ -167,6 +256,141 @@ export default function ClientsTab() {
           </div>
         </div>
       )}
+
+      {/* Filters */}
+      <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold text-slate-900">Filters</h3>
+          {hasActiveFilters && (
+            <button
+              onClick={clearFilters}
+              className="flex items-center gap-1 text-xs text-slate-600 hover:text-slate-900 transition-colors"
+            >
+              <X className="w-3 h-3" />
+              Clear All
+            </button>
+          )}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Client Name */}
+          <div>
+            <label className="block text-xs font-medium text-slate-700 mb-1">Client Name</label>
+            <input
+              type="text"
+              value={filters.clientName}
+              onChange={(e) => handleFilterChange('clientName', e.target.value)}
+              placeholder="Search..."
+              className="w-full px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          {/* Mailboxes */}
+          <div>
+            <label className="block text-xs font-medium text-slate-700 mb-1">Mailboxes</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                value={filters.mailboxesMin}
+                onChange={(e) => handleFilterChange('mailboxesMin', e.target.value)}
+                placeholder="Min"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="number"
+                value={filters.mailboxesMax}
+                onChange={(e) => handleFilterChange('mailboxesMax', e.target.value)}
+                placeholder="Max"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+
+          {/* Capacity */}
+          <div>
+            <label className="block text-xs font-medium text-slate-700 mb-1">Capacity/Day</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                value={filters.capacityMin}
+                onChange={(e) => handleFilterChange('capacityMin', e.target.value)}
+                placeholder="Min"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="number"
+                value={filters.capacityMax}
+                onChange={(e) => handleFilterChange('capacityMax', e.target.value)}
+                placeholder="Max"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+
+          {/* Remaining Leads */}
+          <div>
+            <label className="block text-xs font-medium text-slate-700 mb-1">Remaining Leads</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                value={filters.remainingLeadsMin}
+                onChange={(e) => handleFilterChange('remainingLeadsMin', e.target.value)}
+                placeholder="Min"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="number"
+                value={filters.remainingLeadsMax}
+                onChange={(e) => handleFilterChange('remainingLeadsMax', e.target.value)}
+                placeholder="Max"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+
+          {/* Days Left */}
+          <div>
+            <label className="block text-xs font-medium text-slate-700 mb-1">Days Left</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                value={filters.daysLeftMin}
+                onChange={(e) => handleFilterChange('daysLeftMin', e.target.value)}
+                placeholder="Min"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="number"
+                value={filters.daysLeftMax}
+                onChange={(e) => handleFilterChange('daysLeftMax', e.target.value)}
+                placeholder="Max"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+
+          {/* Active Campaigns */}
+          <div>
+            <label className="block text-xs font-medium text-slate-700 mb-1">Active Campaigns</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                value={filters.activeCampaignsMin}
+                onChange={(e) => handleFilterChange('activeCampaignsMin', e.target.value)}
+                placeholder="Min"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="number"
+                value={filters.activeCampaignsMax}
+                onChange={(e) => handleFilterChange('activeCampaignsMax', e.target.value)}
+                placeholder="Max"
+                className="w-1/2 px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Clients Table */}
       <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
@@ -196,7 +420,7 @@ export default function ClientsTab() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200">
-              {allMetrics.map((client) => (
+              {filteredMetrics.map((client) => (
                 <>
                   <tr
                     key={client.clientId}
