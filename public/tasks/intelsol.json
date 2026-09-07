@@ -329,5 +329,14 @@
     "dueDate": "2026-09-07",
     "order": 17,
     "comments": []
+  },
+  {
+    "id": "task_1788783761633_w0iuobz",
+    "description": "Add mailboxes for MBEDTRONIX",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 18,
+    "comments": []
   }
 ]
