@@ -338,5 +338,14 @@
     "dueDate": "2026-09-07",
     "order": 18,
     "comments": []
+  },
+  {
+    "id": "task_1788783871548_2pz3xp3",
+    "description": "Add mailboxes Plantryx",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 19,
+    "comments": []
   }
 ]
