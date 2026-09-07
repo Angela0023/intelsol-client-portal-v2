@@ -9,6 +9,7 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
+import ClientsTab from '../components/ClientsTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { FileText, BarChart3, CheckSquare, TrendingUp, Target, Filter, Code, Users, BookOpen, Mail, Zap, FolderOpen } from 'lucide-react';
 
@@ -19,6 +20,7 @@ const tabs = [
   { id: 'prompts', label: 'AI Prompts', icon: Code },
   { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'clients', label: 'Clients', icon: Users },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
   { id: 'tasks', label: 'Tasks', icon: CheckSquare },
 ];
@@ -45,7 +47,7 @@ export default function IntelsolPage() {
     }
 
     // Internal tabs that should be hidden from non-admin users
-    const internalTabs = ['filters', 'prompts'];
+    const internalTabs = ['filters', 'prompts', 'clients'];
 
     // Read initial tab from URL pathname
     const path = window.location.pathname;
@@ -86,10 +88,10 @@ export default function IntelsolPage() {
   };
 
   // Filter tabs based on admin access
-  // Hide internal tabs (filters, prompts) from non-admin users
+  // Hide internal tabs (filters, prompts, clients) from non-admin users
   const visibleTabs = isAdmin
     ? tabs
-    : tabs.filter(tab => !['filters', 'prompts'].includes(tab.id));
+    : tabs.filter(tab => !['filters', 'prompts', 'clients'].includes(tab.id));
 
   return (
     <ClientLayout>
@@ -160,6 +162,7 @@ export default function IntelsolPage() {
               <CampaignsTabDynamic clientId="intelsol" />
             </>
           )}
+          {activeTab === 'clients' && <ClientsTab clientId="intelsol" />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="intelsol" defaultTasks={INTELSOL_DEFAULT_TASKS} />
           )}
