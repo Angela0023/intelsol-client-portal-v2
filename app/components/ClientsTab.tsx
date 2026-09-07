@@ -9,6 +9,7 @@ interface MailboxDetail {
   capacity: number;
   status: string;
   reputation: string;
+  inCampaign: boolean;
 }
 
 interface CampaignDetail {
@@ -552,7 +553,12 @@ export default function ClientsTab() {
                           {/* Mailbox Details */}
                           {client.mailboxes.length > 0 && (
                             <div className="space-y-3">
-                              <h4 className="text-sm font-semibold text-slate-900">Mailbox Details</h4>
+                              <h4 className="text-sm font-semibold text-slate-900">
+                                Mailbox Details
+                                <span className="ml-2 text-xs font-normal text-slate-600">
+                                  (Only mailboxes in campaigns are counted in capacity)
+                                </span>
+                              </h4>
                               <div className="overflow-x-auto">
                                 <table className="w-full text-sm">
                                   <thead>
@@ -561,13 +567,17 @@ export default function ClientsTab() {
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Capacity</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Status</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Reputation</th>
+                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">In Campaign</th>
                                     </tr>
                                   </thead>
                                   <tbody className="divide-y divide-slate-100">
                                     {client.mailboxes.map((mailbox, idx) => (
-                                      <tr key={idx}>
+                                      <tr key={idx} className={!mailbox.inCampaign ? 'opacity-50' : ''}>
                                         <td className="px-3 py-2 font-mono text-xs">{mailbox.email}</td>
-                                        <td className="px-3 py-2 text-center text-xs font-medium">{mailbox.capacity}/day</td>
+                                        <td className="px-3 py-2 text-center text-xs font-medium">
+                                          {mailbox.capacity}/day
+                                          {!mailbox.inCampaign && <span className="ml-1 text-slate-400">(not counted)</span>}
+                                        </td>
                                         <td className="px-3 py-2 text-center">
                                           <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
                                             mailbox.status === 'ACTIVE'
@@ -578,6 +588,17 @@ export default function ClientsTab() {
                                           </span>
                                         </td>
                                         <td className="px-3 py-2 text-center text-xs">{mailbox.reputation}</td>
+                                        <td className="px-3 py-2 text-center">
+                                          {mailbox.inCampaign ? (
+                                            <span className="inline-flex px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">
+                                              ✓ Yes
+                                            </span>
+                                          ) : (
+                                            <span className="inline-flex px-2 py-0.5 rounded text-xs font-medium bg-amber-100 text-amber-800">
+                                              Warmup
+                                            </span>
+                                          )}
+                                        </td>
                                       </tr>
                                     ))}
                                   </tbody>
