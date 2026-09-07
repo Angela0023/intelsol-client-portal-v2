@@ -129,7 +129,8 @@ export async function onRequest(context: any) {
 
     // Calculate total sending capacity
     const mailboxDetails = clientMailboxes.map(mb => {
-      const capacity = mb.warmup_details?.max_email_per_day || mb.message_per_day || 0;
+      // Use message_per_day (configured limit) as primary source
+      const capacity = mb.message_per_day || mb.warmup_details?.max_email_per_day || 0;
       return {
         email: mb.from_email,
         name: mb.from_name,
