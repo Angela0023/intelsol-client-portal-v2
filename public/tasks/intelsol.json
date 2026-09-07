@@ -311,5 +311,23 @@
     "dueDate": "2026-09-07",
     "order": 15,
     "comments": []
+  },
+  {
+    "id": "task_1788783188813_foatz47",
+    "description": "Add mailboxes for AdSigner",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 16,
+    "comments": []
+  },
+  {
+    "id": "task_1788783200430_rmspq1t",
+    "description": "Add mailboxes for Mountaindrop",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 17,
+    "comments": []
   }
 ]
