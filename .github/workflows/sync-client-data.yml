@@ -56,35 +56,72 @@ jobs:
           import sys
           import csv
           import io
+          import re
           import requests
 
           API_KEY = os.getenv('SMARTLEAD_API_KEY')
           BASE_URL = 'https://server.smartlead.ai/api/v1'
 
-          CLIENT_PREFIXES = {
-              'intelsol': '🏆 Intelsol',
-              'tslab': '🧪 TS Lab',
-              'demo': '🏆 Demo',
-              'xpose': '💥 Xpose',
-              'adsigner': '📧 AdSigner',
-              'beeit': '🏆 BeeIT',
-              'wulf': '🏆 Wulf',
-              'peoplefocus': '🎯 People Focus',
-              'plantryx': '🏆 Plantryx',
+          # Client names for matching (emoji-agnostic)
+          CLIENT_NAMES = {
+              'intelsol': 'Intelsol',
+              'tslab': 'TS Lab',
+              'demo': 'Demo',
+              'xpose': 'Xpose',
+              'adsigner': 'AdSigner',
+              'beeit': 'BeeIt',
+              'wulf': 'WULF',
+              'peoplefocus': 'People Focus',
+              'plantryx': 'Plantryx',
+              'mountaindrop': 'Mountaindrop',
+              'eblissai': 'eBliss AI',
+              'zen2fit': 'Zen2fit',
+              'panorate': 'Panorate',
+              'mbedtronix': 'MBEDTRONIX',
           }
 
+          def remove_emoji(text):
+              """Remove emoji from text using Unicode ranges"""
+              emoji_pattern = re.compile(
+                  "["
+                  "\U0001F1E0-\U0001F1FF"  # flags
+                  "\U0001F300-\U0001F5FF"  # symbols & pictographs
+                  "\U0001F600-\U0001F64F"  # emoticons
+                  "\U0001F680-\U0001F6FF"  # transport & map
+                  "\U0001F700-\U0001F77F"  # alchemical
+                  "\U0001F780-\U0001F7FF"  # geometric shapes
+                  "\U0001F800-\U0001F8FF"  # arrows
+                  "\U0001F900-\U0001F9FF"  # supplemental symbols
+                  "\U0001FA00-\U0001FA6F"  # chess
+                  "\U0001FA70-\U0001FAFF"  # extended-A
+                  "\U00002600-\U000026FF"  # miscellaneous symbols
+                  "\U00002700-\U000027BF"  # dingbats
+                  "\U0000FE00-\U0000FE0F"  # variation selectors
+                  "\U0001F000-\U0001F02F"  # mahjong
+                  "\U0001F0A0-\U0001F0FF"  # playing cards
+                  "]+", flags=re.UNICODE
+              )
+              return emoji_pattern.sub('', text).strip()
+
+          def matches_campaign(campaign_name, client_name):
+              """Check if campaign matches client name (emoji-agnostic)"""
+              without_emoji = remove_emoji(campaign_name)
+              normalized_campaign = without_emoji.lower().replace(' ', '').replace('-', '')
+              normalized_client = client_name.lower().replace(' ', '').replace('-', '')
+              return normalized_campaign.startswith(normalized_client)
+
           def sync_client(client_id):
-              prefix = CLIENT_PREFIXES.get(client_id)
-              if not prefix:
+              client_name = CLIENT_NAMES.get(client_id)
+              if not client_name:
                   print(f"Unknown client: {client_id}")
                   return False
 
-              print(f"\n🔄 Syncing {client_id} ({prefix})...")
+              print(f"\n🔄 Syncing {client_id} ({client_name})...")
 
               response = requests.get(f"{BASE_URL}/campaigns", params={'api_key': API_KEY})
               campaigns = response.json()
 
-              client_campaigns = [c for c in campaigns if c.get('name', '').startswith(prefix)]
+              client_campaigns = [c for c in campaigns if matches_campaign(c.get('name', ''), client_name)]
               print(f"Found {len(client_campaigns)} campaigns")
 
               if len(client_campaigns) == 0:
@@ -136,7 +173,7 @@ jobs:
 
               if client == 'all':
                   updated = []
-                  for cid in CLIENT_PREFIXES.keys():
+                  for cid in CLIENT_NAMES.keys():
                       if sync_client(cid):
                           updated.append(cid)
                   print(f"\n✅ Updated: {', '.join(updated)}")

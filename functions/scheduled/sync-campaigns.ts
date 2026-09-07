@@ -3,19 +3,15 @@
  *
  * Runs daily at 4 AM CEST (2 AM UTC) to:
  * 1. Fetch all campaigns from Smartlead API
- * 2. Filter campaigns by client name prefix
+ * 2. Filter campaigns by client name (emoji-agnostic matching)
  * 3. Get analytics/lead counts for each campaign
  * 4. Update JSON files in GitHub repo for each client
  *
- * Clients and their prefixes:
- * - Intelsol: 🏆 Intelsol
- * - TSLab: 🏆 TS Lab
- * - Demo: 🏆 Demo
- * - Xpose: 🏆 Xpose
- * - BeeIT: 🏆 BeeIT
- * - Wulf: 🏆 Wulf
- * - PeopleFocus: 🏆 PeopleFocus
- * - Plantryx: 🏆 Plantryx
+ * Campaign Matching:
+ * - Removes any emoji from start of campaign name
+ * - Matches if campaign name starts with client name (case-insensitive)
+ * - Example: "🏆 Intelsol | Campaign" matches client "Intelsol"
+ * - Example: "🧪 TS Lab | Campaign" matches client "TS Lab"
  */
 
 interface Campaign {
@@ -46,18 +42,45 @@ interface ProcessedCampaign {
   month: string;
 }
 
-const CLIENT_PREFIXES: Record<string, string> = {
-  'intelsol': '🏆 Intelsol',
-  'tslab': '🏆 TS Lab',
-  'demo': '🏆 Demo',
-  'xpose': '🏆 Xpose',
-  'beeit': '🏆 BeeIT',
-  'wulf': '🏆 Wulf',
-  'peoplefocus': '🏆 PeopleFocus',
-  'plantryx': '🏆 Plantryx',
+// Client names for matching (emoji-agnostic)
+const CLIENT_NAMES: Record<string, string> = {
+  'intelsol': 'Intelsol',
+  'tslab': 'TS Lab',
+  'demo': 'Demo',
+  'xpose': 'Xpose',
+  'adsigner': 'AdSigner',
+  'beeit': 'BeeIt',
+  'wulf': 'WULF',
+  'peoplefocus': 'People Focus',
+  'plantryx': 'Plantryx',
+  'mountaindrop': 'Mountaindrop',
+  'eblissai': 'eBliss AI',
+  'zen2fit': 'Zen2fit',
+  'panorate': 'Panorate',
+  'mbedtronix': 'MBEDTRONIX',
 };
 
 const SMARTLEAD_BASE_URL = 'https://server.smartlead.ai/api/v1';
+
+// Remove emoji from start of text
+function removeEmoji(text: string): string {
+  // Comprehensive emoji removal using Unicode ranges
+  const emojiPattern = /[\u{1F1E0}-\u{1F1FF}\u{1F300}-\u{1F5FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{1F000}-\u{1F02F}\u{1F0A0}-\u{1F0FF}]+/gu;
+  return text.replace(emojiPattern, '').trim();
+}
+
+// Check if campaign matches client name
+function matchesCampaign(campaignName: string, clientName: string): boolean {
+  // Remove emoji from campaign name
+  const withoutEmoji = removeEmoji(campaignName);
+
+  // Normalize both: lowercase, remove spaces and hyphens
+  const normalizedCampaign = withoutEmoji.toLowerCase().replace(/[\s-]/g, '');
+  const normalizedClient = clientName.toLowerCase().replace(/[\s-]/g, '');
+
+  // Campaign must start with client name
+  return normalizedCampaign.startsWith(normalizedClient);
+}
 
 // Helper to make Smartlead API requests
 async function fetchSmartlead(endpoint: string, apiKey: string): Promise<any> {
@@ -95,14 +118,14 @@ async function processCampaignsForClient(
   campaigns: Campaign[],
   apiKey: string
 ): Promise<ProcessedCampaign[]> {
-  const prefix = CLIENT_PREFIXES[clientId];
-  if (!prefix) {
+  const clientName = CLIENT_NAMES[clientId];
+  if (!clientName) {
     throw new Error(`Unknown client ID: ${clientId}`);
   }
 
-  // Filter campaigns by prefix
+  // Filter campaigns by client name (emoji-agnostic)
   const clientCampaigns = campaigns.filter(c =>
-    c.name && c.name.startsWith(prefix)
+    c.name && matchesCampaign(c.name, clientName)
   );
 
   console.log(`Found ${clientCampaigns.length} campaigns for ${clientId}`);
@@ -226,7 +249,7 @@ export default {
       console.log(`✅ Fetched ${campaigns.length} total campaigns`);
 
       // Process campaigns for each client
-      const clients = Object.keys(CLIENT_PREFIXES);
+      const clients = Object.keys(CLIENT_NAMES);
 
       for (const clientId of clients) {
         console.log(`\n🔄 Processing ${clientId}...`);
