@@ -2,15 +2,16 @@
 
 import { useEditMode } from './EditModeContext';
 
-export type ClientStatus = 'Active' | 'Onboarding' | 'Completed';
+export type ClientStatus = 'Active' | 'Onboarding' | 'Completed' | 'Hold';
 
 const statusStyles: Record<ClientStatus, string> = {
   Active: 'bg-green-100 text-green-700 border-green-200',
   Onboarding: 'bg-amber-100 text-amber-700 border-amber-200',
   Completed: 'bg-slate-100 text-slate-600 border-slate-200',
+  Hold: 'bg-gray-100 text-gray-700 border-gray-300',
 };
 
-const allStatuses: ClientStatus[] = ['Active', 'Onboarding', 'Completed'];
+const allStatuses: ClientStatus[] = ['Active', 'Onboarding', 'Completed', 'Hold'];
 
 interface StatusBadgeProps {
   status: ClientStatus;
@@ -67,7 +68,7 @@ export default function StatusBadge({ status, onStatusChange, size = 'sm' }: Sta
 export function getClientStatus(clientId: string, defaultStatus: ClientStatus): ClientStatus {
   if (typeof window === 'undefined') return defaultStatus;
   const stored = localStorage.getItem(`intelsol_status_${clientId}`);
-  if (stored === 'Active' || stored === 'Onboarding' || stored === 'Completed') {
+  if (stored === 'Active' || stored === 'Onboarding' || stored === 'Completed' || stored === 'Hold') {
     return stored;
   }
   return defaultStatus;

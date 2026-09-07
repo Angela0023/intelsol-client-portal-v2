@@ -1,0 +1,1141 @@
+Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt
+US - Technology / SaaS,"Technology, SaaS, Software, and Cloud Infrastructure companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Technology / SaaS / Software,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Retail / Hospitality,"Multi-location Retail chains, Restaurant chains, and Hospitality companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Retail / Restaurant / Hospitality,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Airlines / Logistics,"Airlines, Transportation, and Logistics companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Airlines / Transportation / Logistics,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Asset Management / PE,"Asset Management firms, Private Equity firms, Hedge Funds, and Registered Investment Advisors in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Asset Management / PE / Hedge Funds,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Insurance,"Regional and mid-size Insurance carriers in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Insurance,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Healthcare,"Healthcare systems and Hospital networks in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Healthcare,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Telecom,"Telecommunications and Cable companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Telecommunications,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Financial Services,"Financial Services and Banking companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Financial Services / Banking,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - Consulting,"Consulting firms and Professional Services companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Consulting / Professional Services,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+US - MSPs,"Managed Service Providers and IT Service companies in the United States with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Managed Service Providers,United States,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Technology / SaaS,"Technology, SaaS, Software, and Cloud Infrastructure companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Technology / SaaS / Software,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Retail / Hospitality,"Multi-location Retail chains, Restaurant chains, and Hospitality companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Retail / Restaurant / Hospitality,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Airlines / Logistics,"Airlines, Transportation, and Logistics companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Airlines / Transportation / Logistics,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Asset Management / PE,"Asset Management firms, Private Equity firms, Hedge Funds, and Registered Investment Advisors in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Asset Management / PE / Hedge Funds,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Insurance,"Regional and mid-size Insurance carriers in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Insurance,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Healthcare,"Healthcare systems and Hospital networks in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Healthcare,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Telecom,"Telecommunications and Cable companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Telecommunications,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Financial Services,"Financial Services and Banking companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Financial Services / Banking,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - Consulting,"Consulting firms and Professional Services companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Consulting / Professional Services,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CA - MSPs,"Managed Service Providers and IT Service companies in Canada with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Managed Service Providers,Canada,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Technology / SaaS,"Technology, SaaS, Software, and Cloud Infrastructure companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Technology / SaaS / Software,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Retail / Hospitality,"Multi-location Retail chains, Restaurant chains, and Hospitality companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Retail / Restaurant / Hospitality,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Airlines / Logistics,"Airlines, Transportation, and Logistics companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Airlines / Transportation / Logistics,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Asset Management / PE,"Asset Management firms, Private Equity firms, Hedge Funds, and Investment Advisors in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Asset Management / PE / Hedge Funds,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Insurance,"Regional and mid-size Insurance carriers in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Insurance,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Healthcare,"Healthcare systems and Hospital networks in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Healthcare,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Telecom,"Telecommunications and Cable companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Telecommunications,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Financial Services,"Financial Services and Banking companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Financial Services / Banking,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - Consulting,"Consulting firms and Professional Services companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Consulting / Professional Services,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DACH - MSPs,"Managed Service Providers and IT Service companies in Germany, Austria, or Switzerland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Managed Service Providers,DACH,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Technology / SaaS,"Technology, SaaS, Software, and Cloud Infrastructure companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Technology / SaaS / Software,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Retail / Hospitality,"Multi-location Retail chains, Restaurant chains, and Hospitality companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Retail / Restaurant / Hospitality,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Airlines / Logistics,"Airlines, Transportation, and Logistics companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Airlines / Transportation / Logistics,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Asset Management / PE,"Asset Management firms, Private Equity firms, Hedge Funds, and Investment Advisors in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Asset Management / PE / Hedge Funds,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Insurance,"Regional and mid-size Insurance carriers in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Insurance,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Healthcare,"Healthcare systems and Hospital networks in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Healthcare,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Telecom,"Telecommunications and Cable companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Telecommunications,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Financial Services,"Financial Services and Banking companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Financial Services / Banking,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - Consulting,"Consulting firms and Professional Services companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Consulting / Professional Services,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Benelux - MSPs,"Managed Service Providers and IT Service companies in Netherlands, Belgium, or Luxembourg with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Managed Service Providers,Benelux,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Technology / SaaS,"Technology, SaaS, Software, and Cloud Infrastructure companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Technology / SaaS / Software,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Retail / Hospitality,"Multi-location Retail chains, Restaurant chains, and Hospitality companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Retail / Restaurant / Hospitality,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Airlines / Logistics,"Airlines, Transportation, and Logistics companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Airlines / Transportation / Logistics,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Asset Management / PE,"Asset Management firms, Private Equity firms, Hedge Funds, and Investment Advisors in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Asset Management / PE / Hedge Funds,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Insurance,"Regional and mid-size Insurance carriers in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Insurance,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Healthcare,"Healthcare systems and Hospital networks in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Healthcare,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Telecom,"Telecommunications and Cable companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Telecommunications,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Financial Services,"Financial Services and Banking companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Financial Services / Banking,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - Consulting,"Consulting firms and Professional Services companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Consulting / Professional Services,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+Nordics - MSPs,"Managed Service Providers and IT Service companies in Sweden, Norway, Denmark, or Finland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Managed Service Providers,Nordics,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Technology / SaaS,"Technology, SaaS, Software, and Cloud Infrastructure companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Technology / SaaS / Software,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Retail / Hospitality,"Multi-location Retail chains, Restaurant chains, and Hospitality companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Retail / Restaurant / Hospitality,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Airlines / Logistics,"Airlines, Transportation, and Logistics companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Airlines / Transportation / Logistics,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Asset Management / PE,"Asset Management firms, Private Equity firms, Hedge Funds, and Investment Advisors in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Asset Management / PE / Hedge Funds,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Insurance,"Regional and mid-size Insurance carriers in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Insurance,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Healthcare,"Healthcare systems and Hospital networks in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Healthcare,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Telecom,"Telecommunications and Cable companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Telecommunications,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Financial Services,"Financial Services and Banking companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Financial Services / Banking,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - Consulting,"Consulting firms and Professional Services companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Consulting / Professional Services,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+UK - MSPs,"Managed Service Providers and IT Service companies in United Kingdom or Ireland with 10,000 or more employees that are using at least one of these IT management tools: ServiceNow, Nexthink, Lakeside SysTrack, Microsoft Intune, Jamf, Tanium, or BMC Helix. Prioritize companies currently hiring for Help Desk Technician, IT Support Specialist, L2 Support, L3 Support, Service Desk Analyst, IT Operations Manager, VP of Digital Workplace, VP of End User Computing, or Head of IT Operations.",Managed Service Providers,UK & Ireland,,,"Review this company's website and public information to determine if they are a good fit for eBlissAI, an AI Workforce solution that autonomously resolves L2/L3 endpoint IT issues.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company's primary business is building IT infrastructure, cloud platforms, endpoint management tools, ITSM software, or cybersecurity products (examples: Microsoft, AWS, ServiceNow, Tanium, Cisco, VMware, Oracle, Dell Technologies, HP/HPE, Salesforce Infrastructure)
+2. Company is one of these known build-not-buy organizations: Netflix, Google, Alphabet, Amazon, AWS, IBM, Bank of America, Lockheed Martin, Meta/Facebook
+3. Company is a direct competitor: Nanoheal, Tanium, Nexthink, Lakeside, ControlUp, Console, Ivanti, Riverbed Aternity
+4. Company website explicitly mentions they already have fully autonomous AI-driven IT operations or self-healing endpoints deployed
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 10,000 or more employees OR operates multiple physical locations/offices
+2. Company's core business is NOT building IT infrastructure or endpoint management software
+3. Company appears to be an enterprise that USES technology rather than BUILDS IT infrastructure products
+4. No evidence on their website of already having complete autonomous IT operations
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
