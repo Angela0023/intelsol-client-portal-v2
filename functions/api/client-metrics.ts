@@ -27,6 +27,14 @@ interface Campaign {
   status: string;
 }
 
+interface CampaignDetail {
+  name: string;
+  status: string;
+  totalLeads: number;
+  sentCount: number;
+  remainingLeads: number;
+}
+
 interface LeadStats {
   total_leads: number;
   total_count: number;
@@ -146,28 +154,49 @@ export async function onRequest(context: any) {
     const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
     const clientCampaigns = allCampaigns.filter(c => matchesCampaign(c.name, clientName));
 
-    // Count remaining leads (leads not yet sent initial email)
+    // Count remaining leads and collect campaign details
     let remainingLeads = 0;
+    const campaignDetails: CampaignDetail[] = [];
+
     for (const campaign of clientCampaigns) {
-      // Only count ACTIVE campaigns
-      if (campaign.status === 'ACTIVE') {
-        try {
-          // Get lead counts for this campaign
-          const leadsResponse: LeadStats = await fetchSmartlead(
-            `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
-            apiKey
-          );
+      try {
+        // Get lead counts for this campaign
+        const leadsResponse: LeadStats = await fetchSmartlead(
+          `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
+          apiKey
+        );
 
-          // Get analytics to find how many have been sent
-          const analytics = await fetchSmartlead(`/campaigns/${campaign.id}/analytics`, apiKey);
-          const sentCount = parseInt(String(analytics.unique_sent_count || 0));
+        // Get analytics to find how many have been sent
+        const analytics = await fetchSmartlead(`/campaigns/${campaign.id}/analytics`, apiKey);
+        const sentCount = parseInt(String(analytics.unique_sent_count || 0));
 
-          // Total leads - sent = remaining
-          const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
-          remainingLeads += Math.max(0, totalLeads - sentCount);
-        } catch (err) {
-          console.error(`Error fetching leads for campaign ${campaign.id}:`, err);
+        // Total leads - sent = remaining
+        const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
+        const remaining = Math.max(0, totalLeads - sentCount);
+
+        // Add to campaign details
+        campaignDetails.push({
+          name: campaign.name,
+          status: campaign.status,
+          totalLeads: totalLeads,
+          sentCount: sentCount,
+          remainingLeads: remaining,
+        });
+
+        // Only count ACTIVE campaigns toward remaining leads total
+        if (campaign.status === 'ACTIVE') {
+          remainingLeads += remaining;
         }
+      } catch (err) {
+        console.error(`Error fetching leads for campaign ${campaign.id}:`, err);
+        // Still add campaign with zero counts if error
+        campaignDetails.push({
+          name: campaign.name,
+          status: campaign.status,
+          totalLeads: 0,
+          sentCount: 0,
+          remainingLeads: 0,
+        });
       }
     }
 
@@ -182,7 +211,8 @@ export async function onRequest(context: any) {
       remainingLeads,
       daysRemaining,
       mailboxes: mailboxDetails,
-      activeCampaigns: clientCampaigns.filter(c => c.status === 'ACTIVE').length,
+      campaigns: campaignDetails,
+      activeCampaigns: campaignDetails.filter(c => c.status === 'ACTIVE').length,
     };
 
     return new Response(JSON.stringify(result), {
