@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { Mail, Server, TrendingUp, Calendar, AlertCircle, ChevronDown, ChevronRight, X } from 'lucide-react';
+import { Mail, Server, TrendingUp, Calendar, AlertCircle, ChevronDown, ChevronRight, X, ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
 
 interface MailboxDetail {
   email: string;
@@ -68,6 +68,12 @@ export default function ClientsTab() {
     activeCampaignsMax: '',
   });
 
+  // Sort states
+  type SortField = 'clientName' | 'mailboxCount' | 'totalCapacity' | 'remainingLeads' | 'daysRemaining' | 'activeCampaigns';
+  type SortDirection = 'asc' | 'desc';
+  const [sortField, setSortField] = useState<SortField>('daysRemaining');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+
   useEffect(() => {
     fetchAllMetrics();
   }, []);
@@ -130,9 +136,10 @@ export default function ClientsTab() {
     return '';
   };
 
-  // Filter metrics based on active filters
+  // Filter and sort metrics
   const filteredMetrics = useMemo(() => {
-    return allMetrics.filter(client => {
+    // First, filter
+    let result = allMetrics.filter(client => {
       // Client name filter
       if (filters.clientName && !client.clientName.toLowerCase().includes(filters.clientName.toLowerCase())) {
         return false;
@@ -180,7 +187,27 @@ export default function ClientsTab() {
 
       return true;
     });
-  }, [allMetrics, filters]);
+
+    // Then, sort
+    result.sort((a, b) => {
+      let aValue: string | number;
+      let bValue: string | number;
+
+      if (sortField === 'clientName') {
+        aValue = a.clientName.toLowerCase();
+        bValue = b.clientName.toLowerCase();
+      } else {
+        aValue = a[sortField];
+        bValue = b[sortField];
+      }
+
+      if (aValue < bValue) return sortDirection === 'asc' ? -1 : 1;
+      if (aValue > bValue) return sortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    return result;
+  }, [allMetrics, filters, sortField, sortDirection]);
 
   const handleFilterChange = (field: string, value: string) => {
     setFilters(prev => ({ ...prev, [field]: value }));
@@ -203,6 +230,26 @@ export default function ClientsTab() {
   };
 
   const hasActiveFilters = Object.values(filters).some(value => value !== '');
+
+  const handleSort = (field: SortField) => {
+    if (sortField === field) {
+      // Toggle direction if same field
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      // New field, default to ascending
+      setSortField(field);
+      setSortDirection('asc');
+    }
+  };
+
+  const getSortIcon = (field: SortField) => {
+    if (sortField !== field) {
+      return <ArrowUpDown className="w-3 h-3 text-slate-400" />;
+    }
+    return sortDirection === 'asc'
+      ? <ArrowUp className="w-3 h-3 text-blue-600" />
+      : <ArrowDown className="w-3 h-3 text-blue-600" />;
+  };
 
   if (loading) {
     return (
@@ -399,23 +446,59 @@ export default function ClientsTab() {
             <thead className="bg-slate-50 border-b border-slate-200">
               <tr>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider w-8"></th>
-                <th className="px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  Client
+                <th
+                  className="px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition-colors"
+                  onClick={() => handleSort('clientName')}
+                >
+                  <div className="flex items-center gap-2">
+                    Client
+                    {getSortIcon('clientName')}
+                  </div>
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  Mailboxes
+                <th
+                  className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition-colors"
+                  onClick={() => handleSort('mailboxCount')}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    Mailboxes
+                    {getSortIcon('mailboxCount')}
+                  </div>
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  Capacity/Day
+                <th
+                  className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition-colors"
+                  onClick={() => handleSort('totalCapacity')}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    Capacity/Day
+                    {getSortIcon('totalCapacity')}
+                  </div>
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  Remaining Leads
+                <th
+                  className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition-colors"
+                  onClick={() => handleSort('remainingLeads')}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    Remaining Leads
+                    {getSortIcon('remainingLeads')}
+                  </div>
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  Days Left
+                <th
+                  className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition-colors"
+                  onClick={() => handleSort('daysRemaining')}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    Days Left
+                    {getSortIcon('daysRemaining')}
+                  </div>
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                  Active Campaigns
+                <th
+                  className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer hover:bg-slate-100 transition-colors"
+                  onClick={() => handleSort('activeCampaigns')}
+                >
+                  <div className="flex items-center justify-center gap-2">
+                    Active Campaigns
+                    {getSortIcon('activeCampaigns')}
+                  </div>
                 </th>
               </tr>
             </thead>
