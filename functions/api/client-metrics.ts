@@ -134,12 +134,19 @@ export async function onRequest(context: any) {
       throw new Error('SMARTLEAD_API_KEY not configured');
     }
 
-    // Fetch campaigns FIRST to determine which mailboxes are in use
+    // Fetch mailboxes
+    const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
+    const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
+
+    // Fetch campaigns
     const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
     const clientCampaigns = allCampaigns.filter(c => matchesCampaign(c.name, clientName));
 
     // Build set of email addresses that are assigned to campaigns
+    // Try to fetch campaign details, but fall back to counting all mailboxes if it fails
     const emailsInCampaigns = new Set<string>();
+    let campaignDetailsFailed = false;
+
     for (const campaign of clientCampaigns) {
       try {
         // Fetch detailed campaign info to get assigned email accounts
@@ -153,31 +160,35 @@ export async function onRequest(context: any) {
         }
       } catch (err) {
         console.error(`Error fetching campaign details for ${campaign.id}:`, err);
+        campaignDetailsFailed = true;
       }
     }
-
-    // Fetch ALL mailboxes
-    const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
-    const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
 
     // Create mailbox details for ALL client mailboxes (for display)
     const mailboxDetails = clientMailboxes.map(mb => {
       // Use message_per_day (configured limit) as primary source
       const capacity = mb.message_per_day || mb.warmup_details?.max_email_per_day || 0;
+
+      // If campaign details failed or no campaigns exist, assume all mailboxes are in use
+      const inCampaign = (campaignDetailsFailed || clientCampaigns.length === 0)
+        ? true
+        : emailsInCampaigns.has(mb.from_email.toLowerCase());
+
       return {
         email: mb.from_email,
         name: mb.from_name,
         capacity: capacity,
         status: mb.warmup_details?.status || 'N/A',
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
-        inCampaign: emailsInCampaigns.has(mb.from_email.toLowerCase()),
+        inCampaign: inCampaign,
       };
     });
 
-    // Calculate total capacity ONLY from mailboxes that are in campaigns
-    const totalCapacity = mailboxDetails
-      .filter(mb => mb.inCampaign)
-      .reduce((sum, mb) => sum + mb.capacity, 0);
+    // Calculate total capacity
+    // If we couldn't get campaign details, count all mailboxes (safer fallback)
+    const totalCapacity = (campaignDetailsFailed || clientCampaigns.length === 0)
+      ? mailboxDetails.reduce((sum, mb) => sum + mb.capacity, 0)
+      : mailboxDetails.filter(mb => mb.inCampaign).reduce((sum, mb) => sum + mb.capacity, 0);
 
     // Count remaining leads and collect campaign details
     let remainingLeads = 0;
