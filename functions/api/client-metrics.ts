@@ -2,9 +2,10 @@
  * API endpoint to fetch client metrics from Smartlead
  *
  * Returns:
- * - Mailbox count
+ * - Mailbox count (active and inactive)
  * - Sending capacity per mailbox
  * - Total sending capacity
+ * - Campaign count per mailbox
  * - Remaining leads (not yet contacted)
  * - Days of capacity remaining
  */
