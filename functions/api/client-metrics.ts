@@ -81,8 +81,11 @@ function matchesCampaign(campaignName: string, clientName: string): boolean {
 function matchesMailbox(email: string, clientName: string): boolean {
   // Extract domain (everything after @)
   const domain = email.split('@')[1] || '';
-  const normalizedDomain = domain.toLowerCase().replace(/[\s-]/g, '');
-  const normalizedClient = clientName.toLowerCase().replace(/[\s-]/g, '');
+
+  // Normalize both: lowercase, remove all non-alphanumeric for flexible matching
+  const normalizedDomain = domain.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const normalizedClient = clientName.toLowerCase().replace(/[^a-z0-9]/g, '');
+
   return normalizedDomain.includes(normalizedClient);
 }
 
@@ -223,17 +226,28 @@ export async function onRequest(context: any) {
     for (const campaign of clientCampaigns) {
       try {
         // Get lead counts for this campaign
-        const leadsResponse: LeadStats = await fetchSmartlead(
+        const leadsResponse: any = await fetchSmartlead(
           `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
           apiKey
         );
+
+        // Debug: Log the actual response structure
+        if (clientId === 'intelsol' && campaign.name.includes('08/Sept/26')) {
+          console.log(`[${clientId}] Raw leads response for ${campaign.name}:`, JSON.stringify(leadsResponse));
+        }
 
         // Get analytics to find how many have been sent
         const analytics = await fetchSmartlead(`/campaigns/${campaign.id}/analytics`, apiKey);
         const sentCount = parseInt(String(analytics.unique_sent_count || 0));
 
-        // Total leads - sent = remaining
-        const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
+        // Try multiple possible fields for total lead count
+        const totalLeads = leadsResponse.total_leads
+          || leadsResponse.total_count
+          || leadsResponse.totalLeads
+          || leadsResponse.count
+          || (Array.isArray(leadsResponse) ? leadsResponse.length : 0)
+          || 0;
+
         const remaining = Math.max(0, totalLeads - sentCount);
 
         console.log(`[${clientId}] Campaign ${campaign.name}: total=${totalLeads}, sent=${sentCount}, remaining=${remaining}, status=${campaign.status}`);
