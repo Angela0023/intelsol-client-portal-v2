@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "campaignName": "📝 AdSigner | Software & IT | Germany | 01/Sept/26 | IT Lead",
+    "dateLaunched": "9/1/2026",
+    "totalLeads": 81,
+    "leadsEmailed": 150,
+    "month": "September",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 223,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 9,
+      "replyRate": "6.00",
+      "bounces": 1,
+      "bounceRate": "0.67",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
+    "campaignName": "📝 AdSigner | Software & IT | Germany | 01/Sept/26 | Marketing Lead",
+    "dateLaunched": "9/1/2026",
+    "totalLeads": 1121,
+    "leadsEmailed": 221,
+    "month": "September",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 327,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 18,
+      "replyRate": "8.14",
+      "bounces": 3,
+      "bounceRate": "1.36",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  }
+]
