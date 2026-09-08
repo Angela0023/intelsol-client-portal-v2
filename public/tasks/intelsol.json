@@ -352,7 +352,7 @@
     "id": "task_1788856145702_buif1tu",
     "description": "Review and fix Intelsol mailboxes limit",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-09-08",
     "order": 11,
     "comments": []
@@ -370,7 +370,7 @@
     "id": "task_1788856226121_36yxo3j",
     "description": "AdSigner - add more Germany leads",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-09-08",
     "order": 12,
     "comments": []
