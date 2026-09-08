@@ -39,7 +39,7 @@
     "id": "task_1786709758636_tu7jj3p",
     "description": "Connect mailboxes for AdSigner",
     "assignedTo": "Matej",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-17",
     "order": 4,
     "comments": []
@@ -84,7 +84,7 @@
     "id": "task_1787058675049_057ti7c",
     "description": "Connect Intelsol mailboxes",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-18",
     "order": 9,
     "comments": []
