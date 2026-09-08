@@ -79,14 +79,47 @@ export default function ClientsTab() {
   // Sort states for expanded tables (per client)
   type MailboxSortField = 'email' | 'capacity' | 'enabledDate' | 'status' | 'reputation';
   type CampaignSortField = 'name' | 'status' | 'totalLeads' | 'sentCount' | 'remainingLeads';
-  const [mailboxSort, setMailboxSort] = useState<{ field: MailboxSortField; direction: SortDirection }>({
-    field: 'email',
-    direction: 'asc',
+  const [mailboxSort, setMailboxSort] = useState<{ field: MailboxSortField; direction: SortDirection }>(() => {
+    // Load from localStorage on mount
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('clientsTab_mailboxSort');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          // Ignore parse errors
+        }
+      }
+    }
+    return { field: 'email', direction: 'asc' };
   });
-  const [campaignSort, setCampaignSort] = useState<{ field: CampaignSortField; direction: SortDirection }>({
-    field: 'name',
-    direction: 'asc',
+  const [campaignSort, setCampaignSort] = useState<{ field: CampaignSortField; direction: SortDirection }>(() => {
+    // Load from localStorage on mount
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('clientsTab_campaignSort');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          // Ignore parse errors
+        }
+      }
+    }
+    return { field: 'name', direction: 'asc' };
   });
+
+  // Save sort preferences to localStorage whenever they change
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('clientsTab_mailboxSort', JSON.stringify(mailboxSort));
+    }
+  }, [mailboxSort]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('clientsTab_campaignSort', JSON.stringify(campaignSort));
+    }
+  }, [campaignSort]);
 
   useEffect(() => {
     fetchAllMetrics();
