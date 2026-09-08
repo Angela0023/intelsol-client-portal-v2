@@ -14,10 +14,14 @@ interface Mailbox {
   from_email: string;
   from_name: string;
   message_per_day: number;
+  warmup_enabled_at?: string;
+  enabled_at?: string;
+  created_at?: string;
   warmup_details?: {
     status: string;
     max_email_per_day: number;
     warmup_reputation: string;
+    warmup_enabled_at?: string;
   };
 }
 
@@ -184,6 +188,13 @@ export async function onRequest(context: any) {
       const capacity = mb.message_per_day || 0;
       const isActive = capacity > 1; // Active if daily limit > 1
 
+      // Try multiple possible date field names
+      const enabledDate = mb.warmup_enabled_at
+        || mb.enabled_at
+        || mb.created_at
+        || mb.warmup_details?.warmup_enabled_at
+        || null;
+
       return {
         email: mb.from_email,
         name: mb.from_name,
@@ -191,6 +202,7 @@ export async function onRequest(context: any) {
         status: mb.warmup_details?.status || 'N/A',
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
         isActive: isActive,
+        enabledDate: enabledDate,
       };
     });
 

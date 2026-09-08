@@ -10,6 +10,7 @@ interface MailboxDetail {
   status: string;
   reputation: string;
   inCampaign: boolean;
+  enabledDate: string | null;
 }
 
 interface CampaignDetail {
@@ -579,6 +580,7 @@ export default function ClientsTab() {
                                     <tr className="border-b border-slate-200">
                                       <th className="px-3 py-2 text-left text-xs font-medium text-slate-600">Email</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Capacity</th>
+                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Enabled Date</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Status</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Reputation</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">In Campaign</th>
@@ -591,6 +593,14 @@ export default function ClientsTab() {
                                         <td className="px-3 py-2 text-center text-xs font-medium">
                                           {mailbox.capacity}/day
                                           {!mailbox.inCampaign && <span className="ml-1 text-amber-600 text-[10px]">(warmup)</span>}
+                                        </td>
+                                        <td className="px-3 py-2 text-center text-xs text-slate-600">
+                                          {mailbox.enabledDate ? new Date(mailbox.enabledDate).toLocaleDateString('en-US', {
+                                            weekday: 'short',
+                                            month: 'short',
+                                            day: 'numeric',
+                                            year: 'numeric'
+                                          }) : 'N/A'}
                                         </td>
                                         <td className="px-3 py-2 text-center">
                                           <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
