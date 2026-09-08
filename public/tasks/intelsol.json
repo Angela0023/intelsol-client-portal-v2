@@ -36,6 +36,112 @@
     "comments": []
   },
   {
+    "id": "task_1786710057291_x4y1fwn",
+    "description": "Add variations in 3rd sequence: Intelsol | Test Variations",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-08-17",
+    "order": 4,
+    "comments": []
+  },
+  {
+    "id": "task_1788783761633_w0iuobz",
+    "description": "Add mailboxes for MBEDTRONIX",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 5,
+    "comments": []
+  },
+  {
+    "id": "task_1788783871548_2pz3xp3",
+    "description": "Add mailboxes Plantryx",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 6,
+    "comments": []
+  },
+  {
+    "id": "task_1785432278082_ukybt1y",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-03",
+    "order": 7,
+    "comments": []
+  },
+  {
+    "id": "task_1788181182966_tprteu6",
+    "description": "Build best fit list for Intelsol - contact on SmartLead & HeyReach - use Exa?",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1788856284378_4uja5jt",
+    "description": "People Focus - Write the sequences in German",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 9,
+    "comments": []
+  },
+  {
+    "id": "task_1788856296481_wu36e36",
+    "description": "People Focus - add more leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 10,
+    "comments": []
+  },
+  {
+    "id": "task_1788856325060_f6iu6dc",
+    "description": "Panoramate Media - find 1-2K leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1788856344664_3th2p8k",
+    "description": "Panoramate Media - add sequences to Smartlead",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 12,
+    "comments": []
+  },
+  {
+    "id": "task_1788856250599_61cnq5b",
+    "description": "AdSigner - add more Serbia & Croatia leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-11",
+    "order": 13,
+    "comments": []
+  },
+  {
+    "id": "task_1788879315669_kfaxsik",
+    "description": "Add remaining AdSigner IT Leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-11",
+    "order": 14,
+    "comments": [
+      {
+        "id": "comment_1788879323348_7djq6fy",
+        "text": "https://docs.google.com/spreadsheets/d/1wRIfsdsLxc-VSRhhlbfgTiFa1BfIAOWV2j5mUX5QwoA/edit?gid=1373518497#gid=1373518497",
+        "createdAt": "2026-09-08T14:55:23.348Z",
+        "createdBy": "Admin"
+      }
+    ]
+  },
+  {
     "id": "task_1786709758636_tu7jj3p",
     "description": "Connect mailboxes for AdSigner",
     "assignedTo": "Matej",
@@ -45,57 +151,12 @@
     "comments": []
   },
   {
-    "id": "task_1786710057291_x4y1fwn",
-    "description": "Add variations in 3rd sequence: Intelsol | Test Variations",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-08-17",
-    "order": 5,
-    "comments": []
-  },
-  {
-    "id": "task_1788783761633_w0iuobz",
-    "description": "Add mailboxes for MBEDTRONIX",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-09-07",
-    "order": 6,
-    "comments": []
-  },
-  {
-    "id": "task_1788783871548_2pz3xp3",
-    "description": "Add mailboxes Plantryx",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-09-07",
-    "order": 7,
-    "comments": []
-  },
-  {
-    "id": "task_1785432278082_ukybt1y",
-    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-03",
-    "order": 8,
-    "comments": []
-  },
-  {
     "id": "task_1787058675049_057ti7c",
     "description": "Connect Intelsol mailboxes",
     "assignedTo": "Frosina",
     "status": "done",
     "dueDate": "2026-08-18",
     "order": 9,
-    "comments": []
-  },
-  {
-    "id": "task_1788181182966_tprteu6",
-    "description": "Build best fit list for Intelsol - contact on SmartLead & HeyReach - use Exa?",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-07",
-    "order": 10,
     "comments": []
   },
   {
@@ -373,51 +434,6 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 12,
-    "comments": []
-  },
-  {
-    "id": "task_1788856250599_61cnq5b",
-    "description": "AdSigner - add more Serbia & Croatia leads",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-11",
-    "order": 13,
-    "comments": []
-  },
-  {
-    "id": "task_1788856284378_4uja5jt",
-    "description": "People Focus - Write the sequences in German",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 14,
-    "comments": []
-  },
-  {
-    "id": "task_1788856296481_wu36e36",
-    "description": "People Focus - add more leads",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 15,
-    "comments": []
-  },
-  {
-    "id": "task_1788856325060_f6iu6dc",
-    "description": "Panoramate Media - find 1-2K leads",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 16,
-    "comments": []
-  },
-  {
-    "id": "task_1788856344664_3th2p8k",
-    "description": "Panoramate Media - add sequences to Smartlead",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 17,
     "comments": []
   }
 ]
