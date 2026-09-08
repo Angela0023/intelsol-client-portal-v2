@@ -329,6 +329,57 @@ git push
 
 ---
 
+### 6. ALWAYS Paginate Smartlead API Calls
+
+**Rule:** The Smartlead API returns a MAXIMUM of 100 results per request. You MUST implement pagination to fetch ALL results.
+
+**Critical Endpoints That Require Pagination:**
+- `/api/v1/email-accounts` - Mailboxes (can have 98+ per client)
+- `/api/v1/campaigns` - Campaigns (can have 50+ per client)
+- `/api/v1/campaigns/{id}/leads` - Leads (can have thousands per campaign)
+
+**Pagination Parameters:**
+- `limit` (max: 100, default: 100)
+- `offset` (start position, increment by 100)
+
+**Implementation Pattern:**
+```typescript
+async function fetchAllSmartlead(endpoint: string, apiKey: string): Promise<any[]> {
+  let allResults: any[] = [];
+  let offset = 0;
+  const limit = 100;
+
+  while (true) {
+    const url = `${SMARTLEAD_BASE_URL}${endpoint}?api_key=${apiKey}&offset=${offset}&limit=${limit}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    const results = Array.isArray(data) ? data : (data.accounts || data.campaigns || []);
+
+    allResults = allResults.concat(results);
+
+    if (results.length < limit) break; // Last page
+    offset += limit;
+  }
+
+  return allResults;
+}
+```
+
+**Why This Is Critical:**
+- Without pagination, you only get the FIRST PAGE (up to 100 results)
+- Intelsol has 98 mailboxes - was showing only 23 (the ones on page 1)
+- Missing data causes incorrect capacity calculations and lead counts
+- ALL clients are affected, not just large ones
+
+**Lesson Learned (2026-09-08):**
+- Intelsol showed 23 mailboxes instead of 98 → only fetching first page
+- Other clients had incorrect counts too
+- Implemented `fetchAllSmartlead()` function that paginates through all results
+- **This is now implemented in `/functions/api/client-metrics.ts`**
+- NEVER remove or modify this pagination logic
+
+---
+
 ## 📋 Deployment Checklist
 
 ### Before Pushing to GitHub
@@ -488,6 +539,78 @@ intelsol-client-portal/
 3. They use GitHub API to read/write files
 4. `GITHUB_TOKEN` environment variable provides authentication
 5. Functions automatically override `_redirects` fallback rule
+
+---
+
+## 📊 Clients Tab & Mailbox Metrics
+
+**Overview:** The Clients tab (`/app/components/ClientsTab.tsx`) displays real-time metrics for all clients by fetching data from Smartlead API.
+
+**API Endpoint:** `/functions/api/client-metrics.ts`
+
+**Request:** `GET /api/client-metrics?clientId=intelsol`
+
+### Mailbox Logic
+
+**Active vs Inactive Mailboxes:**
+- **Active mailbox:** `message_per_day > 1`
+- **Inactive mailbox:** `message_per_day == 1`
+- **Why:** Setting daily limit to 1 is how user marks mailboxes as "not in use"
+
+**Capacity Calculation:**
+- **Total Capacity** = Sum of `message_per_day` from ACTIVE mailboxes ONLY
+- Inactive mailboxes (limit=1) are NOT counted toward capacity
+- This is the correct number for "how many emails can we send per day"
+
+**Example (Intelsol):**
+- Total mailboxes: 98
+- Active mailboxes: 37 (message_per_day > 1)
+- Inactive mailboxes: 61 (message_per_day == 1)
+- Total capacity: 240/day (sum from 37 active mailboxes)
+
+### Remaining Leads Calculation
+
+**Definition:** Leads that have NOT been sent the first email yet
+
+**Formula:**
+```
+For each ACTIVE campaign:
+  Remaining = Total Leads - Sent Count
+
+Total Remaining Leads = Sum of all ACTIVE campaign remainingLeads
+```
+
+**Days Remaining:** `Math.ceil(remainingLeads / totalCapacity)`
+
+### Data Structure
+
+```typescript
+interface ClientMetrics {
+  clientId: string;
+  clientName: string;
+  mailboxCount: number;              // Total mailboxes
+  activeMailboxCount: number;        // Where message_per_day > 1
+  inactiveMailboxCount: number;      // Where message_per_day == 1
+  totalCapacity: number;             // Sum from active mailboxes
+  remainingLeads: number;            // Leads not yet contacted
+  daysRemaining: number;             // remainingLeads / totalCapacity
+  activeCampaigns: number;           // Count of ACTIVE campaigns
+  campaigns: CampaignDetail[];       // Array of campaign details
+  mailboxes: MailboxDetail[];        // Array of mailbox details
+}
+```
+
+### Critical Requirements
+
+1. **MUST use pagination** - See Hard Rule #6 above
+2. **MUST fetch ALL clients in parallel** - Use `Promise.all()`
+3. **MUST show all 13 clients even if API fails** - Show zeros for failed clients
+4. **MUST only count ACTIVE campaigns** - Status === 'ACTIVE'
+
+**Lesson Learned (2026-09-08):**
+- Implemented active/inactive mailbox tracking
+- Only active mailboxes (limit > 1) count toward capacity
+- This matches user's workflow for marking mailboxes as unused
 
 ---
 
