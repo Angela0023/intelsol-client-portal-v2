@@ -435,5 +435,14 @@
     "dueDate": "2026-09-08",
     "order": 12,
     "comments": []
+  },
+  {
+    "id": "task_1788879375969_j216cr5",
+    "description": "Add more Leads for Intelsol",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 15,
+    "comments": []
   }
 ]
