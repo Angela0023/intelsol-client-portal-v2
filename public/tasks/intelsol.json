@@ -54,6 +54,51 @@
     "comments": []
   },
   {
+    "id": "task_1788783761633_w0iuobz",
+    "description": "Add mailboxes for MBEDTRONIX",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 6,
+    "comments": []
+  },
+  {
+    "id": "task_1788783871548_2pz3xp3",
+    "description": "Add mailboxes Plantryx",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 7,
+    "comments": []
+  },
+  {
+    "id": "task_1785432278082_ukybt1y",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-03",
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1787058675049_057ti7c",
+    "description": "Connect Intelsol mailboxes",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-08-18",
+    "order": 9,
+    "comments": []
+  },
+  {
+    "id": "task_1788181182966_tprteu6",
+    "description": "Build best fit list for Intelsol - contact on SmartLead & HeyReach - use Exa?",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-07",
+    "order": 10,
+    "comments": []
+  },
+  {
     "id": "task_1787045315604_vr7hncd",
     "description": "Create Dashboard for Zen2Fit",
     "assignedTo": "Frosina",
@@ -93,7 +138,7 @@
     "id": "task_1786624131701_6ps219u",
     "description": "Find 1K Leads for AdSigner",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-14",
     "order": 10,
     "comments": []
@@ -102,25 +147,16 @@
     "id": "task_1786624242747_66xzuqy",
     "description": "HOLD - Find 1K Leads for eBliss AI",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-17",
     "order": 11,
-    "comments": []
-  },
-  {
-    "id": "task_1785432278082_ukybt1y",
-    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-03",
-    "order": 12,
     "comments": []
   },
   {
     "id": "task_1786620525639_b35avyg",
     "description": "Add 25K Leads for Intelsol | August",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-17",
     "order": 13,
     "comments": []
@@ -277,15 +313,6 @@
     "comments": []
   },
   {
-    "id": "task_1787058675049_057ti7c",
-    "description": "Connect Intelsol mailboxes",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-18",
-    "order": 14,
-    "comments": []
-  },
-  {
     "id": "task_1787062675963_pzbpkib",
     "description": "Create dashboard for Panorate Media",
     "assignedTo": "Frosina",
@@ -304,19 +331,10 @@
     "comments": []
   },
   {
-    "id": "task_1788181182966_tprteu6",
-    "description": "Build best fit list for Intelsol - contact on SmartLead & HeyReach - use Exa?",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-07",
-    "order": 15,
-    "comments": []
-  },
-  {
     "id": "task_1788783188813_foatz47",
     "description": "Add mailboxes for AdSigner",
     "assignedTo": "Matej",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-09-07",
     "order": 16,
     "comments": []
@@ -325,27 +343,9 @@
     "id": "task_1788783200430_rmspq1t",
     "description": "Add mailboxes for Mountaindrop",
     "assignedTo": "Matej",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-09-07",
     "order": 17,
-    "comments": []
-  },
-  {
-    "id": "task_1788783761633_w0iuobz",
-    "description": "Add mailboxes for MBEDTRONIX",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-09-07",
-    "order": 18,
-    "comments": []
-  },
-  {
-    "id": "task_1788783871548_2pz3xp3",
-    "description": "Add mailboxes Plantryx",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-09-07",
-    "order": 19,
     "comments": []
   }
 ]
