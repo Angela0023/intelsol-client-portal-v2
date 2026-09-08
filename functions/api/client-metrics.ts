@@ -136,7 +136,19 @@ export async function onRequest(context: any) {
 
     // Fetch mailboxes
     const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
+
+    // Debug: Log all mailboxes for this check
+    console.log(`[${clientId}] Total mailboxes in Smartlead: ${allMailboxes.length}`);
+
     const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
+
+    // Debug: Show which mailboxes matched and which didn't
+    console.log(`[${clientId}] Matched ${clientMailboxes.length} mailboxes`);
+    if (clientId === 'intelsol') {
+      console.log(`[${clientId}] Matched mailbox domains:`, clientMailboxes.map(m => m.from_email).slice(0, 5));
+      const unmatched = allMailboxes.filter(m => !matchesMailbox(m.from_email, clientName));
+      console.log(`[${clientId}] Unmatched mailbox domains (first 10):`, unmatched.map(m => m.from_email).slice(0, 10));
+    }
 
     // Fetch campaigns
     const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
@@ -206,6 +218,8 @@ export async function onRequest(context: any) {
     let remainingLeads = 0;
     const campaignDetails: CampaignDetail[] = [];
 
+    console.log(`[${clientId}] Processing ${clientCampaigns.length} campaigns for lead counts`);
+
     for (const campaign of clientCampaigns) {
       try {
         // Get lead counts for this campaign
@@ -222,6 +236,8 @@ export async function onRequest(context: any) {
         const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
         const remaining = Math.max(0, totalLeads - sentCount);
 
+        console.log(`[${clientId}] Campaign ${campaign.name}: total=${totalLeads}, sent=${sentCount}, remaining=${remaining}, status=${campaign.status}`);
+
         // Add to campaign details
         campaignDetails.push({
           name: campaign.name,
@@ -236,7 +252,7 @@ export async function onRequest(context: any) {
           remainingLeads += remaining;
         }
       } catch (err) {
-        console.error(`Error fetching leads for campaign ${campaign.id}:`, err);
+        console.error(`[${clientId}] Error fetching leads for campaign ${campaign.id}:`, err);
         // Still add campaign with zero counts if error
         campaignDetails.push({
           name: campaign.name,
@@ -247,6 +263,8 @@ export async function onRequest(context: any) {
         });
       }
     }
+
+    console.log(`[${clientId}] Total remaining leads from ACTIVE campaigns: ${remainingLeads}`);
 
     // Calculate days remaining
     const daysRemaining = totalCapacity > 0 ? Math.ceil(remainingLeads / totalCapacity) : 0;
