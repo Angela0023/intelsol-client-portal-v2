@@ -92,10 +92,29 @@ export default function ClientsTab() {
       );
 
       const results = await Promise.all(promises);
-      const validResults = results.filter(r => r !== null) as ClientMetrics[];
+
+      // Map results back to ALL_CLIENTS, creating placeholder data for failed requests
+      const allResults: ClientMetrics[] = ALL_CLIENTS.map((client, index) => {
+        if (results[index] !== null) {
+          return results[index];
+        } else {
+          // Create placeholder for clients with no data or failed API call
+          return {
+            clientId: client.id,
+            clientName: client.name,
+            mailboxCount: 0,
+            totalCapacity: 0,
+            remainingLeads: 0,
+            daysRemaining: 0,
+            mailboxes: [],
+            campaigns: [],
+            activeCampaigns: 0,
+          };
+        }
+      });
 
       // Sort by days remaining (ascending) - clients needing attention first
-      validResults.sort((a, b) => {
+      allResults.sort((a, b) => {
         // Show clients with remaining leads first
         if (a.remainingLeads > 0 && b.remainingLeads === 0) return -1;
         if (a.remainingLeads === 0 && b.remainingLeads > 0) return 1;
@@ -109,7 +128,7 @@ export default function ClientsTab() {
         return b.totalCapacity - a.totalCapacity;
       });
 
-      setAllMetrics(validResults);
+      setAllMetrics(allResults);
     } catch (err: any) {
       console.error('Error fetching metrics:', err);
       setError(err.message);
