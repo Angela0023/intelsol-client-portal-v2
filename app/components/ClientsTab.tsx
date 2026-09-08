@@ -76,6 +76,18 @@ export default function ClientsTab() {
   const [sortField, setSortField] = useState<SortField>('daysRemaining');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
 
+  // Sort states for expanded tables (per client)
+  type MailboxSortField = 'email' | 'capacity' | 'enabledDate' | 'status' | 'reputation';
+  type CampaignSortField = 'name' | 'status' | 'totalLeads' | 'sentCount' | 'remainingLeads';
+  const [mailboxSort, setMailboxSort] = useState<{ field: MailboxSortField; direction: SortDirection }>({
+    field: 'email',
+    direction: 'asc',
+  });
+  const [campaignSort, setCampaignSort] = useState<{ field: CampaignSortField; direction: SortDirection }>({
+    field: 'name',
+    direction: 'asc',
+  });
+
   useEffect(() => {
     fetchAllMetrics();
   }, []);
@@ -270,6 +282,116 @@ export default function ClientsTab() {
     return sortDirection === 'asc'
       ? <ArrowUp className="w-3 h-3 text-blue-600" />
       : <ArrowDown className="w-3 h-3 text-blue-600" />;
+  };
+
+  // Mailbox table sorting
+  const handleMailboxSort = (field: MailboxSortField) => {
+    if (mailboxSort.field === field) {
+      setMailboxSort({ field, direction: mailboxSort.direction === 'asc' ? 'desc' : 'asc' });
+    } else {
+      setMailboxSort({ field, direction: 'asc' });
+    }
+  };
+
+  const getMailboxSortIcon = (field: MailboxSortField) => {
+    if (mailboxSort.field !== field) {
+      return <ArrowUpDown className="w-3 h-3 text-slate-400" />;
+    }
+    return mailboxSort.direction === 'asc'
+      ? <ArrowUp className="w-3 h-3 text-blue-600" />
+      : <ArrowDown className="w-3 h-3 text-blue-600" />;
+  };
+
+  // Campaign table sorting
+  const handleCampaignSort = (field: CampaignSortField) => {
+    if (campaignSort.field === field) {
+      setCampaignSort({ field, direction: campaignSort.direction === 'asc' ? 'desc' : 'asc' });
+    } else {
+      setCampaignSort({ field, direction: 'asc' });
+    }
+  };
+
+  const getCampaignSortIcon = (field: CampaignSortField) => {
+    if (campaignSort.field !== field) {
+      return <ArrowUpDown className="w-3 h-3 text-slate-400" />;
+    }
+    return campaignSort.direction === 'asc'
+      ? <ArrowUp className="w-3 h-3 text-blue-600" />
+      : <ArrowDown className="w-3 h-3 text-blue-600" />;
+  };
+
+  // Sort mailboxes
+  const sortMailboxes = (mailboxes: MailboxDetail[]) => {
+    return [...mailboxes].sort((a, b) => {
+      let aValue: string | number;
+      let bValue: string | number;
+
+      switch (mailboxSort.field) {
+        case 'email':
+          aValue = a.email.toLowerCase();
+          bValue = b.email.toLowerCase();
+          break;
+        case 'capacity':
+          aValue = a.capacity;
+          bValue = b.capacity;
+          break;
+        case 'enabledDate':
+          aValue = a.enabledDate ? new Date(a.enabledDate).getTime() : 0;
+          bValue = b.enabledDate ? new Date(b.enabledDate).getTime() : 0;
+          break;
+        case 'status':
+          aValue = a.status.toLowerCase();
+          bValue = b.status.toLowerCase();
+          break;
+        case 'reputation':
+          aValue = a.reputation.toLowerCase();
+          bValue = b.reputation.toLowerCase();
+          break;
+        default:
+          return 0;
+      }
+
+      if (aValue < bValue) return mailboxSort.direction === 'asc' ? -1 : 1;
+      if (aValue > bValue) return mailboxSort.direction === 'asc' ? 1 : -1;
+      return 0;
+    });
+  };
+
+  // Sort campaigns
+  const sortCampaigns = (campaigns: CampaignDetail[]) => {
+    return [...campaigns].sort((a, b) => {
+      let aValue: string | number;
+      let bValue: string | number;
+
+      switch (campaignSort.field) {
+        case 'name':
+          aValue = a.name.toLowerCase();
+          bValue = b.name.toLowerCase();
+          break;
+        case 'status':
+          aValue = a.status.toLowerCase();
+          bValue = b.status.toLowerCase();
+          break;
+        case 'totalLeads':
+          aValue = a.totalLeads;
+          bValue = b.totalLeads;
+          break;
+        case 'sentCount':
+          aValue = a.sentCount;
+          bValue = b.sentCount;
+          break;
+        case 'remainingLeads':
+          aValue = a.remainingLeads;
+          bValue = b.remainingLeads;
+          break;
+        default:
+          return 0;
+      }
+
+      if (aValue < bValue) return campaignSort.direction === 'asc' ? -1 : 1;
+      if (aValue > bValue) return campaignSort.direction === 'asc' ? 1 : -1;
+      return 0;
+    });
   };
 
   if (loading) {
@@ -574,57 +696,101 @@ export default function ClientsTab() {
                           {client.mailboxes.length > 0 && (
                             <div className="space-y-3">
                               <h4 className="text-sm font-semibold text-slate-900">Mailbox Details</h4>
-                              <div className="overflow-x-auto">
-                                <table className="w-full text-sm">
-                                  <thead>
-                                    <tr className="border-b border-slate-200">
-                                      <th className="px-3 py-2 text-left text-xs font-medium text-slate-600">Email</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Capacity</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Enabled Date</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Status</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Reputation</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">In Campaign</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody className="divide-y divide-slate-100">
-                                    {client.mailboxes.map((mailbox, idx) => (
-                                      <tr key={idx} className={!mailbox.inCampaign ? 'opacity-60' : ''}>
-                                        <td className="px-3 py-2 font-mono text-xs">{mailbox.email}</td>
-                                        <td className="px-3 py-2 text-center text-xs font-medium">
-                                          {mailbox.capacity}/day
-                                          {!mailbox.inCampaign && <span className="ml-1 text-amber-600 text-[10px]">(warmup)</span>}
-                                        </td>
-                                        <td className="px-3 py-2 text-center text-xs text-slate-600">
-                                          {mailbox.enabledDate ? new Date(mailbox.enabledDate).toLocaleDateString('en-US', {
-                                            weekday: 'short',
-                                            month: 'short',
-                                            day: 'numeric',
-                                            year: 'numeric'
-                                          }) : 'N/A'}
-                                        </td>
-                                        <td className="px-3 py-2 text-center">
-                                          <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
-                                            mailbox.status === 'ACTIVE'
-                                              ? 'bg-green-100 text-green-800'
-                                              : 'bg-slate-100 text-slate-600'
-                                          }`}>
-                                            {mailbox.status}
-                                          </span>
-                                        </td>
-                                        <td className="px-3 py-2 text-center text-xs">{mailbox.reputation}</td>
-                                        <td className="px-3 py-2 text-center">
-                                          <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
-                                            mailbox.inCampaign
-                                              ? 'bg-blue-100 text-blue-800'
-                                              : 'bg-amber-100 text-amber-800'
-                                          }`}>
-                                            {mailbox.inCampaign ? '✓ Yes' : 'Warmup'}
-                                          </span>
-                                        </td>
+                              <div className="border border-slate-200 rounded-lg overflow-hidden">
+                                <div className="max-h-[400px] overflow-y-auto">
+                                  <table className="w-full text-sm">
+                                    <thead className="bg-white sticky top-0 z-10 border-b border-slate-200">
+                                      <tr>
+                                        <th
+                                          className="px-3 py-2 text-left text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleMailboxSort('email')}
+                                        >
+                                          <div className="flex items-center gap-1">
+                                            Email
+                                            {getMailboxSortIcon('email')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleMailboxSort('capacity')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Capacity
+                                            {getMailboxSortIcon('capacity')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleMailboxSort('enabledDate')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Enabled Date
+                                            {getMailboxSortIcon('enabledDate')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleMailboxSort('status')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Status
+                                            {getMailboxSortIcon('status')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleMailboxSort('reputation')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Reputation
+                                            {getMailboxSortIcon('reputation')}
+                                          </div>
+                                        </th>
+                                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                          In Campaign
+                                        </th>
                                       </tr>
-                                    ))}
-                                  </tbody>
-                                </table>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-100 bg-white">
+                                      {sortMailboxes(client.mailboxes).map((mailbox, idx) => (
+                                        <tr key={idx} className={!mailbox.inCampaign ? 'opacity-60' : ''}>
+                                          <td className="px-3 py-2 font-mono text-xs">{mailbox.email}</td>
+                                          <td className="px-3 py-2 text-center text-xs font-medium">
+                                            {mailbox.capacity}/day
+                                            {!mailbox.inCampaign && <span className="ml-1 text-amber-600 text-[10px]">(warmup)</span>}
+                                          </td>
+                                          <td className="px-3 py-2 text-center text-xs text-slate-600">
+                                            {mailbox.enabledDate ? new Date(mailbox.enabledDate).toLocaleDateString('en-US', {
+                                              weekday: 'short',
+                                              month: 'short',
+                                              day: 'numeric',
+                                              year: 'numeric'
+                                            }) : 'N/A'}
+                                          </td>
+                                          <td className="px-3 py-2 text-center">
+                                            <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
+                                              mailbox.status === 'ACTIVE'
+                                                ? 'bg-green-100 text-green-800'
+                                                : 'bg-slate-100 text-slate-600'
+                                            }`}>
+                                              {mailbox.status}
+                                            </span>
+                                          </td>
+                                          <td className="px-3 py-2 text-center text-xs">{mailbox.reputation}</td>
+                                          <td className="px-3 py-2 text-center">
+                                            <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
+                                              mailbox.inCampaign
+                                                ? 'bg-blue-100 text-blue-800'
+                                                : 'bg-amber-100 text-amber-800'
+                                            }`}>
+                                              {mailbox.inCampaign ? '✓ Yes' : 'Warmup'}
+                                            </span>
+                                          </td>
+                                        </tr>
+                                      ))}
+                                    </tbody>
+                                  </table>
+                                </div>
                               </div>
                             </div>
                           )}
@@ -633,39 +799,81 @@ export default function ClientsTab() {
                           {client.campaigns && client.campaigns.length > 0 && (
                             <div className="space-y-3">
                               <h4 className="text-sm font-semibold text-slate-900">Campaign Details</h4>
-                              <div className="overflow-x-auto">
-                                <table className="w-full text-sm">
-                                  <thead>
-                                    <tr className="border-b border-slate-200">
-                                      <th className="px-3 py-2 text-left text-xs font-medium text-slate-600">Campaign Name</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Status</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Total Leads</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Sent</th>
-                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Remaining</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody className="divide-y divide-slate-100">
-                                    {client.campaigns.map((campaign, idx) => (
-                                      <tr key={idx}>
-                                        <td className="px-3 py-2 text-xs">{campaign.name}</td>
-                                        <td className="px-3 py-2 text-center">
-                                          <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
-                                            campaign.status === 'ACTIVE'
-                                              ? 'bg-green-100 text-green-800'
-                                              : campaign.status === 'PAUSED'
-                                              ? 'bg-amber-100 text-amber-800'
-                                              : 'bg-slate-100 text-slate-600'
-                                          }`}>
-                                            {campaign.status}
-                                          </span>
-                                        </td>
-                                        <td className="px-3 py-2 text-center text-xs font-medium">{campaign.totalLeads.toLocaleString()}</td>
-                                        <td className="px-3 py-2 text-center text-xs">{campaign.sentCount.toLocaleString()}</td>
-                                        <td className="px-3 py-2 text-center text-xs font-medium">{campaign.remainingLeads.toLocaleString()}</td>
+                              <div className="border border-slate-200 rounded-lg overflow-hidden">
+                                <div className="max-h-[400px] overflow-y-auto">
+                                  <table className="w-full text-sm">
+                                    <thead className="bg-white sticky top-0 z-10 border-b border-slate-200">
+                                      <tr>
+                                        <th
+                                          className="px-3 py-2 text-left text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleCampaignSort('name')}
+                                        >
+                                          <div className="flex items-center gap-1">
+                                            Campaign Name
+                                            {getCampaignSortIcon('name')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleCampaignSort('status')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Status
+                                            {getCampaignSortIcon('status')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleCampaignSort('totalLeads')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Total Leads
+                                            {getCampaignSortIcon('totalLeads')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleCampaignSort('sentCount')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Sent
+                                            {getCampaignSortIcon('sentCount')}
+                                          </div>
+                                        </th>
+                                        <th
+                                          className="px-3 py-2 text-center text-xs font-medium text-slate-600 cursor-pointer hover:bg-slate-50"
+                                          onClick={() => handleCampaignSort('remainingLeads')}
+                                        >
+                                          <div className="flex items-center justify-center gap-1">
+                                            Remaining
+                                            {getCampaignSortIcon('remainingLeads')}
+                                          </div>
+                                        </th>
                                       </tr>
-                                    ))}
-                                  </tbody>
-                                </table>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-100 bg-white">
+                                      {sortCampaigns(client.campaigns).map((campaign, idx) => (
+                                        <tr key={idx}>
+                                          <td className="px-3 py-2 text-xs">{campaign.name}</td>
+                                          <td className="px-3 py-2 text-center">
+                                            <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
+                                              campaign.status === 'ACTIVE'
+                                                ? 'bg-green-100 text-green-800'
+                                                : campaign.status === 'PAUSED'
+                                                ? 'bg-amber-100 text-amber-800'
+                                                : 'bg-slate-100 text-slate-600'
+                                            }`}>
+                                              {campaign.status}
+                                            </span>
+                                          </td>
+                                          <td className="px-3 py-2 text-center text-xs font-medium">{campaign.totalLeads.toLocaleString()}</td>
+                                          <td className="px-3 py-2 text-center text-xs">{campaign.sentCount.toLocaleString()}</td>
+                                          <td className="px-3 py-2 text-center text-xs font-medium">{campaign.remainingLeads.toLocaleString()}</td>
+                                        </tr>
+                                      ))}
+                                    </tbody>
+                                  </table>
+                                </div>
                               </div>
                             </div>
                           )}
