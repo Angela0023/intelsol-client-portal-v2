@@ -225,28 +225,35 @@ export async function onRequest(context: any) {
 
     for (const campaign of clientCampaigns) {
       try {
-        // Get lead counts for this campaign
+        // Get lead counts - try without limit to get proper total count
         const leadsResponse: any = await fetchSmartlead(
-          `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
+          `/campaigns/${campaign.id}/leads`,
           apiKey
         );
 
-        // Debug: Log the actual response structure
-        if (clientId === 'intelsol' && campaign.name.includes('08/Sept/26')) {
-          console.log(`[${clientId}] Raw leads response for ${campaign.name}:`, JSON.stringify(leadsResponse));
+        // Debug: Log the actual response structure for first Intelsol campaign
+        if (clientId === 'intelsol' && campaignDetails.length === 0) {
+          console.log(`[${clientId}] Raw leads response structure:`, JSON.stringify(leadsResponse).substring(0, 500));
         }
 
         // Get analytics to find how many have been sent
         const analytics = await fetchSmartlead(`/campaigns/${campaign.id}/analytics`, apiKey);
         const sentCount = parseInt(String(analytics.unique_sent_count || 0));
 
-        // Try multiple possible fields for total lead count
-        const totalLeads = leadsResponse.total_leads
-          || leadsResponse.total_count
-          || leadsResponse.totalLeads
-          || leadsResponse.count
-          || (Array.isArray(leadsResponse) ? leadsResponse.length : 0)
-          || 0;
+        // Handle different possible response structures
+        let totalLeads = 0;
+        if (leadsResponse.total_leads) {
+          totalLeads = leadsResponse.total_leads;
+        } else if (leadsResponse.total_count) {
+          totalLeads = leadsResponse.total_count;
+        } else if (Array.isArray(leadsResponse)) {
+          totalLeads = leadsResponse.length;
+        } else if (leadsResponse.leads && Array.isArray(leadsResponse.leads)) {
+          totalLeads = leadsResponse.leads.length;
+          // If there's a total field alongside the leads array, use that instead
+          if (leadsResponse.total) totalLeads = leadsResponse.total;
+          if (leadsResponse.total_count) totalLeads = leadsResponse.total_count;
+        }
 
         const remaining = Math.max(0, totalLeads - sentCount);
 
