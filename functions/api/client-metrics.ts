@@ -201,13 +201,13 @@ export async function onRequest(context: any) {
         capacity: capacity,
         status: mb.warmup_details?.status || 'N/A',
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
-        isActive: isActive,
+        inCampaign: isActive, // Frontend expects 'inCampaign'
         enabledDate: enabledDate,
       };
     });
 
     // Total capacity = sum of capacity from ACTIVE mailboxes only
-    const activeMailboxes = mailboxDetails.filter(mb => mb.isActive);
+    const activeMailboxes = mailboxDetails.filter(mb => mb.inCampaign);
     const totalCapacity = activeMailboxes.reduce((sum, mb) => sum + mb.capacity, 0);
     const activeCount = activeMailboxes.length;
     const inactiveCount = clientMailboxes.length - activeCount;
