@@ -5,7 +5,6 @@
  * - Mailbox count (active and inactive)
  * - Sending capacity per mailbox
  * - Total sending capacity
- * - Campaign count per mailbox
  * - Remaining leads (not yet contacted)
  * - Days of capacity remaining
  */
@@ -184,56 +183,6 @@ export async function onRequest(context: any) {
     console.log(`[${clientId}] Total campaigns in Smartlead: ${allCampaigns.length}`);
     console.log(`[${clientId}] Matched campaigns: ${clientCampaigns.length}`);
 
-    // Fetch email accounts for campaigns (batched, with error handling)
-    const emailToCampaignCount = new Map<string, number>();
-
-    try {
-      console.log(`[${clientId}] Attempting to fetch email accounts for campaigns...`);
-
-      // Batch requests in groups of 10 to avoid rate limits
-      const batchSize = 10;
-      for (let i = 0; i < clientCampaigns.length; i += batchSize) {
-        const batch = clientCampaigns.slice(i, i + batchSize);
-
-        const batchPromises = batch.map(campaign =>
-          fetchSmartlead(`/campaigns/${campaign.id}/email-accounts`, apiKey)
-            .then(accounts => {
-              // Log first response to verify structure
-              if (i === 0 && accounts && accounts.length > 0) {
-                console.log(`[${clientId}] Sample email-accounts response:`, JSON.stringify(accounts[0]));
-              }
-              return { campaignId: campaign.id, accounts: accounts || [] };
-            })
-            .catch(err => {
-              console.error(`[${clientId}] Error fetching email accounts for campaign ${campaign.id}:`, err.message);
-              return { campaignId: campaign.id, accounts: [] };
-            })
-        );
-
-        const batchResults = await Promise.all(batchPromises);
-
-        // Build map from batch results
-        batchResults.forEach(result => {
-          if (Array.isArray(result.accounts)) {
-            result.accounts.forEach((account: any) => {
-              // Try multiple possible email field names
-              const email = account.from_email || account.email || account.from_address;
-              if (email) {
-                const normalizedEmail = email.toLowerCase();
-                emailToCampaignCount.set(normalizedEmail, (emailToCampaignCount.get(normalizedEmail) || 0) + 1);
-              }
-            });
-          }
-        });
-      }
-
-      console.log(`[${clientId}] Successfully built campaign count map for ${emailToCampaignCount.size} emails`);
-    } catch (err: any) {
-      console.error(`[${clientId}] Failed to fetch campaign email accounts:`, err.message);
-      console.log(`[${clientId}] Continuing without campaign counts (will show 0 for all)`);
-      // Map stays empty, all mailboxes will show campaignCount: 0
-    }
-
     // Calculate mailbox details
     const mailboxDetails = clientMailboxes.map(mb => {
       const capacity = mb.message_per_day || 0;
@@ -246,9 +195,6 @@ export async function onRequest(context: any) {
         || mb.warmup_details?.warmup_enabled_at
         || null;
 
-      // Get campaign count (defaults to 0 if map is empty or email not found)
-      const campaignCount = emailToCampaignCount.get(mb.from_email.toLowerCase()) || 0;
-
       return {
         email: mb.from_email,
         name: mb.from_name,
@@ -257,7 +203,6 @@ export async function onRequest(context: any) {
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
         inCampaign: isActive, // Frontend expects 'inCampaign'
         enabledDate: enabledDate,
-        campaignCount: campaignCount,
       };
     });
 
