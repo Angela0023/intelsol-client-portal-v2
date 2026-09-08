@@ -138,25 +138,69 @@ export async function onRequest(context: any) {
     const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
     const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
 
-    // Calculate total sending capacity - COUNT ALL MATCHING MAILBOXES
+    // Fetch campaigns
+    const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
+    const clientCampaigns = allCampaigns.filter(c => matchesCampaign(c.name, clientName));
+
+    // Get mailboxes assigned to campaigns
+    const emailsInCampaigns = new Set<string>();
+
+    // First check if campaigns list already includes email_accounts
+    console.log(`[${clientId}] Checking ${clientCampaigns.length} campaigns for email accounts`);
+
+    for (const campaign of clientCampaigns) {
+      // Check if campaign object already has email_accounts
+      if (campaign.email_accounts && Array.isArray(campaign.email_accounts)) {
+        console.log(`[${clientId}] Campaign ${campaign.id} has ${campaign.email_accounts.length} email accounts in list`);
+        campaign.email_accounts.forEach((account: any) => {
+          if (account.from_email) {
+            emailsInCampaigns.add(account.from_email.toLowerCase());
+          }
+        });
+      } else {
+        // Try fetching individual campaign details
+        try {
+          const campaignDetail = await fetchSmartlead(`/campaigns/${campaign.id}`, apiKey);
+          console.log(`[${clientId}] Fetched campaign ${campaign.id} details, has email_accounts:`, !!campaignDetail.email_accounts);
+
+          if (campaignDetail.email_accounts && Array.isArray(campaignDetail.email_accounts)) {
+            console.log(`[${clientId}] Campaign ${campaign.id} details has ${campaignDetail.email_accounts.length} email accounts`);
+            campaignDetail.email_accounts.forEach((account: any) => {
+              if (account.from_email) {
+                emailsInCampaigns.add(account.from_email.toLowerCase());
+              }
+            });
+          }
+        } catch (err) {
+          console.error(`[${clientId}] Error fetching campaign ${campaign.id} details:`, err);
+        }
+      }
+    }
+
+    console.log(`[${clientId}] Total unique emails in campaigns: ${emailsInCampaigns.size}`);
+    console.log(`[${clientId}] Emails in campaigns:`, Array.from(emailsInCampaigns));
+
+    // Calculate total sending capacity
     const mailboxDetails = clientMailboxes.map(mb => {
-      // Use message_per_day (configured limit) as primary source
       const capacity = mb.message_per_day || mb.warmup_details?.max_email_per_day || 0;
+      const inCampaign = emailsInCampaigns.size === 0 || emailsInCampaigns.has(mb.from_email.toLowerCase());
+
       return {
         email: mb.from_email,
         name: mb.from_name,
         capacity: capacity,
         status: mb.warmup_details?.status || 'N/A',
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
-        inCampaign: true, // Simplified: assume all mailboxes are in use
+        inCampaign: inCampaign,
       };
     });
 
-    const totalCapacity = mailboxDetails.reduce((sum, mb) => sum + mb.capacity, 0);
+    // If we got campaign email data, use it; otherwise count all mailboxes
+    const totalCapacity = emailsInCampaigns.size > 0
+      ? mailboxDetails.filter(mb => mb.inCampaign).reduce((sum, mb) => sum + mb.capacity, 0)
+      : mailboxDetails.reduce((sum, mb) => sum + mb.capacity, 0);
 
-    // Fetch campaigns to count remaining leads
-    const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
-    const clientCampaigns = allCampaigns.filter(c => matchesCampaign(c.name, clientName));
+    console.log(`[${clientId}] Total capacity: ${totalCapacity} (from ${mailboxDetails.filter(mb => mb.inCampaign).length} mailboxes)`);
 
     // Count remaining leads and collect campaign details
     let remainingLeads = 0;

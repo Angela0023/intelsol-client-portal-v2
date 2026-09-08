@@ -581,13 +581,17 @@ export default function ClientsTab() {
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Capacity</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Status</th>
                                       <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">Reputation</th>
+                                      <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">In Campaign</th>
                                     </tr>
                                   </thead>
                                   <tbody className="divide-y divide-slate-100">
                                     {client.mailboxes.map((mailbox, idx) => (
-                                      <tr key={idx}>
+                                      <tr key={idx} className={!mailbox.inCampaign ? 'opacity-60' : ''}>
                                         <td className="px-3 py-2 font-mono text-xs">{mailbox.email}</td>
-                                        <td className="px-3 py-2 text-center text-xs font-medium">{mailbox.capacity}/day</td>
+                                        <td className="px-3 py-2 text-center text-xs font-medium">
+                                          {mailbox.capacity}/day
+                                          {!mailbox.inCampaign && <span className="ml-1 text-amber-600 text-[10px]">(warmup)</span>}
+                                        </td>
                                         <td className="px-3 py-2 text-center">
                                           <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
                                             mailbox.status === 'ACTIVE'
@@ -598,6 +602,15 @@ export default function ClientsTab() {
                                           </span>
                                         </td>
                                         <td className="px-3 py-2 text-center text-xs">{mailbox.reputation}</td>
+                                        <td className="px-3 py-2 text-center">
+                                          <span className={`inline-flex px-2 py-0.5 rounded text-xs font-medium ${
+                                            mailbox.inCampaign
+                                              ? 'bg-blue-100 text-blue-800'
+                                              : 'bg-amber-100 text-amber-800'
+                                          }`}>
+                                            {mailbox.inCampaign ? '✓ Yes' : 'Warmup'}
+                                          </span>
+                                        </td>
                                       </tr>
                                     ))}
                                   </tbody>
