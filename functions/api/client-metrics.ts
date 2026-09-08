@@ -97,6 +97,37 @@ async function fetchSmartlead(endpoint: string, apiKey: string): Promise<any> {
   return await response.json();
 }
 
+// Fetch ALL results from a paginated endpoint
+async function fetchAllSmartlead(endpoint: string, apiKey: string): Promise<any[]> {
+  let allResults: any[] = [];
+  let offset = 0;
+  const limit = 100; // Max allowed by Smartlead
+
+  while (true) {
+    const separator = endpoint.includes('?') ? '&' : '?';
+    const url = `${SMARTLEAD_BASE_URL}${endpoint}${separator}api_key=${apiKey}&offset=${offset}&limit=${limit}`;
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Smartlead API error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const results = Array.isArray(data) ? data : (data.accounts || data.campaigns || data.leads || []);
+
+    allResults = allResults.concat(results);
+
+    // If we got less than the limit, we've reached the last page
+    if (results.length < limit) {
+      break;
+    }
+
+    offset += limit;
+  }
+
+  return allResults;
+}
+
 export async function onRequest(context: any) {
   const { request, env } = context;
   const url = new URL(request.url);
@@ -134,22 +165,19 @@ export async function onRequest(context: any) {
       throw new Error('SMARTLEAD_API_KEY not configured');
     }
 
-    // Fetch mailboxes
-    const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
+    // Fetch ALL mailboxes (paginated)
+    const allMailboxes: Mailbox[] = await fetchAllSmartlead('/email-accounts', apiKey);
     const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
 
-    // Debug logging for Intelsol
-    if (clientId === 'intelsol') {
-      console.log(`[${clientId}] Total mailboxes in Smartlead: ${allMailboxes.length}`);
-      console.log(`[${clientId}] Matched mailboxes: ${clientMailboxes.length}`);
-      console.log(`[${clientId}] First 10 matched domains:`, clientMailboxes.slice(0, 10).map(m => m.from_email));
-      const unmatched = allMailboxes.filter(m => !matchesMailbox(m.from_email, clientName));
-      console.log(`[${clientId}] Sample unmatched domains:`, unmatched.slice(0, 10).map(m => m.from_email));
-    }
+    console.log(`[${clientId}] Total mailboxes in Smartlead: ${allMailboxes.length}`);
+    console.log(`[${clientId}] Matched mailboxes: ${clientMailboxes.length}`);
 
-    // Fetch campaigns
-    const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
+    // Fetch ALL campaigns (paginated)
+    const allCampaigns: Campaign[] = await fetchAllSmartlead('/campaigns', apiKey);
     const clientCampaigns = allCampaigns.filter(c => matchesCampaign(c.name, clientName));
+
+    console.log(`[${clientId}] Total campaigns in Smartlead: ${allCampaigns.length}`);
+    console.log(`[${clientId}] Matched campaigns: ${clientCampaigns.length}`);
 
     // Calculate mailbox details
     const mailboxDetails = clientMailboxes.map(mb => {
@@ -179,7 +207,7 @@ export async function onRequest(context: any) {
     for (const campaign of clientCampaigns) {
       try {
         // Get lead counts for this campaign
-        const leadsResponse: LeadStats = await fetchSmartlead(
+        const leadsResponse: any = await fetchSmartlead(
           `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
           apiKey
         );
@@ -191,6 +219,12 @@ export async function onRequest(context: any) {
         // Total leads - sent = remaining
         const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
         const remaining = Math.max(0, totalLeads - sentCount);
+
+        if (clientId === 'intelsol' && totalLeads === 0) {
+          console.log(`[${clientId}] Campaign "${campaign.name}" shows 0 leads`);
+          console.log(`[${clientId}] Leads response:`, JSON.stringify(leadsResponse).substring(0, 200));
+          console.log(`[${clientId}] Analytics:`, JSON.stringify(analytics).substring(0, 200));
+        }
 
         // Add to campaign details
         campaignDetails.push({
