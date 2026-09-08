@@ -81,11 +81,8 @@ function matchesCampaign(campaignName: string, clientName: string): boolean {
 function matchesMailbox(email: string, clientName: string): boolean {
   // Extract domain (everything after @)
   const domain = email.split('@')[1] || '';
-
-  // Normalize both: lowercase, remove all non-alphanumeric for flexible matching
-  const normalizedDomain = domain.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const normalizedClient = clientName.toLowerCase().replace(/[^a-z0-9]/g, '');
-
+  const normalizedDomain = domain.toLowerCase().replace(/[\s-]/g, '');
+  const normalizedClient = clientName.toLowerCase().replace(/[\s-]/g, '');
   return normalizedDomain.includes(normalizedClient);
 }
 
@@ -139,19 +136,7 @@ export async function onRequest(context: any) {
 
     // Fetch mailboxes
     const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
-
-    // Debug: Log all mailboxes for this check
-    console.log(`[${clientId}] Total mailboxes in Smartlead: ${allMailboxes.length}`);
-
     const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
-
-    // Debug: Show which mailboxes matched and which didn't
-    console.log(`[${clientId}] Matched ${clientMailboxes.length} mailboxes`);
-    if (clientId === 'intelsol') {
-      console.log(`[${clientId}] Matched mailbox domains:`, clientMailboxes.map(m => m.from_email).slice(0, 5));
-      const unmatched = allMailboxes.filter(m => !matchesMailbox(m.from_email, clientName));
-      console.log(`[${clientId}] Unmatched mailbox domains (first 10):`, unmatched.map(m => m.from_email).slice(0, 10));
-    }
 
     // Fetch campaigns
     const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
@@ -221,21 +206,21 @@ export async function onRequest(context: any) {
     let remainingLeads = 0;
     const campaignDetails: CampaignDetail[] = [];
 
-    console.log(`[${clientId}] Processing ${clientCampaigns.length} campaigns for lead counts`);
-
     for (const campaign of clientCampaigns) {
       try {
-        // Get analytics - this has both total leads and sent count
+        // Get lead counts for this campaign
+        const leadsResponse: LeadStats = await fetchSmartlead(
+          `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
+          apiKey
+        );
+
+        // Get analytics to find how many have been sent
         const analytics = await fetchSmartlead(`/campaigns/${campaign.id}/analytics`, apiKey);
+        const sentCount = parseInt(String(analytics.unique_sent_count || 0));
 
-        console.log(`[${clientId}] Analytics for ${campaign.name}:`, JSON.stringify(analytics));
-
-        // Extract counts from analytics
-        const totalLeads = parseInt(String(analytics.total_leads || analytics.lead_count || analytics.leads_count || 0));
-        const sentCount = parseInt(String(analytics.unique_sent_count || analytics.sent_count || 0));
+        // Total leads - sent = remaining
+        const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
         const remaining = Math.max(0, totalLeads - sentCount);
-
-        console.log(`[${clientId}] Campaign ${campaign.name}: total=${totalLeads}, sent=${sentCount}, remaining=${remaining}, status=${campaign.status}`);
 
         // Add to campaign details
         campaignDetails.push({
@@ -251,7 +236,7 @@ export async function onRequest(context: any) {
           remainingLeads += remaining;
         }
       } catch (err) {
-        console.error(`[${clientId}] Error fetching leads for campaign ${campaign.id}:`, err);
+        console.error(`Error fetching leads for campaign ${campaign.id}:`, err);
         // Still add campaign with zero counts if error
         campaignDetails.push({
           name: campaign.name,
@@ -262,8 +247,6 @@ export async function onRequest(context: any) {
         });
       }
     }
-
-    console.log(`[${clientId}] Total remaining leads from ACTIVE campaigns: ${remainingLeads}`);
 
     // Calculate days remaining
     const daysRemaining = totalCapacity > 0 ? Math.ceil(remainingLeads / totalCapacity) : 0;
