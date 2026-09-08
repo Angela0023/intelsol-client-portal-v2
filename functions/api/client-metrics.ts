@@ -183,42 +183,6 @@ export async function onRequest(context: any) {
     console.log(`[${clientId}] Total campaigns in Smartlead: ${allCampaigns.length}`);
     console.log(`[${clientId}] Matched campaigns: ${clientCampaigns.length}`);
 
-    // Fetch email accounts for each campaign (parallelized)
-    console.log(`[${clientId}] Fetching email accounts for ${clientCampaigns.length} campaigns...`);
-    const campaignEmailPromises = clientCampaigns.map(campaign =>
-      fetchSmartlead(`/campaigns/${campaign.id}/email-accounts`, apiKey)
-        .then(accounts => ({ campaignId: campaign.id, accounts }))
-        .catch(err => {
-          console.error(`[${clientId}] Error fetching email accounts for campaign ${campaign.id}:`, err);
-          return { campaignId: campaign.id, accounts: [] };
-        })
-    );
-
-    const campaignEmailResults = await Promise.all(campaignEmailPromises);
-
-    // Build map: email → count of campaigns
-    const emailToCampaignCount = new Map<string, number>();
-
-    campaignEmailResults.forEach(result => {
-      if (Array.isArray(result.accounts)) {
-        result.accounts.forEach((account: any) => {
-          // Try multiple possible email field names
-          const email = account.from_email || account.email || account.from_address;
-          if (email) {
-            const normalizedEmail = email.toLowerCase();
-            emailToCampaignCount.set(normalizedEmail, (emailToCampaignCount.get(normalizedEmail) || 0) + 1);
-          }
-        });
-      }
-    });
-
-    // Debug: Log first campaign's email accounts structure (only for first client processed)
-    if (campaignEmailResults.length > 0 && campaignEmailResults[0].accounts.length > 0) {
-      console.log(`[${clientId}] Sample email account structure:`, JSON.stringify(campaignEmailResults[0].accounts[0]).substring(0, 300));
-    }
-
-    console.log(`[${clientId}] Built campaign count map for ${emailToCampaignCount.size} unique emails`);
-
     // Calculate mailbox details
     const mailboxDetails = clientMailboxes.map(mb => {
       const capacity = mb.message_per_day || 0;
@@ -231,9 +195,6 @@ export async function onRequest(context: any) {
         || mb.warmup_details?.warmup_enabled_at
         || null;
 
-      // Get campaign count for this mailbox
-      const campaignCount = emailToCampaignCount.get(mb.from_email.toLowerCase()) || 0;
-
       return {
         email: mb.from_email,
         name: mb.from_name,
@@ -242,7 +203,6 @@ export async function onRequest(context: any) {
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
         isActive: isActive,
         enabledDate: enabledDate,
-        campaignCount: campaignCount,
       };
     });
 
