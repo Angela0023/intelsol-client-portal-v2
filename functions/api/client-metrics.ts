@@ -138,13 +138,23 @@ export async function onRequest(context: any) {
     const allMailboxes: Mailbox[] = await fetchSmartlead('/email-accounts', apiKey);
     const clientMailboxes = allMailboxes.filter(m => matchesMailbox(m.from_email, clientName));
 
+    // Debug logging for Intelsol
+    if (clientId === 'intelsol') {
+      console.log(`[${clientId}] Total mailboxes in Smartlead: ${allMailboxes.length}`);
+      console.log(`[${clientId}] Matched mailboxes: ${clientMailboxes.length}`);
+      console.log(`[${clientId}] First 10 matched domains:`, clientMailboxes.slice(0, 10).map(m => m.from_email));
+      const unmatched = allMailboxes.filter(m => !matchesMailbox(m.from_email, clientName));
+      console.log(`[${clientId}] Sample unmatched domains:`, unmatched.slice(0, 10).map(m => m.from_email));
+    }
+
     // Fetch campaigns
     const allCampaigns: Campaign[] = await fetchSmartlead('/campaigns/', apiKey);
     const clientCampaigns = allCampaigns.filter(c => matchesCampaign(c.name, clientName));
 
-    // Calculate total sending capacity - count ALL client mailboxes
+    // Calculate mailbox details
     const mailboxDetails = clientMailboxes.map(mb => {
-      const capacity = mb.message_per_day || mb.warmup_details?.max_email_per_day || 0;
+      const capacity = mb.message_per_day || 0;
+      const isActive = capacity > 1; // Active if daily limit > 1
 
       return {
         email: mb.from_email,
@@ -152,11 +162,15 @@ export async function onRequest(context: any) {
         capacity: capacity,
         status: mb.warmup_details?.status || 'N/A',
         reputation: mb.warmup_details?.warmup_reputation || 'N/A',
-        inCampaign: true, // Always true for now - simplified logic
+        isActive: isActive,
       };
     });
 
-    const totalCapacity = mailboxDetails.reduce((sum, mb) => sum + mb.capacity, 0);
+    // Total capacity = sum of capacity from ACTIVE mailboxes only
+    const activeMailboxes = mailboxDetails.filter(mb => mb.isActive);
+    const totalCapacity = activeMailboxes.reduce((sum, mb) => sum + mb.capacity, 0);
+    const activeCount = activeMailboxes.length;
+    const inactiveCount = clientMailboxes.length - activeCount;
 
     // Count remaining leads and collect campaign details
     let remainingLeads = 0;
@@ -211,6 +225,8 @@ export async function onRequest(context: any) {
       clientId,
       clientName,
       mailboxCount: clientMailboxes.length,
+      activeMailboxCount: activeCount,
+      inactiveMailboxCount: inactiveCount,
       totalCapacity,
       remainingLeads,
       daysRemaining,
