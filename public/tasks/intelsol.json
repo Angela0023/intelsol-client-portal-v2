@@ -347,5 +347,77 @@
     "dueDate": "2026-09-07",
     "order": 17,
     "comments": []
+  },
+  {
+    "id": "task_1788856145702_buif1tu",
+    "description": "Review and fix Intelsol mailboxes limit",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1788856193492_duoitwo",
+    "description": "Add new feature to Dashoabrd - sending capacity, days left",
+    "assignedTo": "Frosina",
+    "status": "done",
+    "dueDate": "2026-09-08",
+    "order": 12,
+    "comments": []
+  },
+  {
+    "id": "task_1788856226121_36yxo3j",
+    "description": "AdSigner - add more Germany leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 12,
+    "comments": []
+  },
+  {
+    "id": "task_1788856250599_61cnq5b",
+    "description": "AdSigner - add more Serbia & Croatia leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-11",
+    "order": 13,
+    "comments": []
+  },
+  {
+    "id": "task_1788856284378_4uja5jt",
+    "description": "People Focus - Write the sequences in German",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 14,
+    "comments": []
+  },
+  {
+    "id": "task_1788856296481_wu36e36",
+    "description": "People Focus - add more leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 15,
+    "comments": []
+  },
+  {
+    "id": "task_1788856325060_f6iu6dc",
+    "description": "Panoramate Media - find 1-2K leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 16,
+    "comments": []
+  },
+  {
+    "id": "task_1788856344664_3th2p8k",
+    "description": "Panoramate Media - add sequences to Smartlead",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-09-08",
+    "order": 17,
+    "comments": []
   }
 ]
