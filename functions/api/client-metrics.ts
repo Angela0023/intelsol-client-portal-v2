@@ -265,7 +265,10 @@ export async function onRequest(context: any) {
     }
 
     // Calculate days remaining
-    const daysRemaining = totalCapacity > 0 ? Math.ceil(remainingLeads / totalCapacity) : 0;
+    // Only 60% of capacity goes to new leads (first emails)
+    // The other 40% is used for follow-up emails
+    const effectiveCapacity = totalCapacity * 0.60;
+    const daysRemaining = effectiveCapacity > 0 ? Math.ceil(remainingLeads / effectiveCapacity) : 0;
 
     const result = {
       clientId,
