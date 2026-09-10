@@ -26,6 +26,7 @@ interface ClientMetrics {
   clientName: string;
   mailboxCount: number;
   totalCapacity: number;
+  newLeadsCapacity: number;
   remainingLeads: number;
   daysRemaining: number;
   mailboxes: MailboxDetail[];
@@ -150,6 +151,7 @@ export default function ClientsTab() {
             clientName: client.name,
             mailboxCount: 0,
             totalCapacity: 0,
+            newLeadsCapacity: 0,
             remainingLeads: 0,
             daysRemaining: 0,
             mailboxes: [],
@@ -645,8 +647,17 @@ export default function ClientsTab() {
                   onClick={() => handleSort('totalCapacity')}
                 >
                   <div className="flex items-center justify-center gap-2">
-                    Capacity/Day
+                    <div className="flex flex-col items-center">
+                      <span>Total Capacity</span>
+                      <span className="text-[10px] font-normal text-slate-500 normal-case">(100%)</span>
+                    </div>
                     {getSortIcon('totalCapacity')}
+                  </div>
+                </th>
+                <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
+                  <div className="flex flex-col items-center">
+                    <span>New Leads</span>
+                    <span className="text-[10px] font-normal text-slate-500 normal-case">(60% of total)</span>
                   </div>
                 </th>
                 <th
@@ -702,6 +713,9 @@ export default function ClientsTab() {
                     <td className="px-4 py-4 text-sm text-center font-medium text-slate-900">
                       {client.totalCapacity.toLocaleString()}
                     </td>
+                    <td className="px-4 py-4 text-sm text-center font-medium text-blue-600">
+                      {client.newLeadsCapacity.toLocaleString()}
+                    </td>
                     <td className="px-4 py-4 text-sm text-center text-slate-900">
                       {client.remainingLeads.toLocaleString()}
                     </td>
@@ -723,7 +737,7 @@ export default function ClientsTab() {
                   {/* Expanded Row - Mailbox & Campaign Details */}
                   {expandedClient === client.clientId && (
                     <tr>
-                      <td colSpan={7} className="px-4 py-4 bg-slate-50">
+                      <td colSpan={8} className="px-4 py-4 bg-slate-50">
                         <div className="space-y-6">
                           {/* Mailbox Details */}
                           {client.mailboxes.length > 0 && (

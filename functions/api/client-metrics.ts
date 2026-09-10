@@ -277,6 +277,7 @@ export async function onRequest(context: any) {
       activeMailboxCount: activeCount,
       inactiveMailboxCount: inactiveCount,
       totalCapacity,
+      newLeadsCapacity: Math.round(effectiveCapacity), // 60% of total capacity
       remainingLeads,
       daysRemaining,
       mailboxes: mailboxDetails,
