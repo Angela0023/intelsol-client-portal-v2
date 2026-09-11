@@ -16,7 +16,7 @@
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Preventing productivity and revenue loss at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on my note about closing the gap between detection and resolution.\n\nCompanies with your profile - 3,000+ endpoints, mature ITSM stack (ServiceNow/BMC), growing L2/L3 ticket backlog - typically have the problem quantified (ticket volume, MTTR data) but haven't automated the actual fix.\n\nThat's exactly where eBliss fits:\n\n\"A lot of these tools can tell us what's wrong, but they're not giving us that easy button to go fix it. I'm really looking for how to fix, and then quickly turning that into a script that I could deploy across the environment.\"\n- SVP of End User Computing, Fortune 250 company\n\nThe business case builds itself when you're already tracking tickets, MTTR, and revenue impact from application downtime.\n\nQuick call to explore?\n\nBest,\n{{sender_name}}"
+        "body": "Hi {{first_name}},\n\nFollowing up on my note below about closing the gap between detection and resolution at {{company_name}}.\n\nStill relevant?\n\nBest,\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
