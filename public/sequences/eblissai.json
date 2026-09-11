@@ -22,7 +22,7 @@
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: Preventing productivity and revenue loss at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nLast note - I understand your calendar is full.\n\nIf high MTTR, L2/L3 ticket backlog, or revenue loss from critical application failures is becoming a problem, we've helped mid-market and enterprise organizations automate that workload in under 90 days.\n\nWe're an Autonomous Execution Layer - not just another tool that flags problems. We figure out what's wrong and fix it, with little to no human intervention.\n\nHappy to share a quick case study from a company similar to {{company_name}}. Just let me know.\n\nBest,\n{{sender_name}}"
+        "body": "Hi {{first_name}},\n\nLast note on this.\n\nMost companies your size are tracking how many support tickets they get and how long they take to fix. But those tickets still need people to manually resolve them.\n\nIs that something you're looking to automate.\n\nBest,\n{{sender_name}}"
       }
     ]
   },
