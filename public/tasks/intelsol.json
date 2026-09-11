@@ -30,7 +30,7 @@
     "id": "task_1786009825593_zyv2gsl",
     "description": "Pay invoice for 27 July - 02 August",
     "assignedTo": "Matej",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-08-06",
     "order": 3,
     "comments": []
