@@ -1,0 +1,261 @@
+Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt
+Slovenia - Tech/SaaS,"Tech, SaaS, Software, and IT-enabled companies in Slovenia with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce (engineering, product, sales, marketing, operations). Prioritize companies currently hiring for or showing these buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth in last 6 months, recent Series A/B/C funding, hybrid/remote workforce mentions, or active employer branding content on LinkedIn.",Tech / SaaS / Software,Slovenia,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (manufacturing floor workers, field technicians, drivers, retail staff)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, marketing, operations)
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+Hungary - Tech/SaaS,"Tech, SaaS, Software, and IT-enabled companies in Hungary with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce (engineering, product, sales, marketing, operations). Prioritize companies currently hiring for or showing these buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth in last 6 months, recent Series A/B/C funding, hybrid/remote workforce mentions, or active employer branding content on LinkedIn.",Tech / SaaS / Software,Hungary,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (manufacturing floor workers, field technicians, drivers, retail staff)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, marketing, operations)
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+Poland - Tech/SaaS,"Tech, SaaS, Software, and IT-enabled companies in Poland with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce (engineering, product, sales, marketing, operations). Prioritize companies currently hiring for or showing these buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth in last 6 months, recent Series A/B/C funding, hybrid/remote workforce mentions, or active employer branding content on LinkedIn.",Tech / SaaS / Software,Poland,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (manufacturing floor workers, field technicians, drivers, retail staff)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, marketing, operations)
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+Denmark - Tech/SaaS,"Tech, SaaS, Software, and IT-enabled companies in Denmark with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce (engineering, product, sales, marketing, operations). Prioritize companies currently hiring for or showing these buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth in last 6 months, recent Series A/B/C funding, hybrid/remote workforce mentions, or active employer branding content on LinkedIn.",Tech / SaaS / Software,Denmark,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (manufacturing floor workers, field technicians, drivers, retail staff)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, marketing, operations)
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+Norway - Tech/SaaS,"Tech, SaaS, Software, and IT-enabled companies in Norway with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce (engineering, product, sales, marketing, operations). Prioritize companies currently hiring for or showing these buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth in last 6 months, recent Series A/B/C funding, hybrid/remote workforce mentions, or active employer branding content on LinkedIn.",Tech / SaaS / Software,Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (manufacturing floor workers, field technicians, drivers, retail staff)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, marketing, operations)
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+CEE - Fintech,"Fintech, financial technology, digital banking, payment platforms, and financial services software companies in Slovenia, Hungary, or Poland with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce. Prioritize companies showing buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth, recent funding, hybrid/remote workforce, or employer branding activity.",Fintech,Slovenia / Hungary / Poland,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (retail banking branches, field sales, physical payment terminals)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT fintech or financial services software
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, operations, analysts)
+3. Company is in fintech, digital banking, payment platforms, or financial services software
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+Nordic - Fintech,"Fintech, financial technology, digital banking, payment platforms, and financial services software companies in Denmark or Norway with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce. Prioritize companies showing buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth, recent funding, hybrid/remote workforce, or employer branding activity.",Fintech,Denmark / Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based (retail banking branches, field sales, physical payment terminals)
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT fintech or financial services software
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, operations, analysts)
+3. Company is in fintech, digital banking, payment platforms, or financial services software
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+All Markets - Martech/DevTools,"Marketing technology (martech), developer tools, B2B SaaS platforms, and business software companies in Slovenia, Hungary, Poland, Denmark, or Norway with 100-250 employees (priority) or 50-500 employees (secondary). Focus on companies with predominantly white-collar desk-based workforce. Prioritize companies showing buying signals: new HR Director/Head of People hired in last 6 months, 20%+ headcount growth, recent funding, hybrid/remote workforce, or employer branding activity.",Martech / Dev Tools / B2B SaaS,Slovenia / Hungary / Poland / Denmark / Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company has no visible HR/People function or employee benefits budget
+6. Company's primary business is NOT martech, dev tools, or B2B SaaS
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based (engineers, product, sales, marketing, operations)
+3. Company is in martech, developer tools, B2B SaaS platforms, or business software
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows signs of having or building HR/People function
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, and LinkedIn company profile.
+
+Return only: YES or NO"
+All Markets - New HR Leaders (Tier 1),"Tech, SaaS, Software, Fintech, Martech, or Dev Tools companies in Slovenia, Hungary, Poland, Denmark, or Norway with 100-250 employees (priority) or 50-500 employees (secondary) that have hired a new HR Director, Head of People, CHRO, or People & Culture Lead in the last 3-6 months. This is a Tier 1 buying trigger - new HR leaders typically review and refresh benefits stack early in tenure.",Tech / SaaS / Fintech / Martech,Slovenia / Hungary / Poland / Denmark / Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. New HR/People leader hired in last 3-6 months (TIER 1 TRIGGER - high priority)
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, LinkedIn company profile, and recent hiring announcements.
+
+Return only: YES or NO"
+All Markets - Rapid Growth (Tier 1),"Tech, SaaS, Software, Fintech, Martech, or Dev Tools companies in Slovenia, Hungary, Poland, Denmark, or Norway with 100-250 employees (priority) or 50-500 employees (secondary) that have shown 20%+ headcount growth in the last 6 months. This is a Tier 1 buying trigger - rapid hiring means benefits and culture are actively being built or rebuilt.",Tech / SaaS / Fintech / Martech,Slovenia / Hungary / Poland / Denmark / Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company shows 20%+ headcount growth in last 6 months (TIER 1 TRIGGER - high priority)
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, LinkedIn company profile, and headcount growth signals.
+
+Return only: YES or NO"
+All Markets - Recent Funding (Tier 1),"Tech, SaaS, Software, Fintech, Martech, or Dev Tools companies in Slovenia, Hungary, Poland, Denmark, or Norway with 100-250 employees (priority) or 50-500 employees (secondary) that have raised Series A, B, or C funding in the last 12 months. This is a Tier 1 buying trigger - fresh funding means fresh HR/people budget and pressure to professionalize benefits.",Tech / SaaS / Fintech / Martech,Slovenia / Hungary / Poland / Denmark / Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company raised Series A/B/C funding in last 12 months (TIER 1 TRIGGER - high priority)
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, LinkedIn company profile, Crunchbase, and recent funding announcements.
+
+Return only: YES or NO"
+All Markets - Hybrid/Remote (Tier 2),"Tech, SaaS, Software, Fintech, Martech, or Dev Tools companies in Slovenia, Hungary, Poland, Denmark, or Norway with 100-250 employees (priority) or 50-500 employees (secondary) that explicitly mention hybrid or remote work models on their website, careers page, or job postings. This is a Tier 2 buying trigger - harder to keep culture and wellbeing consistent without digital platform.",Tech / SaaS / Fintech / Martech,Slovenia / Hungary / Poland / Denmark / Norway,,,"Review this company's website and public information to determine if they are a good fit for Zen2Fit, a corporate wellness SaaS platform.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has under 50 employees (unless clear signal of new HR function being built)
+2. Company's workforce is predominantly non-desk/field-based
+3. Company website shows they already have a well-established wellness platform (e.g., Virgin Pulse, Wellhub/Gympass, Headspace for Work prominently featured)
+4. Company is a direct competitor in corporate wellness/EAP/employee benefits space
+5. Company's primary business is NOT software/SaaS or tech-enabled services
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50-500 employees (100-250 is ideal)
+2. Company's workforce is predominantly white-collar desk-based
+3. Company is in software/SaaS, fintech, martech, dev tools, or tech-enabled services
+4. No evidence of existing comprehensive wellness platform already deployed
+5. Company explicitly mentions hybrid or remote work model (TIER 2 TRIGGER - priority for digital wellness)
+
+Base your decision on information found on the company website, About Us page, Careers page, Team page, job postings, and LinkedIn company profile.
+
+Return only: YES or NO"
