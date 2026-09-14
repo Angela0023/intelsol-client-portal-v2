@@ -37,10 +37,7 @@ interface ClientMetrics {
 const ALL_CLIENTS = [
   { id: 'intelsol', name: 'Intelsol' },
   { id: 'tslab', name: 'TS Lab' },
-  { id: 'xpose', name: 'Xpose' },
   { id: 'adsigner', name: 'AdSigner' },
-  { id: 'beeit', name: 'BeeIt' },
-  { id: 'wulf', name: 'WULF' },
   { id: 'peoplefocus', name: 'People Focus' },
   { id: 'plantryx', name: 'Plantryx' },
   { id: 'mountaindrop', name: 'Mountaindrop' },
