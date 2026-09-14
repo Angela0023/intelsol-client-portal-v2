@@ -247,10 +247,9 @@ export async function onRequest(context: any) {
           remainingLeads: remaining,
         });
 
-        // Only count ACTIVE campaigns toward remaining leads total
-        if (campaign.status === 'ACTIVE') {
-          remainingLeads += remaining;
-        }
+        // Count ALL campaigns toward remaining leads total (ACTIVE, DRAFTED, PAUSED, etc.)
+        // User needs to see total leads regardless of campaign status
+        remainingLeads += remaining;
       } catch (err) {
         console.error(`Error fetching leads for campaign ${campaign.id}:`, err);
         // Still add campaign with zero counts if error
