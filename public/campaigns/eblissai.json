@@ -1,5 +1,51 @@
 [
   {
+    "campaignName": "🤖 eBliss AI | US - Technology / SaaS | S2 - Infrastructure & Operations",
+    "dateLaunched": "9/14/2026",
+    "totalLeads": 148,
+    "leadsEmailed": 0,
+    "month": "September",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
+    "campaignName": "🤖 eBliss AI | US - Technology / SaaS | S1 - Digital Workplace / End User Computing",
+    "dateLaunched": "9/14/2026",
+    "totalLeads": 38,
+    "leadsEmailed": 0,
+    "month": "September",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🤖 eBliss AI | S3",
     "dateLaunched": "9/4/2026",
     "totalLeads": 0,
@@ -23,9 +69,9 @@
     }
   },
   {
-    "campaignName": "🤖 eBliss AI | S2",
+    "campaignName": "🤖 eBliss AI | US - Retail / Hospitality | S2 - Infrastructure & Operations",
     "dateLaunched": "9/4/2026",
-    "totalLeads": 0,
+    "totalLeads": 78,
     "leadsEmailed": 0,
     "month": "September",
     "status": "DRAFTED",
@@ -46,9 +92,9 @@
     }
   },
   {
-    "campaignName": "🤖 eBliss AI | S1",
+    "campaignName": "🤖 eBliss AI | US - Retail / Hospitality | S1 - Digital Workplace / End User Computing",
     "dateLaunched": "9/4/2026",
-    "totalLeads": 0,
+    "totalLeads": 41,
     "leadsEmailed": 0,
     "month": "September",
     "status": "DRAFTED",
