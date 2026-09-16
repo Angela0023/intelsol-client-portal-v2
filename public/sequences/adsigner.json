@@ -52,5 +52,113 @@
         "body": "Hi {{first_name}},\n\nLast note from me.\n\nNot sure if email signature management is something your team is looking to improve right now.\n\nIf managing signatures across employees is currently a manual process, happy to show you how AdSigner handles centralized deployment and updates.\n\nWould a short technical walkthrough make sense?\n\nBest,\n{{sender_name}}"
       }
     ]
+  },
+  {
+    "id": "hr-lead-onboarding-automation",
+    "tierName": "SEQUENCE 3: HR Lead - Onboarding Automation",
+    "tierColor": "purple",
+    "targetPersonas": "HR Director, Head of People, HR Manager",
+    "messagingAngle": "Automated onboarding, role change management, policy enforcement",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Quick question about {{company_name}}'s onboarding process",
+        "body": "Hi {{first_name}},\n\nQuick question - how are you currently handling email signature setup for new hires at {{company_name}}?\n\nFor growing companies, manually setting up signatures during onboarding can become time-consuming, especially when people join, change roles, or when company policies need to be updated.\n\nAdSigner helps HR teams automate signature management:\n- new hire signatures created automatically\n- signatures update instantly when people change roles\n- company policies and legal information stay consistent\n\nWould it make sense to see how this could simplify your current process?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous email.\n\nThe reason I reached out is that email signature setup is often a small but recurring task during onboarding:\n\n- setting up signatures for new employees\n- updating signatures when people change roles or departments\n- ensuring company policies and legal disclaimers are included\n\nAdSigner removes this from your onboarding checklist and handles role changes automatically.\n\nWould a quick overview be useful?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nLast note from me.\n\nNot sure if automating email signature management during onboarding is something you're looking at right now.\n\nIf signature setup is currently a manual step in your process, happy to show you how AdSigner handles this automatically.\n\nWould a 15-minute walkthrough make sense?\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "sales-lead-pipeline-generation",
+    "tierName": "SEQUENCE 4: Sales Lead - Pipeline Generation",
+    "tierColor": "amber",
+    "targetPersonas": "VP Sales, Sales Director, Head of Sales",
+    "messagingAngle": "Every email supports pipeline generation, event promotion, signature tracking",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Quick question about {{company_name}}'s sales team emails",
+        "body": "Hi {{first_name}},\n\nQuick question - are your sales team's email signatures currently promoting events, webinars, or content that could help generate pipeline?\n\nMost sales teams send hundreds of emails every week, but signatures are usually just contact information. That's a missed opportunity to drive prospects to valuable resources.\n\nAdSigner helps sales teams:\n- promote upcoming webinars and events directly in signatures\n- update messaging across the team instantly (no manual changes)\n- track clicks and conversions from signature campaigns\n\nWould it make sense to show you how this works?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nFollowing up here.\n\nThe reason I reached out is that your sales team is already sending hundreds of emails to prospects and clients every week.\n\nAdSigner helps you use those existing emails to:\n- promote events and webinars to prospects who are already engaged\n- keep messaging consistent across the sales team\n- track which campaigns drive the most engagement\n\nWould this be relevant for {{company_name}}?\n\nHappy to share a quick overview.\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nI'll close the loop here.\n\nNot sure if using sales team emails as an additional pipeline generation channel is something you're exploring right now.\n\nIf it is, happy to show you how companies use AdSigner to promote events and content through email signatures.\n\nWould a quick 15-minute intro be useful?\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "digital-marketing-lead-channel-optimization",
+    "tierName": "SEQUENCE 5: SEO/Digital Marketing - Channel Optimization",
+    "tierColor": "indigo",
+    "targetPersonas": "Digital Marketing Manager, SEO Specialist, Growth Marketer",
+    "messagingAngle": "High-ROI channel, performance tracking, content promotion",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Quick question about {{company_name}}'s email signatures",
+        "body": "Hi {{first_name}},\n\nQuick question - are you currently tracking performance from employee email signatures, or using them to promote content?\n\nMost companies send thousands of external emails every month, but signatures are treated as static contact information. That's an untapped marketing channel with no ad spend required.\n\nAdSigner helps digital marketing teams:\n- promote content, resources, and campaigns through signatures\n- track clicks, conversions, and attribution from signature campaigns\n- A/B test signature messaging to optimize performance\n\nWould it make sense to show you how this works?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nJust following up on my previous email.\n\nThe reason I reached out is that email signatures are one of the highest-ROI marketing channels:\n\n- no ad spend required (you're already sending the emails)\n- high engagement (recipients already know your team)\n- full attribution tracking available\n\nAdSigner helps you turn employee emails into a performance marketing channel with full analytics.\n\nWould this be relevant for {{company_name}}?\n\nHappy to share a quick overview.\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nLast note from me.\n\nNot sure if optimizing email signatures as a marketing channel is something you're looking at right now.\n\nIf it is, happy to show you how companies use AdSigner to promote content and track performance from signature campaigns.\n\nWould a quick 15-minute intro be useful?\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "c-level-brand-consistency-efficiency",
+    "tierName": "SEQUENCE 6: C-Level / CEO - Brand Consistency & Efficiency",
+    "tierColor": "teal",
+    "targetPersonas": "CEO, Managing Director, COO, CFO",
+    "messagingAngle": "Brand consistency, operational efficiency, compliance, wasted opportunity",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Quick question about {{company_name}}'s email communication",
+        "body": "Hi {{first_name}},\n\nQuick question - are email signatures currently managed centrally at {{company_name}}, or is it handled individually by employees?\n\nFor companies with 50+ employees, inconsistent signatures create two problems:\n1. Brand inconsistency damages professional image\n2. Thousands of external emails sent every month with no marketing value\n\nAdSigner solves both:\n- enforce brand consistency across all employee emails\n- turn existing email communication into a marketing channel\n- centralized management reduces IT and HR workload\n\nWould it make sense to see how this could work for {{company_name}}?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nFollowing up here.\n\nThe reason I reached out is that email signatures affect three areas:\n\n- Brand consistency (how your company appears in every client interaction)\n- Operational efficiency (IT and HR time spent on manual updates)\n- Marketing opportunity (thousands of emails already being sent)\n\nAdSigner addresses all three from one platform.\n\nWould this be relevant for {{company_name}}?\n\nHappy to share a quick overview.\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nLast note from me.\n\nNot sure if improving email signature management is a priority right now.\n\nIf brand consistency and operational efficiency are important, happy to show you how companies use AdSigner to solve both.\n\nWould a 15-minute intro make sense?\n\nBest,\n{{sender_name}}"
+      }
+    ]
   }
 ]
