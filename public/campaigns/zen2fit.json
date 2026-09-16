@@ -1,5 +1,28 @@
 [
   {
+    "campaignName": "🍃 Zen2fit | Denmark - Fintech | Tier 1",
+    "dateLaunched": "9/15/2026",
+    "totalLeads": 372,
+    "leadsEmailed": 54,
+    "month": "September",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 54,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "1.85",
+      "bounces": 3,
+      "bounceRate": "5.56",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🍃 Zen2fit | Test",
     "dateLaunched": "8/14/2026",
     "totalLeads": 0,
