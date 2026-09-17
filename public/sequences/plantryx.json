@@ -37,7 +37,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Fewer expedites, more stable schedules at [Company Name]",
-        "body": "Hi [First Name],\n\nIf you're running [SAP/Dynamics/Epicor/ERP] for MRP and scheduling, you're likely dealing with: constant expedites, shortages that show up too late, and weekly schedule thrashing because demand changes faster than the system adapts.\n\nPlantryx is an AI planning layer that sits on top of your ERP. It doesn't replace [ERP] - it replaces the manual demand adjustments and shortage chasing you're doing outside the system.\n\nBetter demand signals -> fewer phantom shortages -> more stable production schedules.\n\nWorth a look?\n\nBest,\n[Your Name]"
+        "body": "Hi [First Name],\n\nIf you're running your ERP for MRP and scheduling, you're likely dealing with: constant expedites, shortages that show up too late, and weekly schedule thrashing because demand changes faster than the system adapts.\n\nPlantryx is an AI planning layer that sits on top of your ERP. It doesn't replace [ERP] - it replaces the manual demand adjustments and shortage chasing you're doing outside the system.\n\nBetter demand signals -> fewer phantom shortages -> more stable production schedules.\n\nWorth a look?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
