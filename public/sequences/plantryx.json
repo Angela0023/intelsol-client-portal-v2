@@ -54,6 +54,33 @@
     ]
   },
   {
+    "id": "tier-3-inventory-mro",
+    "tierName": "TIER 3 - Inventory & MRO (Manufacturing)",
+    "tierColor": "teal",
+    "targetPersonas": "Inventory Control Manager, Inventory Manager, MRO Manager, Stock Control Manager, Warehouse Planning Manager, Materials Manager, Spare Parts Manager",
+    "messagingAngle": "Excess stock, working capital, stockout-vs-overstock tradeoff",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Smarter inventory planning at [Company Name]",
+        "body": "Hi [First Name],\n\nMost manufacturers we work with face the same inventory challenge: too much stock in slow-moving SKUs, not enough in what the plant actually needs, and working capital tied up in parts that sit on shelves for months.\n\nThe root cause is usually demand forecasting - relying on historical averages or manual reorder points in the ERP doesn't adapt fast enough to actual usage patterns.\n\nPlantryx is an AI planning layer that sits on top of your ERP. It handles demand forecasting for inventory and MRO items, optimizes reorder points and safety stock levels, and helps balance the stockout-vs-overstock tradeoff.\n\nBetter forecasts -> smarter stock levels -> less working capital tied up in excess inventory.\n\nWorth exploring for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up (Working Capital Focus)",
+        "subject": "Re: Smarter inventory planning at [Company Name]",
+        "body": "Hi [First Name],\n\nQuick follow-up - we built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that most inventory and materials managers find valuable.\n\nIt benchmarks your planning process across forecast accuracy, inventory turnover, working capital efficiency, and stockout frequency relative to peers in [vertical, e.g., \"electrical equipment manufacturing\" or \"automation & machinery\"].\n\nNo pitch, no sales call required - just a snapshot of where your inventory planning sits today and where the biggest opportunities are.\n\nWant me to send it over?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up (MRO & Spare Parts)",
+        "subject": "Re: Smarter inventory planning at [Company Name]",
+        "body": "Hi [First Name],\n\nLast note on this - one pattern we see in manufacturing: MRO and spare parts are the hardest to optimize.\n\nYou can't afford a stockout (unplanned downtime costs thousands per hour), but you also can't carry every part in stock (too much working capital). Traditional min/max logic in the ERP doesn't solve this - it either overbuys or leaves you exposed.\n\nPlantryx optimizes MRO inventory by forecasting usage based on equipment uptime patterns, planned maintenance schedules, and historical consumption - not just static reorder points.\n\nThe result: fewer emergency orders, lower carrying costs, and less risk of critical part stockouts.\n\nIf optimizing MRO or spare parts inventory is a priority for you, I can walk through how this works in a quick 20-minute call.\n\nWorth a conversation?\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
     "id": "tier-4-erp-it",
     "tierName": "TIER 4 - ERP/IT System Owners (Cross-Segment)",
     "tierColor": "indigo",
