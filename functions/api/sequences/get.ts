@@ -21,14 +21,14 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     if (!clientId) {
       return new Response(JSON.stringify({ error: 'Missing clientId parameter' }), {
         status: 400,
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json; charset=utf-8' }
       });
     }
 
     if (!context.env.GITHUB_TOKEN) {
       return new Response(JSON.stringify({ error: 'GitHub token not configured' }), {
         status: 500,
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json; charset=utf-8' }
       });
     }
 
@@ -52,14 +52,16 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
           sequences: []
         }), {
           status: 200,
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 'Content-Type': 'application/json; charset=utf-8' }
         });
       }
       throw new Error('Failed to fetch sequences');
     }
 
     const sequencesFile = await response.json();
-    const sequencesContent = atob(sequencesFile.content);
+    // Properly decode base64 to UTF-8 (not Latin-1)
+    const decoded = Uint8Array.from(atob(sequencesFile.content), c => c.charCodeAt(0));
+    const sequencesContent = new TextDecoder('utf-8').decode(decoded);
     const sequences = JSON.parse(sequencesContent);
 
     return new Response(JSON.stringify({
@@ -67,7 +69,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       sequences
     }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json; charset=utf-8' }
     });
 
   } catch (error) {
@@ -77,7 +79,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       message: error instanceof Error ? error.message : 'Unknown error'
     }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json; charset=utf-8' }
     });
   }
 };
