@@ -9,6 +9,16 @@ interface Email {
   type: string;
   subject: string;
   body: string;
+  translations?: {
+    serbian?: {
+      subject: string;
+      body: string;
+    };
+    croatian?: {
+      subject: string;
+      body: string;
+    };
+  };
 }
 
 interface Sequence {
@@ -390,6 +400,61 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                             </div>
                           )}
                         </div>
+
+                        {/* Translations Section - Read-only display */}
+                        {!isEditing && email.translations && (email.translations.serbian || email.translations.croatian) && (
+                          <div className="mt-4 pt-4 border-t border-slate-200">
+                            <p className="text-xs font-semibold text-slate-500 mb-3">TRANSLATIONS:</p>
+
+                            {/* Serbian Translation */}
+                            {email.translations.serbian && (
+                              <div className="mb-4">
+                                <p className="text-xs font-semibold text-blue-700 mb-2 flex items-center">
+                                  <span className="mr-2">🇷🇸</span>
+                                  SERBIAN (Srpski):
+                                </p>
+                                <div className="pl-5 space-y-2">
+                                  <div>
+                                    <p className="text-xs font-medium text-slate-600 mb-1">Subject:</p>
+                                    <p className="text-sm bg-blue-50 p-2 rounded border border-blue-200 font-mono">
+                                      {email.translations.serbian.subject}
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p className="text-xs font-medium text-slate-600 mb-1">Body:</p>
+                                    <div className="text-sm bg-blue-50 p-3 rounded border border-blue-200 font-mono whitespace-pre-wrap">
+                                      {email.translations.serbian.body}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Croatian Translation */}
+                            {email.translations.croatian && (
+                              <div>
+                                <p className="text-xs font-semibold text-red-700 mb-2 flex items-center">
+                                  <span className="mr-2">🇭🇷</span>
+                                  CROATIAN (Hrvatski):
+                                </p>
+                                <div className="pl-5 space-y-2">
+                                  <div>
+                                    <p className="text-xs font-medium text-slate-600 mb-1">Subject:</p>
+                                    <p className="text-sm bg-red-50 p-2 rounded border border-red-200 font-mono">
+                                      {email.translations.croatian.subject}
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p className="text-xs font-medium text-slate-600 mb-1">Body:</p>
+                                    <div className="text-sm bg-red-50 p-3 rounded border border-red-200 font-mono whitespace-pre-wrap">
+                                      {email.translations.croatian.body}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}

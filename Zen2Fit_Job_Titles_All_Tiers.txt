@@ -1,0 +1,69 @@
+ZEN2FIT - TARGET JOB TITLES BY TIER
+===================================
+
+TIER 1: PRIMARY DECISION MAKERS (HR & PEOPLE LEADERSHIP)
+---------------------------------------------------------
+Use for: ALL companies 50-500 employees
+
+HR Director, Director of HR, Director of Human Resources, Human Resources Director, Head of People, Head of HR, Head of Human Resources, Chief People Officer, CPO, People Lead, CHRO, Chief Human Resources Officer, Chief HR Officer, Chief Human Capital Officer, CHCO, VP People, VP of People, Vice President of People, Vice President People, VP Human Resources, VP of HR, VP HR, Vice President of Human Resources, Vice President HR, Vice President of HR, HR VP, People VP, Director of People, People Director, Head of People & Culture, Head of People and Culture, People & Culture Lead, People and Culture Lead, Director of People & Culture, Director of People and Culture, People & Culture Director, People and Culture Director, Chief Culture Officer, CCO, Head of Culture, Culture Director, Director of Culture, Head of Employee Experience, Director of Employee Experience, Employee Experience Director, Employee Experience Lead, People Experience Lead, Head of People Experience, Director of People Experience, VP Employee Experience, VP of Employee Experience, Vice President of Employee Experience, Head of Wellbeing, Wellbeing Director, Director of Wellbeing, Chief Wellbeing Officer, Employee Wellbeing Lead, Director of People Operations, Head of People Operations, People Operations Lead, People Operations Director, People Ops Lead, Head of People Ops, Director of People Ops, VP People Operations, VP of People Operations, Vice President of People Operations, Global Head of People, Global Head of HR, Group Head of People, Group Head of HR, Senior Director of People, Senior Director of HR, Senior Director of Human Resources, People & Talent Director, People and Talent Director, Head of People & Talent, Head of People and Talent, Talent & Culture Director, Talent and Culture Director, Head of Talent & Culture, Head of Talent and Culture, Culture & People Lead, Culture and People Lead, Head of People Development, Head of People Strategy, People Strategy Lead, People Strategy Director, HR Manager, People Manager, Human Resources Manager
+
+
+TIER 2: CEO/FOUNDERS (50-100 EMPLOYEES, NO HR FUNCTION)
+--------------------------------------------------------
+Use for: Companies 50-100 employees where LinkedIn shows NO Tier 1 roles
+
+CEO, Chief Executive Officer, Co-CEO, Co-Chief Executive Officer, Founder, Co-Founder, Founder & CEO, Founder and CEO, Founding Partner, Founder & Managing Director, Founder and Managing Director, Founder & Owner, Founder and Owner, Managing Director, MD, Managing Partner, Owner, Co-Owner, Owner & CEO, Owner and CEO, President, Co-President, Executive Director, Chief Executive, Founder & President, Founder and President
+
+
+TIER 3: SECONDARY INFLUENCERS (OPERATIONS & TALENT)
+----------------------------------------------------
+Use for: ONLY if Tier 1 AND Tier 2 both return zero results
+
+COO, Chief Operating Officer, Chief Operations Officer, Head of Operations, Director of Operations, Operations Director, VP Operations, VP of Operations, Vice President of Operations, Vice President Operations, VP Ops, Senior Director of Operations, Global Head of Operations, Group Head of Operations, General Manager, GM, Business Operations Lead, Head of Business Operations, Director of Business Operations, Head of Talent, Director of Talent, Talent Director, VP Talent, VP of Talent, Vice President of Talent, Vice President Talent, Senior Director of Talent, Global Head of Talent, Head of Talent Acquisition, Director of Talent Acquisition, Talent Acquisition Director, VP Talent Acquisition, VP of Talent Acquisition, Vice President of Talent Acquisition, VP TA, Head of TA, Director of TA, Talent Acquisition Lead, Office Manager, Head of Office, Office Director, Head of Administration, Director of Administration, Administration Director, Administrative Director, Chief Administrative Officer, CAO
+
+
+USAGE NOTES:
+============
+
+1. TIER 1 = Use for ALL companies 50-500 employees
+   - This is your PRIMARY target list
+   - These are the decision makers with budget authority
+
+2. TIER 2 = Use ONLY for companies 50-100 employees with NO Tier 1 roles
+   - Check LinkedIn first: if company has any Tier 1 role, skip Tier 2
+   - CEOs/Founders in small companies own culture/benefits decisions
+
+3. TIER 3 = Use ONLY if both Tier 1 AND Tier 2 return ZERO results
+   - Last resort targets
+   - These are influencers but rarely final decision makers
+
+4. IMPORTANT: In European/Nordic companies, "Manager" titles can be senior
+   - "People Manager" or "HR Manager" in a 100-person Danish company might be THE top HR person
+   - Don't skip these in your European searches
+
+
+SEARCH STRATEGY:
+================
+
+APOLLO/LINKEDIN SALES NAVIGATOR:
+1. Set company size filter: 50-500 employees (100-250 ideal)
+2. Set location filter: Denmark (or your target country)
+3. Paste Tier 1 job titles in "Job Title" field
+4. Review results - if no matches, try Tier 2
+5. If still no matches, try Tier 3
+
+
+PRIORITY ORDER:
+1. Tier 1 roles in 100-250 employee companies
+2. Tier 1 roles in 50-100 or 250-500 employee companies
+3. Tier 2 roles in 50-100 employee companies
+4. Tier 3 roles (any company size)
+
+
+RED FLAGS (DON'T TARGET):
+========================
+- HR Coordinators, HR Assistants (too junior)
+- Recruiters without "Head of" or "Director" title
+- Office Managers in companies >200 employees
+- Any role in companies >500 employees (out of ICP)
+- Any role in companies <50 employees (too small)
