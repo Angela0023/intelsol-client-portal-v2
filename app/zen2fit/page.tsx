@@ -31,13 +31,36 @@ const ZEN2FIT_DEFAULT_TASKS = [
   { text: 'Launch first pilot campaign to Tier 1 trigger companies', completed: false },
 ];
 
+interface Campaign {
+  campaignName: string;
+  totalLeads: number;
+  status?: string;
+}
+
 export default function Zen2FitPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
   const [isAdmin, setIsAdmin] = useState(false);
+  const [campaigns, setCampaigns] = useState<Campaign[]>([]);
+  const [totalLeads, setTotalLeads] = useState(0);
+  const [totalCampaigns, setTotalCampaigns] = useState(0);
 
   useEffect(() => {
     setStatus(getClientStatus('zen2fit', DEFAULT_STATUSES.zen2fit));
+
+    // Fetch campaigns data
+    fetch('/campaigns/zen2fit.json')
+      .then(res => res.json())
+      .then(data => {
+        setCampaigns(data);
+        const leadsSum = data.reduce((sum: number, c: Campaign) => sum + c.totalLeads, 0);
+        setTotalLeads(leadsSum);
+        setTotalCampaigns(data.length);
+      })
+      .catch(err => {
+        console.error('Error loading campaigns:', err);
+        // Keep defaults at 0 on error
+      });
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -163,8 +186,8 @@ export default function Zen2FitPage() {
             <DocumentsTabGeneric
               clientId="zen2fit"
               clientName="Zen2Fit"
-              totalLeads={0}
-              totalCampaigns={0}
+              totalLeads={totalLeads}
+              totalCampaigns={totalCampaigns}
               accentColor="pink"
             />
           )}
