@@ -23,6 +23,11 @@ const VALID_CLIENTS = [
   'wulf',
   'peoplefocus',
   'plantryx',
+  'mountaindrop',
+  'eblissai',
+  'zen2fit',
+  'panorate',
+  'mbedtronix',
   'all'
 ];
 

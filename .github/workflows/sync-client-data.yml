@@ -18,6 +18,11 @@ on:
           - wulf
           - peoplefocus
           - plantryx
+          - mountaindrop
+          - eblissai
+          - zen2fit
+          - panorate
+          - mbedtronix
           - all
 
   # Run daily at 4 AM CEST (2 AM UTC) for all clients
