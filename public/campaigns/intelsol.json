@@ -1702,29 +1702,6 @@
     }
   },
   {
-    "campaignName": "🏆 Intelsol | Belgium | 10.6. | IT/Software - Unpersonalised | USA Content",
-    "dateLaunched": "6/10/2026",
-    "totalLeads": 480,
-    "leadsEmailed": 480,
-    "month": "June",
-    "status": "PAUSED",
-    "performance": {
-      "emailsSent": 692,
-      "opens": 0,
-      "openRate": "0.00",
-      "clicks": 0,
-      "clickRate": "0.00",
-      "replies": 2,
-      "replyRate": "0.42",
-      "bounces": 2,
-      "bounceRate": "0.42",
-      "unsubscribed": 0,
-      "interested": 0,
-      "interestedRate": "0.00",
-      "notInterested": 0
-    }
-  },
-  {
     "campaignName": "🏆 Intelsol | Belgium | 8.6. | IT/Software - Personalized",
     "dateLaunched": "6/8/2026",
     "totalLeads": 359,
