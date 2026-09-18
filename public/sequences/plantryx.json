@@ -90,19 +90,19 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI planning layer for [Company Name]'s [ERP] stack",
-        "body": "Hi [First Name],\n\nMost manufacturers and distributors run demand planning and supply planning outside the ERP - usually Excel, sometimes a legacy APS that never got fully adopted.\n\nThe ERP holds the data, but the real planning decisions happen elsewhere.\n\nPlantryx is an AI planning layer that sits on top of [SAP/Dynamics/Epicor/ERP]. It handles demand forecasting, supply planning, and inventory optimization - replacing the Excel layer, not the ERP.\n\nKey for IT: no new master data project, no rip-and-replace, API-based integration. Your ERP stays as the system of record.\n\nWorth a look?\n\nBest,\n[Your Name]"
+        "subject": "AI planning layer for [Company Name]",
+        "body": "Hi [First Name],\n\nMost manufacturers and distributors run demand planning and supply planning outside the ERP - usually Excel, sometimes a legacy APS that never got fully adopted.\n\nThe ERP holds the data, but the real planning decisions happen elsewhere.\n\nPlantryx is an AI planning layer that sits on top of your existing ERP. It handles demand forecasting, supply planning, and inventory optimization - replacing the Excel layer, not the ERP.\n\nKey for IT: no new master data project, no rip-and-replace, API-based integration. Your ERP stays as the system of record.\n\nWorth a look?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up (IT-Light Deployment)",
-        "subject": "Re: AI planning layer for [Company Name]'s [ERP] stack",
-        "body": "Hi [First Name],\n\nQuick follow-up - most IT leaders we talk to have the same concern when they hear \"AI planning tool\": they assume it means a big implementation project, new master data, or a replacement for the ERP.\n\nPlantryx doesn't work that way. It's an API-based layer on top of your existing ERP:\n- Reads demand history, inventory, and supply data from [ERP]\n- Runs AI-driven forecasting and planning\n- Writes optimized plans back into [ERP] for execution\n\nNo rip-and-replace. No new master data. Typical deployment: 4-6 weeks from kickoff to first production forecasts.\n\nWe built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that shows where AI planning can have the biggest impact in your environment. Want me to send it?\n\nBest,\n[Your Name]"
+        "subject": "Re: AI planning layer for [Company Name]",
+        "body": "Hi [First Name],\n\nQuick follow-up - most IT leaders we talk to have the same concern when they hear \"AI planning tool\": they assume it means a big implementation project, new master data, or a replacement for the ERP.\n\nPlantryx doesn't work that way. It's an API-based layer on top of your existing ERP:\n- Reads demand history, inventory, and supply data from your ERP\n- Runs AI-driven forecasting and planning\n- Writes optimized plans back into your ERP for execution\n\nNo rip-and-replace. No new master data. Typical deployment: 4-6 weeks from kickoff to first production forecasts.\n\nWe built a 5-minute Planning Maturity Diagnostic (self-assessment, no forms) that shows where AI planning can have the biggest impact in your environment. Want me to send it?\n\nBest,\n[Your Name]"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up (No ERP Replacement)",
-        "subject": "Re: AI planning layer for [Company Name]'s [ERP] stack",
+        "subject": "Re: AI planning layer for [Company Name]",
         "body": "Hi [First Name],\n\nLast note - one thing we're very clear about with IT stakeholders: Plantryx is not an ERP replacement.\n\nYour ERP is the system of record for orders, inventory, BOMs, and execution. Plantryx is the planning brain that sits on top - AI-native forecasting and supply-demand optimization that most ERPs don't do well (because they weren't built for it).\n\nThink of it as replacing the Excel planning layer, not the ERP.\n\nIf you'd like to see how the integration works in practice, I can walk through a technical overview in a 20-minute call.\n\nWorth talking?\n\nBest,\n[Your Name]"
       }
     ]
