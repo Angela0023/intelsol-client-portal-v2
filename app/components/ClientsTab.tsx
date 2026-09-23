@@ -1091,7 +1091,7 @@ export default function ClientsTab() {
           </p>
         </div>
 
-        {/* All Clients Response Overview */}
+        {/* Summary Table: All clients with reply metrics */}
         <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -1101,16 +1101,13 @@ export default function ClientsTab() {
                     Client
                   </th>
                   <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                    Emails Sent
+                    Total Emails Sent
                   </th>
                   <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
                     Positive Replies
                   </th>
                   <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
                     Reply Rate
-                  </th>
-                  <th className="px-4 py-3 text-center text-xs font-semibold text-slate-600 uppercase tracking-wider">
-                    Campaigns
                   </th>
                 </tr>
               </thead>
@@ -1121,7 +1118,6 @@ export default function ClientsTab() {
                     const totalEmailsSent = client.campaigns.reduce((sum, c) => sum + (c.emailsSent || 0), 0);
                     const totalPositiveReplies = client.campaigns.reduce((sum, c) => sum + (c.positiveReplies || 0), 0);
                     const replyRate = totalEmailsSent > 0 ? ((totalPositiveReplies / totalEmailsSent) * 100).toFixed(2) : '0.00';
-                    const activeCampaignsWithData = client.campaigns.filter(c => (c.emailsSent || 0) > 0).length;
 
                     return (
                       <tr key={client.clientId} className="hover:bg-slate-50">
@@ -1137,9 +1133,6 @@ export default function ClientsTab() {
                         <td className="px-4 py-4 text-sm text-center font-medium text-purple-700">
                           {replyRate}%
                         </td>
-                        <td className="px-4 py-4 text-sm text-center text-slate-700">
-                          {activeCampaignsWithData}
-                        </td>
                       </tr>
                     );
                   })}
@@ -1147,65 +1140,6 @@ export default function ClientsTab() {
             </table>
           </div>
         </div>
-
-        {/* Per-Client Campaign Breakdown */}
-        {filteredMetrics
-          .filter(client => client.campaigns && client.campaigns.some(c => (c.emailsSent || 0) > 0))
-          .map((client) => {
-            const activeCampaigns = client.campaigns.filter(c => (c.emailsSent || 0) > 0);
-            if (activeCampaigns.length === 0) return null;
-
-            return (
-              <div key={client.clientId} className="bg-white border border-slate-200 rounded-lg overflow-hidden">
-                <div className="bg-slate-50 px-4 py-3 border-b border-slate-200">
-                  <h3 className="text-sm font-semibold text-slate-900">{client.clientName} - Campaign Breakdown</h3>
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead className="bg-white border-b border-slate-200">
-                      <tr>
-                        <th className="px-3 py-2 text-left text-xs font-medium text-slate-600">
-                          Campaign Name
-                        </th>
-                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
-                          Emails Sent
-                        </th>
-                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
-                          Positive Replies
-                        </th>
-                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
-                          Reply Rate
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-100">
-                      {activeCampaigns
-                        .sort((a, b) => (b.positiveReplies || 0) - (a.positiveReplies || 0))
-                        .map((campaign, idx) => {
-                          const replyRate = (campaign.emailsSent || 0) > 0
-                            ? (((campaign.positiveReplies || 0) / (campaign.emailsSent || 0)) * 100).toFixed(2)
-                            : '0.00';
-                          return (
-                            <tr key={idx}>
-                              <td className="px-3 py-2 text-xs">{campaign.name}</td>
-                              <td className="px-3 py-2 text-center text-xs font-medium">
-                                {(campaign.emailsSent || 0).toLocaleString()}
-                              </td>
-                              <td className="px-3 py-2 text-center text-xs font-bold text-green-700">
-                                {(campaign.positiveReplies || 0).toLocaleString()}
-                              </td>
-                              <td className="px-3 py-2 text-center text-xs font-medium text-purple-700">
-                                {replyRate}%
-                              </td>
-                            </tr>
-                          );
-                        })}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            );
-          })}
       </div>
     </div>
   );
