@@ -40,6 +40,8 @@ interface CampaignDetail {
   totalLeads: number;
   sentCount: number;
   remainingLeads: number;
+  emailsSent?: number;
+  positiveReplies?: number;
 }
 
 interface LeadStats {
@@ -224,9 +226,11 @@ export async function onRequest(context: any) {
           apiKey
         );
 
-        // Get analytics to find how many have been sent
+        // Get analytics to find how many have been sent and reply data
         const analytics = await fetchSmartlead(`/campaigns/${campaign.id}/analytics`, apiKey);
         const sentCount = parseInt(String(analytics.unique_sent_count || 0));
+        const emailsSent = parseInt(String(analytics.sent_count || 0));
+        const positiveReplies = parseInt(String(analytics.campaign_lead_stats?.interested || 0));
 
         // Total leads - sent = remaining
         const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
@@ -245,6 +249,8 @@ export async function onRequest(context: any) {
           totalLeads: totalLeads,
           sentCount: sentCount,
           remainingLeads: remaining,
+          emailsSent: emailsSent,
+          positiveReplies: positiveReplies,
         });
 
         // Count ALL campaigns toward remaining leads total (ACTIVE, DRAFTED, PAUSED, etc.)
@@ -259,6 +265,8 @@ export async function onRequest(context: any) {
           totalLeads: 0,
           sentCount: 0,
           remainingLeads: 0,
+          emailsSent: 0,
+          positiveReplies: 0,
         });
       }
     }

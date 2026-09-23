@@ -19,6 +19,8 @@ interface CampaignDetail {
   totalLeads: number;
   sentCount: number;
   remainingLeads: number;
+  emailsSent?: number;
+  positiveReplies?: number;
 }
 
 interface ClientMetrics {
@@ -47,11 +49,18 @@ const ALL_CLIENTS = [
   { id: 'mbedtronix', name: 'MBEDTRONIX' },
 ];
 
+type DateFilterOption = 'today' | 'last-week' | 'last-month' | 'this-week' | 'this-month' | 'custom';
+
 export default function ClientsTab() {
   const [allMetrics, setAllMetrics] = useState<ClientMetrics[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedClient, setExpandedClient] = useState<string | null>(null);
+
+  // Date filter for Lead Responses
+  const [dateFilter, setDateFilter] = useState<DateFilterOption>('this-month');
+  const [customDateStart, setCustomDateStart] = useState('');
+  const [customDateEnd, setCustomDateEnd] = useState('');
 
   // Filter states
   const [filters, setFilters] = useState({
@@ -105,6 +114,49 @@ export default function ClientsTab() {
     }
     return { field: 'name', direction: 'asc' };
   });
+
+  // Calculate date range based on filter
+  const getDateRange = (): { start: Date; end: Date } => {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+    switch (dateFilter) {
+      case 'today':
+        return { start: today, end: now };
+
+      case 'last-week': {
+        const lastWeekStart = new Date(today);
+        lastWeekStart.setDate(today.getDate() - 7);
+        return { start: lastWeekStart, end: today };
+      }
+
+      case 'last-month': {
+        const lastMonthStart = new Date(today);
+        lastMonthStart.setDate(today.getDate() - 30);
+        return { start: lastMonthStart, end: today };
+      }
+
+      case 'this-week': {
+        const thisWeekStart = new Date(today);
+        thisWeekStart.setDate(today.getDate() - today.getDay());
+        return { start: thisWeekStart, end: now };
+      }
+
+      case 'this-month': {
+        const thisMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
+        return { start: thisMonthStart, end: now };
+      }
+
+      case 'custom': {
+        const start = customDateStart ? new Date(customDateStart) : today;
+        const end = customDateEnd ? new Date(customDateEnd) : now;
+        return { start, end };
+      }
+
+      default:
+        return { start: today, end: now };
+    }
+  };
 
   // Save sort preferences to localStorage whenever they change
   useEffect(() => {
@@ -478,6 +530,93 @@ export default function ClientsTab() {
           </div>
         </div>
       )}
+
+      {/* Date Filter for Lead Responses */}
+      <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <h3 className="text-sm font-semibold text-slate-900 mb-3">Lead Responses Date Filter</h3>
+        <div className="flex flex-wrap gap-3 items-center">
+          <div className="flex gap-2">
+            <button
+              onClick={() => setDateFilter('today')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'today'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Today
+            </button>
+            <button
+              onClick={() => setDateFilter('this-week')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'this-week'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              This Week
+            </button>
+            <button
+              onClick={() => setDateFilter('this-month')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'this-month'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              This Month
+            </button>
+            <button
+              onClick={() => setDateFilter('last-week')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'last-week'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Last 7 Days
+            </button>
+            <button
+              onClick={() => setDateFilter('last-month')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'last-month'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Last 30 Days
+            </button>
+            <button
+              onClick={() => setDateFilter('custom')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'custom'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Custom Range
+            </button>
+          </div>
+
+          {dateFilter === 'custom' && (
+            <div className="flex gap-2 items-center">
+              <input
+                type="date"
+                value={customDateStart}
+                onChange={(e) => setCustomDateStart(e.target.value)}
+                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span className="text-sm text-slate-600">to</span>
+              <input
+                type="date"
+                value={customDateEnd}
+                onChange={(e) => setCustomDateEnd(e.target.value)}
+                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          )}
+        </div>
+      </div>
 
       {/* Filters */}
       <div className="bg-white border border-slate-200 rounded-lg p-4">
@@ -915,6 +1054,90 @@ export default function ClientsTab() {
                                           <td className="px-3 py-2 text-center text-xs font-medium">{campaign.remainingLeads.toLocaleString()}</td>
                                         </tr>
                                       ))}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Lead Responses */}
+                          {client.campaigns && client.campaigns.length > 0 && (
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between">
+                                <h4 className="text-sm font-semibold text-slate-900">Lead Responses</h4>
+                                <span className="text-xs text-slate-500 italic">Note: Showing cumulative all-time data</span>
+                              </div>
+
+                              {/* Summary Stats */}
+                              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                  <div className="text-xs font-medium text-blue-700 mb-1">Total Emails Sent</div>
+                                  <div className="text-2xl font-bold text-blue-900">
+                                    {client.campaigns.reduce((sum, c) => sum + (c.emailsSent || 0), 0).toLocaleString()}
+                                  </div>
+                                </div>
+                                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                                  <div className="text-xs font-medium text-green-700 mb-1">Positive Replies</div>
+                                  <div className="text-2xl font-bold text-green-900">
+                                    {client.campaigns.reduce((sum, c) => sum + (c.positiveReplies || 0), 0).toLocaleString()}
+                                  </div>
+                                </div>
+                                <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                                  <div className="text-xs font-medium text-purple-700 mb-1">Reply Rate</div>
+                                  <div className="text-2xl font-bold text-purple-900">
+                                    {(() => {
+                                      const totalSent = client.campaigns.reduce((sum, c) => sum + (c.emailsSent || 0), 0);
+                                      const totalReplies = client.campaigns.reduce((sum, c) => sum + (c.positiveReplies || 0), 0);
+                                      return totalSent > 0 ? ((totalReplies / totalSent) * 100).toFixed(2) : '0.00';
+                                    })()}%
+                                  </div>
+                                </div>
+                              </div>
+
+                              {/* Per-Campaign Breakdown */}
+                              <div className="border border-slate-200 rounded-lg overflow-hidden">
+                                <div className="max-h-[400px] overflow-y-auto">
+                                  <table className="w-full text-sm">
+                                    <thead className="bg-white sticky top-0 z-10 border-b border-slate-200">
+                                      <tr>
+                                        <th className="px-3 py-2 text-left text-xs font-medium text-slate-600">
+                                          Campaign Name
+                                        </th>
+                                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                          Emails Sent
+                                        </th>
+                                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                          Positive Replies
+                                        </th>
+                                        <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                          Reply Rate
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-slate-100 bg-white">
+                                      {client.campaigns
+                                        .filter(c => (c.emailsSent || 0) > 0)
+                                        .sort((a, b) => (b.positiveReplies || 0) - (a.positiveReplies || 0))
+                                        .map((campaign, idx) => {
+                                          const replyRate = (campaign.emailsSent || 0) > 0
+                                            ? (((campaign.positiveReplies || 0) / (campaign.emailsSent || 0)) * 100).toFixed(2)
+                                            : '0.00';
+                                          return (
+                                            <tr key={idx}>
+                                              <td className="px-3 py-2 text-xs">{campaign.name}</td>
+                                              <td className="px-3 py-2 text-center text-xs font-medium">
+                                                {(campaign.emailsSent || 0).toLocaleString()}
+                                              </td>
+                                              <td className="px-3 py-2 text-center text-xs font-bold text-green-700">
+                                                {(campaign.positiveReplies || 0).toLocaleString()}
+                                              </td>
+                                              <td className="px-3 py-2 text-center text-xs font-medium text-purple-700">
+                                                {replyRate}%
+                                              </td>
+                                            </tr>
+                                          );
+                                        })}
                                     </tbody>
                                   </table>
                                 </div>
