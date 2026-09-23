@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "tier-1-ecommerce",
+    "tierName": "TIER 1: Director of eCommerce",
+    "tierColor": "blue",
+    "targetPersonas": "Director of eCommerce, eCommerce Manager - owns digital partner ordering experience and portal functionality",
+    "messagingAngle": "Focus on partner ordering complexity, integration challenges, and reducing support burden. Lead with operational efficiency and partner satisfaction outcomes.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Partner ordering bottleneck at {Company}?",
+        "body": "Hi {First Name},\n\nI noticed {Company} has a significant partner/channel ecosystem. A quick question - when your partners need to place complex orders (multi-tier, configurations, custom quotes), does your current system handle it smoothly, or does your team end up processing a lot of it manually?\n\nWe work with companies like NetApp to replace the usual partner portal mess (clunky interfaces, manual order processing, integration nightmares) with a unified platform that actually works the way your business does.\n\nWorth a 20-minute conversation to see if there's a fit?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Partner ordering bottleneck at {Company}?",
+        "body": "Hi {First Name},\n\nFollowing up on my note below about partner order management.\n\nThe pattern we see: partners bypass the portal and email/call orders in because the system can't handle configurations or multi-tier structures. Your team spends the day manually processing what should be automated.\n\nClever Craft handles the entire partner order lifecycle - from complex configurations to automated fulfillment - with full integration to your back-end systems (we work with SFDC, Dynamics, and most ERP platforms).\n\n4 enterprise vendor programs currently processing $5B+ in order value through the platform.\n\nOpen to a brief call this week or next?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - partner portal at {Company}",
+        "body": "Hi {First Name},\n\nLast follow-up on this.\n\nIf partner ordering is running smoothly at {Company}, no need to reply. But if you're dealing with:\n\n- Partners complaining about clunky ordering process\n- Manual order processing eating up team bandwidth\n- Integration gaps between portal and back-end systems\n- High error rates on complex configurations\n\nWe should talk. The platform handles tens of thousands of partner users across multiple enterprise programs.\n\nHappy to share a quick demo or connect you with Ralph Nissler at NetApp for a reference.\n\nBest,\n{Your Name}"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-digital-transformation",
+    "tierName": "TIER 2: Head of Digital / VP Digital Transformation",
+    "tierColor": "green",
+    "targetPersonas": "VP Digital Transformation, Head of Digital - owns digital transformation initiatives including modernizing partner experience",
+    "messagingAngle": "Focus on legacy system limitations, fragmented partner experience, and strategic partner advantage. Lead with competitive differentiation and digital maturity.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Partner experience at {Company}",
+        "body": "Hi {First Name},\n\nQuick question - when you think about your partner experience stack (onboarding, training, ordering, program tracking), is it unified and modern, or are you managing partners across multiple fragmented systems?\n\nThe pattern we see: companies with strong partner ecosystems are often running them on legacy portals, spreadsheets, and manual workflows that make partner engagement harder than it should be.\n\nWe help companies like NetApp unify the entire partner lifecycle on a modern platform - onboarding through order management to program performance.\n\nWorth exploring?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Partner experience at {Company}",
+        "body": "Hi {First Name},\n\nFollowing up on partner experience modernization.\n\nThe challenge: your partners are comparing their experience with you against what your competitors offer. If they're dealing with clunky portals, manual processes, and fragmented touchpoints while your competitor offers a seamless digital experience, you're losing mindshare.\n\nClever Craft provides the unified platform for partner orchestration - onboarding, enablement, ordering, and program tracking in one place. Full integration with your existing systems (SFDC, Dynamics, ERP).\n\n4 enterprise vendor programs currently running on the platform with tens of thousands of partner users.\n\nOpen to a brief conversation about what modernizing partner experience could look like for {Company}?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final note - digital partner experience",
+        "body": "Hi {First Name},\n\nLast note on this topic.\n\nIf partner experience is already a strategic priority at {Company} and you have a clear path forward, disregard this.\n\nBut if you're dealing with:\n\n- Legacy partner portals that can't be easily modernized\n- Fragmented partner touchpoints across multiple systems\n- Partners churning to competitors with better digital experiences\n- Limited visibility into partner engagement and performance\n\nWe should connect. The platform processes $5B+ in annual order value and supports complex multi-tier channel structures.\n\nHappy to share how we approached this with NetApp or other reference customers.\n\nBest,\n{Your Name}"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-partner-programs",
+    "tierName": "TIER 3: Partner Experience / Partner Programs Leader",
+    "tierColor": "purple",
+    "targetPersonas": "VP Partner Experience, Director Partner Programs, Head of Partner Operations - owns partner program execution and partner satisfaction",
+    "messagingAngle": "Focus on partner onboarding friction, program compliance tracking, and operational efficiency. Lead with reducing manual work and improving partner engagement.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Partner program operations at {Company}",
+        "body": "Hi {First Name},\n\nI'm curious - when you onboard new partners at {Company}, how much of that process is automated vs. manual coordination across multiple systems?\n\nThe pattern we see: partner programs are managed through a mix of spreadsheets, emails, separate training platforms, and legacy portals. It works, but it's painful and doesn't scale.\n\nWe help companies like NetApp unify partner program operations - onboarding, compliance tracking, performance management - on a single platform that actually reflects how their partner business works.\n\nWorth a conversation?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Partner program operations at {Company}",
+        "body": "Hi {First Name},\n\nFollowing up on partner program operations.\n\nThe challenge we hear consistently: partner teams spend enormous time on manual tasks that should be automated - onboarding workflows, compliance tracking, program communications, performance reporting.\n\nClever Craft handles the full partner program lifecycle:\n- Automated onboarding and enablement\n- Program compliance and certification tracking\n- Partner performance visibility\n- Self-service capabilities that reduce support load\n\nCurrently supporting tens of thousands of partner users across 4 enterprise vendor programs.\n\nOpen to a brief call to discuss what streamlining partner operations could look like for {Company}?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - partner program efficiency",
+        "body": "Hi {First Name},\n\nFinal follow-up on this.\n\nIf partner program operations are running smoothly at {Company}, no need to respond. But if you're dealing with:\n\n- Partner onboarding taking too long to get partners productive\n- Manual tracking of program compliance and certifications\n- Limited visibility into partner engagement and performance\n- Support team overwhelmed with repetitive partner questions\n\nWe should talk. The platform has handled $5B+ in order value and manages complex program structures across multiple partner tiers.\n\nHappy to connect you with Ralph Nissler at NetApp or share how other enterprise programs have approached this.\n\nBest,\n{Your Name}"
+      }
+    ]
+  }
+]
