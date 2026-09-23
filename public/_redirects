@@ -15,6 +15,7 @@
 /zen2fit/* /zen2fit 200
 /panorate/* /panorate 200
 /mbedtronix/* /mbedtronix 200
+/clevercraft/* /clevercraft 200
 /admin/* /admin 200
 
 # Fallback - SPA routing (Functions in /api/* take precedence automatically)

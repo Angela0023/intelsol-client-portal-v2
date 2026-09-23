@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -42,7 +42,8 @@ export default function AdminPage() {
         eblissai: 'eBlissAI',
         zen2fit: 'Zen2Fit',
         panorate: 'Panorate Media',
-        mbedtronix: 'MBEDTRONIX'
+        mbedtronix: 'MBEDTRONIX',
+        clevercraft: 'Clever Craft'
       };
 
       const allTasks: any[] = [];
@@ -188,6 +189,14 @@ export default function AdminPage() {
       borderColor: 'border-indigo-200',
       bgColor: 'bg-indigo-50',
     },
+    {
+      id: 'clevercraft',
+      name: 'Clever Craft',
+      industry: 'Partner Experience Orchestration Platform',
+      color: 'bg-rose-100 text-rose-600',
+      borderColor: 'border-rose-200',
+      bgColor: 'bg-rose-50',
+    },
   ];
 
   const activeCount = Object.values(statuses).filter((s) => s === 'Active').length;
@@ -195,7 +204,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '13',
+      value: '14',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',

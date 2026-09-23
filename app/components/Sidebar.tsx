@@ -35,6 +35,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'zen2fit', name: 'Zen2Fit', icon: Building2, color: 'text-pink-600' },
     { id: 'panorate', name: 'Panorate Media', icon: Building2, color: 'text-slate-600' },
     { id: 'mbedtronix', name: 'MBEDTRONIX', icon: Building2, color: 'text-indigo-600' },
+    { id: 'clevercraft', name: 'Clever Craft', icon: Building2, color: 'text-rose-600' },
   ];
 
   const [clients, setClients] = useState<Client[]>(defaultClients);

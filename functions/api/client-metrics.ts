@@ -65,6 +65,7 @@ const CLIENT_NAMES: Record<string, string> = {
   'zen2fit': 'Zen2fit',
   'panorate': 'Panorate',
   'mbedtronix': 'MBEDTRONIX',
+  'clevercraft': 'Clever Craft',
 };
 
 const SMARTLEAD_BASE_URL = 'https://server.smartlead.ai/api/v1';
