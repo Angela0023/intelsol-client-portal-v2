@@ -531,93 +531,6 @@ export default function ClientsTab() {
         </div>
       )}
 
-      {/* Date Filter for Lead Responses */}
-      <div className="bg-white border border-slate-200 rounded-lg p-4">
-        <h3 className="text-sm font-semibold text-slate-900 mb-3">Lead Responses Date Filter</h3>
-        <div className="flex flex-wrap gap-3 items-center">
-          <div className="flex gap-2">
-            <button
-              onClick={() => setDateFilter('today')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'today'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Today
-            </button>
-            <button
-              onClick={() => setDateFilter('this-week')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'this-week'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              This Week
-            </button>
-            <button
-              onClick={() => setDateFilter('this-month')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'this-month'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              This Month
-            </button>
-            <button
-              onClick={() => setDateFilter('last-week')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'last-week'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Last 7 Days
-            </button>
-            <button
-              onClick={() => setDateFilter('last-month')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'last-month'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Last 30 Days
-            </button>
-            <button
-              onClick={() => setDateFilter('custom')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'custom'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Custom Range
-            </button>
-          </div>
-
-          {dateFilter === 'custom' && (
-            <div className="flex gap-2 items-center">
-              <input
-                type="date"
-                value={customDateStart}
-                onChange={(e) => setCustomDateStart(e.target.value)}
-                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <span className="text-sm text-slate-600">to</span>
-              <input
-                type="date"
-                value={customDateEnd}
-                onChange={(e) => setCustomDateEnd(e.target.value)}
-                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          )}
-        </div>
-      </div>
-
       {/* Filters */}
       <div className="bg-white border border-slate-200 rounded-lg p-4">
         <div className="flex items-center justify-between mb-4">
@@ -1080,6 +993,93 @@ export default function ClientsTab() {
         >
           {loading ? 'Refreshing...' : 'Refresh Data'}
         </button>
+      </div>
+
+      {/* Date Filter for Lead Responses */}
+      <div className="bg-white border border-slate-200 rounded-lg p-4">
+        <h3 className="text-sm font-semibold text-slate-900 mb-3">Lead Responses Date Filter</h3>
+        <div className="flex flex-wrap gap-3 items-center">
+          <div className="flex gap-2">
+            <button
+              onClick={() => setDateFilter('today')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'today'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Today
+            </button>
+            <button
+              onClick={() => setDateFilter('this-week')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'this-week'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              This Week
+            </button>
+            <button
+              onClick={() => setDateFilter('this-month')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'this-month'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              This Month
+            </button>
+            <button
+              onClick={() => setDateFilter('last-week')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'last-week'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Last 7 Days
+            </button>
+            <button
+              onClick={() => setDateFilter('last-month')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'last-month'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Last 30 Days
+            </button>
+            <button
+              onClick={() => setDateFilter('custom')}
+              className={`px-3 py-1.5 text-sm rounded transition-colors ${
+                dateFilter === 'custom'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+              }`}
+            >
+              Custom Range
+            </button>
+          </div>
+
+          {dateFilter === 'custom' && (
+            <div className="flex gap-2 items-center">
+              <input
+                type="date"
+                value={customDateStart}
+                onChange={(e) => setCustomDateStart(e.target.value)}
+                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span className="text-sm text-slate-600">to</span>
+              <input
+                type="date"
+                value={customDateEnd}
+                onChange={(e) => setCustomDateEnd(e.target.value)}
+                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Lead Responses Section */}
