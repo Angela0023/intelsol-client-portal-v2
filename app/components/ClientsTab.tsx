@@ -49,18 +49,12 @@ const ALL_CLIENTS = [
   { id: 'mbedtronix', name: 'MBEDTRONIX' },
 ];
 
-type DateFilterOption = 'today' | 'last-week' | 'last-month' | 'this-week' | 'this-month' | 'custom';
-
 export default function ClientsTab() {
   const [allMetrics, setAllMetrics] = useState<ClientMetrics[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedClient, setExpandedClient] = useState<string | null>(null);
-
-  // Date filter for Lead Responses
-  const [dateFilter, setDateFilter] = useState<DateFilterOption>('this-month');
-  const [customDateStart, setCustomDateStart] = useState('');
-  const [customDateEnd, setCustomDateEnd] = useState('');
+  const [expandedResponseClient, setExpandedResponseClient] = useState<string | null>(null);
 
   // Filter states
   const [filters, setFilters] = useState({
@@ -114,49 +108,6 @@ export default function ClientsTab() {
     }
     return { field: 'name', direction: 'asc' };
   });
-
-  // Calculate date range based on filter
-  const getDateRange = (): { start: Date; end: Date } => {
-    const now = new Date();
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
-    switch (dateFilter) {
-      case 'today':
-        return { start: today, end: now };
-
-      case 'last-week': {
-        const lastWeekStart = new Date(today);
-        lastWeekStart.setDate(today.getDate() - 7);
-        return { start: lastWeekStart, end: today };
-      }
-
-      case 'last-month': {
-        const lastMonthStart = new Date(today);
-        lastMonthStart.setDate(today.getDate() - 30);
-        return { start: lastMonthStart, end: today };
-      }
-
-      case 'this-week': {
-        const thisWeekStart = new Date(today);
-        thisWeekStart.setDate(today.getDate() - today.getDay());
-        return { start: thisWeekStart, end: now };
-      }
-
-      case 'this-month': {
-        const thisMonthStart = new Date(today.getFullYear(), today.getMonth(), 1);
-        return { start: thisMonthStart, end: now };
-      }
-
-      case 'custom': {
-        const start = customDateStart ? new Date(customDateStart) : today;
-        const end = customDateEnd ? new Date(customDateEnd) : now;
-        return { start, end };
-      }
-
-      default:
-        return { start: today, end: now };
-    }
-  };
 
   // Save sort preferences to localStorage whenever they change
   useEffect(() => {
@@ -995,93 +946,6 @@ export default function ClientsTab() {
         </button>
       </div>
 
-      {/* Date Filter for Lead Responses */}
-      <div className="bg-white border border-slate-200 rounded-lg p-4">
-        <h3 className="text-sm font-semibold text-slate-900 mb-3">Lead Responses Date Filter</h3>
-        <div className="flex flex-wrap gap-3 items-center">
-          <div className="flex gap-2">
-            <button
-              onClick={() => setDateFilter('today')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'today'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Today
-            </button>
-            <button
-              onClick={() => setDateFilter('this-week')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'this-week'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              This Week
-            </button>
-            <button
-              onClick={() => setDateFilter('this-month')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'this-month'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              This Month
-            </button>
-            <button
-              onClick={() => setDateFilter('last-week')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'last-week'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Last 7 Days
-            </button>
-            <button
-              onClick={() => setDateFilter('last-month')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'last-month'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Last 30 Days
-            </button>
-            <button
-              onClick={() => setDateFilter('custom')}
-              className={`px-3 py-1.5 text-sm rounded transition-colors ${
-                dateFilter === 'custom'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
-            >
-              Custom Range
-            </button>
-          </div>
-
-          {dateFilter === 'custom' && (
-            <div className="flex gap-2 items-center">
-              <input
-                type="date"
-                value={customDateStart}
-                onChange={(e) => setCustomDateStart(e.target.value)}
-                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <span className="text-sm text-slate-600">to</span>
-              <input
-                type="date"
-                value={customDateEnd}
-                onChange={(e) => setCustomDateEnd(e.target.value)}
-                className="px-3 py-1.5 text-sm border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          )}
-        </div>
-      </div>
-
       {/* Lead Responses Section */}
       <div className="space-y-4">
         <div>
@@ -1091,12 +955,13 @@ export default function ClientsTab() {
           </p>
         </div>
 
-        {/* Summary Table: All clients with reply metrics */}
+        {/* Lead Responses Table */}
         <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-slate-50 border-b border-slate-200">
                 <tr>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider w-8"></th>
                   <th className="px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">
                     Client
                   </th>
@@ -1118,22 +983,92 @@ export default function ClientsTab() {
                     const totalEmailsSent = client.campaigns.reduce((sum, c) => sum + (c.emailsSent || 0), 0);
                     const totalPositiveReplies = client.campaigns.reduce((sum, c) => sum + (c.positiveReplies || 0), 0);
                     const replyRate = totalEmailsSent > 0 ? ((totalPositiveReplies / totalEmailsSent) * 100).toFixed(2) : '0.00';
+                    const activeCampaigns = client.campaigns.filter(c => (c.emailsSent || 0) > 0);
 
                     return (
-                      <tr key={client.clientId} className="hover:bg-slate-50">
-                        <td className="px-4 py-4 text-sm font-semibold text-slate-900">
-                          {client.clientName}
-                        </td>
-                        <td className="px-4 py-4 text-sm text-center font-medium text-slate-900">
-                          {totalEmailsSent.toLocaleString()}
-                        </td>
-                        <td className="px-4 py-4 text-sm text-center font-bold text-green-700">
-                          {totalPositiveReplies.toLocaleString()}
-                        </td>
-                        <td className="px-4 py-4 text-sm text-center font-medium text-purple-700">
-                          {replyRate}%
-                        </td>
-                      </tr>
+                      <>
+                        <tr
+                          key={client.clientId}
+                          className="hover:bg-slate-50 cursor-pointer"
+                          onClick={() => setExpandedResponseClient(expandedResponseClient === client.clientId ? null : client.clientId)}
+                        >
+                          <td className="px-4 py-4">
+                            {expandedResponseClient === client.clientId ? (
+                              <ChevronDown className="w-4 h-4 text-slate-600" />
+                            ) : (
+                              <ChevronRight className="w-4 h-4 text-slate-600" />
+                            )}
+                          </td>
+                          <td className="px-4 py-4 text-sm font-semibold text-slate-900">
+                            {client.clientName}
+                          </td>
+                          <td className="px-4 py-4 text-sm text-center font-medium text-slate-900">
+                            {totalEmailsSent.toLocaleString()}
+                          </td>
+                          <td className="px-4 py-4 text-sm text-center font-bold text-green-700">
+                            {totalPositiveReplies.toLocaleString()}
+                          </td>
+                          <td className="px-4 py-4 text-sm text-center font-medium text-purple-700">
+                            {replyRate}%
+                          </td>
+                        </tr>
+
+                        {/* Expanded Row - Campaign Breakdown */}
+                        {expandedResponseClient === client.clientId && activeCampaigns.length > 0 && (
+                          <tr>
+                            <td colSpan={5} className="px-4 py-4 bg-slate-50">
+                              <div className="space-y-3">
+                                <h4 className="text-sm font-semibold text-slate-900">Campaign Breakdown</h4>
+                                <div className="border border-slate-200 rounded-lg overflow-hidden">
+                                  <div className="max-h-[400px] overflow-y-auto">
+                                    <table className="w-full text-sm">
+                                      <thead className="bg-white sticky top-0 z-10 border-b border-slate-200">
+                                        <tr>
+                                          <th className="px-3 py-2 text-left text-xs font-medium text-slate-600">
+                                            Campaign Name
+                                          </th>
+                                          <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                            Emails Sent
+                                          </th>
+                                          <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                            Positive Replies
+                                          </th>
+                                          <th className="px-3 py-2 text-center text-xs font-medium text-slate-600">
+                                            Reply Rate
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody className="divide-y divide-slate-100 bg-white">
+                                        {activeCampaigns
+                                          .sort((a, b) => (b.positiveReplies || 0) - (a.positiveReplies || 0))
+                                          .map((campaign, idx) => {
+                                            const campaignReplyRate = (campaign.emailsSent || 0) > 0
+                                              ? (((campaign.positiveReplies || 0) / (campaign.emailsSent || 0)) * 100).toFixed(2)
+                                              : '0.00';
+                                            return (
+                                              <tr key={idx}>
+                                                <td className="px-3 py-2 text-xs">{campaign.name}</td>
+                                                <td className="px-3 py-2 text-center text-xs font-medium">
+                                                  {(campaign.emailsSent || 0).toLocaleString()}
+                                                </td>
+                                                <td className="px-3 py-2 text-center text-xs font-bold text-green-700">
+                                                  {(campaign.positiveReplies || 0).toLocaleString()}
+                                                </td>
+                                                <td className="px-3 py-2 text-center text-xs font-medium text-purple-700">
+                                                  {campaignReplyRate}%
+                                                </td>
+                                              </tr>
+                                            );
+                                          })}
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                      </>
                     );
                   })}
               </tbody>
