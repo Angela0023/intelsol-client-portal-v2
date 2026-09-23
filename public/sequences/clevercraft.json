@@ -79,5 +79,86 @@
         "body": "Hi {First Name},\n\nFinal follow-up on this.\n\nIf partner program operations are running smoothly at {Company}, no need to respond. But if you're dealing with:\n\n- Partner onboarding taking too long to get partners productive\n- Manual tracking of program compliance and certifications\n- Limited visibility into partner engagement and performance\n- Support team overwhelmed with repetitive partner questions\n\nWe should talk. The platform has handled $5B+ in order value and manages complex program structures across multiple partner tiers.\n\nHappy to connect you with Ralph Nissler at NetApp or share how other enterprise programs have approached this.\n\nBest,\n{Your Name}"
       }
     ]
+  },
+  {
+    "id": "tier-4-sales-operations",
+    "tierName": "TIER 4: Director of Sales Operations",
+    "tierColor": "amber",
+    "targetPersonas": "Director of Sales Operations - when partner channel is a major revenue driver and sales ops owns channel performance",
+    "messagingAngle": "Focus on partner pipeline visibility, deal registration issues, and incentive/rebate tracking. Lead with revenue operations efficiency and data accuracy.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Partner pipeline visibility at {Company}",
+        "body": "Hi {First Name},\n\nQuick question - when you need to report on partner pipeline and performance at {Company}, how much manual data wrangling is involved vs. having clean, real-time visibility?\n\nThe pattern we see in channel-led companies: partner data lives in multiple systems, deal registration is a mess, and incentive/rebate tracking is a manual nightmare. Sales ops spends more time chasing data than analyzing it.\n\nWe help companies like NetApp unify partner operations on a single platform with full visibility into partner pipeline, deal flow, and program performance - all integrated with your existing CRM and back-end systems.\n\nWorth exploring?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Partner pipeline visibility at {Company}",
+        "body": "Hi {First Name},\n\nFollowing up on partner operations visibility.\n\nThe challenge: you can't optimize what you can't measure. When partner data is fragmented across systems, you're flying blind on channel performance, deal velocity, and program ROI.\n\nClever Craft provides:\n- Real-time partner pipeline visibility\n- Automated deal registration and tracking\n- Incentive and rebate management\n- Integration with SFDC, Dynamics, and your ERP systems\n\nCurrently processing $5B+ in annual order value across 4 enterprise vendor programs.\n\nOpen to a brief call to discuss how we could bring visibility to your partner channel operations?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final note - partner data visibility",
+        "body": "Hi {First Name},\n\nLast note on this topic.\n\nIf you have clean, real-time visibility into partner performance at {Company}, no need to respond. But if you're dealing with:\n\n- Manual data collection from multiple partner systems\n- Broken deal registration process causing channel conflict\n- Incentive and rebate tracking in spreadsheets\n- Limited visibility into which partners are actually driving revenue\n\nWe should connect. The platform supports tens of thousands of partner users with full operational transparency.\n\nHappy to share how we approached this with NetApp or walk through a quick demo.\n\nBest,\n{Your Name}"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-order-management",
+    "tierName": "TIER 5: Order Management / Quote Desk Manager",
+    "tierColor": "indigo",
+    "targetPersonas": "Order Management Manager, Quote Desk Manager - when order management is a major bottleneck in the partner experience",
+    "messagingAngle": "Focus on manual order processing burden, error rates, and partners bypassing the system. Lead with team efficiency and accuracy improvements.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Partner order processing at {Company}",
+        "body": "Hi {First Name},\n\nI'm curious - what percentage of partner orders at {Company} flow through your automated system vs. coming in via email, phone calls, or spreadsheets that your team has to manually process?\n\nThe pattern we see: partners find the portal too clunky or limited, so they bypass it and send orders directly to your team. Your order desk spends the entire day keying in orders manually, and error rates stay stubbornly high.\n\nWe help companies like NetApp automate partner order management - from complex configurations to multi-tier structures - so orders flow through the system instead of around it.\n\nWorth a conversation?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Partner order processing at {Company}",
+        "body": "Hi {First Name},\n\nFollowing up on partner order management.\n\nThe cost of manual order processing: your team's time, high error rates, slow order turnaround, and frustrated partners who expect Amazon-like ordering experiences.\n\nClever Craft handles:\n- Complex product configurations and pricing\n- Multi-tier order structures\n- Automated order validation and routing\n- Full integration with your fulfillment and ERP systems\n\nCurrently processing $5B+ in annual order value with high accuracy rates.\n\nOpen to a brief call to discuss how we could reduce the manual burden on your order desk?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - order processing automation",
+        "body": "Hi {First Name},\n\nFinal follow-up on this.\n\nIf partner orders are flowing smoothly through your systems at {Company}, disregard this. But if you're dealing with:\n\n- Team spending entire day manually processing partner orders\n- High error rates on complex orders or configurations\n- Partners bypassing the system and emailing/calling orders in\n- Limited ability to scale order volume without adding headcount\n\nWe should talk. The platform handles tens of thousands of partner users and complex order structures across multiple enterprise programs.\n\nHappy to share a quick demo or connect you with a reference customer.\n\nBest,\n{Your Name}"
+      }
+    ]
+  },
+  {
+    "id": "tier-6-customer-experience",
+    "tierName": "TIER 6: Director of Customer Experience",
+    "tierColor": "rose",
+    "targetPersonas": "Director of Customer Experience - when partners are treated as customers from an experience standpoint",
+    "messagingAngle": "Focus on partner NPS, churn to competitors, and support burden. Lead with partner satisfaction and self-service improvements.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Partner experience at {Company}",
+        "body": "Hi {First Name},\n\nQuick question - when you measure partner satisfaction at {Company}, what's the biggest friction point that comes up consistently? Onboarding complexity? Portal usability? Getting support?\n\nThe pattern we see: companies invest heavily in end-customer experience but treat partners like second-class citizens with clunky portals, manual processes, and limited self-service capabilities. Then they wonder why partners are steering deals to competitors.\n\nWe help companies like NetApp deliver consumer-grade partner experiences - easy onboarding, intuitive self-service, automated support - that actually improve partner retention and engagement.\n\nWorth exploring?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Partner experience at {Company}",
+        "body": "Hi {First Name},\n\nFollowing up on partner experience.\n\nThe reality: your partners are comparing their experience with you against what they get from your competitors. If your competitor offers seamless digital experiences while you're still using spreadsheets and manual workflows, you're losing partner mindshare and ultimately revenue.\n\nClever Craft delivers:\n- Consumer-grade partner portal experience\n- Self-service capabilities that reduce support tickets by 60%+\n- Automated onboarding and enablement\n- Real-time visibility into program performance\n\nCurrently supporting tens of thousands of partner users across 4 enterprise programs.\n\nOpen to a brief call to discuss how we could improve partner satisfaction scores at {Company}?\n\nBest,\n{Your Name}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - partner satisfaction",
+        "body": "Hi {First Name},\n\nFinal follow-up on this topic.\n\nIf partner NPS is strong and partners aren't churning at {Company}, no need to respond. But if you're dealing with:\n\n- Declining partner satisfaction scores\n- Partners complaining about clunky systems and manual processes\n- Support team overwhelmed with basic partner questions\n- Partners steering deals to competitors with better experiences\n\nWe should connect. The platform has processed $5B+ in order value while maintaining high partner satisfaction across complex channel programs.\n\nHappy to share how we approached this with NetApp or discuss your specific partner experience challenges.\n\nBest,\n{Your Name}"
+      }
+    ]
   }
 ]
