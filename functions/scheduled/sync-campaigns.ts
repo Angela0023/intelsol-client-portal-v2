@@ -32,14 +32,39 @@ interface CampaignAnalytics {
   unique_click_count?: number;
   bounce_count?: number;
   unsubscribed_count?: number;
-  campaign_lead_stats?: any;
+  campaign_lead_stats?: {
+    interested?: number;
+    not_interested?: number;
+  };
+}
+
+interface LeadsResponse {
+  total_leads?: number;
+  total_count?: number;
 }
 
 interface ProcessedCampaign {
   campaignName: string;
   dateLaunched: string;
-  leadsAdded: number;
+  totalLeads: number;
+  leadsEmailed: number;
   month: string;
+  status: string;
+  performance: {
+    emailsSent: number;
+    opens: number;
+    openRate: string;
+    clicks: number;
+    clickRate: string;
+    replies: number;
+    replyRate: string;
+    bounces: number;
+    bounceRate: string;
+    unsubscribed: number;
+    interested: number;
+    interestedRate: string;
+    notInterested: number;
+  };
 }
 
 // Client names for matching (emoji-agnostic)
@@ -134,36 +159,92 @@ async function processCampaignsForClient(
 
   const processed: ProcessedCampaign[] = [];
 
-  // Fetch analytics for each campaign to get lead counts
+  // Fetch analytics and lead counts for each campaign
   for (const campaign of clientCampaigns) {
     try {
       // Add small delay to avoid rate limiting
       await new Promise(resolve => setTimeout(resolve, 200));
 
+      // Get total lead count
+      const leadsResponse: LeadsResponse = await fetchSmartlead(
+        `/campaigns/${campaign.id}/leads?limit=1&offset=0`,
+        apiKey
+      );
+      const totalLeads = leadsResponse.total_leads || leadsResponse.total_count || 0;
+
+      // Get analytics for performance metrics
       const analytics: CampaignAnalytics = await fetchSmartlead(
         `/campaigns/${campaign.id}/analytics`,
         apiKey
       );
 
-      // Use unique_sent_count as the "imported leads" metric
-      // This represents the total unique leads that have been contacted
-      const leadsAdded = parseInt(String(analytics.unique_sent_count || 0));
+      // Extract metrics from analytics
+      const uniqueSent = parseInt(String(analytics.unique_sent_count || 0));
+      const emailsSent = parseInt(String(analytics.sent_count || 0));
+      const opens = parseInt(String(analytics.unique_open_count || 0));
+      const clicks = parseInt(String(analytics.unique_click_count || 0));
+      const replies = parseInt(String(analytics.reply_count || 0));
+      const bounces = parseInt(String(analytics.bounce_count || 0));
+      const unsubscribed = parseInt(String(analytics.unsubscribed_count || 0));
+      const interested = parseInt(String(analytics.campaign_lead_stats?.interested || 0));
+      const notInterested = parseInt(String(analytics.campaign_lead_stats?.not_interested || 0));
+
+      // Calculate rates
+      const openRate = uniqueSent > 0 ? ((opens / uniqueSent) * 100).toFixed(2) : '0.00';
+      const clickRate = uniqueSent > 0 ? ((clicks / uniqueSent) * 100).toFixed(2) : '0.00';
+      const replyRate = uniqueSent > 0 ? ((replies / uniqueSent) * 100).toFixed(2) : '0.00';
+      const bounceRate = uniqueSent > 0 ? ((bounces / uniqueSent) * 100).toFixed(2) : '0.00';
+      const interestedRate = uniqueSent > 0 ? ((interested / uniqueSent) * 100).toFixed(2) : '0.00';
 
       processed.push({
         campaignName: campaign.name,
         dateLaunched: formatDate(campaign.created_at),
-        leadsAdded: leadsAdded,
+        totalLeads: totalLeads,
+        leadsEmailed: uniqueSent,
         month: getMonthName(campaign.created_at),
+        status: campaign.status,
+        performance: {
+          emailsSent: emailsSent,
+          opens: opens,
+          openRate: openRate,
+          clicks: clicks,
+          clickRate: clickRate,
+          replies: replies,
+          replyRate: replyRate,
+          bounces: bounces,
+          bounceRate: bounceRate,
+          unsubscribed: unsubscribed,
+          interested: interested,
+          interestedRate: interestedRate,
+          notInterested: notInterested,
+        },
       });
 
     } catch (error) {
-      console.error(`Error fetching analytics for campaign ${campaign.id}:`, error);
-      // Still include campaign with 0 leads if analytics fetch fails
+      console.error(`Error fetching data for campaign ${campaign.id}:`, error);
+      // Still include campaign with 0 values if fetch fails
       processed.push({
         campaignName: campaign.name,
         dateLaunched: formatDate(campaign.created_at),
-        leadsAdded: 0,
+        totalLeads: 0,
+        leadsEmailed: 0,
         month: getMonthName(campaign.created_at),
+        status: campaign.status,
+        performance: {
+          emailsSent: 0,
+          opens: 0,
+          openRate: '0.00',
+          clicks: 0,
+          clickRate: '0.00',
+          replies: 0,
+          replyRate: '0.00',
+          bounces: 0,
+          bounceRate: '0.00',
+          unsubscribed: 0,
+          interested: 0,
+          interestedRate: '0.00',
+          notInterested: 0,
+        },
       });
     }
   }
