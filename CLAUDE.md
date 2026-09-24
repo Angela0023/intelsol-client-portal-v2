@@ -6,6 +6,72 @@
 
 ## 🚨 HARD RULES — NEVER BREAK THESE
 
+### 0. FEATURE ISOLATION — Each Feature is Independent (CRITICAL)
+
+**RULE:** Each tab/feature is completely isolated and independent. When updating Feature X, touch ONLY Feature X files. NEVER touch any other feature's files.
+
+**Why:** The portal has 8 independent features that work across all clients. Changes to one feature must NEVER affect any other feature. This prevents cascading bugs and maintains system stability.
+
+**Feature File Mapping:**
+
+1. **Overview Tab** - Static content in each `/app/[client]/page.tsx` (OverviewTab section only)
+
+2. **ICP Profile Tab** - Static content in each `/app/[client]/page.tsx` (ICPAndPersonasTab section only)
+
+3. **Clay Filters Tab** - Static content in each `/app/[client]/page.tsx` (FiltersTab section only)
+
+4. **AI Prompts Tab** - Static content in each `/app/[client]/page.tsx` (PromptsTab section only)
+
+5. **Campaigns & Sequences Tab**
+   - `/app/components/SequencesTab.tsx`
+   - `/app/components/CampaignsTabGeneric.tsx`
+   - `/functions/api/sequences/get.ts`
+   - `/functions/api/sequences/update.ts`
+   - `/public/sequences/*.json` (16 files)
+   - Campaign planning content in each client's page.tsx (CampaignsSequencesTab section only)
+
+6. **Performance Tab**
+   - `/app/components/PerformanceTabDynamic.tsx`
+   - `/app/components/CampaignsTabDynamic.tsx`
+   - `/functions/scheduled/sync-campaigns.ts`
+   - `/functions/api/sync-campaigns-manual.ts`
+   - `/public/campaigns/*.json` (16 files)
+
+7. **Documents Tab**
+   - `/app/components/DocumentsTabGeneric.tsx`
+   - `/functions/api/files.ts`
+   - `/functions/api/upload.ts`
+   - `/functions/api/delete.ts`
+   - `/public/uploads/[client]/*` (16 directories)
+
+8. **Tasks Tab**
+   - `/app/components/TasksTab.tsx`
+   - `/functions/api/tasks/get.ts`
+   - `/functions/api/tasks/update.ts`
+   - `/public/tasks/*.json` (16 files)
+
+**Examples of CORRECT behavior:**
+- User says "Update Performance tab" → Touch ONLY Performance tab files (PerformanceTabDynamic.tsx, sync-campaigns.ts, campaigns/*.json)
+- User says "Fix Tasks" → Touch ONLY Tasks tab files (TasksTab.tsx, tasks/*.ts, tasks/*.json)
+- User says "Update email sequences" → Touch ONLY Sequences files (SequencesTab.tsx, sequences/*.ts, sequences/*.json)
+- User says "Change ICP for Plantryx" → Touch ONLY Plantryx page.tsx ICPAndPersonasTab section
+
+**Examples of WRONG behavior (NEVER DO THIS):**
+- ❌ Updating Performance tab and also changing Tasks tab files
+- ❌ Fixing Documents tab and also modifying Sequences files
+- ❌ Changing campaign sync and also updating ICP content
+- ❌ Making "improvements" to other features while working on one feature
+
+**VIOLATION CONSEQUENCES:**
+- Breaks working features that weren't supposed to change
+- Creates debugging nightmares across multiple features
+- Loses user trust in system stability
+- **This is the #1 rule violation to avoid**
+
+**Rule Established:** 2026-09-24
+
+---
+
 ### 1. Tab Structure Must Be Identical for All Clients
 **Rule:** ALL client dashboards MUST have the exact same tabs. Never create unique tabs for individual clients.
 
