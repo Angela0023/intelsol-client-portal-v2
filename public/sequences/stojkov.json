@@ -1,0 +1,164 @@
+[
+  {
+    "id": "tier-1-procurement",
+    "tierName": "TIER 1: Procurement/Purchasing",
+    "tierColor": "blue",
+    "targetPersonas": "Head of Procurement, Purchasing Manager, Strategic Buyer at cosmetics/food/supplements brands, agencies, publishers, and premium retail/hospitality companies (20-500 employees) in Slovenia, Austria, Germany, Switzerland",
+    "messagingAngle": "Focus on landed-cost comparison, nearshore European manufacturing advantage, competitive Serbian production economics, second-source evaluation, supplier diversification. Position as specification-based partner for recurring carton and box needs.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Nearshore carton production for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with European cosmetics, food, and premium product brands on landed-cost comparisons for recurring carton and folding box specifications.\n\nStojkov is a Serbian print and packaging manufacturer (75 employees, ISO 9001/14001/45001, FSC certified, 3,000 sq m facility) with offset, lamination, die-cutting, foil stamping, and embossing capabilities.\n\nThe nearshore advantage is often 15-25% on landed cost for recurring specs, with shorter lead times than Asian sourcing.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Nearshore carton production for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on my earlier note about carton production cost comparison.\n\nMost procurement teams we work with are evaluating:\n- Second-source options for existing Asian supply\n- Nearshore alternatives for recurring European demand\n- Landed-cost scenarios with shorter lead times\n\nStojkov's production breadth covers folding cartons, rigid boxes, and specialty packaging with UV hybrid offset and full finishing capabilities.\n\nWould a 20-minute call to review one specification make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - carton cost comparison",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging suppliers or looking at second-source options for recurring carton specifications, happy to share how we typically approach landed-cost comparisons.\n\nNo obligation, just a straightforward review of what nearshore European production economics look like for your specs.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-packaging-manager",
+    "tierName": "TIER 2: Packaging Manager",
+    "tierColor": "green",
+    "targetPersonas": "Packaging Development Manager, Packaging Engineer at cosmetics/skincare/personal care, premium food/confectionery, supplements/wellness brands (50-250 employees sweet spot) in Slovenia, Austria, Germany, Switzerland",
+    "messagingAngle": "Focus on technical specifications, production capabilities breadth, finish consistency, quality certifications (ISO, FSC), artwork and pre-press support. Position as technical partner for packaging development and specifications.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "European carton production capabilities for {{Company}}",
+        "body": "{{FirstName}} -\n\nI'm reaching out because you likely manage packaging specifications for {{Company}}'s product lines.\n\nStojkov is a Serbian packaging manufacturer specializing in folding cartons, rigid boxes, and specialty packaging for cosmetics, food, and wellness brands across Europe.\n\nProduction capabilities: B1 UV hybrid offset, inline lamination, die-cutting, foil stamping, embossing, and full finishing. ISO 9001/14001/45001 and FSC certified, SEDEX SMETA audited.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: European carton production capabilities for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on my note about packaging production capabilities.\n\nMost packaging managers we work with are looking at:\n- Consistent finish quality across production runs\n- Technical partner for specification development\n- European manufacturing with competitive economics\n\nStojkov's been manufacturing premium packaging since 1963 - 75 employees, 3,000 sq m facility in Serbia, serving brands across Slovenia, Austria, Germany, and Switzerland.\n\nWould a brief call to review your technical requirements make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - packaging capabilities review",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging partners or reviewing specifications for recurring carton needs, happy to walk through our technical capabilities.\n\nNo obligation, just a straightforward technical review of production breadth and quality standards.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-supply-chain",
+    "tierName": "TIER 3: Supply Chain/Operations",
+    "tierColor": "purple",
+    "targetPersonas": "Supply Chain Manager, Operations Director, Logistics Manager at cosmetics/food/supplements brands, agencies, publishers (20-500 employees) in Slovenia, Austria, Germany, Switzerland",
+    "messagingAngle": "Focus on repeat supply reliability, capacity planning, delivery coordination, nearshore logistics advantage, production consistency. Position as reliable European manufacturing partner with proven track record.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Nearshore packaging supply for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with European brands on packaging supply planning and nearshore sourcing options.\n\nStojkov is a family-owned Serbian packaging manufacturer (founded 1963, 75 employees, 3,000 sq m facility) with capacity for recurring folding carton and box programmes.\n\nThe nearshore advantage: shorter lead times than Asian sourcing, European logistics, consistent quality with ISO 9001/14001/45001 and FSC certification.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Nearshore packaging supply for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on my earlier note about packaging supply options.\n\nMost supply chain teams we work with are evaluating:\n- Nearshore alternatives to reduce lead time exposure\n- Reliable capacity for recurring programmes\n- European manufacturing with competitive economics\n\nStojkov's production breadth covers offset printing, binding, lamination, and specialty finishing - serving brands across Slovenia, Austria, Germany, and Switzerland.\n\nWould a 20-minute call to review your supply requirements make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - packaging supply planning",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're reviewing packaging suppliers or looking at nearshore options for recurring carton needs, happy to share how we approach supply planning.\n\nNo obligation, just a straightforward review of capacity, lead times, and logistics for European production.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-owner-agency",
+    "tierName": "TIER 4: Owner/Agency Leadership",
+    "tierColor": "amber",
+    "targetPersonas": "CEO, Owner, Managing Director, Production Director at packaging/branding agencies (10-50 employees sweet spot), small cosmetics/food/wellness brands (<50 employees), premium retail/hospitality/gifting companies in Slovenia, Austria, Germany, Switzerland",
+    "messagingAngle": "For agencies: White-label production partnership, competitive economics for client projects, production breadth. For brand owners: Family-owned reliability, European manufacturing partner, competitive nearshore economics. Position as production partner for growth.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "European packaging production partner for {{Company}}",
+        "body": "{{FirstName}} -\n\nI'm reaching out because {{Company}} likely works with brands that need premium packaging production.\n\nStojkov is a family-owned Serbian packaging manufacturer (founded 1963, 75 employees) specializing in folding cartons, rigid boxes, and specialty packaging for cosmetics, food, and wellness brands.\n\nProduction capabilities: B1 UV hybrid offset, lamination, die-cutting, foil stamping, embossing. ISO 9001/14001/45001, FSC certified, SEDEX SMETA audited.\n\nFor agencies: we work as white-label production partner. For brands: nearshore European manufacturing with competitive economics.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: European packaging production partner for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on my earlier note about packaging production partnership.\n\nMost agency leaders and brand owners we work with are looking for:\n- Reliable European manufacturing partner\n- Competitive economics without compromising quality\n- Production breadth for diverse packaging needs\n\nStojkov's been manufacturing premium packaging for 60+ years - 3,000 sq m facility in Serbia, serving brands and agencies across Slovenia, Austria, Germany, and Switzerland.\n\nWould a brief call to explore how we could support your production needs make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - production partnership",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging production partners or looking at European manufacturing options, happy to walk through how we typically work with agencies and brands.\n\nNo obligation, just a straightforward conversation about production capabilities and partnership approach.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-brand-production",
+    "tierName": "TIER 5: Brand/Production Manager",
+    "tierColor": "indigo",
+    "targetPersonas": "Brand Manager, Account Director, Print Production Manager at cosmetics/food/supplements brands, agencies (secondary persona for programme coordination and specification management)",
+    "messagingAngle": "Focus on programme coordination, multi-SKU packaging projects, specification-based approach, artwork support, production scheduling. Position as organized partner for brand packaging programmes.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Packaging programme coordination for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with brand and production managers on packaging programme coordination and specification management.\n\nStojkov is a Serbian packaging manufacturer specializing in folding cartons, rigid boxes, and specialty packaging for cosmetics, food, and wellness brands across Europe.\n\nWe handle multi-SKU programmes with specification-based approach: offset printing, lamination, die-cutting, foil stamping, embossing. ISO 9001/14001/45001 and FSC certified.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Packaging programme coordination for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on my note about packaging programme management.\n\nMost brand and production managers we work with are managing:\n- Multi-SKU packaging programmes\n- Specification coordination across product lines\n- Production scheduling for seasonal launches\n\nStojkov's been manufacturing premium packaging since 1963 - 75 employees, 3,000 sq m facility, serving brands across Slovenia, Austria, Germany, and Switzerland.\n\nWould a brief call to review your programme requirements make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - programme coordination",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're coordinating packaging programmes or managing specifications for recurring carton needs, happy to walk through our approach to programme management.\n\nNo obligation, just a straightforward review of how we handle multi-SKU projects and specification coordination.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-6-design-quality",
+    "tierName": "TIER 6: Design/Quality",
+    "tierColor": "rose",
+    "targetPersonas": "Head of Design, Packaging Designer, Quality Manager at cosmetics/skincare/personal care, premium food, wellness brands (tertiary persona for appearance, artwork, quality standards)",
+    "messagingAngle": "Focus on appearance quality, artwork and pre-press support, finishing consistency, quality standards (ISO certifications), visual impact. Position as quality-focused partner for premium packaging.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Premium packaging quality for {{Company}}",
+        "body": "{{FirstName}} -\n\nI'm reaching out because you likely oversee packaging design and quality standards for {{Company}}'s product lines.\n\nStojkov is a Serbian packaging manufacturer specializing in premium folding cartons and rigid boxes for cosmetics, food, and wellness brands across Europe.\n\nFinishing capabilities: B1 UV hybrid offset, inline lamination, die-cutting, foil stamping, embossing. ISO 9001/14001/45001 certified for consistent quality standards, FSC certified, SEDEX SMETA audited.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Premium packaging quality for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on my earlier note about packaging quality and finishing.\n\nMost design and quality managers we work with are focused on:\n- Consistent appearance across production runs\n- Artwork and pre-press support\n- Quality standards and finishing precision\n\nStojkov's been manufacturing premium packaging since 1963 - 3,000 sq m facility in Serbia, serving brands across Slovenia, Austria, Germany, and Switzerland.\n\nWould a brief call to review your quality requirements and finishing needs make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - packaging quality standards",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging partners or reviewing quality standards for recurring carton needs, happy to walk through our finishing capabilities and quality approach.\n\nNo obligation, just a straightforward review of production quality, finishing precision, and appearance standards.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  }
+]

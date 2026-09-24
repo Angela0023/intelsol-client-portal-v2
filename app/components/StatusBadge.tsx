@@ -95,4 +95,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   panorate: 'Onboarding',
   mbedtronix: 'Onboarding',
   clevercraft: 'Onboarding',
+  stojkov: 'Onboarding',
 };
