@@ -1,0 +1,164 @@
+[
+  {
+    "id": "tier-1-procurement",
+    "tierName": "TIER 1 (PRIMARY): Procurement/Purchasing",
+    "tierColor": "blue",
+    "targetPersonas": "Head of Procurement, Purchasing Manager, Strategic Buyer, Packaging Buyer",
+    "messagingAngle": "Landed-cost comparison, nearshore European manufacturing advantage, competitive Serbian production economics, second-source evaluation, supplier diversification",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Nearshore label production - Subotica capacity",
+        "body": "Hi [First Name],\n\nI work with Birografika MB, a label and print producer in Subotica, Serbia - about 60 years in business, ISO/HACCP/FSC certified, SEDEX audited.\n\nWe manufacture recurring industrial labels (flexo, offset, digital) for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe.\n\nOur equipment includes Mark Andy UV Flexo, MPS EFC 430, and Rotoflex automatic finishing. Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films.\n\nWould it be useful to compare production options for one recurring carton or box specification - to see how nearshore Serbian economics compare to your current supplier base?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Nearshore label production - Subotica capacity",
+        "body": "Hi [First Name],\n\nFollowing up on my note about nearshore label production from Serbia.\n\nMany procurement teams across Austria, Germany, and CEE use us as a second-source or cost-comparison partner - especially for recurring industrial labels where landed cost and delivery reliability matter more than ultra-short lead times.\n\nOur value proposition: competitive Serbian production economics + European quality standards (ISO 9001/14001/45001, HACCP, FSC) + nearshore logistics advantage.\n\nWould it make sense to evaluate one recurring specification - water labels, dairy sleeves, food cartons - whatever volume justifies a second-source comparison?\n\nHappy to start with a technical review before any commercial discussion.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Nearshore label production - Subotica capacity",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize supplier evaluation timing varies widely depending on contract cycles and internal priorities.\n\nIf it's useful: we've manufactured labels for Neoplanta, Pionir, Imlek, Fruvita, Premier Aqua, Tigar Tires, and Nectar across food/beverage/industrial segments.\n\nOur core focus: recurring volume labels where specification consistency and landed-cost economics justify a nearshore European partner vs. higher-cost Western European production.\n\nIf you're ever benchmarking production options for a recurring carton or sleeve specification, happy to provide a technical and commercial comparison.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-packaging",
+    "tierName": "TIER 2 (PRIMARY CHAMPION): Packaging",
+    "tierColor": "green",
+    "targetPersonas": "Packaging Manager, Head of Packaging, Packaging Development Manager",
+    "messagingAngle": "Technical specifications, production capabilities breadth, finish consistency, quality certifications (ISO/FSC), artwork and pre-press support",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Label production capabilities - technical review",
+        "body": "Hi [First Name],\n\nI work with Birografika MB - label and print production in Subotica, Serbia.\n\nWe manufacture recurring industrial labels across flexo (Mark Andy UV), offset (MPS EFC 430), and digital platforms, with Rotoflex finishing and Grafotronic die-cutting.\n\nMaterials: paper, OPP/BOPP, PP, PE, duplex/triplex films. Certifications: ISO 9001/14001/45001, HACCP, FSC, SEDEX audited.\n\nOur core work: recurring volume labels for bottled beverages, dairy, processed food, and other FMCG segments across CEE and DACH markets.\n\nWould it be useful to review our technical capabilities for one existing label specification - to see if our production breadth and nearshore economics fit your supplier qualification criteria?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Label production capabilities - technical review",
+        "body": "Hi [First Name],\n\nFollowing up on my note about label production capabilities from Serbia.\n\nMany packaging teams use us for technical feasibility reviews before commercial discussions - especially when evaluating nearshore European alternatives for recurring label specifications.\n\nWhat we typically support:\n- Material and finish consistency verification\n- Label-line compatibility testing\n- Artwork and pre-press coordination\n- Quality documentation (ISO/HACCP/FSC)\n- Trial runs before volume commitment\n\nWould it make sense to evaluate one recurring specification - water labels, dairy sleeves, food cartons - to verify technical fit before any sourcing decision?\n\nHappy to start with capability documentation and sample review.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Label production capabilities - technical review",
+        "body": "Hi [First Name],\n\nLast follow-up on this - I know packaging qualification cycles run on their own timeline.\n\nFor context: we've supplied labels for Neoplanta (food), Pionir (confectionery), Imlek (dairy), Fruvita (beverages), Premier Aqua (water), and others across food/beverage/industrial segments since 1963.\n\nOur equipment: Mark Andy UV Flexo, MPS EFC 430 offset, Grafotronic SCF 350 die-cutting, Rotoflex finishing. Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films.\n\nIf you're ever evaluating nearshore European production options for a recurring label specification, happy to provide technical documentation and arrange a capability review.\n\nNo pressure - just wanted to leave the door open for future projects.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-supply-chain",
+    "tierName": "TIER 3 (PRIMARY/CO-BUYER): Supply Chain/Operations",
+    "tierColor": "purple",
+    "targetPersonas": "Supply Chain Manager, Operations Director, Production Manager, Plant Manager",
+    "messagingAngle": "Repeat supply reliability, capacity planning, delivery coordination, nearshore logistics advantage, production consistency",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Nearshore label supply - capacity coordination",
+        "body": "Hi [First Name],\n\nI work with Birografika MB - label and print production in Subotica, Serbia.\n\nWe manufacture recurring industrial labels (flexo, offset, digital) for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe.\n\nOur production focus: recurring volume supply where delivery reliability and nearshore logistics advantage support your line replenishment cycles.\n\nEquipment: Mark Andy UV Flexo, MPS EFC 430, Rotoflex finishing. Certifications: ISO 9001/14001/45001, HACCP, FSC, SEDEX audited.\n\nWould it be useful to discuss capacity planning for one recurring label specification - to see how nearshore Serbian production could support your supply chain coordination?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Nearshore label supply - capacity coordination",
+        "body": "Hi [First Name],\n\nFollowing up on my note about nearshore label supply from Serbia.\n\nMany operations teams across Austria, Germany, and CEE use us for recurring volume labels where production consistency and delivery coordination matter more than ultra-short lead times.\n\nWhat we typically support:\n- Recurring supply for active production lines\n- Capacity planning for seasonal demand\n- Delivery coordination to match your replenishment cycles\n- Production consistency across multiple SKUs\n- Nearshore logistics advantage (Subotica to DACH/CEE)\n\nWould it make sense to evaluate one recurring specification - water labels, dairy sleeves, food cartons - to see if nearshore Serbian production fits your supply chain coordination?\n\nHappy to start with a capacity planning discussion before any commercial commitment.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Nearshore label supply - capacity coordination",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize supply chain evaluation depends on contract cycles and line expansion priorities.\n\nFor context: we've supplied recurring labels for Neoplanta, Pionir, Imlek, Fruvita, Premier Aqua, and others across food/beverage/industrial segments for decades.\n\nOur value proposition: reliable European manufacturing partner with competitive Serbian production economics + nearshore logistics advantage for DACH and CEE markets.\n\nIf you're ever evaluating supply options for a recurring label specification - or planning capacity for new line launches - happy to discuss production coordination and delivery planning.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-leadership",
+    "tierName": "TIER 4 (PRIMARY IN SMALLER FIRMS): Leadership",
+    "tierColor": "amber",
+    "targetPersonas": "CEO, Managing Director, Owner, Founder (in smaller firms without dedicated packaging buyers)",
+    "messagingAngle": "Production partnership, reliable European manufacturing partner, competitive economics. For agencies: white-label production partnership",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Nearshore label production - European partner",
+        "body": "Hi [First Name],\n\nI work with Birografika MB - label and print production in Subotica, Serbia (about 60 years in business).\n\nWe manufacture recurring industrial labels for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe.\n\nOur value proposition: reliable European manufacturing partner with competitive Serbian production economics + quality certifications (ISO 9001/14001/45001, HACCP, FSC, SEDEX audited).\n\nEquipment: Mark Andy UV Flexo, MPS EFC 430, Rotoflex finishing. Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films.\n\nWould it be useful to compare production options for one recurring label specification - to see how nearshore economics and European quality standards fit your supply strategy?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Nearshore label production - European partner",
+        "body": "Hi [First Name],\n\nFollowing up on my note about nearshore label production from Serbia.\n\nMany smaller food/beverage manufacturers and private-label producers across CEE and DACH markets use us as a production partner for recurring volume labels - where landed cost and production reliability matter more than ultra-short lead times.\n\nOur customers: Neoplanta, Pionir, Imlek, Fruvita, Premier Aqua, Tigar Tires, Nectar - across food/beverage/industrial segments.\n\nOur focus: recurring label supply where nearshore Serbian economics and European quality standards (ISO/HACCP/FSC) provide a cost-effective alternative to higher-priced Western European production.\n\nWould it make sense to evaluate one existing specification - water labels, dairy sleeves, food cartons - to see if this model fits your production strategy?\n\nHappy to start with a technical and commercial comparison.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Nearshore label production - European partner",
+        "body": "Hi [First Name],\n\nLast note on this - I know supplier evaluation timing varies widely depending on business priorities and contract cycles.\n\nFor context: we've manufactured labels for food/beverage/industrial companies across CEE and DACH markets since 1963 - primarily recurring volume specifications where production consistency and nearshore economics justify a European partner vs. ultra-low-cost overseas production or higher-cost Western European suppliers.\n\nOur value proposition: competitive Serbian production economics + European quality standards (ISO/HACCP/FSC) + nearshore logistics advantage (Subotica to Austria/Germany/CEE).\n\nIf you're ever benchmarking production options for recurring label specifications - or evaluating new manufacturing partners - happy to provide technical and commercial details.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-marketing",
+    "tierName": "TIER 5 (SECONDARY): Marketing/Product",
+    "tierColor": "indigo",
+    "targetPersonas": "Marketing Manager, Brand Manager, Product Manager",
+    "messagingAngle": "Rebrand support, new SKU launch coordination, specification briefing, programme management",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Label production for rebrand/new SKU launches",
+        "body": "Hi [First Name],\n\nI work with Birografika MB - label and print production in Subotica, Serbia.\n\nWe manufacture labels for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe - primarily recurring volume specifications, but also new SKU launches and rebrand support.\n\nOur production capabilities: flexo (Mark Andy UV), offset (MPS EFC 430), digital printing, Rotoflex finishing. Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films.\n\nCertifications: ISO 9001/14001/45001, HACCP, FSC, SEDEX audited.\n\nWould it be useful to discuss label production options for an upcoming rebrand or new product launch - to see if nearshore Serbian economics and European quality standards fit your programme timeline?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Label production for rebrand/new SKU launches",
+        "body": "Hi [First Name],\n\nFollowing up on my note about label production for rebrand and new SKU launches.\n\nMany marketing teams across Austria, Germany, and CEE use us for new product launches and packaging redesigns - especially when launch timelines allow for nearshore European production vs. urgent Western European suppliers.\n\nWhat we typically support:\n- Specification briefing and technical feasibility review\n- Artwork coordination and pre-press support\n- Trial runs and packaging validation\n- Launch volume production with recurring supply\n- Quality documentation (ISO/HACCP/FSC)\n\nWould it make sense to evaluate production options for one upcoming launch or rebrand - to see if nearshore Serbian economics fit your project budget and timeline?\n\nHappy to start with a capability review and specification discussion.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Label production for rebrand/new SKU launches",
+        "body": "Hi [First Name],\n\nLast follow-up on this - I recognize launch planning cycles vary widely depending on product priorities and market timing.\n\nFor context: we've supported new product launches and rebrands for Neoplanta, Pionir, Imlek, Fruvita, Premier Aqua, and others across food/beverage/industrial segments.\n\nOur value proposition: nearshore European label production with competitive Serbian economics + quality certifications (ISO/HACCP/FSC) + artwork and pre-press coordination support.\n\nIf you're ever planning a rebrand or new SKU launch where label production economics matter - and timelines allow for nearshore European manufacturing - happy to discuss specifications and production options.\n\nNo pressure - just wanted to leave the door open for future projects.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-6-quality",
+    "tierName": "TIER 6 (TERTIARY): Quality/Technical",
+    "tierColor": "rose",
+    "targetPersonas": "Quality Manager, QA Manager, Technical Manager",
+    "messagingAngle": "Documentation support, trials and application approval, quality standards consistency, technical validation",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Quality documentation - label production capabilities",
+        "body": "Hi [First Name],\n\nI work with Birografika MB - label and print production in Subotica, Serbia.\n\nWe manufacture recurring industrial labels for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe.\n\nOur quality certifications: ISO 9001:2015 (quality management), ISO 14001:2015 (environmental), ISO 45001:2018 (health & safety), HACCP (food safety), FSC (sustainable sourcing), SEDEX audited (ethical supply chain).\n\nEquipment: Mark Andy UV Flexo, MPS EFC 430, Grafotronic die-cutting, Rotoflex finishing. Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films.\n\nWould it be useful to provide quality documentation for supplier qualification review - to verify our production capabilities and standards consistency for your approval process?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Quality documentation - label production capabilities",
+        "body": "Hi [First Name],\n\nFollowing up on my note about quality documentation and supplier qualification.\n\nMany QA teams across Austria, Germany, and CEE include us in their approved supplier lists for recurring label specifications - especially when nearshore European production and multiple certifications (ISO/HACCP/FSC) meet their quality requirements.\n\nWhat we typically provide for supplier qualification:\n- Quality management documentation (ISO 9001/14001/45001)\n- Food safety certification (HACCP)\n- Sustainable sourcing verification (FSC)\n- Ethical supply chain audit (SEDEX)\n- Material specifications and consistency testing\n- Trial runs and application approval\n\nWould it make sense to initiate a supplier qualification review - to verify our production capabilities and quality standards for your approved supplier list?\n\nHappy to provide documentation and coordinate technical validation.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Quality documentation - label production capabilities",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize supplier qualification cycles run on their own timeline and depend on internal priorities.\n\nFor context: we've manufactured labels for Neoplanta, Pionir, Imlek, Fruvita, Premier Aqua, Tigar Tires, and Nectar across food/beverage/industrial segments for decades - maintaining ISO 9001/14001/45001, HACCP, FSC, and SEDEX certifications throughout.\n\nOur equipment: Mark Andy UV Flexo, MPS EFC 430 offset, Grafotronic die-cutting, Rotoflex finishing. Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films.\n\nIf your team is ever reviewing nearshore European label suppliers for qualification - or conducting technical validation for new specifications - happy to provide documentation and coordinate trials.\n\nNo pressure - just wanted to leave the door open for future supplier reviews.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

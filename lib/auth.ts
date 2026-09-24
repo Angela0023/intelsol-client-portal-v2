@@ -1,7 +1,7 @@
 // Simple authentication for client portal
 // In production, use proper authentication (NextAuth.js, Auth0, etc.)
 
-export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'demo';
+export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'birografika' | 'demo';
 
 export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   admin: 'Portal.Master.24', // Matej + team access
@@ -20,6 +20,7 @@ export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   mbedtronix: 'Embedded.Serbia.2026',
   clevercraft: 'Partner.Flow.2026',
   stojkov: 'Print.Box.Serbia.2026',
+  birografika: 'Label.Print.Serbia.2026',
   demo: 'demo2026', // Demo dashboard for presentations
 };
 
@@ -34,7 +35,7 @@ export function checkAdminAccess(password: string): boolean {
 export function getAllowedClients(password: string): ClientAccess[] {
   // Admin can access all
   if (checkAdminAccess(password)) {
-    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus', 'plantryx', 'adsigner', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'demo'];
+    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus', 'plantryx', 'adsigner', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'demo'];
   }
 
   // Check individual client access

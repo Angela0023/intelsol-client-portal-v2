@@ -17,6 +17,7 @@
 /mbedtronix/* /mbedtronix 200
 /clevercraft/* /clevercraft 200
 /stojkov/* /stojkov 200
+/birografika/* /birografika 200
 /admin/* /admin 200
 
 # Fallback - SPA routing (Functions in /api/* take precedence automatically)
