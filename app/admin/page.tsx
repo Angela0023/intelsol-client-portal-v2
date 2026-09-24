@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -45,7 +45,8 @@ export default function AdminPage() {
         mbedtronix: 'MBEDTRONIX',
         clevercraft: 'Clever Craft',
         stojkov: 'Stojkov',
-        birografika: 'Birografika MB'
+        birografika: 'Birografika MB',
+        bmevents: 'BM Events'
       };
 
       const allTasks: any[] = [];
@@ -215,6 +216,14 @@ export default function AdminPage() {
       borderColor: 'border-lime-200',
       bgColor: 'bg-lime-50',
     },
+    {
+      id: 'bmevents',
+      name: 'BM Events',
+      industry: 'Event Promotions (Slovenia)',
+      color: 'bg-sky-100 text-sky-600',
+      borderColor: 'border-sky-200',
+      bgColor: 'bg-sky-50',
+    },
   ];
 
   const activeCount = Object.values(statuses).filter((s) => s === 'Active').length;
@@ -222,7 +231,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '16',
+      value: '17',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',

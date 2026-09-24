@@ -97,4 +97,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   clevercraft: 'Onboarding',
   stojkov: 'Onboarding',
   birografika: 'Onboarding',
+  bmevents: 'Onboarding',
 };

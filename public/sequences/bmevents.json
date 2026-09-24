@@ -1,0 +1,137 @@
+[
+  {
+    "id": "tier-1-marketing-brand",
+    "tierName": "PRIMARY: Marketing / Brand",
+    "tierColor": "blue",
+    "targetPersonas": "Marketing Manager, Brand Manager, Trade Marketing Manager",
+    "messagingAngle": "Campaign owner, brief and budget - brands/distributors with promotional activity needs",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Promoter support for [upcoming activation]",
+        "body": "Hi [First Name],\n\nI work with BM Events - we provide professional promoter support for product promotions, trade fairs and brand activations in Slovenia.\n\nI noticed [specific activation/fair/launch you're planning] and wanted to check: are you arranging promoter support for this activation, or is the team already covered?\n\nOur focus is providing communicative people who learn your offer, engage visitors face-to-face, and direct interested prospects to your sales team - so your core team can focus on their main responsibilities.\n\nWe've supported brands like Marles hise with visitor engagement and product explanations at their activations.\n\nWould it be useful to discuss promoter support for [specific activation]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Promoter support for [upcoming activation]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about promoter support for [activation/fair/launch].\n\nMany marketing teams use us when they need extra people to:\n- Approach visitors and explain the product offer\n- Engage attendees at trade fair booths\n- Present approved brand messages at in-store promotions\n- Direct interested prospects to the right sales contact\n\nThe value for your team: more visitor conversations and product attention while you focus on campaign strategy and client coordination.\n\nWould it make sense to discuss date, location, tasks and number of promoters needed for [specific activation]?\n\nHappy to arrange a brief scoping call.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Promoter support for [upcoming activation]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize activation planning timelines vary depending on campaign priorities and internal coordination.\n\nFor context: we provide professional promoter support for brands, distributors and retailers across Slovenia - primarily for product promotions, trade fair support and brand activations where face-to-face visitor engagement matters.\n\nOur team learns client offers before engaging visitors, communicates professionally, and directs interested people to appropriate sales contacts.\n\nIf you're ever coordinating promoter support for a Slovenian activation - upcoming fair, store opening, product launch or in-store campaign - happy to discuss scope and availability.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-retail-marketing",
+    "tierName": "PRIMARY: Retail Marketing",
+    "tierColor": "green",
+    "targetPersonas": "Retail Marketing Manager, Shopping Centre Marketing Manager",
+    "messagingAngle": "Store and centre promotions - confirm local buying authority for multi-location campaigns",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Promoter support for retail campaigns",
+        "body": "Hi [First Name],\n\nI work with BM Events - we provide professional promoter support for in-store promotions, product demonstrations and brand activations in Slovenia.\n\nI noticed [store network/shopping centre/retail campaign] and wanted to check: do you coordinate promoter support for your retail campaigns, or is this already arranged?\n\nOur focus is providing communicative people who engage shoppers, explain product offers, and create more attention for in-store activations - while your retail team focuses on operations and customer service.\n\nWe've supported retail promotions and product demonstrations across Slovenia for brands and retailers running activation campaigns.\n\nWould it be useful to discuss promoter support for an upcoming in-store campaign or product demonstration?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Promoter support for retail campaigns",
+        "body": "Hi [First Name],\n\nFollowing up on my note about promoter support for retail campaigns.\n\nMany retail marketing teams use us when they need external people to:\n- Run product demonstrations and tastings in stores\n- Engage shoppers during brand activation weekends\n- Support multi-location promotional campaigns\n- Present offers and direct interested customers to store staff\n\nThe value for your team: consistent promotional support across locations without pulling retail staff from their core duties.\n\nWould it make sense to discuss an upcoming retail campaign where promoter support could help - product sampling, brand activation, seasonal promotion or store opening?\n\nHappy to provide details on team briefing, coordination and availability.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Promoter support for retail campaigns",
+        "body": "Hi [First Name],\n\nLast note on this - I know retail campaign calendars run on their own schedule and promotional staffing needs vary by season.\n\nFor context: we provide professional promoter support for retail chains, shopping centres and in-store brand activations across Slovenia - when external people are needed for visitor engagement, product explanation or demonstration support.\n\nOur team learns product offers, engages shoppers face-to-face, and directs interested customers to your retail staff for purchase or detailed questions.\n\nIf you're ever coordinating promoter support for a retail campaign - multi-location activation, product sampling, demonstration weekend or store event - happy to discuss team scope and logistics.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-sales-owner",
+    "tierName": "PRIMARY: Sales / Business Owner",
+    "tierColor": "purple",
+    "targetPersonas": "Sales Manager, Managing Director, Owner",
+    "messagingAngle": "Smaller firms and exhibitors where Sales owns the promotional activity and visitor engagement",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Promoter support for [fair/showroom/event]",
+        "body": "Hi [First Name],\n\nI work with BM Events - we provide professional promoter support for trade fairs, product demonstrations and visitor engagement in Slovenia.\n\nI noticed [exhibition/fair/showroom event/open day] and wanted to check: are you arranging promoter support for visitor engagement, or is your team handling all conversations directly?\n\nOur focus is providing communicative people who approach visitors, explain your offer at an introductory level, and direct interested prospects to your sales specialists for detailed discussions.\n\nThis lets your sales team focus on qualified conversations while we handle initial visitor contact and interest generation.\n\nWe've supported exhibitors and showroom businesses with first-contact visitor engagement and prospect direction at fairs and promotional events.\n\nWould it be useful to discuss promoter support for [specific fair/event]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Promoter support for [fair/showroom/event]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about promoter support for [fair/event/open day].\n\nMany exhibitors and smaller companies use us when they need extra people to:\n- Approach fair visitors and create initial interest\n- Engage people at showroom open days or product demonstrations\n- Explain the product/service offering at an introductory level\n- Direct qualified prospects to sales specialists for detailed discussions\n\nThe value for your sales team: more visitor conversations and qualified handovers while your specialists focus on closing and technical questions.\n\nWould it make sense to discuss date, location, expected tasks and number of promoters needed for [specific activation]?\n\nHappy to arrange a brief scoping call.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Promoter support for [fair/showroom/event]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize exhibition planning and visitor engagement arrangements vary depending on event scope and internal resources.\n\nFor context: we provide professional promoter support for exhibitors, showroom businesses and companies running product demonstrations in Slovenia - when external people are needed for first-contact visitor engagement.\n\nOur team learns client offers before the event, approaches visitors professionally, and directs interested prospects to your sales specialists for qualification and closing.\n\nIf you're ever coordinating visitor engagement support for a Slovenian fair, open day, showroom event or product demonstration - happy to discuss team briefing and coordination.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-agency-delivery",
+    "tierName": "SECONDARY: Agency Delivery",
+    "tierColor": "amber",
+    "targetPersonas": "Account Director, Project Manager, Production Manager",
+    "messagingAngle": "Agency client activations - external field support for physical promotional campaigns",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "External promoter support for client activations",
+        "body": "Hi [First Name],\n\nI work with BM Events - we provide professional promoter support for brand activations, product demonstrations and trade fair campaigns in Slovenia.\n\nI noticed [agency work/client case study/activation project] and wanted to check: do you source external field teams for client activations in Slovenia, or do you handle all on-site work internally?\n\nOur focus is supporting agencies with professional promoters who learn client offers, engage visitors face-to-face, and deliver consistent activation support under your project management.\n\nThis lets your core team focus on client coordination, creative delivery and campaign oversight while we provide reliable field execution.\n\nWe've supported agencies with external field teams for client brand activations, retail campaigns and fair support across Slovenia.\n\nWould it be useful to discuss external promoter support for an upcoming client activation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: External promoter support for client activations",
+        "body": "Hi [First Name],\n\nFollowing up on my note about external field support for client activations.\n\nMany agencies use us when they need external promoters for:\n- Client brand activations and product sampling campaigns\n- Multi-location retail demonstrations\n- Trade fair booth staffing for client exhibitions\n- In-store promotional weekends for FMCG clients\n\nThe value for your team: professional field execution that represents your client well while you focus on campaign strategy, client reporting and project management.\n\nWe work under your project direction, learn client briefs, and deliver consistent on-site activation support.\n\nWould it make sense to discuss scope, briefing process and availability for an upcoming client project?\n\nHappy to arrange a brief coordination call.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: External promoter support for client activations",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize agency project timelines and field staffing needs vary depending on client briefs and activation scope.\n\nFor context: we provide professional promoter support for marketing, experiential and event agencies delivering physical client activations across Slovenia - when external field teams are needed for on-site execution.\n\nOur team learns client offers through your briefing process, executes under your project management, and maintains professional standards that represent your agency and client well.\n\nIf you're ever coordinating external field support for a client activation in Slovenia - brand campaign, retail demonstration, fair support or experiential project - happy to discuss team coordination and delivery.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-procurement-operations",
+    "tierName": "TERTIARY: Procurement / Operations",
+    "tierColor": "slate",
+    "targetPersonas": "Purchasing Manager, Operations Manager",
+    "messagingAngle": "Commercial onboarding and delivery support after marketing sponsor confirms requirement",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Promoter support supplier introduction",
+        "body": "Hi [First Name],\n\nI work with BM Events - we provide professional promoter support for product promotions, trade fairs and brand activations in Slovenia.\n\nI wanted to introduce our service in case your team coordinates supplier selection or delivery support for promotional staffing needs.\n\nOur focus is providing communicative people who learn product offers, engage visitors face-to-face at activations, and direct interested prospects to client sales teams.\n\nWe've supported brands, retailers and exhibitors with professional field staff for promotional events, trade fair support and in-store campaigns across Slovenia.\n\nWho typically coordinates promoter support for your company's activations in Slovenia - Marketing, Sales, or your team?\n\nHappy to provide service details and commercial terms if useful.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Promoter support supplier introduction",
+        "body": "Hi [First Name],\n\nFollowing up on my note about promoter support for company activations.\n\nMany operations and procurement teams become involved once Marketing or Sales confirms a promotional activity need - for supplier qualification, commercial terms and delivery coordination.\n\nWhat we typically provide:\n- Professional promoter teams for product demonstrations and trade fairs\n- Briefing and coordination support for activation delivery\n- Consistent visitor engagement and prospect direction to client teams\n- Commercial documentation and delivery reliability for recurring campaigns\n\nWould it make sense to connect with the right team member who coordinates promotional activity and field staffing for your company - or discuss commercial terms if a requirement is already identified?\n\nHappy to provide supplier information and service details.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Promoter support supplier introduction",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize supplier selection and procurement involvement depends on internal processes and campaign priorities.\n\nFor context: we provide professional promoter support for product promotions, trade fairs and brand activations across Slovenia - working with brands, distributors, retailers and agencies when external field staff are needed.\n\nOur service supports Marketing and Sales teams with visitor engagement, product explanation and prospect direction while they focus on campaign strategy and qualified conversations.\n\nIf your team ever coordinates supplier selection or delivery support for promotional staffing in Slovenia - or if you'd like to connect me with the right person - happy to provide service details and commercial terms.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

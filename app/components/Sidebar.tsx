@@ -38,6 +38,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'clevercraft', name: 'Clever Craft', icon: Building2, color: 'text-rose-600' },
     { id: 'stojkov', name: 'Stojkov', icon: Building2, color: 'text-red-600' },
     { id: 'birografika', name: 'Birografika MB', icon: Building2, color: 'text-lime-600' },
+    { id: 'bmevents', name: 'BM Events', icon: Building2, color: 'text-sky-600' },
   ];
 
   const [clients, setClients] = useState<Client[]>(defaultClients);
