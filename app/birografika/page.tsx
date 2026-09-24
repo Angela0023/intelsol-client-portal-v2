@@ -1,22 +1,36 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { FileText, Users, Filter, Brain, BarChart3, TrendingUp, FolderOpen, CheckSquare, Mail } from 'lucide-react';
-import { ContentSection, InfoCard, ListItem } from '../components/ContentSection';
-import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
+import ClientLayout from '../components/ClientLayout';
+import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import TasksTab from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
-import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
-import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
+import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
+import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail } from 'lucide-react';
+
+const tabs = [
+  { id: 'overview', label: 'Overview', icon: FileText },
+  { id: 'icp', label: 'ICP Profile', icon: Target },
+  { id: 'filters', label: 'Clay Filters', icon: Filter },
+  { id: 'prompts', label: 'AI Prompts', icon: Code },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
+  { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
+  { id: 'tasks', label: 'Tasks', icon: CheckSquare },
+];
 
 export default function BirografikaPage() {
-  const router = useRouter();
   const [activeTab, setActiveTab] = useState('overview');
+  const [status, setStatus] = useState<ClientStatus>('Onboarding');
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
+    setStatus(getClientStatus('birografika', DEFAULT_STATUSES.birografika));
+
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
     let userIsAdmin = false;
@@ -24,629 +38,107 @@ export default function BirografikaPage() {
       try {
         const parsedAccess = JSON.parse(access);
         userIsAdmin = parsedAccess.includes('admin');
-      } catch (e) {
-        // If parsing fails, assume not admin
+        setIsAdmin(userIsAdmin);
+      } catch {
+        setIsAdmin(false);
       }
     }
-    setIsAdmin(userIsAdmin);
+
+    // Internal tabs that should be hidden from non-admin users
+    const internalTabs = ['filters', 'prompts'];
+
+    // Read initial tab from URL pathname
+    const path = window.location.pathname;
+    const tabFromPath = path.split('/').pop();
+    const validTab = tabs.find(t => t.id === tabFromPath);
+    // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+    if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+      setActiveTab(validTab.id);
+    }
+
+    // Handle browser back/forward
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const tabFromPath = path.split('/').pop();
+      const validTab = tabs.find(t => t.id === tabFromPath);
+      // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+      if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+        setActiveTab(validTab.id);
+      } else {
+        setActiveTab('overview');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const tabs = [
-    { id: 'overview', label: 'Overview', icon: FileText },
-    { id: 'icp', label: 'ICP Profile', icon: Users },
-    { id: 'filters', label: 'Clay Filters', icon: Filter },
-    { id: 'prompts', label: 'AI Prompts', icon: Brain },
-    { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Mail },
-    { id: 'performance', label: 'Performance', icon: TrendingUp },
-    { id: 'documents', label: 'Documents', icon: FolderOpen },
-    { id: 'tasks', label: 'Tasks', icon: CheckSquare },
-  ];
+  const handleStatusChange = (newStatus: ClientStatus) => {
+    setStatus(newStatus);
+    setClientStatus('birografika', newStatus);
+  };
 
-  // Filter tabs for non-admin users (hide internal tabs)
-  const internalTabs = ['filters', 'prompts'];
+  const handleTabChange = (tabId: string) => {
+    setActiveTab(tabId);
+    // Update URL without page reload
+    const newPath = tabId === 'overview' ? '/birografika' : `/birografika/${tabId}`;
+    window.history.pushState({}, '', newPath);
+  };
+
+  // Filter tabs based on admin access
+  // Hide internal tabs (filters, prompts) from non-admin users
   const visibleTabs = isAdmin
     ? tabs
-    : tabs.filter(tab => !internalTabs.includes(tab.id));
-
-  function OverviewTab() {
-    return (
-      <ContentSection title="Company Overview" icon={<FileText className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <InfoCard label="Company Name" value="Birografika MB" />
-          <InfoCard label="Industry" value="Label & Print Production" />
-          <InfoCard label="Location" value="Subotica, Serbia" />
-          <InfoCard label="Website" value={
-            <a href="https://birografika.rs" target="_blank" rel="noopener noreferrer" className="text-lime-600 hover:underline">
-              https://birografika.rs
-            </a>
-          } />
-
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-2">Primary Services</h3>
-            <ul className="space-y-1 text-sm text-slate-700">
-              <ListItem>Flexo printing (UV Flexo, Mark Andy equipment)</ListItem>
-              <ListItem>Offset printing (large-run capability)</ListItem>
-              <ListItem>Digital printing</ListItem>
-              <ListItem>Specialized in recurring industrial labels</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-2">Equipment & Capabilities</h3>
-            <ul className="space-y-1 text-sm text-slate-700">
-              <ListItem>UV Flexo production</ListItem>
-              <ListItem>MPS EFC 430 (8 units, cold foil, lamination)</ListItem>
-              <ListItem>Grafotronic SCF 350</ListItem>
-              <ListItem>Rotoflex automatic label cutting</ListItem>
-              <ListItem>Materials: Paper, OPP/BOPP, PP, PE, duplex/triplex films</ListItem>
-              <ListItem>Format: Rolls or sheets for automatic application</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-2">Quality Standards</h3>
-            <ul className="space-y-1 text-sm text-slate-700">
-              <ListItem>ISO 9001:2015 (Quality Management)</ListItem>
-              <ListItem>HACCP (Food Safety)</ListItem>
-              <ListItem>ISO 14001:2015 (Environmental Management)</ListItem>
-              <ListItem>ISO 45001:2018 (Occupational Health & Safety)</ListItem>
-              <ListItem>Note: Policy stated April 2025, current certificates to be confirmed</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-2">Campaign Focus</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Target manufacturers with recurring, high-volume label requirements across Central & Eastern Europe.
-            </p>
-            <p className="text-sm text-slate-700">
-              Primary focus: Industrial labels for food & beverage, dairy, edible oils, processed food, confectionery. Secondary: Cosmetics, personal care, household chemicals, automotive fluids.
-            </p>
-          </div>
-
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-2">Public Customer References</h3>
-            <ul className="space-y-1 text-sm text-slate-700">
-              <ListItem>Neoplanta</ListItem>
-              <ListItem>Pionir</ListItem>
-              <ListItem>Imlek</ListItem>
-              <ListItem>Fruvita</ListItem>
-              <ListItem>Premier Aqua</ListItem>
-              <ListItem>Tigar Tires</ListItem>
-              <ListItem>Nectar</ListItem>
-              <ListItem className="text-amber-700 font-medium">Note: Permission to use in outbound to be confirmed</ListItem>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-    );
-  }
-
-  function ICPAndPersonasTab() {
-    return (
-      <>
-        <ContentSection title="Target Geography" icon={<Users className="w-5 h-5" />}>
-          <div className="space-y-4">
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-              <h3 className="font-bold text-blue-900 mb-2">NEARBY TESTS: Slovenia, Croatia, Hungary</h3>
-              <p className="text-sm text-slate-700">
-                Build separate country cohorts to validate segment fit and response. Do not treat proximity as evidence of existing exports.
-              </p>
-            </div>
-
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <h3 className="font-bold text-green-900 mb-2">STRATEGIC SCALE: Austria & Germany</h3>
-              <p className="text-sm text-slate-700">
-                Build alongside nearby tests. Important larger opportunity. Start with accessible regional plants and purchasing teams.
-              </p>
-            </div>
-
-            <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-              <h3 className="font-bold text-purple-900 mb-2">EXPANSION: Czechia, Slovakia, Romania</h3>
-              <p className="text-sm text-slate-700">
-                Expand after reviewing qualified conversations and technical fit from initial waves.
-              </p>
-            </div>
-
-            <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-              <h3 className="font-bold text-amber-900 mb-2">DACH EXTENSION: Switzerland</h3>
-              <p className="text-sm text-slate-700">
-                Separate later cohort. Confirm commercial and fulfillment requirements. Austria and Germany remain initial DACH focus.
-              </p>
-            </div>
-
-            <div className="bg-slate-100 p-4 rounded-lg border border-slate-300 mt-4">
-              <p className="text-sm text-slate-700">
-                <strong>Location Targeting:</strong> Use manufacturing-site country and purchasing location as well as headquarters. A group with local plants may buy centrally - resolve actual buying entity before adding contacts.
-              </p>
-            </div>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Company Size & Sweet Spot" icon={<BarChart3 className="w-5 h-5" />}>
-          <div className="space-y-3">
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <h3 className="font-bold text-green-900 mb-2">CORE SWEET SPOT: 50-500 Employees</h3>
-              <p className="text-sm text-slate-700">
-                EUR 10M-150M annual company revenue as soft discovery filter only. Operational sweet spot: manufacturer with repeat production, multiple labelled products/pack sizes, retail/distributor demand, identifiable packaging purchasing owner.
-              </p>
-            </div>
-
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-              <h3 className="font-bold text-blue-900 mb-2">SELECTIVE SMALL: 20-49 Employees</h3>
-              <p className="text-sm text-slate-700">
-                EUR 3M-10M indicative range. Include only with credible recurring production and label use evidence.
-              </p>
-            </div>
-
-            <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-              <h3 className="font-bold text-purple-900 mb-2">SELECTIVE LARGE: 501-2,000+ Employees</h3>
-              <p className="text-sm text-slate-700">
-                EUR 150M-500M+ indicative range. Qualify plant autonomy and supplier onboarding process. Many SKUs alone do not prove high volume - record repeat-demand evidence separately.
-              </p>
-            </div>
-
-            <div className="bg-slate-100 p-4 rounded-lg border border-slate-300">
-              <p className="text-sm text-slate-700">
-                <strong>Important:</strong> Unknown revenue does not disqualify an account. Direct label-demand evidence outweighs size. Minimum annual label spend, order volume and MOQ remain to be confirmed with client.
-              </p>
-            </div>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Primary Industries (A1-A3 Priority)" icon={<Filter className="w-5 h-5" />}>
-          <div className="space-y-3">
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-              <h3 className="font-bold text-blue-900 mb-2">A1: Bottled Water, Juices & Other Beverages</h3>
-              <p className="text-sm text-slate-700">
-                <strong>Include When:</strong> Own bottling or controlled contract production. Repeat labelled bottles across formats.
-              </p>
-            </div>
-
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <h3 className="font-bold text-green-900 mb-2">A2: Dairy & Edible Oils</h3>
-              <p className="text-sm text-slate-700">
-                <strong>Include When:</strong> Recurring labelled bottles, tubs or other packs. Verify actual label format.
-              </p>
-            </div>
-
-            <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-              <h3 className="font-bold text-purple-900 mb-2">A3: Processed Food & Confectionery</h3>
-              <p className="text-sm text-slate-700">
-                <strong>Include When:</strong> Multiple labelled retail products and repeat production. Screen out ranges using only unrelated packaging.
-              </p>
-            </div>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Additional Target Segments" icon={<Filter className="w-5 h-5" />}>
-          <ul className="space-y-2">
-            <ListItem><strong>Cosmetics & Personal Care:</strong> Repeat product-label use, relevant material needs</ListItem>
-            <ListItem><strong>Household Cleaners & Chemicals:</strong> Recurring labelled products</ListItem>
-            <ListItem><strong>Automotive Fluids, Lubricants & Industrial Products:</strong> Label requirements confirmed</ListItem>
-            <ListItem><strong>Wine & Spirits:</strong> When repeat volumes justify production route</ListItem>
-            <ListItem><strong>Pharma & Supplements:</strong> Conditional until application, documentation and technical requirements confirmed</ListItem>
-            <ListItem><strong>Secondary Offer:</strong> Recurring offset/digital/commercial print for relevant manufacturers (track separately from core label list)</ListItem>
-          </ul>
-        </ContentSection>
-
-        <ContentSection title="Business Models & Fit" icon={<CheckSquare className="w-5 h-5" />}>
-          <div className="space-y-4">
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <h3 className="font-semibold text-green-900 mb-2">INCLUDE</h3>
-              <ul className="space-y-1 text-sm text-slate-700">
-                <ListItem>Own-brand manufacturers with label purchasing control</ListItem>
-                <ListItem>Private-label producers controlling packaging</ListItem>
-                <ListItem>Contract manufacturers & co-packers controlling label sourcing</ListItem>
-                <ListItem>Multi-SKU portfolios with regular replenishment</ListItem>
-                <ListItem>Retail/distributor channels present</ListItem>
-                <ListItem>Brand owners who specify/procure labels (otherwise map the co-packer)</ListItem>
-              </ul>
-            </div>
-
-            <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-              <h3 className="font-semibold text-red-900 mb-2">EXCLUDE FROM PRIMARY LIST</h3>
-              <ul className="space-y-1 text-sm text-slate-700">
-                <ListItem>Printing companies and label converters (competitors)</ListItem>
-                <ListItem>Print brokers and agencies</ListItem>
-                <ListItem>Pure resellers/distributors without packaging control</ListItem>
-                <ListItem>Services-only businesses</ListItem>
-                <ListItem>Pre-launch brands without repeat demand</ListItem>
-                <ListItem>One-off promotional print buyers</ListItem>
-                <ListItem>Existing customers, deals or partners on exclusion list</ListItem>
-                <ListItem>Carton-only, rigid-packaging-only or unsupported technical applications</ListItem>
-              </ul>
-            </div>
-
-            <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-              <h3 className="font-semibold text-amber-900 mb-2">HOLD FOR REVIEW</h3>
-              <ul className="space-y-1 text-sm text-slate-700">
-                <ListItem>Packaging format unclear</ListItem>
-                <ListItem>Procurement controlled elsewhere</ListItem>
-                <ListItem>Unverified volume</ListItem>
-                <ListItem>Specialized requirements not yet qualified</ListItem>
-                <ListItem>Do not exclude solely because revenue unavailable</ListItem>
-              </ul>
-            </div>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Buyer Personas (6 Tiers)" icon={<Users className="w-5 h-5" />}>
-          <div className="space-y-3">
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-blue-900">PRIMARY: Procurement / Purchasing</h3>
-                <span className="px-2 py-1 bg-blue-200 text-blue-800 text-xs font-semibold rounded">PRIMARY</span>
-              </div>
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Typical Titles:</strong> Head of Procurement, Procurement Manager, Purchasing Manager, Strategic Buyer, Packaging Buyer</p>
-                <p><strong>Local Titles:</strong> Einkauf, Strategischer Einkäufer, Verpackungsmanager, vodja nabave, nabavnik, beszerzési vezető, beszerző</p>
-                <p><strong>When This Applies:</strong> Default entry for repeat contracts, supplier qualification and cost reviews</p>
-              </div>
-            </div>
-
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-green-900">PRIMARY CHAMPION: Packaging</h3>
-                <span className="px-2 py-1 bg-green-200 text-green-800 text-xs font-semibold rounded">PRIMARY</span>
-              </div>
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Typical Titles:</strong> Packaging Manager, Head of Packaging, Packaging Development Manager</p>
-                <p><strong>When This Applies:</strong> Specifications, artwork/material changes, trials and label-line compatibility decisions</p>
-              </div>
-            </div>
-
-            <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-purple-900">PRIMARY/CO-BUYER: Supply Chain / Operations / Production</h3>
-                <span className="px-2 py-1 bg-purple-200 text-purple-800 text-xs font-semibold rounded">PRIMARY</span>
-              </div>
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Typical Titles:</strong> Supply Chain Manager, Operations Director, Production Manager, Plant Manager</p>
-                <p><strong>When This Applies:</strong> Capacity, replenishment and line expansion. Establish whether plant controls sourcing.</p>
-              </div>
-            </div>
-
-            <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-amber-900">PRIMARY IN SMALLER FIRMS: Leadership</h3>
-                <span className="px-2 py-1 bg-amber-200 text-amber-800 text-xs font-semibold rounded">PRIMARY</span>
-              </div>
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Typical Titles:</strong> CEO, Managing Director, Owner, Founder</p>
-                <p><strong>When This Applies:</strong> Use when packaging procurement has no dedicated owner. Confirm who handles specifications.</p>
-              </div>
-            </div>
-
-            <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-slate-900">SECONDARY: Marketing / Product</h3>
-                <span className="px-2 py-1 bg-slate-200 text-slate-800 text-xs font-semibold rounded">SECONDARY</span>
-              </div>
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Typical Titles:</strong> Marketing Manager, Brand Manager, Product Manager</p>
-                <p><strong>When This Applies:</strong> Rebrand, new SKU or launch champion. Connect with procurement for commercial decisions.</p>
-              </div>
-            </div>
-
-            <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-slate-900">TERTIARY: Quality / Technical</h3>
-                <span className="px-2 py-1 bg-slate-200 text-slate-800 text-xs font-semibold rounded">TERTIARY</span>
-              </div>
-              <div className="space-y-2 text-slate-700">
-                <p><strong>Typical Titles:</strong> Quality Manager, QA Manager, Technical Manager</p>
-                <p><strong>When This Applies:</strong> Documentation, trials and application approval. Not the default first commercial contact.</p>
-              </div>
-            </div>
-
-            <div className="bg-slate-100 p-4 rounded-lg border border-slate-300 mt-4">
-              <h3 className="font-semibold text-slate-900 mb-2">Contact Strategy by Company Size</h3>
-              <ul className="space-y-2 text-sm text-slate-700">
-                <ListItem><strong>Smaller Manufacturers:</strong> Owner/CEO plus operations</ListItem>
-                <ListItem><strong>Mid-Market:</strong> Procurement plus packaging/production</ListItem>
-                <ListItem><strong>Larger Groups:</strong> Category buyer plus local plant or packaging specialist. Map central vs local authority.</ListItem>
-                <ListItem><strong>Food/Chemicals/Demanding Applications:</strong> Involve quality early</ListItem>
-              </ul>
-              <p className="text-sm text-slate-700 mt-3">
-                <strong>Contact Rule:</strong> Begin with 1-2 relevant contacts per account, then add technical validator if needed. Store buying entity and plant served. Avoid duplicate outreach to subsidiaries controlled by same central buyer.
-              </p>
-            </div>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Buying Signals (Tier 1-3 Priority)" icon={<TrendingUp className="w-5 h-5" />}>
-          <div className="space-y-3">
-            <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-              <h3 className="font-bold text-red-900 mb-2">TIER 1: Active Purchasing Window</h3>
-              <ul className="space-y-2 text-sm text-slate-700">
-                <ListItem><strong>Active Sourcing/Cost Review:</strong> Label/packaging RFQ, supplier qualification, tender, consolidation or cost programme with owner/timetable. Capture scope and deadline.</ListItem>
-                <ListItem><strong>Dated Launch/Redesign:</strong> Confirmed new SKU, rebrand or packaging refresh with future/recent rollout date and relevant label format. Ask about supplier qualification.</ListItem>
-                <ListItem><strong>New Production/Filling Line:</strong> Confirmed line/site expansion, commissioning date and relevant packaged products. Verify label sourcing affected.</ListItem>
-              </ul>
-            </div>
-
-            <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-              <h3 className="font-bold text-amber-900 mb-2">TIER 2: Relevant Change Event</h3>
-              <ul className="space-y-2 text-sm text-slate-700">
-                <ListItem><strong>Market/Channel Expansion:</strong> New retailer, distributor or country entry. Evidence pack variants, language versions or production volumes may change.</ListItem>
-                <ListItem><strong>Packaging/Procurement Hiring:</strong> Current vacancy naming packaging sourcing, labels, supplier management or production expansion. Generic hiring insufficient.</ListItem>
-                <ListItem><strong>Sustainability/Packaging Initiative:</strong> Specific material, recyclability or packaging redesign project. Ask about specifications.</ListItem>
-                <ListItem><strong>Undated Launch/Cost Initiative:</strong> Relevant announcement without purchasing window. Research timeline before promoting to Tier 1.</ListItem>
-              </ul>
-            </div>
-
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <h3 className="font-bold text-green-900 mb-2">TIER 3: Durable Fit Indicators</h3>
-              <ul className="space-y-2 text-sm text-slate-700">
-                <ListItem><strong>Recurring High-Volume Label Use:</strong> Explicit repeat production/volume evidence, or documented proxy (bottling operations + broad retail distribution). Treat inferred volume as inferred.</ListItem>
-                <ListItem><strong>Many SKUs & Pack Variants:</strong> Catalogue shows multiple sizes, flavours or brands. Record examples and repeat-demand evidence. Supports fit, not urgency.</ListItem>
-              </ul>
-            </div>
-
-            <div className="bg-slate-100 p-4 rounded-lg border border-slate-300">
-              <p className="text-sm text-slate-700">
-                <strong>Signal Freshness:</strong> Prefer events within 90 days or confirmed forthcoming milestone. Review 91-180 day items for continuing relevance. Older/undated events are context unless open project verified. Record source URL, publication/event dates, check date and confidence. Do not count duplicated announcements as separate signals.
-              </p>
-            </div>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Exclusion Criteria" icon={<CheckSquare className="w-5 h-5" />}>
-          <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-            <h3 className="font-semibold text-red-900 mb-3">Do NOT Target</h3>
-            <ul className="space-y-2 text-sm text-slate-700">
-              <ListItem>Printing companies and label converters (apply category exclusion)</ListItem>
-              <ListItem>Print brokers and agencies</ListItem>
-              <ListItem>Pure resellers/distributors without packaging control</ListItem>
-              <ListItem>Services-only businesses</ListItem>
-              <ListItem>Pre-launch brands without repeat demand</ListItem>
-              <ListItem>One-off promotional print buyers</ListItem>
-              <ListItem>Publicly displayed references (provisional exclusions pending client confirmation)</ListItem>
-              <ListItem>Named competitors (to be confirmed with client)</ListItem>
-            </ul>
-            <p className="text-sm text-amber-700 font-medium mt-3">
-              NOTE: Named competitor list to be confirmed with Birografika MB
-            </p>
-          </div>
-        </ContentSection>
-      </>
-    );
-  }
-
-  function FiltersTab() {
-    return (
-      <ContentSection title="Clay Filters Configuration" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-3">Firmographic Filters</h3>
-            <ul className="space-y-2 text-sm text-slate-700">
-              <ListItem><strong>Countries (Phased):</strong> Wave 1: Slovenia, Croatia, Hungary | Strategic: Austria, Germany | Expansion: Czechia, Slovakia, Romania | Later: Switzerland</ListItem>
-              <ListItem><strong>Employee Count:</strong> Sweet spot 50-500 | Selective small 20-49 | Selective large 501-2,000+</ListItem>
-              <ListItem><strong>Revenue (Indicative):</strong> Sweet spot EUR 10-150M | Small EUR 3-10M | Large EUR 150-500M+ (unknown revenue allowed if label demand evident)</ListItem>
-              <ListItem><strong>Industries (Primary):</strong> Beverage manufacturing, bottled water, juice production, dairy, edible oils, processed food, confectionery</ListItem>
-              <ListItem><strong>Industries (Additional):</strong> Cosmetics manufacturing, personal care, household cleaners, chemicals, automotive fluids, lubricants, industrial products, wine/spirits</ListItem>
-              <ListItem><strong>Business Model:</strong> Own-brand manufacturers, private-label producers, contract manufacturers, co-packers with packaging control</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-            <h3 className="font-semibold text-red-900 mb-3">Exclusion Filters</h3>
-            <ul className="space-y-2 text-sm text-slate-700">
-              <ListItem><strong>Industry Exclusions:</strong> Printing companies, label converters, print brokers, agencies, pure resellers/distributors</ListItem>
-              <ListItem><strong>Keyword Negative:</strong> -printer -"print shop" -"label converter" -agency (apply as refinement, then inspect manually)</ListItem>
-              <ListItem><strong>Business Type:</strong> Services-only, no manufacturing control over packaging</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-            <h3 className="font-semibold text-blue-900 mb-3">Evidence Requirements (Clay Research)</h3>
-            <ul className="space-y-2 text-sm text-slate-700">
-              <ListItem><strong>Product Fit:</strong> Labelled bottles, tubs, jars, cartons - verify actual label use</ListItem>
-              <ListItem><strong>Material Evidence:</strong> Paper, OPP/BOPP, PP, PE labels explicitly stated (otherwise mark unknown)</ListItem>
-              <ListItem><strong>Application:</strong> Wrap-around, self-adhesive, automatic labeling equipment (when confirmed)</ListItem>
-              <ListItem><strong>Repeat Demand:</strong> Multi-SKU portfolios, regular replenishment, retail/distributor channels present</ListItem>
-              <ListItem><strong>Volume Proxy:</strong> Own bottling + broad retail distribution, documented high-volume production</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h3 className="font-semibold text-purple-900 mb-3">Contact Data Requirements</h3>
-            <ul className="space-y-2 text-sm text-slate-700">
-              <ListItem><strong>Target Functions:</strong> Procurement, Purchasing, Packaging, Supply Chain, Operations, Production (primary), CEO/Owner (smaller firms)</ListItem>
-              <ListItem><strong>Local Titles:</strong> Search Einkauf, Verpackungsmanager, vodja nabave, beszerzési vezető alongside English titles</ListItem>
-              <ListItem><strong>Verification:</strong> Confirm current employment and role scope before adding lead</ListItem>
-              <ListItem><strong>Entity Mapping:</strong> Resolve actual buying entity (central vs local plant purchasing), link subsidiaries to parent</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-            <h3 className="font-semibold text-amber-900 mb-3">Search Patterns & Keywords</h3>
-            <p className="text-sm text-slate-700 mb-2"><strong>Food & Beverage:</strong></p>
-            <p className="text-xs text-slate-600 font-mono mb-3">
-              ("bottled water" OR "juice manufacturer" OR dairy OR "edible oil") AND (manufacturer OR producer OR bottling) AND [country]
-            </p>
-            <p className="text-sm text-slate-700 mb-2"><strong>Other Segments:</strong></p>
-            <p className="text-xs text-slate-600 font-mono mb-3">
-              ("private label cosmetics" OR "detergent manufacturer" OR lubricants) AND (manufacturer OR producer) AND [country]
-            </p>
-            <p className="text-sm text-slate-700 mb-2"><strong>Local Language Enrichment:</strong></p>
-            <ul className="space-y-1 text-xs text-slate-600">
-              <ListItem>Slovenia: proizvajalec pijač, mlekarna, jedilno olje, kozmetika, čistila</ListItem>
-              <ListItem>Croatia: proizvođač pića, mljekara, jestivo ulje, deterdženti</ListItem>
-              <ListItem>Hungary: italgyártó, ásványvíz, tejüzem, kozmetikai gyártó</ListItem>
-              <ListItem>Austria/Germany: Getränkehersteller, Mineralwasser, Molkerei, Speiseöl, Kosmetikhersteller</ListItem>
-            </ul>
-          </div>
-
-          <div className="bg-slate-100 p-4 rounded-lg border border-slate-300">
-            <h3 className="font-semibold text-slate-900 mb-3">Routing & Qualification Rules</h3>
-            <ul className="space-y-2 text-sm text-slate-700">
-              <ListItem><strong>P1 Priority:</strong> All gates passed + credible recurring-demand evidence + at least one current Tier 1 event</ListItem>
-              <ListItem><strong>P2 Priority:</strong> All gates passed + repeat-demand evidence + Tier 2 or strong Tier 3 fit</ListItem>
-              <ListItem><strong>Research Queue:</strong> Missing gate, unclear application, stale event or unknown repeat demand</ListItem>
-              <ListItem><strong>Exclude:</strong> Explicit exclusion category or confirmed competitor/existing customer</ListItem>
-              <ListItem><strong>Secondary Print:</strong> Separate queue for offset/digital/commercial print opportunities (never promoted to primary labels by print demand alone)</ListItem>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-    );
-  }
-
-  function PromptsTab() {
-    return (
-      <ContentSection title="AI Research Prompts" icon={<Brain className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <div className="bg-lime-50 p-4 rounded-lg border border-lime-200">
-            <h3 className="font-semibold text-lime-900 mb-2">1. Active Sourcing Event Detection</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Search company website, news, LinkedIn for: label/packaging RFQ, supplier qualification, tender, consolidation or cost programme. Capture scope, owner, timetable. Mark as Tier 1 if window confirmed.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("label supplier" OR "packaging RFQ" OR "supplier qualification" OR "packaging tender" OR "cost review")
-            </p>
-          </div>
-
-          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-            <h3 className="font-semibold text-blue-900 mb-2">2. Product Launch & Packaging Redesign</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Find new SKU, rebrand, packaging refresh with rollout date and relevant label format. Ask about supplier qualification for rollout. Mark Tier 1 if dated, Tier 2 if undated.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("new product" OR "product launch" OR rebrand OR "packaging redesign" OR "new look")
-            </p>
-          </div>
-
-          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-            <h3 className="font-semibold text-green-900 mb-2">3. Production Line Expansion</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Search for new filling line, bottling line, production expansion with commissioning date. Verify label sourcing affected. Mark as Tier 1 if confirmed and relevant.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("new line" OR "production expansion" OR "filling line" OR "bottling line" OR "capacity expansion")
-            </p>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <h3 className="font-semibold text-purple-900 mb-2">4. Market & Channel Expansion</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Find new retailer listing, distributor partnership, export market entry. Evidence that pack variants, language versions or production volumes may change. Mark as Tier 2.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("new market" OR "new distributor" OR "retailer listing" OR "export" OR "market entry")
-            </p>
-          </div>
-
-          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-            <h3 className="font-semibold text-amber-900 mb-2">5. Relevant Hiring Signals</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Find current vacancy naming packaging sourcing, labels, supplier management or production expansion. Generic hiring insufficient. Mark as Tier 2.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:linkedin.com/jobs OR site:[domain]/careers ("packaging" OR "procurement" OR "supply chain" OR "supplier") [company name]
-            </p>
-          </div>
-
-          <div className="bg-rose-50 p-4 rounded-lg border border-rose-200">
-            <h3 className="font-semibold text-rose-900 mb-2">6. Sustainability & Packaging Initiative</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Find specific material change, recyclability or packaging redesign project. Ask about specifications before proposing solution. Mark as Tier 2.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("sustainable packaging" OR recyclable OR "eco-friendly" OR "packaging initiative" OR "reduce plastic")
-            </p>
-          </div>
-
-          <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-            <h3 className="font-semibold text-indigo-900 mb-2">7. Product Portfolio & Repeat Demand Verification</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Identify multiple labelled products, pack sizes, SKU variants. Confirm repeat production evidence. Look for bottling operations + broad retail distribution as volume proxy. Mark as Tier 3.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("product range" OR "our products" OR portfolio) + check for pack images, formats, SKU variants
-            </p>
-          </div>
-
-          <div className="bg-teal-50 p-4 rounded-lg border border-teal-200">
-            <h3 className="font-semibold text-teal-900 mb-2">8. Technical Fit & Label Format Verification</h3>
-            <p className="text-sm text-slate-700 mb-2">
-              Identify bottle/pack format (wrap-around vs self-adhesive vs sleeve), materials (paper, OPP/BOPP, PP, PE), application process (automatic labeling). Images may be ambiguous - record only explicit statements.
-            </p>
-            <p className="text-xs text-slate-600 font-mono">
-              site:[domain] ("production" OR "manufacturing" OR "our facility") + inspect pack images, technical specs, equipment mentions
-            </p>
-          </div>
-
-          <div className="bg-slate-100 p-4 rounded-lg border border-slate-300">
-            <h3 className="font-semibold text-slate-900 mb-3">Signal Recording Rules</h3>
-            <ul className="space-y-1 text-sm text-slate-700">
-              <ListItem>Record source URL, publication date, event date, check date, confidence level</ListItem>
-              <ListItem>One record per distinct event - do not count duplicated announcements separately</ListItem>
-              <ListItem>Preserve Confirmed vs Inferred vs Unknown labels for all assertions</ListItem>
-              <ListItem>Signal freshness: prefer &lt;90 days or confirmed forthcoming milestone</ListItem>
-              <ListItem>Review 91-180 day items for continuing relevance before using</ListItem>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-    );
-  }
-
-  function CampaignsSequencesTab() {
-    return (
-      <>
-        <SequencesTab clientId="birografika" />
-        <div className="mt-8">
-          <CampaignsTabGeneric />
-        </div>
-      </>
-    );
-  }
+    : tabs.filter(tab => !['filters', 'prompts'].includes(tab.id));
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="max-w-7xl mx-auto p-8">
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-2xl font-bold text-gray-900">Birografika MB</h1>
-            <a
-              href="https://birografika.rs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-lime-600 hover:underline inline-block"
-            >
-              Visit Website →
-            </a>
+    <ClientLayout>
+      <div className="p-4 lg:p-8">
+        {/*Page Header*/}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-lime-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-xl lg:text-2xl font-bold text-lime-600">BM</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
+                <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Birografika MB</h1>
+                <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+              </div>
+              <p className="text-sm lg:text-base text-slate-600 break-words">Label & Print Production - Subotica, Serbia</p>
+            </div>
           </div>
-          <p className="text-slate-600">Label & Print Production - Subotica, Serbia</p>
+          <a
+            href="https://birografika.rs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-lime-600 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
         </div>
 
-        {/* Tabs */}
-        <div className="bg-white rounded-lg shadow-sm mb-6 overflow-x-auto">
-          <div className="flex border-b border-slate-200 min-w-max">
-            {visibleTabs.map((tab) => {
-              const Icon = tab.icon;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2 px-6 py-4 font-medium transition-colors whitespace-nowrap ${
-                    activeTab === tab.id
-                      ? 'text-lime-600 border-b-2 border-lime-600 bg-lime-50'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
-                  }`}
-                >
-                  <Icon className="w-4 h-4" />
-                  {tab.label}
-                </button>
-              );
-            })}
+        {/*Tabs*/}
+        <div className="border-b border-slate-200 mb-6 -mx-4 px-4 lg:mx-0 lg:px-0">
+          <div className="flex space-x-1 overflow-x-auto scrollbar-hide pb-px">
+            {visibleTabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleTabChange(tab.id)}
+                className={`flex items-center space-x-1 lg:space-x-2 px-2 lg:px-4 py-2 lg:py-3 border-b-2 transition-colors whitespace-nowrap text-sm lg:text-base flex-shrink-0 ${
+                  activeTab === tab.id
+                    ? 'border-[#1a2647] text-[#1a2647] font-medium'
+                    : 'border-transparent text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <tab.icon className="w-4 h-4" />
+                <span className="hidden sm:inline">{tab.label}</span>
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Tab Content */}
+        {/*Tab Content*/}
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPAndPersonasTab />}
@@ -659,10 +151,507 @@ export default function BirografikaPage() {
               <CampaignsTabDynamic clientId="birografika" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="birografika" />}
-          {activeTab === 'tasks' && <TasksTab clientId="birografika" />}
+          {activeTab === 'documents' && (
+            <DocumentsTabGeneric
+              clientId="birografika"
+              clientName="Birografika MB"
+              totalLeads={0}
+              totalCampaigns={0}
+              accentColor="lime"
+            />
+          )}
+          {activeTab === 'tasks' && (
+            <TasksTab clientId="birografika" defaultTasks={[]} />
+          )}
         </div>
       </div>
-    </div>
+    </ClientLayout>
+  );
+}
+
+function OverviewTab() {
+  return (
+    <>
+      <ContentSection title="Company Overview" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p>
+            Birografika MB is a label and print production company based in Subotica, Serbia, with over 60 years of experience since 1963. They manufacture recurring industrial labels (flexo, offset, digital) for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Industry" value="Label & Print Production" />
+            <InfoCard label="Location" value="Subotica, Serbia" />
+            <InfoCard label="Website" value={
+              <a href="https://birografika.rs" target="_blank" rel="noopener noreferrer" className="text-lime-600 hover:underline">
+                https://birografika.rs
+              </a>
+            } />
+            <InfoCard label="Experience" value="60+ years (since 1963)" />
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Primary Services" icon={<TrendingUp className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem type="check">Flexo printing (UV Flexo, Mark Andy equipment)</ListItem>
+          <ListItem type="check">Offset printing (large-run capability)</ListItem>
+          <ListItem type="check">Digital printing</ListItem>
+          <ListItem type="check">Specialized in recurring industrial labels</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Equipment & Capabilities">
+        <ul className="space-y-2">
+          <ListItem type="arrow">UV Flexo production</ListItem>
+          <ListItem type="arrow">MPS EFC 430 (8 units, cold foil, lamination)</ListItem>
+          <ListItem type="arrow">Grafotronic SCF 350 (die-cutting machine)</ListItem>
+          <ListItem type="arrow">Rotoflex (automatic label cutting and inspection, VLI 250)</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Materials">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <ListItem type="dot">Paper</ListItem>
+          <ListItem type="dot">OPP/BOPP</ListItem>
+          <ListItem type="dot">PP</ListItem>
+          <ListItem type="dot">PE</ListItem>
+          <ListItem type="dot">Duplex films</ListItem>
+          <ListItem type="dot">Triplex films</ListItem>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Quality Standards & Certifications">
+        <ul className="space-y-2">
+          <ListItem type="check">ISO 9001:2015 (Quality Management)</ListItem>
+          <ListItem type="check">ISO 14001:2015 (Environmental Management)</ListItem>
+          <ListItem type="check">ISO 45001:2018 (Occupational Health & Safety)</ListItem>
+          <ListItem type="check">HACCP (Food Safety)</ListItem>
+          <ListItem type="check">FSC Certified (Sustainable Sourcing)</ListItem>
+          <ListItem type="check">SEDEX Audited (Ethical Supply Chain)</ListItem>
+        </ul>
+        <p className="text-sm text-slate-600 mt-4">
+          Quality management policy dated April 2025
+        </p>
+      </ContentSection>
+
+      <ContentSection title="Public Customer References">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <ListItem type="arrow">Neoplanta (food/oils)</ListItem>
+          <ListItem type="arrow">Pionir (confectionery)</ListItem>
+          <ListItem type="arrow">Imlek (dairy)</ListItem>
+          <ListItem type="arrow">Fruvita (beverages)</ListItem>
+          <ListItem type="arrow">Premier Aqua (bottled water)</ListItem>
+          <ListItem type="arrow">Tigar Tires (industrial)</ListItem>
+          <ListItem type="arrow">Nectar (food/beverage)</ListItem>
+        </div>
+      </ContentSection>
+    </>
+  );
+}
+
+function ICPAndPersonasTab() {
+  return (
+    <>
+      <ContentSection title="Target Geography (4-Wave Rollout)" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h3 className="font-semibold text-blue-900 mb-2">Wave 1: Nearby Tests</h3>
+            <p className="text-sm text-blue-800">Slovenia, Croatia, Hungary</p>
+            <p className="text-xs text-blue-700 mt-1">Lower shipping, shorter lead time, culturally similar buyers</p>
+          </div>
+
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <h3 className="font-semibold text-green-900 mb-2">Wave 2: Strategic Scale</h3>
+            <p className="text-sm text-green-800">Austria, Germany</p>
+            <p className="text-xs text-green-700 mt-1">High FMCG volume, cost-conscious, nearshore advantage</p>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+            <h3 className="font-semibold text-amber-900 mb-2">Wave 3: Expansion</h3>
+            <p className="text-sm text-amber-800">Czechia, Slovakia, Romania</p>
+            <p className="text-xs text-amber-700 mt-1">CEE expansion markets</p>
+          </div>
+
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+            <h3 className="font-semibold text-purple-900 mb-2">Wave 4: DACH Extension</h3>
+            <p className="text-sm text-purple-800">Switzerland</p>
+            <p className="text-xs text-purple-700 mt-1">Premium FMCG segment, nearshore alternative to higher-cost local production</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Company Size Targets">
+        <div className="space-y-4">
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 className="font-semibold text-slate-900 mb-2">CORE: 50-500 Employees</h3>
+            <p className="text-sm text-slate-700">EUR 10-150M revenue, dedicated packaging buyer or packaging-aware procurement</p>
+          </div>
+
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 className="font-semibold text-slate-900 mb-2">SELECTIVE SMALL: 20-49 Employees</h3>
+            <p className="text-sm text-slate-700">EUR 3-10M revenue, owner/CEO is primary buyer</p>
+          </div>
+
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <h3 className="font-semibold text-slate-900 mb-2">SELECTIVE LARGE: 501-2,000+ Employees</h3>
+            <p className="text-sm text-slate-700">EUR 150-500M+ revenue, second-source or cost-benchmarking context only</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Primary Industries (A-Tier)">
+        <ul className="space-y-2">
+          <ListItem type="check">A1: Bottled water, juices, soft drinks, other beverages</ListItem>
+          <ListItem type="check">A2: Dairy (milk, yogurt, kefir), edible oils</ListItem>
+          <ListItem type="check">A3: Processed food, confectionery, snacks</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Additional Segments (B-Tier)">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <ListItem type="arrow">Cosmetics & personal care</ListItem>
+          <ListItem type="arrow">Household & industrial chemicals</ListItem>
+          <ListItem type="arrow">Automotive fluids & lubricants</ListItem>
+          <ListItem type="arrow">Wine & spirits</ListItem>
+          <ListItem type="arrow">Pharmaceutical & nutraceuticals</ListItem>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Business Models">
+        <ul className="space-y-2">
+          <ListItem type="check">Own-brand manufacturers (primary target)</ListItem>
+          <ListItem type="check">Private-label manufacturers</ListItem>
+          <ListItem type="check">Contract manufacturers (co-packers)</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Buyer Personas (6 Tiers)" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h3 className="font-semibold text-blue-900 mb-2">TIER 1 (PRIMARY): Procurement/Purchasing</h3>
+            <p className="text-sm text-blue-800 mb-2"><strong>Titles:</strong> Head of Procurement, Purchasing Manager, Strategic Buyer, Packaging Buyer</p>
+            <p className="text-sm text-blue-800 mb-2"><strong>Role:</strong> Default buyer for repeat contracts, supplier qualification, cost benchmarking</p>
+            <p className="text-sm text-blue-800"><strong>Messaging:</strong> Landed-cost comparison, nearshore advantage, competitive Serbian economics, second-source evaluation</p>
+          </div>
+
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <h3 className="font-semibold text-green-900 mb-2">TIER 2 (PRIMARY CHAMPION): Packaging</h3>
+            <p className="text-sm text-green-800 mb-2"><strong>Titles:</strong> Packaging Manager, Head of Packaging, Packaging Development Manager</p>
+            <p className="text-sm text-green-800 mb-2"><strong>Role:</strong> Specifications, material changes, label-line compatibility, trials</p>
+            <p className="text-sm text-green-800"><strong>Messaging:</strong> Technical capabilities, finish consistency, quality certifications, artwork support</p>
+          </div>
+
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+            <h3 className="font-semibold text-purple-900 mb-2">TIER 3 (PRIMARY/CO-BUYER): Supply Chain/Operations/Production</h3>
+            <p className="text-sm text-purple-800 mb-2"><strong>Titles:</strong> Supply Chain Manager, Operations Director, Production Manager, Plant Manager</p>
+            <p className="text-sm text-purple-800 mb-2"><strong>Role:</strong> Capacity planning, replenishment, delivery coordination, line expansion</p>
+            <p className="text-sm text-purple-800"><strong>Messaging:</strong> Repeat supply reliability, capacity planning, nearshore logistics advantage</p>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+            <h3 className="font-semibold text-amber-900 mb-2">TIER 4 (PRIMARY IN SMALLER FIRMS): Leadership</h3>
+            <p className="text-sm text-amber-800 mb-2"><strong>Titles:</strong> CEO, Managing Director, Owner, Founder</p>
+            <p className="text-sm text-amber-800 mb-2"><strong>Role:</strong> Primary buyer when no dedicated packaging role exists</p>
+            <p className="text-sm text-amber-800"><strong>Messaging:</strong> Production partnership, reliable European partner, competitive economics</p>
+          </div>
+
+          <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+            <h3 className="font-semibold text-indigo-900 mb-2">TIER 5 (SECONDARY): Marketing/Product</h3>
+            <p className="text-sm text-indigo-800 mb-2"><strong>Titles:</strong> Marketing Manager, Brand Manager, Product Manager</p>
+            <p className="text-sm text-indigo-800 mb-2"><strong>Role:</strong> Rebrand champion, new SKU launch, specification briefing</p>
+            <p className="text-sm text-indigo-800"><strong>Messaging:</strong> Rebrand support, new product launches, specification coordination</p>
+          </div>
+
+          <div className="bg-rose-50 border border-rose-200 rounded-lg p-4">
+            <h3 className="font-semibold text-rose-900 mb-2">TIER 6 (TERTIARY): Quality/Technical</h3>
+            <p className="text-sm text-rose-800 mb-2"><strong>Titles:</strong> Quality Manager, QA Manager, Technical Manager</p>
+            <p className="text-sm text-rose-800 mb-2"><strong>Role:</strong> Documentation, trials, application approval</p>
+            <p className="text-sm text-rose-800"><strong>Messaging:</strong> Quality documentation, trials, standards consistency</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Buying Signals">
+        <div className="space-y-4">
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <h3 className="font-semibold text-green-900 mb-2">TIER 1 (Strongest)</h3>
+            <ul className="space-y-1 text-sm text-green-800">
+              <ListItem type="arrow">Active sourcing event (RFQ, supplier search, cost benchmarking)</ListItem>
+              <ListItem type="arrow">Dated launch plan (Q3 2026 rebrand, H2 2026 new line)</ListItem>
+              <ListItem type="arrow">New production line or filling equipment announced</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h3 className="font-semibold text-blue-900 mb-2">TIER 2 (Moderate)</h3>
+            <ul className="space-y-1 text-sm text-blue-800">
+              <ListItem type="arrow">Market or channel expansion (new geography, retail entry)</ListItem>
+              <ListItem type="arrow">Hiring for packaging, supply chain, or production roles</ListItem>
+              <ListItem type="arrow">Sustainability or packaging redesign initiative</ListItem>
+            </ul>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+            <h3 className="font-semibold text-amber-900 mb-2">TIER 3 (Baseline)</h3>
+            <ul className="space-y-1 text-sm text-amber-800">
+              <ListItem type="arrow">Recurring volume evidence (many SKUs, consistent production)</ListItem>
+              <ListItem type="arrow">Established FMCG brand with retail distribution</ListItem>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Exclusion Criteria">
+        <ul className="space-y-2">
+          <ListItem type="cross">Direct competitors (other label printers)</ListItem>
+          <ListItem type="cross">Packaging brokers or agencies</ListItem>
+          <ListItem type="cross">Pure resellers or distributors</ListItem>
+          <ListItem type="cross">Services-only companies (no manufactured products)</ListItem>
+          <ListItem type="cross">Pre-launch brands with no existing volume</ListItem>
+        </ul>
+      </ContentSection>
+    </>
+  );
+}
+
+function FiltersTab() {
+  return (
+    <>
+      <ContentSection title="Clay Configuration" icon={<Filter className="w-5 h-5" />}>
+        <p className="text-sm text-slate-600 mb-4">
+          Use Clay's company search and enrichment to target FMCG manufacturers across CEE and DACH markets.
+        </p>
+      </ContentSection>
+
+      <ContentSection title="Firmographic Filters">
+        <div className="space-y-3">
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Location</p>
+            <p className="text-sm text-slate-700">Wave 1: Slovenia, Croatia, Hungary → Wave 2: Austria, Germany → Wave 3: Czechia, Slovakia, Romania → Wave 4: Switzerland</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Employee Count</p>
+            <p className="text-sm text-slate-700">Core: 50-500 | Selective Small: 20-49 | Selective Large: 501-2,000+</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Revenue</p>
+            <p className="text-sm text-slate-700">Core: EUR 10-150M | Selective Small: EUR 3-10M | Selective Large: EUR 150-500M+</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Industry Filters">
+        <div className="space-y-2">
+          <p className="font-semibold text-slate-900">A-Tier (Primary):</p>
+          <ul className="space-y-1">
+            <ListItem type="check">Beverages (water, juice, soft drinks)</ListItem>
+            <ListItem type="check">Dairy & edible oils</ListItem>
+            <ListItem type="check">Processed food & confectionery</ListItem>
+          </ul>
+
+          <p className="font-semibold text-slate-900 mt-4">B-Tier (Additional):</p>
+          <ul className="space-y-1">
+            <ListItem type="arrow">Cosmetics & personal care</ListItem>
+            <ListItem type="arrow">Household & industrial chemicals</ListItem>
+            <ListItem type="arrow">Automotive fluids</ListItem>
+            <ListItem type="arrow">Wine & spirits</ListItem>
+            <ListItem type="arrow">Pharmaceutical</ListItem>
+          </ul>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Exclusions">
+        <ul className="space-y-2">
+          <ListItem type="cross">Label printers (competitors)</ListItem>
+          <ListItem type="cross">Packaging brokers, agencies</ListItem>
+          <ListItem type="cross">Pure resellers/distributors</ListItem>
+          <ListItem type="cross">Services-only companies</ListItem>
+          <ListItem type="cross">Pre-launch brands</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Evidence Requirements (Enrichment)">
+        <div className="space-y-3">
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Product Fit</p>
+            <p className="text-sm text-slate-700">Website mentions bottles, cartons, sleeves, labels, packaging materials</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Materials Match</p>
+            <p className="text-sm text-slate-700">OPP/BOPP, PP, PE, paper labels, duplex/triplex films</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Application Match</p>
+            <p className="text-sm text-slate-700">Bottles, jars, cartons, pouches, tubes</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-slate-900 mb-1">Repeat Demand</p>
+            <p className="text-sm text-slate-700">Multiple SKUs, established product lines, retail distribution</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Contact Data Requirements">
+        <ul className="space-y-2">
+          <ListItem type="check">Valid work email (company domain)</ListItem>
+          <ListItem type="check">LinkedIn profile (for persona verification)</ListItem>
+          <ListItem type="check">Job title matching one of 6 buyer personas</ListItem>
+          <ListItem type="check">Recent activity (LinkedIn updated within 12 months)</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Search Patterns (Clay Enrichment)">
+        <div className="space-y-2">
+          <p className="text-sm text-slate-700">Use Apollo, LinkedIn Sales Navigator, or website scraping enrichments:</p>
+          <CodeBlock>
+            Title contains: "Procurement" OR "Purchasing" OR "Packaging" OR "Supply Chain" OR "Operations" OR "Quality" OR "CEO" OR "Owner"
+          </CodeBlock>
+          <CodeBlock>
+            Company description contains: "beverage" OR "dairy" OR "food" OR "confectionery" OR "FMCG" OR "consumer goods"
+          </CodeBlock>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Local Language Enrichment">
+        <p className="text-sm text-slate-700">
+          For Slovenia, Croatia: Check for "Vodja nabave", "Vodja proizvodnje"<br />
+          For Germany, Austria: Check for "Einkaufsleiter", "Verpackungsmanager"<br />
+          For Czech, Slovak: Check for "Vedouci nakupu", "Manazer obalu"
+        </p>
+      </ContentSection>
+
+      <ContentSection title="Routing & Qualification">
+        <ul className="space-y-2">
+          <ListItem type="arrow">TIER 1 signals (RFQ, dated launch) → Priority sequence</ListItem>
+          <ListItem type="arrow">TIER 2 signals (expansion, hiring) → Standard sequence</ListItem>
+          <ListItem type="arrow">TIER 3 baseline (established brand) → Standard sequence</ListItem>
+          <ListItem type="arrow">No signals → Lower priority or exclude</ListItem>
+        </ul>
+      </ContentSection>
+    </>
+  );
+}
+
+function PromptsTab() {
+  return (
+    <>
+      <ContentSection title="AI Research Prompts" icon={<Code className="w-5 h-5" />}>
+        <p className="text-sm text-slate-600 mb-4">
+          Use these prompts with Claude or ChatGPT to research prospects and identify buying signals.
+        </p>
+      </ContentSection>
+
+      <ContentSection title="1. Active Sourcing Event Detection">
+        <CodeBlock>
+          Search company website, LinkedIn, and recent news for evidence of active label/packaging sourcing:
+          - RFQ or tender announcements
+          - Supplier search or cost benchmarking mentions
+          - Packaging redesign or material change projects
+          - Supplier diversification initiatives
+
+          Return: Yes/No + specific evidence quote + date if available
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="2. Product Launch & Packaging Redesign">
+        <CodeBlock>
+          Search company website, press releases, and social media for:
+          - Dated product launch plans (Q3 2026, H2 2026, etc.)
+          - Rebrand or packaging redesign announcements
+          - New SKU introductions
+          - Sustainability packaging initiatives
+
+          Return: Launch date + product details + packaging scope
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="3. Production Line Expansion">
+        <CodeBlock>
+          Search for evidence of production capacity expansion:
+          - New filling line or bottling equipment announced
+          - Factory expansion or new facility construction
+          - Co-packing or contract manufacturing announcements
+          - Capital investment in production equipment
+
+          Return: Expansion type + timeline + expected volume impact
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="4. Market & Channel Expansion">
+        <CodeBlock>
+          Search for market expansion signals:
+          - New geography or export market entry
+          - Retail channel expansion (entering major chains)
+          - E-commerce launch or online sales growth
+          - Distribution partnership announcements
+
+          Return: Expansion details + timeline + packaging implications
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="5. Relevant Hiring Signals">
+        <CodeBlock>
+          Search LinkedIn company page and job boards for hiring:
+          - Packaging Manager, Packaging Development roles
+          - Supply Chain Manager, Operations Director
+          - Production Manager, Plant Manager
+          - Quality Manager, Technical Manager
+
+          Return: Open roles + seniority + expected start date
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="6. Sustainability & Packaging Initiative">
+        <CodeBlock>
+          Search for sustainability-driven packaging changes:
+          - Transition to recyclable or biodegradable materials
+          - FSC certification pursuit or sustainable sourcing commitment
+          - Plastic reduction or lightweighting initiatives
+          - Circular economy or zero-waste goals
+
+          Return: Initiative scope + materials involved + timeline
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="7. Product Portfolio & Repeat Demand Verification">
+        <CodeBlock>
+          Verify recurring label demand potential:
+          - Count of active SKUs across product lines
+          - Evidence of retail distribution (store locator, retailer logos)
+          - Production scale indicators (annual volume, plant capacity)
+          - Multi-format packaging (bottles, cartons, pouches)
+
+          Return: SKU count + distribution reach + format diversity
+        </CodeBlock>
+      </ContentSection>
+
+      <ContentSection title="8. Technical Fit & Label Format Verification">
+        <CodeBlock>
+          Verify label production fit:
+          - Packaging formats: bottles, jars, cartons, pouches, tubes
+          - Label materials mentioned: paper, OPP/BOPP, PP, PE, films
+          - Print requirements: flexo, offset, digital capability needed
+          - Finishing requirements: die-cutting, lamination, foil
+
+          Return: Compatible formats + material match + production method fit
+        </CodeBlock>
+      </ContentSection>
+    </>
+  );
+}
+
+function CampaignsSequencesTab() {
+  return (
+    <>
+      <SequencesTab clientId="birografika" />
+      <div className="mt-8">
+        <CampaignsTabGeneric />
+      </div>
+    </>
   );
 }
