@@ -6,6 +6,29 @@
 
 ## 🚨 HARD RULES — NEVER BREAK THESE
 
+### META-RULE: How to Handle Hard Rules
+
+**RULE:** When the user mentions a "hard rule", AUTOMATICALLY store it in this CLAUDE.md file and push to GitHub IMMEDIATELY. No exclusions. No exceptions. No asking for permission.
+
+**Process:**
+1. User says "this is a hard rule" or "hard rule: [something]"
+2. IMMEDIATELY add it to this CLAUDE.md file under appropriate section
+3. IMMEDIATELY commit to Git with clear message
+4. IMMEDIATELY push to GitHub
+5. Confirm to user that it's stored and pushed
+
+**Why:** Hard rules must persist across all Claude sessions. GitHub is the single source of truth. Local-only storage is NOT acceptable.
+
+**Examples:**
+- User: "Hard rule: Never use Unicode in emails" → Add to CLAUDE.md → Commit → Push → Done
+- User: "This should be a hard rule" → Add to CLAUDE.md → Commit → Push → Done
+
+**This applies to ALL hard rules, no matter what they are about.**
+
+**Rule Established:** 2026-09-24
+
+---
+
 ### 0. FEATURE ISOLATION — Each Feature is Independent (CRITICAL)
 
 **RULE:** Each tab/feature is completely isolated and independent. When updating Feature X, touch ONLY Feature X files. NEVER touch any other feature's files.
