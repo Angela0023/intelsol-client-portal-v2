@@ -1,0 +1,137 @@
+[
+  {
+    "id": "tier-1-engineering-product",
+    "tierName": "PRIMARY: Engineering / Product",
+    "tierColor": "blue",
+    "targetPersonas": "Technical Director, Hardware Lead, Product Manager",
+    "messagingAngle": "OEM technical owner - display fit, qualification and integration for equipment/machinery",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display sourcing for [product/equipment line]",
+        "body": "Hi [First Name],\n\nI work with PRTronic - we provide display hardware and integration solutions for equipment manufacturers across Slovenia, Austria, Germany and Switzerland.\n\nI noticed [specific product/equipment line] and wanted to check: are you currently sourcing displays for this product, or planning any design updates that might involve display changes?\n\nOur focus is matching displays to your equipment specifications - form factor, touch/interface requirements, mounting constraints and environmental conditions - so your engineering team gets a configuration that fits the design without rework.\n\nWe've supported manufacturers with open-frame customization, display kits for mechanical integration, and specification support for kiosk, terminal and industrial equipment projects.\n\nWould it be useful to review the display requirements for your next design or replacement?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display sourcing for [product/equipment line]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about display sourcing for [product/equipment].\n\nMany engineering teams use us when they need:\n- Custom form factors that standard monitors don't match\n- Open-frame or display-kit configurations for mechanical integration\n- Touch and interface specifications for operator panels\n- Second-source options when a current panel reaches end-of-life\n- Specification support for environmental conditions (brightness, viewing angles, operating temperature)\n\nThe value for your team: a display configuration matched to your equipment requirements, with technical documentation and integration support before you commit to a design.\n\nWould it make sense to discuss the display specifications for [specific product/upcoming design] - form factor, touch capability, interfaces, environmental ratings and mounting requirements?\n\nHappy to provide technical details and sample options.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display sourcing for [product/equipment line]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize product development timelines and component sourcing decisions depend on design cycles and project priorities.\n\nFor context: we provide display hardware and integration solutions for equipment manufacturers across Slovenia and DACH - when engineering teams need displays matched to specific form factors, touch/interface requirements or operating environments.\n\nOur approach: start with your equipment specifications (size, resolution, mounting, environment, interfaces), then assess a suitable display configuration with technical documentation before you finalize the design.\n\nWe've supported kiosk manufacturers, industrial equipment builders and terminal developers with open-frame customization, display kits and specification guidance.\n\nIf you're ever reviewing display options for a product design, replacement or second-source requirement - happy to discuss your specifications and provide technical options.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-purchasing-procurement",
+    "tierName": "PRIMARY: Purchasing / Procurement",
+    "tierColor": "blue",
+    "target Personas": "Purchasing Manager, Strategic Buyer",
+    "messagingAngle": "OEM/integrator supplier selection - pricing, availability, technical support",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display supplier options for [company]",
+        "body": "Hi [First Name],\n\nI work with PRTronic - we supply display hardware for equipment manufacturers and system integrators across Slovenia, Austria, Germany and Switzerland.\n\nI noticed [company/product line] and wanted to check: do you manage display sourcing for your products, or is this already arranged with existing suppliers?\n\nOur focus is providing display configurations matched to equipment specifications - with consistent availability, competitive pricing and technical support for your engineering team's integration requirements.\n\nWe work with manufacturers building kiosks, terminals, industrial equipment and specialized machinery - where standard retail monitors don't match the form factor, touch or environmental requirements.\n\nWould it be useful to discuss display supplier options for [specific product/equipment line]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display supplier options for [company]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about display sourcing for [company/product].\n\nMany purchasing teams use us when they need:\n- Second-source options when a current display panel reaches end-of-life\n- Consistent availability and lead times for production schedules\n- Competitive pricing for repeat-built equipment\n- Technical specification support that Engineering can work with\n- Display configurations for custom form factors or environmental requirements\n\nThe value for your team: a display supplier who understands equipment integration requirements, provides technical documentation Engineering needs, and delivers consistent availability at competitive pricing.\n\nWould it make sense to discuss your display sourcing requirements - current panels, lead time expectations, technical specifications and volume projections?\n\nHappy to provide commercial terms and technical options for evaluation.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display supplier options for [company]",
+        "body": "Hi [First Name],\n\nLast note on this - I know supplier evaluation and sourcing decisions depend on product roadmaps, current supplier performance and procurement priorities.\n\nFor context: we supply display hardware for equipment manufacturers and integrators across Slovenia and DACH - when purchasing teams need supplier options that deliver technical specifications, consistent availability and competitive commercial terms.\n\nOur value: we match displays to your equipment integration requirements (form factor, touch, interfaces, environment), provide technical documentation your engineering team can work with, and deliver consistent availability for production schedules.\n\nWe've supported manufacturers building self-service equipment, industrial machinery and signage installations with open-frame displays, touch screens and custom configurations.\n\nIf you're ever reviewing display supplier options - for second-sourcing, panel EOL replacement or new product development - happy to discuss your requirements and provide commercial terms.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-integrator-delivery",
+    "tierName": "PRIMARY: Integrator Delivery / Project Management",
+    "tierColor": "blue",
+    "targetPersonas": "Technical Director, AV/Signage Project Manager",
+    "messagingAngle": "Integrator specifying hardware for client projects - signage, AV, interactive installations",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display hardware for [upcoming project/client installation]",
+        "body": "Hi [First Name],\n\nI work with PRTronic - we provide display hardware for AV and signage integrators delivering client installations across Slovenia, Austria, Germany and Switzerland.\n\nI noticed [specific project/installation type/client work] and wanted to check: do you source display hardware for your client projects, or is this managed through existing suppliers?\n\nOur focus is providing display configurations matched to installation requirements - size, resolution, brightness, mounting, interfaces and environmental conditions - so your project team gets hardware that meets client specifications without rework.\n\nWe've supported integrators with displays for retail signage, corporate installations, hospitality projects and public information systems.\n\nWould it be useful to discuss display hardware options for [upcoming project/installation]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display hardware for [upcoming project/client installation]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about display hardware for [project/installation work].\n\nMany integrators use us when they need:\n- Displays matched to client installation requirements (size, brightness, viewing angles)\n- High-brightness options for challenging viewing conditions\n- Touch screen configurations for interactive installations\n- Video wall and large-format display options for corporate or retail projects\n- Technical specification support and mounting guidance\n\nThe value for your team: display hardware configured for your client's installation requirements, with technical documentation and specification support before you commit to the project proposal.\n\nWould it make sense to discuss the display requirements for [specific project] - installation environment, content interface, mounting constraints, brightness needs and quantity?\n\nHappy to provide technical options and project pricing.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display hardware for [upcoming project/client installation]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize project timelines and hardware sourcing decisions depend on client briefs, installation schedules and project budgets.\n\nFor context: we provide display hardware for AV and signage integrators across Slovenia and DACH - when project teams need displays matched to client installation requirements rather than standard retail configurations.\n\nOur approach: start with your installation specifications (environment, content interface, mounting, viewing conditions), then assess suitable display configurations with technical documentation and project pricing.\n\nWe've supported integrators delivering retail signage, corporate installations, hospitality displays and public information projects with indoor/outdoor displays, high-brightness options and interactive touch configurations.\n\nIf you're ever specifying display hardware for a client installation - signage rollout, AV project, interactive display or video wall - happy to discuss your requirements and provide technical options.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-operator-programme",
+    "tierName": "SECONDARY: Operator Programme / Rollout Owner",
+    "tierColor": "green",
+    "targetPersonas": "Marketing Manager, IT/AV Manager, Facilities Manager, Rollout Manager",
+    "messagingAngle": "Multi-site signage sponsor and deployment stakeholders - scope rollout requirements",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display hardware for [site network/rollout]",
+        "body": "Hi [First Name],\n\nI work with PRTronic - we provide display hardware for multi-site signage and information screen rollouts across Slovenia, Austria, Germany and Switzerland.\n\nI noticed [number of locations/site network/specific rollout] and wanted to check: are you coordinating display hardware for an information or signage rollout, or is this already arranged?\n\nOur focus is helping multi-site operators scope display requirements - screen sizes, mounting options, content interface compatibility and consistent hardware across all locations - so your rollout delivers reliable information presentation without deployment issues.\n\nWe've supported retail chains, hotel groups and clinic networks with signage rollouts and information screen deployments.\n\nWould it be useful to discuss display hardware options for [specific rollout/site network]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display hardware for [site network/rollout]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about display hardware for [site network/rollout].\n\nMany multi-site operators use us when they need:\n- Consistent display hardware across all locations\n- Screen configurations matched to mounting and content requirements\n- Technical specifications for IT/AV team validation\n- Brightness and viewing angle options for different site environments\n- Deployment planning support (quantities, timing, installation scope)\n\nThe value for your team: display hardware scoped to your rollout requirements with consistent performance across sites, compatible with your content management system, and coordinated delivery for deployment schedules.\n\nWould it make sense to discuss the requirements for [specific rollout] - number of locations, screen sizes, mounting constraints, content interface, viewing conditions and deployment timeline?\n\nHappy to provide technical specifications and rollout pricing.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display hardware for [site network/rollout]",
+        "body": "Hi [First Name],\n\nLast note on this - I know rollout planning and hardware decisions depend on budget approval, deployment priorities and technical validation from IT/AV stakeholders.\n\nFor context: we provide display hardware for multi-site signage and information screen rollouts across Slovenia and DACH - when operators need consistent displays across locations matched to mounting, content interface and viewing requirements.\n\nOur value: we help scope display specifications for your network (sizes, quantities, mounting, content compatibility), coordinate delivery for phased deployments, and provide technical documentation for IT/AV validation.\n\nWe've supported retail chains, hotel groups and clinic networks with information screen rollouts, digital menu boards and wayfinding displays.\n\nIf you're ever planning a signage or information screen rollout across your locations - happy to discuss your requirements and provide technical specifications with rollout pricing.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-leadership",
+    "tierName": "TERTIARY: Leadership / Final Approval",
+    "tierColor": "amber",
+    "targetPersonas": "CEO, Owner, Managing Director",
+    "messagingAngle": "Small firms where leadership covers both technical and commercial decisions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display sourcing for [company/product]",
+        "body": "Hi [First Name],\n\nI work with PRTronic - we provide display hardware and integration solutions for manufacturers and system integrators across Slovenia, Austria, Germany and Switzerland.\n\nI noticed [specific product/equipment/installation work] and wanted to check: do you source display components for your products or client projects, or is this already arranged with suppliers?\n\nOur focus is matching displays to equipment or installation requirements - form factor, touch/interface specifications, environmental conditions and mounting constraints - so you get a configuration that fits your application without engineering rework.\n\nWe work with manufacturers building kiosks, terminals and specialized equipment, plus integrators delivering signage and AV installations.\n\nWould it be useful to discuss display requirements for [specific product/project]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display sourcing for [company/product]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about display sourcing for [company/product].\n\nMany smaller manufacturers and integrators use us when they need:\n- Custom display configurations that standard monitors don't match\n- Technical specification support for equipment integration or installations\n- Competitive pricing with consistent availability for repeat orders\n- Second-source options when current displays reach end-of-life\n\nThe value for your business: display hardware matched to your application requirements, with technical documentation for integration, consistent availability for production or project schedules, and competitive commercial terms.\n\nWould it make sense to discuss your display requirements - specifications, volumes, lead time expectations and technical support needs?\n\nHappy to provide technical options and commercial terms.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display sourcing for [company/product]",
+        "body": "Hi [First Name],\n\nLast note on this - I know component sourcing and supplier decisions depend on product roadmaps, current supplier performance and business priorities.\n\nFor context: we provide display hardware for manufacturers and integrators across Slovenia and DACH - when businesses need displays matched to equipment or installation requirements rather than standard retail configurations.\n\nOur approach: start with your application specifications (form factor, touch, interfaces, environment, mounting), assess suitable display options with technical documentation, and provide commercial terms for evaluation.\n\nWe've supported kiosk manufacturers, industrial equipment builders, signage integrators and AV installation businesses with custom display configurations and specification support.\n\nIf you're ever reviewing display supplier options - for product development, panel replacement or client project requirements - happy to discuss your specifications and provide technical options with commercial terms.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

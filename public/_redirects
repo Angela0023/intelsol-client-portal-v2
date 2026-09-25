@@ -19,6 +19,7 @@
 /stojkov/* /stojkov 200
 /birografika/* /birografika 200
 /bmevents/* /bmevents 200
+/prtronic/* /prtronic 200
 /admin/* /admin 200
 
 # Fallback - SPA routing (Functions in /api/* take precedence automatically)

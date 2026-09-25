@@ -98,4 +98,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   stojkov: 'Onboarding',
   birografika: 'Onboarding',
   bmevents: 'Onboarding',
+  prtronic: 'Onboarding',
 };

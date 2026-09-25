@@ -39,6 +39,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'stojkov', name: 'Stojkov', icon: Building2, color: 'text-red-600' },
     { id: 'birografika', name: 'Birografika MB', icon: Building2, color: 'text-lime-600' },
     { id: 'bmevents', name: 'BM Events', icon: Building2, color: 'text-sky-600' },
+    { id: 'prtronic', name: 'PRTronic', icon: Building2, color: 'text-fuchsia-600' },
   ];
 
   const [clients, setClients] = useState<Client[]>(defaultClients);

@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -46,7 +46,8 @@ export default function AdminPage() {
         clevercraft: 'Clever Craft',
         stojkov: 'Stojkov',
         birografika: 'Birografika MB',
-        bmevents: 'BM Events'
+        bmevents: 'BM Events',
+        prtronic: 'PRTronic'
       };
 
       const allTasks: any[] = [];
@@ -224,6 +225,14 @@ export default function AdminPage() {
       borderColor: 'border-sky-200',
       bgColor: 'bg-sky-50',
     },
+    {
+      id: 'prtronic',
+      name: 'PRTronic',
+      industry: 'Display Hardware & Integration (DACH)',
+      color: 'bg-fuchsia-100 text-fuchsia-600',
+      borderColor: 'border-fuchsia-200',
+      bgColor: 'bg-fuchsia-50',
+    },
   ];
 
   const activeCount = Object.values(statuses).filter((s) => s === 'Active').length;
@@ -231,7 +240,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '17',
+      value: '18',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',
