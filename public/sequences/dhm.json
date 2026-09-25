@@ -1,0 +1,137 @@
+[
+  {
+    "id": "tier-1-owner-director",
+    "tierName": "PRIMARY: Owner / Director",
+    "tierColor": "blue",
+    "targetPersonas": "Owner, Director, Managing Partner",
+    "messagingAngle": "Small producer or butcher shop - budget and operational priority owner",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital HACCP records for [company]",
+        "body": "Hi [First Name],\n\nI work with DHM (Digital HACCP Manager) - we help smaller food businesses in Slovenia and Croatia organize their daily HACCP records and tasks digitally.\n\nI noticed [specific food production/butcher shop/kitchen operation] and wanted to check: how are you currently managing your daily temperature checks, cleaning schedules and HACCP records - paper forms, Excel, or another system?\n\nOur focus is providing a practical digital workspace where your team can record checks from any device (mobile, tablet, computer), and you can see what's been completed and what needs follow-up without collecting separate forms.\n\nWe've supported small food producers, butcher shops and kitchens with organizing their recurring safety checks and making records easier to find.\n\nWould a short walkthrough using your current HACCP recordkeeping process be useful?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital HACCP records for [company]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital HACCP recordkeeping for [company].\n\nMany small food business owners use us when they need to:\n- Stop chasing paper forms and signatures across shifts\n- Give staff a simple way to record checks from their phone or tablet\n- See outstanding tasks without collecting separate forms\n- Find specific records when needed (for review or inspection preparation)\n- Clarify who's responsible for which tasks across different shifts\n\nThe value for your business: your team gets a practical workflow they'll actually use, and you get clearer visibility of completed vs. outstanding work without the administrative workload of paper forms.\n\nWould it make sense to discuss how you currently manage daily checks and see if a digital workspace would help - temperature monitoring, cleaning schedules, goods receipt and task assignments?\n\nHappy to show you how it works with your actual recordkeeping routine.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital HACCP records for [company]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize recordkeeping system decisions depend on operational priorities, budget and whether the current method is actually causing problems.\n\nFor context: we provide digital HACCP records and task management for smaller food businesses across Slovenia and Croatia - when owners and managers want to move from paper forms or scattered Excel sheets to a shared digital workspace.\n\nOur approach: start with your current recordkeeping routine (temperature checks, cleaning, goods receipt, tasks), show you the digital workflow, and discuss whether staff adoption and owner oversight improvements justify the change.\n\nWe've supported small producers, butcher shops, bakeries and hotel kitchens with organizing daily safety checks, shift handovers and record retrieval.\n\nIf you're ever reviewing your HACCP recordkeeping workflow - or if paper forms and signature chasing are taking too much time - happy to show you how a digital workspace could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-production-haccp",
+    "tierName": "PRIMARY: Production / HACCP Manager",
+    "tierColor": "blue",
+    "targetPersonas": "Production Manager, HACCP Responsible Person",
+    "messagingAngle": "Owns recurring records, checks and staff routines in production environment",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital recordkeeping for [production site/operation]",
+        "body": "Hi [First Name],\n\nI work with DHM (Digital HACCP Manager) - we help food production sites in Slovenia and Croatia organize daily HACCP checks and task assignments digitally.\n\nI noticed [specific production operation/food handling site] and wanted to check: how are you currently managing your recurring safety checks - temperature monitoring, cleaning schedules, goods receipt records and shift handover tasks?\n\nOur focus is providing production teams with a digital workspace where staff can record checks from any device, task ownership is clear across shifts, and records are easy to find when needed.\n\nWe've supported small production plants, meat processors and preparation sites with organizing repeated checks and making shift handovers clearer.\n\nWould it be useful to discuss how you currently manage daily recordkeeping and whether a digital system would help your team?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital recordkeeping for [production site/operation]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital HACCP recordkeeping for [production site].\n\nMany production managers and HACCP-responsible people use us when they need to:\n- Organize repeated temperature checks, cleaning schedules and goods receipt digitally\n- Make task ownership clear across different shifts\n- Stop searching for specific records when preparing for review or inspection\n- Give staff a simple mobile/tablet interface for recording checks\n- See what's been completed and what's still outstanding without collecting forms\n\nThe value for your operation: staff get a practical workflow they'll actually use, shift handovers become clearer, and you have digital records organized by date, task type and responsible person.\n\nWould it make sense to discuss your current recordkeeping routine - number of daily checks, shift structure, staff device access - and see if a digital workspace would help?\n\nHappy to show you the system using your actual HACCP workflow.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital recordkeeping for [production site/operation]",
+        "body": "Hi [First Name],\n\nLast note on this - I know production workflow changes depend on operational priorities, staff adoption concerns and whether the current recordkeeping method is actually causing problems.\n\nFor context: we provide digital HACCP records and task management for food production sites across Slovenia and Croatia - when production managers need to move from paper forms or disconnected spreadsheets to a shared digital workspace.\n\nOur approach: understand your recurring checks (temperature, cleaning, goods receipt, equipment maintenance), show you the digital workflow for your team, and discuss whether clearer task ownership and easier record retrieval justify the change.\n\nWe've supported small food plants, meat processors, bakeries and preparation sites with organizing daily safety checks and shift handover clarity.\n\nIf you're ever reviewing your HACCP recordkeeping workflow - or if form collection and record retrieval are taking too much time - happy to show you how a digital system could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-hotel-kitchen",
+    "tierName": "SECONDARY: Hotel / Kitchen Manager",
+    "tierColor": "green",
+    "targetPersonas": "Hotel Manager, Head Chef, F&B Manager",
+    "messagingAngle": "Kitchen workflow champion - validates daily use, budget owner varies",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital HACCP records for [hotel] kitchen",
+        "body": "Hi [First Name],\n\nI work with DHM (Digital HACCP Manager) - we help hotel kitchens in Slovenia and Croatia organize daily food safety records and task assignments digitally.\n\nI noticed [hotel/guesthouse with restaurant/kitchen operation] and wanted to check: how are you currently managing your kitchen HACCP records - temperature checks, cleaning schedules, goods receipt and shift handover tasks?\n\nOur focus is helping hotel kitchens clarify task ownership across breakfast, lunch and dinner services, and giving managers a clearer view of completed checks without collecting paper forms from each shift.\n\nWe've supported hotel kitchens and F&B operations with organizing recurring safety checks and shift handover clarity.\n\nWould it be useful to discuss how you currently manage kitchen recordkeeping and whether a digital system would help your team?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital HACCP records for [hotel] kitchen",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital HACCP recordkeeping for [hotel] kitchen.\n\nMany hotel kitchen managers and head chefs use us when they need to:\n- Clarify task ownership across breakfast, lunch and dinner shifts\n- Stop collecting paper forms to see what's been completed\n- Give kitchen staff a simple mobile/tablet interface for recording checks\n- Organize temperature monitoring, cleaning schedules and goods receipt digitally\n- Find specific records when needed without searching through folders\n\nThe value for your kitchen: staff get a practical workflow they'll actually use, shift handovers become clearer, and you can see outstanding tasks without collecting separate forms from each service.\n\nWould it make sense to discuss your current kitchen recordkeeping - shift structure, number of daily checks, staff device access - and see if a digital workspace would help?\n\nHappy to show you the system using your actual kitchen workflow.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital HACCP records for [hotel] kitchen",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize kitchen workflow changes depend on operational priorities, staff adoption and whether the current recordkeeping method is causing real problems.\n\nFor context: we provide digital HACCP records and task management for hotel kitchens across Slovenia and Croatia - when kitchen managers need to move from paper forms or scattered records to a shared digital workspace.\n\nOur approach: understand your kitchen recordkeeping routine (temperature checks, cleaning, goods receipt, shift tasks), show you the digital workflow for your team, and discuss whether clearer shift handovers and easier record access justify the change.\n\nWe've supported hotel kitchens, restaurant operations and F&B teams with organizing daily safety checks and task clarity across services.\n\nIf you're ever reviewing your kitchen HACCP recordkeeping - or if form collection across shifts is taking too much time - happy to show you how a digital system could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-quality-operations",
+    "tierName": "SECONDARY: Quality / Operations Manager",
+    "tierColor": "green",
+    "targetPersonas": "Quality Manager, Operations Manager",
+    "messagingAngle": "Validates process fit where dedicated quality/operations role exists",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital HACCP recordkeeping for [company]",
+        "body": "Hi [First Name],\n\nI work with DHM (Digital HACCP Manager) - we help food businesses in Slovenia and Croatia organize their HACCP records and quality documentation digitally.\n\nI noticed [company/operation] and wanted to check: how are you currently managing daily food safety records - temperature monitoring, cleaning schedules, corrective actions, goods receipt and task assignments?\n\nOur focus is providing quality and operations teams with a digital workspace where staff record checks from any device, task ownership is clear, and records are organized for easy retrieval during reviews or inspections.\n\nWe've supported food businesses with digitizing their recurring safety checks and making quality documentation more accessible.\n\nWould it be useful to discuss how you currently manage HACCP recordkeeping and whether a digital system would help your team?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital HACCP recordkeeping for [company]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital HACCP recordkeeping for [company].\n\nMany quality and operations managers use us when they need to:\n- Move from paper forms or scattered Excel sheets to organized digital records\n- Track corrective actions and task completion across shifts\n- Retrieve specific records quickly for internal review or inspection preparation\n- Give staff a mobile/tablet interface for recording daily checks\n- See visibility of completed vs. outstanding tasks in real-time\n\nThe value for your operation: staff get a practical workflow integrated into daily routines, records are organized by date/task/person, and quality documentation is easier to access and analyze.\n\nWould it make sense to discuss your current quality recordkeeping workflow - recurring checks, corrective action tracking, staff access - and see if a digital workspace would help?\n\nHappy to show you the system and discuss fit with your quality processes.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital HACCP recordkeeping for [company]",
+        "body": "Hi [First Name],\n\nLast note on this - I know quality system changes depend on operational priorities, compliance requirements and whether the current recordkeeping approach is actually limiting visibility or efficiency.\n\nFor context: we provide digital HACCP records and task management for food businesses across Slovenia and Croatia - when quality and operations teams need better organization of daily checks, corrective actions and documentation.\n\nOur approach: understand your quality recordkeeping routine (monitoring, verification, corrective actions, documentation retrieval), show you the digital workflow, and discuss whether improved accessibility and task visibility justify the change.\n\nWe've supported food producers, processors and multi-site operations with organizing safety checks, tracking corrective actions and making quality documentation more accessible.\n\nIf you're ever reviewing your HACCP recordkeeping and quality documentation workflow - happy to show you how a digital workspace could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-daily-users",
+    "tierName": "TERTIARY: Daily Users / HACCP Adviser",
+    "tierColor": "amber",
+    "targetPersonas": "Shift Lead, Administrator, External HACCP Adviser",
+    "messagingAngle": "Validates usability and alignment - not automatically the buyer",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital HACCP workflow for [company/operation]",
+        "body": "Hi [First Name],\n\nI work with DHM (Digital HACCP Manager) - we help food businesses in Slovenia and Croatia organize daily HACCP checks and task assignments digitally.\n\nI noticed [company/operation] and wanted to check: who currently manages the daily HACCP recordkeeping at your site - temperature checks, cleaning schedules, goods receipt and task assignments?\n\nOur focus is providing a practical digital workflow that staff will actually use - simple mobile/tablet interface for recording checks, clear task ownership across shifts, and easy record retrieval when needed.\n\nWe've supported food businesses with moving from paper forms to digital recordkeeping that fits into daily routines.\n\nWould it be useful to discuss who oversees HACCP recordkeeping at your site and whether a digital system would help your team?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital HACCP workflow for [company/operation]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital HACCP recordkeeping for [company/operation].\n\nMany shift leads, administrators and HACCP advisers help validate whether a digital system will work for the team - checking if it fits the daily workflow, if staff can actually use it, and if it aligns with the existing HACCP plan.\n\nWhat we typically provide:\n- Simple mobile/tablet interface for recording daily checks\n- Clear task assignments across shifts with completion tracking\n- Digital forms that match existing HACCP monitoring requirements\n- Easy record retrieval organized by date, task type and responsible person\n\nThe value: a practical workflow that fits into daily routines rather than adding administrative work, with visibility of completed vs. outstanding tasks.\n\nWould it make sense to discuss the current recordkeeping routine and who decides on workflow changes - so we can show the right people how the system works?\n\nHappy to provide a walkthrough for whoever validates daily workflow fit.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital HACCP workflow for [company/operation]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize workflow changes depend on operational priorities, staff adoption concerns and approval from whoever owns the budget and system decisions.\n\nFor context: we provide digital HACCP recordkeeping for food businesses across Slovenia and Croatia - when teams want to move from paper forms to a practical digital workflow.\n\nOur approach: understand the current recordkeeping routine, show the digital workflow to whoever validates daily usability (shift leads, production managers, HACCP-responsible person), and connect with whoever approves the change and budget.\n\nWe've supported food producers, butcher shops, kitchens and processors with digital recordkeeping that staff actually use and managers can access for oversight and inspection preparation.\n\nIf you're involved in evaluating recordkeeping systems - or if you can connect me with whoever decides on these changes - happy to show you how the workflow works.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

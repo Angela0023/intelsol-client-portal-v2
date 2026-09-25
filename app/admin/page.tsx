@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -47,7 +47,8 @@ export default function AdminPage() {
         stojkov: 'Stojkov',
         birografika: 'Birografika MB',
         bmevents: 'BM Events',
-        prtronic: 'PRTronic'
+        prtronic: 'PRTronic',
+        dhm: 'DHM'
       };
 
       const allTasks: any[] = [];
@@ -233,6 +234,14 @@ export default function AdminPage() {
       borderColor: 'border-fuchsia-200',
       bgColor: 'bg-fuchsia-50',
     },
+    {
+      id: 'dhm',
+      name: 'DHM',
+      industry: 'HACCP & Food Safety Software (Slovenia/Croatia)',
+      color: 'bg-stone-100 text-stone-600',
+      borderColor: 'border-stone-200',
+      bgColor: 'bg-stone-50',
+    },
   ];
 
   const activeCount = Object.values(statuses).filter((s) => s === 'Active').length;
@@ -240,7 +249,7 @@ export default function AdminPage() {
   const stats = [
     {
       label: 'Total Clients',
-      value: '18',
+      value: '19',
       icon: Building2,
       color: 'text-blue-600',
       bgColor: 'bg-blue-100',

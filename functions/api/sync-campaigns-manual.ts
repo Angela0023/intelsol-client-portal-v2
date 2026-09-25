@@ -82,6 +82,7 @@ const CLIENT_NAMES: Record<string, string> = {
   'birografika': 'Birografika MB',
   'bmevents': 'BM Events',
   'prtronic': 'PRTronic',
+  'dhm': 'DHM',
 };
 
 const SMARTLEAD_BASE_URL = 'https://server.smartlead.ai/api/v1';
