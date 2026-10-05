@@ -1,25 +1,25 @@
 # Cloudflare Pages SPA routing
-# Serve the base page for all sub-routes, but keep the URL intact
+# Serve the HTML file for all sub-routes, but keep the URL intact
 
-/demo/* /demo 200
-/tslab/* /tslab 200
-/intelsol/* /intelsol 200
-/xpose/* /xpose 200
-/adsigner/* /adsigner 200
-/beeit/* /beeit 200
-/wulf/* /wulf 200
-/peoplefocus/* /peoplefocus 200
-/plantryx/* /plantryx 200
-/mountaindrop/* /mountaindrop 200
-/eblissai/* /eblissai 200
-/zen2fit/* /zen2fit 200
-/panorate/* /panorate 200
-/mbedtronix/* /mbedtronix 200
-/clevercraft/* /clevercraft 200
-/stojkov/* /stojkov 200
-/birografika/* /birografika 200
-/bmevents/* /bmevents 200
-/prtronic/* /prtronic 200
-/dhm/* /dhm 200
-/morefromfood/* /morefromfood 200
-/admin/* /admin 200
+/demo/* /demo.html 200
+/tslab/* /tslab.html 200
+/intelsol/* /intelsol.html 200
+/xpose/* /xpose.html 200
+/adsigner/* /adsigner.html 200
+/beeit/* /beeit.html 200
+/wulf/* /wulf.html 200
+/peoplefocus/* /peoplefocus.html 200
+/plantryx/* /plantryx.html 200
+/mountaindrop/* /mountaindrop.html 200
+/eblissai/* /eblissai.html 200
+/zen2fit/* /zen2fit.html 200
+/panorate/* /panorate.html 200
+/mbedtronix/* /mbedtronix.html 200
+/clevercraft/* /clevercraft.html 200
+/stojkov/* /stojkov.html 200
+/birografika/* /birografika.html 200
+/bmevents/* /bmevents.html 200
+/prtronic/* /prtronic.html 200
+/dhm/* /dhm.html 200
+/morefromfood/* /morefromfood.html 200
+/admin/* /admin.html 200
