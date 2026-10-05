@@ -42,6 +42,9 @@ yarn-error.log
 # netlify
 .netlify/
 
+# private data - lead databases contain personal information
+/public/data/
+
 # typescript
 .tsbuildinfo
 next-env.d.ts
