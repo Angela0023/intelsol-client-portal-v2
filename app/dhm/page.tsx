@@ -140,125 +140,57 @@ export default function DHMPage() {
 
 function OverviewTab() {
   return (
-    <div className="space-y-6">
-      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
-          <SubSection title="Service" icon={<Target className="w-5 h-5" />}>
+    <>
+      <ContentSection title="Company Overview" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p>
             DHM (Digital HACCP Manager) provides mobile, tablet and computer access to HACCP records, helping smaller food-handling businesses organize everyday food-safety records and responsibilities digitally across Slovenia and Croatia.
-          </SubSection>
+          </p>
 
-          <SubSection title="Core Offering">
-            <ListItem>Digital HACCP recordkeeping (mobile, tablet, computer access)</ListItem>
-            <ListItem>PDF reports and corrective action tracking</ListItem>
-            <ListItem>Task management and shift planning</ListItem>
-            <ListItem>Purchasing and goods receipt documentation</ListItem>
-            <ListItem>Optional AI-assisted goods receipt</ListItem>
-            <ListItem>Optional IoT temperature monitoring with alerts</ListItem>
-          </SubSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Service" value="Digital HACCP & Food Safety Software" />
+            <InfoCard label="Markets" value="Slovenia & Croatia" />
+            <InfoCard label="Target Segment" value="Small Food Businesses (5-50 employees)" />
+            <InfoCard label="Website" value={
+              <a href="https://dhm.hr" target="_blank" rel="noopener noreferrer" className="text-stone-600 hover:underline">
+                dhm.hr
+              </a>
+            } />
+          </div>
+        </div>
+      </ContentSection>
 
-          <SubSection title="Target Markets">
-            <ListItem>Slovenia (primary market, confirmed)</ListItem>
-            <ListItem>Croatia (confirmed target market)</ListItem>
-            <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
-              <strong>Note:</strong> Build separate country lists and messages. Cover both countries nationally, recording actual food-handling site separately from headquarters.
-            </div>
-          </SubSection>
+      <ContentSection title="What DHM Offers" icon={<TrendingUp className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem type="check">Digital HACCP recordkeeping (mobile, tablet, computer access)</ListItem>
+          <ListItem type="check">PDF reports and corrective action tracking</ListItem>
+          <ListItem type="check">Task management and shift planning</ListItem>
+          <ListItem type="check">Purchasing and goods receipt documentation</ListItem>
+          <ListItem type="check">Optional AI-assisted goods receipt</ListItem>
+          <ListItem type="check">Optional IoT temperature monitoring with alerts</ListItem>
+        </ul>
+      </ContentSection>
 
-          <SubSection title="Target Segments">
-            <div className="space-y-3">
-              <div>
-                <div className="font-semibold text-gray-900">A: Small Food Producers</div>
-                <div className="text-sm text-gray-600 mt-1">5-50 employees, typically one workshop or plant. Active production with recurring checks across storage, preparation or processing.</div>
-              </div>
-              <div>
-                <div className="font-semibold text-gray-900">B: Independent Butcher Shops & Small Meat Processors</div>
-                <div className="text-sm text-gray-600 mt-1">2-30 employees, typically 1-3 sites. Actual cutting, preparation or processing (not just resale of sealed goods).</div>
-              </div>
-              <div>
-                <div className="font-semibold text-gray-900">C: Smaller Independent Hotels/Guesthouses</div>
-                <div className="text-sm text-gray-600 mt-1">10-50 total employees, 1-3 properties with their own kitchen. Record kitchen operations separately.</div>
-              </div>
-              <div>
-                <div className="font-semibold text-gray-900">D: Small Catering, Central Kitchens, Bakeries/Restaurants</div>
-                <div className="text-sm text-gray-600 mt-1">3-30 employees, 1-3 sites. Clear routine-recordkeeping need required.</div>
-              </div>
-            </div>
-          </SubSection>
+      <ContentSection title="Target Market Summary" icon={<Target className="w-5 h-5" />}>
+        <div className="bg-stone-50 border-l-4 border-stone-500 p-4 rounded">
+          <p className="font-semibold text-stone-900 mb-2">Who DHM Serves:</p>
+          <p className="text-stone-800">
+            Small food businesses with 5-30 employees across Slovenia and Croatia - producers, butcher shops,
+            hotels with kitchens, bakeries, and restaurants that need practical digital HACCP records and
+            daily task oversight.
+          </p>
+          <div className="mt-3 space-y-1 text-sm text-stone-800">
+            <p><strong>Producer/Butcher teams:</strong> Organize repeated checks and make records easier to find</p>
+            <p><strong>Hotel/Kitchen staff:</strong> Clarify responsibilities across shifts</p>
+            <p><strong>Owner/Managers:</strong> See outstanding work without collecting separate forms</p>
+          </div>
+        </div>
+      </ContentSection>
+    </>
+  );
+}
 
-          <SubSection title="Sweet Spot">
-            <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
-              <div className="font-semibold text-green-900 mb-2">Initial Sweet Spot</div>
-              <ListItem>5-30 employees</ListItem>
-              <ListItem>1-3 food-handling sites</ListItem>
-              <ListItem>Owner-managed businesses</ListItem>
-              <ListItem>Small teams with repeated daily checks</ListItem>
-              <ListItem>Accessible responsible manager</ListItem>
-            </div>
-            <div className="mt-3 text-sm text-gray-600">
-              <strong>Broader discovery range:</strong> 2-50 employees, 1-5 sites. Revenue is optional enrichment only.
-            </div>
-          </SubSection>
-        </ContentSection>
-
-        <ContentSection title="Value Proposition">
-          <SubSection title="Core Positioning">
-            <p className="text-gray-700 font-semibold mb-3">
-              "Digital HACCP records and daily task oversight for smaller food businesses."
-            </p>
-            <div className="space-y-2">
-              <div><strong>Producer/Butcher Angle:</strong> Organize repeated checks and make records easier to find.</div>
-              <div><strong>Hotel/Kitchen Angle:</strong> Clarify responsibilities across shifts.</div>
-              <div><strong>Owner Angle:</strong> See outstanding work without collecting separate forms.</div>
-            </div>
-          </SubSection>
-
-          <SubSection title="Key Benefits">
-            <ListItem>Practical digital workspace for everyday food-safety records</ListItem>
-            <ListItem>Assigned tasks with clear ownership</ListItem>
-            <ListItem>Clearer view of what has been recorded and what needs follow-up</ListItem>
-            <ListItem>Staff adoption focus - a workflow staff will actually use</ListItem>
-            <ListItem>Record retrieval and owner oversight improvements</ListItem>
-          </SubSection>
-
-          <SubSection title="Current Pain Points (Hypotheses to Validate)" variant="amber">
-            <ListItem>Routine checks recorded on paper, spreadsheets or scattered messages</ListItem>
-            <ListItem>Owner must chase entries and signatures</ListItem>
-            <ListItem>Shift handovers make responsibilities unclear</ListItem>
-            <ListItem>Records hard to retrieve when needed</ListItem>
-            <ListItem>Time spent compiling records for review or audit</ListItem>
-            <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
-              <strong>Important:</strong> These are discovery hypotheses. Confirm actual practices with buyer rather than assuming from company size.
-            </div>
-          </SubSection>
-        </ContentSection>
-
-        <ContentSection title="Exclusions & Bad-Fit Signals">
-          <SubSection title="Explicit Exclusions" variant="red">
-            <ListItem>Non-food businesses</ListItem>
-            <ListItem>Accommodation-only providers without kitchens</ListItem>
-            <ListItem>Food brokers without handling operations</ListItem>
-            <ListItem>Sealed-goods resale without relevant workflow</ListItem>
-            <ListItem>Hobby/pre-launch operations with too little recurring activity</ListItem>
-            <ListItem>Requests solely for HACCP-plan creation, certification or legal advice (unless separately confirmed)</ListItem>
-            <ListItem>Cafes/bars merely because website has cafe package (food handling is initial focus)</ListItem>
-          </SubSection>
-
-          <SubSection title="Requires Verification Before Proposing">
-            <ListItem>Specialized batch traceability requirements</ListItem>
-            <ListItem>Recall management needs</ListItem>
-            <ListItem>Production recipes and formulation management</ListItem>
-            <ListItem>Allergen management and label generation</ListItem>
-            <ListItem>Laboratory integration requirements</ListItem>
-            <ListItem>Full ERP replacement expectations</ListItem>
-            <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg text-sm">
-              <strong>Critical:</strong> Do not infer these capabilities from "digital HACCP" description. Verify exact requirements with DHM before proposing solution.
-            </div>
-          </SubSection>
-        </ContentSection>
-      </div>
-    );
-  }
-
-  function ICPAndPersonasTab() {
+function ICPAndPersonasTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="ICP Criteria">

@@ -151,108 +151,58 @@ export default function PRTronicPage() {
 
 function OverviewTab() {
   return (
-    <div className="space-y-6">
-      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
-          <SubSection title="Service" icon={<Target className="w-5 h-5" />}>
-            PRTronic provides display hardware and integration solutions for equipment manufacturers, system integrators, and professional display projects across Slovenia, Austria, Germany, and Switzerland (DACH region).
-          </SubSection>
+    <>
+      <ContentSection title="Company Overview" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p>
+            PRTronic provides display hardware and integration solutions for equipment manufacturers, system integrators,
+            and professional display projects across Slovenia, Austria, Germany, and Switzerland (DACH region). They
+            specialize in open-frame monitors, touch screens, digital signage, and custom display integration for
+            industrial and commercial applications.
+          </p>
 
-          <SubSection title="Core Offering">
-            <ListItem>Open-frame and closed-frame monitors with customization options</ListItem>
-            <ListItem>Touch screens and display kits for equipment integration</ListItem>
-            <ListItem>Digital signage solutions for professional installations</ListItem>
-            <ListItem>High-brightness displays for challenging viewing environments</ListItem>
-            <ListItem>TFT/LCD modules with custom mechanical and firmware integration</ListItem>
-          </SubSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Service" value="Display Hardware & Integration Solutions" />
+            <InfoCard label="Markets" value="Slovenia, Austria, Germany, Switzerland (DACH)" />
+            <InfoCard label="Target Segment" value="OEMs, System Integrators, Multi-Site Operators" />
+            <InfoCard label="Website" value={
+              <a href="https://prtronic.si" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                prtronic.si
+              </a>
+            } />
+          </div>
+        </div>
+      </ContentSection>
 
-          <SubSection title="Target Markets">
-            <ListItem>Slovenia (primary market, local presence)</ListItem>
-            <ListItem>Austria (DACH - Klagenfurt office presence)</ListItem>
-            <ListItem>Germany (DACH - southern Germany priority, then wider coverage)</ListItem>
-            <ListItem>Switzerland (DACH - included in expansion)</ListItem>
-          </SubSection>
+      <ContentSection title="What PRTronic Offers" icon={<TrendingUp className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem type="check">Open-frame and closed-frame monitors with customization options</ListItem>
+          <ListItem type="check">Touch screens and display kits for equipment integration</ListItem>
+          <ListItem type="check">Digital signage solutions for professional installations</ListItem>
+          <ListItem type="check">High-brightness displays for challenging viewing environments</ListItem>
+          <ListItem type="check">TFT/LCD modules with custom mechanical and firmware integration</ListItem>
+          <ListItem type="check">Technical specification support (form factor, environment, touch, interfaces, mounting)</ListItem>
+        </ul>
+      </ContentSection>
 
-          <SubSection title="Primary Segments">
-            <div className="space-y-3">
-              <div>
-                <div className="font-semibold text-gray-900">A: OEMs & Equipment Manufacturers</div>
-                <div className="text-sm text-gray-600 mt-1">10-500 employees (sweet spot: 20-250). Self-service equipment, kiosks, terminals, industrial machinery with operator displays.</div>
-              </div>
-              <div>
-                <div className="font-semibold text-gray-900">B: AV, Signage & System Integrators</div>
-                <div className="text-sm text-gray-600 mt-1">5-250 employees. Digital signage, AV and interactive system integrators specifying displays for client projects.</div>
-              </div>
-              <div>
-                <div className="font-semibold text-gray-900">C: Multi-Site Operators</div>
-                <div className="text-sm text-gray-600 mt-1">50-2,000 employees. Retail chains, shopping centres, hotel groups, clinic groups with funded signage/information projects.</div>
-              </div>
-              <div>
-                <div className="font-semibold text-gray-900">D: Specialized Applications</div>
-                <div className="text-sm text-gray-600 mt-1">10-1,000 employees. Gaming-machine manufacturers, transport/parking information integrators, public-information projects.</div>
-              </div>
-            </div>
-          </SubSection>
-
-          <SubSection title="Primary Industries">
-            <ListItem>Self-service equipment (kiosks, parcel lockers, vending, ticketing/payment terminals)</ListItem>
-            <ListItem>Industrial machinery manufacturers integrating operator displays</ListItem>
-            <ListItem>Digital signage, AV and interactive-system integrators</ListItem>
-            <ListItem>Retail chains, shopping centres, hotel groups, private clinic groups (multi-site operators)</ListItem>
-            <ListItem>Gaming-machine OEMs and specialist integrators</ListItem>
-            <ListItem>Parking, transport and public-information projects</ListItem>
-          </SubSection>
-        </ContentSection>
-
-        <ContentSection title="Value Proposition">
-          <SubSection title="Core Positioning">
-            <p className="text-gray-700">
-              <strong>Display solutions matched to your equipment or installation requirements.</strong>
-            </p>
-            <div className="mt-3 space-y-2">
-              <div><strong>OEM Angle:</strong> Assess form factor, touch and integration for the next design or replacement.</div>
-              <div><strong>Integrator Angle:</strong> Assess a display configuration for the next client project.</div>
-              <div><strong>Operator Angle:</strong> Scope an information/signage rollout.</div>
-            </div>
-          </SubSection>
-
-          <SubSection title="Differentiation">
-            <ListItem>Application-focused supply and integration partnership (not just commodity screens)</ListItem>
-            <ListItem>Open-frame customization and display-kit options for mechanical integration</ListItem>
-            <ListItem>Broad signage range with indoor/outdoor and high-brightness solutions</ListItem>
-            <ListItem>Published installation examples (clinic LCD/LED, Vrhnika bus station LED, GLS parcel locker)</ListItem>
-            <ListItem>Technical specification support (form factor, environment, touch, interfaces, mounting)</ListItem>
-          </SubSection>
-
-          <SubSection title="Proof Points" variant="amber">
-            <ListItem><strong>Clinic Installation:</strong> Indoor LCD + outdoor LED with central content management</ListItem>
-            <ListItem><strong>Vrhnika Bus Station:</strong> LED passenger-information display installation</ListItem>
-            <ListItem><strong>GLS Parcel Locker:</strong> Display application for parcel-locker systems</ListItem>
-            <ListItem><strong>Technical Capabilities:</strong> Multiple video/touch interfaces, indoor operation ratings (validate per model)</ListItem>
-          </SubSection>
-        </ContentSection>
-
-        <ContentSection title="Exclusions & Bad-Fit Signals">
-          <SubSection title="Explicit Exclusions" variant="red">
-            <ListItem>RFID-only and unrelated electronic component enquiries</ListItem>
-            <ListItem>Consumer/home-gaming buyers seeking retail products</ListItem>
-            <ListItem>Generic commodity-monitor resellers without integration needs</ListItem>
-            <ListItem>Software/content-only agencies without hardware procurement role</ListItem>
-            <ListItem>Firms without a confirmed display use case</ListItem>
-            <ListItem>Existing customers, active deals, or protected partners (obtain exclusion lists)</ListItem>
-          </SubSection>
-
-          <SubSection title="Requires Manual Review">
-            <ListItem>Complete-system requests beyond confirmed display scope</ListItem>
-            <ListItem>Medical diagnostic or safety-critical display applications</ListItem>
-            <ListItem>Hazardous-area use cases</ListItem>
-            <ListItem>Military/aerospace applications</ListItem>
-            <ListItem>Harsh-environment requirements beyond standard ratings</ListItem>
-            <ListItem>Regulated gaming deployments requiring specific approvals</ListItem>
-          </SubSection>
-        </ContentSection>
-      </div>
-    );
-  }
+      <ContentSection title="Target Market Summary" icon={<Target className="w-5 h-5" />}>
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+          <p className="font-semibold text-blue-900 mb-2">Who PRTronic Serves:</p>
+          <p className="text-blue-800">
+            Equipment manufacturers (OEMs), system integrators, and multi-site operators across DACH region
+            who need display solutions for kiosks, industrial machinery, digital signage, or specialized applications
+            like gaming machines and transport information systems.
+          </p>
+          <div className="mt-3 space-y-1 text-sm text-blue-800">
+            <p><strong>OEM clients:</strong> Form factor, touch and integration assessment for equipment design</p>
+            <p><strong>Integrators:</strong> Display configuration for client projects and installations</p>
+            <p><strong>Operators:</strong> Information/signage rollout planning and implementation</p>
+          </div>
+        </div>
+      </ContentSection>
+    </>
+  );
+}
 
   function ICPAndPersonasTab() {
     return (

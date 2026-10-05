@@ -147,57 +147,53 @@ export default function MoreFromFoodPage() {
 
 function OverviewTab() {
   return (
-    <div className="space-y-6">
-      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
-          <SubSection title="Service" icon={<Target className="w-5 h-5" />}>
+    <>
+      <ContentSection title="Company Overview" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p>
             MoreFromFood (Dotcom d.o.o.) provides digital HACCP records, checklists, temperature monitoring, corrective actions and audit documentation for food manufacturers. The platform supports multi-site oversight, traceability, technical specifications and ERP/IoT integration options.
-          </SubSection>
+          </p>
 
-          <SubSection title="Markets" icon={<Target className="w-5 h-5" />}>
-            <div>
-              <strong>Primary markets:</strong>
-              <ul className="mt-2 space-y-1 text-sm text-gray-600">
-                <ListItem>🇭🇷 Croatia - Food manufacturing sector</ListItem>
-                <ListItem>🇷🇸 Serbia - Food manufacturing sector</ListItem>
-              </ul>
-              <p className="mt-3 text-sm text-gray-600">
-                Require an operating food-production site in Croatia or Serbia. Record the local buying entity and parent group separately. Other former Yugoslav markets are a later expansion option based on results.
-              </p>
-            </div>
-          </SubSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Service" value="Digital HACCP & Quality Control" />
+            <InfoCard label="Markets" value="Croatia & Serbia" />
+            <InfoCard label="Target Segment" value="Food Manufacturing (50-500 employees)" />
+            <InfoCard label="Website" value={
+              <a href="https://morefromfood.com/sl/" target="_blank" rel="noopener noreferrer" className="text-lime-600 hover:underline">
+                morefromfood.com
+              </a>
+            } />
+          </div>
+        </div>
+      </ContentSection>
 
-          <SubSection title="Value Proposition" icon={<TrendingUp className="w-5 h-5" />}>
-            Help food manufacturers organize daily food-safety controls, records and corrective actions in one workflow, so quality and production teams can follow progress and retrieve evidence more easily.
-            <ul className="mt-3 space-y-2 text-sm text-gray-600">
-              <ListItem><strong>Quality angle:</strong> Easier access to records and follow-up on corrective actions</ListItem>
-              <ListItem><strong>Production angle:</strong> Visibility of completed and outstanding checks across shifts</ListItem>
-              <ListItem><strong>Management angle:</strong> Consistent oversight across plants</ListItem>
-            </ul>
-          </SubSection>
+      <ContentSection title="What MoreFromFood Offers" icon={<TrendingUp className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem type="check">Digital HACCP recordkeeping and checklists</ListItem>
+          <ListItem type="check">Temperature monitoring and corrective action tracking</ListItem>
+          <ListItem type="check">Multi-site oversight and audit documentation</ListItem>
+          <ListItem type="check">Traceability and technical specifications management</ListItem>
+          <ListItem type="check">ERP/IoT integration options</ListItem>
+        </ul>
+      </ContentSection>
 
-          <SubSection title="Primary CTA" icon={<Mail className="w-5 h-5" />}>
-            "Would a short walkthrough of how you manage production checks and corrective actions be useful?"
-            <p className="mt-2 text-sm text-gray-600">
-              Alternative routing CTA: "Who is responsible for digitalizing quality and food-safety records at your plant?"
-            </p>
-          </SubSection>
-
-          <SubSection title="Exclusions" icon={<Target className="w-5 h-5" />}>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <ListItem>❌ Brokers, importers and wholesalers without manufacturing</ListItem>
-              <ListItem>❌ Restaurants and hotels without food production</ListItem>
-              <ListItem>❌ Retailers without production operations</ListItem>
-              <ListItem>❌ Food-service-only businesses</ListItem>
-              <ListItem>❌ Hobby producers and pre-production start-ups</ListItem>
-              <ListItem>❌ Brands outsourcing all manufacturing (unless they own relevant quality workflow)</ListItem>
-              <ListItem>❌ Software vendors and consultants</ListItem>
-              <ListItem>❌ Requirements for full ERP replacement or unsupported integrations</ListItem>
-            </ul>
-          </SubSection>
-        </ContentSection>
-      </div>
-    );
-  }
+      <ContentSection title="Value Proposition" icon={<Target className="w-5 h-5" />}>
+        <div className="bg-lime-50 border-l-4 border-lime-500 p-4 rounded">
+          <p className="font-semibold text-lime-900 mb-2">Who MoreFromFood Helps:</p>
+          <p className="text-lime-800">
+            Help food manufacturers organize daily food-safety controls, records and corrective actions in one workflow,
+            so quality and production teams can follow progress and retrieve evidence more easily.
+          </p>
+          <div className="mt-3 space-y-1 text-sm text-lime-800">
+            <p><strong>Quality teams:</strong> Easier access to records and corrective action follow-up</p>
+            <p><strong>Production teams:</strong> Visibility of completed vs. outstanding checks across shifts</p>
+            <p><strong>Management:</strong> Consistent oversight across plants</p>
+          </div>
+        </div>
+      </ContentSection>
+    </>
+  );
+}
 
   function ICPAndPersonasTab() {
     return (
