@@ -47,6 +47,13 @@ const ALL_CLIENTS = [
   { id: 'zen2fit', name: 'Zen2fit' },
   { id: 'panorate', name: 'Panorate' },
   { id: 'mbedtronix', name: 'MBEDTRONIX' },
+  { id: 'morefromfood', name: 'MoreFromFood' },
+  { id: 'dhm', name: 'DHM' },
+  { id: 'prtronic', name: 'PRTronic' },
+  { id: 'bmevents', name: 'BM Events' },
+  { id: 'birografika', name: 'BiroGrafika' },
+  { id: 'clevercraft', name: 'CleverCraft' },
+  { id: 'stojkov', name: 'Stojkov' },
 ];
 
 export default function ClientsTab() {
