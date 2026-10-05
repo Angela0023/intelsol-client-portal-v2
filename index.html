@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreFromFood - Client Dashboard Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-bottom: 2px solid #84cc16; color: #84cc16; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-7xl mx-auto p-8">
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center space-x-3 mb-3">
+                <div class="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center">
+                    <span class="text-2xl font-bold text-lime-700">MF</span>
+                </div>
+                <div>
+                    <div class="flex items-center gap-3">
+                        <h1 class="text-3xl font-bold text-gray-900">MoreFromFood</h1>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Active</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-1">HACCP & Quality Control Software (Croatia/Serbia)</p>
+                </div>
+            </div>
+            <a href="https://morefromfood.com/sl/" target="_blank" class="text-sm text-lime-700 hover:underline">Visit Website →</a>
+        </div>
+
+        <!-- Tabs -->
+        <div class="border-b border-gray-200 mb-6">
+            <nav class="flex space-x-8">
+                <button class="tab-btn active py-4 font-medium text-sm" onclick="showTab('overview')">Overview</button>
+                <button class="tab-btn py-4 font-medium text-sm text-gray-500" onclick="showTab('icp')">ICP Profile</button>
+                <button class="tab-btn py-4 font-medium text-sm text-gray-500" onclick="showTab('sequences')">Email Sequences</button>
+            </nav>
+        </div>
+
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Client Overview</h2>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-lime-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Service</h3>
+                            <p class="text-gray-700">MoreFromFood (Dotcom d.o.o.) provides digital HACCP records, checklists, temperature monitoring, corrective actions and audit documentation for food manufacturers. The platform supports multi-site oversight, traceability, technical specifications and ERP/IoT integration options.</p>
+                        </div>
+
+                        <div class="border-l-4 border-lime-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Markets</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>🇭🇷 <strong>Croatia</strong> - Food manufacturing sector</li>
+                                <li>🇷🇸 <strong>Serbia</strong> - Food manufacturing sector</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-lime-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Value Proposition</h3>
+                            <p class="text-gray-700 mb-3">Help food manufacturers organize daily food-safety controls, records and corrective actions in one workflow, so quality and production teams can follow progress and retrieve evidence more easily.</p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><strong>Quality angle:</strong> Easier access to records and follow-up on corrective actions</li>
+                                <li><strong>Production angle:</strong> Visibility of completed and outstanding checks across shifts</li>
+                                <li><strong>Management angle:</strong> Consistent oversight across plants</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-lime-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Primary CTA</h3>
+                            <p class="text-gray-700 italic">"Would a short walkthrough of how you manage production checks and corrective actions be useful?"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ICP Profile Tab -->
+        <div id="icp" class="tab-content">
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Target Company Profile</h2>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-l-4 border-green-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Company Size</h3>
+                            <p class="text-sm text-gray-700"><strong class="text-green-600">Primary:</strong> 50-500 employees</p>
+                            <p class="text-sm text-gray-600 mt-1">Medium-sized and larger manufacturers with established quality processes</p>
+                        </div>
+
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Geography</h3>
+                            <p class="text-sm text-gray-700">Croatia and Serbia</p>
+                            <p class="text-sm text-gray-600 mt-1">Separate campaigns for each market</p>
+                        </div>
+
+                        <div class="border-l-4 border-purple-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Manufacturing Segments</h3>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Meat processing</li>
+                                <li>• Dairy</li>
+                                <li>• Industrial bakery</li>
+                                <li>• Beverages</li>
+                                <li>• Prepared meals</li>
+                                <li>• Confectionery</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-amber-600 pl-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">Business Model Fit</h3>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>✓ Own-brand manufacturers</li>
+                                <li>✓ Private-label producers</li>
+                                <li>✓ Contract manufacturers</li>
+                                <li>✓ Export-active operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Buyer Personas</h2>
+
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-blue-900 mb-2">PRIMARY: Quality / Food Safety</h3>
+                            <p class="text-sm text-gray-700 mb-2"><strong>Titles:</strong> Head of Quality, Quality Manager, Food Safety Manager</p>
+                            <p class="text-sm text-gray-700"><strong>Messaging:</strong> Easier access to HACCP records and corrective actions, faster evidence preparation for audits</p>
+                        </div>
+
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-blue-900 mb-2">PRIMARY: QA / QC</h3>
+                            <p class="text-sm text-gray-700 mb-2"><strong>Titles:</strong> QA Manager, Quality Control Manager</p>
+                            <p class="text-sm text-gray-700"><strong>Messaging:</strong> Digital workspace for QC checks, immediate deviation flagging, organized records</p>
+                        </div>
+
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-blue-900 mb-2">PRIMARY: Production / Plant</h3>
+                            <p class="text-sm text-gray-700 mb-2"><strong>Titles:</strong> Production Manager, Plant Manager</p>
+                            <p class="text-sm text-gray-700"><strong>Messaging:</strong> Visibility of completed vs. outstanding checks across shifts, clearer handovers</p>
+                        </div>
+
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-bold text-green-900 mb-2">SECONDARY: Operations / Leadership</h3>
+                            <p class="text-sm text-gray-700 mb-2"><strong>Titles:</strong> Operations Director, Managing Director, Owner</p>
+                            <p class="text-sm text-gray-700"><strong>Messaging:</strong> Consistent oversight across plants, reduced administrative workload</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Sequences Tab -->
+        <div id="sequences" class="tab-content">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-6">Email Sequences</h2>
+
+                <div class="space-y-8">
+                    <!-- Sequence 1 -->
+                    <div class="border-l-4 border-blue-600 pl-6">
+                        <h3 class="font-bold text-blue-900 mb-3">PRIMARY: Quality / Food Safety Manager</h3>
+
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p class="text-xs font-semibold text-gray-500 mb-2">EMAIL 1 - INITIAL OUTREACH</p>
+                                <p class="font-semibold text-gray-900 mb-2">Subject: Digital quality records for [company]</p>
+                                <pre class="text-sm text-gray-700 whitespace-pre-wrap font-mono">Hi [First Name],
+
+I work with MoreFromFood - we help food manufacturers in Croatia and Serbia organize daily quality and food-safety records digitally.
+
+I noticed [specific production activity/product line] and wanted to check: how are you currently managing your HACCP records, corrective actions and quality checks - paper forms, spreadsheets, or another system?
+
+Our focus is providing quality teams with easier access to records and visibility of corrective action follow-up, so evidence preparation and compliance verification take less time.
+
+We've supported food manufacturers across meat processing, dairy, bakery and prepared-food production with organizing safety controls and making records easier to retrieve.
+
+Would a short walkthrough of how you manage production checks and corrective actions be useful?
+
+Best regards,
+[Your Name]</pre>
+                            </div>
+
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p class="text-xs font-semibold text-gray-500 mb-2">EMAIL 2 - FOLLOW-UP 1</p>
+                                <p class="font-semibold text-gray-900 mb-2">Subject: Re: Digital quality records for [company]</p>
+                                <pre class="text-sm text-gray-700 whitespace-pre-wrap font-mono">Hi [First Name],
+
+Following up on my note about digital quality recordkeeping for [company].
+
+Many quality managers and food-safety leads use us when they need to:
+- Access HACCP records and corrective actions from a central system
+- Track follow-up on deviations across shifts and production lines
+- Prepare evidence for audits without searching through folders
+- Give production teams a clear view of completed vs. outstanding checks
+- Maintain consistent documentation standards across multiple sites
+
+The value for your operation: easier evidence retrieval during assessments, clearer visibility of corrective action status, and a complete digital record organized by date, check type and responsible person.
+
+Would it make sense to discuss your current quality recordkeeping workflow - number of production lines, shift structure, certification requirements - and see if a digital system would help?
+
+Happy to show you the platform using your actual quality processes.
+
+Best regards,
+[Your Name]</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sequence 2 -->
+                    <div class="border-l-4 border-blue-600 pl-6">
+                        <h3 class="font-bold text-blue-900 mb-3">PRIMARY: Production / Plant Manager</h3>
+
+                        <div class="bg-gray-50 p-4 rounded">
+                            <p class="text-xs font-semibold text-gray-500 mb-2">EMAIL 1 - INITIAL OUTREACH</p>
+                            <p class="font-semibold text-gray-900 mb-2">Subject: Digital production records for [plant/facility]</p>
+                            <pre class="text-sm text-gray-700 whitespace-pre-wrap font-mono">Hi [First Name],
+
+I work with MoreFromFood - we help food production plants in Croatia and Serbia organize daily safety checks and production records digitally.
+
+I noticed [specific production operation/facility] and wanted to check: how are you currently managing production recordkeeping across shifts - safety checks, line inspections, handover documentation and quality control?
+
+Our focus is providing production teams with visibility of completed and outstanding checks across shifts, so managers can see progress without collecting separate forms from each line.
+
+We've supported food manufacturers with organizing repeated production checks and making shift handovers clearer.
+
+Would it be useful to discuss how you currently manage production recordkeeping and whether a digital system would help your team?
+
+Best regards,
+[Your Name]</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-12 text-center text-sm text-gray-500">
+            <p>MoreFromFood Client Dashboard Demo</p>
+            <p class="mt-1">Created: October 2026</p>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('text-gray-500');
+            });
+
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+
+            // Activate button
+            event.target.classList.add('active');
+            event.target.classList.remove('text-gray-500');
+        }
+    </script>
+</body>
+</html>
