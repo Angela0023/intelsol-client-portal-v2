@@ -10,7 +10,7 @@ interface Env {
 }
 
 const GITHUB_OWNER = 'Angela0023';
-const GITHUB_REPO = 'intelsol-client-portal';
+const GITHUB_REPO = 'intelsol-client-portal-v2';
 const GITHUB_BRANCH = 'main';
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
