@@ -68,9 +68,29 @@ export function InfoCard({ label, value, color = 'bg-blue-50 text-blue-700' }: I
   );
 }
 
+interface SubSectionProps {
+  title?: string;
+  icon?: React.ReactNode;
+  children: React.ReactNode;
+}
+
+export function SubSection({ title, icon, children }: SubSectionProps) {
+  return (
+    <div className="space-y-3">
+      {title && (
+        <div className="flex items-center space-x-2">
+          {icon && <div className="text-slate-600">{icon}</div>}
+          <h4 className="font-semibold text-slate-900">{title}</h4>
+        </div>
+      )}
+      <div className="text-slate-700">{children}</div>
+    </div>
+  );
+}
+
 interface ListItemProps {
   children: React.ReactNode;
-  type?: 'check' | 'bullet' | 'cross';
+  type?: 'check' | 'bullet' | 'cross' | 'arrow';
 }
 
 export function ListItem({ children, type = 'bullet' }: ListItemProps) {
@@ -78,12 +98,14 @@ export function ListItem({ children, type = 'bullet' }: ListItemProps) {
     check: '✓',
     bullet: '•',
     cross: '✗',
+    arrow: '→',
   };
 
   const colors = {
     check: 'text-green-600',
     bullet: 'text-slate-400',
     cross: 'text-red-600',
+    arrow: 'text-slate-400',
   };
 
   return (

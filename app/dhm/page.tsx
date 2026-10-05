@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
-import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
+import { ContentSection, CodeBlock, InfoCard, SubSection, ListItem } from '../components/ContentSection';
 import TasksTab from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
@@ -142,28 +142,28 @@ function OverviewTab() {
   return (
     <div className="space-y-6">
       <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
-          <InfoCard title="Service" icon={<Target className="w-5 h-5" />}>
+          <SubSection title="Service" icon={<Target className="w-5 h-5" />}>
             DHM (Digital HACCP Manager) provides mobile, tablet and computer access to HACCP records, helping smaller food-handling businesses organize everyday food-safety records and responsibilities digitally across Slovenia and Croatia.
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Core Offering">
+          <SubSection title="Core Offering">
             <ListItem>Digital HACCP recordkeeping (mobile, tablet, computer access)</ListItem>
             <ListItem>PDF reports and corrective action tracking</ListItem>
             <ListItem>Task management and shift planning</ListItem>
             <ListItem>Purchasing and goods receipt documentation</ListItem>
             <ListItem>Optional AI-assisted goods receipt</ListItem>
             <ListItem>Optional IoT temperature monitoring with alerts</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Target Markets">
+          <SubSection title="Target Markets">
             <ListItem>Slovenia (primary market, confirmed)</ListItem>
             <ListItem>Croatia (confirmed target market)</ListItem>
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
               <strong>Note:</strong> Build separate country lists and messages. Cover both countries nationally, recording actual food-handling site separately from headquarters.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Target Segments">
+          <SubSection title="Target Segments">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold text-gray-900">A: Small Food Producers</div>
@@ -182,9 +182,9 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600 mt-1">3-30 employees, 1-3 sites. Clear routine-recordkeeping need required.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Sweet Spot">
+          <SubSection title="Sweet Spot">
             <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
               <div className="font-semibold text-green-900 mb-2">Initial Sweet Spot</div>
               <ListItem>5-30 employees</ListItem>
@@ -196,11 +196,11 @@ function OverviewTab() {
             <div className="mt-3 text-sm text-gray-600">
               <strong>Broader discovery range:</strong> 2-50 employees, 1-5 sites. Revenue is optional enrichment only.
             </div>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Value Proposition">
-          <InfoCard title="Core Positioning">
+          <SubSection title="Core Positioning">
             <p className="text-gray-700 font-semibold mb-3">
               "Digital HACCP records and daily task oversight for smaller food businesses."
             </p>
@@ -209,17 +209,17 @@ function OverviewTab() {
               <div><strong>Hotel/Kitchen Angle:</strong> Clarify responsibilities across shifts.</div>
               <div><strong>Owner Angle:</strong> See outstanding work without collecting separate forms.</div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Key Benefits">
+          <SubSection title="Key Benefits">
             <ListItem>Practical digital workspace for everyday food-safety records</ListItem>
             <ListItem>Assigned tasks with clear ownership</ListItem>
             <ListItem>Clearer view of what has been recorded and what needs follow-up</ListItem>
             <ListItem>Staff adoption focus - a workflow staff will actually use</ListItem>
             <ListItem>Record retrieval and owner oversight improvements</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Current Pain Points (Hypotheses to Validate)" variant="amber">
+          <SubSection title="Current Pain Points (Hypotheses to Validate)" variant="amber">
             <ListItem>Routine checks recorded on paper, spreadsheets or scattered messages</ListItem>
             <ListItem>Owner must chase entries and signatures</ListItem>
             <ListItem>Shift handovers make responsibilities unclear</ListItem>
@@ -228,11 +228,11 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
               <strong>Important:</strong> These are discovery hypotheses. Confirm actual practices with buyer rather than assuming from company size.
             </div>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Exclusions & Bad-Fit Signals">
-          <InfoCard title="Explicit Exclusions" variant="red">
+          <SubSection title="Explicit Exclusions" variant="red">
             <ListItem>Non-food businesses</ListItem>
             <ListItem>Accommodation-only providers without kitchens</ListItem>
             <ListItem>Food brokers without handling operations</ListItem>
@@ -240,9 +240,9 @@ function OverviewTab() {
             <ListItem>Hobby/pre-launch operations with too little recurring activity</ListItem>
             <ListItem>Requests solely for HACCP-plan creation, certification or legal advice (unless separately confirmed)</ListItem>
             <ListItem>Cafes/bars merely because website has cafe package (food handling is initial focus)</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Requires Verification Before Proposing">
+          <SubSection title="Requires Verification Before Proposing">
             <ListItem>Specialized batch traceability requirements</ListItem>
             <ListItem>Recall management needs</ListItem>
             <ListItem>Production recipes and formulation management</ListItem>
@@ -252,7 +252,7 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg text-sm">
               <strong>Critical:</strong> Do not infer these capabilities from "digital HACCP" description. Verify exact requirements with DHM before proposing solution.
             </div>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
       </div>
     );
@@ -262,7 +262,7 @@ function OverviewTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="ICP Criteria">
-          <InfoCard title="Geography">
+          <SubSection title="Geography">
             <ListItem><strong>Slovenia:</strong> Primary confirmed market</ListItem>
             <ListItem><strong>Croatia:</strong> Confirmed target market</ListItem>
             <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm">
@@ -271,9 +271,9 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
               <strong>To Confirm with DHM:</strong> Slovenian language support, local workflow/report adaptation, onboarding availability, Croatian delivery and support terms.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Company Size by Segment">
+          <SubSection title="Company Size by Segment">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Initial Sweet Spot: 5-30 employees, 1-3 sites</div>
@@ -301,9 +301,9 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-sm">
               <strong>Note:</strong> Revenue is optional enrichment. Unknown headcount is not automatic exclusion. Technical fit, workflow needs and accessible decision maker are stronger gates.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Business Models - Strong Fit">
+          <SubSection title="Business Models - Strong Fit">
             <ListItem>Owner-managed businesses with own preparation/processing operation</ListItem>
             <ListItem>Small teams (2-50 employees)</ListItem>
             <ListItem>Repeated daily checks and recordkeeping routines</ListItem>
@@ -312,9 +312,9 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm">
               <strong>Discovery Topics:</strong> Cold storage routines, goods receipt processes, cleaning schedules, shift handovers, document retrieval. None proves a control failure - these are fit indicators only.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Primary Industries">
+          <SubSection title="Primary Industries">
             <div className="space-y-2">
               <div>
                 <div className="font-semibold">Primary A: Small Food Manufacturing/Processing</div>
@@ -333,12 +333,12 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600">Caterers, small central kitchens, independent restaurants, ready-meal kitchens with repeated daily records</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Buyer Personas">
           <div className="space-y-4">
-            <InfoCard title="PRIMARY: Owner / Director" variant="blue">
+            <SubSection title="PRIMARY: Owner / Director" variant="blue">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Owner, Director, Managing Partner, Lastnik, Direktor, Vlasnik</div>
                 <div><strong>When This Applies:</strong> Small producer or butcher shop - owns budget and operational priority decisions</div>
@@ -348,9 +348,9 @@ function OverviewTab() {
                   <strong>Note:</strong> For very small businesses (under 10 employees), start with Owner/Director. They typically cover both operational and budget decisions.
                 </div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="PRIMARY: Production / HACCP Manager" variant="blue">
+            <SubSection title="PRIMARY: Production / HACCP Manager" variant="blue">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Production Manager, HACCP Responsible Person, Vodja proizvodnje, Odgovorna oseba za HACCP, Voditelj proizvodnje, HACCP odgovorna osoba</div>
                 <div><strong>When This Applies:</strong> Owns recurring records, checks and staff routines in production environment</div>
@@ -360,9 +360,9 @@ function OverviewTab() {
                   <strong>Small Plant Approach:</strong> Involve Production Manager or HACCP-responsible person. Do not require formal Quality Manager title at small operations.
                 </div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="SECONDARY: Hotel / Kitchen Manager" variant="green">
+            <SubSection title="SECONDARY: Hotel / Kitchen Manager" variant="green">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Hotel Manager, Head Chef, F&B Manager, Vodja kuhinje, Voditelj kuhinje</div>
                 <div><strong>When This Applies:</strong> Kitchen workflow champion at hotels/guesthouses. Budget owner varies (often general manager/owner).</div>
@@ -372,18 +372,18 @@ function OverviewTab() {
                   <strong>Hotels Approach:</strong> Owner/general manager may approve spending while chef/F&B manager validates daily use. Ask who owns the records AND who approves software.
                 </div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="SECONDARY: Quality / Operations Manager" variant="green">
+            <SubSection title="SECONDARY: Quality / Operations Manager" variant="green">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Quality Manager, Operations Manager, Vodja kakovosti, Voditelj kvalitete</div>
                 <div><strong>When This Applies:</strong> Where a dedicated quality/operations role exists. Validates process fit.</div>
                 <div><strong>Discovery Focus:</strong> Current quality system, recordkeeping processes, compliance workflow, improvement initiatives</div>
                 <div><strong>Value Message:</strong> Digital workspace for food-safety records and task oversight, clearer visibility of completed vs. outstanding checks</div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="TERTIARY: Daily Users / External Adviser" variant="amber">
+            <SubSection title="TERTIARY: Daily Users / External Adviser" variant="amber">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Shift Lead, Administrator, External HACCP Adviser</div>
                 <div><strong>When This Applies:</strong> Checks usability or alignment with existing HACCP plan. Not automatically the buyer.</div>
@@ -393,12 +393,12 @@ function OverviewTab() {
                   <strong>Important:</strong> These roles validate fit but rarely have budget authority. Identify the actual decision maker (usually Owner, Director, or designated Manager).
                 </div>
               </div>
-            </InfoCard>
+            </SubSection>
           </div>
         </ContentSection>
 
         <ContentSection title="Buying Signals (3 Tiers)">
-          <InfoCard title="TIER 1: Strongest Signals" variant="green">
+          <SubSection title="TIER 1: Strongest Signals" variant="green">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Explicit Digitization Need</div>
@@ -409,9 +409,9 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600 mt-1"><strong>What to Look For:</strong> Confirmed new food production site, kitchen or second location. Check timing, recordkeeping setup and software selection status.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="TIER 2: Medium Signals" variant="amber">
+          <SubSection title="TIER 2: Medium Signals" variant="amber">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Growing Operational Complexity</div>
@@ -422,16 +422,16 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600 mt-1"><strong>What to Look For:</strong> New production/kitchen/quality lead or internal improvement project. Hiring alone does not prove buying intent.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="TIER 3: Structural Fit Signals" variant="blue">
+          <SubSection title="TIER 3: Structural Fit Signals" variant="blue">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Structural Fit</div>
                 <div className="text-sm text-gray-600 mt-1"><strong>What to Look For:</strong> Small in-house production/preparation site with recurring checks. Paper records are a hypothesis until verified.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
           <div className="mt-4 p-4 bg-purple-50 border border-purple-200 rounded-lg">
             <div className="font-semibold text-purple-900 mb-2">Discovery Search Terms</div>
@@ -450,16 +450,16 @@ function OverviewTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="Clay Table Filters" description="Recommended filters for building targeted prospect lists in Clay">
-          <InfoCard title="Geography Filters">
+          <SubSection title="Geography Filters">
             <ListItem><strong>Country:</strong> Slovenia OR Croatia (build separate lists)</ListItem>
             <ListItem><strong>Approach:</strong> Prioritize smaller businesses with local owner or operational decision maker</ListItem>
             <ListItem><strong>Site Recording:</strong> Record actual food-handling site separately from headquarters address</ListItem>
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
               <strong>Important:</strong> Build separate country lists and messages. Cover both countries nationally.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Company Size Filters">
+          <SubSection title="Company Size Filters">
             <div className="space-y-2">
               <ListItem><strong>Sweet Spot:</strong> 5-30 employees, 1-3 sites</ListItem>
               <ListItem><strong>Discovery Range:</strong> 2-50 employees, 1-5 sites</ListItem>
@@ -471,9 +471,9 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm">
               <strong>Note:</strong> Revenue is optional enrichment only. Unknown headcount is not automatic exclusion. Focus on workflow fit and accessible decision maker.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Industry Keywords">
+          <SubSection title="Industry Keywords">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Slovenian Terms</div>
@@ -488,9 +488,9 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600">food production, food processing, butcher, meat processing, prepared meals, bakery, pastry shop, hotel with restaurant, catering</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Job Title Filters (Personas)">
+          <SubSection title="Job Title Filters (Personas)">
             <div className="space-y-2">
               <ListItem><strong>Owner/Director:</strong> Owner, Director, Managing Partner, Lastnik, Direktor, Vlasnik</ListItem>
               <ListItem><strong>Production/HACCP:</strong> Production Manager, HACCP Responsible Person, Vodja proizvodnje, Odgovorna oseba za HACCP, Voditelj proizvodnje</ListItem>
@@ -500,14 +500,14 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-sm">
               <strong>Approach:</strong> For very small businesses, start with Owner/Director. Verify current employment and identify actual role responsibilities.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Exclusion Filters">
+          <SubSection title="Exclusion Filters">
             <ListItem><strong>Business Type:</strong> Exclude non-food, accommodation-only, food brokers, sealed-goods resale only</ListItem>
             <ListItem><strong>Activity Level:</strong> Exclude hobby/pre-launch operations with too little recurring activity</ListItem>
             <ListItem><strong>Service Requests:</strong> Exclude requests solely for HACCP certification, consulting, legal advice (unless separately confirmed)</ListItem>
             <ListItem><strong>Existing Relationships:</strong> Suppress customer list, active deals, protected partners (obtain lists from DHM)</ListItem>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
       </div>
     );
@@ -517,7 +517,7 @@ function OverviewTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="Clay AI Research Prompts">
-          <InfoCard title="Company Qualification Prompt">
+          <SubSection title="Company Qualification Prompt">
             <CodeBlock language="text">
 Research this company and determine:
 
@@ -546,9 +546,9 @@ Research this company and determine:
 
 Return: FIT/NO FIT with reasoning, business type, estimated size, food-handling activity description, and any visible recordkeeping indicators with source URLs.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Persona Identification Prompt">
+          <SubSection title="Persona Identification Prompt">
             <CodeBlock language="text">
 Find the following contacts at [Company Name]:
 
@@ -574,9 +574,9 @@ For each contact return: Name, Title, LinkedIn URL, Email (if available), Depart
 
 Note: For very small businesses (under 10 employees), Owner/Director likely covers all decisions. For hotels, identify both kitchen workflow owner AND budget approver.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Buying Signal Detection Prompt">
+          <SubSection title="Buying Signal Detection Prompt">
             <CodeBlock language="text">
 Search for recent activity indicating digital recordkeeping needs at [Company Name]:
 
@@ -607,9 +607,9 @@ For each signal found, return:
 
 Return "NO SIGNALS DETECTED" if nothing found. Do not invent signals or assume paper-based records without evidence.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Workflow Discovery Prompt">
+          <SubSection title="Workflow Discovery Prompt">
             <CodeBlock language="text">
 Research [Company Name] food safety recordkeeping workflow indicators:
 
@@ -629,11 +629,11 @@ Also check:
 
 Return: Observable workflow indicators with source URLs. Do not assume problems without evidence. Frame findings as "suggests recordkeeping complexity" rather than "has unsafe practices."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Email Personalization Prompts">
-          <InfoCard title="Small Producer Personalization">
+          <SubSection title="Small Producer Personalization">
             <CodeBlock language="text">
 Research [Company Name] and personalize outreach for digital HACCP records:
 
@@ -656,9 +656,9 @@ Return 2-3 sentence personalization referencing their specific food production a
 
 Example output: "I noticed you produce [product type] at your [location] facility. For small food producers managing daily temperature checks, goods receipt and cleaning records, we help organize these recurring checks digitally so the team can access records from any device and owners can see what's been completed without collecting paper forms."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Butcher Shop Personalization">
+          <SubSection title="Butcher Shop Personalization">
             <CodeBlock language="text">
 Research [Company Name] butcher shop operation:
 
@@ -680,9 +680,9 @@ Return 2-3 sentence personalization referencing their operation type and recordk
 
 Example output: "I noticed your [number] butcher shop locations in [region]. For independent butcher shops managing temperature checks, cleaning schedules and goods receipt across preparation areas, we provide a digital workspace where staff can record checks from any device and owners can see outstanding tasks without collecting forms from each location."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Hotel Kitchen Personalization">
+          <SubSection title="Hotel Kitchen Personalization">
             <CodeBlock language="text">
 Research [Company Name] hotel kitchen operation:
 
@@ -706,7 +706,7 @@ Return 2-3 sentence personalization referencing their kitchen operation and reco
 
 Example output: "I noticed your [property/properties] hotel with in-house kitchen operations. For hotel kitchens managing daily food safety checks across breakfast and restaurant services, we help clarify task ownership across shifts and give managers a clearer view of completed checks without collecting separate paper forms from each shift."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
       </div>
     );

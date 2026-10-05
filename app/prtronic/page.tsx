@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
-import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
+import { ContentSection, CodeBlock, InfoCard, SubSection, ListItem } from '../components/ContentSection';
 import TasksTab from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
@@ -153,26 +153,26 @@ function OverviewTab() {
   return (
     <div className="space-y-6">
       <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
-          <InfoCard title="Service" icon={<Target className="w-5 h-5" />}>
+          <SubSection title="Service" icon={<Target className="w-5 h-5" />}>
             PRTronic provides display hardware and integration solutions for equipment manufacturers, system integrators, and professional display projects across Slovenia, Austria, Germany, and Switzerland (DACH region).
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Core Offering">
+          <SubSection title="Core Offering">
             <ListItem>Open-frame and closed-frame monitors with customization options</ListItem>
             <ListItem>Touch screens and display kits for equipment integration</ListItem>
             <ListItem>Digital signage solutions for professional installations</ListItem>
             <ListItem>High-brightness displays for challenging viewing environments</ListItem>
             <ListItem>TFT/LCD modules with custom mechanical and firmware integration</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Target Markets">
+          <SubSection title="Target Markets">
             <ListItem>Slovenia (primary market, local presence)</ListItem>
             <ListItem>Austria (DACH - Klagenfurt office presence)</ListItem>
             <ListItem>Germany (DACH - southern Germany priority, then wider coverage)</ListItem>
             <ListItem>Switzerland (DACH - included in expansion)</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Primary Segments">
+          <SubSection title="Primary Segments">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold text-gray-900">A: OEMs & Equipment Manufacturers</div>
@@ -191,20 +191,20 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600 mt-1">10-1,000 employees. Gaming-machine manufacturers, transport/parking information integrators, public-information projects.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Primary Industries">
+          <SubSection title="Primary Industries">
             <ListItem>Self-service equipment (kiosks, parcel lockers, vending, ticketing/payment terminals)</ListItem>
             <ListItem>Industrial machinery manufacturers integrating operator displays</ListItem>
             <ListItem>Digital signage, AV and interactive-system integrators</ListItem>
             <ListItem>Retail chains, shopping centres, hotel groups, private clinic groups (multi-site operators)</ListItem>
             <ListItem>Gaming-machine OEMs and specialist integrators</ListItem>
             <ListItem>Parking, transport and public-information projects</ListItem>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Value Proposition">
-          <InfoCard title="Core Positioning">
+          <SubSection title="Core Positioning">
             <p className="text-gray-700">
               <strong>Display solutions matched to your equipment or installation requirements.</strong>
             </p>
@@ -213,42 +213,42 @@ function OverviewTab() {
               <div><strong>Integrator Angle:</strong> Assess a display configuration for the next client project.</div>
               <div><strong>Operator Angle:</strong> Scope an information/signage rollout.</div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Differentiation">
+          <SubSection title="Differentiation">
             <ListItem>Application-focused supply and integration partnership (not just commodity screens)</ListItem>
             <ListItem>Open-frame customization and display-kit options for mechanical integration</ListItem>
             <ListItem>Broad signage range with indoor/outdoor and high-brightness solutions</ListItem>
             <ListItem>Published installation examples (clinic LCD/LED, Vrhnika bus station LED, GLS parcel locker)</ListItem>
             <ListItem>Technical specification support (form factor, environment, touch, interfaces, mounting)</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Proof Points" variant="amber">
+          <SubSection title="Proof Points" variant="amber">
             <ListItem><strong>Clinic Installation:</strong> Indoor LCD + outdoor LED with central content management</ListItem>
             <ListItem><strong>Vrhnika Bus Station:</strong> LED passenger-information display installation</ListItem>
             <ListItem><strong>GLS Parcel Locker:</strong> Display application for parcel-locker systems</ListItem>
             <ListItem><strong>Technical Capabilities:</strong> Multiple video/touch interfaces, indoor operation ratings (validate per model)</ListItem>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Exclusions & Bad-Fit Signals">
-          <InfoCard title="Explicit Exclusions" variant="red">
+          <SubSection title="Explicit Exclusions" variant="red">
             <ListItem>RFID-only and unrelated electronic component enquiries</ListItem>
             <ListItem>Consumer/home-gaming buyers seeking retail products</ListItem>
             <ListItem>Generic commodity-monitor resellers without integration needs</ListItem>
             <ListItem>Software/content-only agencies without hardware procurement role</ListItem>
             <ListItem>Firms without a confirmed display use case</ListItem>
             <ListItem>Existing customers, active deals, or protected partners (obtain exclusion lists)</ListItem>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Requires Manual Review">
+          <SubSection title="Requires Manual Review">
             <ListItem>Complete-system requests beyond confirmed display scope</ListItem>
             <ListItem>Medical diagnostic or safety-critical display applications</ListItem>
             <ListItem>Hazardous-area use cases</ListItem>
             <ListItem>Military/aerospace applications</ListItem>
             <ListItem>Harsh-environment requirements beyond standard ratings</ListItem>
             <ListItem>Regulated gaming deployments requiring specific approvals</ListItem>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
       </div>
     );
@@ -258,7 +258,7 @@ function OverviewTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="ICP Criteria">
-          <InfoCard title="Geography">
+          <SubSection title="Geography">
             <ListItem><strong>Slovenia:</strong> Primary market (local presence confirmed)</ListItem>
             <ListItem><strong>Austria:</strong> DACH region (Klagenfurt office listed on website)</ListItem>
             <ListItem><strong>Germany:</strong> DACH region (priority: southern Germany, then wider coverage)</ListItem>
@@ -266,9 +266,9 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
               <strong>Note:</strong> Filter by buying/design entity location. Record installation markets separately. Confirm service coverage, languages, export terms, and Swiss delivery arrangements with PRTronic.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Company Size by Segment">
+          <SubSection title="Company Size by Segment">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">A: OEMs & Equipment Manufacturers</div>
@@ -287,9 +287,9 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600">10-1,000 employees. Project scope matters more than size. Confirm minimum volumes and viable customer economics with PRTronic.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Business Models - Strong Fit">
+          <SubSection title="Business Models - Strong Fit">
             <ListItem>OEMs embedding displays in repeat-built products</ListItem>
             <ListItem>Integrators delivering repeated hardware projects</ListItem>
             <ListItem>Distributors with genuine technical value and agreed channel fit</ListItem>
@@ -297,39 +297,39 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-green-50 border border-green-200 rounded-lg text-sm">
               <strong>Qualification:</strong> Visible product/project + display role + specification/purchasing ownership + credible demand. Pure software companies qualify only if they also specify/procure display hardware.
             </div>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Buyer Personas">
           <div className="space-y-4">
-            <InfoCard title="PRIMARY: Engineering / Product" variant="blue">
+            <SubSection title="PRIMARY: Engineering / Product" variant="blue">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja</div>
                 <div><strong>When This Applies:</strong> OEM technical owner responsible for display fit, qualification and integration decisions</div>
                 <div><strong>Discovery Focus:</strong> Form factor requirements, touch/interface specifications, environmental conditions, mounting/integration constraints, replacement/redesign triggers</div>
                 <div><strong>Value Message:</strong> Assess the display configuration that matches your equipment specifications and integration requirements</div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="PRIMARY: Purchasing / Procurement" variant="blue">
+            <SubSection title="PRIMARY: Purchasing / Procurement" variant="blue">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave</div>
                 <div><strong>When This Applies:</strong> OEM/integrator supplier selection, pricing and availability owner</div>
                 <div><strong>Discovery Focus:</strong> Current supplier relationships, panel EOL/second-source needs, lead times, MOQ requirements, commercial terms</div>
                 <div><strong>Value Message:</strong> Review display supply options for consistent availability, competitive pricing and technical support</div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="PRIMARY: Integrator Delivery / Project Management" variant="blue">
+            <SubSection title="PRIMARY: Integrator Delivery / Project Management" variant="blue">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Technical Director, AV/Signage Project Manager, Projektleiter</div>
                 <div><strong>When This Applies:</strong> Specifies hardware for client deployments, manages project delivery</div>
                 <div><strong>Discovery Focus:</strong> Client project pipeline, signage/AV installation requirements, display specifications for upcoming projects</div>
                 <div><strong>Value Message:</strong> Source the right display configuration for your next client installation with technical specification support</div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="SECONDARY: Operator Programme / Rollout Owner" variant="green">
+            <SubSection title="SECONDARY: Operator Programme / Rollout Owner" variant="green">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Marketing Manager, IT/AV Manager, Facilities Manager, Rollout Manager</div>
                 <div><strong>When This Applies:</strong> Multi-site signage sponsor and technical/deployment stakeholders at operator organizations</div>
@@ -337,16 +337,16 @@ function OverviewTab() {
                 <div><strong>Value Message:</strong> Scope a signage/information screen rollout with consistent hardware across your locations</div>
                 <div className="mt-2 p-2 bg-amber-50 border border-amber-200 rounded text-sm"><strong>Note:</strong> Contact the person responsible for specific rollout rather than assuming Marketing buys all screens.</div>
               </div>
-            </InfoCard>
+            </SubSection>
 
-            <InfoCard title="TERTIARY: Leadership / Final Approval" variant="amber">
+            <SubSection title="TERTIARY: Leadership / Final Approval" variant="amber">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> CEO, Owner, Managing Director, Geschäftsführer</div>
                 <div><strong>When This Applies:</strong> Small firms where CEO/Owner covers technical and commercial decisions, or final approval at larger firms</div>
                 <div><strong>Discovery Focus:</strong> Verify direct involvement in display sourcing decisions vs. delegated authority</div>
                 <div><strong>Value Message:</strong> (Same as relevant persona above - Engineer/Purchasing/Integrator depending on firm role)</div>
               </div>
-            </InfoCard>
+            </SubSection>
           </div>
 
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
@@ -360,7 +360,7 @@ function OverviewTab() {
         </ContentSection>
 
         <ContentSection title="Buying Signals (3 Tiers)">
-          <InfoCard title="TIER 1: Strongest Signals" variant="green">
+          <SubSection title="TIER 1: Strongest Signals" variant="green">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Active Display Sourcing</div>
@@ -371,9 +371,9 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600 mt-1"><strong>What to Look For:</strong> New terminal/machine prototype or funded signage deployment with display selection still open. Save project evidence URL.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="TIER 2: Medium Signals" variant="amber">
+          <SubSection title="TIER 2: Medium Signals" variant="amber">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Expansion or Redesign</div>
@@ -384,16 +384,16 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600 mt-1"><strong>What to Look For:</strong> Hiring for kiosk, HMI or signage hardware delivery roles. Note: Hiring alone is not proof of a purchase.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="TIER 3: Structural Fit Signals" variant="blue">
+          <SubSection title="TIER 3: Structural Fit Signals" variant="blue">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Installed/Product Fit</div>
                 <div className="text-sm text-gray-600 mt-1"><strong>What to Look For:</strong> Existing screen-equipped products, signage project portfolio, or multi-site network. This indicates fit evidence, not urgency.</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
           <div className="mt-4 p-4 bg-purple-50 border border-purple-200 rounded-lg">
             <div className="font-semibold text-purple-900 mb-2">Discovery Terms (German/Slovenian/English)</div>
@@ -413,16 +413,16 @@ function OverviewTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="Clay Table Filters" description="Recommended filters for building targeted prospect lists in Clay">
-          <InfoCard title="Geography Filters">
+          <SubSection title="Geography Filters">
             <ListItem><strong>Country:</strong> Slovenia, Austria, Germany, Switzerland</ListItem>
             <ListItem><strong>Priority Sequencing (Recommended):</strong> Slovenia & Austria → Southern Germany → Wider Germany/Switzerland</ListItem>
             <ListItem><strong>City/Region (Germany):</strong> Focus southern Germany first (Bavaria, Baden-Württemberg regions)</ListItem>
             <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
               <strong>Important:</strong> Filter by buying/design entity location (HQ or decision-making office), not installation location. Installation markets are recorded separately.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Company Size Filters">
+          <SubSection title="Company Size Filters">
             <div className="space-y-2">
               <ListItem><strong>OEMs & Equipment Manufacturers:</strong> 10-500 employees (sweet spot: 20-250)</ListItem>
               <ListItem><strong>AV/Signage/System Integrators:</strong> 5-250 employees</ListItem>
@@ -432,9 +432,9 @@ function OverviewTab() {
             <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm">
               <strong>Note:</strong> Unknown headcount is not automatic exclusion. Technical fit, sourcing authority, and repeat/project demand are stronger gates than size alone.
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Industry Keywords">
+          <SubSection title="Industry Keywords">
             <div className="space-y-3">
               <div>
                 <div className="font-semibold">Primary A: Self-Service Equipment</div>
@@ -457,9 +457,9 @@ function OverviewTab() {
                 <div className="text-sm text-gray-600">gaming machine, transport display, parking system, public information</div>
               </div>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Job Title Filters (Personas)">
+          <SubSection title="Job Title Filters (Personas)">
             <div className="space-y-2">
               <ListItem><strong>Engineering/Product:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja, Tehnični direktor</ListItem>
               <ListItem><strong>Purchasing:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave</ListItem>
@@ -467,13 +467,13 @@ function OverviewTab() {
               <ListItem><strong>Operator Programme:</strong> Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager</ListItem>
               <ListItem><strong>Leadership (Small Firms):</strong> CEO, Owner, Managing Director, Geschäftsführer</ListItem>
             </div>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Exclusion Filters">
+          <SubSection title="Exclusion Filters">
             <ListItem><strong>Company Type:</strong> Exclude pure software companies, content agencies, commodity resellers (without integration)</ListItem>
             <ListItem><strong>Product Focus:</strong> Exclude consumer/home gaming, RFID-only, unrelated electronics</ListItem>
             <ListItem><strong>Existing Relationships:</strong> Suppress customer list, active deals, protected partners (obtain lists from PRTronic)</ListItem>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
       </div>
     );
@@ -483,7 +483,7 @@ function OverviewTab() {
     return (
       <div className="space-y-6">
         <ContentSection title="Clay AI Research Prompts">
-          <InfoCard title="Company Qualification Prompt">
+          <SubSection title="Company Qualification Prompt">
             <CodeBlock language="text">
 Research this company and determine:
 
@@ -509,9 +509,9 @@ Research this company and determine:
 
 Return: FIT/NO FIT with reasoning, identified display application, sourcing authority, and any visible buying signals with source URLs.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Persona Identification Prompt">
+          <SubSection title="Persona Identification Prompt">
             <CodeBlock language="text">
 Find the following contacts at [Company Name]:
 
@@ -542,9 +542,9 @@ For each contact return: Name, Title, LinkedIn URL, Email (if available), Depart
 
 Note: At small firms (under 50 employees), CEO/Owner may cover both technical and commercial roles.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Buying Signal Detection Prompt">
+          <SubSection title="Buying Signal Detection Prompt">
             <CodeBlock language="text">
 Search for recent activity indicating display hardware needs at [Company Name]:
 
@@ -573,9 +573,9 @@ For each signal found, return:
 
 Return "NO SIGNALS DETECTED" if nothing found.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Installation Evidence Prompt">
+          <SubSection title="Installation Evidence Prompt">
             <CodeBlock language="text">
 Search for evidence of PRTronic's previous work and installations:
 
@@ -593,11 +593,11 @@ Current known projects:
 
 Return: Any new evidence found with source URLs, project details, customer names (if public), and application types.
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
 
         <ContentSection title="Email Personalization Prompts">
-          <InfoCard title="OEM/Equipment Manufacturer Personalization">
+          <SubSection title="OEM/Equipment Manufacturer Personalization">
             <CodeBlock language="text">
 Research [Company Name] and personalize the outreach for a display hardware supplier:
 
@@ -620,9 +620,9 @@ Return 2-3 sentence personalization referencing their specific equipment and pot
 
 Example output: "I noticed [Product Name] kiosk on your website. Given the outdoor installation environment and touch interface requirements, I wanted to check whether you're currently sourcing displays for this product line or planning any updates that might involve display changes."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Integrator/AV Personalization">
+          <SubSection title="Integrator/AV Personalization">
             <CodeBlock language="text">
 Research [Company Name] signage/AV integration business:
 
@@ -645,9 +645,9 @@ Return 2-3 sentence personalization referencing their project focus and potentia
 
 Example output: "I noticed your recent retail signage installation at [Location/Client]. For integrators working on multi-location retail displays, we provide display hardware that's pre-configured for your typical installation requirements - form factor, brightness, and interface specifications."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
 
-          <InfoCard title="Multi-Site Operator Personalization">
+          <SubSection title="Multi-Site Operator Personalization">
             <CodeBlock language="text">
 Research [Company Name] as potential signage rollout customer:
 
@@ -670,7 +670,7 @@ Return 2-3 sentence personalization referencing their network and potential roll
 
 Example output: "I noticed your [X] locations across [Region]. For multi-site [retail chains/hotel groups/clinic networks] planning signage rollouts, we help scope display hardware that provides consistent performance across all locations while meeting your specific mounting, content interface and viewing requirements."
             </CodeBlock>
-          </InfoCard>
+          </SubSection>
         </ContentSection>
       </div>
     );
