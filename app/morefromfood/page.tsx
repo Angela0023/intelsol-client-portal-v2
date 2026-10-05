@@ -125,7 +125,7 @@ export default function MoreFromFoodPage() {
         </div>
 
         {/* Tab Content */}
-        <div className="max-w-5xl">
+        <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}

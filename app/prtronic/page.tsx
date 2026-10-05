@@ -129,7 +129,7 @@ export default function PRTronicPage() {
           </nav>
         </div>
 
-        <div className="max-w-5xl">
+        <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}

@@ -118,7 +118,7 @@ export default function DHMPage() {
           </nav>
         </div>
 
-        <div className="mt-6">
+        <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
