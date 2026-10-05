@@ -69,10 +69,86 @@ export default function MoreFromFoodPage() {
     window.history.pushState({}, '', `/morefromfood/${tabId}`);
   };
 
-  function OverviewTab() {
-    return (
-      <div className="space-y-6">
-        <ContentSection title="Client Overview" icon={FileText}>
+  return (
+    <ClientLayout>
+      <div className="p-4 lg:p-8">
+        {/* Page Header */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-lime-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-xl lg:text-2xl font-bold text-lime-700">MF</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 lg:gap-3 flex-wrap">
+                <h1 className="text-xl lg:text-2xl font-bold text-gray-900">MoreFromFood</h1>
+                <StatusBadge clientId="morefromfood" status={status} onStatusChange={handleStatusChange} />
+              </div>
+              <p className="text-xs lg:text-sm text-gray-600 mt-1">
+                HACCP & Quality Control Software (Croatia/Serbia)
+              </p>
+            </div>
+          </div>
+          <a
+            href="https://morefromfood.com/sl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-lime-700 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
+        </div>
+
+        {/* Tabs Navigation */}
+        <div className="border-b border-gray-200 mb-6 overflow-x-auto">
+          <nav className="-mb-px flex space-x-4 lg:space-x-8 min-w-max">
+            {visibleTabs.map((tab) => {
+              const Icon = tab.icon;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => handleTabChange(tab.id)}
+                  className={`
+                    whitespace-nowrap py-3 lg:py-4 px-1 border-b-2 font-medium text-xs lg:text-sm flex items-center space-x-2
+                    ${
+                      activeTab === tab.id
+                        ? 'border-lime-700 text-lime-700'
+                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    }
+                  `}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </nav>
+        </div>
+
+        {/* Tab Content */}
+        <div className="max-w-5xl">
+          {activeTab === 'overview' && <OverviewTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
+          {activeTab === 'filters' && <FiltersTab />}
+          {activeTab === 'prompts' && <PromptsTab />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="morefromfood" />
+              <CampaignsTabDynamic clientId="morefromfood" />
+            </>
+          )}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="morefromfood" />}
+          {activeTab === 'tasks' && <TasksTab clientId="morefromfood" />}
+        </div>
+      </div>
+    </ClientLayout>
+  );
+}
+
+function OverviewTab() {
+  return (
+    <div className="space-y-6">
+      <ContentSection title="Client Overview" icon={FileText}>
           <InfoCard title="Service" icon={Target}>
             MoreFromFood (Dotcom d.o.o.) provides digital HACCP records, checklists, temperature monitoring, corrective actions and audit documentation for food manufacturers. The platform supports multi-site oversight, traceability, technical specifications and ERP/IoT integration options.
           </InfoCard>
@@ -644,79 +720,3 @@ Output:
       </>
     );
   }
-
-  return (
-    <ClientLayout>
-      <div className="p-4 lg:p-8">
-        {/* Page Header */}
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-lime-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-xl lg:text-2xl font-bold text-lime-700">MF</span>
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 lg:gap-3 flex-wrap">
-                <h1 className="text-xl lg:text-2xl font-bold text-gray-900">MoreFromFood</h1>
-                <StatusBadge clientId="morefromfood" status={status} onStatusChange={handleStatusChange} />
-              </div>
-              <p className="text-xs lg:text-sm text-gray-600 mt-1">
-                HACCP & Quality Control Software (Croatia/Serbia)
-              </p>
-            </div>
-          </div>
-          <a
-            href="https://morefromfood.com/sl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-lime-700 hover:underline inline-block"
-          >
-            Visit Website →
-          </a>
-        </div>
-
-        {/* Tabs Navigation */}
-        <div className="border-b border-gray-200 mb-6 overflow-x-auto">
-          <nav className="-mb-px flex space-x-4 lg:space-x-8 min-w-max">
-            {visibleTabs.map((tab) => {
-              const Icon = tab.icon;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => handleTabChange(tab.id)}
-                  className={`
-                    whitespace-nowrap py-3 lg:py-4 px-1 border-b-2 font-medium text-xs lg:text-sm flex items-center space-x-2
-                    ${
-                      activeTab === tab.id
-                        ? 'border-lime-700 text-lime-700'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }
-                  `}
-                >
-                  <Icon className="w-4 h-4" />
-                  <span>{tab.label}</span>
-                </button>
-              );
-            })}
-          </nav>
-        </div>
-
-        {/* Tab Content */}
-        <div className="max-w-5xl">
-          {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPAndPersonasTab />}
-          {activeTab === 'filters' && <FiltersTab />}
-          {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
-          {activeTab === 'performance' && (
-            <>
-              <PerformanceTabDynamic clientId="morefromfood" />
-              <CampaignsTabDynamic clientId="morefromfood" />
-            </>
-          )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="morefromfood" />}
-          {activeTab === 'tasks' && <TasksTab clientId="morefromfood" />}
-        </div>
-      </div>
-    </ClientLayout>
-  );
-}

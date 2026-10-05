@@ -67,10 +67,81 @@ export default function DHMPage() {
     ? tabs
     : tabs.filter(tab => !internalTabs.includes(tab.id));
 
-  function OverviewTab() {
-    return (
-      <div className="space-y-6">
-        <ContentSection title="Client Overview" icon={FileText}>
+  return (
+    <ClientLayout>
+      <div className="p-4 lg:p-8">
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-stone-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-xl lg:text-2xl font-bold text-stone-600">DH</span>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 min-w-0 flex-1">
+              <h1 className="text-xl lg:text-2xl font-bold text-gray-900 truncate">DHM</h1>
+              <StatusBadge
+                status={status}
+                onStatusChange={handleStatusChange}
+                size="sm"
+              />
+            </div>
+          </div>
+          <p className="text-sm lg:text-base text-gray-600 mb-2">Digital HACCP & Food Safety Software (Slovenia/Croatia)</p>
+          <a
+            href="https://dhm.hr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-stone-600 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
+        </div>
+
+        <div className="border-b border-gray-200 mb-6 overflow-x-auto">
+          <nav className="-mb-px flex space-x-4 lg:space-x-8 min-w-max">
+            {visibleTabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleTabChange(tab.id)}
+                className={`
+                  flex items-center space-x-2 py-2 lg:py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors
+                  ${
+                    activeTab === tab.id
+                      ? 'border-stone-500 text-stone-600'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }
+                `}
+              >
+                <tab.icon className="w-4 h-4 lg:w-5 lg:h-5" />
+                <span>{tab.label}</span>
+              </button>
+            ))}
+          </nav>
+        </div>
+
+        <div className="mt-6">
+          {activeTab === 'overview' && <OverviewTab />}
+          {activeTab === 'icp' && <ICPAndPersonasTab />}
+          {activeTab === 'filters' && <FiltersTab />}
+          {activeTab === 'prompts' && <PromptsTab />}
+          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
+          {activeTab === 'performance' && (
+            <>
+              <PerformanceTabDynamic clientId="dhm" />
+              <CampaignsTabDynamic clientId="dhm" />
+            </>
+          )}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="dhm" />}
+          {activeTab === 'tasks' && <TasksTab clientId="dhm" />}
+        </div>
+      </div>
+    </ClientLayout>
+  );
+}
+
+function OverviewTab() {
+  return (
+    <div className="space-y-6">
+      <ContentSection title="Client Overview" icon={FileText}>
           <InfoCard title="Service" icon={Target}>
             DHM (Digital HACCP Manager) provides mobile, tablet and computer access to HACCP records, helping smaller food-handling businesses organize everyday food-safety records and responsibilities digitally across Slovenia and Croatia.
           </InfoCard>
@@ -651,74 +722,3 @@ Example output: "I noticed your [property/properties] hotel with in-house kitche
       </>
     );
   }
-
-  return (
-    <ClientLayout>
-      <div className="p-4 lg:p-8">
-        <div className="mb-6">
-          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-stone-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <span className="text-xl lg:text-2xl font-bold text-stone-600">DH</span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 min-w-0 flex-1">
-              <h1 className="text-xl lg:text-2xl font-bold text-gray-900 truncate">DHM</h1>
-              <StatusBadge
-                status={status}
-                onStatusChange={handleStatusChange}
-                size="sm"
-              />
-            </div>
-          </div>
-          <p className="text-sm lg:text-base text-gray-600 mb-2">Digital HACCP & Food Safety Software (Slovenia/Croatia)</p>
-          <a
-            href="https://dhm.hr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-stone-600 hover:underline inline-block"
-          >
-            Visit Website →
-          </a>
-        </div>
-
-        <div className="border-b border-gray-200 mb-6 overflow-x-auto">
-          <nav className="-mb-px flex space-x-4 lg:space-x-8 min-w-max">
-            {visibleTabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => handleTabChange(tab.id)}
-                className={`
-                  flex items-center space-x-2 py-2 lg:py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap transition-colors
-                  ${
-                    activeTab === tab.id
-                      ? 'border-stone-500 text-stone-600'
-                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                  }
-                `}
-              >
-                <tab.icon className="w-4 h-4 lg:w-5 lg:h-5" />
-                <span>{tab.label}</span>
-              </button>
-            ))}
-          </nav>
-        </div>
-
-        <div className="mt-6">
-          {activeTab === 'overview' && <OverviewTab />}
-          {activeTab === 'icp' && <ICPAndPersonasTab />}
-          {activeTab === 'filters' && <FiltersTab />}
-          {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
-          {activeTab === 'performance' && (
-            <>
-              <PerformanceTabDynamic clientId="dhm" />
-              <CampaignsTabDynamic clientId="dhm" />
-            </>
-          )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="dhm" />}
-          {activeTab === 'tasks' && <TasksTab clientId="dhm" />}
-        </div>
-      </div>
-    </ClientLayout>
-  );
-}
