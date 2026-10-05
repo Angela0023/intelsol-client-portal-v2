@@ -1,0 +1,137 @@
+[
+  {
+    "id": "tier-1-quality-food-safety",
+    "tierName": "PRIMARY: Quality / Food Safety",
+    "tierColor": "blue",
+    "targetPersonas": "Head of Quality, Quality Manager, Food Safety Manager",
+    "messagingAngle": "Process champion - validates records, controls and evidence needs",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital quality records for [company]",
+        "body": "Hi [First Name],\n\nI work with MoreFromFood - we help food manufacturers in Croatia and Serbia organize daily quality and food-safety records digitally.\n\nI noticed [specific production activity/product line] and wanted to check: how are you currently managing your HACCP records, corrective actions and quality checks - paper forms, spreadsheets, or another system?\n\nOur focus is providing quality teams with easier access to records and visibility of corrective action follow-up, so evidence preparation and compliance verification take less time.\n\nWe've supported food manufacturers across meat processing, dairy, bakery and prepared-food production with organizing safety controls and making records easier to retrieve.\n\nWould a short walkthrough of how you manage production checks and corrective actions be useful?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital quality records for [company]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital quality recordkeeping for [company].\n\nMany quality managers and food-safety leads use us when they need to:\n- Access HACCP records and corrective actions from a central system\n- Track follow-up on deviations across shifts and production lines\n- Prepare evidence for audits without searching through folders\n- Give production teams a clear view of completed vs. outstanding checks\n- Maintain consistent documentation standards across multiple sites\n\nThe value for your operation: easier evidence retrieval during assessments, clearer visibility of corrective action status, and a complete digital record organized by date, check type and responsible person.\n\nWould it make sense to discuss your current quality recordkeeping workflow - number of production lines, shift structure, certification requirements - and see if a digital system would help?\n\nHappy to show you the platform using your actual quality processes.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital quality records for [company]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize quality system changes depend on operational priorities, certification timelines and whether the current recordkeeping method is actually limiting efficiency or compliance visibility.\n\nFor context: we provide digital HACCP and quality records for food manufacturers in Croatia and Serbia - when quality teams need better organization of daily checks, corrective actions and audit evidence.\n\nOur approach: understand your quality recordkeeping routine (monitoring, verification, corrective actions, documentation requirements), show you the digital workflow, and discuss whether improved accessibility and evidence preparation justify the change.\n\nWe've supported meat processors, dairy manufacturers, bakeries and prepared-food producers with organizing safety checks, tracking corrective actions and making compliance documentation more accessible.\n\nIf you're ever reviewing your quality recordkeeping workflow - or if evidence preparation and corrective action tracking are taking too much time - happy to show you how a digital system could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-qa-qc",
+    "tierName": "PRIMARY: QA / QC",
+    "tierColor": "blue",
+    "targetPersonas": "QA Manager, Quality Control Manager",
+    "messagingAngle": "Daily workflow owner - confirms practical gaps and user requirements",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital QA records for [production site]",
+        "body": "Hi [First Name],\n\nI work with MoreFromFood - we help food production sites in Croatia and Serbia organize daily QA and QC records digitally.\n\nI noticed [specific production operation] and wanted to check: how are you currently managing your quality control checks - temperature monitoring, product testing records, line inspections and deviation tracking?\n\nOur focus is providing QA teams with a digital workspace where production staff can record checks from any device, deviations are flagged immediately, and all records are easy to access when needed.\n\nWe've supported food manufacturers with organizing repeated QC checks and making deviation tracking clearer across shifts.\n\nWould it be useful to discuss how you currently manage daily QA recordkeeping and whether a digital system would help your team?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital QA records for [production site]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital QA recordkeeping for [production site].\n\nMany QA and QC managers use us when they need to:\n- Organize repeated quality checks and product testing records digitally\n- Track deviations and corrective actions in real-time\n- Stop searching for specific records when preparing for review\n- Give production teams a simple mobile/tablet interface for recording checks\n- See what's been completed and what requires follow-up without collecting forms\n\nThe value for your operation: production teams get a practical workflow they'll actually use, shift handovers become clearer, and you have digital records organized by date, check type and production line.\n\nWould it make sense to discuss your current QA workflow - number of daily checks, shift structure, production line access - and see if a digital workspace would help?\n\nHappy to show you the system using your actual QA processes.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital QA records for [production site]",
+        "body": "Hi [First Name],\n\nLast note on this - I know QA workflow changes depend on operational priorities, production team adoption and whether the current recordkeeping method is causing real problems.\n\nFor context: we provide digital QA and QC records for food production sites in Croatia and Serbia - when quality teams need to move from paper forms or disconnected spreadsheets to a shared digital workspace.\n\nOur approach: understand your recurring QC checks (temperature, testing, inspections, deviation tracking), show you the digital workflow for your production team, and discuss whether clearer deviation visibility and easier record retrieval justify the change.\n\nWe've supported meat processors, dairy plants, bakeries and prepared-food manufacturers with organizing daily quality checks and deviation tracking across shifts.\n\nIf you're ever reviewing your QA recordkeeping workflow - or if form collection and deviation tracking are taking too much time - happy to show you how a digital system could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-production-plant",
+    "tierName": "PRIMARY: Production / Plant",
+    "tierColor": "blue",
+    "targetPersonas": "Production Manager, Plant Manager",
+    "messagingAngle": "Operational sponsor - plant rollout and staff adoption",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital production records for [plant/facility]",
+        "body": "Hi [First Name],\n\nI work with MoreFromFood - we help food production plants in Croatia and Serbia organize daily safety checks and production records digitally.\n\nI noticed [specific production operation/facility] and wanted to check: how are you currently managing production recordkeeping across shifts - safety checks, line inspections, handover documentation and quality control?\n\nOur focus is providing production teams with visibility of completed and outstanding checks across shifts, so managers can see progress without collecting separate forms from each line.\n\nWe've supported food manufacturers with organizing repeated production checks and making shift handovers clearer.\n\nWould it be useful to discuss how you currently manage production recordkeeping and whether a digital system would help your team?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital production records for [plant/facility]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital production recordkeeping for [plant].\n\nMany production managers and plant leads use us when they need to:\n- See completed vs. outstanding checks across all production lines\n- Make shift handovers clearer with digital task assignments\n- Stop collecting paper forms to understand production status\n- Give line teams a simple mobile/tablet interface for recording checks\n- Access production records for specific dates or lines without searching folders\n\nThe value for your plant: production teams get a practical workflow integrated into daily routines, shift communication improves, and you can see real-time progress without administrative overhead.\n\nWould it make sense to discuss your current production recordkeeping - shift structure, number of lines, team device access - and see if a digital workspace would help?\n\nHappy to show you the system using your actual production workflow.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital production records for [plant/facility]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize production workflow changes depend on operational priorities, team adoption concerns and whether the current recordkeeping method is actually limiting visibility or efficiency.\n\nFor context: we provide digital production and safety records for food manufacturing plants in Croatia and Serbia - when production teams need better visibility across shifts and clearer handover documentation.\n\nOur approach: understand your production checks (safety, quality, line inspections, handover tasks), show you the digital workflow for your team, and discuss whether improved shift visibility and easier record access justify the change.\n\nWe've supported meat processing plants, dairy facilities, bakeries and prepared-food manufacturers with organizing daily production checks and shift handover clarity.\n\nIf you're ever reviewing your production recordkeeping workflow - or if shift handovers and status visibility are taking too much time - happy to show you how a digital system could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-4-operations-leadership",
+    "tierName": "SECONDARY: Operations / Leadership",
+    "tierColor": "green",
+    "targetPersonas": "Operations Director, Managing Director, Owner",
+    "messagingAngle": "Budget and priorities - ownership varies by company size",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital oversight for [company] production",
+        "body": "Hi [First Name],\n\nI work with MoreFromFood - we help food manufacturers in Croatia and Serbia organize quality and safety records with consistent oversight across production operations.\n\nI noticed [specific production activity/business] and wanted to check: how are you currently maintaining visibility of quality checks, corrective actions and compliance documentation across your production sites?\n\nOur focus is providing operations leaders with consistent oversight across plants, so you can see completed checks, outstanding actions and compliance status without depending on manual reporting.\n\nWe've supported food manufacturers with organizing daily controls and making multi-site oversight more efficient.\n\nWould a short walkthrough of how you manage production oversight and compliance visibility be useful?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital oversight for [company] production",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital production oversight for [company].\n\nMany operations directors and managing directors use us when they need to:\n- Maintain consistent quality and safety standards across multiple sites\n- See real-time compliance status without waiting for manual reports\n- Track corrective actions and ensure timely follow-up\n- Give production and quality teams aligned workflows and documentation\n- Prepare for audits and assessments with accessible digital evidence\n\nThe value for your business: operational visibility improves, compliance documentation is organized and accessible, and you reduce the administrative workload of manual reporting and evidence compilation.\n\nWould it make sense to discuss your current oversight workflow - number of sites, reporting frequency, compliance requirements - and see if a digital system would help?\n\nHappy to show you how the platform supports multi-site operations.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital oversight for [company] production",
+        "body": "Hi [First Name],\n\nLast note on this - I know operational system changes depend on strategic priorities, investment timing and whether the current oversight method is actually limiting visibility or compliance readiness.\n\nFor context: we provide digital quality and safety records for food manufacturers in Croatia and Serbia - when operations leaders need consistent oversight across sites and better organization of compliance documentation.\n\nOur approach: understand your oversight requirements (sites, compliance standards, reporting needs, assessment preparation), show you the digital platform, and discuss whether improved visibility and reduced administrative workload justify the investment.\n\nWe've supported food manufacturers with multiple production sites, certification requirements and retail/export customers, organizing daily controls and making compliance evidence more accessible.\n\nIf you're ever reviewing your operational oversight and compliance documentation workflow - happy to show you how a digital system could help.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-5-it-procurement",
+    "tierName": "SUPPORTING: IT / Procurement",
+    "tierColor": "amber",
+    "targetPersonas": "IT Manager, Procurement Manager, Group Quality",
+    "messagingAngle": "Technical and commercial review - larger organizations",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital quality platform for [company]",
+        "body": "Hi [First Name],\n\nI work with MoreFromFood - we provide digital HACCP and quality recordkeeping for food manufacturers in Croatia and Serbia.\n\nI noticed [company/group] and wanted to check: who currently evaluates quality and production recordkeeping systems at your organization - integration requirements, technical specifications, commercial terms?\n\nOur platform supports multi-site deployments with mobile access, configurable workflows and integration options for existing systems.\n\nWe've worked with food manufacturers requiring group-level oversight, technical integration and centralized procurement.\n\nWould it be useful to discuss technical requirements and connect with the relevant quality or operations stakeholders at [company]?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Digital quality platform for [company]",
+        "body": "Hi [First Name],\n\nFollowing up on my note about digital quality recordkeeping for [company].\n\nMany IT and procurement teams help validate technical fit and commercial terms when quality or operations stakeholders identify a need for digital recordkeeping.\n\nWhat we typically provide for technical review:\n- Multi-site deployment with mobile, tablet and desktop access\n- Configurable workflows matching existing HACCP and quality processes\n- Integration options for ERP, MES or existing quality systems\n- Data security, hosting and compliance documentation\n- Commercial terms for group-level or multi-site deployments\n\nThe value: aligned technical implementation, clear commercial terms, and a platform that fits into your existing infrastructure and procurement standards.\n\nWould it make sense to discuss technical requirements and connect with the quality or operations leads driving this evaluation?\n\nHappy to provide technical documentation and commercial details for review.\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Digital quality platform for [company]",
+        "body": "Hi [First Name],\n\nLast note on this - I recognize technology evaluations depend on operational priorities, stakeholder requirements and budget approval from the relevant decision makers.\n\nFor context: we provide digital HACCP and quality records for food manufacturers in Croatia and Serbia - when IT and procurement teams support quality or operations stakeholders in selecting and implementing recordkeeping systems.\n\nOur approach: understand technical requirements (integration, security, multi-site support), provide documentation for review, and connect with the operational stakeholders who validate workflow fit and business value.\n\nWe've supported group deployments, multi-site rollouts and integrations with existing production systems for food manufacturers with technical evaluation and procurement standards.\n\nIf you're involved in evaluating quality recordkeeping systems - or if you can connect me with the quality or operations leads driving this project - happy to provide technical and commercial documentation.\n\nNo pressure - just wanted to leave the door open.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

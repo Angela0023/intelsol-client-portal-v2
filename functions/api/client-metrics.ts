@@ -71,6 +71,7 @@ const CLIENT_NAMES: Record<string, string> = {
   'bmevents': 'BM Events',
   'prtronic': 'PRTronic',
   'dhm': 'DHM',
+  'morefromfood': 'MoreFromFood',
 };
 
 const SMARTLEAD_BASE_URL = 'https://server.smartlead.ai/api/v1';

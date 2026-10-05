@@ -27,7 +27,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -48,7 +48,8 @@ export default function AdminPage() {
         birografika: 'Birografika MB',
         bmevents: 'BM Events',
         prtronic: 'PRTronic',
-        dhm: 'DHM'
+        dhm: 'DHM',
+        morefromfood: 'MoreFromFood'
       };
 
       const allTasks: any[] = [];
@@ -241,6 +242,14 @@ export default function AdminPage() {
       color: 'bg-stone-100 text-stone-600',
       borderColor: 'border-stone-200',
       bgColor: 'bg-stone-50',
+    },
+    {
+      id: 'morefromfood',
+      name: 'MoreFromFood',
+      industry: 'HACCP & Quality Control Software (Croatia/Serbia)',
+      color: 'bg-lime-100 text-lime-700',
+      borderColor: 'border-lime-200',
+      bgColor: 'bg-lime-50',
     },
   ];
 
