@@ -152,8 +152,8 @@ export default function PRTronicPage() {
 function OverviewTab() {
   return (
     <div className="space-y-6">
-      <ContentSection title="Client Overview" icon={FileText}>
-          <InfoCard title="Service" icon={Target}>
+      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
+          <InfoCard title="Service" icon={<Target className="w-5 h-5" />}>
             PRTronic provides display hardware and integration solutions for equipment manufacturers, system integrators, and professional display projects across Slovenia, Austria, Germany, and Switzerland (DACH region).
           </InfoCard>
 

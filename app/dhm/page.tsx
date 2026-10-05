@@ -141,8 +141,8 @@ export default function DHMPage() {
 function OverviewTab() {
   return (
     <div className="space-y-6">
-      <ContentSection title="Client Overview" icon={FileText}>
-          <InfoCard title="Service" icon={Target}>
+      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
+          <InfoCard title="Service" icon={<Target className="w-5 h-5" />}>
             DHM (Digital HACCP Manager) provides mobile, tablet and computer access to HACCP records, helping smaller food-handling businesses organize everyday food-safety records and responsibilities digitally across Slovenia and Croatia.
           </InfoCard>
 

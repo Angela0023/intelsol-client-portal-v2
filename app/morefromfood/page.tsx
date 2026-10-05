@@ -148,12 +148,12 @@ export default function MoreFromFoodPage() {
 function OverviewTab() {
   return (
     <div className="space-y-6">
-      <ContentSection title="Client Overview" icon={FileText}>
-          <InfoCard title="Service" icon={Target}>
+      <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
+          <InfoCard title="Service" icon={<Target className="w-5 h-5" />}>
             MoreFromFood (Dotcom d.o.o.) provides digital HACCP records, checklists, temperature monitoring, corrective actions and audit documentation for food manufacturers. The platform supports multi-site oversight, traceability, technical specifications and ERP/IoT integration options.
           </InfoCard>
 
-          <InfoCard title="Markets" icon={Target}>
+          <InfoCard title="Markets" icon={<Target className="w-5 h-5" />}>
             <div>
               <strong>Primary markets:</strong>
               <ul className="mt-2 space-y-1 text-sm text-gray-600">
@@ -166,7 +166,7 @@ function OverviewTab() {
             </div>
           </InfoCard>
 
-          <InfoCard title="Value Proposition" icon={TrendingUp}>
+          <InfoCard title="Value Proposition" icon={<TrendingUp className="w-5 h-5" />}>
             Help food manufacturers organize daily food-safety controls, records and corrective actions in one workflow, so quality and production teams can follow progress and retrieve evidence more easily.
             <ul className="mt-3 space-y-2 text-sm text-gray-600">
               <ListItem><strong>Quality angle:</strong> Easier access to records and follow-up on corrective actions</ListItem>
@@ -175,14 +175,14 @@ function OverviewTab() {
             </ul>
           </InfoCard>
 
-          <InfoCard title="Primary CTA" icon={Mail}>
+          <InfoCard title="Primary CTA" icon={<Mail className="w-5 h-5" />}>
             "Would a short walkthrough of how you manage production checks and corrective actions be useful?"
             <p className="mt-2 text-sm text-gray-600">
               Alternative routing CTA: "Who is responsible for digitalizing quality and food-safety records at your plant?"
             </p>
           </InfoCard>
 
-          <InfoCard title="Exclusions" icon={Target}>
+          <InfoCard title="Exclusions" icon={<Target className="w-5 h-5" />}>
             <ul className="space-y-2 text-sm text-gray-600">
               <ListItem>❌ Brokers, importers and wholesalers without manufacturing</ListItem>
               <ListItem>❌ Restaurants and hotels without food production</ListItem>
@@ -202,8 +202,8 @@ function OverviewTab() {
   function ICPAndPersonasTab() {
     return (
       <div className="space-y-6">
-        <ContentSection title="ICP Criteria" icon={Target}>
-          <InfoCard title="Company Size" icon={Users}>
+        <ContentSection title="ICP Criteria" icon={<Target className="w-5 h-5" />}>
+          <InfoCard title="Company Size" icon={<Users className="w-5 h-5" />}>
             <div>
               <strong className="text-green-600">Primary range:</strong> 50-500 employees
               <ul className="mt-2 space-y-1 text-sm text-gray-600">
@@ -228,7 +228,7 @@ function OverviewTab() {
             </div>
           </InfoCard>
 
-          <InfoCard title="Geography" icon={Target}>
+          <InfoCard title="Geography" icon={<Target className="w-5 h-5" />}>
             <strong>Initial markets:</strong> Croatia and Serbia
             <ul className="mt-2 space-y-1 text-sm text-gray-600">
               <ListItem>🇭🇷 Create separate Croatian segment (language: Croatian)</ListItem>
@@ -238,7 +238,7 @@ function OverviewTab() {
             </ul>
           </InfoCard>
 
-          <InfoCard title="Primary Manufacturing Segments" icon={Target}>
+          <InfoCard title="Primary Manufacturing Segments" icon={<Target className="w-5 h-5" />}>
             <div>
               <ul className="space-y-2 text-sm text-gray-600">
                 <ListItem><strong>Meat processing</strong> - meat plants, meat processors</ListItem>
@@ -254,7 +254,7 @@ function OverviewTab() {
             </div>
           </InfoCard>
 
-          <InfoCard title="Business Model Fit" icon={Target}>
+          <InfoCard title="Business Model Fit" icon={<Target className="w-5 h-5" />}>
             <ul className="space-y-2 text-sm text-gray-600">
               <ListItem>✅ Own-brand manufacturers with production operations and recurring quality controls</ListItem>
               <ListItem>✅ Private-label producers with their own facilities</ListItem>
@@ -265,7 +265,7 @@ function OverviewTab() {
             </ul>
           </InfoCard>
 
-          <InfoCard title="Search Terms (Local)" icon={Code}>
+          <InfoCard title="Search Terms (Local)" icon={<Code className="w-5 h-5" />}>
             <div>
               <strong>Croatian/Serbian terms:</strong>
               <CodeBlock language="text">
@@ -278,8 +278,8 @@ proizvodnja hrane, prehrambena industrija, prerada mesa, mljekara / mlekara, pek
           </InfoCard>
         </ContentSection>
 
-        <ContentSection title="Buyer Personas" icon={Users}>
-          <InfoCard title="PRIMARY: Quality / Food Safety" icon={Target}>
+        <ContentSection title="Buyer Personas" icon={<Users className="w-5 h-5" />}>
+          <InfoCard title="PRIMARY: Quality / Food Safety" icon={<Target className="w-5 h-5" />}>
             <div className="bg-blue-50 p-4 rounded-lg space-y-2">
               <div>
                 <strong className="text-blue-900">Typical titles:</strong>
@@ -302,7 +302,7 @@ voditelj kvalitete, rukovodilac kvaliteta, menadžer kvaliteta, odgovorna osoba 
             </div>
           </InfoCard>
 
-          <InfoCard title="PRIMARY: QA / QC" icon={Target}>
+          <InfoCard title="PRIMARY: QA / QC" icon={<Target className="w-5 h-5" />}>
             <div className="bg-blue-50 p-4 rounded-lg space-y-2">
               <div>
                 <strong className="text-blue-900">Typical titles:</strong>
@@ -319,7 +319,7 @@ voditelj kvalitete, rukovodilac kvaliteta, menadžer kvaliteta, odgovorna osoba 
             </div>
           </InfoCard>
 
-          <InfoCard title="PRIMARY: Production / Plant" icon={Target}>
+          <InfoCard title="PRIMARY: Production / Plant" icon={<Target className="w-5 h-5" />}>
             <div className="bg-blue-50 p-4 rounded-lg space-y-2">
               <div>
                 <strong className="text-blue-900">Typical titles:</strong>
@@ -342,7 +342,7 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
             </div>
           </InfoCard>
 
-          <InfoCard title="SECONDARY: Operations / Leadership" icon={Target}>
+          <InfoCard title="SECONDARY: Operations / Leadership" icon={<Target className="w-5 h-5" />}>
             <div className="bg-green-50 p-4 rounded-lg space-y-2">
               <div>
                 <strong className="text-green-900">Typical titles:</strong>
@@ -359,7 +359,7 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
             </div>
           </InfoCard>
 
-          <InfoCard title="SUPPORTING: IT / Procurement" icon={Target}>
+          <InfoCard title="SUPPORTING: IT / Procurement" icon={<Target className="w-5 h-5" />}>
             <div className="bg-amber-50 p-4 rounded-lg space-y-2">
               <div>
                 <strong className="text-amber-900">Typical titles:</strong>
@@ -376,7 +376,7 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
             </div>
           </InfoCard>
 
-          <InfoCard title="Decision-Maker Strategy" icon={Users}>
+          <InfoCard title="Decision-Maker Strategy" icon={<Users className="w-5 h-5" />}>
             <ul className="space-y-2 text-sm text-gray-600">
               <ListItem><strong>Lead with Quality / Food Safety</strong> - likely process champion</ListItem>
               <ListItem><strong>Involve Production / Plant / Operations</strong> - for implementation</ListItem>
@@ -387,8 +387,8 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
           </InfoCard>
         </ContentSection>
 
-        <ContentSection title="Buying Signals" icon={TrendingUp}>
-          <InfoCard title="Tier 1: Strongest Signals" icon={Target}>
+        <ContentSection title="Buying Signals" icon={<TrendingUp className="w-5 h-5" />}>
+          <InfoCard title="Tier 1: Strongest Signals" icon={<Target className="w-5 h-5" />}>
             <div className="bg-green-50 p-4 rounded-lg space-y-3">
               <div>
                 <strong className="text-green-900">Active project</strong>
@@ -401,7 +401,7 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
             </div>
           </InfoCard>
 
-          <InfoCard title="Tier 2: Moderate Signals" icon={Target}>
+          <InfoCard title="Tier 2: Moderate Signals" icon={<Target className="w-5 h-5" />}>
             <div className="bg-blue-50 p-4 rounded-lg space-y-3">
               <div>
                 <strong className="text-blue-900">Growth and quality change</strong>
@@ -414,7 +414,7 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
             </div>
           </InfoCard>
 
-          <InfoCard title="Tier 3: Structural Fit" icon={Target}>
+          <InfoCard title="Tier 3: Structural Fit" icon={<Target className="w-5 h-5" />}>
             <div className="bg-gray-50 p-4 rounded-lg space-y-3">
               <div>
                 <strong className="text-gray-900">Structural fit</strong>
@@ -433,8 +433,8 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
   function FiltersTab() {
     return (
       <div className="space-y-6">
-        <ContentSection title="Clay Table Filters" icon={Filter}>
-          <InfoCard title="Geography Filter" icon={Target}>
+        <ContentSection title="Clay Table Filters" icon={<Filter className="w-5 h-5" />}>
+          <InfoCard title="Geography Filter" icon={<Target className="w-5 h-5" />}>
             <CodeBlock language="text">
 HQ Country contains any of: Croatia, Serbia
 
@@ -443,7 +443,7 @@ HQ Country contains any of: Croatia, Serbia
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Company Size Filter" icon={Users}>
+          <InfoCard title="Company Size Filter" icon={<Users className="w-5 h-5" />}>
             <CodeBlock language="text">
 # Primary range
 Employee Count is between 50 and 500
@@ -463,7 +463,7 @@ Employee Count greater than 500
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Industry Keywords" icon={Target}>
+          <InfoCard title="Industry Keywords" icon={<Target className="w-5 h-5" />}>
             <CodeBlock language="text">
 # Croatian/Serbian search terms
 Industry / Keywords contains any of:
@@ -489,7 +489,7 @@ Industry / Keywords contains any of:
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Segment-Specific Filters" icon={Target}>
+          <InfoCard title="Segment-Specific Filters" icon={<Target className="w-5 h-5" />}>
             <div>
               <strong className="block mb-2">Meat Processing:</strong>
               <CodeBlock language="text">
@@ -513,7 +513,7 @@ Keywords contains any of: "gotova jela", "prepared meals", "ready meals", "conve
             </div>
           </InfoCard>
 
-          <InfoCard title="Exclusions" icon={Filter}>
+          <InfoCard title="Exclusions" icon={<Filter className="w-5 h-5" />}>
             <CodeBlock language="text">
 Industry does NOT contain any of:
   "restaurant", "hotel", "catering" (unless manufacturing is confirmed),
@@ -523,7 +523,7 @@ Industry does NOT contain any of:
               </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Job Title Filters (for Contact Discovery)" icon={Users}>
+          <InfoCard title="Job Title Filters (for Contact Discovery)" icon={<Users className="w-5 h-5" />}>
             <CodeBlock language="text">
 # Primary contacts
 Job Title contains any of:
@@ -553,7 +553,7 @@ Job Title contains any of:
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Quality Signals" icon={TrendingUp}>
+          <InfoCard title="Quality Signals" icon={<TrendingUp className="w-5 h-5" />}>
             <CodeBlock language="text">
 # Certification indicators (structural fit)
 Certifications / Keywords contains any of:
@@ -575,8 +575,8 @@ Certifications / Keywords contains any of:
   function PromptsTab() {
     return (
       <div className="space-y-6">
-        <ContentSection title="AI Qualification Prompts" icon={Code}>
-          <InfoCard title="Qualification Prompt" icon={Target}>
+        <ContentSection title="AI Qualification Prompts" icon={<Code className="w-5 h-5" />}>
+          <InfoCard title="Qualification Prompt" icon={<Target className="w-5 h-5" />}>
             <CodeBlock language="text">
 Analyze this company and determine if they are a good fit for MoreFromFood:
 
@@ -607,7 +607,7 @@ Output:
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Persona Identification Prompt" icon={Users}>
+          <InfoCard title="Persona Identification Prompt" icon={<Users className="w-5 h-5" />}>
             <CodeBlock language="text">
 Based on this company profile, identify the best decision-maker persona to target:
 
@@ -643,7 +643,7 @@ Reasoning: [Why this persona is the best entry point]
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Signal Detection Prompt" icon={TrendingUp}>
+          <InfoCard title="Signal Detection Prompt" icon={<TrendingUp className="w-5 h-5" />}>
             <CodeBlock language="text">
 Analyze this company for buying signals related to digital quality/HACCP systems:
 
@@ -676,7 +676,7 @@ Output:
             </CodeBlock>
           </InfoCard>
 
-          <InfoCard title="Outreach Personalization Prompt" icon={Mail}>
+          <InfoCard title="Outreach Personalization Prompt" icon={<Mail className="w-5 h-5" />}>
             <CodeBlock language="text">
 Create personalized outreach for this contact:
 
