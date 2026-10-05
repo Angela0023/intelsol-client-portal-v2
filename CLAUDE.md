@@ -469,6 +469,79 @@ async function fetchAllSmartlead(endpoint: string, apiKey: string): Promise<any[
 
 ---
 
+### 7. NEVER Commit Personal Data to Public Repositories (GDPR/GitHub Policy)
+
+**HARD RULE:** NEVER commit files containing personal contact information to any GitHub repository. This violates GitHub's Acceptable Use Policy, GDPR, and will cause repository disablement.
+
+**Files That MUST NEVER Be Committed:**
+
+❌ **NEVER commit:**
+- CSV files with personal contact data (names, emails, phone numbers, LinkedIn URLs)
+- Lead databases or CRM exports
+- Client lists with contact information
+- Any file containing personal identifiable information (PII)
+- Marketing campaign databases with prospect data
+
+✅ **ALWAYS keep these files:**
+- In `/public/data/` directory (already in .gitignore)
+- Stored locally only on your machine
+- Backed up outside the repository
+- Never tracked by git
+
+**Why This Is Critical:**
+- GitHub disabled `intelsol-client-portal` repository for privacy violation
+- Received DMCA-style takedown notice for private information
+- Violates GDPR (EU privacy law)
+- Violates GitHub Acceptable Use Policy
+- Can result in permanent account suspension
+
+**What Happened (2026-10-05):**
+- Repository `Angela0023/intelsol-client-portal` disabled by GitHub Trust & Safety
+- Reason: CSV files with 52,000+ personal records (names, emails, LinkedIn URLs)
+- Specifically cited: `eblissai-database.csv` with private contact information
+- Had to create new repository `intelsol-client-portal-v2`
+- Used `git-filter-repo` to remove all personal data from entire git history
+
+**Protection Implemented:**
+- Added `/public/data/` to `.gitignore`
+- Removed all 12 database CSV files from git tracking
+- Removed all personal data from entire git history (467 commits cleaned)
+- Created backups outside repository: `BACKUP-CSV-FILES-20261005/`
+- Repository size reduced from bloated to 32.82 MiB
+
+**Download Functionality Still Works:**
+- Files exist locally in `/public/data/` directory
+- Static site serves them via `/data/[client]-database.csv` links
+- Files are NOT in git, but ARE in deployed site (copied during build)
+- Cloudflare Pages serves local files automatically
+
+**If You Accidentally Commit Personal Data:**
+1. STOP immediately - do NOT push to GitHub
+2. Remove files from git tracking: `git rm --cached public/data/*.csv`
+3. Add to .gitignore if not already there
+4. Commit the removal
+5. Use `git-filter-repo` to remove from history
+6. Force push to clean the repository
+
+**Correct Workflow:**
+1. Lead/contact data syncs to local `/public/data/` directory
+2. `.gitignore` prevents git from tracking these files
+3. Files remain local for download functionality
+4. Git commits/pushes contain NO personal data
+5. Repository stays compliant with GDPR and GitHub policies
+
+**VIOLATION CONSEQUENCES:**
+- Repository disabled by GitHub Trust & Safety
+- Cannot push or access repository
+- Must appeal for reinstatement (can take days/weeks)
+- Potential account suspension for repeat violations
+- Legal liability under GDPR
+- **This is a CRITICAL rule violation with severe external consequences**
+
+**Rule Established:** 2026-10-05
+
+---
+
 ## 📋 Deployment Checklist
 
 ### Before Pushing to GitHub
