@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "tier-1-qa-qc",
+    "tierName": "TIER 1: QA/QC Managers",
+    "tierColor": "blue",
+    "targetPersonas": "QA Manager, Quality Control Manager, Quality Assurance Lead",
+    "messagingAngle": "Digital workspace for QC checks, immediate deviation flagging, organized records by date/check type/production line",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "QC records across production lines",
+        "body": "Hi [First Name],\n\nI noticed [Company] manufactures [product type] across [location/multiple sites]. I'm curious - how are you currently organizing your QC checks and deviation records across production lines?\n\nMost food manufacturers I speak with in Croatia and Serbia are managing checks on paper or spreadsheets, which makes it harder to flag deviations immediately and retrieve records when needed.\n\nMoreFromFood provides a digital workspace where your QC team can:\n- Record checks by date, check type, and production line\n- Flag deviations immediately with corrective action tracking\n- Retrieve records quickly during audits or reviews\n\nWorth a brief conversation to see if this fits your current workflow?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: QC records across production lines",
+        "body": "Hi [First Name],\n\nFollowing up on my note about organizing QC checks digitally.\n\nI worked with a meat processor in Serbia who was spending 3-4 hours per week compiling QC records for their BRC audit. After moving to MoreFromFood, their QC manager can now pull any record in under 2 minutes.\n\nThe difference: digital checks organized by line, date, and check type - with automatic deviation flagging.\n\nIf you're preparing for an audit or just want clearer visibility of QC status across shifts, we should talk.\n\nWhen works for a 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: QC records across production lines",
+        "body": "Hi [First Name],\n\nLast note on this - I realize QC recordkeeping might not be top priority right now.\n\nBut if you're ever:\n- Preparing for an audit and need records organized faster\n- Adding a production line or shift\n- Finding it harder to track outstanding checks across your team\n\n...I'd be happy to show you how MoreFromFood helps QC managers organize checks and retrieve records more easily.\n\nNo pressure - just let me know if you'd like to see it in action.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-1-production",
+    "tierName": "TIER 1: Production/Plant Managers",
+    "tierColor": "blue",
+    "targetPersonas": "Production Manager, Plant Manager, Operations Manager",
+    "messagingAngle": "Visibility of completed vs. outstanding checks across shifts, clearer shift handovers, real-time production status",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Shift handovers and outstanding checks",
+        "body": "Hi [First Name],\n\nI noticed [Company] runs [production operation] - likely across multiple shifts.\n\nQuick question: how are you currently tracking which checks have been completed vs. which are still outstanding when shifts change over?\n\nMost production managers I work with in Croatia tell me they're either chasing paper forms or checking spreadsheets to see what's been done.\n\nMoreFromFood gives you real-time visibility:\n- See completed vs. outstanding checks across shifts\n- Clearer shift handovers (no more hunting for paperwork)\n- Production status visible to your whole team\n\nWould this be useful for your operation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Shift handovers and outstanding checks",
+        "body": "Hi [First Name],\n\nFollowing up on shift handover visibility.\n\nA dairy producer in Croatia told me their biggest frustration was not knowing what the previous shift had checked until they physically walked the floor and asked people.\n\nNow their production manager opens MoreFromFood and sees immediately:\n- What's been checked today\n- What's outstanding\n- Who's responsible for each task\n\nShift handovers take 5 minutes instead of 20.\n\nIf you're facing similar challenges with shift visibility, let's talk.\n\nWhen's good for a quick call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Shift handovers and outstanding checks",
+        "body": "Hi [First Name],\n\nLast check-in on shift visibility.\n\nIf you're ever expanding to a new shift, adding a production line, or just tired of chasing people to find out what's been checked - MoreFromFood can help.\n\nIt's designed for production managers who need to see check status across shifts without hunting for paperwork.\n\nHappy to show you how it works when the timing's right.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-operations",
+    "tierName": "TIER 2: Operations/Leadership",
+    "tierColor": "green",
+    "targetPersonas": "Operations Director, Managing Director, Owner",
+    "messagingAngle": "Consistent oversight across plants, real-time compliance status without manual reports, reduced administrative workload",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Compliance oversight across sites",
+        "body": "Hi [First Name],\n\nI noticed [Company] operates [multiple sites/plants]. I'm curious - how are you currently getting visibility of compliance status across your locations?\n\nMost operations directors I speak with are either:\n- Waiting for weekly/monthly reports compiled by plant managers\n- Or calling each site to check status before audits\n\nMoreFromFood gives you real-time oversight:\n- See compliance status across all plants in one view\n- No more waiting for managers to compile manual reports\n- Immediate visibility when checks are missed or corrective actions are outstanding\n\nWorth a brief conversation to see if this fits your operation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Compliance oversight across sites",
+        "body": "Hi [First Name],\n\nFollowing up on oversight across your sites.\n\nA food group in Serbia with 3 plants told me their biggest pain was waiting for each plant manager to send their weekly compliance report.\n\nNow their operations director opens MoreFromFood and sees:\n- Which plants have outstanding checks\n- Where corrective actions are overdue\n- Real-time status without asking anyone\n\nIt's eliminated 2-3 hours of report compilation per week across their team.\n\nIf you'd like similar visibility, let's talk.\n\nWhen works for a 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Compliance oversight across sites",
+        "body": "Hi [First Name],\n\nLast note on multi-site oversight.\n\nIf you're ever:\n- Adding a new plant or production site\n- Preparing for a group-level audit\n- Finding it harder to get consistent compliance reporting from your managers\n\n...MoreFromFood can help.\n\nIt's designed for operations leaders who need real-time visibility across sites without manual reporting.\n\nHappy to show you when the timing's right.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

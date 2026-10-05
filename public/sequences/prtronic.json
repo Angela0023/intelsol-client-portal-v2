@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "tier-1-engineering",
+    "tierName": "TIER 1: Engineering/Product",
+    "tierColor": "blue",
+    "targetPersonas": "Technical Director, Hardware Lead, Product Manager (Entwicklungsleiter, Vodja razvoja)",
+    "messagingAngle": "Assess the display configuration that matches your equipment specifications and integration requirements",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display integration for your equipment",
+        "body": "Hi [First Name],\n\nI noticed [Company] manufactures [equipment type] in [location]. Quick question - are you currently sourcing displays for integration into your equipment, or planning a redesign?\n\nMost OEM engineers I work with across DACH tell me they need display suppliers who can:\n- Match form factor and mounting requirements\n- Support touch/interface specifications\n- Handle custom mechanical integration\n\nPRTronic specializes in display solutions for equipment manufacturers:\n- Open-frame and closed-frame options with customization\n- Touch screens and display kits for equipment integration\n- Technical specification support for your requirements\n\nWorth a brief conversation to see if we can support your next design?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display integration for your equipment",
+        "body": "Hi [First Name],\n\nFollowing up on display integration support.\n\nA kiosk manufacturer in Austria told me their biggest challenge was finding a display supplier who understood mechanical integration requirements - not just screen specifications.\n\nPRTronic helped them:\n- Assess form factor options for their cabinet design\n- Configure touch interface and video inputs\n- Provide mounting and integration guidance\n\nThey've now standardized PRTronic displays across their product line.\n\nIf you're working on a new design or equipment redesign, let's talk.\n\nWhen works for a 15-minute technical discussion?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display integration for your equipment",
+        "body": "Hi [First Name],\n\nLast note on display integration support.\n\nIf you're ever:\n- Designing a new equipment model\n- Replacing an end-of-life display panel\n- Looking for a second-source supplier\n\n...PRTronic can help.\n\nWe specialize in display solutions for equipment manufacturers who need technical integration support, not just commodity screens.\n\nHappy to discuss your requirements when the timing's right.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-1-purchasing",
+    "tierName": "TIER 1: Purchasing/Procurement",
+    "tierColor": "blue",
+    "targetPersonas": "Purchasing Manager, Strategic Buyer (Einkaufsleiter, Vodja nabave)",
+    "messagingAngle": "Review display supply options for consistent availability, competitive pricing and technical support",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display supply options for your production",
+        "body": "Hi [First Name],\n\nI noticed [Company] manufactures [equipment type] in [location]. Quick question - are you currently reviewing your display supplier relationships or looking for a second source?\n\nMost procurement managers I work with in DACH tell me their key concerns are:\n- Panel end-of-life forcing urgent replacements\n- Lead time uncertainty affecting production planning\n- Limited technical support from commodity suppliers\n\nPRTronic offers:\n- Consistent display availability with proactive EOL notification\n- Competitive pricing with DACH-local support\n- Technical specification assistance for your engineering team\n\nWorth a brief conversation to discuss your supply requirements?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display supply options for your production",
+        "body": "Hi [First Name],\n\nFollowing up on display supply reliability.\n\nA terminal manufacturer in Germany told me they were caught off-guard when their display supplier discontinued a panel - forcing an urgent redesign with 6 weeks lead time pressure.\n\nAfter adding PRTronic as a supplier:\n- Proactive notification of any EOL or availability changes\n- Alternative display options pre-qualified\n- Local technical support in German for faster resolution\n\nThey now have supply certainty without the redesign panic.\n\nIf you'd like similar supply reliability, let's talk.\n\nWhen works for a 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display supply options for your production",
+        "body": "Hi [First Name],\n\nLast note on display supply options.\n\nIf you're ever:\n- Facing a panel EOL or availability issue\n- Looking to add a second-source supplier\n- Need faster technical support from your display supplier\n\n...PRTronic can help.\n\nWe're a DACH-local display supplier with engineering support, not just a commodity screen distributor.\n\nHappy to discuss your requirements when you're ready.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-1-integrator",
+    "tierName": "TIER 1: Integrator/Project Manager",
+    "tierColor": "blue",
+    "targetPersonas": "Technical Director, AV/Signage Project Manager (Projektleiter)",
+    "messagingAngle": "Source the right display configuration for your next client installation with technical specification support",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Display sourcing for your next project",
+        "body": "Hi [First Name],\n\nI noticed [Company] delivers [signage/AV integration] projects in [region]. Quick question - how are you currently sourcing displays for client installations?\n\nMost system integrators I work with in DACH tell me they need display suppliers who can:\n- Provide technical specification support upfront\n- Meet project deadlines reliably\n- Support non-standard configurations when clients need them\n\nPRTronic specializes in display solutions for integrators:\n- Digital signage range (indoor/outdoor, high-brightness)\n- Open-frame options for custom installations\n- Technical support for specification and project planning\n\nWorth a conversation for your next client project?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Display sourcing for your next project",
+        "body": "Hi [First Name],\n\nFollowing up on display sourcing for integrator projects.\n\nA digital signage integrator in Austria told me their biggest frustration was commodity suppliers who couldn't provide specification support early in the project cycle.\n\nPRTronic helped them:\n- Review display options during client proposal phase\n- Configure brightness and environmental requirements\n- Meet installation deadlines with reliable availability\n\nThey now specify PRTronic displays for most signage projects.\n\nIf you'd like similar support for your next installation, let's talk.\n\nWhen works for a 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Display sourcing for your next project",
+        "body": "Hi [First Name],\n\nLast note on display sourcing for integrators.\n\nIf you're ever:\n- Planning a signage or AV installation project\n- Need display specification support during proposal\n- Looking for a supplier who understands integrator timelines\n\n...PRTronic can help.\n\nWe work with system integrators who need technical partnership, not just commodity screens.\n\nHappy to discuss your next project when you're ready.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

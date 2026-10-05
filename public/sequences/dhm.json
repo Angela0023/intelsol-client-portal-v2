@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "id": "tier-1-owner",
+    "tierName": "TIER 1: Owner/Director",
+    "tierColor": "blue",
+    "targetPersonas": "Owner, Director, Managing Partner (Lastnik, Direktor, Vlasnik)",
+    "messagingAngle": "See outstanding work without collecting separate forms, organize daily checks digitally",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Outstanding checks across your team",
+        "body": "Hi [First Name],\n\nI noticed [Company] runs [food operation] in [location]. Quick question - how are you currently keeping track of which daily checks have been completed vs. which are still outstanding?\n\nMost small food business owners I work with in Slovenia and Croatia tell me they're either collecting paper forms at the end of the day or asking staff what's been done.\n\nDHM gives you immediate visibility:\n- See what's been checked and what's still outstanding\n- No more collecting separate forms from your team\n- Check status visible on mobile, tablet, or computer\n\nWould this be useful for your operation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Outstanding checks across your team",
+        "body": "Hi [First Name],\n\nFollowing up on daily check visibility.\n\nA small bakery owner in Slovenia told me he was spending 30 minutes each day collecting paper forms and checking what staff had completed.\n\nNow he opens DHM on his phone and sees immediately:\n- What's been checked today\n- What's still outstanding\n- Who's responsible for each task\n\nHe gets his 30 minutes back every day.\n\nIf you'd like similar visibility without the paperwork, let's talk.\n\nWhen works for a quick 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Outstanding checks across your team",
+        "body": "Hi [First Name],\n\nLast note on this - I realize daily check tracking might not be your biggest priority right now.\n\nBut if you're ever:\n- Opening a second location\n- Adding a shift or new staff member\n- Tired of chasing people to see what's been checked\n\n...DHM can help.\n\nIt's designed for small food business owners who need visibility without collecting paperwork.\n\nHappy to show you when the timing's right.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-1-production",
+    "tierName": "TIER 1: Production/HACCP Manager",
+    "tierColor": "blue",
+    "targetPersonas": "Production Manager, HACCP Responsible Person (Vodja proizvodnje, Odgovorna oseba za HACCP)",
+    "messagingAngle": "Organize repeated checks, make records easier to find, clarify task ownership across shifts",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Finding HACCP records quickly",
+        "body": "Hi [First Name],\n\nI noticed [Company] handles [food production/preparation] in [location]. Quick question - how long does it take you to find a specific HACCP record when you need it?\n\nMost HACCP managers I work with in Slovenia and Croatia tell me they're searching through paper files or scattered spreadsheets - and it can take 10-15 minutes to find the right record.\n\nDHM organizes your records digitally:\n- Find any record in under 1 minute\n- All checks organized by date, type, and location\n- Clear task ownership across shifts\n\nWould this make your job easier?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Finding HACCP records quickly",
+        "body": "Hi [First Name],\n\nFollowing up on HACCP record retrieval.\n\nA production manager at a small meat processor in Croatia told me he was spending 2-3 hours before each audit just organizing paper records into the right order.\n\nAfter switching to DHM:\n- All records digitally organized by date and check type\n- PDF reports generated in minutes\n- No more manual sorting before audits\n\nHis last audit prep took 20 minutes instead of 3 hours.\n\nIf you'd like similar efficiency, let's talk.\n\nWhen's good for a 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Finding HACCP records quickly",
+        "body": "Hi [First Name],\n\nLast check-in on HACCP record organization.\n\nIf you're ever:\n- Preparing for an audit\n- Adding a new production line or shift\n- Finding it harder to keep track of repeated daily checks\n\n...DHM can help.\n\nIt's designed for HACCP managers who need organized records without the manual filing.\n\nHappy to show you how it works when you're ready.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-hotel",
+    "tierName": "TIER 2: Hotel/Kitchen Manager",
+    "tierColor": "green",
+    "targetPersonas": "Hotel Manager, Head Chef, F&B Manager (Vodja kuhinje, Voditelj kuhinje)",
+    "messagingAngle": "Clarify responsibilities across shifts, organize kitchen safety records digitally",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Kitchen shift handovers",
+        "body": "Hi [First Name],\n\nI noticed [Hotel/Property] operates [kitchen/restaurant]. Quick question - how are you currently tracking which kitchen safety checks have been completed when shifts change?\n\nMost hotel kitchen managers I work with in Slovenia tell me shift handovers can be unclear - staff aren't always sure what the previous shift has checked.\n\nDHM clarifies shift responsibilities:\n- Digital checklist showing what's been completed\n- Clear task ownership for each shift\n- Kitchen safety records organized in one place\n\nWould this help your kitchen operation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Kitchen shift handovers",
+        "body": "Hi [First Name],\n\nFollowing up on kitchen shift clarity.\n\nA head chef at a small hotel in Slovenia told me his morning shift was always asking what the evening shift had checked the night before.\n\nAfter implementing DHM:\n- Morning team opens the app and sees exactly what was checked\n- Clear ownership of each task by shift\n- No more guessing or asking around\n\nShift handovers are now 5 minutes instead of 15.\n\nIf you'd like similar clarity, let's talk.\n\nWhen works for a quick call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Kitchen shift handovers",
+        "body": "Hi [First Name],\n\nLast note on kitchen shift organization.\n\nIf you're ever:\n- Opening a second property with a kitchen\n- Adding meal service or expanding kitchen hours\n- Finding shift handovers taking too long\n\n...DHM can help.\n\nIt's designed for hotel kitchens that need clear shift responsibility without the confusion.\n\nHappy to show you when the timing's right.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]
