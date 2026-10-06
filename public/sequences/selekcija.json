@@ -1,0 +1,83 @@
+[
+  {
+    "id": "hr-director",
+    "tierName": "PRIMARY: HR Director/Manager",
+    "tierColor": "blue",
+    "targetPersonas": "HR Director, Head of HR, HR Manager",
+    "messagingAngle": "Process sponsor and budget owner for selection tools, needs structured assessment workflow",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "[First Name], recurring recruitment at [Company]?",
+        "body": "Hi [First Name],\n\nI noticed [Company] operates in [industry] - do you handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: [First Name], recurring recruitment at [Company]?",
+        "body": "Hi [First Name],\n\nFollowing up on my note about candidate assessment.\n\nA typical use case: you're hiring for [relevant role] repeatedly. Online tests provide structured evidence, remote access, and consistent evaluation across your team.\n\nWorth a 15-minute call to discuss?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: [First Name], recurring recruitment at [Company]?",
+        "body": "Hi [First Name],\n\nLast note on this.\n\nIf you're ever reviewing your selection process or assessment tools, I'd be happy to show you how Selekcija.hr works for Slovenian employers.\n\nJust let me know.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "ta-manager",
+    "tierName": "PRIMARY: Recruitment/TA Manager",
+    "tierColor": "blue",
+    "targetPersonas": "Head of Recruitment, TA Manager, Recruiter",
+    "messagingAngle": "Owns candidate workflow and evaluates practical assessment fit",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Assessment workflow for [Company]?",
+        "body": "Hi [First Name],\n\nQuick question: how do you currently organize candidate assessments at [Company]?\n\nSelekcija.hr provides online psychometric tests with candidate reports. Recruiters use it to schedule tests remotely, get results immediately, and share consistent evaluation evidence with hiring managers.\n\nWorth a brief conversation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Assessment workflow for [Company]?",
+        "body": "Hi [First Name],\n\nFollowing up on candidate assessment.\n\nIf you're coordinating tests manually or finding it difficult to standardize evaluation across your team, online assessments can help.\n\nCan I show you a quick demo?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Assessment workflow for [Company]?",
+        "body": "Hi [First Name],\n\nFinal note.\n\nIf assessment is part of your recruitment process - or you're considering adding it - let me know. Happy to discuss how it works.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "organizational-psychologist",
+    "tierName": "PRIMARY: Organizational Psychologist",
+    "tierColor": "blue",
+    "targetPersonas": "Organizational Psychologist, Assessment Lead",
+    "messagingAngle": "Validates instruments, interpretation and role relevance",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "[First Name], assessment tools at [Company]",
+        "body": "Hi [First Name],\n\nI see you're responsible for assessment at [Company]. Do you use psychometric tests in your selection process?\n\nSelekcija.hr offers 22 proprietary tests plus additional instruments, with Slovenian norms and reports. Organizations choose tests based on role requirements and work with our psychologists on interpretation.\n\nWorth discussing your current approach?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: [First Name], assessment tools at [Company]",
+        "body": "Hi [First Name],\n\nFollowing up on psychometric assessment.\n\nIf you're reviewing instruments, considering online administration, or looking for validated tests with Slovenian norms, we should talk.\n\n15 minutes to discuss your requirements?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: [First Name], assessment tools at [Company]",
+        "body": "Hi [First Name],\n\nLast check-in.\n\nIf you ever need support with test selection, validation or remote assessment administration, let me know.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

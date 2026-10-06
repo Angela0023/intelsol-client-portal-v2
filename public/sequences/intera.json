@@ -1,0 +1,83 @@
+[
+  {
+    "id": "sales-director",
+    "tierName": "PRIMARY: Sales Director/Commercial Director",
+    "tierColor": "blue",
+    "targetPersonas": "Sales Director, Commercial Director, Head of Sales",
+    "messagingAngle": "Owns pipeline, quotations and team adoption - needs visibility of opportunities and next actions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "[First Name], sales process at [Company]",
+        "body": "Hi [First Name],\n\nQuick question: how does your sales team track quotations and next actions at [Company]?\n\nIntrix CRM gives B2B sales teams a shared view of customers, opportunities and follow-up activities. Distributors and manufacturers use it to keep pipeline visible without chasing people for updates.\n\nWorth a brief conversation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: [First Name], sales process at [Company]",
+        "body": "Hi [First Name],\n\nFollowing up on sales tracking.\n\nIf open quotations sit in individual inboxes, or you're manually compiling pipeline updates, Intrix can help. One system for customer records, opportunities and team activity.\n\n15 minutes to review how it fits your workflow?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: [First Name], sales process at [Company]",
+        "body": "Hi [First Name],\n\nLast note.\n\nIf you're evaluating CRM or looking to improve sales visibility, let me know. Happy to show you how it works.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "managing-director",
+    "tierName": "PRIMARY: Managing Director/CEO",
+    "tierColor": "blue",
+    "targetPersonas": "Managing Director, Owner, CEO",
+    "messagingAngle": "Budget sponsor, needs commercial visibility and less dependence on individual knowledge",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Sales visibility at [Company]?",
+        "body": "Hi [First Name],\n\nI noticed [Company] operates in [industry] with [size indication]. Do you have clear visibility of your sales pipeline and customer relationships?\n\nIntrix CRM provides a shared system for opportunities, quotations and account history. Companies like Kronoterm use it to reduce dependence on information held by individuals.\n\nWorth discussing?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Sales visibility at [Company]?",
+        "body": "Hi [First Name],\n\nFollowing up on commercial visibility.\n\nA common issue: customer information and pipeline status depend on your sales team's individual records. Intrix gives you one shared view of what's open, what's next, and who's responsible.\n\nCan I show you a quick example?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Sales visibility at [Company]?",
+        "body": "Hi [First Name],\n\nFinal check-in.\n\nIf sales tracking or customer continuity is something you're reviewing, let me know. Happy to discuss when the timing works.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "sales-representative",
+    "tierName": "SECONDARY: Sales Representative/Account Manager",
+    "tierColor": "green",
+    "targetPersonas": "Sales Representative, Account Manager, Key Account Manager",
+    "messagingAngle": "Practical user and champion - needs organized customer records and quotation tracking",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Customer tracking at [Company]?",
+        "body": "Hi [First Name],\n\nQuick question: how do you currently track your customer accounts and open quotations at [Company]?\n\nIntrix CRM keeps customer details, opportunity stages and next actions in one place. Sales teams use it to organize follow-up and share account history when someone's away.\n\nWorth a conversation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Customer tracking at [Company]?",
+        "body": "Hi [First Name],\n\nFollowing up on account organization.\n\nIf you're using spreadsheets or email to track customers, or finding it difficult to hand over accounts smoothly, CRM can help.\n\nCan I show you how it works?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Customer tracking at [Company]?",
+        "body": "Hi [First Name],\n\nLast note.\n\nIf you're interested in better customer organization or pipeline visibility, let me know.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

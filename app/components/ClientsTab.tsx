@@ -54,6 +54,8 @@ const ALL_CLIENTS = [
   { id: 'birografika', name: 'BiroGrafika' },
   { id: 'clevercraft', name: 'CleverCraft' },
   { id: 'stojkov', name: 'Stojkov' },
+  { id: 'selekcija', name: 'Selekcija.hr' },
+  { id: 'intera', name: 'Intrix CRM' },
 ];
 
 export default function ClientsTab() {
