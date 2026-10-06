@@ -312,32 +312,50 @@ const visibleTabs = isAdmin
 
 ---
 
-### 2. Adding a New Client Requires Multiple Files
+### 2. Adding a New Client Requires Multiple Files (CRITICAL - ALWAYS DO ALL)
 
-**When creating a new client dashboard, you MUST update:**
+**HARD RULE:** When the user says "create a dashboard" for a new client, you MUST update ALL of these files. No exceptions. Client must appear in navigation immediately.
+
+**Required files when creating a new client dashboard:**
 
 1. **`/app/[clientname]/page.tsx`** - The dashboard page
 2. **`/public/tasks/[clientname].json`** - Empty array `[]`
 3. **`/public/uploads/[clientname]/.metadata.json`** - Empty array `[]`
-4. **`/public/_redirects`** - Add route: `/[clientname]/* /[clientname] 200`
-5. **`/lib/auth.ts`** - Add to `ClientAccess` type and `CLIENT_PASSWORDS`
-6. **`/app/components/Sidebar.tsx`** - Add to `clients` array
-7. **`/app/components/StatusBadge.tsx`** - Add to `DEFAULT_STATUSES`
-8. **`/app/admin/page.tsx`** - Add to:
-   - `clientIds` array (for task fetching)
-   - `clientNames` object
-   - `clients` array (for display)
+4. **`/public/sequences/[clientname].json`** - Email sequences JSON
+5. **`/public/_redirects`** - Add route: `/[clientname]/* /[clientname] 200`
+6. **`/lib/auth.ts`** - Add to:
+   - `ClientAccess` type
+   - `CLIENT_PASSWORDS` object
+   - `getAllowedClients()` admin array
+7. **`/app/components/Sidebar.tsx`** - Add to `defaultClients` array (NAVIGATION - MANDATORY)
+8. **`/app/components/ClientsTab.tsx`** - Add to `ALL_CLIENTS` array
+9. **`/app/components/StatusBadge.tsx`** - Add to `DEFAULT_STATUSES`
+10. **`/app/admin/page.tsx`** - Add to:
+    - `clientIds` array (for task fetching)
+    - `clientNames` object
 
-**Why:** Missing any of these causes:
-- 404 errors when accessing the page
-- Upload failures (no directory)
-- Tasks tab errors
-- Client not showing in sidebar
-- Missing from admin dashboard
+**Why this is CRITICAL:**
+- Missing Sidebar.tsx → Client invisible in navigation (USER WILL ASK "WHERE IS IT?")
+- Missing auth.ts → Cannot log in
+- Missing _redirects → 404 errors
+- Missing upload directory → Upload failures
+- Missing tasks/sequences → Feature tabs broken
+- Missing ClientsTab.tsx → Not visible in /intelsol/clients
+- Missing admin page → Not tracked in admin dashboard
 
-**Lesson Learned (2026-07-31):**
-- Created demo dashboard but forgot to add to `_redirects` → 404 errors
-- Created Plantryx but no upload directory → upload failures
+**Lesson Learned (2026-10-06):**
+- Created Selekcija and Intera dashboards but forgot Sidebar.tsx
+- User had to ask "why don't I see the 2 new dashboards in navigation?"
+- **This wasted time and frustrated the user**
+- **Rule established: Dashboard creation = MUST appear in navigation IMMEDIATELY**
+
+**Checklist before saying "dashboard created":**
+- [ ] Dashboard page exists
+- [ ] Client appears in sidebar navigation
+- [ ] Login credentials work
+- [ ] All tabs functional (Tasks, Documents, Sequences)
+- [ ] Build passes
+- [ ] Committed and pushed to GitHub
 
 ---
 

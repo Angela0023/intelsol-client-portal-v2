@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, FileText, BarChart3, Users, Building2 } from 'lucide-react';
+import { Home, FileText, BarChart3, Users, Building2, Search } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 interface SidebarProps {
@@ -48,6 +48,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
 
   const [clients, setClients] = useState<Client[]>(defaultClients);
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   // Load saved order from localStorage on mount
   useEffect(() => {
@@ -103,9 +104,14 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     setDraggedIndex(null);
   };
 
-  const filteredClients = clients.filter(
-    (client) => isAdmin || clientAccess.includes(client.id)
-  );
+  const filteredClients = clients
+    .filter((client) => isAdmin || clientAccess.includes(client.id))
+    .filter((client) =>
+      searchTerm === ''
+        ? true
+        : client.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          client.id.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
   return (
     <aside className="w-64 bg-slate-50 border-r border-slate-200 flex flex-col">
@@ -135,6 +141,20 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
             <span className="font-medium">Dashboard</span>
           </Link>
         )}
+
+        {/* Search Bar */}
+        <div className="pt-4 px-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <input
+              type="text"
+              placeholder="Search clients..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full pl-10 pr-3 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a2647] focus:border-transparent bg-white"
+            />
+          </div>
+        </div>
 
         <div className="pt-4 pb-2 px-4">
           <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
