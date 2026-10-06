@@ -1,7 +1,7 @@
 [
   {
-    "id": "task_1785432235857_iykohhs",
-    "description": "Close UW contract",
+    "id": "task_1785432318537_0yk9pkg",
+    "description": "Activate Email Guard Pro plan",
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-07-31",
@@ -9,30 +9,12 @@
     "comments": []
   },
   {
-    "id": "task_1785432335413_pe4b80p",
-    "description": "Purchase more sending accounts",
-    "assignedTo": "Matej",
+    "id": "task_1785432278082_ukybt1y",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Frosina",
     "status": "pending",
-    "dueDate": "2026-07-31",
+    "dueDate": "2026-08-03",
     "order": 1,
-    "comments": []
-  },
-  {
-    "id": "task_1785432318537_0yk9pkg",
-    "description": "Activate Email Guard Pro plan",
-    "assignedTo": "Matej",
-    "status": "pending",
-    "dueDate": "2026-07-31",
-    "order": 2,
-    "comments": []
-  },
-  {
-    "id": "task_1786009825593_zyv2gsl",
-    "description": "Pay invoice for 27 July - 02 August",
-    "assignedTo": "Matej",
-    "status": "done",
-    "dueDate": "2026-08-06",
-    "order": 3,
     "comments": []
   },
   {
@@ -41,7 +23,7 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-08-17",
-    "order": 4,
+    "order": 2,
     "comments": []
   },
   {
@@ -50,7 +32,7 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-09-07",
-    "order": 5,
+    "order": 3,
     "comments": []
   },
   {
@@ -59,61 +41,7 @@
     "assignedTo": "Matej",
     "status": "pending",
     "dueDate": "2026-09-07",
-    "order": 6,
-    "comments": []
-  },
-  {
-    "id": "task_1788856296481_wu36e36",
-    "description": "People Focus - add more leads",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 7,
-    "comments": []
-  },
-  {
-    "id": "task_1788856284378_4uja5jt",
-    "description": "People Focus - Write the sequences in German",
-    "assignedTo": "Frosina",
-    "status": "done",
-    "dueDate": "2026-09-08",
-    "order": 8,
-    "comments": []
-  },
-  {
-    "id": "task_1788856325060_f6iu6dc",
-    "description": "Panoramate Media - find 1-2K leads",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 9,
-    "comments": []
-  },
-  {
-    "id": "task_1788856344664_3th2p8k",
-    "description": "Panoramate Media - add sequences to Smartlead",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 10,
-    "comments": []
-  },
-  {
-    "id": "task_1788879375969_j216cr5",
-    "description": "Add more Leads for Intelsol",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-08",
-    "order": 11,
-    "comments": []
-  },
-  {
-    "id": "task_1788856250599_61cnq5b",
-    "description": "AdSigner - add more Serbia & Croatia leads",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-09-11",
-    "order": 12,
+    "order": 4,
     "comments": []
   },
   {
@@ -122,7 +50,7 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-09-11",
-    "order": 13,
+    "order": 5,
     "comments": [
       {
         "id": "comment_1788879323348_7djq6fy",
@@ -138,16 +66,52 @@
     "assignedTo": "Frosina",
     "status": "pending",
     "dueDate": "2026-09-07",
-    "order": 14,
+    "order": 6,
     "comments": []
   },
   {
-    "id": "task_1785432278082_ukybt1y",
-    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "id": "task_1786009825593_zyv2gsl",
+    "description": "Pay invoice for 27 July - 02 August",
+    "assignedTo": "Matej",
+    "status": "done",
+    "dueDate": "2026-08-06",
+    "order": 3,
+    "comments": []
+  },
+  {
+    "id": "task_1788856284378_4uja5jt",
+    "description": "People Focus - Write the sequences in German",
     "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-03",
-    "order": 15,
+    "status": "done",
+    "dueDate": "2026-09-08",
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1788856344664_3th2p8k",
+    "description": "Panoramate Media - add sequences to Smartlead",
+    "assignedTo": "Frosina",
+    "status": "done",
+    "dueDate": "2026-09-08",
+    "order": 10,
+    "comments": []
+  },
+  {
+    "id": "task_1788879375969_j216cr5",
+    "description": "Add more Leads for Intelsol",
+    "assignedTo": "Frosina",
+    "status": "done",
+    "dueDate": "2026-09-08",
+    "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1788856250599_61cnq5b",
+    "description": "AdSigner - add more Serbia & Croatia leads",
+    "assignedTo": "Frosina",
+    "status": "done",
+    "dueDate": "2026-09-11",
+    "order": 12,
     "comments": []
   },
   {
@@ -443,6 +407,69 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 12,
+    "comments": []
+  },
+  {
+    "id": "task_1791302432095_0gxk4rb",
+    "description": "Update eBliss AI sequences - use the ones they sent",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-06",
+    "order": 7,
+    "comments": []
+  },
+  {
+    "id": "task_1791302461085_jdemtvo",
+    "description": "eBliss AI - add more leads",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-06",
+    "order": 8,
+    "comments": []
+  },
+  {
+    "id": "task_1791302510503_d5d091t",
+    "description": "AdSigner - Add leads in another industry (not IT) - ask claude which industry",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-06",
+    "order": 9,
+    "comments": []
+  },
+  {
+    "id": "task_1791302543314_r7pw595",
+    "description": "Zen2Fit - Add leads in Finances and Insurance (Hungary & Poland)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-07",
+    "order": 10,
+    "comments": []
+  },
+  {
+    "id": "task_1791302571568_pqmbh7e",
+    "description": "Shorten sequences for AdSigner",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-06",
+    "order": 11,
+    "comments": []
+  },
+  {
+    "id": "task_1791302590230_9rxz4lx",
+    "description": "Shorten sequences for Zen2Fit",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-07",
+    "order": 12,
+    "comments": []
+  },
+  {
+    "id": "task_1791302629293_ldyhax7",
+    "description": "Find Indian freelancer to buy Google Workspaces",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-10-07",
+    "order": 13,
     "comments": []
   }
 ]
