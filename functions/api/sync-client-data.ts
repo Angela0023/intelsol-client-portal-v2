@@ -28,6 +28,15 @@ const VALID_CLIENTS = [
   'zen2fit',
   'panorate',
   'mbedtronix',
+  'clevercraft',
+  'stojkov',
+  'birografika',
+  'bmevents',
+  'prtronic',
+  'dhm',
+  'morefromfood',
+  'selekcija',
+  'intera',
   'all'
 ];
 
@@ -75,7 +84,7 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
   try {
     // Trigger the GitHub Actions workflow
     const owner = 'Angela0023';
-    const repo = 'intelsol-client-portal';
+    const repo = 'intelsol-client-portal-v2';
     const workflow_id = 'sync-client-data.yml';
 
     const apiUrl = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow_id}/dispatches`;

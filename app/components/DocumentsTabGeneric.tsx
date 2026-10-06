@@ -131,7 +131,7 @@ export default function DocumentsTabGeneric({
                 <div className="flex-1">
                   <div className="flex items-center space-x-3">
                     <a
-                      href={`/data/${clientId}-database.csv`}
+                      href={`/api/download-csv?file=${clientId}-database.csv`}
                       download={`${clientId}-database.csv`}
                       className={`text-lg font-semibold text-slate-900 ${color.text} transition-colors`}
                     >

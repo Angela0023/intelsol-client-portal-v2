@@ -45,6 +45,9 @@ yarn-error.log
 # private data - lead databases contain personal information
 /public/data/
 
+# wrangler local development files
+.wrangler/
+
 # typescript
 .tsbuildinfo
 next-env.d.ts

@@ -23,6 +23,15 @@ on:
           - zen2fit
           - panorate
           - mbedtronix
+          - clevercraft
+          - stojkov
+          - birografika
+          - bmevents
+          - prtronic
+          - dhm
+          - morefromfood
+          - selekcija
+          - intera
           - all
 
   # Run daily at 4 AM CEST (2 AM UTC) for all clients
@@ -83,6 +92,15 @@ jobs:
               'zen2fit': 'Zen2fit',
               'panorate': 'Panorate',
               'mbedtronix': 'MBEDTRONIX',
+              'clevercraft': 'Clever Craft',
+              'stojkov': 'Stojkov',
+              'birografika': 'BiroGrafika',
+              'bmevents': 'BM Events',
+              'prtronic': 'PRTronic',
+              'dhm': 'DHM',
+              'morefromfood': 'MoreFromFood',
+              'selekcija': 'Selekcija',
+              'intera': 'Intrix CRM',
           }
 
           def remove_emoji(text):
@@ -213,27 +231,43 @@ jobs:
 
           node .smartlead/sync-all-campaigns.js
 
-      - name: Check for changes
-        id: git-check
+      - name: Install Wrangler CLI
+        run: npm install -g wrangler
+
+      - name: Upload CSV files to R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_R2_TOKEN }}
         run: |
-          git diff --exit-code public/ || echo "changes=true" >> $GITHUB_OUTPUT
+          echo "📦 Uploading CSV files to R2..."
 
-      - name: Commit and push if changes
-        if: steps.git-check.outputs.changes == 'true'
+          UPLOADED=0
+          FAILED=0
+
+          for file in public/data/*.csv; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              echo "Uploading: $filename"
+
+              if wrangler r2 object put "intelsol-client-data/data/$filename" --file="$file"; then
+                echo "✓ Success: $filename"
+                ((UPLOADED++))
+              else
+                echo "✗ Failed: $filename"
+                ((FAILED++))
+              fi
+            fi
+          done
+
+          echo ""
+          echo "=== Upload Complete ==="
+          echo "✅ Uploaded: $UPLOADED files"
+          if [ $FAILED -gt 0 ]; then
+            echo "❌ Failed: $FAILED files"
+            exit 1
+          fi
+
+      - name: Sync Summary
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add public/data/*.csv public/campaigns/*.json
-          git commit -m "Auto-update: Client data sync at $(date -u +'%Y-%m-%d %H:%M UTC')
-
-          Synced: ${{ steps.clients.outputs.clients }}
-          - Updated lead databases
-          - Updated campaign stats
-
-          Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
-          git pull --rebase origin main
-          git push
-
-      - name: No changes detected
-        if: steps.git-check.outputs.changes != 'true'
-        run: echo "No changes detected. All client data is up to date."
+          echo "✅ Client data synced successfully to Cloudflare R2"
+          echo "Client: ${{ steps.clients.outputs.clients }}"
+          echo "Time: $(date -u +'%Y-%m-%d %H:%M UTC')"
