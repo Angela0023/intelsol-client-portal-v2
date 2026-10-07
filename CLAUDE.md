@@ -560,6 +560,123 @@ async function fetchAllSmartlead(endpoint: string, apiKey: string): Promise<any[
 
 ---
 
+## 🗄️ R2 Storage for CSV Files (GDPR-Compliant)
+
+### Overview
+
+**Why R2?** CSV files contain personal data (names, emails, LinkedIn URLs) that CANNOT be committed to GitHub due to GDPR and GitHub's Acceptable Use Policy. Previously, the repository was disabled for violating these policies. R2 provides secure, authenticated storage that keeps personal data protected while allowing downloads to work on the live site.
+
+### Architecture
+
+**Storage:**
+- Cloudflare R2 bucket: `intelsol-client-data`
+- Bucket is **PRIVATE** (no public access)
+- Files stored at: `data/{clientId}-database.csv`
+
+**Access:**
+- Downloads route through `/api/download-csv` (authenticated API)
+- API checks portal login via session cookie
+- API verifies user has access to requested client
+- API streams file from R2 to user
+- NO direct public access to R2
+
+**Sync Flow:**
+1. User clicks "Update Database" button on Documents tab
+2. Triggers `/api/sync-client-data` API endpoint
+3. API triggers GitHub Actions workflow: `sync-client-data.yml`
+4. Workflow fetches leads from SmartLead API
+5. Workflow generates CSV files locally in workflow runner
+6. Workflow uploads CSV files to R2 (NOT to git)
+7. CSV files NEVER committed to GitHub repository
+
+### Why This Is Safe (GDPR-Compliant)
+
+✅ **CSV files never in git** - No personal data in repository
+✅ **R2 bucket is private** - No public access to personal data
+✅ **Downloads require authentication** - Portal login required
+✅ **Access control enforced** - Users only access their clients
+✅ **Complies with GDPR** - Personal data properly protected
+✅ **GitHub won't block us** - No policy violations
+
+### Required Configuration
+
+**GitHub Secrets** (https://github.com/Angela0023/intelsol-client-portal-v2/settings/secrets/actions):
+- `GH_PAT` - GitHub Personal Access Token (repo access)
+- `SMARTLEAD_API_KEY` - SmartLead API key
+- `CLOUDFLARE_R2_TOKEN` - Cloudflare R2 API token
+
+**Cloudflare Pages R2 Binding**:
+1. Go to Cloudflare Dashboard → Workers & Pages → intelsol-client-portal-v2
+2. Settings → Functions → R2 bucket bindings
+3. Add binding: Variable name = `R2_BUCKET`, R2 bucket = `intelsol-client-data`
+
+### Files
+
+**API Endpoints:**
+- `/functions/api/download-csv.ts` - Authenticated download endpoint
+- `/functions/api/sync-client-data.ts` - Trigger sync workflow
+
+**Workflow:**
+- `.github/workflows/sync-client-data.yml` - Syncs SmartLead → R2
+
+**Scripts:**
+- `scripts/sync-csv-to-r2.sh` - Manual sync script
+
+**Component:**
+- `/app/components/DocumentsTabGeneric.tsx` - Download link points to `/api/download-csv`
+
+### Storage Tracking
+
+**Current Usage:**
+- CSV files: ~10 MB
+- R2 Free Tier: 10 GB/month
+- Usage: <1% of free tier
+
+**R2 Free Tier Limits:**
+- 10 GB storage/month
+- 10 million Class A operations (list, write)
+- 100 million Class B operations (read)
+- No egress fees
+
+### Manual Sync (if needed)
+
+```bash
+export CLOUDFLARE_API_TOKEN="your-r2-token"
+./scripts/sync-csv-to-r2.sh
+```
+
+### Troubleshooting
+
+**Issue: Downloads return 404**
+- Check R2 binding is configured in Cloudflare Pages
+- Verify `R2_BUCKET` binding points to `intelsol-client-data`
+- Check Cloudflare Pages deployment logs
+
+**Issue: Unauthorized error on download**
+- User not logged into portal
+- User doesn't have access to that client
+- Session cookie expired
+
+**Issue: Workflow fails to upload to R2**
+- Check `CLOUDFLARE_R2_TOKEN` secret is configured
+- Verify R2 token has permissions: Account → Workers R2 Storage → Edit + Read
+- Check workflow logs for specific error
+
+**Issue: Download works but file is outdated**
+- Run "Update Database" from Documents tab
+- Wait 3-5 minutes for workflow to complete
+- Check GitHub Actions for workflow status
+
+### Lesson Learned (2026-10-06)
+
+**Problem:** GitHub disabled original repository (`intelsol-client-portal`) for committing CSV files with 52,000+ personal records, violating GDPR and GitHub Acceptable Use Policy.
+
+**Solution:** Implemented R2 storage with authenticated access. CSV files never committed to git, downloads require portal login, personal data protected. This architecture is compliant and sustainable.
+
+**Rule Established:** 2026-10-06
+
+---
+
 ## 📋 Deployment Checklist
 
 ### Before Pushing to GitHub
