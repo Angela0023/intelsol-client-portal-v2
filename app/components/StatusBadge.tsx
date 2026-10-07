@@ -100,4 +100,7 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   bmevents: 'Onboarding',
   prtronic: 'Onboarding',
   dhm: 'Onboarding',
+  morefromfood: 'Onboarding',
+  selekcija: 'Onboarding',
+  intera: 'Onboarding',
 };
