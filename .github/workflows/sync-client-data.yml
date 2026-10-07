@@ -248,12 +248,12 @@ jobs:
               filename=$(basename "$file")
               echo "Uploading: $filename"
 
-              if wrangler r2 object put "intelsol-client-data/data/$filename" --file="$file"; then
+              if wrangler r2 object put "intelsol-client-data/data/$filename" --file="$file" 2>&1; then
                 echo "✓ Success: $filename"
-                ((UPLOADED++))
+                UPLOADED=$((UPLOADED + 1))
               else
                 echo "✗ Failed: $filename"
-                ((FAILED++))
+                FAILED=$((FAILED + 1))
               fi
             fi
           done
