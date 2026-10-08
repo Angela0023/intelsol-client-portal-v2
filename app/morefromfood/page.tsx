@@ -84,7 +84,7 @@ export default function MoreFromFoodPage() {
                 <StatusBadge clientId="morefromfood" status={status} onStatusChange={handleStatusChange} />
               </div>
               <p className="text-xs lg:text-sm text-gray-600 mt-1">
-                HACCP & Quality Control Software (Croatia/Serbia)
+                HACCP & Quality Control Software (Austria)
               </p>
             </div>
           </div>
@@ -156,7 +156,7 @@ function OverviewTab() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <InfoCard label="Service" value="Digital HACCP & Quality Control" />
-            <InfoCard label="Markets" value="Croatia & Serbia" />
+            <InfoCard label="Markets" value="Austria" />
             <InfoCard label="Target Segment" value="Food Manufacturing (50-500 employees)" />
             <InfoCard label="Website" value={
               <a href="https://morefromfood.com/sl/" target="_blank" rel="noopener noreferrer" className="text-lime-600 hover:underline">
@@ -225,10 +225,9 @@ function OverviewTab() {
           </SubSection>
 
           <SubSection title="Geography" icon={<Target className="w-5 h-5" />}>
-            <strong>Initial markets:</strong> Croatia and Serbia
+            <strong>Initial market:</strong> Austria
             <ul className="mt-2 space-y-1 text-sm text-gray-600">
-              <ListItem>🇭🇷 Create separate Croatian segment (language: Croatian)</ListItem>
-              <ListItem>🇷🇸 Create separate Serbian segment (language: Serbian)</ListItem>
+              <ListItem>🇦🇹 Create Austrian segment (language: German)</ListItem>
               <ListItem>Record actual food-handling site separately from headquarters</ListItem>
               <ListItem>Confirm whether a plant can buy locally or needs group approval</ListItem>
             </ul>
@@ -263,12 +262,12 @@ function OverviewTab() {
 
           <SubSection title="Search Terms (Local)" icon={<Code className="w-5 h-5" />}>
             <div>
-              <strong>Croatian/Serbian terms:</strong>
+              <strong>German/Austrian terms:</strong>
               <CodeBlock language="text">
-proizvodnja hrane, prehrambena industrija, prerada mesa, mljekara / mlekara, pekarska industrija, gotova jela, proizvodnja pića, konditorska industrija
+Lebensmittelproduktion, Lebensmittelindustrie, Fleischverarbeitung, Molkerei, Bäckerei, Fertiggerichte, Getränkeproduktion, Süßwarenindustrie
               </CodeBlock>
               <p className="mt-2 text-sm text-gray-600">
-                Combine with Croatia/Hrvatska or Serbia/Srbija and locality. Verify manufacturing manually. A food-sector category alone is insufficient.
+                Combine with Austria/Österreich and locality. Verify manufacturing manually. A food-sector category alone is insufficient.
               </p>
             </div>
           </SubSection>
@@ -292,7 +291,7 @@ proizvodnja hrane, prehrambena industrija, prerada mesa, mljekara / mlekara, pek
               <div>
                 <strong className="text-blue-900">Local titles:</strong>
                 <CodeBlock language="text">
-voditelj kvalitete, rukovodilac kvaliteta, menadžer kvaliteta, odgovorna osoba za sigurnost / bezbednost hrane
+Qualitätsleiter, Qualitätsmanager, Lebensmittelsicherheitsbeauftragter
                 </CodeBlock>
               </div>
             </div>
@@ -332,7 +331,7 @@ voditelj kvalitete, rukovodilac kvaliteta, menadžer kvaliteta, odgovorna osoba 
               <div>
                 <strong className="text-blue-900">Local titles:</strong>
                 <CodeBlock language="text">
-voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
+Produktionsleiter, Betriebsleiter, Werksleiter
                 </CodeBlock>
               </div>
             </div>
@@ -432,7 +431,7 @@ voditelj / rukovodilac proizvodnje, direktor proizvodnje, direktor pogona
         <ContentSection title="Clay Table Filters" icon={<Filter className="w-5 h-5" />}>
           <SubSection title="Geography Filter" icon={<Target className="w-5 h-5" />}>
             <CodeBlock language="text">
-HQ Country contains any of: Croatia, Serbia
+HQ Country contains: Austria
 
 # Record actual food-handling site separately from headquarters
 # Confirm whether a plant can buy locally or needs group approval
@@ -461,17 +460,16 @@ Employee Count greater than 500
 
           <SubSection title="Industry Keywords" icon={<Target className="w-5 h-5" />}>
             <CodeBlock language="text">
-# Croatian/Serbian search terms
+# German/Austrian search terms
 Industry / Keywords contains any of:
-  "proizvodnja hrane",
-  "prehrambena industrija",
-  "prerada mesa",
-  "mljekara",
-  "mlekara",
-  "pekarska industrija",
-  "gotova jela",
-  "proizvodnja pića",
-  "konditorska industrija",
+  "Lebensmittelproduktion",
+  "Lebensmittelindustrie",
+  "Fleischverarbeitung",
+  "Molkerei",
+  "Bäckerei",
+  "Fertiggerichte",
+  "Getränkeproduktion",
+  "Süßwarenindustrie",
   "meat processing",
   "dairy",
   "bakery production",
@@ -489,22 +487,22 @@ Industry / Keywords contains any of:
             <div>
               <strong className="block mb-2">Meat Processing:</strong>
               <CodeBlock language="text">
-Keywords contains any of: "prerada mesa", "meat processing", "meat plant", "mesnica", "mesna prerada"
+Keywords contains any of: "Fleischverarbeitung", "meat processing", "meat plant", "Fleischerei"
               </CodeBlock>
 
               <strong className="block mb-2 mt-4">Dairy:</strong>
               <CodeBlock language="text">
-Keywords contains any of: "mljekara", "mlekara", "dairy", "milk processing", "mljekara"
+Keywords contains any of: "Molkerei", "dairy", "milk processing", "Milchverarbeitung"
               </CodeBlock>
 
               <strong className="block mb-2 mt-4">Industrial Bakery:</strong>
               <CodeBlock language="text">
-Keywords contains any of: "pekarska industrija", "bakery production", "industrial bakery", "pekarnica"
+Keywords contains any of: "Bäckerei", "bakery production", "industrial bakery", "Backwarenindustrie"
               </CodeBlock>
 
               <strong className="block mb-2 mt-4">Prepared Meals:</strong>
               <CodeBlock language="text">
-Keywords contains any of: "gotova jela", "prepared meals", "ready meals", "convenience food"
+Keywords contains any of: "Fertiggerichte", "prepared meals", "ready meals", "convenience food"
               </CodeBlock>
             </div>
           </SubSection>
@@ -530,12 +528,12 @@ Job Title contains any of:
   "QC Manager",
   "Production Manager",
   "Plant Manager",
-  "voditelj kvalitete",
-  "rukovodilac kvaliteta",
-  "menadžer kvaliteta",
-  "voditelj proizvodnje",
-  "rukovodilac proizvodnje",
-  "direktor proizvodnje"
+  "Qualitätsleiter",
+  "Qualitätsmanager",
+  "Lebensmittelsicherheitsbeauftragter",
+  "Produktionsleiter",
+  "Betriebsleiter",
+  "Werksleiter"
 
 # Secondary contacts
 Job Title contains any of:
@@ -584,7 +582,7 @@ Website: [URL]
 
 Qualification Criteria:
 1. Manufacturing: Do they have actual food production/processing operations? (not just resale/distribution)
-2. Geography: Are they located in Croatia or Serbia?
+2. Geography: Are they located in Austria?
 3. Size: Are they 50-500 employees (primary) or 20-49 with production complexity?
 4. Segment: Do they operate in meat processing, dairy, bakery, beverages, prepared meals, or confectionery?
 5. Quality function: Is there evidence of quality/food-safety processes or certification?
@@ -686,12 +684,12 @@ Signal: [Any identified buying signal]
 
 Personalization Elements:
 1. Specific production activity: Reference their actual products/operations from website
-2. Local context: Use appropriate language (Croatian for Croatia, Serbian for Serbia)
+2. Local context: Use appropriate language (German for Austria)
 3. Role-relevant pain: Match messaging to their persona (quality/production/operations)
 4. Timing hook: If signal exists, reference the specific expansion/project/change
 
 Example personalization:
-- "I noticed your meat processing operation in Zagreb..."
+- "I noticed your meat processing operation in Vienna..."
 - "I saw your recent expansion announcement about the new production line..."
 - "As Quality Manager at [Company], you likely manage HACCP records for your dairy facility..."
 
