@@ -36,20 +36,20 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Shift handovers and outstanding checks",
-        "body": "Hi [First Name],\n\nI noticed [Company] runs [production operation] - likely across multiple shifts.\n\nQuick question: how are you currently tracking which checks have been completed vs. which are still outstanding when shifts change over?\n\nMost production managers I work with in Croatia tell me they're either chasing paper forms or checking spreadsheets to see what's been done.\n\nMoreFromFood gives you real-time visibility:\n- See completed vs. outstanding checks across shifts\n- Clearer shift handovers (no more hunting for paperwork)\n- Production status visible to your whole team\n\nWould this be useful for your operation?\n\nBest regards,\n[Your Name]"
+        "subject": "Daily production checks",
+        "body": "Dear {{first_name}},\n\nHow do you track whether daily production checks have been completed at {{company}} and which activities are still outstanding?\n\nMoreFromFood supports digital records of checks, task visibility and alerts for overdue tasks.\n\nIs improving visibility of these activities currently relevant to you?\n\nKind regards,\n\n{{sender_name}}\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Shift handovers and outstanding checks",
-        "body": "Hi [First Name],\n\nFollowing up on shift handover visibility.\n\nA dairy producer in Croatia told me their biggest frustration was not knowing what the previous shift had checked until they physically walked the floor and asked people.\n\nNow their production manager opens MoreFromFood and sees immediately:\n- What's been checked today\n- What's outstanding\n- Who's responsible for each task\n\nShift handovers take 5 minutes instead of 20.\n\nIf you're facing similar challenges with shift visibility, let's talk.\n\nWhen's good for a quick call?\n\nBest regards,\n[Your Name]"
+        "subject": "Re: Daily production checks",
+        "body": "Dear {{first_name}},\n\nTo assess how this could work on the production floor, we would start with one of your existing checks and how employees carry it out.\n\nMoreFromFood supports customizable checklists and mobile access.\n\nWould this way of working make sense for your production team?\n\nKind regards,\n\n{{sender_name}}\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: Shift handovers and outstanding checks",
-        "body": "Hi [First Name],\n\nLast check-in on shift visibility.\n\nIf you're ever expanding to a new shift, adding a production line, or just tired of chasing people to find out what's been checked - MoreFromFood can help.\n\nIt's designed for production managers who need to see check status across shifts without hunting for paperwork.\n\nHappy to show you how it works when the timing's right.\n\nBest regards,\n[Your Name]"
+        "subject": "Re: Daily production checks",
+        "body": "Dear {{first_name}},\n\nI suggest a brief walkthrough using an example from your plant, so you can assess how practical it would be for employees and what visibility the production manager would have.\n\nWould you be the right person for that conversation, or does a colleague in quality lead this area?\n\nKind regards,\n\n{{sender_name}}\n"
       }
     ]
   },
