@@ -63,20 +63,20 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Compliance oversight across sites",
-        "body": "Hi [First Name],\n\nI noticed [Company] operates [multiple sites/plants]. I'm curious - how are you currently getting visibility of compliance status across your locations?\n\nMost operations directors I speak with are either:\n- Waiting for weekly/monthly reports compiled by plant managers\n- Or calling each site to check status before audits\n\nMoreFromFood gives you real-time oversight:\n- See compliance status across all plants in one view\n- No more waiting for managers to compile manual reports\n- Immediate visibility when checks are missed or corrective actions are outstanding\n\nWorth a brief conversation to see if this fits your operation?\n\nBest regards,\n[Your Name]"
+        "subject": "Visibility of food safety checks",
+        "body": "Dear {{first_name}},\n\nHow do you get an overview of completed food safety checks and open corrective actions at {{company}}?\n\nMoreFromFood brings together records and corrective action tracking, providing a centralized view of activities.\n\nIs digitalizing this part of the business among your priorities?\n\nKind regards,\n\n{{sender_name}}\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Compliance oversight across sites",
-        "body": "Hi [First Name],\n\nFollowing up on oversight across your sites.\n\nA food group in Serbia with 3 plants told me their biggest pain was waiting for each plant manager to send their weekly compliance report.\n\nNow their operations director opens MoreFromFood and sees:\n- Which plants have outstanding checks\n- Where corrective actions are overdue\n- Real-time status without asking anyone\n\nIt's eliminated 2-3 hours of report compilation per week across their team.\n\nIf you'd like similar visibility, let's talk.\n\nWhen works for a 15-minute call?\n\nBest regards,\n[Your Name]"
+        "subject": "Re: Visibility of food safety checks",
+        "body": "Dear {{first_name}},\n\nTo assess whether MoreFromFood makes sense for your business, we would start with how records are collected and how the resolution of deviations is tracked.\n\nThe aim of the conversation would be to identify where digital visibility could help the people responsible.\n\nWho leads these improvements in your company — quality or operations?\n\nKind regards,\n\n{{sender_name}}\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: Compliance oversight across sites",
-        "body": "Hi [First Name],\n\nLast note on multi-site oversight.\n\nIf you're ever:\n- Adding a new plant or production site\n- Preparing for a group-level audit\n- Finding it harder to get consistent compliance reporting from your managers\n\n...MoreFromFood can help.\n\nIt's designed for operations leaders who need real-time visibility across sites without manual reporting.\n\nHappy to show you when the timing's right.\n\nBest regards,\n[Your Name]"
+        "subject": "Re: Visibility of food safety checks",
+        "body": "Dear {{first_name}},\n\nIf this is a current priority, I suggest a brief conversation with the person leading quality or production to assess whether \nMoreFromFood fits your processes.\n\nWould it make sense to start that conversation now?\n\nIf this is not planned, I will leave it here.\n\nKind regards,\n{{sender_name}}\n\n"
       }
     ]
   }
