@@ -4,7 +4,7 @@
     "tierName": "TIER 1: QA/QC Managers",
     "tierColor": "blue",
     "targetPersonas": "QA Manager, Quality Control Manager, Quality Assurance Lead",
-    "messagingAngle": "Digital workspace for QC checks, immediate deviation flagging, organized records by date/check type/production line",
+    "messagingAngle": "Inspection records, deviations, corrective actions and audit documentation.",
     "emails": [
       {
         "emailNumber": 1,
