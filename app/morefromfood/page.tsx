@@ -81,7 +81,7 @@ export default function MoreFromFoodPage() {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 lg:gap-3 flex-wrap">
                 <h1 className="text-xl lg:text-2xl font-bold text-gray-900">MoreFromFood</h1>
-                <StatusBadge clientId="morefromfood" status={status} onStatusChange={handleStatusChange} />
+                <StatusBadge status={status} onStatusChange={handleStatusChange} />
               </div>
               <p className="text-xs lg:text-sm text-gray-600 mt-1">
                 HACCP & Quality Control Software (Austria)
