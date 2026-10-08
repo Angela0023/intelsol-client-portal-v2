@@ -138,7 +138,7 @@ export default function MoreFromFoodPage() {
             </>
           )}
           {activeTab === 'documents' && <DocumentsTabGeneric clientId="morefromfood" />}
-          {activeTab === 'tasks' && <TasksTab clientId="morefromfood" />}
+          {activeTab === 'tasks' && <TasksTab clientId="morefromfood" defaultTasks={[]} />}
         </div>
       </div>
     </ClientLayout>
