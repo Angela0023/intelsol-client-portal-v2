@@ -31,7 +31,7 @@
     "tierName": "TIER 1: Production/Plant Managers",
     "tierColor": "blue",
     "targetPersonas": "Production Manager, Plant Manager, Operations Manager",
-    "messagingAngle": "Visibility of completed vs. outstanding checks across shifts, clearer shift handovers, real-time production status",
+    "messagingAngle": "Visibility of completed daily checks and outstanding tasks, with practical use on the production floor.",
     "emails": [
       {
         "emailNumber": 1,
