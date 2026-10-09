@@ -1,0 +1,265 @@
+Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt
+Austria - Meat Processing,"Food manufacturing companies in Austria specializing in meat processing, meat production, or sausage/deli meat manufacturing with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Fleischverarbeitung, Fleischproduktion, Fleischerei, Wurstherstellung.",Meat Processing / Food Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, butcher shop, restaurant, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual meat processing/production operations (not just retail)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Dairy Manufacturing,"Food manufacturing companies in Austria specializing in dairy production, milk processing, cheese manufacturing, or yogurt production with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Molkerei, Milchverarbeitung, Käseherstellung, Milchproduktion.",Dairy / Food Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, dairy shop, cafe, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual dairy processing/production operations (not just retail)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Industrial Bakery,"Food manufacturing companies in Austria specializing in industrial bakery production, bread manufacturing, pastry production, or baked goods with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Bäckerei, Backwarenproduktion, Backwarenindustrie, Brotproduktion.",Bakery / Food Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retail bakery, cafe, or artisan bakery (no industrial production)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of industrial production scale)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail bakery with minimal industrial operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has industrial bakery production operations (not just retail bakery)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Beverage Manufacturing,"Food and beverage manufacturing companies in Austria specializing in beverage production, drink manufacturing, juice production, or soft drinks with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Getränkeproduktion, Getränkeherstellung, Saftproduktion.",Beverage / Food Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a bar, restaurant, cafe, or beverage retailer (no manufacturing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual beverage production/manufacturing operations (not just retail)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Prepared Meals,"Food manufacturing companies in Austria specializing in prepared meals, ready meals, convenience food, or meal kit production with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Fertiggerichte, Convenience Food, Fertigmahlzeiten.",Prepared Meals / Food Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a restaurant, catering service, or meal delivery service (no manufacturing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily food service/catering with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual prepared meal/ready meal production operations (not just catering)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Confectionery,"Food manufacturing companies in Austria specializing in confectionery production, chocolate manufacturing, candy production, or sweets manufacturing with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Süßwarenindustrie, Schokoladenherstellung, Süßwarenproduktion.",Confectionery / Food Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retail candy shop, chocolatier boutique, or cafe (no manufacturing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual confectionery/chocolate production operations (not just retail)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Food Manufacturing (Mixed),"Food manufacturing and processing companies in Austria across multiple food segments (general food production, mixed operations, food ingredients) with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Lebensmittelproduktion, Lebensmittelindustrie, Lebensmittelherstellung.",Food Manufacturing (General),Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, restaurant, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual food production/manufacturing operations (not just retail/distribution)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Private Label Manufacturers,"Private label food manufacturers, contract food manufacturers, and co-packers in Austria producing food products for retail chains or other brands with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Lohnhersteller, Private Label, Auftragsfertigung.",Private Label / Contract Manufacturing,Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, brand owner, or food service operation (no manufacturing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company does not have own production facilities (pure brand/marketing company)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual food production/manufacturing operations (contract or private label)
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export, certifications)
+3. Company located in Austria with production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Products page, About Us, Certifications, Production Facilities, and Careers sections.
+
+Return only: YES or NO"
+Austria - Certified Food Manufacturers,"Food manufacturing companies in Austria with quality/food safety certifications (IFS, BRCGS, FSSC 22000, ISO 22000, or HACCP certification) with 50-500 employees. Prioritize companies with evidence of: multiple certifications, multiple production sites, retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: IFS zertifiziert, BRCGS zertifiziert, FSSC 22000, ISO 22000, HACCP.",Food Manufacturing (Certified),Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, restaurant, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, certification body, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual food production/manufacturing operations with current certifications
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, retail supply, export)
+3. Company located in Austria with production facilities
+4. Clear evidence of quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000, HACCP)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Certifications page, Quality/Food Safety section, Production Facilities, and About Us sections.
+
+Return only: YES or NO"
+Austria - Export-Active Food Manufacturers,"Food manufacturing companies in Austria with export operations, international sales, or multi-country distribution with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, retail chain supply in multiple countries, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Export, International, Auslandsgeschäft.",Food Manufacturing (Export),Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, restaurant, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual food production/manufacturing operations with export activity
+2. Company has 50-500 employees OR 20-49 employees with production complexity (multiple sites, international retail supply, certifications)
+3. Company located in Austria with production facilities
+4. Clear evidence of export operations or international sales (indicates quality requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, International/Export section, Markets page, Production Facilities, and Certifications sections.
+
+Return only: YES or NO"
+Austria - Multi-Site Food Manufacturers,"Food manufacturing companies in Austria operating multiple production facilities, plants, or sites with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), retail chain supply, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Produktionsstandorte, Werke, Standorte.",Food Manufacturing (Multi-Site),Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, restaurant, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees total
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is primarily B2C retail with minimal production operations
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual food production/manufacturing operations at multiple sites
+2. Company has 50-500 employees (multi-site operations indicate scale)
+3. Company located in Austria with multiple production facilities
+4. Evidence of quality/food-safety processes or need (certifications, quality roles, compliance requirements)
+5. Company appears to be manufacturer that would benefit from centralized digital HACCP and multi-site oversight
+
+Base your decision on information found on company website, Locations/Sites page, Production Facilities, About Us, and Certifications sections.
+
+Return only: YES or NO"
+Austria - Retail Chain Suppliers,"Food manufacturing companies in Austria supplying retail chains, supermarkets, or grocery stores with 50-500 employees. Prioritize companies with evidence of: quality certifications (IFS, BRCGS, FSSC 22000, ISO 22000), multiple production sites, export activity, or currently hiring for Quality Manager, Food Safety Manager, QA Manager, Production Manager, or Plant Manager positions. Search terms: Handelsmarke, Eigenmarke, Supermarkt.",Food Manufacturing (Retail Supply),Austria,,,"Review this company's website and public information to determine if they are a good fit for MoreFromFood, a digital HACCP and quality control platform for food manufacturers.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a retailer, restaurant, or food service operation (no manufacturing/processing)
+2. Company is a broker, importer, wholesaler, or distributor without own production facilities
+3. Company is a software provider, consultant, or equipment manufacturer (not a food producer)
+4. Company has fewer than 20 employees (unless clear evidence of production complexity)
+5. Company website shows they already use comprehensive digital HACCP/quality management system
+6. Company is the retail chain itself (not the manufacturer/supplier)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has actual food production/manufacturing operations supplying retail chains
+2. Company has 50-500 employees OR 20-49 employees with production complexity (retail supply indicates demanding documentation needs)
+3. Company located in Austria with production facilities
+4. Evidence of retail chain supply (indicates quality/compliance requirements)
+5. Company appears to be manufacturer that would benefit from digital HACCP records and quality control
+
+Base your decision on information found on company website, Customers/Partners section, Certifications, Production Facilities, and About Us sections.
+
+Return only: YES or NO"
