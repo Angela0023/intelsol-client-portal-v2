@@ -29,6 +29,116 @@
 
 ---
 
+### 0A. UPDATING DASHBOARD CONTENT — The Correct Workflow (CRITICAL)
+
+**RULE:** When updating dashboard content (sequences, tasks, campaigns, etc.), follow this EXACT workflow. NEVER hallucinate deployment problems.
+
+**The Workflow (3 Steps Only):**
+
+1. **Edit the file locally**
+   ```bash
+   # Example: Update sequences
+   # Edit public/sequences/[clientname].json
+   ```
+
+2. **Commit and push to GitHub**
+   ```bash
+   git add public/sequences/[clientname].json
+   git commit -m "Update: [Client] email sequences"
+   git push
+   ```
+
+3. **Wait 2-3 minutes for Cloudflare Pages to auto-deploy**
+   - Cloudflare is connected to GitHub via webhook
+   - Deployment happens automatically on every push
+   - NO manual intervention needed in Cloudflare Dashboard
+   - NO need to "trigger deployment" or "check webhook connection"
+
+**That's it. Nothing else.**
+
+---
+
+**What Files Update This Way:**
+
+- **Email Sequences:** `/public/sequences/[client].json`
+  - API: `/api/sequences/get?clientId=[client]`
+  - Live at: `https://intelsol.pages.dev/[client]/campaigns-sequences`
+
+- **Tasks:** `/public/tasks/[client].json`
+  - API: `/api/tasks/get?clientId=[client]`
+  - Live at: `https://intelsol.pages.dev/[client]/tasks`
+
+- **Campaigns:** `/public/campaigns/[client].json`
+  - API: Auto-synced via GitHub Actions workflow
+  - Live at: `https://intelsol.pages.dev/[client]/performance`
+
+- **Any React Component:** `/app/components/*.tsx` or `/app/[client]/page.tsx`
+  - Deployed as static HTML/JS bundle
+  - Live at: Respective client dashboard URLs
+
+---
+
+**How to Verify It Worked:**
+
+```bash
+# 1. Verify file is committed to GitHub
+git log --oneline --follow public/sequences/[client].json | head -3
+
+# 2. Check latest commit is pushed
+git status  # Should say "Your branch is up to date with 'origin/main'"
+
+# 3. Wait 2-3 minutes, then test the live URL
+curl "https://intelsol.pages.dev/api/sequences/get?clientId=[client]"
+```
+
+**If Changes Don't Appear After 5 Minutes:**
+
+1. Hard refresh browser (Cmd+Shift+R / Ctrl+Shift+R) to clear cache
+2. Check if file is actually committed: `git log --follow [filepath]`
+3. Check Cloudflare Pages Deployments tab for deployment status
+4. **DO NOT** hallucinate webhook problems or manual deployment needs
+
+---
+
+**CRITICAL MISTAKES TO AVOID:**
+
+❌ **NEVER say:** "The GitHub → Cloudflare webhook appears to be disconnected"
+❌ **NEVER say:** "You need to manually trigger a deployment in Cloudflare"
+❌ **NEVER say:** "Go to Cloudflare Pages → Settings → Builds & deployments"
+❌ **NEVER say:** "Verify the GitHub connection is active"
+❌ **NEVER recommend:** Manual deployment triggers unless deployment actually failed
+
+✅ **ALWAYS do:** Edit → Commit → Push → Wait 2-3 minutes → Done
+
+---
+
+**Why This Rule Exists:**
+
+On 2026-10-12, a Claude instance hallucinated a "broken webhook" problem when updating CleverCraft sequences. The commits were successfully pushed to GitHub, but Claude:
+- Checked Cloudflare too quickly (deployment wasn't instant)
+- Diagnosed a non-existent webhook problem
+- Recommended unnecessary manual intervention in Cloudflare settings
+- Overcomplicated a simple 3-step workflow
+
+**The reality:** Commits were in GitHub, Cloudflare auto-deployed 2 minutes later, everything worked fine. No webhook was broken. No manual intervention was needed.
+
+---
+
+**Verification Checklist:**
+
+Before claiming "deployment isn't working":
+- [ ] Did you wait at least 3 minutes after pushing?
+- [ ] Did you hard refresh the browser (Cmd+Shift+R)?
+- [ ] Did you verify the commit is actually in GitHub? (`git log`)
+- [ ] Did you check the actual API response? (`curl [api-url]`)
+- [ ] Did you check Cloudflare Deployments tab for real errors?
+
+**If all checks pass and it still doesn't work, THEN investigate. Not before.**
+
+**Rule Established:** 2026-10-12
+
+---
+
 ### 0. FEATURE ISOLATION — Each Feature is Independent (CRITICAL)
 
 **RULE:** Each tab/feature is completely isolated and independent. When updating Feature X, touch ONLY Feature X files. NEVER touch any other feature's files.
