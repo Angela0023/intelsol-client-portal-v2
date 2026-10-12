@@ -30,6 +30,9 @@ export default function Home() {
     // Store access in sessionStorage (in production, use proper auth)
     sessionStorage.setItem('clientAccess', JSON.stringify(allowedClients));
 
+    // Also set a cookie for API authentication
+    document.cookie = `intelsol_session=${allowedClients.join(',')}; path=/; max-age=86400; SameSite=Strict`;
+
     // Check if there's a stored redirect URL
     const redirectUrl = sessionStorage.getItem('redirectAfterLogin');
 
