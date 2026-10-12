@@ -1,163 +1,217 @@
 [
   {
-    "id": "tier-1-ecommerce",
-    "tierName": "TIER 1: Director of eCommerce",
+    "id": "campaign-01-distributors-digital",
+    "tierName": "CAMPAIGN 01: IT Distributors - Digital & eCommerce",
     "tierColor": "blue",
-    "targetPersonas": "Director of eCommerce, eCommerce Manager - owns digital partner ordering experience and portal functionality",
-    "messagingAngle": "Focus on partner ordering complexity, integration challenges, and reducing support burden. Lead with operational efficiency and partner satisfaction outcomes.",
+    "targetPersonas": "Director of eCommerce; Head of Digital; VP Digital Transformation; Head of Partner Portal; Web Platform Manager",
+    "messagingAngle": "Connect reseller ordering with product, pricing and order data across existing systems. Buying signal: Portal modernization, CRM or ERP change, or a verified acquisition.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Partner ordering bottleneck at {Company}?",
-        "body": "Hi {First Name},\n\nI noticed {Company} has a significant partner/channel ecosystem. A quick question - when your partners need to place complex orders (multi-tier, configurations, custom quotes), does your current system handle it smoothly, or does your team end up processing a lot of it manually?\n\nWe work with companies like NetApp to replace the usual partner portal mess (clunky interfaces, manual order processing, integration nightmares) with a unified platform that actually works the way your business does.\n\nWorth a 20-minute conversation to see if there's a fit?\n\nBest,\n{Your Name}"
+        "subject": "Reseller ordering at {{company}}",
+        "body": "Hi {{first_name}},\n\nResellers need reliable pricing, availability and order status to buy through a portal. When those details sit in different systems, even a good portal can leave them calling your team for answers.\n\nCleverCraft connects existing systems so resellers can do more themselves. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs making reseller ordering more self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "Re: Partner ordering bottleneck at {Company}?",
-        "body": "Hi {First Name},\n\nFollowing up on my note below about partner order management.\n\nThe pattern we see: partners bypass the portal and email/call orders in because the system can't handle configurations or multi-tier structures. Your team spends the day manually processing what should be automated.\n\nClever Craft handles the entire partner order lifecycle - from complex configurations to automated fulfillment - with full integration to your back-end systems (we work with SFDC, Dynamics, and most ERP platforms).\n\n4 enterprise vendor programs currently processing $5B+ in order value through the platform.\n\nOpen to a brief call this week or next?\n\nBest,\n{Your Name}"
+        "type": "First Follow Up",
+        "subject": "Re: Reseller ordering at {{company}}",
+        "body": "Hi {{first_name}},\n\nReturning to my note on reseller ordering. Is helping resellers get answers without contacting your team part of your portal plans, or is the focus elsewhere?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Last note - partner portal at {Company}",
-        "body": "Hi {First Name},\n\nLast follow-up on this.\n\nIf partner ordering is running smoothly at {Company}, no need to reply. But if you're dealing with:\n\n- Partners complaining about clunky ordering process\n- Manual order processing eating up team bandwidth\n- Integration gaps between portal and back-end systems\n- High error rates on complex configurations\n\nWe should talk. The platform handles tens of thousands of partner users across multiple enterprise programs.\n\nHappy to share a quick demo or connect you with Ralph Nissler at NetApp for a reference.\n\nBest,\n{Your Name}"
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Reseller ordering at {{company}}",
+        "body": "Hi {{first_name}},\n\nA portal upgrade can also create extra work for content teams. At NetApp, CleverCraft helped automate partner portal content migration, with more than 22,000 assets migrated in the published case study.\n\nIs moving content a concern in your portal plans?\n\nBest,\n{{sender_name}}\nCleverCraft"
       }
     ]
   },
   {
-    "id": "tier-2-digital-transformation",
-    "tierName": "TIER 2: Head of Digital / VP Digital Transformation",
+    "id": "campaign-02-distributors-operations",
+    "tierName": "CAMPAIGN 02: IT Distributors - Sales Operations",
     "tierColor": "green",
-    "targetPersonas": "VP Digital Transformation, Head of Digital - owns digital transformation initiatives including modernizing partner experience",
-    "messagingAngle": "Focus on legacy system limitations, fragmented partner experience, and strategic partner advantage. Lead with competitive differentiation and digital maturity.",
+    "targetPersonas": "Director of Sales Operations; Order Management Manager; Quote Desk Manager; Bid Desk Manager; Special Pricing Manager; Deal Desk Manager",
+    "messagingAngle": "Structure non-standard reseller orders and reduce manual handoffs into existing order systems. Buying signal: Evidence of manual order intake, special pricing workflows or post-acquisition operational alignment.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Partner experience at {Company}",
-        "body": "Hi {First Name},\n\nQuick question - when you think about your partner experience stack (onboarding, training, ordering, program tracking), is it unified and modern, or are you managing partners across multiple fragmented systems?\n\nThe pattern we see: companies with strong partner ecosystems are often running them on legacy portals, spreadsheets, and manual workflows that make partner engagement harder than it should be.\n\nWe help companies like NetApp unify the entire partner lifecycle on a modern platform - onboarding through order management to program performance.\n\nWorth exploring?\n\nBest,\n{Your Name}"
+        "subject": "Orders that need manual attention",
+        "body": "Hi {{first_name}},\n\nOrders with special pricing or missing details can take several exchanges before the order desk has what it needs. That leaves less time for requests that actually need a commercial decision.\n\nCleverCraft helps organize and automate these orders around existing systems. In a published Fortune 500 technology vendor case study, we report an 80% reduction in non-standard order processing time.\n\nAre these orders a significant source of manual work at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "Re: Partner experience at {Company}",
-        "body": "Hi {First Name},\n\nFollowing up on partner experience modernization.\n\nThe challenge: your partners are comparing their experience with you against what your competitors offer. If they're dealing with clunky portals, manual processes, and fragmented touchpoints while your competitor offers a seamless digital experience, you're losing mindshare.\n\nClever Craft provides the unified platform for partner orchestration - onboarding, enablement, ordering, and program tracking in one place. Full integration with your existing systems (SFDC, Dynamics, ERP).\n\n4 enterprise vendor programs currently running on the platform with tens of thousands of partner users.\n\nOpen to a brief conversation about what modernizing partner experience could look like for {Company}?\n\nBest,\n{Your Name}"
+        "type": "First Follow Up",
+        "subject": "Re: Orders that need manual attention",
+        "body": "Hi {{first_name}},\n\nFollowing up on orders that need manual attention. Is the bigger issue gathering the right details or getting approvals, or are neither causing much work for your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Final note - digital partner experience",
-        "body": "Hi {First Name},\n\nLast note on this topic.\n\nIf partner experience is already a strategic priority at {Company} and you have a clear path forward, disregard this.\n\nBut if you're dealing with:\n\n- Legacy partner portals that can't be easily modernized\n- Fragmented partner touchpoints across multiple systems\n- Partners churning to competitors with better digital experiences\n- Limited visibility into partner engagement and performance\n\nWe should connect. The platform processes $5B+ in annual order value and supports complex multi-tier channel structures.\n\nHappy to share how we approached this with NetApp or other reference customers.\n\nBest,\n{Your Name}"
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Orders that need manual attention",
+        "body": "Hi {{first_name}},\n\nOne way to reduce back-and-forth is to catch missing details before an order reaches the desk. Your team can then focus on pricing decisions and genuine exceptions.\n\nWould getting more complete requests upfront make a meaningful difference?\n\nBest,\n{{sender_name}}\nCleverCraft"
       }
     ]
   },
   {
-    "id": "tier-3-partner-programs",
-    "tierName": "TIER 3: Partner Experience / Partner Programs Leader",
+    "id": "campaign-03-distributors-partner",
+    "tierName": "CAMPAIGN 03: IT Distributors - Partner Experience",
     "tierColor": "purple",
-    "targetPersonas": "VP Partner Experience, Director Partner Programs, Head of Partner Operations - owns partner program execution and partner satisfaction",
-    "messagingAngle": "Focus on partner onboarding friction, program compliance tracking, and operational efficiency. Lead with reducing manual work and improving partner engagement.",
+    "targetPersonas": "VP Partner Experience; Director of Partner Programs; Head of Partner Operations; Partner Programs Manager",
+    "messagingAngle": "Connect reseller onboarding, registration and compliance workflows with program operations. Buying signal: Partner program change, new channel leadership, or onboarding process redesign.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Partner program operations at {Company}",
-        "body": "Hi {First Name},\n\nI'm curious - when you onboard new partners at {Company}, how much of that process is automated vs. manual coordination across multiple systems?\n\nThe pattern we see: partner programs are managed through a mix of spreadsheets, emails, separate training platforms, and legacy portals. It works, but it's painful and doesn't scale.\n\nWe help companies like NetApp unify partner program operations - onboarding, compliance tracking, performance management - on a single platform that actually reflects how their partner business works.\n\nWorth a conversation?\n\nBest,\n{Your Name}"
+        "subject": "Reseller onboarding at {{company}}",
+        "body": "Hi {{first_name}},\n\nGetting a new reseller ready to trade can involve several teams, from registration and compliance to account setup. When the steps are disconnected, partners may need to chase updates before they can start.\n\nCleverCraft has automated onboarding, compliance and registration in enterprise channel programs. Our team has built partner-facing systems across four enterprise vendor programs.\n\nIs making reseller onboarding easier to complete a priority for your team at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "Re: Partner program operations at {Company}",
-        "body": "Hi {First Name},\n\nFollowing up on partner program operations.\n\nThe challenge we hear consistently: partner teams spend enormous time on manual tasks that should be automated - onboarding workflows, compliance tracking, program communications, performance reporting.\n\nClever Craft handles the full partner program lifecycle:\n- Automated onboarding and enablement\n- Program compliance and certification tracking\n- Partner performance visibility\n- Self-service capabilities that reduce support load\n\nCurrently supporting tens of thousands of partner users across 4 enterprise vendor programs.\n\nOpen to a brief call to discuss what streamlining partner operations could look like for {Company}?\n\nBest,\n{Your Name}"
+        "type": "First Follow Up",
+        "subject": "Re: Reseller onboarding at {{company}}",
+        "body": "Hi {{first_name}},\n\nComing back to reseller onboarding. Is the priority helping partners complete the steps themselves, giving your team a clearer view of progress, or something else?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Last note - partner program efficiency",
-        "body": "Hi {First Name},\n\nFinal follow-up on this.\n\nIf partner program operations are running smoothly at {Company}, no need to respond. But if you're dealing with:\n\n- Partner onboarding taking too long to get partners productive\n- Manual tracking of program compliance and certifications\n- Limited visibility into partner engagement and performance\n- Support team overwhelmed with repetitive partner questions\n\nWe should talk. The platform has handled $5B+ in order value and manages complex program structures across multiple partner tiers.\n\nHappy to connect you with Ralph Nissler at NetApp or share how other enterprise programs have approached this.\n\nBest,\n{Your Name}"
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Reseller onboarding at {{company}}",
+        "body": "Hi {{first_name}},\n\nProgram changes can mean updating the same information in several places. CleverCraft has kept content and program data aligned across multiple environments from one source.\n\nDoes keeping reseller information current take much manual work from your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
       }
     ]
   },
   {
-    "id": "tier-4-sales-operations",
-    "tierName": "TIER 4: Director of Sales Operations",
+    "id": "campaign-04-vars-digital",
+    "tierName": "CAMPAIGN 04: VARs & Solution Providers - Digital",
     "tierColor": "amber",
-    "targetPersonas": "Director of Sales Operations - when partner channel is a major revenue driver and sales ops owns channel performance",
-    "messagingAngle": "Focus on partner pipeline visibility, deal registration issues, and incentive/rebate tracking. Lead with revenue operations efficiency and data accuracy.",
+    "targetPersonas": "Head of Digital; Director of eCommerce; VP Digital Transformation; Web Platform Manager; Director of Customer Experience with portal ownership",
+    "messagingAngle": "Bring vendor data into the reseller's digital workflows while retaining existing platforms. Buying signal: Verified multi-vendor channel model, digital platform change, or acquisition; HPE or HP hardware resale strengthens fit.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Partner pipeline visibility at {Company}",
-        "body": "Hi {First Name},\n\nQuick question - when you need to report on partner pipeline and performance at {Company}, how much manual data wrangling is involved vs. having clean, real-time visibility?\n\nThe pattern we see in channel-led companies: partner data lives in multiple systems, deal registration is a mess, and incentive/rebate tracking is a manual nightmare. Sales ops spends more time chasing data than analyzing it.\n\nWe help companies like NetApp unify partner operations on a single platform with full visibility into partner pipeline, deal flow, and program performance - all integrated with your existing CRM and back-end systems.\n\nWorth exploring?\n\nBest,\n{Your Name}"
+        "subject": "Vendor data in your sales portal",
+        "body": "Hi {{first_name}},\n\nFor a solution provider working with several vendors, keeping product and program information current can mean working across multiple portals. Bringing that information into your own sales portal can help customers find answers and give your team fewer places to check.\n\nCleverCraft connects vendor data with existing platforms. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs this on the digital agenda at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "Re: Partner pipeline visibility at {Company}",
-        "body": "Hi {First Name},\n\nFollowing up on partner operations visibility.\n\nThe challenge: you can't optimize what you can't measure. When partner data is fragmented across systems, you're flying blind on channel performance, deal velocity, and program ROI.\n\nClever Craft provides:\n- Real-time partner pipeline visibility\n- Automated deal registration and tracking\n- Incentive and rebate management\n- Integration with SFDC, Dynamics, and your ERP systems\n\nCurrently processing $5B+ in annual order value across 4 enterprise vendor programs.\n\nOpen to a brief call to discuss how we could bring visibility to your partner channel operations?\n\nBest,\n{Your Name}"
+        "type": "First Follow Up",
+        "subject": "Re: Vendor data in your sales portal",
+        "body": "Hi {{first_name}},\n\nFollowing up on vendor information in your sales portal. Is bringing those sources together a current priority, or are you focused on a different part of the customer experience?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Final note - partner data visibility",
-        "body": "Hi {First Name},\n\nLast note on this topic.\n\nIf you have clean, real-time visibility into partner performance at {Company}, no need to respond. But if you're dealing with:\n\n- Manual data collection from multiple partner systems\n- Broken deal registration process causing channel conflict\n- Incentive and rebate tracking in spreadsheets\n- Limited visibility into which partners are actually driving revenue\n\nWe should connect. The platform supports tens of thousands of partner users with full operational transparency.\n\nHappy to share how we approached this with NetApp or walk through a quick demo.\n\nBest,\n{Your Name}"
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Vendor data in your sales portal",
+        "body": "Hi {{first_name}},\n\nYou could start with one vendor connection that saves your team repeated lookups, then expand from there. CleverCraft can build that connection around your current platforms.\n\nIs there one vendor data source you would most like to bring into your portal?\n\nBest,\n{{sender_name}}\nCleverCraft"
       }
     ]
   },
   {
-    "id": "tier-5-order-management",
-    "tierName": "TIER 5: Order Management / Quote Desk Manager",
+    "id": "campaign-05-vars-operations",
+    "tierName": "CAMPAIGN 05: VARs & Solution Providers - Sales Ops",
     "tierColor": "indigo",
-    "targetPersonas": "Order Management Manager, Quote Desk Manager - when order management is a major bottleneck in the partner experience",
-    "messagingAngle": "Focus on manual order processing burden, error rates, and partners bypassing the system. Lead with team efficiency and accuracy improvements.",
+    "targetPersonas": "Director of Sales Operations; Deal Desk Manager; Quote Desk Manager; Special Pricing Manager; Rebates and Claims Manager",
+    "messagingAngle": "Reconcile vendor deal, pricing and order data with internal sales records. Buying signal: Verified deal-registration or pricing reconciliation work, manual quoting, or sales-system alignment after an acquisition.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Partner order processing at {Company}",
-        "body": "Hi {First Name},\n\nI'm curious - what percentage of partner orders at {Company} flow through your automated system vs. coming in via email, phone calls, or spreadsheets that your team has to manually process?\n\nThe pattern we see: partners find the portal too clunky or limited, so they bypass it and send orders directly to your team. Your order desk spends the entire day keying in orders manually, and error rates stay stubbornly high.\n\nWe help companies like NetApp automate partner order management - from complex configurations to multi-tier structures - so orders flow through the system instead of around it.\n\nWorth a conversation?\n\nBest,\n{Your Name}"
+        "subject": "Vendor pricing and quote delays",
+        "body": "Hi {{first_name}},\n\nWhen a quote depends on vendor deal registration or special pricing, sales teams may need to check several records before they can send it. If the details do not match, the quote can wait while someone resolves the difference.\n\nCleverCraft brings vendor data into existing sales processes. We have built partner-facing systems across four enterprise vendor programs, so we understand the vendor side of those exchanges.\n\nDoes checking vendor information regularly hold up quotes at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "Re: Partner order processing at {Company}",
-        "body": "Hi {First Name},\n\nFollowing up on partner order management.\n\nThe cost of manual order processing: your team's time, high error rates, slow order turnaround, and frustrated partners who expect Amazon-like ordering experiences.\n\nClever Craft handles:\n- Complex product configurations and pricing\n- Multi-tier order structures\n- Automated order validation and routing\n- Full integration with your fulfillment and ERP systems\n\nCurrently processing $5B+ in annual order value with high accuracy rates.\n\nOpen to a brief call to discuss how we could reduce the manual burden on your order desk?\n\nBest,\n{Your Name}"
+        "type": "First Follow Up",
+        "subject": "Re: Vendor pricing and quote delays",
+        "body": "Hi {{first_name}},\n\nReturning to vendor information and quotes. Which needs more attention from your team: confirming pricing, checking deal registration, or matching the details to your own records?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Last note - order processing automation",
-        "body": "Hi {First Name},\n\nFinal follow-up on this.\n\nIf partner orders are flowing smoothly through your systems at {Company}, disregard this. But if you're dealing with:\n\n- Team spending entire day manually processing partner orders\n- High error rates on complex orders or configurations\n- Partners bypassing the system and emailing/calling orders in\n- Limited ability to scale order volume without adding headcount\n\nWe should talk. The platform handles tens of thousands of partner users and complex order structures across multiple enterprise programs.\n\nHappy to share a quick demo or connect you with a reference customer.\n\nBest,\n{Your Name}"
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Vendor pricing and quote delays",
+        "body": "Hi {{first_name}},\n\nA mismatch should not mean checking every record again. We can help bring the relevant vendor details together and flag differences for your team to review.\n\nWould identifying those differences earlier help your quote desk?\n\nBest,\n{{sender_name}}\nCleverCraft"
       }
     ]
   },
   {
-    "id": "tier-6-customer-experience",
-    "tierName": "TIER 6: Director of Customer Experience",
-    "tierColor": "rose",
-    "targetPersonas": "Director of Customer Experience - when partners are treated as customers from an experience standpoint",
-    "messagingAngle": "Focus on partner NPS, churn to competitors, and support burden. Lead with partner satisfaction and self-service improvements.",
+    "id": "campaign-06-manufacturers-digital",
+    "tierName": "CAMPAIGN 06: Equipment Manufacturers - Digital",
+    "tierColor": "blue",
+    "targetPersonas": "Head of Digital; Director of eCommerce; VP Digital Transformation; Head of Dealer Portal; Web Platform Manager",
+    "messagingAngle": "Connect dealer self-service with existing product, pricing and business systems. Buying signal: Dealer portal modernization, CRM or ERP change, or digital channel investment.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Partner experience at {Company}",
-        "body": "Hi {First Name},\n\nQuick question - when you measure partner satisfaction at {Company}, what's the biggest friction point that comes up consistently? Onboarding complexity? Portal usability? Getting support?\n\nThe pattern we see: companies invest heavily in end-customer experience but treat partners like second-class citizens with clunky portals, manual processes, and limited self-service capabilities. Then they wonder why partners are steering deals to competitors.\n\nWe help companies like NetApp deliver consumer-grade partner experiences - easy onboarding, intuitive self-service, automated support - that actually improve partner retention and engagement.\n\nWorth exploring?\n\nBest,\n{Your Name}"
+        "subject": "Dealer self-service at {{company}}",
+        "body": "Hi {{first_name}},\n\nDealers need product details, pricing and order updates to serve their customers. If the portal cannot provide those answers, they may still need to email or call your team.\n\nCleverCraft connects existing systems to support more self-service. Our team has built partner-facing systems across four enterprise technology vendor programs, used by tens of thousands of channel partners. That channel experience is relevant to dealer portals too.\n\nIs expanding dealer self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "Re: Partner experience at {Company}",
-        "body": "Hi {First Name},\n\nFollowing up on partner experience.\n\nThe reality: your partners are comparing their experience with you against what they get from your competitors. If your competitor offers seamless digital experiences while you're still using spreadsheets and manual workflows, you're losing partner mindshare and ultimately revenue.\n\nClever Craft delivers:\n- Consumer-grade partner portal experience\n- Self-service capabilities that reduce support tickets by 60%+\n- Automated onboarding and enablement\n- Real-time visibility into program performance\n\nCurrently supporting tens of thousands of partner users across 4 enterprise programs.\n\nOpen to a brief call to discuss how we could improve partner satisfaction scores at {Company}?\n\nBest,\n{Your Name}"
+        "type": "First Follow Up",
+        "subject": "Re: Dealer self-service at {{company}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on dealer self-service. Is better access to product information, pricing or order updates a priority, or does the portal already cover what dealers need?\n\nBest,\n{{sender_name}}\nCleverCraft"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Last note - partner satisfaction",
-        "body": "Hi {First Name},\n\nFinal follow-up on this topic.\n\nIf partner NPS is strong and partners aren't churning at {Company}, no need to respond. But if you're dealing with:\n\n- Declining partner satisfaction scores\n- Partners complaining about clunky systems and manual processes\n- Support team overwhelmed with basic partner questions\n- Partners steering deals to competitors with better experiences\n\nWe should connect. The platform has processed $5B+ in order value while maintaining high partner satisfaction across complex channel programs.\n\nHappy to share how we approached this with NetApp or discuss your specific partner experience challenges.\n\nBest,\n{Your Name}"
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Dealer self-service at {{company}}",
+        "body": "Hi {{first_name}},\n\nPortal changes can also mean managing content in two places during the transition. At NetApp, CleverCraft automated content migration and synchronization across the old and new partner portals.\n\nWould keeping dealer information current during a portal change be a concern for your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
+      }
+    ]
+  },
+  {
+    "id": "campaign-07-manufacturers-operations",
+    "tierName": "CAMPAIGN 07: Equipment Manufacturers - Sales Ops",
+    "tierColor": "green",
+    "targetPersonas": "Director of Sales Operations; Order Management Manager; Quote Desk Manager; Bid Desk Manager; Configuration Specialist; Sales Administration Manager",
+    "messagingAngle": "Structure dealer configuration requests and quote handoffs before they reach the order system. Buying signal: Verified factory order desk handling custom configurations by email, manual quotes or operational systems change.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Dealer requests before the quote",
+        "body": "Hi {{first_name}},\n\nA dealer's custom configuration request can reach the quote desk before all the options and commercial details are clear. Each clarification adds another exchange before the team can prepare a quote.\n\nCleverCraft helps structure non-standard order requests around existing systems. In enterprise channel environments, our delivered systems have processed $1B in order value annually for five consecutive years.\n\nAre incomplete dealer requests a recurring source of delays at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+      },
+      {
+        "emailNumber": 2,
+        "type": "First Follow Up",
+        "subject": "Re: Dealer requests before the quote",
+        "body": "Hi {{first_name}},\n\nReturning to dealer configuration requests. Is gathering missing information taking much of the quote desk's time, or do requests usually arrive ready for review?\n\nBest,\n{{sender_name}}\nCleverCraft"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Dealer requests before the quote",
+        "body": "Hi {{first_name}},\n\nClearer requests can also protect engineering time. Collecting the required details upfront lets specialists focus on configuration decisions instead of chasing basic information.\n\nWould better information before the technical review help your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
+      }
+    ]
+  },
+  {
+    "id": "campaign-08-private-equity",
+    "tierName": "CAMPAIGN 08: Private Equity & Rollups - Integration",
+    "tierColor": "purple",
+    "targetPersonas": "Integration Director; Head of Digital Transformation; Group CIO; Portfolio Operations Director; Operating Partner with integration responsibility",
+    "messagingAngle": "Connect acquired businesses' data and workflows while core platforms remain in place. Buying signal: Confirmed acquisition or buy-and-build integration mandate. Prioritize the operating group over the fund unless the fund owns execution.",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Connecting systems after {{acquisition_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing {{acquisition_name}}, your integration plan may need the businesses to share information before their ERP and CRM systems are aligned. That can leave teams checking orders, customers or stock in separate places.\n\nCleverCraft builds connections around existing platforms. Our experience includes bringing data structures from four separate enterprise systems together, which is relevant to this kind of work.\n\nIs sharing operational information across the businesses an immediate priority for {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+      },
+      {
+        "emailNumber": 2,
+        "type": "First Follow Up",
+        "subject": "Re: Connecting systems after {{acquisition_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on {{acquisition_name}}. Is the immediate focus connecting information across the businesses or planning a wider system change? That would help me understand whether our approach is relevant.\n\nBest,\n{{sender_name}}\nCleverCraft"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Additional Value Follow Up",
+        "subject": "Re: Connecting systems after {{acquisition_name}}",
+        "body": "Hi {{first_name}},\n\nThe first step could be one shared business need, such as a group view of orders, while local teams keep using their current systems. That gives the integration a focused starting point.\n\nWhich information would be most useful to share first?\n\nBest,\n{{sender_name}}\nCleverCraft"
       }
     ]
   }
