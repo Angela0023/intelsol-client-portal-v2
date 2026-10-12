@@ -132,7 +132,6 @@ export default function DocumentsTabGeneric({
                   <div className="flex items-center space-x-3">
                     <a
                       href={`/api/download-csv?file=${clientId}-database.csv`}
-                      download={`${clientId}-database.csv`}
                       className={`text-lg font-semibold text-slate-900 ${color.text} transition-colors`}
                     >
                       Download Lead Database
