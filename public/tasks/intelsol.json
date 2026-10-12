@@ -431,7 +431,7 @@
     "id": "task_1791302510503_d5d091t",
     "description": "AdSigner - Add leads in another industry (not IT) - ask claude which industry",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-06",
     "order": 9,
     "comments": []
@@ -449,7 +449,7 @@
     "id": "task_1791302571568_pqmbh7e",
     "description": "Shorten sequences for AdSigner",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-06",
     "order": 11,
     "comments": []
