@@ -64,7 +64,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Benefits review at {{company_name}}",
-        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - are you reviewing the wellness/benefits stack?\n\nMost finance companies your size (100-250 people) tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is under 20% and we can't measure impact.\"\n\nWe consolidate that into one platform. 70% engagement rates. Takes 48 hours to launch.\n\nWorth a conversation? Or better to connect me with the right person?\n\n-Matej"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - are you reviewing the wellness/benefits stack?\n\nMost finance companies your size (100-250 people) tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is under 20% and we can't measure impact.\"\n\nWe consolidate that into one platform. 70% engagement rates. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\n-Matej"
       },
       {
         "emailNumber": 2,
@@ -91,7 +91,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Remote culture at {{company_name}}",
-        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - how are you keeping culture and wellbeing consistent?\n\nFinance companies with distributed teams tell us this is the hardest part: building engagement when people aren't in the same office.\n\nZen2Fit solves that. 4,000+ wellness videos (fitness, mental health, nutrition), gamified challenges that get remote teams competing, and a dashboard that shows who's engaged by location.\n\n70% of employees actually use it (vs 12% on typical gym benefits).\n\nWorth a conversation? Or better to connect me with the right person?\n\n-Matej"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - how are you keeping culture and wellbeing consistent?\n\nFinance companies with distributed teams tell us this is the hardest part: building engagement when people aren't in the same office.\n\nZen2Fit solves that. 4,000+ wellness videos (fitness, mental health, nutrition), gamified challenges that get remote teams competing, and a dashboard that shows who's engaged by location.\n\n70% of employees actually use it (vs 12% on typical gym benefits).\n\nIs this something you handle, or can you point me in the right direction?\n\n-Matej"
       },
       {
         "emailNumber": 2,
