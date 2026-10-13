@@ -63,7 +63,7 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Re: Benefits review at {{company_name}}",
+        "subject": "Benefits review at {{company_name}}",
         "body": "Hi {{first_name}},\n\nI saw you recently joined {{company_name}} as {{title}}.\n\nQuick question - are you reviewing the wellness/benefits stack yet?\n\nMost new HR leaders at finance companies your size (100-250 people) tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is under 20% and we can't measure impact.\"\n\nWe consolidate that into one platform. 70% engagement rates. Takes 48 hours to launch.\n\nWorth 15 minutes this week?\n\n-Matej"
       },
       {
