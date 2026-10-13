@@ -118,7 +118,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Employee benefits for 2027",
-        "body": "Hi {{first_name}},\n\nAre you considering any new employee wellbeing benefits for 2027 at {{company_name}}?\n\nAt Zen2Fit, we help companies offer employees personalised fitness, mental wellbeing and nutrition programmes through one platform.\n\nWe're already working with NLB and Carlsberg.\n\nIf this is on your 2027 agenda, would it make sense to send you a short overview?\n\nBest,\nMatej"
+        "body": "Hi {{first_name}},\n\nAre you considering employee wellbeing benefits for 2027 at {{company_name}}?\n\nAt Zen2Fit, we help companies provide employees personalised fitness, mental wellbeing and nutrition programmes through one platform.\n\nWe're already working with NLB and Carlsberg.\n\nIf this is on your 2027 agenda, would it make sense to send you a short overview?\n\nBest,\nMatej"
       },
       {
         "emailNumber": 2,
