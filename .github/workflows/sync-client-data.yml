@@ -248,7 +248,7 @@ jobs:
               filename=$(basename "$file")
               echo "Uploading: $filename"
 
-              if wrangler r2 object put "intelsol-client-data/data/$filename" --file="$file" 2>&1; then
+              if wrangler r2 object put "intelsol-client-data/data/$filename" --file="$file" --remote 2>&1; then
                 echo "✓ Success: $filename"
                 UPLOADED=$((UPLOADED + 1))
               else
