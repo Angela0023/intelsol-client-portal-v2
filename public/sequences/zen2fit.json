@@ -64,19 +64,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Benefits review at {{company_name}}",
-        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - are you reviewing the wellness/benefits stack?\n\nMost finance companies your size (100-250 people) tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is under 20% and we can't measure impact.\"\n\nWe consolidate that into one platform. 70% engagement rates. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\n-Matej"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - are you reviewing the wellness/benefits stack?\n\nMost companies similar to yours tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is low and we can't measure impact.\"\n\nWe consolidate that into one platform used by companies like NLB and Carlsberg. 5x higher engagement than typical gym benefits. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
-        "subject": "Re: Measuring wellness ROI",
-        "body": "{{first_name}},\n\nFollowing up on wellness benefits at {{company_name}}.\n\nHere's what matters in finance: measurable impact.\n\nMost wellness programs fail because you can't prove ROI. You spend, but engagement is invisible.\n\nZen2Fit gives you a GDPR dashboard showing who uses what, by department, weekly. That becomes your retention narrative when you report to the board.\n\nOne finance company in Budapest (180 people) uses it in quarterly HR reports: \"73% of Finance used mental health content in Q1, turnover dropped 15% vs last year.\"\n\nThe data sells itself.\n\nWant to see the dashboard? I can show you theirs (anonymized) in 15 minutes.\n\n-Matej"
+        "subject": "Re: Measuring wellness impact",
+        "body": "{{first_name}},\n\nFollowing up on wellness benefits at {{company_name}}.\n\nMost wellness programs fail because you can't prove impact. You spend, but engagement is invisible.\n\nZen2Fit gives you usage data you can use in your retention reports.\n\nWant to see how it works?\n\n-Matej"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-Up",
-        "subject": "Re: Quick win for Q1",
-        "body": "Last note, {{first_name}}.\n\nYou're building your benefits stack right now. This is the moment to get it right.\n\nZen2Fit launches in 48 hours. No vendor meetings, no training, no implementation project.\n\nWe send the invite. Employees use it. You check the dashboard in week 1.\n\nOne finance company (similar size, Hungary) launched it in their first 90 days. It became their #1 employer brand differentiator in recruiting pitches.\n\nIf you want a quick win before Q2, let's talk this week.\n\n-Matej"
+        "subject": "Re: 2027 benefits",
+        "body": "Hi {{first_name}},\n\nLast note from me.\n\nIf wellbeing benefits are on your 2027 agenda, Zen2Fit brings personalised fitness, mental wellbeing and nutrition together in one platform.\n\nWould a short overview help you assess whether it fits your team? If it's not a priority, no problem.\n\nBest,\nMatej"
       }
     ]
   },
@@ -91,19 +91,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Remote culture at {{company_name}}",
-        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - how are you keeping culture and wellbeing consistent?\n\nFinance companies with distributed teams tell us this is the hardest part: building engagement when people aren't in the same office.\n\nZen2Fit solves that. 4,000+ wellness videos (fitness, mental health, nutrition), gamified challenges that get remote teams competing, and a dashboard that shows who's engaged by location.\n\n70% of employees actually use it (vs 12% on typical gym benefits).\n\nIs this something you handle, or can you point me in the right direction?\n\n-Matej"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - how are you keeping culture and wellbeing consistent?\n\nMost companies similar to yours tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is low and we can't measure impact.\"\n\nWe consolidate that into one platform used by companies like NLB and Carlsberg. 5x higher engagement than typical gym benefits. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
         "subject": "Re: Culture differentiation",
-        "body": "{{first_name}},\n\nFollowing up on culture at {{company_name}}.\n\nHere's what finance companies struggle with: standing out as an employer.\n\nYou're competing with other finance firms for the same talent pool. Salary is table stakes. Benefits differentiate.\n\nZen2Fit becomes your employer brand story: \"We offer 4,000+ wellness videos, mental health support, gamified challenges. Here's our engagement data (73% active usage).\"\n\nThat's what one finance company in Hungary uses in recruiting pitches. They went from \"we offer standard benefits\" to \"we invest in our people, and here's proof.\"\n\nWant to see how they position it? I can show you in 15 minutes.\n\n-Matej"
+        "body": "{{first_name}},\n\nFollowing up on culture at {{company_name}}.\n\nMost wellness programs fail because you can't prove impact. You spend, but engagement is invisible.\n\nZen2Fit gives you usage data showing who's engaged and what they're using. That becomes your employer brand story.\n\nWant to see how it works?\n\n-Matej"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-Up",
-        "subject": "Re: Low-lift launch",
-        "body": "Last note, {{first_name}}.\n\nIf employer brand is on your radar for 2026, this is the easiest lift.\n\nNo vendor meetings. No training. No ongoing admin.\n\nWe onboard your team in one email. They start using it immediately. You check the dashboard and see who's engaged.\n\nOne finance company (150 people, Budapest) launched it on a Monday, had 65% adoption by Friday.\n\nIf you want to show your team you're invested in them without the HR overhead, let's talk this week.\n\n-Matej"
+        "subject": "Re: 2027 benefits",
+        "body": "Hi {{first_name}},\n\nLast note from me.\n\nIf wellbeing benefits are on your 2027 agenda, Zen2Fit brings personalised fitness, mental wellbeing and nutrition together in one platform.\n\nWould a short overview help you assess whether it fits your team? If it's not a priority, no problem.\n\nBest,\nMatej"
       }
     ]
   },
@@ -117,20 +117,20 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Re: Burnout in finance teams",
-        "body": "Hi {{first_name}},\n\nQuick question for you.\n\nHow are you handling burnout and mental health in your finance teams?\n\nWe work with finance companies your size (100-250 people), and the pattern is consistent: high-stress environment, long hours, retention challenges with high-performers.\n\nMost try gym benefits or mental health apps. Adoption is under 20% because employees don't have time or don't see it as relevant.\n\nZen2Fit is built differently. 4,000+ videos (10-30 min sessions), mental health content, nutrition guidance, gamified challenges. Takes 10 minutes a day.\n\n70% engagement rates vs 12% on gym benefits.\n\nWorth exploring?\n\n-Matej\n\n---\nNOTE FOR TIER 3: No personalization/bridge sentences needed since there's no specific trigger. This is the baseline approach for companies that fit ICP but have no urgency signal."
+        "subject": "Re: Employee benefits for 2027",
+        "body": "Hi {{first_name}},\n\nAre you considering any new employee wellbeing benefits for 2027 at {{company_name}}?\n\nAt Zen2Fit, we help companies offer employees personalised fitness, mental wellbeing and nutrition programmes through one platform.\n\nWe're already working with NLB and Carlsberg.\n\nIf this is on your 2027 agenda, would it make sense to send you a short overview?\n\nBest,\nMatej"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
-        "subject": "Re: Retention cost",
-        "body": "{{first_name}},\n\nFollowing up on burnout at {{company_name}}.\n\nHere's the math that matters in finance: retention cost.\n\nLosing one mid-level analyst costs 6-9 months salary in replacement + productivity loss. Most finance companies lose 15-20% of staff annually.\n\nZen2Fit reduces that. Companies using it see 10-15% turnover reduction because employees feel the company invests in them beyond salary.\n\nOne finance firm (similar size, Hungary) prevented 3 exits last year. Employees cited wellness program as a key reason they stayed.\n\nThe annual license cost is less than one prevented exit.\n\nWant to see the ROI breakdown? I can show you in 15 minutes.\n\n-Matej"
+        "subject": "Re: Employee benefits for 2027",
+        "body": "Hi {{first_name}},\n\nJust following up on my email below about employee wellbeing benefits for 2027.\n\nIs this something you're considering at {{company_name}}? Happy to send a short Zen2Fit overview if useful.\n\nBest,\nMatej"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-Up",
-        "subject": "Re: 2026 benefits strategy",
-        "body": "Last note, {{first_name}}.\n\nIf retention is on your radar for 2026, Zen2Fit is worth a look.\n\nNo long implementation. No vendor drama. No ongoing admin.\n\nYou launch it, announce it to your team, and it runs itself.\n\nOne finance company (160 people, Budapest) uses it as their #1 recruiting differentiator. \"We offer comprehensive wellness - here's what our team actually uses.\"\n\nIf you want to show your team you're invested in them, let's talk this week.\n\nOtherwise, I'll close the loop. Thanks for your time.\n\n-Matej"
+        "subject": "Re: Employee benefits for 2027",
+        "body": "Hi {{first_name}},\n\nIf wellbeing benefits are on your 2027 agenda, Zen2Fit brings personalised fitness, mental wellbeing and nutrition together in one platform.\n\nWould a short overview help you assess whether it fits your team? If it's not a priority, no problem.\n\nBest,\nMatej"
       }
     ]
   }
