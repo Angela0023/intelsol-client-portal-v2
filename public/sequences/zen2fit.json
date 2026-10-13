@@ -63,8 +63,8 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Benefits review at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI saw you recently joined {{company_name}} as {{title}}.\n\nQuick question - are you reviewing the wellness/benefits stack yet?\n\nMost new HR leaders at finance companies your size (100-250 people) tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is under 20% and we can't measure impact.\"\n\nWe consolidate that into one platform. 70% engagement rates. Takes 48 hours to launch.\n\nWorth 15 minutes this week?\n\n-Matej"
+        "subject": "Re: Benefits review at {{company_name}}",
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - are you reviewing the wellness/benefits stack?\n\nMost finance companies your size (100-250 people) tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is under 20% and we can't measure impact.\"\n\nWe consolidate that into one platform. 70% engagement rates. Takes 48 hours to launch.\n\nWorth 15 minutes this week?\n\n-Matej"
       },
       {
         "emailNumber": 2,
@@ -91,7 +91,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Remote culture at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} is running a hybrid/remote setup.\n\nQuick question - how are you keeping culture and wellbeing consistent across locations?\n\nFinance companies with distributed teams tell us this is the hardest part: building engagement when people aren't in the same office.\n\nZen2Fit solves that. 4,000+ wellness videos (fitness, mental health, nutrition), gamified challenges that get remote teams competing, and a dashboard that shows who's engaged by location.\n\n70% of employees actually use it (vs 12% on typical gym benefits).\n\nWorth 15 minutes to see if it fits?\n\n-Matej"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - how are you keeping culture and wellbeing consistent?\n\nFinance companies with distributed teams tell us this is the hardest part: building engagement when people aren't in the same office.\n\nZen2Fit solves that. 4,000+ wellness videos (fitness, mental health, nutrition), gamified challenges that get remote teams competing, and a dashboard that shows who's engaged by location.\n\n70% of employees actually use it (vs 12% on typical gym benefits).\n\nWorth 15 minutes to see if it fits?\n\n-Matej"
       },
       {
         "emailNumber": 2,
@@ -118,7 +118,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Burnout in finance teams",
-        "body": "Hi {{first_name}},\n\nQuick question for you.\n\nHow are you handling burnout and mental health in your finance teams?\n\nWe work with finance companies your size (100-250 people), and the pattern is consistent: high-stress environment, long hours, retention challenges with high-performers.\n\nMost try gym benefits or mental health apps. Adoption is under 20% because employees don't have time or don't see it as relevant.\n\nZen2Fit is built differently. 4,000+ videos (10-30 min sessions), mental health content, nutrition guidance, gamified challenges. Takes 10 minutes a day.\n\n70% engagement rates vs 12% on gym benefits.\n\nWorth exploring?\n\n-Matej"
+        "body": "Hi {{first_name}},\n\nQuick question for you.\n\nHow are you handling burnout and mental health in your finance teams?\n\nWe work with finance companies your size (100-250 people), and the pattern is consistent: high-stress environment, long hours, retention challenges with high-performers.\n\nMost try gym benefits or mental health apps. Adoption is under 20% because employees don't have time or don't see it as relevant.\n\nZen2Fit is built differently. 4,000+ videos (10-30 min sessions), mental health content, nutrition guidance, gamified challenges. Takes 10 minutes a day.\n\n70% engagement rates vs 12% on gym benefits.\n\nWorth exploring?\n\n-Matej\n\n---\nNOTE FOR TIER 3: No personalization/bridge sentences needed since there's no specific trigger. This is the baseline approach for companies that fit ICP but have no urgency signal."
       },
       {
         "emailNumber": 2,
