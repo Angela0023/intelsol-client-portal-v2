@@ -438,9 +438,9 @@
   },
   {
     "id": "task_1791302543314_r7pw595",
-    "description": "Zen2Fit - Add leads in Finances and Insurance (Hungary & Poland)",
+    "description": "Zen2Fit - Add leads in Finances Hungary",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-07",
     "order": 10,
     "comments": []
@@ -458,7 +458,7 @@
     "id": "task_1791302590230_9rxz4lx",
     "description": "Shorten sequences for Zen2Fit",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-07",
     "order": 12,
     "comments": []
@@ -479,6 +479,33 @@
     "status": "pending",
     "dueDate": "2026-10-13",
     "order": 14,
+    "comments": []
+  },
+  {
+    "id": "task_1791922007166_8nur03r",
+    "description": "Zen2Fit - Add leads in Finances Poland",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-19",
+    "order": 15,
+    "comments": []
+  },
+  {
+    "id": "task_1791922030941_0r3aa63",
+    "description": "Zen2Fit - Add leads in Insurance Hungary",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-19",
+    "order": 16,
+    "comments": []
+  },
+  {
+    "id": "task_1791922042128_ke615mz",
+    "description": "Zen2Fit - Add leads in Insurance Poland",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-19",
+    "order": 17,
     "comments": []
   }
 ]
