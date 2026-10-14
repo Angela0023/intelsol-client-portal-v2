@@ -5,14 +5,16 @@ interface ContentSectionProps {
   title: string;
   children: React.ReactNode;
   icon?: React.ReactNode;
+  headerExtra?: React.ReactNode;
 }
 
-export function ContentSection({ title, children, icon }: ContentSectionProps) {
+export function ContentSection({ title, children, icon, headerExtra }: ContentSectionProps) {
   return (
     <div className="bg-white rounded-lg border border-slate-200 px-3 py-4 lg:p-6 shadow-sm">
       <div className="flex items-center space-x-2 mb-3 lg:mb-4">
         {icon && <div className="text-[#1a2647]">{icon}</div>}
         <h3 className="text-base lg:text-lg font-semibold text-slate-900">{title}</h3>
+        {headerExtra}
       </div>
       <div className="text-slate-700">{children}</div>
     </div>

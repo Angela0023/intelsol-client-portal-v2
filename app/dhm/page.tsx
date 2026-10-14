@@ -92,6 +92,7 @@ export default function DHMPage() {
                 onStatusChange={handleStatusChange}
                 size="sm"
               />
+              <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
             </div>
           </div>
           <p className="text-sm lg:text-base text-gray-600 mb-2">Digital HACCP & Food Safety Software (Slovenia/Croatia)</p>

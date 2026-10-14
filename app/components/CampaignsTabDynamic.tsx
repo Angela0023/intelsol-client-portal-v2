@@ -36,10 +36,48 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  // Watch for database updates
+  useEffect(() => {
+    // Check for timestamp on mount
+    const storedTimestamp = localStorage.getItem(`intelsol_db_updated_${clientId}`);
+    if (storedTimestamp) {
+      setLastUpdated(formatTimestamp(storedTimestamp));
+    }
+
+    // Poll for changes every 5 seconds
+    const interval = setInterval(() => {
+      const currentTimestamp = localStorage.getItem(`intelsol_db_updated_${clientId}`);
+      if (currentTimestamp && currentTimestamp !== lastUpdated) {
+        setLastUpdated(formatTimestamp(currentTimestamp));
+        setRefreshKey(prev => prev + 1); // Trigger data reload
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [clientId, lastUpdated]);
+
+  // Format timestamp as "14/Oct/26 at 16:23 CEST"
+  const formatTimestamp = (isoString: string): string => {
+    const date = new Date(isoString);
+    const day = date.getDate();
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = months[date.getMonth()];
+    const year = date.getFullYear().toString().slice(-2);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    return `${day}/${month}/${year} at ${hours}:${minutes} CEST`;
+  };
 
   // Fetch campaigns from JSON file
   useEffect(() => {
-    fetch(`/campaigns/${clientId}.json`)
+    setLoading(true);
+    setError(null);
+
+    fetch(`/campaigns/${clientId}.json?t=${Date.now()}`) // Cache busting
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch campaigns');
         return res.json();
@@ -53,7 +91,7 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
         setError('Failed to load campaigns');
         setLoading(false);
       });
-  }, [clientId]);
+  }, [clientId, refreshKey]);
 
   const totalLeads = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
   const totalCampaigns = campaigns.length;
@@ -122,7 +160,15 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
         </div>
       </ContentSection>
 
-      <ContentSection title="Campaign Details" icon={<Zap className="w-5 h-5" />}>
+      <ContentSection
+        title="Campaign Details"
+        icon={<Zap className="w-5 h-5" />}
+        headerExtra={lastUpdated ? (
+          <span className="text-xs text-slate-400 font-normal ml-3">
+            Last updated: {lastUpdated}
+          </span>
+        ) : null}
+      >
         {/* Mobile: Card Layout - Scrollable */}
         <div className="lg:hidden max-h-[500px] overflow-y-auto pr-2">
           <div className="space-y-3">

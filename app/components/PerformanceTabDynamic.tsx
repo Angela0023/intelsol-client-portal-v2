@@ -36,10 +36,48 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  // Watch for database updates
+  useEffect(() => {
+    // Check for timestamp on mount
+    const storedTimestamp = localStorage.getItem(`intelsol_db_updated_${clientId}`);
+    if (storedTimestamp) {
+      setLastUpdated(formatTimestamp(storedTimestamp));
+    }
+
+    // Poll for changes every 5 seconds
+    const interval = setInterval(() => {
+      const currentTimestamp = localStorage.getItem(`intelsol_db_updated_${clientId}`);
+      if (currentTimestamp && currentTimestamp !== lastUpdated) {
+        setLastUpdated(formatTimestamp(currentTimestamp));
+        setRefreshKey(prev => prev + 1); // Trigger data reload
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [clientId, lastUpdated]);
+
+  // Format timestamp as "14/Oct/26 at 16:23 CEST"
+  const formatTimestamp = (isoString: string): string => {
+    const date = new Date(isoString);
+    const day = date.getDate();
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = months[date.getMonth()];
+    const year = date.getFullYear().toString().slice(-2);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    return `${day}/${month}/${year} at ${hours}:${minutes} CEST`;
+  };
 
   // Fetch campaigns from JSON file
   useEffect(() => {
-    fetch(`/campaigns/${clientId}.json`)
+    setLoading(true);
+    setError(null);
+
+    fetch(`/campaigns/${clientId}.json?t=${Date.now()}`) // Cache busting
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch campaigns');
         return res.json();
@@ -53,7 +91,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
         setError('Failed to load performance data');
         setLoading(false);
       });
-  }, [clientId]);
+  }, [clientId, refreshKey]);
 
   if (loading) {
     return (
@@ -117,7 +155,15 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
 
   return (
     <>
-      <ContentSection title="Overall Performance" icon={<TrendingUp className="w-5 h-5" />}>
+      <ContentSection
+        title="Overall Performance"
+        icon={<TrendingUp className="w-5 h-5" />}
+        headerExtra={lastUpdated ? (
+          <span className="text-xs text-slate-400 font-normal ml-3">
+            Last updated: {lastUpdated}
+          </span>
+        ) : null}
+      >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4">
           {/* Total Leads */}
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 p-3 lg:p-4 shadow-sm">
