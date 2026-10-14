@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ContentSection } from './ContentSection';
 import FileUpload from './FileUpload';
 import FileList from './FileList';
@@ -14,16 +14,61 @@ interface DocumentsTabGenericProps {
   accentColor?: string; // e.g., 'violet', 'green', 'blue'
 }
 
+interface Campaign {
+  campaignName: string;
+  totalLeads: number;
+  status?: string;
+}
+
 export default function DocumentsTabGeneric({
   clientId,
   clientName,
-  totalLeads = 0,
-  totalCampaigns = 0,
+  totalLeads: propsLeads,
+  totalCampaigns: propsCampaigns,
   accentColor = 'violet'
 }: DocumentsTabGenericProps) {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [syncing, setSyncing] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+  const [totalLeads, setTotalLeads] = useState(propsLeads || 0);
+  const [totalCampaigns, setTotalCampaigns] = useState(propsCampaigns || 0);
+
+  // Load campaign data and last updated timestamp
+  useEffect(() => {
+    // Load last updated timestamp from localStorage
+    const storedTimestamp = localStorage.getItem(`intelsol_db_updated_${clientId}`);
+    if (storedTimestamp) {
+      setLastUpdated(formatTimestamp(storedTimestamp));
+    }
+
+    // Fetch campaign data to get totals
+    fetch(`/campaigns/${clientId}.json`)
+      .then(res => res.json())
+      .then((data: Campaign[]) => {
+        const leadsSum = data.reduce((sum, c) => sum + c.totalLeads, 0);
+        setTotalLeads(leadsSum);
+        setTotalCampaigns(data.length);
+      })
+      .catch(err => {
+        console.error('Error loading campaign data:', err);
+        // Keep using props values on error
+        if (propsLeads) setTotalLeads(propsLeads);
+        if (propsCampaigns) setTotalCampaigns(propsCampaigns);
+      });
+  }, [clientId, propsLeads, propsCampaigns]);
+
+  // Format timestamp as "14/Oct/26 at 16:23 CEST"
+  const formatTimestamp = (isoString: string): string => {
+    const date = new Date(isoString);
+    const day = date.getDate();
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = months[date.getMonth()];
+    const year = date.getFullYear().toString().slice(-2);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    return `${day}/${month}/${year} at ${hours}:${minutes} CEST`;
+  };
 
   const handleUploadComplete = () => {
     setRefreshTrigger(prev => prev + 1);
@@ -39,6 +84,12 @@ export default function DocumentsTabGeneric({
 
       if (response.ok) {
         const data = await response.json();
+
+        // Store the current timestamp
+        const now = new Date().toISOString();
+        localStorage.setItem(`intelsol_db_updated_${clientId}`, now);
+        setLastUpdated(formatTimestamp(now));
+
         alert(`${clientName} sync started successfully!\n\nThe database and performance stats are now updating. This process takes 3-5 minutes.\n\nPlease refresh the page in a few minutes to see the updated data.`);
       } else {
         const error = await response.json();
@@ -111,7 +162,7 @@ export default function DocumentsTabGeneric({
           </p>
 
           <div className={`bg-white border border-slate-200 rounded-lg p-6 ${color.hover} transition-colors`}>
-            <div className="flex items-center justify-between group">
+            <div className="flex items-start justify-between group">
               <div className="flex items-center space-x-4 flex-1">
                 <div className={`w-12 h-12 ${color.bg} rounded-lg flex items-center justify-center flex-shrink-0`}>
                   <svg
@@ -140,34 +191,36 @@ export default function DocumentsTabGeneric({
                   <p className="text-sm text-slate-500 mt-1">
                     CSV file {totalLeads > 0 && `• ${totalLeads.toLocaleString()} leads`} {totalCampaigns > 0 && `across ${totalCampaigns} campaigns`}
                   </p>
-                  {lastUpdated && (
-                    <p className="text-xs text-slate-400 mt-1">Last updated: {lastUpdated}</p>
-                  )}
                 </div>
               </div>
 
-              <button
-                onClick={handleUpdateDatabase}
-                disabled={syncing}
-                className={`ml-4 px-4 py-2 ${color.button} text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2`}
-              >
-                {syncing ? (
-                  <>
-                    <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <span>Syncing...</span>
-                  </>
-                ) : (
-                  <>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Update Database</span>
-                  </>
+              <div className="ml-4 flex flex-col items-end gap-2">
+                <button
+                  onClick={handleUpdateDatabase}
+                  disabled={syncing}
+                  className={`px-4 py-2 ${color.button} text-white rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2`}
+                >
+                  {syncing ? (
+                    <>
+                      <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      <span>Syncing...</span>
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                      <span>Update Database</span>
+                    </>
+                  )}
+                </button>
+                {lastUpdated && (
+                  <p className="text-xs text-slate-400">Last updated: {lastUpdated}</p>
                 )}
-              </button>
+              </div>
             </div>
           </div>
 
