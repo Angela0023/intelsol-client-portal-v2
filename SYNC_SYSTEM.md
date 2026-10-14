@@ -398,7 +398,7 @@ git push
 ### For Developers (Checking Workflow Status)
 
 **Check workflow runs:**
-https://github.com/Angela0023/intelsol-client-portal/actions
+https://github.com/Angela0023/intelsol-client-portal-v2/actions
 
 **Check specific workflow run:**
 1. Click on the workflow run

@@ -240,7 +240,7 @@ async function updateGitHubFile(
   filePath: string,
   content: string,
   githubToken: string,
-  repo: string = 'Angela0023/intelsol-client-portal',
+  repo: string = 'Angela0023/intelsol-client-portal-v2',
   branch: string = 'main'
 ): Promise<void> {
   const url = `https://api.github.com/repos/${repo}/contents/${filePath}`;

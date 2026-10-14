@@ -82,7 +82,7 @@ After adding the environment variable, trigger a new deployment:
 6. File should appear in the list!
 
 **Verify on GitHub:**
-- Go to: https://github.com/Angela0023/intelsol-client-portal/tree/main/public/uploads/tslab
+- Go to: https://github.com/Angela0023/intelsol-client-portal-v2/tree/main/public/uploads/tslab
 - You should see your uploaded file!
 
 ---
@@ -314,7 +314,7 @@ Done!
 ### Checking Uploaded Files
 
 **Via GitHub:**
-- Go to: https://github.com/Angela0023/intelsol-client-portal/tree/main/public/uploads
+- Go to: https://github.com/Angela0023/intelsol-client-portal-v2/tree/main/public/uploads
 - Browse by client folder
 
 **Via Git:**
