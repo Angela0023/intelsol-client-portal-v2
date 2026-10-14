@@ -7,7 +7,7 @@ import TasksTab, { TSLAB_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
-import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
+import CampaignsTabContent from './CampaignsTabContent';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
@@ -484,7 +484,7 @@ function CampaignsSequencesTab() {
     <>
       <SequencesTab clientId="selekcija" />
       <div className="mt-8">
-        <CampaignsTabGeneric />
+        <CampaignsTabContent />
       </div>
     </>
   );
