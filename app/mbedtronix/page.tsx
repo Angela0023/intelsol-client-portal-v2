@@ -9,6 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, Layers, CheckSquare, BarChart3, Zap, Mail, FolderOpen, Cpu } from 'lucide-react';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 
@@ -135,6 +137,7 @@ export default function MbedtronixPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">MBEDTRONIX</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('mbedtronix')} size="md" />
               </div>
               <p className="text-slate-600">Nearshore Embedded & Electronics Development Partner</p>
             </div>

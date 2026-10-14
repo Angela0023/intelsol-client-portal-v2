@@ -9,6 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import { FileText, BarChart3, CheckSquare, Mail, AlertTriangle, Target, Users, MessageSquare, Zap } from 'lucide-react';
 
 const tabs = [
@@ -75,6 +77,7 @@ export default function WulfPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">WULF Arts</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('wulf')} size="md" />
               </div>
               <p className="text-slate-600">Real-Time 3D Production Studio — White-Label 3D Asset Pipeline</p>
             </div>

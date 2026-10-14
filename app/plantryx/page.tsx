@@ -8,6 +8,8 @@ import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail, Award, MapPin, Building2, Briefcase, Gift, CheckCircle } from 'lucide-react';
@@ -107,6 +109,7 @@ export default function PlantryxPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Plantryx</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('plantryx')} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">AI-Native Demand Forecasting & Supply Planning (EU Manufacturing)</p>
             </div>

@@ -8,6 +8,8 @@ import StatusBadge, {
   DEFAULT_STATUSES,
   type ClientStatus,
 } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import { Building2, Users, Target, TrendingUp, CheckSquare, Square, User, Calendar } from 'lucide-react';
 import Link from 'next/link';
 

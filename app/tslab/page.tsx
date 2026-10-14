@@ -9,6 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail } from 'lucide-react';
 
@@ -104,6 +106,7 @@ export default function TSLabPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">TS Lab</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('tslab')} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">Food Supplement Capsule Manufacturing (Slovenia)</p>
             </div>

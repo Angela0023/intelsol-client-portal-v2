@@ -10,6 +10,8 @@ import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import TasksTab from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import { FileText, Target, Filter, Code, Zap, BarChart3, FolderOpen, CheckSquare, Users, TrendingUp, Mail } from 'lucide-react';
 
 const tabs = [
@@ -82,6 +84,7 @@ export default function MoreFromFoodPage() {
               <div className="flex items-center gap-2 lg:gap-3 flex-wrap">
                 <h1 className="text-xl lg:text-2xl font-bold text-gray-900">MoreFromFood</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} />
+                <AssigneeBadge assignee={getClientAssignee('morefromfood')} size="md" />
               </div>
               <p className="text-xs lg:text-sm text-gray-600 mt-1">
                 HACCP & Quality Control Software (Austria)

@@ -11,6 +11,8 @@ import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import ClientsTab from '../components/ClientsTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import { FileText, BarChart3, CheckSquare, TrendingUp, Target, Filter, Code, Users, BookOpen, Mail, Zap, FolderOpen } from 'lucide-react';
 
 const tabs = [
@@ -106,6 +108,7 @@ export default function IntelsolPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">Intelsol</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('intelsol')} size="md" />
               </div>
               <p className="text-slate-600">B2B Lead Generation Agency — Cold Email Campaigns for Intelsol Services</p>
             </div>

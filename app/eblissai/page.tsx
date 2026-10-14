@@ -10,6 +10,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import TasksTab from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge from '../components/AssigneeBadge';
 import {
   FileText,
   Target,
@@ -117,6 +119,7 @@ export default function EblissAIPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">eBlissAI</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('eblissai')} size="md" />
               </div>
               <p className="text-slate-600">AI-Native Autonomous IT Operations Platform</p>
             </div>

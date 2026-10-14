@@ -3,6 +3,8 @@
 
 export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'birografika' | 'bmevents' | 'prtronic' | 'dhm' | 'morefromfood' | 'selekcija' | 'intera' | 'demo';
 
+export type Assignee = 'Frosina' | 'Matej' | 'Filip';
+
 export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   admin: 'Portal.Master.24', // Matej + team access
   xpose: 'Beauty.Leads.47',
@@ -30,6 +32,33 @@ export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   demo: 'demo2026', // Demo dashboard for presentations
 };
 
+export const CLIENT_ASSIGNEES: Record<ClientAccess, Assignee | null> = {
+  admin: null,
+  xpose: 'Frosina',
+  tslab: 'Matej',
+  beeit: 'Filip',
+  intelsol: 'Matej',
+  wulf: 'Frosina',
+  peoplefocus: 'Filip',
+  plantryx: 'Matej',
+  adsigner: 'Frosina',
+  mountaindrop: 'Filip',
+  eblissai: 'Matej',
+  zen2fit: 'Frosina',
+  panorate: 'Filip',
+  mbedtronix: 'Matej',
+  clevercraft: 'Frosina',
+  stojkov: 'Filip',
+  birografika: 'Matej',
+  bmevents: 'Frosina',
+  prtronic: 'Filip',
+  dhm: 'Matej',
+  morefromfood: 'Frosina',
+  selekcija: 'Filip',
+  intera: 'Matej',
+  demo: null,
+};
+
 export function validateAccess(client: ClientAccess, password: string): boolean {
   return CLIENT_PASSWORDS[client] === password;
 }
@@ -53,4 +82,8 @@ export function getAllowedClients(password: string): ClientAccess[] {
   });
 
   return allowed;
+}
+
+export function getClientAssignee(clientId: ClientAccess): Assignee | null {
+  return CLIENT_ASSIGNEES[clientId];
 }

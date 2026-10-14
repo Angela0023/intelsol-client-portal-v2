@@ -10,6 +10,8 @@ import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee } from '../../lib/auth';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertCircle } from 'lucide-react';
 
 const tabs = [
@@ -135,6 +137,7 @@ export default function Zen2FitPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Zen2Fit</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                <AssigneeBadge assignee={getClientAssignee('zen2fit')} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">Corporate Wellness SaaS Platform</p>
             </div>
