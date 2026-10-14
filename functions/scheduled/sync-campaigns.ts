@@ -331,10 +331,27 @@ export default {
     console.log(`Scheduled time: ${new Date(event.scheduledTime).toISOString()}`);
 
     try {
-      // Fetch all campaigns from Smartlead
+      // Fetch ALL campaigns from Smartlead (including DRAFT, ACTIVE, COMPLETED, etc.)
       console.log('📋 Fetching all campaigns from Smartlead...');
-      const campaigns: Campaign[] = await fetchSmartlead('/campaigns/', env.SMARTLEAD_API_KEY);
-      console.log(`✅ Fetched ${campaigns.length} total campaigns`);
+
+      // Fetch campaigns with all statuses
+      const allCampaigns: Campaign[] = [];
+      const statuses = ['ACTIVE', 'DRAFT', 'COMPLETED', 'PAUSED', 'STOPPED'];
+
+      for (const status of statuses) {
+        try {
+          const campaigns: Campaign[] = await fetchSmartlead(`/campaigns?status=${status}`, env.SMARTLEAD_API_KEY);
+          if (campaigns && campaigns.length > 0) {
+            allCampaigns.push(...campaigns);
+            console.log(`  Found ${campaigns.length} ${status} campaigns`);
+          }
+        } catch (error) {
+          console.log(`  No ${status} campaigns or error fetching:`, error);
+        }
+      }
+
+      const campaigns = allCampaigns;
+      console.log(`✅ Fetched ${campaigns.length} total campaigns across all statuses`);
 
       // Process campaigns for each client
       const clients = Object.keys(CLIENT_NAMES);

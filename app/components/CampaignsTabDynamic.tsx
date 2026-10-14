@@ -38,6 +38,7 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
 
   // Watch for database updates
   useEffect(() => {
@@ -74,7 +75,10 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
 
   // Fetch campaigns from JSON file
   useEffect(() => {
-    setLoading(true);
+    // Only show loading spinner on initial load, not on auto-refresh
+    if (isFirstLoad) {
+      setLoading(true);
+    }
     setError(null);
 
     fetch(`/campaigns/${clientId}.json?t=${Date.now()}`) // Cache busting
@@ -85,13 +89,15 @@ export default function CampaignsTabDynamic({ clientId }: CampaignsTabDynamicPro
       .then(data => {
         setCampaigns(data);
         setLoading(false);
+        setIsFirstLoad(false);
       })
       .catch(err => {
         console.error('Error loading campaigns:', err);
         setError('Failed to load campaigns');
         setLoading(false);
+        setIsFirstLoad(false);
       });
-  }, [clientId, refreshKey]);
+  }, [clientId, refreshKey, isFirstLoad]);
 
   const totalLeads = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
   const totalCampaigns = campaigns.length;
