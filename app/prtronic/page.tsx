@@ -97,6 +97,7 @@ export default function PRTronicPage() {
               <div className="flex items-center gap-2 lg:gap-3 flex-wrap">
                 <h1 className="text-xl lg:text-2xl font-bold text-gray-900">PRTronic</h1>
                 <StatusBadge clientId="prtronic" status={status} onStatusChange={handleStatusChange} />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-xs lg:text-sm text-gray-600 mt-1">
                 Display Hardware & Integration Solutions (DACH Region)
