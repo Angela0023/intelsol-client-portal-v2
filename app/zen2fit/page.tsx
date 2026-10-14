@@ -144,7 +144,7 @@ export default function Zen2FitPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Zen2Fit</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">Corporate Wellness SaaS Platform</p>
             </div>

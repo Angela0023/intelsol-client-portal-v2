@@ -124,7 +124,7 @@ export default function ClevercraftPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">Clever Craft</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
               </div>
               <p className="text-slate-600">Partner Experience Orchestration Platform</p>
             </div>

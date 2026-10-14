@@ -144,7 +144,7 @@ export default function MbedtronixPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">MBEDTRONIX</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
               </div>
               <p className="text-slate-600">Nearshore Embedded & Electronics Development Partner</p>
             </div>

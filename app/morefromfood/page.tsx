@@ -90,7 +90,7 @@ export default function MoreFromFoodPage() {
               <div className="flex items-center gap-2 lg:gap-3 flex-wrap">
                 <h1 className="text-xl lg:text-2xl font-bold text-gray-900">MoreFromFood</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} />
-                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
               </div>
               <p className="text-xs lg:text-sm text-gray-600 mt-1">
                 HACCP & Quality Control Software (Austria)

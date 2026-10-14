@@ -25,10 +25,22 @@ export default function WulfPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Onboarding');
   const [assignee, setAssignee] = useState<Assignee | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('wulf', DEFAULT_STATUSES.wulf));
     setAssignee(getStoredAssignee('wulf', getClientAssignee('wulf')));
+
+    // Check if user is admin
+    const access = sessionStorage.getItem('clientAccess');
+    if (access) {
+      try {
+        const accessList = JSON.parse(access);
+        setIsAdmin(accessList.includes('admin'));
+      } catch (e) {
+        console.error('Failed to parse clientAccess:', e);
+      }
+    }
 
     // Read initial tab from URL pathname
     const path = window.location.pathname;
@@ -84,7 +96,7 @@ export default function WulfPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">WULF Arts</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
               </div>
               <p className="text-slate-600">Real-Time 3D Production Studio — White-Label 3D Asset Pipeline</p>
             </div>
