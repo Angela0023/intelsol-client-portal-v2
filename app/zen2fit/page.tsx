@@ -10,8 +10,8 @@ import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import AssigneeBadge from '../components/AssigneeBadge';
-import { getClientAssignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertCircle } from 'lucide-react';
 
 const tabs = [
@@ -42,6 +42,7 @@ interface Campaign {
 export default function Zen2FitPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [campaigns, setCampaigns] = useState<Campaign[]>([]);
   const [totalLeads, setTotalLeads] = useState(0);
@@ -49,6 +50,7 @@ export default function Zen2FitPage() {
 
   useEffect(() => {
     setStatus(getClientStatus('zen2fit', DEFAULT_STATUSES.zen2fit));
+    setAssignee(getStoredAssignee('zen2fit', getClientAssignee('zen2fit')));
 
     // Fetch campaigns data
     fetch('/campaigns/zen2fit.json')
@@ -111,6 +113,11 @@ export default function Zen2FitPage() {
     setClientStatus('zen2fit', newStatus);
   };
 
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('zen2fit', newAssignee);
+  };
+
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
     // Update URL without page reload
@@ -137,7 +144,7 @@ export default function Zen2FitPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Zen2Fit</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('zen2fit')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">Corporate Wellness SaaS Platform</p>
             </div>

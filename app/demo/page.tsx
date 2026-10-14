@@ -9,8 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertTriangle, Mail } from 'lucide-react';
@@ -29,10 +29,12 @@ const tabs = [
 export default function DemoPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('demo', DEFAULT_STATUSES.demo));
+    setAssignee(getStoredAssignee('demo', getClientAssignee('demo')));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -80,6 +82,11 @@ export default function DemoPage() {
     setStatus(newStatus);
     setClientStatus('demo', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('demo', newAssignee);
+  };
+
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -120,7 +127,7 @@ export default function DemoPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Acme Corporation</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('demo')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500 text-white">
                   DEMO
                 </span>

@@ -8,8 +8,8 @@ import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail, Award, MapPin, Building2, Briefcase, Gift, CheckCircle } from 'lucide-react';
@@ -31,10 +31,12 @@ const tabs = [
 export default function PlantryxPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('plantryx', DEFAULT_STATUSES.plantryx));
+    setAssignee(getStoredAssignee('plantryx', getClientAssignee('plantryx')));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -82,6 +84,11 @@ export default function PlantryxPage() {
     setStatus(newStatus);
     setClientStatus('plantryx', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('plantryx', newAssignee);
+  };
+
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -109,7 +116,7 @@ export default function PlantryxPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Plantryx</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('plantryx')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">AI-Native Demand Forecasting & Supply Planning (EU Manufacturing)</p>
             </div>

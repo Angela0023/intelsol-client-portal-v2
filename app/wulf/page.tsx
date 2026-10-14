@@ -9,8 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import { FileText, BarChart3, CheckSquare, Mail, AlertTriangle, Target, Users, MessageSquare, Zap } from 'lucide-react';
 
 const tabs = [
@@ -24,9 +24,11 @@ const tabs = [
 export default function WulfPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Onboarding');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
 
   useEffect(() => {
     setStatus(getClientStatus('wulf', DEFAULT_STATUSES.wulf));
+    setAssignee(getStoredAssignee('wulf', getClientAssignee('wulf')));
 
     // Read initial tab from URL pathname
     const path = window.location.pathname;
@@ -56,6 +58,11 @@ export default function WulfPage() {
     setStatus(newStatus);
     setClientStatus('wulf', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('wulf', newAssignee);
+  };
+
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -77,7 +84,7 @@ export default function WulfPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">WULF Arts</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('wulf')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-slate-600">Real-Time 3D Production Studio — White-Label 3D Asset Pipeline</p>
             </div>

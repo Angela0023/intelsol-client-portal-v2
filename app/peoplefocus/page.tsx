@@ -10,8 +10,8 @@ import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Briefcase, Zap, Mail, FolderOpen } from 'lucide-react';
 
 const tabs = [
@@ -36,10 +36,12 @@ const PEOPLEFOCUS_DEFAULT_TASKS = [
 export default function PeopleFocusPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('peoplefocus', DEFAULT_STATUSES.peoplefocus));
+    setAssignee(getStoredAssignee('peoplefocus', getClientAssignee('peoplefocus')));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -87,6 +89,11 @@ export default function PeopleFocusPage() {
     setStatus(newStatus);
     setClientStatus('peoplefocus', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('peoplefocus', newAssignee);
+  };
+
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -114,7 +121,7 @@ export default function PeopleFocusPage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">People Focus</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('peoplefocus')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">IT & Executive Recruitment for DACH Companies</p>
             </div>

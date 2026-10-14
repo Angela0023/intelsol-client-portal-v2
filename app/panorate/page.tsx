@@ -15,8 +15,8 @@ import StatusBadge, {
   DEFAULT_STATUSES,
   type ClientStatus,
 } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertCircle } from 'lucide-react';
 
 const tabs = [
@@ -41,10 +41,12 @@ const PANORATE_DEFAULT_TASKS = [
 export default function PanoratePage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>(DEFAULT_STATUSES.panorate);
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('panorate', DEFAULT_STATUSES.panorate));
+    setAssignee(getStoredAssignee('panorate', getClientAssignee('panorate')));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -90,6 +92,11 @@ export default function PanoratePage() {
     setStatus(newStatus);
     setClientStatus('panorate', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('panorate', newAssignee);
+  };
+
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
@@ -114,7 +121,7 @@ export default function PanoratePage() {
               <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
                 <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Panorate Media</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('panorate')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-sm lg:text-base text-slate-600 break-words">
                 3D Visualization for Industrial Manufacturers

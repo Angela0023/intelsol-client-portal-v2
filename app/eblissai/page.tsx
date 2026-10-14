@@ -10,8 +10,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import TasksTab from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import {
   FileText,
   Target,
@@ -41,10 +41,12 @@ const tabs = [
 export default function EblissAIPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('eblissai', DEFAULT_STATUSES.eblissai));
+    setAssignee(getStoredAssignee('eblissai', getClientAssignee('eblissai')));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -92,6 +94,11 @@ export default function EblissAIPage() {
     setStatus(newStatus);
     setClientStatus('eblissai', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('eblissai', newAssignee);
+  };
+
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -119,7 +126,7 @@ export default function EblissAIPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">eBlissAI</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('eblissai')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-slate-600">AI-Native Autonomous IT Operations Platform</p>
             </div>

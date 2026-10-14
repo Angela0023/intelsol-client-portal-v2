@@ -9,8 +9,8 @@ import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
-import { getClientAssignee } from '../../lib/auth';
-import AssigneeBadge from '../components/AssigneeBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import { Target, Users, Filter, Code, TrendingUp, FileText, Layers, CheckSquare, BarChart3, Zap, Mail, FolderOpen, Cpu } from 'lucide-react';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 
@@ -59,10 +59,12 @@ const MBEDTRONIX_DEFAULT_TASKS = [
 export default function MbedtronixPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('mbedtronix', DEFAULT_STATUSES.mbedtronix || 'Active'));
+    setAssignee(getStoredAssignee('mbedtronix', getClientAssignee('mbedtronix')));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -110,6 +112,11 @@ export default function MbedtronixPage() {
     setStatus(newStatus);
     setClientStatus('mbedtronix', newStatus);
   };
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('mbedtronix', newAssignee);
+  };
+
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -137,7 +144,7 @@ export default function MbedtronixPage() {
               <div className="flex items-center space-x-3">
                 <h1 className="text-3xl font-bold text-slate-900">MBEDTRONIX</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
-                <AssigneeBadge assignee={getClientAssignee('mbedtronix')} size="md" />
+                <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />
               </div>
               <p className="text-slate-600">Nearshore Embedded & Electronics Development Partner</p>
             </div>
