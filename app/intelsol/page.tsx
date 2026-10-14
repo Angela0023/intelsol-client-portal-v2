@@ -7,7 +7,7 @@ import TasksTab, { INTELSOL_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
-import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
+import CampaignsTabContent from './CampaignsTabContent';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import ClientsTab from '../components/ClientsTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
@@ -1729,7 +1729,7 @@ function CampaignsSequencesTab() {
   return (
     <>
       <SequencesTab clientId="intelsol" />
-      <CampaignsTabGeneric />
+      <CampaignsTabContent />
     </>
   );
 }
