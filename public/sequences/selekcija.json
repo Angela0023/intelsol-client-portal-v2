@@ -13,11 +13,11 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "{{First Name}}, se pri podjetju {{Company}} redno ukvarjate z zaposlovanjem?",
-        "body": "Pozdravljeni, {{First Name}},\n\nkratko vprašanje - ali v podjetju {{Company}} redno izvajate zaposlovanje s pomočjo ocenjevanja kandidatov?\n\nSelekcija.hr ponuja spletne psihometrične teste s prilagojenimi poročili. Organizacije, kot sta JGL in Ericsson, jih uporabljajo za ocenjevanje kandidatov na daljavo ter za bolj dosledno izvajanje selekcijskih postopkov.\n\nBi bilo smiselno pogledati, kako bi to lahko vključili v enega od vaših zaposlitvenih procesov?\n\nLep pozdrav,\n{{Your Name}}",
+        "body": "Pozdravljeni, {{First Name}},\n\nkratko vprašanje - ali v podjetju {{Company}} redno izvajate zaposlovanje s pomočjo ocenjevanja kandidatov?\n\nSelekcija.hr ponuja spletne psihometrične teste s prilagojenimi poročili. Organizacije, kot sta JGL in Ericsson, jih uporabljajo za ocenjevanje kandidatov na daljavo ter za bolj dosledno izvajanje selekcijskih postopkov.\n\nBi bilo smiselno pogledati, kako bi to lahko vključili v enega od vaših zaposlitvenih procesov?\n\n(Če to ni vaša pristojnost, bi mi lahko posredovali kontakt odgovorne osebe?)\n\nLep pozdrav,\n{{Your Name}}",
         "translations": {
           "english": {
             "subject": "{{First Name}}, recurring recruitment at {{Company}}?",
-            "body": "Hi {{First Name}},\n\nQuick question: does {{Company}} handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\nBest regards,\n{{Your Name}}"
+            "body": "Hi {{First Name}},\n\nQuick question: does {{Company}} handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\n(If this isn't your area, could you point me to the right person?)\n\nBest regards,\n{{Your Name}}"
           }
         }
       },
@@ -61,11 +61,11 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "{{First Name}}, storitve ocenjevanja za vaše stranke?",
-        "body": "Pozdravljeni, {{First Name}},\n\nkratko vprašanje - ali vaše stranke pri kadrovskih projektih kdaj potrebujejo psihometrično ocenjevanje kandidatov?\n\nSelekcija.hr kadrovskim agencijam omogoča dostop do platforme in strokovno podporo za izvajanje ocenjevanj pod vašo blagovno znamko. Tako lahko svojim strankam ponudite profesionalno testiranje, ne da bi morali zaposliti psihologe v svoji ekipi.\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n{{Your Name}}",
+        "body": "Pozdravljeni, {{First Name}},\n\nkratko vprašanje - ali vaše stranke pri kadrovskih projektih kdaj potrebujejo psihometrično ocenjevanje kandidatov?\n\nSelekcija.hr kadrovskim agencijam omogoča dostop do platforme in strokovno podporo za izvajanje ocenjevanj pod vašo blagovno znamko. Tako lahko svojim strankam ponudite profesionalno testiranje, ne da bi morali zaposliti psihologe v svoji ekipi.\n\nBi bil kratek pogovor smiseln?\n\n(Če to ni vaša pristojnost, bi mi lahko posredovali kontakt odgovorne osebe?)\n\nLep pozdrav,\n{{Your Name}}",
         "translations": {
           "english": {
             "subject": "{{First Name}}, assessment services for your clients?",
-            "body": "Hi {{First Name}},\n\nQuick question: do your clients ever request psychometric assessment as part of recruitment projects?\n\nSelekcija.hr provides recruitment agencies with platform access and expert support to deliver assessments under your brand. You can offer professional testing without hiring in-house psychologists.\n\nWorth a brief conversation?\n\nBest regards,\n{{Your Name}}"
+            "body": "Hi {{First Name}},\n\nQuick question: do your clients ever request psychometric assessment as part of recruitment projects?\n\nSelekcija.hr provides recruitment agencies with platform access and expert support to deliver assessments under your brand. You can offer professional testing without hiring in-house psychologists.\n\nWorth a brief conversation?\n\n(If this isn't your area, could you point me to the right person?)\n\nBest regards,\n{{Your Name}}"
           }
         }
       },
