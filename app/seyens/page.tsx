@@ -1,11 +1,100 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
+import SequencesTab from '../components/SequencesTab';
+import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
+import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
+import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
+import TasksTab from '../components/TasksTab';
+import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
+import { getClientAssignee, type Assignee } from '../../lib/auth';
+import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
+import { Target, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen } from 'lucide-react';
+
+const tabs = [
+  { id: 'overview', label: 'Overview', icon: FileText },
+  { id: 'icp', label: 'ICP Profile', icon: Target },
+  { id: 'filters', label: 'Clay Filters', icon: Filter },
+  { id: 'prompts', label: 'AI Prompts', icon: Code },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
+  { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
+  { id: 'tasks', label: 'Tasks', icon: CheckSquare },
+];
 
 export default function SeyensPage() {
   const [activeTab, setActiveTab] = useState('overview');
+  const [status, setStatus] = useState<ClientStatus>('Active');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    setStatus(getClientStatus('seyens', DEFAULT_STATUSES.seyens));
+    setAssignee(getStoredAssignee('seyens', getClientAssignee('seyens')));
+
+    // Check if user is admin
+    const access = sessionStorage.getItem('clientAccess');
+    let userIsAdmin = false;
+    if (access) {
+      try {
+        const parsedAccess = JSON.parse(access);
+        userIsAdmin = parsedAccess.includes('admin');
+        setIsAdmin(userIsAdmin);
+      } catch {
+        setIsAdmin(false);
+      }
+    }
+
+    // Internal tabs that should be hidden from non-admin users
+    const internalTabs = ['filters', 'prompts'];
+
+    // Read initial tab from URL pathname
+    const path = window.location.pathname;
+    const tabFromPath = path.split('/').pop();
+    const validTab = tabs.find(t => t.id === tabFromPath);
+    if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+      setActiveTab(validTab.id);
+    }
+
+    // Handle browser back/forward
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const tabFromPath = path.split('/').pop();
+      const validTab = tabs.find(t => t.id === tabFromPath);
+      if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+        setActiveTab(validTab.id);
+      } else {
+        setActiveTab('overview');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const handleStatusChange = (newStatus: ClientStatus) => {
+    setStatus(newStatus);
+    setClientStatus('seyens', newStatus);
+  };
+
+  const handleAssigneeChange = (newAssignee: Assignee) => {
+    setAssignee(newAssignee);
+    setStoredAssignee('seyens', newAssignee);
+  };
+
+  const handleTabChange = (tabId: string) => {
+    setActiveTab(tabId);
+    const newPath = tabId === 'overview' ? '/seyens' : `/seyens/${tabId}`;
+    window.history.pushState({}, '', newPath);
+  };
+
+  // Filter tabs based on admin access
+  const visibleTabs = isAdmin
+    ? tabs
+    : tabs.filter(tab => !['filters', 'prompts'].includes(tab.id));
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -524,138 +613,36 @@ export default function SeyensPage() {
           </div>
         );
 
-      case 'campaigns':
+      case 'campaigns-sequences':
+        return (
+          <>
+            <SequencesTab clientId="seyens" />
+            <div className="mt-8">
+              <CampaignsTabGeneric />
+            </div>
+          </>
+        );
+
+      case 'performance':
+        return (
+          <>
+            <PerformanceTabDynamic clientId="seyens" />
+            <CampaignsTabDynamic clientId="seyens" />
+          </>
+        );
+
+      case 'documents':
+        return <DocumentsTabGeneric clientId="seyens" />;
+
+      case 'tasks':
+        return <TasksTab clientId="seyens" />;
+
+      case 'prompts':
         return (
           <div className="space-y-6">
-            <ContentSection title="Email Sequences">
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mb-4">
-                <h5 className="font-semibold text-blue-900 mb-2">1 Universal Sequence</h5>
-                <p className="text-blue-800 mb-3">
-                  <strong>Targeting:</strong> ALL Clay Filters, ALL Positions
-                </p>
-                <p className="text-blue-800 mb-3">
-                  <strong>Rationale:</strong> Same pain across all industries and positions (scientists cannot communicate visually), same desired outcome (systematic visual communication capability). No segmentation needed.
-                </p>
-                <div className="mt-3">
-                  <p className="text-sm font-semibold text-blue-900 mb-2">Applied To:</p>
-                  <ul className="space-y-1 text-sm text-blue-800">
-                    <ListItem type="check">All Life Sciences companies (pharma, biotech, medtech)</ListItem>
-                    <ListItem type="check">All Deep-Tech companies (semiconductors, AI, materials, etc.)</ListItem>
-                    <ListItem type="check">All geographies (DACH, North America, UK/Ireland, etc.)</ListItem>
-                    <ListItem type="check">All decision maker tiers (PRIMARY, SECONDARY, TERTIARY)</ListItem>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <h5 className="font-semibold text-gray-900">Email 1: Initial Outreach</h5>
-                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">First Contact</span>
-                  </div>
-                  <div className="space-y-2">
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700">Subject:</p>
-                      <p className="text-gray-900">Scientific communication training for [Company Name]?</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700">Body:</p>
-                      <div className="bg-gray-50 p-3 rounded text-sm text-gray-800 whitespace-pre-line font-mono">
-{`Hi [First Name],
-
-I noticed [Company Name] has a substantial research team - which likely means your scientists regularly need to explain complex work through figures, slides and posters.
-
-Seyens teaches a science-specific visual communication method built for R&D teams like yours. We've trained over 7,000 researchers at organizations including IBM Research Zurich, Roche and Boehringer Ingelheim.
-
-The approach is practical and systematic: participants work on their own scientific materials during the training, learning principles grounded in visual perception rather than subjective design taste.
-
-Would this be relevant to your R&D/scientist development programme?
-
-Best,
-[Your Name]`}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <h5 className="font-semibold text-gray-900">Email 2: Follow-Up 1</h5>
-                    <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">+3 days</span>
-                  </div>
-                  <div className="space-y-2">
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700">Subject:</p>
-                      <p className="text-gray-900">Re: Scientific communication training</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700">Body:</p>
-                      <div className="bg-gray-50 p-3 rounded text-sm text-gray-800 whitespace-pre-line font-mono">
-{`Hi [First Name],
-
-Following up on my message about visual communication training for your research team at [Company Name].
-
-Most organizations we work with face a similar challenge: scientists are highly trained in their technical work but rarely get systematic training in visual communication. Their figures and slides can be technically correct yet difficult for colleagues, managers or collaborators to understand quickly.
-
-Seyens addresses this with a repeatable method researchers can apply to their own scientific materials - figures, posters, presentations - rather than generic PowerPoint training.
-
-The training combines concise self-study with live application, critique and redesign. Participants work on real scientific content from their own research.
-
-Relevant for [Company Name]?
-
-Best,
-[Your Name]`}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <h5 className="font-semibold text-gray-900">Email 3: Follow-Up 2 (Final)</h5>
-                    <span className="px-2 py-1 bg-amber-100 text-amber-800 text-xs rounded">+3 days</span>
-                  </div>
-                  <div className="space-y-2">
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700">Subject:</p>
-                      <p className="text-gray-900">Final follow-up - visual communication training</p>
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-gray-700">Body:</p>
-                      <div className="bg-gray-50 p-3 rounded text-sm text-gray-800 whitespace-pre-line font-mono">
-{`Hi [First Name],
-
-Last follow-up on this.
-
-If [Company Name] is looking to help your scientists communicate complex research more effectively - particularly through figures, slides and posters - Seyens could be a fit.
-
-We work with research-intensive organizations to transfer a systematic visual communication method directly to their R&D teams. 7,000+ researchers trained, including teams at IBM Research, Roche and Boehringer Ingelheim.
-
-Two options if this is relevant:
-1. Quick call to discuss your R&D development priorities
-2. Up to 2 complimentary places in our live Fundamentals of Visual Communication training
-
-Happy to have a brief conversation if the timing works.
-
-Best,
-[Your Name]`}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ContentSection>
-
-            <ContentSection title="Sequence Strategy Notes">
-              <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
-                <h5 className="font-semibold text-indigo-900 mb-3">Hormozi Logic Applied</h5>
-                <ul className="space-y-2">
-                  <ListItem type="check"><strong>Same pain across all segments:</strong> Scientists lack systematic visual communication training</ListItem>
-                  <ListItem type="check"><strong>Same desired outcome:</strong> Transfer repeatable method for creating clear scientific visuals</ListItem>
-                  <ListItem type="check"><strong>No industry-specific differentiation needed:</strong> A pharma researcher and a semiconductor engineer have the same challenge (making complex technical content visually clear)</ListItem>
-                  <ListItem type="check"><strong>No position-specific differentiation needed:</strong> L&D managers, R&D leaders, and programme champions all care about the same outcome</ListItem>
-                  <ListItem type="check"><strong>Result:</strong> One universal sequence keeps it simple, fast to launch, and eliminates unnecessary complexity</ListItem>
-                </ul>
+            <ContentSection title="AI Prompts">
+              <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+                <p className="text-slate-800">AI prompts configuration coming soon.</p>
               </div>
             </ContentSection>
           </div>
@@ -667,16 +654,56 @@ Best,
   };
 
   return (
-    <ClientLayout
-      clientName="Seyens"
-      clientSlug="seyens"
-      status="active"
-      lastUpdate="2026-10-15"
-      assignedTo="Frosina"
-      activeTab={activeTab}
-      setActiveTab={setActiveTab}
-    >
-      {renderTabContent()}
+    <ClientLayout>
+      <div className="p-4 lg:p-8">
+        {/* Page Header */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-2 lg:space-x-3 mb-2">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span className="text-xl lg:text-2xl font-bold text-cyan-700">SY</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center space-x-2 lg:space-x-3 flex-wrap">
+                <h1 className="text-xl lg:text-3xl font-bold text-slate-900">Seyens</h1>
+                <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
+              </div>
+              <p className="text-sm lg:text-base text-slate-600 break-words">Science-Specific Visual Communication Training for R&D Teams</p>
+            </div>
+          </div>
+          <a
+            href="https://www.seyens.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-cyan-600 hover:underline inline-block"
+          >
+            Visit Website →
+          </a>
+        </div>
+
+        {/* Tabs */}
+        <div className="border-b border-slate-200 mb-6 -mx-4 px-4 lg:mx-0 lg:px-0">
+          <div className="flex space-x-1 overflow-x-auto scrollbar-hide pb-px">
+            {visibleTabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleTabChange(tab.id)}
+                className={`flex items-center space-x-1 lg:space-x-2 px-2 lg:px-4 py-2 lg:py-3 border-b-2 transition-colors whitespace-nowrap text-sm lg:text-base flex-shrink-0 ${
+                  activeTab === tab.id
+                    ? 'border-[#1a2647] text-[#1a2647] font-medium'
+                    : 'border-transparent text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <tab.icon className="w-4 h-4" />
+                <span className="hidden sm:inline">{tab.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Tab Content */}
+        {renderTabContent()}
+      </div>
     </ClientLayout>
   );
 }
