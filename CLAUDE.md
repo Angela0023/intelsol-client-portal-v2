@@ -422,6 +422,57 @@ const visibleTabs = isAdmin
 
 ---
 
+### 1E. ALWAYS Create Clay Filter Prompts for ALL Industry Segments (CRITICAL)
+
+**HARD RULE:** When creating Clay Filter Prompts CSV during client onboarding, you MUST create ONE filter prompt for EVERY industry segment mentioned in the client's ICP Profile tab. NEVER assume there are only 2 segments without reading the complete ICP documentation.
+
+**Why:** Missing industry segments means incomplete lead generation coverage and wastes client's time when they discover entire segments are missing from their filters.
+
+**Correct Process:**
+
+1. **Read the COMPLETE ICP Profile tab** in `/app/[client]/page.tsx`
+2. **Count ALL industry segments** mentioned (look for TIER 1, TIER 2, TIER 3, etc.)
+3. **Create ONE filter prompt per segment** with appropriate priority
+4. **Verify count matches** before finalizing CSV
+
+**Example Structure:**
+```
+TIER 1: Primary Industry (60% allocation) → Filter Priority 1
+TIER 2: Secondary Industry (40% allocation) → Filter Priority 2
+TIER 3: Additional Segments → Filters Priority 3+
+  - Segment A
+  - Segment B
+  - Segment C
+```
+
+**VIOLATION EXAMPLE (2026-10-15):**
+- Created Pacia Clay Filter Prompts with only 2 filters (E-commerce + Tourism)
+- MISSED 3 entire industry segments (Logistics, Service Businesses, Subscription Businesses)
+- User had to catch this mistake: "Are you sure they only need to target those two industries?"
+- **This wasted time and showed incomplete work**
+
+**Correct Implementation for Pacia:**
+```csv
+Slovenia - E-commerce & Retail (Priority 1)
+Slovenia - Tourism & Hospitality (Priority 2)
+Slovenia - Logistics & Delivery (Priority 3)
+Slovenia - Service Businesses (Priority 3)
+Slovenia - Subscription Businesses (Priority 3)
+```
+
+**Checklist Before Finalizing Clay Filter Prompts:**
+- [ ] Read COMPLETE ICP Profile tab content
+- [ ] Counted all TIER 1, TIER 2, TIER 3+ segments
+- [ ] Created filter for EVERY segment mentioned
+- [ ] Verified filter count matches segment count
+- [ ] Asked user if unsure about any segment
+
+**Rule Established:** 2026-10-15
+
+**This is a CRITICAL rule - incomplete filters = incomplete lead generation = frustrated client**
+
+---
+
 ### 2. Adding a New Client Requires Multiple Files (CRITICAL - ALWAYS DO ALL)
 
 **HARD RULE:** When the user says "create a dashboard" for a new client, you MUST update ALL of these files. No exceptions. Client must appear in navigation immediately.
