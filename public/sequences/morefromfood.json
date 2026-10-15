@@ -1,82 +1,163 @@
 [
   {
-    "id": "tier-1-qa-qc",
-    "tierName": "TIER 1: QA/QC Managers",
+    "id": "tier-1-qa-qc-en",
+    "tierName": "TIER 1: QA/QC Managers (EN)",
     "tierColor": "blue",
     "targetPersonas": "QA Manager, Quality Control Manager, Quality Assurance Lead",
-    "messagingAngle": "Inspection records, deviations, corrective actions and audit documentation.",
+    "messagingAngle": "Quality records, deviations, corrective actions and audit readiness",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Quality records at {{company}}",
-        "body": "Dear {{first_name}},\n\nHow do you track inspection records and corrective actions at {{company}}? In one system or across separate records?\n\nMoreFromFood brings together digital checklists, recorded deviations and corrective action tracking, with documentation available for review and audits.\n\nIs improving this process currently a priority for your team?\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Quality documentation at {{company}}",
+        "body": "Hi {{first_name}},\n\nHow do you document quality checks, deviations and corrective actions at {{company}} - in one central system or across separate spreadsheets and documents?\n\nMoreFromFood helps teams record and track these processes digitally, reducing manual administration and making audit preparation easier.\n\nIs digitising these workflows currently a priority for your team?\n\nBest regards,\n{{sender_name}}"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Quality records at {{company}}",
-        "body": "Dear {{first_name}},\n\nTo make my previous message more specific: MoreFromFood supports recording non-conformities and assigning and tracking corrective actions.\n\nHow does your team currently keep track of which actions are still open?\n\nKind regards,\n\n{{sender_name}}\n\n"
+        "subject": "Re: Quality documentation at {{company}}",
+        "body": "Hi {{first_name}},\n\nA quick addition to my previous email:\n\nWith deviations and corrective actions, it is important to know which actions are still open and who owns them.\n\nMoreFromFood brings recording and tracking into one place, so your team does not have to search across separate documents.\n\nWould a quick look at this use case be relevant?\n\nBest regards,\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: Quality records at {{company}}",
-        "body": "Dear {{first_name}},\n\nIf you are looking to improve recordkeeping and prepare documentation for audits, we can show you MoreFromFood using one of your processes as an example.\n\nWould a brief conversation about this be useful?\n\nIf this is not a current priority, I will leave it here.\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Re: Quality documentation at {{company}}",
+        "body": "Hi {{first_name}},\n\nOne final point: we support companies such as Grupo Bimbo and Dukat with digitising food safety and quality management processes.\n\nWe would be happy to show you a practical example of how MoreFromFood can simplify quality documentation and follow-up.\n\nWould a short conversation make sense?\n\nIf this is not a priority right now, I will leave it here.\n\nBest regards,\n{{sender_name}}"
       }
     ]
   },
   {
-    "id": "tier-1-production",
-    "tierName": "TIER 1: Production/Plant Managers",
+    "id": "tier-1-qa-qc-de",
+    "tierName": "TIER 1: QA/QC Managers (DE)",
     "tierColor": "blue",
-    "targetPersonas": "Production Manager, Plant Manager, Operations Manager",
-    "messagingAngle": "Visibility of completed daily checks and outstanding tasks, with practical use on the production floor.",
+    "targetPersonas": "QA Manager, Quality Control Manager, Quality Assurance Lead",
+    "messagingAngle": "Quality records, deviations, corrective actions and audit readiness",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Daily production checks",
-        "body": "Dear {{first_name}},\n\nHow do you track whether daily production checks have been completed at {{company}} and which activities are still outstanding?\n\nMoreFromFood supports digital records of checks, task visibility and alerts for overdue tasks.\n\nIs improving visibility of these activities currently relevant to you?\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Qualitatsdokumentation bei {{company}}",
+        "body": "Guten Tag {{first_name}},\n\nwie dokumentieren Sie bei {{company}} Qualitatskontrollen, Abweichungen und Korrekturmaßnahmen - zentral in einem System oder uber verschiedene Listen und Dokumente?\n\nMit MoreFromFood lassen sich diese Prozesse digital erfassen und nachverfolgen. Das reduziert den manuellen Dokumentationsaufwand und erleichtert die Vorbereitung auf Audits.\n\nIst die Digitalisierung dieser Ablaufe derzeit ein Thema fur Ihr Team?\n\nMit freundlichen Grußen\n{{sender_name}}"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Daily production checks",
-        "body": "Dear {{first_name}},\n\nTo assess how this could work on the production floor, we would start with one of your existing checks and how employees carry it out.\n\nMoreFromFood supports customizable checklists and mobile access.\n\nWould this way of working make sense for your production team?\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Re: Qualitatsdokumentation bei {{company}}",
+        "body": "Guten Tag {{first_name}},\n\neine kurze Erganzung zu meiner letzten Nachricht:\n\nGerade bei Abweichungen und Korrekturmaßnahmen ist es wichtig, jederzeit nachvollziehen zu konnen, welche Maßnahmen noch offen sind und wer dafur verantwortlich ist.\n\nMoreFromFood ermoglicht die zentrale Erfassung und Nachverfolgung dieser Maßnahmen, sodass Informationen nicht in verschiedenen Dokumenten gesucht werden mussen.\n\nWare ein kurzer Einblick in diesen Anwendungsfall fur Sie interessant?\n\nMit freundlichen Grußen\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: Daily production checks",
-        "body": "Dear {{first_name}},\n\nI suggest a brief walkthrough using an example from your plant, so you can assess how practical it would be for employees and what visibility the production manager would have.\n\nWould you be the right person for that conversation, or does a colleague in quality lead this area?\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Re: Qualitatsdokumentation bei {{company}}",
+        "body": "Guten Tag {{first_name}},\n\nzum Abschluss noch ein konkreter Hinweis: Wir unterstutzen Unternehmen wie Grupo Bimbo und Dukat bei der Digitalisierung von Prozessen rund um Lebensmittelsicherheit und Qualitatsmanagement.\n\nGerne zeigen wir Ihnen anhand eines konkreten Beispiels, wie MoreFromFood die Dokumentation und Nachverfolgung von Qualitatsprozessen vereinfachen kann.\n\nWare ein kurzer Austausch dazu sinnvoll?\n\nFalls das derzeit keine Prioritat hat, belasse ich es gerne dabei.\n\nMit freundlichen Grußen\n{{sender_name}}"
       }
     ]
   },
   {
-    "id": "tier-2-operations",
-    "tierName": "TIER 2: Operations/Leadership",
+    "id": "tier-2-production-en",
+    "tierName": "TIER 2: Production/Plant Managers (EN)",
     "tierColor": "green",
-    "targetPersonas": "Operations Director, Managing Director, Owner",
-    "messagingAngle": "Overview of food safety checks and open corrective actions, with clear ownership of improvement initiatives.",
+    "targetPersonas": "Production Manager, Plant Manager, Operations Manager",
+    "messagingAngle": "Daily production checks, outstanding tasks and operational visibility",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Visibility of food safety checks",
-        "body": "Dear {{first_name}},\n\nHow do you get an overview of completed food safety checks and open corrective actions at {{company}}?\n\nMoreFromFood brings together records and corrective action tracking, providing a centralized view of activities.\n\nIs digitalizing this part of the business among your priorities?\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Daily production checks at {{company}}",
+        "body": "Hi {{first_name}},\n\nHow do you keep track of which daily production checks have been completed at {{company}} and which are still outstanding?\n\nMoreFromFood supports digital records of checks on the production floor, giving managers visibility into task status and outstanding activities.\n\nIs improving visibility into these workflows relevant for you at the moment?\n\nBest regards,\n{{sender_name}}"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Visibility of food safety checks",
-        "body": "Dear {{first_name}},\n\nTo assess whether MoreFromFood makes sense for your business, we would start with how records are collected and how the resolution of deviations is tracked.\n\nThe aim of the conversation would be to identify where digital visibility could help the people responsible.\n\nWho leads these improvements in your company — quality or operations?\n\nKind regards,\n\n{{sender_name}}\n"
+        "subject": "Re: Daily production checks at {{company}}",
+        "body": "Hi {{first_name}},\n\nOne quick addition:\n\nMoreFromFood supports digital checklists that employees can complete on mobile devices directly on the production floor.\n\nThis makes it easier to see what has been completed and what still needs attention, without pulling together paper forms or separate files.\n\nWould it be useful to see this using an example of one of your daily checks?\n\nBest regards,\n{{sender_name}}"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: Visibility of food safety checks",
-        "body": "Dear {{first_name}},\n\nIf this is a current priority, I suggest a brief conversation with the person leading quality or production to assess whether \nMoreFromFood fits your processes.\n\nWould it make sense to start that conversation now?\n\nIf this is not planned, I will leave it here.\n\nKind regards,\n{{sender_name}}\n\n"
+        "subject": "Re: Daily production checks at {{company}}",
+        "body": "Hi {{first_name}},\n\nCompanies such as Grupo Bimbo and Dukat already use our solutions to digitise quality and food safety processes.\n\nFor production teams, having a central view of completed checks and open tasks can be particularly valuable.\n\nWe would be happy to show you briefly how MoreFromFood can support this workflow.\n\nWould that be relevant, or is this not something you are planning right now?\n\nBest regards,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "tier-2-production-de",
+    "tierName": "TIER 2: Production/Plant Managers (DE)",
+    "tierColor": "green",
+    "targetPersonas": "Production Manager, Plant Manager, Operations Manager",
+    "messagingAngle": "Daily production checks, outstanding tasks and operational visibility",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Tagliche Produktionskontrollen bei {{company}}",
+        "body": "Guten Tag {{first_name}},\n\nwie behalten Sie bei {{company}} den Uberblick daruber, welche taglichen Kontrollen in der Produktion bereits durchgefuhrt wurden und welche noch offen sind?\n\nMoreFromFood ermoglicht die digitale Dokumentation von Kontrollen direkt im Betrieb. Verantwortliche konnen den Status der Aufgaben einsehen und offene Aktivitaten schneller erkennen.\n\nIst eine bessere Ubersicht uber diese Ablaufe aktuell ein Thema fur Sie?\n\nMit freundlichen Grußen\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Tagliche Produktionskontrollen bei {{company}}",
+        "body": "Guten Tag {{first_name}},\n\nnoch eine kurze Erganzung:\n\nMoreFromFood unterstutzt digitale Checklisten, die auch mobil direkt in der Produktion ausgefullt werden konnen.\n\nDamit wird sichtbar, welche Kontrollen erledigt wurden und wo noch Handlungsbedarf besteht - ohne Informationen aus Papierformularen oder verschiedenen Dateien zusammenzutragen.\n\nWare es interessant, diesen Ablauf anhand einer typischen Kontrolle aus Ihrer Produktion zu sehen?\n\nMit freundlichen Grußen\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Tagliche Produktionskontrollen bei {{company}}",
+        "body": "Guten Tag {{first_name}},\n\nUnternehmen wie Grupo Bimbo und Dukat setzen bereits auf unsere Losungen zur Digitalisierung von Qualitats- und Lebensmittelsicherheitsprozessen.\n\nFur Produktionsverantwortliche kann insbesondere die zentrale Ubersicht uber durchgefuhrte Kontrollen und offene Aufgaben interessant sein.\n\nGerne zeigen wir Ihnen in einem kurzen Gesprach, wie MoreFromFood diesen Ablauf unterstutzen kann.\n\nWare das fur Sie relevant, oder ist das Thema aktuell nicht geplant?\n\nMit freundlichen Grußen\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-operations-en",
+    "tierName": "TIER 3: Operations/Leadership (EN)",
+    "tierColor": "amber",
+    "targetPersonas": "Operations Director, Managing Director, Owner",
+    "messagingAngle": "Food safety oversight, open corrective actions and clear ownership",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Visibility into food safety processes",
+        "body": "Hi {{first_name}},\n\nHow do you get an overview at {{company}} of whether all relevant food safety checks have been completed and which corrective actions remain open?\n\nMoreFromFood brings this information together in one system, giving teams visibility into the status of ongoing activities.\n\nIs digitising and improving oversight of these processes currently a business priority?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Visibility into food safety processes",
+        "body": "Hi {{first_name}},\n\nI wanted to add one more point:\n\nWhen quality checks, deviations and corrective actions are recorded across different systems or documents, getting an up-to-date overview can be difficult.\n\nMoreFromFood brings these records together and helps responsible teams track open actions and their status.\n\nWho leads these improvements at {{company}} - the quality team or operations?\n\nBest regards,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Visibility into food safety processes",
+        "body": "Hi {{first_name}},\n\nWe support companies such as Grupo Bimbo, Dukat and Sodexo in digitising food safety and quality management processes.\n\nWith MoreFromFood, our aim is to reduce manual documentation and improve oversight of completed checks and open corrective actions.\n\nWould a brief conversation be worthwhile to see whether this could also be relevant at {{company}}?\n\nIf this is not on your agenda right now, I will not follow up further.\n\nBest regards,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "tier-3-operations-de",
+    "tierName": "TIER 3: Operations/Leadership (DE)",
+    "tierColor": "amber",
+    "targetPersonas": "Operations Director, Managing Director, Owner",
+    "messagingAngle": "Food safety oversight, open corrective actions and clear ownership",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Uberblick uber Lebensmittelsicherheitsprozesse",
+        "body": "Guten Tag {{first_name}},\n\nwie erhalten Sie bei {{company}} einen Uberblick daruber, ob alle relevanten Kontrollen zur Lebensmittelsicherheit durchgefuhrt wurden und welche Korrekturmaßnahmen noch offen sind?\n\nMoreFromFood bundelt diese Informationen in einem System und schafft Transparenz uber den Status der laufenden Aktivitaten.\n\nIst die Digitalisierung und bessere Steuerung dieser Prozesse derzeit eine Prioritat in Ihrem Unternehmen?\n\nMit freundlichen Grußen\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Uberblick uber Lebensmittelsicherheitsprozesse",
+        "body": "Guten Tag {{first_name}},\n\nich wollte noch einen Aspekt erganzen:\n\nWenn Qualitatskontrollen, Abweichungen und Korrekturmaßnahmen in unterschiedlichen Systemen oder Dokumenten erfasst werden, fehlt oft ein schneller Gesamtuberblick.\n\nMoreFromFood fuhrt diese Informationen zusammen und erleichtert es den Verantwortlichen, offene Maßnahmen und deren Bearbeitungsstatus nachzuvollziehen.\n\nWer treibt solche Verbesserungen bei {{company}} voran - eher die Qualitatsleitung oder der operative Bereich?\n\nMit freundlichen Grußen\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Uberblick uber Lebensmittelsicherheitsprozesse",
+        "body": "Guten Tag {{first_name}},\n\nwir unterstutzen Unternehmen wie Grupo Bimbo, Dukat und Sodexo bei der Digitalisierung von Qualitats- und Lebensmittelsicherheitsprozessen.\n\nMit MoreFromFood mochten wir Unternehmen dabei helfen, manuelle Dokumentationsprozesse zu reduzieren und einen besseren Uberblick uber Kontrollen und offene Maßnahmen zu schaffen.\n\nWare ein kurzer Austausch sinnvoll, um zu prufen, ob dieser Ansatz auch fur {{company}} relevant sein konnte?\n\nFalls das derzeit nicht auf Ihrer Agenda steht, melde ich mich nicht weiter.\n\nMit freundlichen Grußen\n{{sender_name}}"
       }
     ]
   }
