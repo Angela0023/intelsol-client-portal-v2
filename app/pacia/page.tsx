@@ -1,24 +1,43 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Building2, Users, Filter, MessageSquare, Send, TrendingUp, FileText, CheckSquare, Mail } from 'lucide-react';
-import { ContentSection } from '../components/ContentSection';
+import ClientLayout from '../components/ClientLayout';
+import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import TasksTab from '../components/TasksTab';
-import StatusBadge, { getClientStatus, setClientStatus, type ClientStatus, DEFAULT_STATUSES } from '../components/StatusBadge';
+import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
+import {
+  FileText,
+  Target,
+  Filter,
+  Code,
+  Zap,
+  BarChart3,
+  FolderOpen,
+  CheckSquare,
+} from 'lucide-react';
 
-type TabId = 'overview' | 'icp' | 'filters' | 'prompts' | 'campaigns-sequences' | 'performance' | 'documents' | 'tasks';
+const tabs = [
+  { id: 'overview', label: 'Overview', icon: FileText },
+  { id: 'icp', label: 'ICP Profile', icon: Target },
+  { id: 'filters', label: 'Clay Filters', icon: Filter },
+  { id: 'prompts', label: 'AI Prompts', icon: Code },
+  { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
+  { id: 'performance', label: 'Performance', icon: BarChart3 },
+  { id: 'documents', label: 'Documents', icon: FolderOpen },
+  { id: 'tasks', label: 'Tasks', icon: CheckSquare },
+];
 
-export default function PACIADashboard() {
-  const [activeTab, setActiveTab] = useState<TabId>('overview');
-  const [status, setStatus] = useState(DEFAULT_STATUSES.pacia);
-  const [assignee, setAssignee] = useState<string>(getClientAssignee('pacia'));
+export default function PACIAPage() {
+  const [activeTab, setActiveTab] = useState('overview');
+  const [status, setStatus] = useState<ClientStatus>('Onboarding');
+  const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
@@ -27,14 +46,44 @@ export default function PACIADashboard() {
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
+    let userIsAdmin = false;
     if (access) {
       try {
-        const accessList = JSON.parse(access);
-        setIsAdmin(accessList.includes('admin'));
-      } catch (e) {
-        console.error('Failed to parse clientAccess:', e);
+        const parsedAccess = JSON.parse(access);
+        userIsAdmin = parsedAccess.includes('admin');
+        setIsAdmin(userIsAdmin);
+      } catch {
+        setIsAdmin(false);
       }
     }
+
+    // Internal tabs that should be hidden from non-admin users
+    const internalTabs = ['filters', 'prompts'];
+
+    // Read initial tab from URL pathname
+    const path = window.location.pathname;
+    const tabFromPath = path.split('/').pop();
+    const validTab = tabs.find(t => t.id === tabFromPath);
+    // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+    if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+      setActiveTab(validTab.id);
+    }
+
+    // Handle browser back/forward
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const tabFromPath = path.split('/').pop();
+      const validTab = tabs.find(t => t.id === tabFromPath);
+      // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
+      if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
+        setActiveTab(validTab.id);
+      } else {
+        setActiveTab('overview');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   const handleStatusChange = (newStatus: ClientStatus) => {
@@ -47,26 +96,89 @@ export default function PACIADashboard() {
     setStoredAssignee('pacia', newAssignee);
   };
 
-  const tabs = [
-    { id: 'overview' as TabId, label: 'Overview', icon: Building2 },
-    { id: 'icp' as TabId, label: 'ICP Profile', icon: Users },
-    { id: 'filters' as TabId, label: 'Clay Filters', icon: Filter },
-    { id: 'prompts' as TabId, label: 'AI Prompts', icon: MessageSquare },
-    { id: 'campaigns-sequences' as TabId, label: 'Campaigns & Sequences', icon: Send },
-    { id: 'performance' as TabId, label: 'Performance', icon: TrendingUp },
-    { id: 'documents' as TabId, label: 'Documents', icon: FileText },
-    { id: 'tasks' as TabId, label: 'Tasks', icon: CheckSquare },
-  ];
+  const handleTabChange = (tabId: string) => {
+    setActiveTab(tabId);
+    // Update URL without page reload
+    const newPath = tabId === 'overview' ? '/pacia' : `/pacia/${tabId}`;
+    window.history.pushState({}, '', newPath);
+  };
 
   // Filter tabs based on admin access
-  const internalTabs = ['filters', 'prompts'];
+  // Hide internal tabs (filters, prompts) from non-admin users
   const visibleTabs = isAdmin
     ? tabs
-    : tabs.filter(tab => !internalTabs.includes(tab.id));
+    : tabs.filter(tab => !['filters', 'prompts'].includes(tab.id));
+
+  return (
+    <ClientLayout>
+      <div className="p-4 lg:p-8">
+        {/* Page Header */}
+        <div className="mb-6">
+          <div className="flex items-center space-x-3 mb-2">
+            <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+              <span className="text-2xl font-bold text-indigo-600">P</span>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center space-x-3">
+                <h1 className="text-3xl font-bold text-slate-900">PACIA</h1>
+                <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
+                {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
+              </div>
+              <p className="text-slate-600 mt-1">AI-Native Autonomous IT Operations Platform</p>
+              <a
+                href="https://www.pacia-support.com/sl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-indigo-600 hover:underline inline-block mt-1"
+              >
+                Visit Website →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Tabs */}
+        <div className="flex space-x-1 border-b border-slate-200 mb-6 overflow-x-auto">
+          {visibleTabs.map((tab) => {
+            const Icon = tab.icon;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => handleTabChange(tab.id)}
+                className={`flex items-center space-x-2 px-4 py-3 border-b-2 transition-colors whitespace-nowrap ${
+                  activeTab === tab.id
+                    ? 'border-indigo-500 text-indigo-600 font-medium'
+                    : 'border-transparent text-slate-600 hover:text-slate-900 hover:border-slate-300'
+                }`}
+              >
+                <Icon size={18} />
+                <span>{tab.label}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Tab Content */}
+        {activeTab === 'overview' && <OverviewTab />}
+        {activeTab === 'icp' && <ICPProfileTab />}
+        {activeTab === 'filters' && <FiltersTab />}
+        {activeTab === 'prompts' && <PromptsTab />}
+        {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
+        {activeTab === 'performance' && (
+          <>
+            <PerformanceTabDynamic clientId="pacia" />
+            <CampaignsTabDynamic clientId="pacia" />
+          </>
+        )}
+        {activeTab === 'documents' && <DocumentsTabGeneric clientId="pacia" />}
+        {activeTab === 'tasks' && <TasksTab clientId="pacia" />}
+      </div>
+    </ClientLayout>
+  );
 
   function OverviewTab() {
     return (
-      <ContentSection title="Client Overview" icon={<Building2 size={20} />}>
+      <ContentSection title="Client Overview" icon={<FileText size={20} />}>
         <div className="space-y-4 text-sm lg:text-base">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">About PACIA</h4>
@@ -125,10 +237,10 @@ export default function PACIADashboard() {
     );
   }
 
-  function ICPAndPersonasTab() {
+  function ICPProfileTab() {
     return (
       <div className="space-y-6">
-        <ContentSection title="Ideal Customer Profile" icon={<Users size={20} />}>
+        <ContentSection title="Ideal Customer Profile" icon={<Target size={20} />}>
           <div className="space-y-4 text-sm lg:text-base">
             <div>
               <h4 className="font-semibold text-slate-900 mb-2">Best Fit Account</h4>
@@ -165,28 +277,28 @@ export default function PACIADashboard() {
               <h4 className="font-semibold text-slate-900 mb-2">Priority Industries</h4>
 
               <div className="space-y-3">
-                <div className="bg-green-50 p-3 rounded-lg border border-green-200">
-                  <h5 className="font-semibold text-green-900">TIER 1: E-commerce & Retail (60% allocation)</h5>
-                  <p className="text-green-800 text-sm mt-1">
+                <InfoCard color="green">
+                  <h5 className="font-semibold">TIER 1: E-commerce & Retail (60% allocation)</h5>
+                  <p className="text-sm mt-1">
                     Slovenian online retailers, consumer brands and established retailers with active online sales channel. Focus on recurring delivery, returns, product and payment-policy enquiries.
                   </p>
-                </div>
+                </InfoCard>
 
-                <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
-                  <h5 className="font-semibold text-blue-900">TIER 2: Tourism & Hospitality (40% allocation)</h5>
-                  <p className="text-blue-800 text-sm mt-1">
+                <InfoCard color="blue">
+                  <h5 className="font-semibold">TIER 2: Tourism & Hospitality (40% allocation)</h5>
+                  <p className="text-sm mt-1">
                     Hotel groups, larger accommodation operators, tour operators and travel businesses with visible guest enquiry activity. Focus on recurring booking information, guest policies, languages and enquiry coverage around peak periods.
                   </p>
-                </div>
+                </InfoCard>
 
-                <div className="bg-amber-50 p-3 rounded-lg border border-amber-200">
-                  <h5 className="font-semibold text-amber-900">TIER 3: Second-Wave Segments</h5>
-                  <ul className="text-amber-800 text-sm mt-1 space-y-1">
+                <InfoCard color="amber">
+                  <h5 className="font-semibold">TIER 3: Second-Wave Segments</h5>
+                  <ul className="text-sm mt-1 space-y-1">
                     <li><strong>Logistics:</strong> Delivery, fulfilment and transport providers (advance when information use case separable from live tracking)</li>
                     <li><strong>Service Businesses:</strong> Established providers with standard offerings and repeat customer questions (require identifiable support workflow)</li>
                     <li><strong>Subscription:</strong> Recurring consumer/business services with onboarding and account enquiries (scope general guidance first)</li>
                   </ul>
-                </div>
+                </InfoCard>
               </div>
             </div>
 
@@ -201,9 +313,9 @@ export default function PACIADashboard() {
               </ul>
             </div>
 
-            <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-              <h4 className="font-semibold text-red-900 mb-2">Negative ICP (Exclusions)</h4>
-              <ul className="list-disc list-inside space-y-1 text-red-800 text-sm">
+            <InfoCard color="red">
+              <h4 className="font-semibold mb-2">Negative ICP (Exclusions)</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm">
                 <li>Businesses with little recurring support activity or enquiries that are almost entirely bespoke and expert-led</li>
                 <li>Prospects seeking only the cheapest self-service chatbot and unwilling to invest in implementation or maintaining accurate information</li>
                 <li>Companies without access to usable knowledge, an accountable internal owner or permission to use required systems</li>
@@ -211,47 +323,47 @@ export default function PACIADashboard() {
                 <li>Large procurement-led projects outside core size range unless PACIA explicitly accepts</li>
                 <li>Existing PACIA customers, active sales opportunities, partners and specifically restricted companies</li>
               </ul>
-            </div>
+            </InfoCard>
           </div>
         </ContentSection>
 
-        <ContentSection title="Buyer Personas" icon={<Users size={20} />}>
-          <div className="space-y-4">
-            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-indigo-900 mb-2">Owner or CEO</h4>
-              <p className="text-sm text-indigo-800 mb-2"><strong>Primary Concern:</strong> Growth, operating cost and impact of support on small management team</p>
-              <p className="text-sm text-indigo-800"><strong>Engagement:</strong> First contact in founder-led businesses. Discuss workload and focused first project.</p>
-            </div>
+        <ContentSection title="Buyer Personas">
+          <div className="space-y-3">
+            <InfoCard color="indigo">
+              <h4 className="font-semibold mb-2">Owner or CEO</h4>
+              <p className="text-sm mb-2"><strong>Primary Concern:</strong> Growth, operating cost and impact of support on small management team</p>
+              <p className="text-sm"><strong>Engagement:</strong> First contact in founder-led businesses. Discuss workload and focused first project.</p>
+            </InfoCard>
 
-            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-indigo-900 mb-2">COO or Operations Lead</h4>
-              <p className="text-sm text-indigo-800 mb-2"><strong>Primary Concern:</strong> Staff capacity, process consistency and peak demand</p>
-              <p className="text-sm text-indigo-800"><strong>Engagement:</strong> Lead with recurring work and operational bottlenecks. Likely business sponsor.</p>
-            </div>
+            <InfoCard color="indigo">
+              <h4 className="font-semibold mb-2">COO or Operations Lead</h4>
+              <p className="text-sm mb-2"><strong>Primary Concern:</strong> Staff capacity, process consistency and peak demand</p>
+              <p className="text-sm"><strong>Engagement:</strong> Lead with recurring work and operational bottlenecks. Likely business sponsor.</p>
+            </InfoCard>
 
-            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-indigo-900 mb-2">Head of Support / Customer Service</h4>
-              <p className="text-sm text-indigo-800 mb-2"><strong>Primary Concern:</strong> Repeated questions, backlogs, quality and team time</p>
-              <p className="text-sm text-indigo-800"><strong>Engagement:</strong> Lead with specific enquiry category. Treat as likely internal champion.</p>
-            </div>
+            <InfoCard color="indigo">
+              <h4 className="font-semibold mb-2">Head of Support / Customer Service</h4>
+              <p className="text-sm mb-2"><strong>Primary Concern:</strong> Repeated questions, backlogs, quality and team time</p>
+              <p className="text-sm"><strong>Engagement:</strong> Lead with specific enquiry category. Treat as likely internal champion.</p>
+            </InfoCard>
 
-            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-indigo-900 mb-2">Head of Customer Experience</h4>
-              <p className="text-sm text-indigo-800 mb-2"><strong>Primary Concern:</strong> Consistent information and customer effort across channels</p>
-              <p className="text-sm text-indigo-800"><strong>Engagement:</strong> Discuss where customers wait or receive inconsistent guidance.</p>
-            </div>
+            <InfoCard color="indigo">
+              <h4 className="font-semibold mb-2">Head of Customer Experience</h4>
+              <p className="text-sm mb-2"><strong>Primary Concern:</strong> Consistent information and customer effort across channels</p>
+              <p className="text-sm"><strong>Engagement:</strong> Discuss where customers wait or receive inconsistent guidance.</p>
+            </InfoCard>
 
-            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-indigo-900 mb-2">Digital Transformation Lead</h4>
-              <p className="text-sm text-indigo-800 mb-2"><strong>Primary Concern:</strong> Feasible automation project with measurable ownership</p>
-              <p className="text-sm text-indigo-800"><strong>Engagement:</strong> Link support use case to existing improvement initiative.</p>
-            </div>
+            <InfoCard color="indigo">
+              <h4 className="font-semibold mb-2">Digital Transformation Lead</h4>
+              <p className="text-sm mb-2"><strong>Primary Concern:</strong> Feasible automation project with measurable ownership</p>
+              <p className="text-sm"><strong>Engagement:</strong> Link support use case to existing improvement initiative.</p>
+            </InfoCard>
 
-            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
-              <h4 className="font-semibold text-indigo-900 mb-2">CTO or Technology Lead</h4>
-              <p className="text-sm text-indigo-800 mb-2"><strong>Primary Concern:</strong> Access, integration effort, security and maintenance</p>
-              <p className="text-sm text-indigo-800"><strong>Engagement:</strong> Include in technical discovery once business use case established. Don't assume ownership of support budget.</p>
-            </div>
+            <InfoCard color="indigo">
+              <h4 className="font-semibold mb-2">CTO or Technology Lead</h4>
+              <p className="text-sm mb-2"><strong>Primary Concern:</strong> Access, integration effort, security and maintenance</p>
+              <p className="text-sm"><strong>Engagement:</strong> Include in technical discovery once business use case established. Don't assume ownership of support budget.</p>
+            </InfoCard>
 
             <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 mt-4">
               <h4 className="font-semibold text-slate-900 mb-2">Contact Strategy</h4>
@@ -267,18 +379,18 @@ export default function PACIADashboard() {
         </ContentSection>
 
         <ContentSection title="Pain to Value Mapping">
-          <div className="space-y-4 text-sm lg:text-base">
-            <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-              <h4 className="font-semibold text-green-900 mb-2">E-commerce & Retail</h4>
-              <p className="text-green-800 text-sm mb-2"><strong>Pain:</strong> Repeat questions about delivery, returns and products consume support time</p>
-              <p className="text-green-800 text-sm"><strong>Value Message:</strong> Reduce routine handling and improve access to approved information</p>
-            </div>
+          <div className="space-y-3">
+            <InfoCard color="green">
+              <h4 className="font-semibold mb-2">E-commerce & Retail</h4>
+              <p className="text-sm mb-2"><strong>Pain:</strong> Repeat questions about delivery, returns and products consume support time</p>
+              <p className="text-sm"><strong>Value Message:</strong> Reduce routine handling and improve access to approved information</p>
+            </InfoCard>
 
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-              <h4 className="font-semibold text-blue-900 mb-2">Tourism & Hospitality</h4>
-              <p className="text-blue-800 text-sm mb-2"><strong>Pain:</strong> Repeat guest questions and multiple languages stretch reception/reservations teams</p>
-              <p className="text-blue-800 text-sm"><strong>Value Message:</strong> Improve enquiry coverage and staff capacity during busy periods</p>
-            </div>
+            <InfoCard color="blue">
+              <h4 className="font-semibold mb-2">Tourism & Hospitality</h4>
+              <p className="text-sm mb-2"><strong>Pain:</strong> Repeat guest questions and multiple languages stretch reception/reservations teams</p>
+              <p className="text-sm"><strong>Value Message:</strong> Improve enquiry coverage and staff capacity during busy periods</p>
+            </InfoCard>
           </div>
         </ContentSection>
       </div>
@@ -313,26 +425,26 @@ export default function PACIADashboard() {
             </p>
           </div>
 
-          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-            <h4 className="font-semibold text-amber-900 mb-2">Initial Sample Size</h4>
-            <p className="text-amber-800 text-sm">
+          <InfoCard color="amber">
+            <h4 className="font-semibold mb-2">Initial Sample Size</h4>
+            <p className="text-sm">
               Research initial sample of 100 unique companies: 60 e-commerce/retail + 40 tourism/hospitality. This is a research and QA batch, not a monthly delivery commitment.
             </p>
-          </div>
+          </InfoCard>
 
-          <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-            <h4 className="font-semibold text-red-900 mb-2">Suppression (Takes Precedence)</h4>
-            <ul className="list-disc list-inside space-y-1 text-red-800 text-sm">
+          <InfoCard color="red">
+            <h4 className="font-semibold mb-2">Suppression (Takes Precedence)</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
               <li>Existing PACIA customers</li>
               <li>Active sales opportunities</li>
               <li>Partners and specifically restricted companies</li>
               <li>Opt-outs and hard bounces</li>
               <li>Direct competitors</li>
             </ul>
-            <p className="text-red-800 text-sm mt-2">
+            <p className="text-sm mt-2">
               <strong>Process:</strong> Normalize company domains before deduplication. Apply suppression before enrichment and again before sending.
             </p>
-          </div>
+          </InfoCard>
         </div>
       </ContentSection>
     );
@@ -340,7 +452,7 @@ export default function PACIADashboard() {
 
   function PromptsTab() {
     return (
-      <ContentSection title="AI Prompts & Messaging Framework" icon={<MessageSquare size={20} />}>
+      <ContentSection title="AI Prompts & Messaging Framework" icon={<Code size={20} />}>
         <div className="space-y-4 text-sm lg:text-base">
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Message Framework</h4>
@@ -355,33 +467,37 @@ export default function PACIADashboard() {
             </ul>
           </div>
 
-          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-            <h4 className="font-semibold text-green-900 mb-2">E-commerce Angle (TIER 1)</h4>
-            <p className="text-green-800 text-sm">
+          <InfoCard color="green">
+            <h4 className="font-semibold mb-2">E-commerce Angle (TIER 1)</h4>
+            <p className="text-sm">
               Help the support team handle routine delivery, returns and product questions with less repetitive work. The first conversation establishes which enquiry category is worth automating.
             </p>
-          </div>
+          </InfoCard>
 
-          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-            <h4 className="font-semibold text-blue-900 mb-2">Tourism Angle (TIER 2)</h4>
-            <p className="text-blue-800 text-sm">
+          <InfoCard color="blue">
+            <h4 className="font-semibold mb-2">Tourism Angle (TIER 2)</h4>
+            <p className="text-sm">
               Make recurring guest information easier to access across languages and busy periods. Start with information support before discussing booking-system actions.
             </p>
-          </div>
+          </InfoCard>
 
-          <div className="bg-slate-100 p-4 rounded-lg border border-slate-300 font-mono text-sm">
+          <div className="bg-slate-100 p-4 rounded-lg border border-slate-300">
             <h4 className="font-semibold text-slate-900 mb-2">Email Structure Template (English master copy)</h4>
-            <div className="space-y-3 text-slate-800">
-              <p><strong>Subject:</strong> Customer enquiries at [Company]</p>
-              <div className="mt-2">
-                <p>Hi [First name],</p>
-                <p className="mt-2">I noticed [verified company observation].</p>
-                <p className="mt-2">How does your team currently handle recurring questions about [relevant category]?</p>
-                <p className="mt-2">PACIA builds tailored AI support around a company's own information.</p>
-                <p className="mt-2">Would a short conversation about whether this could fit your support process be useful?</p>
-                <p className="mt-2">[Approved sender]</p>
-              </div>
-            </div>
+            <CodeBlock>
+              <strong>Subject:</strong> Customer enquiries at [Company]
+              <br /><br />
+              Hi [First name],
+              <br /><br />
+              I noticed [verified company observation].
+              <br /><br />
+              How does your team currently handle recurring questions about [relevant category]?
+              <br /><br />
+              PACIA builds tailored AI support around a company's own information.
+              <br /><br />
+              Would a short conversation about whether this could fit your support process be useful?
+              <br /><br />
+              [Approved sender]
+            </CodeBlock>
             <p className="text-slate-600 text-xs mt-3">
               Note: Localise to Slovenian for actual outreach. Observation and question must be specific to selected segment.
             </p>
@@ -397,26 +513,28 @@ export default function PACIADashboard() {
             </ul>
           </div>
 
-          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-            <h4 className="font-semibold text-amber-900 mb-2">Reply Handling Guidelines</h4>
-            <ul className="list-disc list-inside space-y-1 text-amber-800 text-sm">
+          <InfoCard color="amber">
+            <h4 className="font-semibold mb-2">Reply Handling Guidelines</h4>
+            <ul className="list-disc list-inside space-y-1 text-sm">
               <li><strong>Existing chatbot users:</strong> Ask which support work remains manual</li>
               <li><strong>Low enquiry volume:</strong> Qualify out rather than forcing the case</li>
               <li><strong>Accuracy concerns:</strong> Arrange scope and testing discussion with PACIA</li>
               <li><strong>Pricing/integration/data questions:</strong> Escalate with full conversation context</li>
               <li><strong>Never:</strong> Make unconfirmed commitments in the inbox</li>
             </ul>
-          </div>
+          </InfoCard>
 
           <div>
             <h4 className="font-semibold text-slate-900 mb-2">Offer Boundaries for Sales</h4>
-            <div className="bg-green-50 p-3 rounded-lg border border-green-200 mb-2">
-              <p className="text-green-900 font-semibold text-sm mb-1">Lead With (Information Support):</p>
-              <p className="text-green-800 text-sm">Product/service FAQs, delivery and returns policies, booking information, general customer guidance</p>
-            </div>
-            <div className="bg-red-50 p-3 rounded-lg border border-red-200">
-              <p className="text-red-900 font-semibold text-sm mb-1">Separately Scoped (Integration Requirements):</p>
-              <p className="text-red-800 text-sm">Live order lookups, booking changes, refunds, account actions. Don't promise connector/transaction capability before technical review.</p>
+            <InfoCard color="green">
+              <p className="font-semibold text-sm mb-1">Lead With (Information Support):</p>
+              <p className="text-sm">Product/service FAQs, delivery and returns policies, booking information, general customer guidance</p>
+            </InfoCard>
+            <div className="mt-2">
+              <InfoCard color="red">
+                <p className="font-semibold text-sm mb-1">Separately Scoped (Integration Requirements):</p>
+                <p className="text-sm">Live order lookups, booking changes, refunds, account actions. Don't promise connector/transaction capability before technical review.</p>
+              </InfoCard>
             </div>
           </div>
         </div>
@@ -434,68 +552,4 @@ export default function PACIADashboard() {
       </>
     );
   }
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      {/* Header */}
-      <div className="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
-        <div className="px-4 lg:px-8 py-4 lg:py-6">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
-            <div className="flex items-center gap-3 flex-wrap">
-              <h1 className="text-xl lg:text-2xl font-bold text-gray-900">PACIA</h1>
-              <a
-                href="https://www.pacia-support.com/sl"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-indigo-600 hover:underline inline-block"
-              >
-                Visit Website →
-              </a>
-              <StatusBadge clientId="pacia" status={status} onStatusChange={handleStatusChange} />
-              {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
-            </div>
-          </div>
-
-          {/* Tabs */}
-          <div className="flex gap-1 lg:gap-2 mt-4 overflow-x-auto pb-2 scrollbar-thin">
-            {visibleTabs.map((tab) => {
-              const Icon = tab.icon;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-1.5 lg:gap-2 px-3 lg:px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap text-sm lg:text-base ${
-                    activeTab === tab.id
-                      ? 'bg-indigo-100 text-indigo-700 shadow-sm'
-                      : 'text-slate-600 hover:bg-slate-100'
-                  }`}
-                >
-                  <Icon size={16} className="lg:w-5 lg:h-5" />
-                  <span className="hidden sm:inline">{tab.label}</span>
-                  <span className="sm:hidden">{tab.label.split(' ')[0]}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="px-4 lg:px-8 py-6 lg:py-8 max-w-7xl mx-auto">
-        {activeTab === 'overview' && <OverviewTab />}
-        {activeTab === 'icp' && <ICPAndPersonasTab />}
-        {activeTab === 'filters' && <FiltersTab />}
-        {activeTab === 'prompts' && <PromptsTab />}
-        {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
-        {activeTab === 'performance' && (
-          <>
-            <PerformanceTabDynamic clientId="pacia" />
-            <CampaignsTabDynamic clientId="pacia" />
-          </>
-        )}
-        {activeTab === 'documents' && <DocumentsTabGeneric clientId="pacia" />}
-        {activeTab === 'tasks' && <TasksTab clientId="pacia" />}
-      </div>
-    </div>
-  );
 }
