@@ -507,5 +507,14 @@
     "dueDate": "2026-10-19",
     "order": 17,
     "comments": []
+  },
+  {
+    "id": "task_1792063655898_q5fw6ym",
+    "description": "Update email sequences for MoreFromFood",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-15",
+    "order": 18,
+    "comments": []
   }
 ]
