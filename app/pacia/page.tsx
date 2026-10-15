@@ -124,7 +124,7 @@ export default function PACIAPage() {
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
                 {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
               </div>
-              <p className="text-slate-600 mt-1">AI-Native Autonomous IT Operations Platform</p>
+              <p className="text-slate-600 mt-1">Bespoke AI Customer Support for Slovenian Businesses</p>
               <a
                 href="https://www.pacia-support.com/sl"
                 target="_blank"
@@ -179,57 +179,77 @@ export default function PACIAPage() {
   function OverviewTab() {
     return (
       <ContentSection title="Client Overview" icon={<FileText size={20} />}>
-        <div className="space-y-4 text-sm lg:text-base">
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">About PACIA</h4>
-            <p className="text-slate-700">
-              PACIA designs bespoke AI customer support agents using a company's own knowledge, with multilingual support across web, email and social channels. Implementation includes knowledge preparation, brand adaptation, testing and deployment, with approximately 4-week delivery timeline.
+        <div className="space-y-6">
+          <p className="text-slate-700">
+            <strong>PACIA</strong> designs bespoke AI customer support agents using a company's own knowledge, with multilingual support across web, email and social channels. Implementation includes knowledge preparation, brand adaptation, testing and deployment, with approximately 4-week delivery timeline.
+          </p>
+
+          <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+            <h4 className="font-semibold text-indigo-900 mb-2">Target Customer Profile:</h4>
+            <p className="text-indigo-800 mb-3">
+              Tailored AI customer support implementation for Slovenian businesses with 20-250 employees (priority band: 30-150 employees). Focus on reducing repetitive support work by handling recurring customer enquiries with approved company information.
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Offer</h4>
-            <p className="text-slate-700">
-              Tailored AI customer support implementation for Slovenian businesses with 20-250 employees. Focus on reducing repetitive support work by handling recurring customer enquiries with approved company information.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <InfoCard label="Primary Geography" value="Slovenia" />
+            <InfoCard label="Company Size" value="20-250 employees" />
+            <InfoCard label="Delivery Timeline" value="~4 weeks" />
+            <InfoCard label="Initial Sample Size" value="100 companies" />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Target Market</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li><strong>Geography:</strong> Slovenia (primary); UK and US expansion only after local validation</li>
-              <li><strong>Company Size:</strong> 20-250 employees (priority band: 30-150 employees)</li>
-              <li><strong>Primary Segments:</strong> E-commerce & Retail (60%), Tourism & Hospitality (40%)</li>
-              <li><strong>Second-Wave Segments:</strong> Logistics, Service Businesses, Subscription Businesses</li>
+            <h4 className="font-semibold text-slate-900 mb-3">Target Industries:</h4>
+            <div className="space-y-3">
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                <h5 className="font-semibold text-blue-900 mb-2">PRIMARY: E-commerce & Retail (60%)</h5>
+                <p className="text-blue-800">
+                  First campaign focus with 60 companies from initial accounts
+                </p>
+              </div>
+
+              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                <h5 className="font-semibold text-green-900 mb-2">PRIMARY: Tourism & Hospitality (40%)</h5>
+                <p className="text-green-800">
+                  Second campaign focus with 40 companies from initial accounts
+                </p>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                <h5 className="font-semibold text-amber-900 mb-2">SECOND-WAVE: Additional Segments</h5>
+                <ul className="text-amber-800 text-sm space-y-1">
+                  <ListItem>Logistics</ListItem>
+                  <ListItem>Service Businesses</ListItem>
+                  <ListItem>Subscription Businesses</ListItem>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Value Proposition:</h4>
+            <ul className="space-y-2">
+              <ListItem type="check">Help support teams spend less time on recurring questions</ListItem>
+              <ListItem type="check">Make routine information easier for customers to access</ListItem>
+              <ListItem type="check">Improve support capacity, coverage and consistency</ListItem>
+              <ListItem type="check">Start with one clearly defined category of customer questions</ListItem>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Value Proposition</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li>Help support teams spend less time on recurring questions</li>
-              <li>Make routine information easier for customers to access</li>
-              <li>Improve support capacity, coverage and consistency</li>
-              <li>Start with one clearly defined category of customer questions</li>
+            <h4 className="font-semibold text-slate-900 mb-3">Campaign Direction:</h4>
+            <ul className="space-y-2">
+              <ListItem type="check"><strong>Primary CTA:</strong> Qualified discovery conversation</ListItem>
+              <ListItem type="check"><strong>Language:</strong> Slovenian for outreach; English for internal documentation</ListItem>
+              <ListItem type="check"><strong>Expansion:</strong> UK and US expansion only after local validation</ListItem>
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Campaign Direction</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li><strong>First Campaign:</strong> E-commerce and retail (60% of initial accounts)</li>
-              <li><strong>Second Campaign:</strong> Tourism and hospitality (40% of initial accounts)</li>
-              <li><strong>Initial Sample:</strong> 100 unique companies (60 e-commerce/retail, 40 tourism/hospitality)</li>
-              <li><strong>Primary CTA:</strong> Qualified discovery conversation</li>
-              <li><strong>Language:</strong> Slovenian for outreach; English for internal documentation</li>
-            </ul>
-          </div>
-
-          <div className="pt-2">
-            <h4 className="font-semibold text-slate-900 mb-2">Key Contacts</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li><strong>PACIA Business Contact:</strong> David Šeruga (david@pacia-support.com)</li>
-              <li><strong>INTELSOL Account Lead:</strong> Matej Gostiša</li>
+          <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+            <h4 className="font-semibold text-slate-900 mb-2">Key Contacts:</h4>
+            <ul className="text-slate-700 text-sm space-y-1">
+              <ListItem><strong>PACIA Business Contact:</strong> David Šeruga (david@pacia-support.com)</ListItem>
+              <ListItem><strong>INTELSOL Account Lead:</strong> Matej Gostiša</ListItem>
             </ul>
           </div>
         </div>
@@ -248,28 +268,28 @@ export default function PACIAPage() {
                 Established Slovenian business with recurring customer enquiries, a clear owner of the support process and usable company information. Needs to improve support capacity, coverage or consistency and is willing to start with a defined scope.
               </p>
 
-              <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
+              <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
                 <h5 className="font-semibold text-indigo-900 mb-2">Operational Fit Criteria:</h5>
-                <ul className="list-disc list-inside space-y-1 text-indigo-800 text-sm">
-                  <li><strong>Customer Interaction:</strong> Active support or guest enquiry function visible</li>
-                  <li><strong>Repeatability:</strong> Common questions answerable from stable, approved information</li>
-                  <li><strong>Business Pressure:</strong> Growth, seasonal peaks, workload, response gaps or new languages create reason to act</li>
-                  <li><strong>Knowledge Readiness:</strong> Policies, FAQs, product/service information exist with owner willing to review</li>
-                  <li><strong>Buying Readiness:</strong> Relevant manager open to discovery and can involve sponsor/budget holder</li>
-                  <li><strong>Technical Scope:</strong> Useful first release feasible without unsupported integrations</li>
-                  <li><strong>Economic Fit:</strong> Prospect can describe operational value justifying scoped paid project</li>
+                <ul className="text-indigo-800 text-sm space-y-1">
+                  <ListItem><strong>Customer Interaction:</strong> Active support or guest enquiry function visible</ListItem>
+                  <ListItem><strong>Repeatability:</strong> Common questions answerable from stable, approved information</ListItem>
+                  <ListItem><strong>Business Pressure:</strong> Growth, seasonal peaks, workload, response gaps or new languages create reason to act</ListItem>
+                  <ListItem><strong>Knowledge Readiness:</strong> Policies, FAQs, product/service information exist with owner willing to review</ListItem>
+                  <ListItem><strong>Buying Readiness:</strong> Relevant manager open to discovery and can involve sponsor/budget holder</ListItem>
+                  <ListItem><strong>Technical Scope:</strong> Useful first release feasible without unsupported integrations</ListItem>
+                  <ListItem><strong>Economic Fit:</strong> Prospect can describe operational value justifying scoped paid project</ListItem>
                 </ul>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold text-slate-900 mb-2">Target Company Profile</h4>
-              <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li><strong>Geography:</strong> Slovenia (primary market)</li>
-                <li><strong>Company Size:</strong> 20-250 employees</li>
-                <li><strong>Priority Band:</strong> 30-150 employees</li>
-                <li><strong>Support Function:</strong> Active customer support or guest enquiry function</li>
-                <li><strong>Knowledge Base:</strong> Existing policies, FAQs, product/service information</li>
+              <h4 className="font-semibold text-slate-900 mb-3">Target Company Profile:</h4>
+              <ul className="space-y-2">
+                <ListItem type="check"><strong>Geography:</strong> Slovenia (primary market)</ListItem>
+                <ListItem type="check"><strong>Company Size:</strong> 20-250 employees</ListItem>
+                <ListItem type="check"><strong>Priority Band:</strong> 30-150 employees</ListItem>
+                <ListItem type="check"><strong>Support Function:</strong> Active customer support or guest enquiry function</ListItem>
+                <ListItem type="check"><strong>Knowledge Base:</strong> Existing policies, FAQs, product/service information</ListItem>
               </ul>
             </div>
 
@@ -303,13 +323,13 @@ export default function PACIAPage() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-slate-900 mb-2">Buying Signals</h4>
-              <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li><strong>Support Recruitment:</strong> Current job adverts for customer support roles</li>
-                <li><strong>New Market/Language:</strong> Company announcement or active localised website</li>
-                <li><strong>Seasonal Demand:</strong> Published operating season, offers or events</li>
-                <li><strong>Multiple Channels:</strong> Contact page with active customer-facing channels</li>
-                <li><strong>Response Complaints:</strong> Specific public reviews about slow responses</li>
+              <h4 className="font-semibold text-slate-900 mb-3">Buying Signals:</h4>
+              <ul className="space-y-2">
+                <ListItem type="check"><strong>Support Recruitment:</strong> Current job adverts for customer support roles</ListItem>
+                <ListItem type="check"><strong>New Market/Language:</strong> Company announcement or active localised website</ListItem>
+                <ListItem type="check"><strong>Seasonal Demand:</strong> Published operating season, offers or events</ListItem>
+                <ListItem type="check"><strong>Multiple Channels:</strong> Contact page with active customer-facing channels</ListItem>
+                <ListItem type="check"><strong>Response Complaints:</strong> Specific public reviews about slow responses</ListItem>
               </ul>
             </div>
 
@@ -400,28 +420,28 @@ export default function PACIAPage() {
   function FiltersTab() {
     return (
       <ContentSection title="Clay Filtering Strategy" icon={<Filter size={20} />}>
-        <div className="space-y-4 text-sm lg:text-base">
+        <div className="space-y-6">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Account Selection Criteria</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li><strong>Geography:</strong> Slovenia only (no UK/US until validation)</li>
-              <li><strong>Company Size:</strong> 20-250 employees (filter range)</li>
-              <li><strong>Priority Band:</strong> 30-150 employees (emphasize in targeting)</li>
-              <li><strong>Industries:</strong> E-commerce/Retail (60%), Tourism/Hospitality (40%)</li>
+            <h4 className="font-semibold text-slate-900 mb-3">Account Selection Criteria:</h4>
+            <ul className="space-y-2">
+              <ListItem type="check"><strong>Geography:</strong> Slovenia only (no UK/US until validation)</ListItem>
+              <ListItem type="check"><strong>Company Size:</strong> 20-250 employees (filter range)</ListItem>
+              <ListItem type="check"><strong>Priority Band:</strong> 30-150 employees (emphasize in targeting)</ListItem>
+              <ListItem type="check"><strong>Industries:</strong> E-commerce/Retail (60%), Tourism/Hospitality (40%)</ListItem>
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Account Scoring for Prioritization (0-10 scale)</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700 text-sm">
-              <li>2 points: Slovenia location</li>
-              <li>2 points: Core size fit (30-150 employees)</li>
-              <li>2 points: Active support function visible</li>
-              <li>2 points: Credible repeatable enquiry category identified</li>
-              <li>2 points: Current buying signal present</li>
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <h4 className="font-semibold text-blue-900 mb-3">Account Scoring for Prioritization (0-10 scale):</h4>
+            <ul className="text-blue-800 text-sm space-y-1">
+              <ListItem>2 points: Slovenia location</ListItem>
+              <ListItem>2 points: Core size fit (30-150 employees)</ListItem>
+              <ListItem>2 points: Active support function visible</ListItem>
+              <ListItem>2 points: Credible repeatable enquiry category identified</ListItem>
+              <ListItem>2 points: Current buying signal present</ListItem>
             </ul>
-            <p className="text-slate-600 text-sm mt-2">
-              <strong>Priority A:</strong> 8-10 points | <strong>Priority B:</strong> 6 points | <strong>Further Research:</strong> 0-4 points
+            <p className="text-blue-900 text-sm mt-3 font-semibold">
+              Priority A: 8-10 points | Priority B: 6 points | Further Research: 0-4 points
             </p>
           </div>
 
