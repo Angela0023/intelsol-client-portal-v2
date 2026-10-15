@@ -516,5 +516,77 @@
     "dueDate": "2026-10-15",
     "order": 18,
     "comments": []
+  },
+  {
+    "id": "task_1792328400000_sel001",
+    "description": "Finalise Selekcija.hr lead list",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 19,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400001_mff001",
+    "description": "Leads for MoreFromFood (at least 500)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 20,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400002_ccr001",
+    "description": "Leads for Clever Craft (at least 500)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 21,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400003_int001",
+    "description": "Leads for Intrix (at least 500)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 22,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400004_ebl001",
+    "description": "Add more leads for eBliss AI (good until Tuesday next week)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 23,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400005_stj001",
+    "description": "Leads for Stojkov (at least 500)",
+    "assignedTo": "Filip",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 24,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400006_bir001",
+    "description": "Leads for Birografika (at least 500)",
+    "assignedTo": "Filip",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 25,
+    "comments": []
+  },
+  {
+    "id": "task_1792328400007_prt001",
+    "description": "Leads for PR Tronic (at least 500)",
+    "assignedTo": "Filip",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 26,
+    "comments": []
   }
 ]
