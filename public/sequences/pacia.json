@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "id": "ecommerce-retail",
+    "tierName": "E-commerce & Retail",
+    "tierColor": "blue",
+    "targetPersonas": "All positions - Owner/CEO, COO, Head of Support/Customer Service, Head of Customer Experience",
+    "messagingAngle": "Reduce time spent on recurring delivery, returns, and product enquiries",
+    "clayFilter": "Slovenia - E-commerce & Retail",
+    "targetPositions": "All positions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Support capacity for [Company Name]?",
+        "body": "Hi [First Name],\n\nI noticed [Company Name] handles online orders - which means your support team is probably fielding the same delivery, returns, and product questions repeatedly.\n\nPACIA helps Slovenian e-commerce businesses reduce that repetitive work. We build a bespoke AI support agent using your existing company information - policies, FAQs, product details - and deploy it across web, email, and social channels.\n\nStart with one clearly defined category (like delivery tracking or returns process), and improve support capacity without adding headcount.\n\nTypical implementation: 4 weeks. No complex integrations required.\n\nWorth a 20-minute conversation to see if there's a fit?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Support capacity",
+        "body": "Hi [First Name],\n\nFollowing up on my message about reducing repetitive support work at [Company Name].\n\nMost e-commerce businesses we work with start with a single, high-volume enquiry category - delivery status, return instructions, or product availability questions.\n\nThe AI agent handles those recurring questions using your approved company information, letting your team focus on complex customer issues that actually need human attention.\n\nRelevant for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final follow-up - support automation",
+        "body": "Hi [First Name],\n\nLast follow-up on this.\n\nIf [Company Name] is looking to improve support capacity or coverage - particularly around recurring customer questions - PACIA could be a fit.\n\nWe've helped other Slovenian e-commerce businesses reduce the time their teams spend on repeat enquiries, making routine information easier for customers to access.\n\nHappy to have a brief conversation if the timing works.\n\nBest,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "tourism-hospitality",
+    "tierName": "Tourism & Hospitality",
+    "tierColor": "green",
+    "targetPersonas": "All positions - Owner/CEO, COO, Head of Support/Customer Service, Head of Customer Experience",
+    "messagingAngle": "Improve guest enquiry coverage and capacity during peak periods, handle multilingual support",
+    "clayFilter": "Slovenia - Tourism & Hospitality",
+    "targetPositions": "All positions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Guest enquiry capacity at [Company Name]?",
+        "body": "Hi [First Name],\n\nI noticed [Company Name] serves guests - which likely means your reception or reservations team handles a lot of repeat questions about bookings, policies, amenities, and local information.\n\nPACIA helps Slovenian tourism businesses improve that enquiry coverage. We build a bespoke AI support agent using your existing information - booking policies, guest FAQs, property details - with multilingual capability across web, email, and social channels.\n\nStart with one defined category (like booking confirmation or check-in procedures), and improve capacity during peak periods without stretching your team.\n\nTypical implementation: 4 weeks.\n\nWorth a 20-minute conversation to see if there's a fit?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Guest enquiry capacity",
+        "body": "Hi [First Name],\n\nFollowing up on my message about improving guest enquiry coverage at [Company Name].\n\nMost tourism businesses we work with face two specific challenges:\n1. Repeat guest questions (booking details, policies, amenities) that consume staff time\n2. Coverage gaps during busy periods or outside business hours\n\nThe AI agent handles those recurring enquiries using your approved information - including multilingual support if needed - letting your team focus on guests who need personalized assistance.\n\nRelevant for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final follow-up - guest support",
+        "body": "Hi [First Name],\n\nLast follow-up on this.\n\nIf [Company Name] is looking to improve guest enquiry capacity or consistency - particularly around recurring questions or peak period coverage - PACIA could be a fit.\n\nWe've helped other Slovenian tourism businesses reduce the time their teams spend on repeat enquiries, making routine information easier for guests to access.\n\nHappy to have a brief conversation if the timing works.\n\nBest,\n[Your Name]"
+      }
+    ]
+  }
+]
