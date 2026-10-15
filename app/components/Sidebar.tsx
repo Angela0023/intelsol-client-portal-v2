@@ -42,6 +42,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'prtronic', name: 'PRTronic', icon: Building2, color: 'text-fuchsia-600' },
     { id: 'dhm', name: 'DHM', icon: Building2, color: 'text-stone-600' },
     { id: 'morefromfood', name: 'MoreFromFood', icon: Building2, color: 'text-lime-700' },
+    { id: 'pacia', name: 'PACIA', icon: Building2, color: 'text-indigo-700' },
     { id: 'selekcija', name: 'Selekcija.hr', icon: Building2, color: 'text-purple-600' },
     { id: 'intera', name: 'Intrix CRM', icon: Building2, color: 'text-indigo-600' },
   ];

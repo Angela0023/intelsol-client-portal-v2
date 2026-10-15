@@ -29,7 +29,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'selekcija', 'intera'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -52,6 +52,7 @@ export default function AdminPage() {
         prtronic: 'PRTronic',
         dhm: 'DHM',
         morefromfood: 'MoreFromFood',
+        pacia: 'PACIA',
         selekcija: 'Selekcija.hr',
         intera: 'Intrix CRM'
       };

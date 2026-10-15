@@ -48,6 +48,7 @@ const ALL_CLIENTS = [
   { id: 'panorate', name: 'Panorate' },
   { id: 'mbedtronix', name: 'MBEDTRONIX' },
   { id: 'morefromfood', name: 'MoreFromFood' },
+  { id: 'pacia', name: 'PACIA' },
   { id: 'dhm', name: 'DHM' },
   { id: 'prtronic', name: 'PRTronic' },
   { id: 'bmevents', name: 'BM Events' },
