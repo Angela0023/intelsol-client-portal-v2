@@ -25,6 +25,9 @@ interface Sequence {
   id: string;
   tierName: string;
   tierColor: string;
+  sequenceTag?: string;
+  industriesTags?: string;
+  personasTags?: string;
   targetPersonas: string;
   messagingAngle: string;
   emails: Email[];
@@ -302,10 +305,67 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                   )}
                 </div>
 
+                {/* Sequence Tags - Prominent Display */}
+                {!isEditing && (sequence.sequenceTag || sequence.industriesTags || sequence.personasTags) && (
+                  <div className="mb-4 p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2">
+                    {sequence.sequenceTag && (
+                      <div className="font-semibold text-slate-900 text-base">
+                        {sequence.sequenceTag}
+                      </div>
+                    )}
+                    {sequence.industriesTags && (
+                      <div className="text-sm text-slate-700">
+                        {sequence.industriesTags}
+                      </div>
+                    )}
+                    {sequence.personasTags && (
+                      <div className="text-sm text-slate-700">
+                        {sequence.personasTags}
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {/* Sequence Details */}
                 <div className={`${colors.bg} border-l-4 ${colors.border} p-3 rounded mb-4`}>
                   {isEditing ? (
                     <div className="space-y-3">
+                      <div>
+                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                          Sequence Tag (e.g., 📧 SEQUENCE 1: EMPLOYERS):
+                        </label>
+                        <input
+                          type="text"
+                          value={sequence.sequenceTag || ''}
+                          onChange={(e) => handleUpdateSequence(sequence.id, 'sequenceTag', e.target.value)}
+                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                          placeholder="📧 SEQUENCE 1: EMPLOYERS"
+                        />
+                      </div>
+                      <div>
+                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                          Industries Tags (e.g., 🏢 Banking, Pharma, IT...):
+                        </label>
+                        <input
+                          type="text"
+                          value={sequence.industriesTags || ''}
+                          onChange={(e) => handleUpdateSequence(sequence.id, 'industriesTags', e.target.value)}
+                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                          placeholder="🏢 Banking, Insurance, Pharma, Healthcare, IT..."
+                        />
+                      </div>
+                      <div>
+                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                          Personas Tags (e.g., 👤 HR Director, Head of HR...):
+                        </label>
+                        <input
+                          type="text"
+                          value={sequence.personasTags || ''}
+                          onChange={(e) => handleUpdateSequence(sequence.id, 'personasTags', e.target.value)}
+                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                          placeholder="👤 HR Director, Head of HR, HR Manager..."
+                        />
+                      </div>
                       <div>
                         <label className={`text-sm font-medium ${colors.text} block mb-1`}>
                           Target Personas:

@@ -1,9 +1,12 @@
 [
   {
-    "id": "hr-director",
-    "tierName": "PRIMARY: HR Director/Manager",
-    "tierColor": "blue",
-    "targetPersonas": "HR Director, Head of HR, HR Manager",
+    "id": "seq1-hr-director",
+    "tierName": "SEQUENCE 1: HR Director/Manager",
+    "tierColor": "green",
+    "sequenceTag": "📧 SEQUENCE 1: EMPLOYERS",
+    "industriesTags": "🏢 Banking, Insurance, Pharma, Healthcare, IT, Telecom, Professional Services, Manufacturing, Retail, Logistics, Hospitality",
+    "personasTags": "👤 HR Director, Head of HR, HR Manager, Direktor kadrovske službe, Vodja kadrovske službe",
+    "targetPersonas": "HR Director, Head of HR, HR Manager, Direktor kadrovske službe, Vodja kadrovske službe",
     "messagingAngle": "Process sponsor and budget owner for selection tools, needs structured assessment workflow",
     "emails": [
       {
@@ -27,10 +30,13 @@
     ]
   },
   {
-    "id": "ta-manager",
-    "tierName": "PRIMARY: Recruitment/TA Manager",
-    "tierColor": "blue",
-    "targetPersonas": "Head of Recruitment, TA Manager, Recruiter",
+    "id": "seq1-ta-manager",
+    "tierName": "SEQUENCE 1: Recruitment/TA Manager",
+    "tierColor": "green",
+    "sequenceTag": "📧 SEQUENCE 1: EMPLOYERS",
+    "industriesTags": "🏢 Banking, Insurance, Pharma, Healthcare, IT, Telecom, Professional Services, Manufacturing, Retail, Logistics, Hospitality",
+    "personasTags": "👤 Head of Recruitment, TA Manager, Recruitment Manager, Vodja zaposlovanja, Specialist za zaposlovanje",
+    "targetPersonas": "Head of Recruitment, TA Manager, Recruiter, Vodja zaposlovanja, Specialist za zaposlovanje",
     "messagingAngle": "Owns candidate workflow and evaluates practical assessment fit",
     "emails": [
       {
@@ -54,11 +60,14 @@
     ]
   },
   {
-    "id": "organizational-psychologist",
-    "tierName": "PRIMARY: Organizational Psychologist",
-    "tierColor": "blue",
-    "targetPersonas": "Organizational Psychologist, Assessment Lead",
-    "messagingAngle": "Validates instruments, interpretation and role relevance",
+    "id": "seq1-org-psychologist",
+    "tierName": "SEQUENCE 1: Organizational Psychologist",
+    "tierColor": "green",
+    "sequenceTag": "📧 SEQUENCE 1: EMPLOYERS",
+    "industriesTags": "🏢 Banking, Insurance, Pharma, Healthcare, IT, Telecom, Professional Services, Manufacturing, Retail, Logistics, Hospitality",
+    "personasTags": "👤 Organizational Psychologist, Organizacijski psiholog, Assessment Lead, Vodja ocenjevanja",
+    "targetPersonas": "Organizational Psychologist, Organizacijski psiholog, Assessment Lead, Vodja ocenjevanja",
+    "messagingAngle": "Validates instruments, interpretation and role relevance - technical champion",
     "emails": [
       {
         "emailNumber": 1,
@@ -77,6 +86,66 @@
         "type": "Follow-Up 2",
         "subject": "Re: [First Name], assessment tools at [Company]",
         "body": "Hi [First Name],\n\nLast check-in.\n\nIf you ever need support with test selection, validation or remote assessment administration, let me know.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "seq2-agency-leadership",
+    "tierName": "SEQUENCE 2: Agency Leadership",
+    "tierColor": "purple",
+    "sequenceTag": "📧 SEQUENCE 2: RECRUITMENT AGENCIES",
+    "industriesTags": "🏢 Recruitment Firms, Staffing Agencies, Organizational Psychology Consultancies",
+    "personasTags": "👤 Managing Director, CEO, Owner, Operations Director, Direktor, Izvršni direktor",
+    "targetPersonas": "Managing Director, CEO, Owner, Operations Director, Direktor, Izvršni direktor",
+    "messagingAngle": "Agency budget owner and decision maker - offer assessment services to their clients",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "[First Name], assessment services for your clients?",
+        "body": "Hi [First Name],\n\nQuick question: do your clients ever request psychometric assessment as part of recruitment projects?\n\nSelekcija.hr provides recruitment agencies with platform access and expert support to deliver assessments under your brand. You can offer professional testing without hiring in-house psychologists.\n\nWorth a brief conversation?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: [First Name], assessment services for your clients?",
+        "body": "Hi [First Name],\n\nFollowing up on client assessment services.\n\nMany agencies decline assessment requests or outsource them. With Selekcija.hr, you can deliver tests and reports directly to clients as part of your recruitment offering.\n\n15-minute call to discuss?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: [First Name], assessment services for your clients?",
+        "body": "Hi [First Name],\n\nLast note.\n\nIf you're considering adding assessment to your service portfolio or supporting clients who request it, let me know. Happy to explain how it works.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "seq2-agency-recruitment",
+    "tierName": "SEQUENCE 2: Agency Recruitment Head",
+    "tierColor": "purple",
+    "sequenceTag": "📧 SEQUENCE 2: RECRUITMENT AGENCIES",
+    "industriesTags": "🏢 Recruitment Firms, Staffing Agencies, Organizational Psychology Consultancies",
+    "personasTags": "👤 Head of Recruitment, Director of Recruitment, Assessment Lead, Practice Director",
+    "targetPersonas": "Head of Recruitment, Director of Recruitment, Assessment Lead, Practice Director, Vodja zaposlovanja",
+    "messagingAngle": "Owns client recruitment projects and evaluates tool fit - needs repeatable assessment process",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Client assessment projects at [Company]?",
+        "body": "Hi [First Name],\n\nDo you handle client recruitment projects that require candidate assessment?\n\nSelekcija.hr provides recruitment agencies with online tests, reports, and expert interpretation. You can deliver assessment as part of your client services without building in-house capability.\n\nWorth discussing?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Client assessment projects at [Company]?",
+        "body": "Hi [First Name],\n\nFollowing up on assessment for client projects.\n\nIf clients request testing or you want to differentiate your recruitment services, online assessments make it practical to deliver consistently.\n\nCan I show you how it works?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Client assessment projects at [Company]?",
+        "body": "Hi [First Name],\n\nFinal check.\n\nIf assessment is relevant to your client projects or service offering, let me know. Happy to discuss.\n\nBest regards,\n[Your Name]"
       }
     ]
   }
