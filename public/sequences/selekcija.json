@@ -12,20 +12,38 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "{{First Name}}, recurring recruitment at {{Company}}?",
-        "body": "Hi {{First Name}},\n\nQuick question: does {{Company}} handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\nBest regards,\n{{Your Name}}"
+        "subject": "{{First Name}}, se pri podjetju {{Company}} redno ukvarjate z zaposlovanjem?",
+        "body": "Pozdravljeni, {{First Name}},\n\nkratko vprašanje - ali v podjetju {{Company}} redno izvajate zaposlovanje s pomočjo ocenjevanja kandidatov?\n\nSelekcija.hr ponuja spletne psihometrične teste s prilagojenimi poročili. Organizacije, kot sta JGL in Ericsson, jih uporabljajo za ocenjevanje kandidatov na daljavo ter za bolj dosledno izvajanje selekcijskih postopkov.\n\nBi bilo smiselno pogledati, kako bi to lahko vključili v enega od vaših zaposlitvenih procesov?\n\nLep pozdrav,\n{{Your Name}}",
+        "translations": {
+          "english": {
+            "subject": "{{First Name}}, recurring recruitment at {{Company}}?",
+            "body": "Hi {{First Name}},\n\nQuick question: does {{Company}} handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\nBest regards,\n{{Your Name}}"
+          }
+        }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: {{First Name}}, recurring recruitment at {{Company}}?",
-        "body": "Hi {{First Name}},\n\nFollowing up on my note about candidate assessment.\n\nIf you're hiring regularly and want consistent, structured evaluation - online tests make it practical. Remote access, immediate results, and easy sharing with hiring managers.\n\nWorth a 15-minute call to discuss?\n\nBest regards,\n{{Your Name}}"
+        "subject": "Re: {{First Name}}, se pri podjetju {{Company}} redno ukvarjate z zaposlovanjem?",
+        "body": "Pozdravljeni, {{First Name}},\n\noglašam se še glede svojega sporočila o ocenjevanju kandidatov.\n\nČe redno zaposlujete in želite zagotoviti dosledno ter strukturirano ocenjevanje kandidatov, so spletni testi praktična rešitev. Omogočajo oddaljen dostop, takojšnje rezultate in enostavno deljenje poročil z vodji zaposlovanja.\n\nBi si lahko vzeli 15 minut za kratek pogovor?\n\nLep pozdrav,\n{{Your Name}}",
+        "translations": {
+          "english": {
+            "subject": "Re: {{First Name}}, recurring recruitment at {{Company}}?",
+            "body": "Hi {{First Name}},\n\nFollowing up on my note about candidate assessment.\n\nIf you're hiring regularly and want consistent, structured evaluation - online tests make it practical. Remote access, immediate results, and easy sharing with hiring managers.\n\nWorth a 15-minute call to discuss?\n\nBest regards,\n{{Your Name}}"
+          }
+        }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: {{First Name}}, recurring recruitment at {{Company}}?",
-        "body": "Hi {{First Name}},\n\nLast note on this.\n\nIf you're ever reviewing your selection process or assessment tools, I'd be happy to show you how Selekcija.hr works for Slovenian employers.\n\nJust let me know.\n\nBest regards,\n{{Your Name}}"
+        "subject": "Re: {{First Name}}, se pri podjetju {{Company}} redno ukvarjate z zaposlovanjem?",
+        "body": "Pozdravljeni, {{First Name}},\n\nše zadnje sporočilo.\n\nČe boste kdaj pregledovali svoj selekcijski postopek ali razmišljali o orodjih za ocenjevanje kandidatov, vam z veseljem pokažem, kako Selekcija.hr uporabljajo slovenski delodajalci.\n\nSamo sporočite.\n\nLep pozdrav,\n{{Your Name}}",
+        "translations": {
+          "english": {
+            "subject": "Re: {{First Name}}, recurring recruitment at {{Company}}?",
+            "body": "Hi {{First Name}},\n\nLast note on this.\n\nIf you're ever reviewing your selection process or assessment tools, I'd be happy to show you how Selekcija.hr works for Slovenian employers.\n\nJust let me know.\n\nBest regards,\n{{Your Name}}"
+          }
+        }
       }
     ]
   },
@@ -42,20 +60,38 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "{{First Name}}, assessment services for your clients?",
-        "body": "Hi {{First Name}},\n\nQuick question: do your clients ever request psychometric assessment as part of recruitment projects?\n\nSelekcija.hr provides recruitment agencies with platform access and expert support to deliver assessments under your brand. You can offer professional testing without hiring in-house psychologists.\n\nWorth a brief conversation?\n\nBest regards,\n{{Your Name}}"
+        "subject": "{{First Name}}, storitve ocenjevanja za vaše stranke?",
+        "body": "Pozdravljeni, {{First Name}},\n\nkratko vprašanje - ali vaše stranke pri kadrovskih projektih kdaj potrebujejo psihometrično ocenjevanje kandidatov?\n\nSelekcija.hr kadrovskim agencijam omogoča dostop do platforme in strokovno podporo za izvajanje ocenjevanj pod vašo blagovno znamko. Tako lahko svojim strankam ponudite profesionalno testiranje, ne da bi morali zaposliti psihologe v svoji ekipi.\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n{{Your Name}}",
+        "translations": {
+          "english": {
+            "subject": "{{First Name}}, assessment services for your clients?",
+            "body": "Hi {{First Name}},\n\nQuick question: do your clients ever request psychometric assessment as part of recruitment projects?\n\nSelekcija.hr provides recruitment agencies with platform access and expert support to deliver assessments under your brand. You can offer professional testing without hiring in-house psychologists.\n\nWorth a brief conversation?\n\nBest regards,\n{{Your Name}}"
+          }
+        }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: {{First Name}}, assessment services for your clients?",
-        "body": "Hi {{First Name}},\n\nFollowing up on client assessment services.\n\nMany agencies decline assessment requests or outsource them. With Selekcija.hr, you can deliver tests and reports directly to clients as part of your recruitment offering.\n\n15-minute call to discuss?\n\nBest regards,\n{{Your Name}}"
+        "subject": "Re: {{First Name}}, storitve ocenjevanja za vaše stranke?",
+        "body": "Pozdravljeni, {{First Name}},\n\noglašam se še glede storitev ocenjevanja za vaše stranke.\n\nVeliko kadrovskih agencij prošnje za ocenjevanje kandidatov zavrne ali jih prepusti zunanjim izvajalcem. S Selekcija.hr lahko teste in poročila svojim strankam ponudite kot del svojih kadrovskih storitev.\n\nBi si lahko vzeli 15 minut za kratek pogovor?\n\nLep pozdrav,\n{{Your Name}}",
+        "translations": {
+          "english": {
+            "subject": "Re: {{First Name}}, assessment services for your clients?",
+            "body": "Hi {{First Name}},\n\nFollowing up on client assessment services.\n\nMany agencies decline assessment requests or outsource them. With Selekcija.hr, you can deliver tests and reports directly to clients as part of your recruitment offering.\n\n15-minute call to discuss?\n\nBest regards,\n{{Your Name}}"
+          }
+        }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: {{First Name}}, assessment services for your clients?",
-        "body": "Hi {{First Name}},\n\nLast note.\n\nIf you're considering adding assessment to your service portfolio or supporting clients who request it, let me know. Happy to explain how it works.\n\nBest regards,\n{{Your Name}}"
+        "subject": "Re: {{First Name}}, storitve ocenjevanja za vaše stranke?",
+        "body": "Pozdravljeni, {{First Name}},\n\nše zadnje sporočilo.\n\nČe razmišljate o tem, da bi storitve ocenjevanja vključili v svojo ponudbo ali podprli stranke, ki takšne storitve potrebujejo, mi sporočite. Z veseljem vam razložim, kako deluje.\n\nLep pozdrav,\n{{Your Name}}",
+        "translations": {
+          "english": {
+            "subject": "Re: {{First Name}}, assessment services for your clients?",
+            "body": "Hi {{First Name}},\n\nLast note.\n\nIf you're considering adding assessment to your service portfolio or supporting clients who request it, let me know. Happy to explain how it works.\n\nBest regards,\n{{Your Name}}"
+          }
+        }
       }
     ]
   }

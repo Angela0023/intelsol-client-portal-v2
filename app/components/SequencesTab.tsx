@@ -10,6 +10,10 @@ interface Email {
   subject: string;
   body: string;
   translations?: {
+    english?: {
+      subject: string;
+      body: string;
+    };
     serbian?: {
       subject: string;
       body: string;
@@ -462,13 +466,37 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                         </div>
 
                         {/* Translations Section - Collapsible */}
-                        {!isEditing && email.translations && (email.translations.serbian || email.translations.croatian) && (
+                        {!isEditing && email.translations && (email.translations.english || email.translations.serbian || email.translations.croatian) && (
                           <details className="mt-3">
                             <summary className="cursor-pointer text-xs font-semibold text-slate-600 hover:text-slate-900 flex items-center">
                               <span className="mr-2">▶</span>
-                              View Translations (Serbian & Croatian)
+                              View Translations {email.translations.english && '(English)'}{(email.translations.serbian || email.translations.croatian) && '(Serbian & Croatian)'}
                             </summary>
                             <div className="mt-3 pl-4 space-y-4">
+                              {/* English Translation */}
+                              {email.translations.english && (
+                                <div>
+                                  <p className="text-xs font-semibold text-green-700 mb-2 flex items-center">
+                                    <span className="mr-2">🇬🇧</span>
+                                    ENGLISH:
+                                  </p>
+                                  <div className="pl-5 space-y-2">
+                                    <div>
+                                      <p className="text-xs font-medium text-slate-600 mb-1">Subject:</p>
+                                      <p className="text-sm bg-green-50 p-2 rounded border border-green-200 font-mono">
+                                        {email.translations.english.subject}
+                                      </p>
+                                    </div>
+                                    <div>
+                                      <p className="text-xs font-medium text-slate-600 mb-1">Body:</p>
+                                      <div className="text-sm bg-green-50 p-3 rounded border border-green-200 font-mono whitespace-pre-wrap">
+                                        {email.translations.english.body}
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+
                               {/* Serbian Translation */}
                               {email.translations.serbian && (
                                 <div>
