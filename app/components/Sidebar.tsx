@@ -45,6 +45,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'pacia', name: 'PACIA', icon: Building2, color: 'text-indigo-700' },
     { id: 'selekcija', name: 'Selekcija.hr', icon: Building2, color: 'text-purple-600' },
     { id: 'intera', name: 'Intrix CRM', icon: Building2, color: 'text-indigo-600' },
+    { id: 'seyens', name: 'Seyens', icon: Building2, color: 'text-cyan-700' },
   ];
 
   const [clients, setClients] = useState<Client[]>(defaultClients);

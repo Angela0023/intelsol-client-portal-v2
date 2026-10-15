@@ -104,4 +104,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   pacia: 'Onboarding',
   selekcija: 'Onboarding',
   intera: 'Onboarding',
+  seyens: 'Active',
 };

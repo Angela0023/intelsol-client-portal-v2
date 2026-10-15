@@ -1,0 +1,31 @@
+[
+  {
+    "id": "universal-sequence",
+    "tierName": "Universal Sequence - All Industries & Positions",
+    "tierColor": "blue",
+    "targetPersonas": "ALL positions (R&D L&D Managers, R&D Leadership, Scientific Programme Champions)",
+    "messagingAngle": "Systematic visual communication training for research teams - same pain across all industries (scientists can't communicate visually), same desired outcome (systematic method for clear scientific visuals)",
+    "clayFilter": "All Clay Filters",
+    "targetPositions": "All positions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Scientific communication training for [Company Name]?",
+        "body": "Hi [First Name],\n\nI noticed [Company Name] has a substantial research team - which likely means your scientists regularly need to explain complex work through figures, slides and posters.\n\nSeyens teaches a science-specific visual communication method built for R&D teams like yours. We've trained over 7,000 researchers at organizations including IBM Research Zurich, Roche and Boehringer Ingelheim.\n\nThe approach is practical and systematic: participants work on their own scientific materials during the training, learning principles grounded in visual perception rather than subjective design taste.\n\nWould this be relevant to your R&D/scientist development programme?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Scientific communication training",
+        "body": "Hi [First Name],\n\nFollowing up on my message about visual communication training for your research team at [Company Name].\n\nMost organizations we work with face a similar challenge: scientists are highly trained in their technical work but rarely get systematic training in visual communication. Their figures and slides can be technically correct yet difficult for colleagues, managers or collaborators to understand quickly.\n\nSeyens addresses this with a repeatable method researchers can apply to their own scientific materials - figures, posters, presentations - rather than generic PowerPoint training.\n\nThe training combines concise self-study with live application, critique and redesign. Participants work on real scientific content from their own research.\n\nRelevant for [Company Name]?\n\nBest,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2 (Final)",
+        "subject": "Final follow-up - visual communication training",
+        "body": "Hi [First Name],\n\nLast follow-up on this.\n\nIf [Company Name] is looking to help your scientists communicate complex research more effectively - particularly through figures, slides and posters - Seyens could be a fit.\n\nWe work with research-intensive organizations to transfer a systematic visual communication method directly to their R&D teams. 7,000+ researchers trained, including teams at IBM Research, Roche and Boehringer Ingelheim.\n\nTwo options if this is relevant:\n1. Quick call to discuss your R&D development priorities\n2. Up to 2 complimentary places in our live Fundamentals of Visual Communication training\n\nHappy to have a brief conversation if the timing works.\n\nBest,\n[Your Name]"
+      }
+    ]
+  }
+]

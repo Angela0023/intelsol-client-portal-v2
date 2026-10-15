@@ -1,0 +1,682 @@
+'use client';
+
+import { useState } from 'react';
+import ClientLayout from '../components/ClientLayout';
+import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
+
+export default function SeyensPage() {
+  const [activeTab, setActiveTab] = useState('overview');
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'overview':
+        return (
+          <div className="space-y-6">
+            <ContentSection title="Client Overview">
+              <div className="space-y-4">
+                <p className="text-gray-700">
+                  <strong>Seyens</strong> provides premium, science-specific visual communication training for scientists and R&D teams. They teach a systematic method for making complex figures, slides, posters and other research visuals easier to understand, combining self-study with highly interactive live training and feedback on participants' own scientific materials.
+                </p>
+                <p className="text-gray-700">
+                  The target customer is a research-intensive company with enough scientists and internal learning infrastructure for one workshop to grow into recurring cohorts, multiple R&D teams/sites or an annual training relationship.
+                </p>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Campaign Metrics">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <InfoCard label="Primary Geographies" value="DACH, North America, UK/Ireland" />
+                <InfoCard label="Ideal R&D Size" value="100+ scientists/engineers" />
+                <InfoCard label="Minimum R&D Size" value="50+ scientists" />
+                <InfoCard label="Decision Timeline" value="Training calendar windows" />
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Target Industries">
+              <div className="space-y-3">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-2">PRIMARY: Life Sciences (Pharmaceuticals, Biotechnology)</h5>
+                  <p className="text-blue-800 mb-2">Pharma and biotech R&D with large scientific teams and multiple sites</p>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Complex technical content requiring clear visual communication</ListItem>
+                    <ListItem type="check">Large PhD/research populations</ListItem>
+                    <ListItem type="check">Frequent internal/external scientific presentations</ListItem>
+                    <ListItem type="check">Established L&D budgets for scientist development</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-2">SECONDARY: Industrial & Deep-Tech R&D</h5>
+                  <p className="text-green-800 mb-2">AI, semiconductors, photonics, advanced materials, chemicals, advanced manufacturing</p>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Highly technical, research-intensive engineering organizations</ListItem>
+                    <ListItem type="check">Complex internal and external technical communication needs</ListItem>
+                    <ListItem type="check">Large populations of advanced technical researchers</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <h5 className="font-semibold text-amber-900 mb-2">TERTIARY: Medtech, Diagnostics & Scientific Instruments</h5>
+                  <p className="text-amber-800 mb-2">Science-led technology companies with research-intensive cultures</p>
+                  <ul className="space-y-2">
+                    <ListItem type="check">High publication, patent and conference activity</ListItem>
+                    <ListItem type="check">Meaningful share of staff conducting original research</ListItem>
+                  </ul>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Value Proposition">
+              <div className="space-y-3">
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                  <h5 className="font-semibold text-indigo-900 mb-2">Core Problem</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Scientists are highly trained in content but rarely trained systematically in visual communication</ListItem>
+                    <ListItem type="check">Their figures and slides can be technically correct yet dense, inconsistent or difficult to understand quickly</ListItem>
+                    <ListItem type="check">Organizations address this through trial and error or generic presentation courses that don't work with real scientific data</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                  <h5 className="font-semibold text-indigo-900 mb-2">Business Impact</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Scientists and managers spend avoidable time revising slides, figures and posters</ListItem>
+                    <ListItem type="check">Complex technical information takes longer to understand</ListItem>
+                    <ListItem type="check">Communication quality varies widely between researchers and teams</ListItem>
+                    <ListItem type="check">The organization keeps correcting individual outputs instead of giving researchers a reusable method</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                  <h5 className="font-semibold text-indigo-900 mb-2">Why Seyens</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Specialized in scientific visual communication (not generic presentation training)</ListItem>
+                    <ListItem type="check">Proprietary, systematic method developed specifically for scientists</ListItem>
+                    <ListItem type="check">Principles grounded in visual perception, not subjective design taste</ListItem>
+                    <ListItem type="check">Application to participants' real figures, slides and research materials</ListItem>
+                    <ListItem type="check">Blended learning: concise self-study plus live application, critique and redesign</ListItem>
+                    <ListItem type="check">Science-native trainers who can work credibly with technical material</ListItem>
+                    <ListItem type="check">Repeatable method researchers can continue applying after the course</ListItem>
+                  </ul>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Proof Points">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <InfoCard label="Researchers Trained" value="7,000+" />
+                <InfoCard label="Institutions Served" value="200+" />
+                <InfoCard label="Trustpilot Rating" value="~95% five-star (294/311)" />
+                <InfoCard label="Corporate References" value="IBM Research, Roche, Boehringer Ingelheim" />
+              </div>
+            </ContentSection>
+          </div>
+        );
+
+      case 'icp-profile':
+        return (
+          <div className="space-y-6">
+            <ContentSection title="Ideal Customer Profile">
+              <div className="space-y-4">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-3">Best-Fit Customers (Real Examples)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">IBM Research Zurich - Advanced corporate research environment; repeat customer</ListItem>
+                    <ListItem type="check">Roche - Large science-led organization with substantial researcher populations</ListItem>
+                    <ListItem type="check">Boehringer Ingelheim - Research-intensive pharmaceutical environment with scientists as core audience</ListItem>
+                  </ul>
+                  <p className="text-blue-800 mt-3 text-sm">
+                    Common denominator: Substantial scientific/R&D workforce, recurring communication needs, organizational mechanism for staff development
+                  </p>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-3">Dream Customers (Illustrative Profiles)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Novartis - Global pharmaceutical R&D with large scientific teams and multiple sites</ListItem>
+                    <ListItem type="check">ASML - Highly technical, research-intensive engineering organization</ListItem>
+                    <ListItem type="check">NVIDIA Research - Large populations of advanced technical researchers</ListItem>
+                    <ListItem type="check">AstraZeneca, Novo Nordisk, Infineon, BioNTech</ListItem>
+                  </ul>
+                  <p className="text-green-800 mt-3 text-sm">
+                    These are examples of the profile, not a closed target list. Goal: uncover comparable companies we don't already know.
+                  </p>
+                </div>
+
+                <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                  <h5 className="font-semibold text-red-900 mb-3">Bad-Fit Customers (Exclusions)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Very early-stage startups with fewer than ~20-30 researchers and no structured L&D budget</ListItem>
+                    <ListItem type="check">Companies looking for generic presentation, sales-pitch or PowerPoint training</ListItem>
+                    <ListItem type="check">Organizations buying only low-cost, high-volume lectures (cannot support interactive cohort training)</ListItem>
+                    <ListItem type="check">Teams where the need is primarily marketing/brand design rather than scientists communicating technical work</ListItem>
+                    <ListItem type="check">Large companies where the contact has no connection to R&D learning or no path to budget owner</ListItem>
+                  </ul>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Company Size Criteria">
+              <div className="space-y-3">
+                <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+                  <h5 className="font-semibold text-slate-900 mb-2">R&D Population is Key (Total Employee Count is a Rough Proxy)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check"><strong>Ideal:</strong> Identifiable R&D population of 100+ scientists/engineers (no upper limit)</ListItem>
+                    <ListItem type="check"><strong>Good:</strong> 50+ scientists when structured L&D and clear cohort exists</ListItem>
+                    <ListItem type="check"><strong>For R&D-heavy biotech/deep-tech:</strong> Companies from ~200 total employees can be attractive</ListItem>
+                    <ListItem type="check"><strong>For diversified industrial companies:</strong> Prioritize 1,000+ employees unless substantial research unit can be identified</ListItem>
+                  </ul>
+                  <p className="text-slate-800 mt-3 text-sm">
+                    Sweet spot: Large enough to support repeated cohorts but not so diffuse that no one owns researcher development
+                  </p>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Geographic Focus">
+              <div className="space-y-3">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-2">Priority Markets</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">DACH region (Germany, Austria, Switzerland)</ListItem>
+                    <ListItem type="check">North America (US, Canada)</ListItem>
+                    <ListItem type="check">UK and Ireland</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-2">Secondary Markets</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Rest of Europe</ListItem>
+                    <ListItem type="check">Singapore</ListItem>
+                    <ListItem type="check">Australia</ListItem>
+                  </ul>
+                  <p className="text-green-800 mt-3 text-sm">
+                    No hard geographic restriction. Prioritize high-income, research-intensive markets where English-language specialist training is normal and Seyens pricing is realistic.
+                  </p>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Business Model Indicators">
+              <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                <h5 className="font-semibold text-indigo-900 mb-3">Particularly Strong Fits</h5>
+                <ul className="space-y-2">
+                  <ListItem type="check">Multi-site or global R&D organizations</ListItem>
+                  <ListItem type="check">Companies with internal R&D academy, learning curriculum or dedicated L&D support for scientists/engineers</ListItem>
+                  <ListItem type="check">Organizations with regular research symposia, poster sessions, technical conferences or scientific onboarding</ListItem>
+                  <ListItem type="check">Research cultures with high publication, patent and conference activity</ListItem>
+                  <ListItem type="check">Companies where one successful engagement can expand across teams, sites or yearly cohorts</ListItem>
+                </ul>
+                <p className="text-indigo-800 mt-3 text-sm">
+                  High growth/VC backing alone is not a sufficient signal unless it translates into meaningful R&D workforce and training budget.
+                </p>
+              </div>
+            </ContentSection>
+          </div>
+        );
+
+      case 'filters':
+        return (
+          <div className="space-y-6">
+            <ContentSection title="Clay Filters Overview">
+              <p className="text-gray-700 mb-4">
+                All filters target research-intensive companies with substantial R&D populations. The filters are organized by priority geography and industry focus.
+              </p>
+
+              <div className="space-y-3">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-2">Priority 1: DACH + Life Sciences</h5>
+                  <p className="text-blue-800">
+                    Pharmaceuticals and biotechnology companies in Germany, Austria, Switzerland with 50+ R&D staff
+                  </p>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-2">Priority 2: DACH + Deep-Tech</h5>
+                  <p className="text-blue-800">
+                    Industrial R&D, semiconductors, AI, advanced materials in DACH region with 50+ R&D staff
+                  </p>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-2">Priority 3: North America + Life Sciences</h5>
+                  <p className="text-green-800">
+                    Pharma/biotech companies in US and Canada with 50+ R&D staff
+                  </p>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-2">Priority 4: North America + Deep-Tech</h5>
+                  <p className="text-green-800">
+                    Industrial R&D, semiconductors, AI companies in North America with 50+ R&D staff
+                  </p>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <h5 className="font-semibold text-amber-900 mb-2">Priority 5: UK/Ireland + All Industries</h5>
+                  <p className="text-amber-800">
+                    All target industries (Life Sciences, Deep-Tech, Medtech) in UK and Ireland with 50+ R&D staff
+                  </p>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Filter Criteria">
+              <div className="space-y-3">
+                <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+                  <h5 className="font-semibold text-slate-900 mb-3">Core Requirements (All Filters)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Minimum 50 R&D/scientific staff (ideal 100+)</ListItem>
+                    <ListItem type="check">Industries: Pharmaceuticals, Biotechnology, Medical Devices, Semiconductors, AI, Advanced Materials, Chemicals, Scientific Instruments</ListItem>
+                    <ListItem type="check">Exclude: Universities, academic programmes, publicly funded research programmes</ListItem>
+                    <ListItem type="check">Exclude: Very early-stage startups without sufficient researcher headcount</ListItem>
+                  </ul>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Buying Signals">
+              <div className="space-y-3">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-3">Tier 1 Signals (Highest Priority)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Dedicated R&D academy/L&D programme with current courses in scientific writing, presentation, or communication</ListItem>
+                    <ListItem type="check">Recurring scientific event or cohort (symposium, poster day, technical conference, graduate R&D cohort)</ListItem>
+                    <ListItem type="check">Named owner who buys external training for scientists</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-3">Tier 2 Signals (Medium Priority)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Large, concentrated R&D workforce (100+ scientists/engineers at identifiable R&D site)</ListItem>
+                    <ListItem type="check">High PhD density with active publications, patents or conference participation</ListItem>
+                    <ListItem type="check">R&D expansion: substantial scientist hiring, new R&D site/lab, acquisition/integration</ListItem>
+                    <ListItem type="check">Rapid team growth creating onboarding and communication-standardization needs</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <h5 className="font-semibold text-amber-900 mb-3">Tier 3 Signals (Lower Priority)</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Research-intensive company without visible training trigger</ListItem>
+                    <ListItem type="check">Strong technical/scientific workforce but no public evidence yet of training ownership, cohort timing or upcoming event</ListItem>
+                  </ul>
+                  <p className="text-amber-800 mt-3 text-sm">
+                    Note: Buying signals should be used for prioritization and message personalization, not as mandatory inclusion criteria. A very strong ICP company should still be contacted when no public timing trigger can be found.
+                  </p>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Technology Signals">
+              <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+                <h5 className="font-semibold text-slate-900 mb-3">R&D-Intensity Proxies (Optional)</h5>
+                <p className="text-slate-800 mb-3">
+                  Technology stack is NOT a primary filter. Use only as R&D-intensity proxy if available:
+                </p>
+                <ul className="space-y-2">
+                  <ListItem type="check">Life Sciences: BioRender, GraphPad Prism, Benchling</ListItem>
+                  <ListItem type="check">Engineering: MATLAB, COMSOL, Origin, LabVIEW</ListItem>
+                </ul>
+                <p className="text-slate-800 mt-3 text-sm">
+                  Publication/patent activity, R&D headcount and learning infrastructure are stronger signals than software usage.
+                </p>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Explicit Exclusions">
+              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                <h5 className="font-semibold text-red-900 mb-3">Do NOT Contact</h5>
+                <ul className="space-y-2">
+                  <ListItem type="check">Universities, doctoral schools, graduate schools, public academic programmes</ListItem>
+                  <ListItem type="check">MSCA Doctoral Networks/COFUND, Horizon Europe training cohorts, DFG GRKs/SFBs/Excellence Clusters</ListItem>
+                  <ListItem type="check">Very early-stage companies without sufficient researcher headcount or learning budget</ListItem>
+                  <ListItem type="check">Marketing/design agencies, generic training providers, scientific-communication consultancies (potential competitors)</ListItem>
+                  <ListItem type="check">Companies with little genuine R&D despite nominally technical sector</ListItem>
+                </ul>
+              </div>
+            </ContentSection>
+          </div>
+        );
+
+      case 'personas':
+        return (
+          <div className="space-y-6">
+            <ContentSection title="Decision Maker Hierarchy">
+              <div className="space-y-4">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-2">PRIMARY: R&D Learning & Capability Development</h5>
+                  <p className="text-blue-800 mb-3">
+                    <strong>When This Applies:</strong> Best target in large companies. Owns scientist/engineer development, training calendars and external providers.
+                  </p>
+                  <div className="mb-3">
+                    <p className="text-sm font-semibold text-blue-900 mb-2">Typical Titles:</p>
+                    <ul className="space-y-2">
+                      <ListItem type="check">R&D Learning & Development Manager</ListItem>
+                      <ListItem type="check">Scientific Training Manager</ListItem>
+                      <ListItem type="check">R&D Academy Lead</ListItem>
+                      <ListItem type="check">Capability Development Lead</ListItem>
+                      <ListItem type="check">L&D Business Partner for R&D</ListItem>
+                      <ListItem type="check">Talent Development Manager</ListItem>
+                    </ul>
+                  </div>
+                  <p className="text-blue-800 text-sm">
+                    <strong>Important:</strong> Do not require "R&D" or "Scientific" in job title. Generic L&D, Learning Programme, Talent Development, Early Careers or Capability roles are valid when there is evidence the person supports R&D/scientific populations.
+                  </p>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-2">SECONDARY: R&D / Scientific Leadership</h5>
+                  <p className="text-green-800 mb-3">
+                    <strong>When This Applies:</strong> More important in mid-sized biotech/deep-tech firms or when no dedicated R&D learning role exists. May own budget or sponsor a pilot.
+                  </p>
+                  <div>
+                    <p className="text-sm font-semibold text-green-900 mb-2">Typical Titles:</p>
+                    <ul className="space-y-2">
+                      <ListItem type="check">VP/Head/Director of R&D</ListItem>
+                      <ListItem type="check">Research Director</ListItem>
+                      <ListItem type="check">Site Head</ListItem>
+                      <ListItem type="check">Chief Scientific Officer</ListItem>
+                      <ListItem type="check">Head of Research Operations</ListItem>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <h5 className="font-semibold text-amber-900 mb-2">TERTIARY: Scientific Programme / Event Champion</h5>
+                  <p className="text-amber-800 mb-3">
+                    <strong>When This Applies:</strong> Useful champion when they organize a defined cohort/event, but often not the final budget owner.
+                  </p>
+                  <div>
+                    <p className="text-sm font-semibold text-amber-900 mb-2">Typical Titles:</p>
+                    <ul className="space-y-2">
+                      <ListItem type="check">Scientific Communications Manager (internal/R&D)</ListItem>
+                      <ListItem type="check">Research Programme Manager</ListItem>
+                      <ListItem type="check">Symposium/Poster-Day Organizer</ListItem>
+                      <ListItem type="check">Senior Scientist</ListItem>
+                      <ListItem type="check">Technical Community Lead</ListItem>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Persona Variation by Company Type">
+              <div className="space-y-3">
+                <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+                  <h5 className="font-semibold text-slate-900 mb-3">Buyer Prioritization Rules</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check"><strong>Large multinationals:</strong> Prioritize dedicated R&D L&D/capability teams or L&D business partner aligned to R&D</ListItem>
+                    <ListItem type="check"><strong>Mid-sized biotech/deep-tech:</strong> CSO, VP/Director of R&D or Research Operations leader may directly sponsor training</ListItem>
+                    <ListItem type="check"><strong>Site-based organizations:</strong> Relevant buyer may sit at individual research site rather than global headquarters</ListItem>
+                  </ul>
+                  <p className="text-slate-800 mt-3 text-sm">
+                    <strong>Do NOT default to generic HR or corporate communications.</strong> The contact should have clear connection to R&D staff development, a scientific cohort or an internal research event.
+                  </p>
+                </div>
+              </div>
+            </ContentSection>
+          </div>
+        );
+
+      case 'messaging':
+        return (
+          <div className="space-y-6">
+            <ContentSection title="Messaging Framework">
+              <div className="space-y-4">
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-3">Core Positioning</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Scientific visual communication</ListItem>
+                    <ListItem type="check">Science-specific / built for scientists and R&D teams</ListItem>
+                    <ListItem type="check">A systematic method grounded in visual perception</ListItem>
+                    <ListItem type="check">Practical application to participants' own scientific figures, slides and posters</ListItem>
+                    <ListItem type="check">Capability development rather than graphic-design outsourcing</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                  <h5 className="font-semibold text-red-900 mb-3">AVOID</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Reducing Seyens to generic "presentation skills", "PowerPoint training" or graphic design</ListItem>
+                    <ListItem type="check">Hype, generic AI personalization, unverifiable ROI claims</ListItem>
+                    <ListItem type="check">Guaranteed claims about publications, grants, productivity or business outcomes</ListItem>
+                  </ul>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Proof Points for Outreach">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                  <h5 className="font-semibold text-indigo-900 mb-2">Quantitative Proof</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">7,000+ researchers trained</ListItem>
+                    <ListItem type="check">200+ institutions served</ListItem>
+                    <ListItem type="check">~95% five-star Trustpilot reviews (294/311)</ListItem>
+                  </ul>
+                </div>
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                  <h5 className="font-semibold text-indigo-900 mb-2">Corporate References</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check">IBM Research Zurich</ListItem>
+                    <ListItem type="check">Roche</ListItem>
+                    <ListItem type="check">Boehringer Ingelheim</ListItem>
+                  </ul>
+                  <p className="text-indigo-800 mt-2 text-sm">
+                    Use corporate references first in corporate outreach. Academic references can be used as secondary credibility.
+                  </p>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Call to Action Framework">
+              <div className="space-y-3">
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-3">Email 1 (First Cold Email)</h5>
+                  <p className="text-green-800 mb-2">
+                    <strong>Do NOT ask for a meeting or send a calendar link.</strong> Goal: establish interest/relevance and start a conversation.
+                  </p>
+                  <ul className="space-y-2">
+                    <ListItem type="check"><strong>When contact is clearly responsible for R&D/scientist development:</strong> "Would this be relevant to your R&D/scientist development programme?"</ListItem>
+                    <ListItem type="check"><strong>When ownership is uncertain:</strong> "Is this something you look after, or is there someone else responsible for development of your scientists/researchers?"</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                  <h5 className="font-semibold text-green-900 mb-3">Follow-Up Strategy</h5>
+                  <p className="text-green-800 mb-2">
+                    <strong>Sequence:</strong> Email 1 → Follow-up 1 → Follow-up 2 → stop.
+                  </p>
+                  <ul className="space-y-2">
+                    <ListItem type="check">Do NOT write follow-ups that only say "bumping this" or "did you see my previous email?"</ListItem>
+                    <ListItem type="check">Each follow-up should introduce one new reason to respond</ListItem>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                  <h5 className="font-semibold text-blue-900 mb-3">After Positive Response</h5>
+                  <ul className="space-y-2">
+                    <ListItem type="check"><strong>If prospect mentions concrete cohort/event/timing:</strong> Suggest short call directly</ListItem>
+                    <ListItem type="check"><strong>If interested but not ready for call:</strong> Offer up to 2 complimentary places in Seyens' live Fundamentals of Visual Communication training</ListItem>
+                    <ListItem type="check"><strong>Once ready:</strong> Move toward short call</ListItem>
+                  </ul>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Tone & Style">
+              <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+                <h5 className="font-semibold text-slate-900 mb-3">Professional, Concise, Consultative, Direct</h5>
+                <p className="text-slate-800 mb-3">
+                  Messages should feel like one specialist contacting another professional:
+                </p>
+                <ul className="space-y-2">
+                  <ListItem type="check">Specific enough to show why the company was selected</ListItem>
+                  <ListItem type="check">Short enough to read quickly</ListItem>
+                  <ListItem type="check">Low-hype</ListItem>
+                  <ListItem type="check">Easy to answer with simple yes/no or referral to right person</ListItem>
+                </ul>
+              </div>
+            </ContentSection>
+          </div>
+        );
+
+      case 'campaigns':
+        return (
+          <div className="space-y-6">
+            <ContentSection title="Email Sequences">
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mb-4">
+                <h5 className="font-semibold text-blue-900 mb-2">1 Universal Sequence</h5>
+                <p className="text-blue-800 mb-3">
+                  <strong>Targeting:</strong> ALL Clay Filters, ALL Positions
+                </p>
+                <p className="text-blue-800 mb-3">
+                  <strong>Rationale:</strong> Same pain across all industries and positions (scientists cannot communicate visually), same desired outcome (systematic visual communication capability). No segmentation needed.
+                </p>
+                <div className="mt-3">
+                  <p className="text-sm font-semibold text-blue-900 mb-2">Applied To:</p>
+                  <ul className="space-y-1 text-sm text-blue-800">
+                    <ListItem type="check">All Life Sciences companies (pharma, biotech, medtech)</ListItem>
+                    <ListItem type="check">All Deep-Tech companies (semiconductors, AI, materials, etc.)</ListItem>
+                    <ListItem type="check">All geographies (DACH, North America, UK/Ireland, etc.)</ListItem>
+                    <ListItem type="check">All decision maker tiers (PRIMARY, SECONDARY, TERTIARY)</ListItem>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-white border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center justify-between mb-3">
+                    <h5 className="font-semibold text-gray-900">Email 1: Initial Outreach</h5>
+                    <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">First Contact</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Subject:</p>
+                      <p className="text-gray-900">Scientific communication training for [Company Name]?</p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Body:</p>
+                      <div className="bg-gray-50 p-3 rounded text-sm text-gray-800 whitespace-pre-line font-mono">
+{`Hi [First Name],
+
+I noticed [Company Name] has a substantial research team - which likely means your scientists regularly need to explain complex work through figures, slides and posters.
+
+Seyens teaches a science-specific visual communication method built for R&D teams like yours. We've trained over 7,000 researchers at organizations including IBM Research Zurich, Roche and Boehringer Ingelheim.
+
+The approach is practical and systematic: participants work on their own scientific materials during the training, learning principles grounded in visual perception rather than subjective design taste.
+
+Would this be relevant to your R&D/scientist development programme?
+
+Best,
+[Your Name]`}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center justify-between mb-3">
+                    <h5 className="font-semibold text-gray-900">Email 2: Follow-Up 1</h5>
+                    <span className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">+3 days</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Subject:</p>
+                      <p className="text-gray-900">Re: Scientific communication training</p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Body:</p>
+                      <div className="bg-gray-50 p-3 rounded text-sm text-gray-800 whitespace-pre-line font-mono">
+{`Hi [First Name],
+
+Following up on my message about visual communication training for your research team at [Company Name].
+
+Most organizations we work with face a similar challenge: scientists are highly trained in their technical work but rarely get systematic training in visual communication. Their figures and slides can be technically correct yet difficult for colleagues, managers or collaborators to understand quickly.
+
+Seyens addresses this with a repeatable method researchers can apply to their own scientific materials - figures, posters, presentations - rather than generic PowerPoint training.
+
+The training combines concise self-study with live application, critique and redesign. Participants work on real scientific content from their own research.
+
+Relevant for [Company Name]?
+
+Best,
+[Your Name]`}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center justify-between mb-3">
+                    <h5 className="font-semibold text-gray-900">Email 3: Follow-Up 2 (Final)</h5>
+                    <span className="px-2 py-1 bg-amber-100 text-amber-800 text-xs rounded">+3 days</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Subject:</p>
+                      <p className="text-gray-900">Final follow-up - visual communication training</p>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">Body:</p>
+                      <div className="bg-gray-50 p-3 rounded text-sm text-gray-800 whitespace-pre-line font-mono">
+{`Hi [First Name],
+
+Last follow-up on this.
+
+If [Company Name] is looking to help your scientists communicate complex research more effectively - particularly through figures, slides and posters - Seyens could be a fit.
+
+We work with research-intensive organizations to transfer a systematic visual communication method directly to their R&D teams. 7,000+ researchers trained, including teams at IBM Research, Roche and Boehringer Ingelheim.
+
+Two options if this is relevant:
+1. Quick call to discuss your R&D development priorities
+2. Up to 2 complimentary places in our live Fundamentals of Visual Communication training
+
+Happy to have a brief conversation if the timing works.
+
+Best,
+[Your Name]`}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Sequence Strategy Notes">
+              <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                <h5 className="font-semibold text-indigo-900 mb-3">Hormozi Logic Applied</h5>
+                <ul className="space-y-2">
+                  <ListItem type="check"><strong>Same pain across all segments:</strong> Scientists lack systematic visual communication training</ListItem>
+                  <ListItem type="check"><strong>Same desired outcome:</strong> Transfer repeatable method for creating clear scientific visuals</ListItem>
+                  <ListItem type="check"><strong>No industry-specific differentiation needed:</strong> A pharma researcher and a semiconductor engineer have the same challenge (making complex technical content visually clear)</ListItem>
+                  <ListItem type="check"><strong>No position-specific differentiation needed:</strong> L&D managers, R&D leaders, and programme champions all care about the same outcome</ListItem>
+                  <ListItem type="check"><strong>Result:</strong> One universal sequence keeps it simple, fast to launch, and eliminates unnecessary complexity</ListItem>
+                </ul>
+              </div>
+            </ContentSection>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <ClientLayout
+      clientName="Seyens"
+      clientSlug="seyens"
+      status="active"
+      lastUpdate="2026-10-15"
+      assignedTo="Frosina"
+      activeTab={activeTab}
+      setActiveTab={setActiveTab}
+    >
+      {renderTabContent()}
+    </ClientLayout>
+  );
+}
