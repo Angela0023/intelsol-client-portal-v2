@@ -31,7 +31,7 @@ export interface TaskComment {
 export interface Task {
   id: string;
   description: string;
-  assignedTo: 'Matej' | 'Frosina';
+  assignedTo: 'Matej' | 'Frosina' | 'Filip';
   status: 'pending' | 'done';
   dueDate: string;
   order?: number;
@@ -267,7 +267,11 @@ function SortableTaskItem({
             className={`text-xs font-medium px-2 py-0.5 rounded-full ${
               task.assignedTo === 'Matej'
                 ? 'bg-blue-100 text-blue-700'
-                : 'bg-purple-100 text-purple-700'
+                : task.assignedTo === 'Frosina'
+                ? 'bg-purple-100 text-purple-700'
+                : task.assignedTo === 'Filip'
+                ? 'bg-green-100 text-green-700'
+                : 'bg-gray-100 text-gray-700'
             }`}
           >
             {task.assignedTo}
@@ -655,11 +659,12 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
               <div>
                 <select
                   value={newTask.assignedTo}
-                  onChange={(e) => setNewTask({ ...newTask, assignedTo: e.target.value as 'Matej' | 'Frosina' })}
+                  onChange={(e) => setNewTask({ ...newTask, assignedTo: e.target.value as 'Matej' | 'Frosina' | 'Filip' })}
                   className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
                 >
                   <option value="Matej">Matej</option>
                   <option value="Frosina">Frosina</option>
+                  <option value="Filip">Filip</option>
                 </select>
               </div>
               <div className="flex space-x-2">

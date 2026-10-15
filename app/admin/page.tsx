@@ -445,7 +445,11 @@ export default function AdminPage() {
                         className={`text-xs font-medium px-2 py-0.5 rounded-full ${
                           item.task.assignedTo === 'Matej'
                             ? 'bg-blue-100 text-blue-700'
-                            : 'bg-purple-100 text-purple-700'
+                            : item.task.assignedTo === 'Frosina'
+                            ? 'bg-purple-100 text-purple-700'
+                            : item.task.assignedTo === 'Filip'
+                            ? 'bg-green-100 text-green-700'
+                            : 'bg-gray-100 text-gray-700'
                         }`}
                       >
                         {item.task.assignedTo}

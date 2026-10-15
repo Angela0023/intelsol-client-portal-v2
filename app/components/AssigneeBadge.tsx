@@ -6,6 +6,18 @@ import { useEditMode } from './EditModeContext';
 
 const allAssignees: Assignee[] = ['Frosina', 'Matej', 'Filip'];
 
+// Assignee color mapping
+const assigneeColors = {
+  Matej: { bg: 'bg-blue-100', text: 'text-blue-700' },
+  Frosina: { bg: 'bg-purple-100', text: 'text-purple-700' },
+  Filip: { bg: 'bg-green-100', text: 'text-green-700' },
+};
+
+function getAssigneeColors(assignee: Assignee | null) {
+  if (!assignee) return { bg: 'bg-gray-100', text: 'text-gray-700' };
+  return assigneeColors[assignee] || { bg: 'bg-gray-100', text: 'text-gray-700' };
+}
+
 interface AssigneeBadgeProps {
   assignee: Assignee | null;
   onAssigneeChange?: (newAssignee: Assignee) => void;
@@ -15,6 +27,7 @@ interface AssigneeBadgeProps {
 export default function AssigneeBadge({ assignee, onAssigneeChange, size = 'md' }: AssigneeBadgeProps) {
   const { editMode, isAdmin } = useEditMode();
   const canEdit = editMode && isAdmin && onAssigneeChange;
+  const colors = getAssigneeColors(assignee);
 
   const sizeClasses = {
     sm: 'text-xs px-2 py-0.5',
@@ -37,7 +50,7 @@ export default function AssigneeBadge({ assignee, onAssigneeChange, size = 'md' 
         onClick={(e) => e.preventDefault()}
         onClickCapture={(e) => e.stopPropagation()}
       >
-        <div className="inline-flex items-center gap-1.5 bg-blue-100 text-blue-700 font-medium rounded-full pr-7">
+        <div className={`inline-flex items-center gap-1.5 ${colors.bg} ${colors.text} font-medium rounded-full pr-7`}>
           <User className={`${iconSizes[size]} ml-3`} />
           <select
             value={assignee || ''}
@@ -68,7 +81,7 @@ export default function AssigneeBadge({ assignee, onAssigneeChange, size = 'md' 
 
   return (
     <div
-      className={`inline-flex items-center gap-1.5 bg-blue-100 text-blue-700 font-medium rounded-full ${sizeClasses[size]}`}
+      className={`inline-flex items-center gap-1.5 ${colors.bg} ${colors.text} font-medium rounded-full ${sizeClasses[size]}`}
     >
       <User className={iconSizes[size]} />
       <span>{assignee}</span>
