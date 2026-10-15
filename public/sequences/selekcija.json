@@ -13,13 +13,13 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "{{First Name}}, recurring recruitment at {{Company}}?",
-        "body": "Hi {{First Name}},\n\nI noticed {{Company}} operates in {{industry}} - do you handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\nBest regards,\n{{Your Name}}"
+        "body": "Hi {{First Name}},\n\nQuick question: does {{Company}} handle recurring recruitment with candidate assessment?\n\nSelekcija.hr provides online psychometric tests with tailored reports. Organizations like JGL and Ericsson use it to assess candidates remotely and organize selection more consistently.\n\nWould it be useful to review how this could fit one of your recruitment processes?\n\nBest regards,\n{{Your Name}}"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: {{First Name}}, recurring recruitment at {{Company}}?",
-        "body": "Hi {{First Name}},\n\nFollowing up on my note about candidate assessment.\n\nA typical use case: you're hiring for {{relevant role}} repeatedly. Online tests provide structured evidence, remote access, and consistent evaluation across your team.\n\nWorth a 15-minute call to discuss?\n\nBest regards,\n{{Your Name}}"
+        "body": "Hi {{First Name}},\n\nFollowing up on my note about candidate assessment.\n\nIf you're hiring regularly and want consistent, structured evaluation - online tests make it practical. Remote access, immediate results, and easy sharing with hiring managers.\n\nWorth a 15-minute call to discuss?\n\nBest regards,\n{{Your Name}}"
       },
       {
         "emailNumber": 3,
