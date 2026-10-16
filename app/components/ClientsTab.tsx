@@ -57,6 +57,7 @@ const ALL_CLIENTS = [
   { id: 'stojkov', name: 'Stojkov' },
   { id: 'selekcija', name: 'Selekcija.hr' },
   { id: 'intera', name: 'Intrix CRM' },
+  { id: 'integraplast', name: 'Integraplast' },
   { id: 'seyens', name: 'Seyens' },
 ];
 
