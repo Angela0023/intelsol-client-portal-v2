@@ -91,7 +91,7 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Remote culture at {{company_name}}",
-        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - how are you keeping culture and wellbeing consistent?\n\nMost companies similar to yours tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is low and we can't measure impact.\"\n\nWe consolidate that into one platform used by companies like NLB and Carlsberg. 5x higher engagement than typical gym benefits. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nHow are you keeping culture and wellbeing consistent?\n\nMost companies similar in your industry tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is low and we can't measure impact.\"\n\nWe consolidate that into one platform used by companies like NLB and Carlsberg. 5x higher engagement than typical gym benefits. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
       },
       {
         "emailNumber": 2,
