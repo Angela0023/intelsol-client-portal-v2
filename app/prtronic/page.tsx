@@ -260,61 +260,67 @@ function OverviewTab() {
           </SubSection>
         </ContentSection>
 
-        <ContentSection title="Buyer Personas">
+        <ContentSection title="Buyer Personas & Email Sequences">
           <div className="space-y-4">
-            <SubSection title="PRIMARY: Engineering / Product" variant="blue">
+            <SubSection title="PERSONA 1: Engineering/Product Leadership → SEQUENCE 1" variant="blue">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja</div>
-                <div><strong>When This Applies:</strong> OEM technical owner responsible for display fit, qualification and integration decisions</div>
+                <div><strong>Target At:</strong> OEMs & Equipment Manufacturers</div>
                 <div><strong>Discovery Focus:</strong> Form factor requirements, touch/interface specifications, environmental conditions, mounting/integration constraints, replacement/redesign triggers</div>
                 <div><strong>Value Message:</strong> Assess the display configuration that matches your equipment specifications and integration requirements</div>
+                <div className="mt-2 p-2 bg-blue-50 border border-blue-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 1 (Engineering/Product focus)</div>
               </div>
             </SubSection>
 
-            <SubSection title="PRIMARY: Purchasing / Procurement" variant="blue">
+            <SubSection title="PERSONA 2: Purchasing/Procurement Leadership → SEQUENCE 2" variant="green">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave</div>
-                <div><strong>When This Applies:</strong> OEM/integrator supplier selection, pricing and availability owner</div>
+                <div><strong>Target At:</strong> ALL company types (OEMs, Integrators, Multi-Site Operators)</div>
                 <div><strong>Discovery Focus:</strong> Current supplier relationships, panel EOL/second-source needs, lead times, MOQ requirements, commercial terms</div>
                 <div><strong>Value Message:</strong> Review display supply options for consistent availability, competitive pricing and technical support</div>
+                <div className="mt-2 p-2 bg-green-50 border border-green-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 2 (Purchasing/Procurement focus)</div>
               </div>
             </SubSection>
 
-            <SubSection title="PRIMARY: Integrator Delivery / Project Management" variant="blue">
+            <SubSection title="PERSONA 3: Project/Technical Leadership → SEQUENCE 3" variant="purple">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> Technical Director, AV/Signage Project Manager, Projektleiter</div>
-                <div><strong>When This Applies:</strong> Specifies hardware for client deployments, manages project delivery</div>
+                <div><strong>Target At:</strong> AV/Signage Integrators, System Integrators</div>
                 <div><strong>Discovery Focus:</strong> Client project pipeline, signage/AV installation requirements, display specifications for upcoming projects</div>
                 <div><strong>Value Message:</strong> Source the right display configuration for your next client installation with technical specification support</div>
+                <div className="mt-2 p-2 bg-purple-50 border border-purple-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 3 (Integrator/Project focus)</div>
               </div>
             </SubSection>
 
-            <SubSection title="SECONDARY: Operator Programme / Rollout Owner" variant="green">
+            <SubSection title="PERSONA 4: Rollout/Programme Leadership → SEQUENCE 4" variant="amber">
               <div className="space-y-2">
-                <div><strong>Titles:</strong> Marketing Manager, IT/AV Manager, Facilities Manager, Rollout Manager</div>
-                <div><strong>When This Applies:</strong> Multi-site signage sponsor and technical/deployment stakeholders at operator organizations</div>
-                <div><strong>Discovery Focus:</strong> Funded rollout plans, site counts, information/signage objectives, deployment timeline</div>
+                <div><strong>Titles:</strong> Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager</div>
+                <div><strong>Target At:</strong> Multi-Site Operators (Retail Chains, Hotel Groups, Healthcare Networks, Transport Operators)</div>
+                <div><strong>Discovery Focus:</strong> Funded rollout plans, site counts, information/signage objectives, deployment timeline, multi-location coordination</div>
                 <div><strong>Value Message:</strong> Scope a signage/information screen rollout with consistent hardware across your locations</div>
+                <div className="mt-2 p-2 bg-amber-50 border border-amber-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 4 (Multi-Site Rollout focus)</div>
                 <div className="mt-2 p-2 bg-amber-50 border border-amber-200 rounded text-sm"><strong>Note:</strong> Contact the person responsible for specific rollout rather than assuming Marketing buys all screens.</div>
               </div>
             </SubSection>
 
-            <SubSection title="TERTIARY: Leadership / Final Approval" variant="amber">
+            <SubSection title="FALLBACK: Leadership (Small Firms Only)" variant="slate">
               <div className="space-y-2">
                 <div><strong>Titles:</strong> CEO, Owner, Managing Director, Geschäftsführer</div>
-                <div><strong>When This Applies:</strong> Small firms where CEO/Owner covers technical and commercial decisions, or final approval at larger firms</div>
+                <div><strong>Target At:</strong> Companies under 50 employees (all types)</div>
                 <div><strong>Discovery Focus:</strong> Verify direct involvement in display sourcing decisions vs. delegated authority</div>
-                <div><strong>Value Message:</strong> (Same as relevant persona above - Engineer/Purchasing/Integrator depending on firm role)</div>
+                <div><strong>Value Message:</strong> Same as relevant persona (depends on company type)</div>
+                <div className="mt-2 p-2 bg-slate-50 border border-slate-200 rounded text-sm"><strong>Email Sequence:</strong> Send sequence based on company type (SEQUENCE 1 for OEMs, SEQUENCE 3 for Integrators, SEQUENCE 4 for Multi-Site)</div>
               </div>
             </SubSection>
           </div>
 
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <div className="font-semibold text-blue-900 mb-2">Persona Variation by Size/Region</div>
+            <div className="font-semibold text-blue-900 mb-2">Quick Reference: Which Sequence for Which Company?</div>
             <div className="text-sm text-gray-700 space-y-2">
-              <div><strong>OEMs (A/D):</strong> Engineering/Product owns technical fit; Purchasing owns commercial sourcing. At small firms CEO/Owner may cover both.</div>
-              <div><strong>Integrators (B):</strong> Start with Technical/Project leadership and confirm hardware buying responsibility.</div>
-              <div><strong>Operators (C):</strong> Marketing/CX sponsors signage; IT/AV and Facilities validate deployment; Procurement manages purchasing.</div>
+              <div><strong>OEM / Equipment Manufacturer:</strong> Contact PERSONA 1 (Engineering) + PERSONA 2 (Purchasing) → Send SEQUENCE 1 + SEQUENCE 2</div>
+              <div><strong>AV/Signage Integrator:</strong> Contact PERSONA 3 (Project Manager) + PERSONA 2 (Purchasing) → Send SEQUENCE 3 + SEQUENCE 2</div>
+              <div><strong>Multi-Site Operator:</strong> Contact PERSONA 4 (Rollout/Programme) + PERSONA 2 (Purchasing) → Send SEQUENCE 4 + SEQUENCE 2</div>
+              <div className="mt-2 text-amber-700"><strong>Note:</strong> PERSONA 2 (Purchasing) is universal - target at all company types with SEQUENCE 2</div>
             </div>
           </div>
         </ContentSection>

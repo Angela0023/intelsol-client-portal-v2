@@ -1,10 +1,10 @@
 [
   {
-    "id": "tier-1-engineering",
-    "tierName": "TIER 1: Engineering/Product",
+    "id": "persona-1-engineering",
+    "tierName": "PERSONA 1: Engineering/Product Leadership",
     "tierColor": "blue",
-    "targetPersonas": "Technical Director, Hardware Lead, Product Manager (Entwicklungsleiter, Vodja razvoja)",
-    "messagingAngle": "Assess the display configuration that matches your equipment specifications and integration requirements",
+    "targetPersonas": "Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja",
+    "messagingAngle": "TARGET AT: OEMs & Equipment Manufacturers | VALUE: Assess the display configuration that matches your equipment specifications and integration requirements",
     "emails": [
       {
         "emailNumber": 1,
@@ -27,11 +27,11 @@
     ]
   },
   {
-    "id": "tier-1-purchasing",
-    "tierName": "TIER 1: Purchasing/Procurement",
-    "tierColor": "blue",
-    "targetPersonas": "Purchasing Manager, Strategic Buyer (Einkaufsleiter, Vodja nabave)",
-    "messagingAngle": "Review display supply options for consistent availability, competitive pricing and technical support",
+    "id": "persona-2-purchasing",
+    "tierName": "PERSONA 2: Purchasing/Procurement Leadership",
+    "tierColor": "green",
+    "targetPersonas": "Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave",
+    "messagingAngle": "TARGET AT: All Company Types (OEMs, Integrators, Multi-Site) | VALUE: Review display supply options for consistent availability, competitive pricing and technical support",
     "emails": [
       {
         "emailNumber": 1,
@@ -54,11 +54,11 @@
     ]
   },
   {
-    "id": "tier-1-integrator",
-    "tierName": "TIER 1: Integrator/Project Manager",
-    "tierColor": "blue",
-    "targetPersonas": "Technical Director, AV/Signage Project Manager (Projektleiter)",
-    "messagingAngle": "Source the right display configuration for your next client installation with technical specification support",
+    "id": "persona-3-integrator",
+    "tierName": "PERSONA 3: Project/Technical Leadership",
+    "tierColor": "purple",
+    "targetPersonas": "Technical Director, AV/Signage Project Manager, Projektleiter",
+    "messagingAngle": "TARGET AT: AV/Signage Integrators | VALUE: Source the right display configuration for your next client installation with technical specification support",
     "emails": [
       {
         "emailNumber": 1,
@@ -77,6 +77,33 @@
         "type": "Follow-Up 2",
         "subject": "Re: Display sourcing for your next project",
         "body": "Hi [First Name],\n\nLast note on display sourcing for integrators.\n\nIf you're ever:\n- Planning a signage or AV installation project\n- Need display specification support during proposal\n- Looking for a supplier who understands integrator timelines\n\n...PRTronic can help.\n\nWe work with system integrators who need technical partnership, not just commodity screens.\n\nHappy to discuss your next project when you're ready.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "persona-4-rollout",
+    "tierName": "PERSONA 4: Rollout/Programme Leadership",
+    "tierColor": "amber",
+    "targetPersonas": "Marketing Manager, IT Manager, Facilities Manager, Rollout Manager",
+    "messagingAngle": "TARGET AT: Multi-Site Operators (Retail, Hospitality, Healthcare, Transport) | VALUE: Scope a signage/information screen rollout with consistent hardware across your locations",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Signage rollout for your locations",
+        "body": "Hi [First Name],\n\nI noticed [Company] operates [number] locations across [region]. Quick question - are you planning any signage or information screen deployments across your sites?\n\nMost multi-site operators I work with in DACH tell me they need display suppliers who can:\n- Provide consistent hardware across all locations\n- Support phased rollout planning\n- Handle installation logistics and coordination\n\nPRTronic specializes in display solutions for multi-location rollouts:\n- Standardized display configurations for consistency\n- Volume pricing for enterprise deployments\n- Technical support for site deployment planning\n\nWorth a conversation to discuss your rollout requirements?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Signage rollout for your locations",
+        "body": "Hi [First Name],\n\nFollowing up on multi-location signage planning.\n\nA hotel group in Austria told me their biggest challenge was maintaining display consistency across 35 properties while managing phased rollout timelines.\n\nPRTronic helped them:\n- Standardize display specifications for all locations\n- Plan phased deployment across 3 quarters\n- Coordinate installation logistics with local teams\n\nThey now have consistent guest information screens across all properties.\n\nIf you're planning a similar rollout, let's talk.\n\nWhen works for a 15-minute call?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Signage rollout for your locations",
+        "body": "Hi [First Name],\n\nLast note on multi-location signage rollouts.\n\nIf you're ever:\n- Planning information screens across your sites\n- Looking to standardize display hardware\n- Need support for phased rollout coordination\n\n...PRTronic can help.\n\nWe work with multi-site operators who need enterprise rollout support, not just individual screen sales.\n\nHappy to discuss your requirements when you're ready.\n\nBest regards,\n[Your Name]"
       }
     ]
   }
