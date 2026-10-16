@@ -372,68 +372,168 @@ function OverviewTab() {
   function FiltersTab() {
     return (
       <div className="space-y-6">
-        <ContentSection title="Clay Table Filters" description="Recommended filters for building targeted prospect lists in Clay">
-          <SubSection title="Geography Filters">
-            <ListItem><strong>Country:</strong> Slovenia, Austria, Germany, Switzerland</ListItem>
-            <ListItem><strong>Priority Sequencing (Recommended):</strong> Slovenia & Austria → Southern Germany → Wider Germany/Switzerland</ListItem>
-            <ListItem><strong>City/Region (Germany):</strong> Focus southern Germany first (Bavaria, Baden-Württemberg regions)</ListItem>
-            <div className="mt-3 p-3 bg-amber-50 border border-amber-200 rounded-lg text-sm">
-              <strong>Important:</strong> Filter by buying/design entity location (HQ or decision-making office), not installation location. Installation markets are recorded separately.
+        <ContentSection title="Clay Filter Prompts" description="AI-powered filters to find companies that fit PRTronic's ICP across DACH+Slovenia">
+          <div className="mb-6">
+            <a
+              href="/clay-filters/prtronic-filters.csv"
+              download
+              className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download Clay Filter Prompts CSV
+            </a>
+          </div>
+
+          <SubSection title="4 Geographic Filters (One per Country)">
+            <div className="space-y-4">
+              <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <div className="font-semibold text-blue-900 mb-2">Slovenia (Priority 1)</div>
+                <div className="text-sm text-gray-700">
+                  Primary market. Targets all 4 segments: OEMs/equipment manufacturers, AV/signage integrators, multi-site operators, and specialized display applications.
+                </div>
+              </div>
+
+              <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <div className="font-semibold text-blue-900 mb-2">Austria (Priority 1)</div>
+                <div className="text-sm text-gray-700">
+                  DACH region with Klagenfurt office. Targets all 4 segments.
+                </div>
+              </div>
+
+              <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <div className="font-semibold text-blue-900 mb-2">Germany (Priority 1)</div>
+                <div className="text-sm text-gray-700">
+                  Southern Germany priority (Bavaria, Baden-Württemberg), then wider coverage. Targets all 4 segments.
+                </div>
+              </div>
+
+              <div className="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                <div className="font-semibold text-slate-900 mb-2">Switzerland (Priority 2)</div>
+                <div className="text-sm text-gray-700">
+                  DACH expansion market. Confirm Swiss delivery arrangements with PRTronic. Targets all 4 segments.
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+              <div className="font-semibold text-amber-900 mb-2">Important: Filter by Decision Location</div>
+              <div className="text-sm text-gray-700">
+                Filter by buying/design entity location (HQ or decision-making office), NOT installation location. Installation markets are recorded separately in discovery.
+              </div>
             </div>
           </SubSection>
 
-          <SubSection title="Company Size Filters">
-            <div className="space-y-2">
-              <ListItem><strong>OEMs & Equipment Manufacturers:</strong> 10-500 employees (sweet spot: 20-250)</ListItem>
-              <ListItem><strong>AV/Signage/System Integrators:</strong> 5-250 employees</ListItem>
-              <ListItem><strong>Multi-Site Operators:</strong> 50-2,000 employees (discovery range)</ListItem>
-              <ListItem><strong>Specialized Applications:</strong> 10-1,000 employees</ListItem>
-            </div>
-            <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm">
-              <strong>Note:</strong> Unknown headcount is not automatic exclusion. Technical fit, sourcing authority, and repeat/project demand are stronger gates than size alone.
-            </div>
-          </SubSection>
-
-          <SubSection title="Industry Keywords">
+          <SubSection title="What Each Filter Finds">
             <div className="space-y-3">
               <div>
-                <div className="font-semibold">Primary A: Self-Service Equipment</div>
-                <div className="text-sm text-gray-600">kiosk, parcel locker, vending, ticketing terminal, payment terminal, self-service</div>
+                <div className="font-semibold text-slate-900">Segment A: OEMs & Equipment Manufacturers</div>
+                <div className="text-sm text-gray-600">Companies that embed displays in products: kiosks, terminals, industrial machines, medical devices, gaming machines. Size: 10-500 employees.</div>
               </div>
               <div>
-                <div className="font-semibold">Primary A Extension: Industrial Machinery</div>
-                <div className="text-sm text-gray-600">industrial machinery, operator display, HMI, control panel (validate actual display spec)</div>
+                <div className="font-semibold text-slate-900">Segment B: AV, Signage & System Integrators</div>
+                <div className="text-sm text-gray-600">Companies delivering display integration projects for clients. Size: 5-250 employees.</div>
               </div>
               <div>
-                <div className="font-semibold">Primary B: Signage/AV Integrators</div>
-                <div className="text-sm text-gray-600">digital signage, AV integration, interactive display, system integrator</div>
+                <div className="font-semibold text-slate-900">Segment C: Multi-Site Operators</div>
+                <div className="text-sm text-gray-600">Retail chains, hotel groups, healthcare networks, transport operators with signage needs across locations. Size: 50-2,000 employees.</div>
               </div>
               <div>
-                <div className="font-semibold">Secondary C: Multi-Site Operators</div>
-                <div className="text-sm text-gray-600">retail chain, shopping centre, hotel group, clinic group, multi-location</div>
-              </div>
-              <div>
-                <div className="font-semibold">Secondary D: Specialized</div>
-                <div className="text-sm text-gray-600">gaming machine, transport display, parking system, public information</div>
+                <div className="font-semibold text-slate-900">Segment D: Specialized Applications</div>
+                <div className="text-sm text-gray-600">Parking systems, transport displays, public information systems. Size: 10-1,000 employees.</div>
               </div>
             </div>
           </SubSection>
 
-          <SubSection title="Job Title Filters (Personas)">
-            <div className="space-y-2">
-              <ListItem><strong>Engineering/Product:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja, Tehnični direktor</ListItem>
-              <ListItem><strong>Purchasing:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave</ListItem>
-              <ListItem><strong>Integrator Delivery:</strong> Technical Director, AV Manager, Signage Project Manager, Projektleiter, Vodja projektov</ListItem>
-              <ListItem><strong>Operator Programme:</strong> Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager</ListItem>
-              <ListItem><strong>Leadership (Small Firms):</strong> CEO, Owner, Managing Director, Geschäftsführer</ListItem>
+          <SubSection title="Exclusions (Built into Filters)">
+            <ListItem>Pure software companies without hardware procurement responsibility</ListItem>
+            <ListItem>Basic IT resellers without integration/specification role</ListItem>
+            <ListItem>Consumer/home products (residential gaming, home automation)</ListItem>
+            <ListItem>Companies outside DACH+Slovenia region</ListItem>
+          </SubSection>
+        </ContentSection>
+
+        <ContentSection title="Target Positions" description="Job titles to target across all segments">
+          <div className="mb-6">
+            <a
+              href="/clay-filters/prtronic-positions.csv"
+              download
+              className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download Positions CSV
+            </a>
+          </div>
+
+          <SubSection title="PRIMARY Positions (Target for ALL Segments)">
+            <div className="space-y-4">
+              <div>
+                <div className="font-semibold text-slate-900">Engineering & Product</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>Titles:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja
+                </div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>When:</strong> OEMs & integrators - owns display specification and integration decisions
+                </div>
+              </div>
+
+              <div>
+                <div className="font-semibold text-slate-900">Purchasing & Procurement</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>Titles:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave
+                </div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>When:</strong> All segments - owns supplier selection and commercial sourcing
+                </div>
+              </div>
+
+              <div>
+                <div className="font-semibold text-slate-900">Integrator Project Management</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>Titles:</strong> AV Project Manager, Signage Project Manager, Projektleiter
+                </div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>When:</strong> Integrators - specifies hardware for client deployments
+                </div>
+              </div>
             </div>
           </SubSection>
 
-          <SubSection title="Exclusion Filters">
-            <ListItem><strong>Company Type:</strong> Exclude pure software companies, content agencies, commodity resellers (without integration)</ListItem>
-            <ListItem><strong>Product Focus:</strong> Exclude consumer/home gaming, RFID-only, unrelated electronics</ListItem>
-            <ListItem><strong>Existing Relationships:</strong> Suppress customer list, active deals, protected partners (obtain lists from PRTronic)</ListItem>
+          <SubSection title="SECONDARY Positions (Multi-Site Operators Focus)">
+            <div className="space-y-3">
+              <div>
+                <div className="font-semibold text-slate-900">Programme & Rollout Management</div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>Titles:</strong> Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager
+                </div>
+                <div className="text-sm text-gray-600 mt-1">
+                  <strong>When:</strong> Multi-site operators - sponsors signage rollouts and validates technical deployment
+                </div>
+              </div>
+            </div>
           </SubSection>
+
+          <SubSection title="TERTIARY Positions (Small Firms Only)">
+            <div>
+              <div className="font-semibold text-slate-900">Leadership</div>
+              <div className="text-sm text-gray-600 mt-1">
+                <strong>Titles:</strong> CEO, Owner, Managing Director, Geschäftsführer
+              </div>
+              <div className="text-sm text-gray-600 mt-1">
+                <strong>When:</strong> Small firms (under 50 employees) where CEO/Owner covers both technical and commercial decisions
+              </div>
+            </div>
+          </SubSection>
+
+          <div className="mt-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <div className="font-semibold text-green-900 mb-2">Simplified Approach</div>
+            <div className="text-sm text-gray-700">
+              The same core positions work across all segments. No need to create separate position lists for OEMs vs. Integrators vs. Operators - just target all positions and validate fit during discovery.
+            </div>
+          </div>
         </ContentSection>
       </div>
     );

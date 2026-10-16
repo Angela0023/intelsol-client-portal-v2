@@ -1,0 +1,22 @@
+Position Title,Seniority,Department,When to Target
+Technical Director,Director,Engineering,OEMs & Integrators - owns display specification and integration decisions
+Hardware Lead,Manager,Engineering,OEMs - responsible for component selection and technical fit
+Entwicklungsleiter,Manager,Engineering,German-speaking OEMs - development/engineering lead
+Vodja razvoja,Manager,Engineering,Slovenian OEMs - development lead
+Product Manager,Manager,Product,OEMs - manages product requirements including display specifications
+Purchasing Manager,Manager,Procurement,All segments - owns supplier selection and commercial sourcing
+Einkaufsleiter,Manager,Procurement,German-speaking companies - purchasing lead
+Vodja nabave,Manager,Procurement,Slovenian companies - procurement lead
+Strategic Buyer,Individual Contributor,Procurement,Larger OEMs/Integrators - component sourcing specialist
+AV Project Manager,Manager,Operations,Integrators - specifies hardware for client projects
+Signage Project Manager,Manager,Operations,Integrators - manages digital signage deployments
+Projektleiter,Manager,Operations,German-speaking integrators - project lead
+Marketing Manager,Manager,Marketing,Multi-site operators - sponsors signage rollouts
+IT Manager,Manager,IT,Multi-site operators - validates technical deployment
+AV Manager,Manager,IT,Multi-site operators - oversees audiovisual installations
+Facilities Manager,Manager,Operations,Multi-site operators - manages location equipment
+Rollout Manager,Manager,Operations,Multi-site operators - coordinates multi-location deployments
+CEO,C-Level,Executive,Small firms (under 50 employees) where CEO covers technical and commercial decisions
+Owner,Owner,Executive,Small firms - directly involved in supplier and specification decisions
+Managing Director,C-Level,Executive,Small firms - final approval on equipment sourcing
+Geschäftsführer,C-Level,Executive,German-speaking small firms - managing director
