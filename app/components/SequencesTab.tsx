@@ -22,6 +22,10 @@ interface Email {
       subject: string;
       body: string;
     };
+    german?: {
+      subject: string;
+      body: string;
+    };
   };
 }
 
@@ -466,11 +470,11 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                         </div>
 
                         {/* Translations Section - Collapsible */}
-                        {!isEditing && email.translations && (email.translations.english || email.translations.serbian || email.translations.croatian) && (
+                        {!isEditing && email.translations && (email.translations.english || email.translations.serbian || email.translations.croatian || email.translations.german) && (
                           <details className="mt-3">
                             <summary className="cursor-pointer text-xs font-semibold text-slate-600 hover:text-slate-900 flex items-center">
                               <span className="mr-2">▶</span>
-                              View Translations {email.translations.english && '(English)'}{(email.translations.serbian || email.translations.croatian) && '(Serbian & Croatian)'}
+                              View Translations {email.translations.english && '(English)'}{(email.translations.serbian || email.translations.croatian) && '(Serbian & Croatian)'}{email.translations.german && '(German)'}
                             </summary>
                             <div className="mt-3 pl-4 space-y-4">
                               {/* English Translation */}
@@ -539,6 +543,30 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                                       <p className="text-xs font-medium text-slate-600 mb-1">Body:</p>
                                       <div className="text-sm bg-red-50 p-3 rounded border border-red-200 font-mono whitespace-pre-wrap">
                                         {email.translations.croatian.body}
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* German Translation */}
+                              {email.translations.german && (
+                                <div>
+                                  <p className="text-xs font-semibold text-amber-700 mb-2 flex items-center">
+                                    <span className="mr-2">🇩🇪</span>
+                                    GERMAN (Deutsch):
+                                  </p>
+                                  <div className="pl-5 space-y-2">
+                                    <div>
+                                      <p className="text-xs font-medium text-slate-600 mb-1">Subject:</p>
+                                      <p className="text-sm bg-amber-50 p-2 rounded border border-amber-200 font-mono">
+                                        {email.translations.german.subject}
+                                      </p>
+                                    </div>
+                                    <div>
+                                      <p className="text-xs font-medium text-slate-600 mb-1">Body:</p>
+                                      <div className="text-sm bg-amber-50 p-3 rounded border border-amber-200 font-mono whitespace-pre-wrap">
+                                        {email.translations.german.body}
                                       </div>
                                     </div>
                                   </div>
