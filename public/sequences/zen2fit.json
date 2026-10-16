@@ -64,13 +64,13 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Re: Benefits review at {{company_name}}",
-        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nQuick question - are you reviewing the wellness/benefits stack?\n\nMost companies similar to yours tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is low and we can't measure impact.\"\n\nWe consolidate that into one platform used by companies like NLB and Carlsberg. 5x higher engagement than typical gym benefits. Takes 48 hours to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\n{{personalization_sentence}}\n\n{{bridge_sentence}}\n\nAre you reviewing the wellness/benefits stack?\n\nMost companies in your industry tell us the same thing: \"We have fragmented wellness benefits (gym discounts, mental health app, random perks) but adoption is low and we can't measure impact.\"\n\nWe consolidate that into one platform used by companies like NLB and Carlsberg. 5x higher engagement than typical gym benefits. Takes 2 weeks to launch.\n\nIs this something you handle, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
         "subject": "Re: Measuring wellness impact",
-        "body": "{{first_name}},\n\nFollowing up on wellness benefits at {{company_name}}.\n\nMost wellness programs fail because you can't prove impact. You spend, but engagement is invisible.\n\nZen2Fit gives you usage data you can use in your retention reports.\n\nWant to see how it works?\n\n-Matej"
+        "body": "{{first_name}},\n\nFollowing up on wellness benefits at {{company_name}}.\n\nMost wellness programs fail because you can't prove impact. You spend, but engagement is invisible.\n\nZen2Fit gives you usage data you can use in your ESG reports.\n\nWant to see how it works?\n\n-Matej"
       },
       {
         "emailNumber": 3,
