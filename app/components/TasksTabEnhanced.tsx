@@ -451,7 +451,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
   const selectAllAssignees = () => setFilterAssignees(['Matej', 'Frosina', 'Filip']);
   const deselectAllAssignees = () => setFilterAssignees([]);
 
-  const selectAllStatuses = () => setFilterStatuses(['pending', 'done']);
+  const selectAllStatuses = () => setFilterStatuses(['pending', 'done', 'overdue']);
   const deselectAllStatuses = () => setFilterStatuses([]);
 
   const selectAllClients = () => setFilterClients(ALL_CLIENTS.map((c) => c.id));
@@ -495,6 +495,16 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
     }
   };
 
+  // Check if a task is overdue
+  const isTaskOverdue = (task: Task) => {
+    if (task.status !== 'pending') return false;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const dueDate = new Date(task.dueDate);
+    dueDate.setHours(0, 0, 0, 0);
+    return dueDate < today;
+  };
+
   // Apply filters
   const filteredTasks = useMemo(() => {
     return tasks.filter((task) => {
@@ -502,7 +512,13 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
       if (filterAssignees.length > 0 && !filterAssignees.includes(task.assignedTo)) return false;
 
       // Status filter (if any statuses selected, task must match one of them)
-      if (filterStatuses.length > 0 && !filterStatuses.includes(task.status)) return false;
+      if (filterStatuses.length > 0) {
+        const matchesPending = filterStatuses.includes('pending') && task.status === 'pending' && !isTaskOverdue(task);
+        const matchesOverdue = filterStatuses.includes('overdue') && isTaskOverdue(task);
+        const matchesDone = filterStatuses.includes('done') && task.status === 'done';
+
+        if (!matchesPending && !matchesOverdue && !matchesDone) return false;
+      }
 
       // Client filter (if any clients selected, task must match one of them)
       if (filterClients.length > 0 && !filterClients.includes(task.client || '')) return false;
@@ -835,136 +851,126 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
         </div>
 
         {showFilters && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 border-t border-slate-200">
-            {/* Assignee filter (multi-select checkboxes) */}
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <label className="block text-xs font-medium text-slate-700">Assignee</label>
-                <button
-                  onClick={() => filterAssignees.length === 3 ? deselectAllAssignees() : selectAllAssignees()}
-                  className="text-xs text-blue-600 hover:text-blue-800"
-                >
-                  {filterAssignees.length === 3 ? 'Deselect All' : 'Select All'}
-                </button>
-              </div>
-              <div className="space-y-2">
-                {['Matej', 'Frosina', 'Filip'].map((assignee) => (
-                  <label key={assignee} className="flex items-center space-x-2 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={filterAssignees.includes(assignee)}
-                      onChange={() => toggleAssignee(assignee)}
-                      className="w-4 h-4 text-[#1a2647] border-slate-300 rounded focus:ring-2 focus:ring-[#1a2647]"
-                    />
-                    <span className="text-sm text-slate-700">{assignee}</span>
-                  </label>
-                ))}
-              </div>
-              {filterAssignees.length > 0 && (
-                <p className="text-xs text-slate-500 mt-2">{filterAssignees.length} selected</p>
-              )}
-            </div>
-
-            {/* Status filter (multi-select checkboxes) */}
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <label className="block text-xs font-medium text-slate-700">Status</label>
-                <button
-                  onClick={() => filterStatuses.length === 2 ? deselectAllStatuses() : selectAllStatuses()}
-                  className="text-xs text-blue-600 hover:text-blue-800"
-                >
-                  {filterStatuses.length === 2 ? 'Deselect All' : 'Select All'}
-                </button>
-              </div>
-              <div className="space-y-2">
-                {[
-                  { value: 'pending', label: 'Pending' },
-                  { value: 'done', label: 'Completed' }
-                ].map((status) => (
-                  <label key={status.value} className="flex items-center space-x-2 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={filterStatuses.includes(status.value)}
-                      onChange={() => toggleStatus(status.value)}
-                      className="w-4 h-4 text-[#1a2647] border-slate-300 rounded focus:ring-2 focus:ring-[#1a2647]"
-                    />
-                    <span className="text-sm text-slate-700">{status.label}</span>
-                  </label>
-                ))}
-              </div>
-              {filterStatuses.length > 0 && (
-                <p className="text-xs text-slate-500 mt-2">{filterStatuses.length} selected</p>
-              )}
-            </div>
-
-            {/* Client filter (multi-select checkboxes with scrollable list) */}
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <label className="block text-xs font-medium text-slate-700">Client</label>
-                <button
-                  onClick={() => filterClients.length === ALL_CLIENTS.length ? deselectAllClients() : selectAllClients()}
-                  className="text-xs text-blue-600 hover:text-blue-800"
-                >
-                  {filterClients.length === ALL_CLIENTS.length ? 'Deselect All' : 'Select All'}
-                </button>
-              </div>
-              <div className="max-h-32 overflow-y-auto border border-slate-200 rounded-lg p-2 space-y-2">
-                {ALL_CLIENTS.map((client) => (
-                  <label key={client.id} className="flex items-center space-x-2 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={filterClients.includes(client.id)}
-                      onChange={() => toggleClient(client.id)}
-                      className="w-4 h-4 text-[#1a2647] border-slate-300 rounded focus:ring-2 focus:ring-[#1a2647]"
-                    />
-                    <span className="text-sm text-slate-700">{client.name}</span>
-                  </label>
-                ))}
-              </div>
-              {filterClients.length > 0 && (
-                <p className="text-xs text-slate-500 mt-2">{filterClients.length} selected</p>
-              )}
-            </div>
-
-            {/* Date filter (dropdown remains single-select) */}
-            <div>
-              <label className="block text-xs font-medium text-slate-700 mb-2">Due Date</label>
-              <select
-                value={filterDate}
-                onChange={(e) => setFilterDate(e.target.value as DateFilter)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
-              >
-                <option value="all">All Dates</option>
-                <option value="overdue">Overdue</option>
-                <option value="thisWeek">This Week</option>
-                <option value="thisMonth">This Month</option>
-                <option value="custom">Custom Range</option>
-              </select>
-            </div>
-
-            {/* Custom date range (shown when custom is selected) */}
-            {filterDate === 'custom' && (
-              <>
-                <div>
-                  <label className="block text-xs font-medium text-slate-700 mb-2">From</label>
-                  <input
-                    type="date"
-                    value={customDateRange.start}
-                    onChange={(e) => setCustomDateRange({ ...customDateRange, start: e.target.value })}
-                    className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
-                  />
+          <div className="pt-4 border-t border-slate-200">
+            <div className="flex flex-wrap gap-x-12 gap-y-6">
+              {/* Assignee filter */}
+              <div className="min-w-[140px]">
+                <div className="flex items-center justify-between mb-3">
+                  <label className="text-sm font-semibold text-slate-900">Assignee</label>
+                  <button
+                    onClick={() => filterAssignees.length === 3 ? deselectAllAssignees() : selectAllAssignees()}
+                    className="text-xs text-blue-600 hover:text-blue-700 font-medium"
+                  >
+                    Select All
+                  </button>
                 </div>
-                <div>
-                  <label className="block text-xs font-medium text-slate-700 mb-2">To</label>
-                  <input
-                    type="date"
-                    value={customDateRange.end}
-                    onChange={(e) => setCustomDateRange({ ...customDateRange, end: e.target.value })}
-                    className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
-                  />
+                <div className="space-y-2.5">
+                  {['Matej', 'Frosina', 'Filip'].map((assignee) => (
+                    <label key={assignee} className="flex items-center space-x-2.5 cursor-pointer group">
+                      <input
+                        type="checkbox"
+                        checked={filterAssignees.includes(assignee)}
+                        onChange={() => toggleAssignee(assignee)}
+                        className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                      />
+                      <span className="text-sm text-slate-700 group-hover:text-slate-900">{assignee}</span>
+                    </label>
+                  ))}
                 </div>
-              </>
-            )}
+              </div>
+
+              {/* Status filter */}
+              <div className="min-w-[140px]">
+                <div className="flex items-center justify-between mb-3">
+                  <label className="text-sm font-semibold text-slate-900">Status</label>
+                  <button
+                    onClick={() => filterStatuses.length === 3 ? deselectAllStatuses() : selectAllStatuses()}
+                    className="text-xs text-blue-600 hover:text-blue-700 font-medium"
+                  >
+                    Select All
+                  </button>
+                </div>
+                <div className="space-y-2.5">
+                  {[
+                    { value: 'pending', label: 'Pending' },
+                    { value: 'overdue', label: 'Overdue' },
+                    { value: 'done', label: 'Completed' }
+                  ].map((status) => (
+                    <label key={status.value} className="flex items-center space-x-2.5 cursor-pointer group">
+                      <input
+                        type="checkbox"
+                        checked={filterStatuses.includes(status.value)}
+                        onChange={() => toggleStatus(status.value)}
+                        className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                      />
+                      <span className="text-sm text-slate-700 group-hover:text-slate-900">{status.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Client filter */}
+              <div className="min-w-[200px]">
+                <div className="flex items-center justify-between mb-3">
+                  <label className="text-sm font-semibold text-slate-900">Client</label>
+                  <button
+                    onClick={() => filterClients.length === ALL_CLIENTS.length ? deselectAllClients() : selectAllClients()}
+                    className="text-xs text-blue-600 hover:text-blue-700 font-medium"
+                  >
+                    Select All
+                  </button>
+                </div>
+                <div className="max-h-[180px] overflow-y-auto border border-slate-200 rounded-md px-3 py-2 space-y-2.5 bg-white">
+                  {ALL_CLIENTS.map((client) => (
+                    <label key={client.id} className="flex items-center space-x-2.5 cursor-pointer group">
+                      <input
+                        type="checkbox"
+                        checked={filterClients.includes(client.id)}
+                        onChange={() => toggleClient(client.id)}
+                        className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
+                      />
+                      <span className="text-sm text-slate-700 group-hover:text-slate-900">{client.name}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Date filter */}
+              <div className="min-w-[180px]">
+                <label className="text-sm font-semibold text-slate-900 mb-3 block">Due Date</label>
+                <select
+                  value={filterDate}
+                  onChange={(e) => setFilterDate(e.target.value as DateFilter)}
+                  className="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white"
+                >
+                  <option value="all">All Dates</option>
+                  <option value="overdue">Overdue</option>
+                  <option value="thisWeek">This Week</option>
+                  <option value="thisMonth">This Month</option>
+                  <option value="custom">Custom Range</option>
+                </select>
+
+                {/* Custom date range */}
+                {filterDate === 'custom' && (
+                  <div className="mt-3 space-y-2">
+                    <input
+                      type="date"
+                      value={customDateRange.start}
+                      onChange={(e) => setCustomDateRange({ ...customDateRange, start: e.target.value })}
+                      placeholder="From"
+                      className="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    />
+                    <input
+                      type="date"
+                      value={customDateRange.end}
+                      onChange={(e) => setCustomDateRange({ ...customDateRange, end: e.target.value })}
+                      placeholder="To"
+                      className="w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         )}
 
