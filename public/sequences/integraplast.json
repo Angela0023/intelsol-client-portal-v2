@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "id": "injection-molding-equipment",
+    "tierName": "Injection Molding Equipment Modernization",
+    "tierColor": "blue",
+    "targetPersonas": "PRIMARY: Business Leadership (Owner, CEO, Managing Director), Production & Technical Leadership (Production Director, Plant Manager, Technical Director), Engineering & Process (Engineering Manager, Process Manager, Manufacturing Manager)",
+    "messagingAngle": "Address capacity constraints, equipment modernization, and energy efficiency for injection molding operations",
+    "clayFilter": "All filters (Contract Injection Moulders, Automotive Tier 1/2, Plastic Packaging, Household Products, Medical/Electronics/Precision)",
+    "targetPositions": "PRIMARY positions: Business Leadership, Production & Technical Leadership, Engineering & Process Management",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Injection molding capacity at [Company Name]?",
+        "body": "Hi [First Name],\n\nI noticed [Company Name] operates injection molding production. Quick question: are you evaluating equipment modernization or capacity expansion for your moulding operation?\n\nIntegraplast supplies TEDERIC servo-hydraulic, two-platen, and electric injection-moulding machines with local Slovenian technical and after-sales support. We work with contract moulders, automotive suppliers, and packaging manufacturers across Slovenia and Croatia.\n\nMost projects address capacity constraints, replacement of older hydraulic equipment, or new product requirements needing different tonnage or multi-component capability.\n\nTypical discussion covers equipment specification, complete production-cell configuration (robots, auxiliaries, process optimization), and energy-efficiency assessment for your actual production duty.\n\nWorth a brief technical conversation to review your current setup or planned investment?\n\nBest regards,\n[Your Name]\nIntegraplast"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Injection molding capacity",
+        "body": "Hi [First Name],\n\nFollowing up on injection-moulding equipment for [Company Name].\n\nCommon triggers we see:\n- Capacity shortages delaying deliveries or limiting additional work\n- Older hydraulic machines with high energy consumption\n- New automotive, FMCG, or industrial contracts requiring different machine configuration\n- Inconsistent process repeatability affecting scrap or rework rates\n\nTEDERIC machines (NEO T servo-hydraulic, NEO H/E two-platen and electric, NEO M multi-component) are configured around your application, with regional service support from our Slovenian office and warehouse.\n\nCan I show you how this fits your production requirements?\n\nBest regards,\n[Your Name]\nIntegraplast"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final follow-up - moulding equipment",
+        "body": "Hi [First Name],\n\nLast note on this.\n\nIf [Company Name] is reviewing injection-moulding equipment - whether for capacity expansion, machine replacement, or a new project - we can discuss technical requirements and complete production-cell configuration.\n\nModern servo-hydraulic and electric machines combined with local technical support is what we bring. Energy-efficiency assessment and process optimization included in the discussion.\n\nHappy to have a brief conversation when the timing works.\n\nBest regards,\n[Your Name]\nIntegraplast"
+      }
+    ]
+  }
+]
