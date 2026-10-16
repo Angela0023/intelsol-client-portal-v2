@@ -375,7 +375,7 @@ function OverviewTab() {
         <ContentSection title="Clay Filter Prompts" description="AI-powered filters to find companies that fit PRTronic's ICP across DACH+Slovenia">
           <div className="mb-6">
             <a
-              href="/clay-filters/prtronic-filters.csv"
+              href="/clay-filters/PRTRONIC-CLAY-Filters-final.csv"
               download
               className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
@@ -457,7 +457,7 @@ function OverviewTab() {
         <ContentSection title="Target Positions" description="Job titles to target across all segments">
           <div className="mb-6">
             <a
-              href="/clay-filters/prtronic-positions.csv"
+              href="/clay-filters/PRTRONIC-CLAY-Positions-final.csv"
               download
               className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
