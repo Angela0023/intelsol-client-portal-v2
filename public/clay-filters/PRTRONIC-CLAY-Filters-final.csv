@@ -1,5 +1,89 @@
 Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt,Priority
-Slovenia - Display Integration,"Find companies in Slovenia that: (A) manufacture equipment with embedded displays (kiosks, terminals, industrial machines, medical devices), OR (B) deliver AV/digital signage integration projects, OR (C) operate multi-site locations with signage/information screens (retail chains, hospitality, transport, healthcare facilities), OR (D) develop specialized display applications (parking systems, transport displays, public information). Company size: 5-500 employees for manufacturers and integrators, 50-2000 for multi-site operators. Exclude: pure software companies without hardware procurement responsibility, basic IT resellers without integration role, consumer/home products, companies outside DACH+Slovenia region.",Display Integration,Slovenia,10/16/2026,,Does this company EITHER manufacture equipment that embeds displays (kiosks/terminals/industrial machines/medical devices) OR integrate displays for client projects (AV/signage integrator) OR operate multiple locations with information screen needs (retail chains/hotel groups/healthcare networks/transport operators) OR develop specialized public display applications? AND is the company headquartered or operating in Slovenia? AND does the company have 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator? AND is this NOT a pure software company OR basic IT reseller OR consumer product company?,1
-Austria - Display Integration,"Find companies in Austria that: (A) manufacture equipment with embedded displays (kiosks, terminals, industrial machines, medical devices), OR (B) deliver AV/digital signage integration projects, OR (C) operate multi-site locations with signage/information screens (retail chains, hospitality, transport, healthcare facilities), OR (D) develop specialized display applications (parking systems, transport displays, public information). Company size: 5-500 employees for manufacturers and integrators, 50-2000 for multi-site operators. Exclude: pure software companies without hardware procurement responsibility, basic IT resellers without integration role, consumer/home products, companies outside DACH+Slovenia region.",Display Integration,Austria,10/16/2026,,Does this company EITHER manufacture equipment that embeds displays (kiosks/terminals/industrial machines/medical devices) OR integrate displays for client projects (AV/signage integrator) OR operate multiple locations with information screen needs (retail chains/hotel groups/healthcare networks/transport operators) OR develop specialized public display applications? AND is the company headquartered or operating in Austria? AND does the company have 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator? AND is this NOT a pure software company OR basic IT reseller OR consumer product company?,1
-Germany - Display Integration,"Find companies in Germany (priority: southern Germany - Bavaria, Baden-Württemberg, then wider coverage) that: (A) manufacture equipment with embedded displays (kiosks, terminals, industrial machines, medical devices), OR (B) deliver AV/digital signage integration projects, OR (C) operate multi-site locations with signage/information screens (retail chains, hospitality, transport, healthcare facilities), OR (D) develop specialized display applications (parking systems, transport displays, public information). Company size: 5-500 employees for manufacturers and integrators, 50-2000 for multi-site operators. Exclude: pure software companies without hardware procurement responsibility, basic IT resellers without integration role, consumer/home products, companies outside DACH+Slovenia region.",Display Integration,Germany,10/16/2026,,Does this company EITHER manufacture equipment that embeds displays (kiosks/terminals/industrial machines/medical devices) OR integrate displays for client projects (AV/signage integrator) OR operate multiple locations with information screen needs (retail chains/hotel groups/healthcare networks/transport operators) OR develop specialized public display applications? AND is the company headquartered or operating in Germany? AND does the company have 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator? AND is this NOT a pure software company OR basic IT reseller OR consumer product company?,1
-Switzerland - Display Integration,"Find companies in Switzerland that: (A) manufacture equipment with embedded displays (kiosks, terminals, industrial machines, medical devices), OR (B) deliver AV/digital signage integration projects, OR (C) operate multi-site locations with signage/information screens (retail chains, hospitality, transport, healthcare facilities), OR (D) develop specialized display applications (parking systems, transport displays, public information). Company size: 5-500 employees for manufacturers and integrators, 50-2000 for multi-site operators. Exclude: pure software companies without hardware procurement responsibility, basic IT resellers without integration role, consumer/home products, companies outside DACH+Slovenia region.",Display Integration,Switzerland,10/16/2026,,Does this company EITHER manufacture equipment that embeds displays (kiosks/terminals/industrial machines/medical devices) OR integrate displays for client projects (AV/signage integrator) OR operate multiple locations with information screen needs (retail chains/hotel groups/healthcare networks/transport operators) OR develop specialized public display applications? AND is the company headquartered or operating in Switzerland? AND does the company have 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator? AND is this NOT a pure software company OR basic IT reseller OR consumer product company?,2
+Slovenia - Display Integration,"Display hardware sourcing companies in Slovenia including: (A) equipment manufacturers embedding displays in products (kiosks, terminals, industrial machines, medical devices, gaming machines), (B) AV/digital signage system integrators delivering display projects for clients, (C) multi-site operators with signage needs (retail chains, hotel groups, healthcare networks, transport operators), or (D) specialized display application developers (parking systems, public information). Company size: 5-500 employees for manufacturers/integrators, 50-2000 for multi-site operators. Prioritize companies with evidence of: current product lines with displays, signage project portfolio, quality certifications, hiring for hardware/project/technical roles, or multi-location operations. Search terms: vgradni zaslon, zaslon na dotik, samopostrežni terminal, digitalno prikazovanje, AV integracija.",Display Integration,Slovenia,10/16/2026,,"Review this company's website and public information to determine if they are a good fit for PRTronic, a display hardware supplier for OEMs, integrators, and operators.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a pure software company without hardware procurement responsibility
+2. Company is a basic IT reseller without integration or specification role
+3. Company manufactures consumer/home products only (residential gaming, home automation)
+4. Company is headquartered outside DACH+Slovenia region
+5. Company has fewer than 5 employees (too small for display procurement needs)
+6. Company is only a retailer or distributor without own equipment development or integration projects
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company EITHER manufactures equipment embedding displays OR integrates displays for client projects OR operates multiple locations with signage needs OR develops public display applications
+2. Company is headquartered or operating in Slovenia with design/engineering presence
+3. Company has 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator
+4. Evidence of display hardware needs (products with screens, signage portfolio, multi-site network, or specialized applications)
+5. Company appears to need display sourcing for OEM products, client projects, or multi-location rollouts
+
+Base your decision on information found on company website, Products page, Projects/Case Studies, Locations, About Us, and Careers sections.
+
+Return only: YES or NO",1
+Austria - Display Integration,"Display hardware sourcing companies in Austria including: (A) equipment manufacturers embedding displays in products (kiosks, terminals, industrial machines, medical devices, gaming machines), (B) AV/digital signage system integrators delivering display projects for clients, (C) multi-site operators with signage needs (retail chains, hotel groups, healthcare networks, transport operators), or (D) specialized display application developers (parking systems, public information). Company size: 5-500 employees for manufacturers/integrators, 50-2000 for multi-site operators. Prioritize companies with evidence of: current product lines with displays, signage project portfolio, quality certifications, hiring for hardware/project/technical roles, or multi-location operations. Search terms: Einbaumonitor, Touchdisplay, Kioskhersteller, Selbstbedienungsterminal, Systemintegrator, Digital Signage.",Display Integration,Austria,10/16/2026,,"Review this company's website and public information to determine if they are a good fit for PRTronic, a display hardware supplier for OEMs, integrators, and operators.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a pure software company without hardware procurement responsibility
+2. Company is a basic IT reseller without integration or specification role
+3. Company manufactures consumer/home products only (residential gaming, home automation)
+4. Company is headquartered outside DACH+Slovenia region
+5. Company has fewer than 5 employees (too small for display procurement needs)
+6. Company is only a retailer or distributor without own equipment development or integration projects
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company EITHER manufactures equipment embedding displays OR integrates displays for client projects OR operates multiple locations with signage needs OR develops public display applications
+2. Company is headquartered or operating in Austria with design/engineering presence
+3. Company has 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator
+4. Evidence of display hardware needs (products with screens, signage portfolio, multi-site network, or specialized applications)
+5. Company appears to need display sourcing for OEM products, client projects, or multi-location rollouts
+
+Base your decision on information found on company website, Products page, Projects/Case Studies, Locations, About Us, and Careers sections.
+
+Return only: YES or NO",2
+Germany - Display Integration,"Display hardware sourcing companies in Germany (priority: southern Germany - Bavaria, Baden-Württemberg, then wider coverage) including: (A) equipment manufacturers embedding displays in products (kiosks, terminals, industrial machines, medical devices, gaming machines), (B) AV/digital signage system integrators delivering display projects for clients, (C) multi-site operators with signage needs (retail chains, hotel groups, healthcare networks, transport operators), or (D) specialized display application developers (parking systems, public information). Company size: 5-500 employees for manufacturers/integrators, 50-2000 for multi-site operators. Prioritize companies with evidence of: current product lines with displays, signage project portfolio, quality certifications, hiring for hardware/project/technical roles, or multi-location operations. Search terms: Einbaumonitor, Touchdisplay, Kioskhersteller, Selbstbedienungsterminal, Systemintegrator, Digital Signage.",Display Integration,Germany,10/16/2026,,"Review this company's website and public information to determine if they are a good fit for PRTronic, a display hardware supplier for OEMs, integrators, and operators.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a pure software company without hardware procurement responsibility
+2. Company is a basic IT reseller without integration or specification role
+3. Company manufactures consumer/home products only (residential gaming, home automation)
+4. Company is headquartered outside DACH+Slovenia region
+5. Company has fewer than 5 employees (too small for display procurement needs)
+6. Company is only a retailer or distributor without own equipment development or integration projects
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company EITHER manufactures equipment embedding displays OR integrates displays for client projects OR operates multiple locations with signage needs OR develops public display applications
+2. Company is headquartered or operating in Germany with design/engineering presence
+3. Company has 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator
+4. Evidence of display hardware needs (products with screens, signage portfolio, multi-site network, or specialized applications)
+5. Company appears to need display sourcing for OEM products, client projects, or multi-location rollouts
+
+Base your decision on information found on company website, Products page, Projects/Case Studies, Locations, About Us, and Careers sections.
+
+Return only: YES or NO",3
+Switzerland - Display Integration,"Display hardware sourcing companies in Switzerland including: (A) equipment manufacturers embedding displays in products (kiosks, terminals, industrial machines, medical devices, gaming machines), (B) AV/digital signage system integrators delivering display projects for clients, (C) multi-site operators with signage needs (retail chains, hotel groups, healthcare networks, transport operators), or (D) specialized display application developers (parking systems, public information). Company size: 5-500 employees for manufacturers/integrators, 50-2000 for multi-site operators. Prioritize companies with evidence of: current product lines with displays, signage project portfolio, quality certifications, hiring for hardware/project/technical roles, or multi-location operations. Search terms: Einbaumonitor, Touchdisplay, Kioskhersteller, Selbstbedienungsterminal, Systemintegrator, Digital Signage.",Display Integration,Switzerland,10/16/2026,,"Review this company's website and public information to determine if they are a good fit for PRTronic, a display hardware supplier for OEMs, integrators, and operators.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is only a pure software company without hardware procurement responsibility
+2. Company is a basic IT reseller without integration or specification role
+3. Company manufactures consumer/home products only (residential gaming, home automation)
+4. Company is headquartered outside DACH+Slovenia region
+5. Company has fewer than 5 employees (too small for display procurement needs)
+6. Company is only a retailer or distributor without own equipment development or integration projects
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company EITHER manufactures equipment embedding displays OR integrates displays for client projects OR operates multiple locations with signage needs OR develops public display applications
+2. Company is headquartered or operating in Switzerland with design/engineering presence
+3. Company has 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator
+4. Evidence of display hardware needs (products with screens, signage portfolio, multi-site network, or specialized applications)
+5. Company appears to need display sourcing for OEM products, client projects, or multi-location rollouts
+
+Base your decision on information found on company website, Products page, Projects/Case Studies, Locations, About Us, and Careers sections.
+
+Return only: YES or NO",4

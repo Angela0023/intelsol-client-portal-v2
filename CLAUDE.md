@@ -473,6 +473,200 @@ Slovenia - Subscription Businesses (Priority 3)
 
 ---
 
+### 1F. HARD RULES: Clay Filter Prompts CSV Format (CRITICAL)
+
+**HARD RULE:** When creating Clay Filter Prompts CSV during client onboarding, you MUST follow this EXACT format. This format has been validated across multiple clients (MoreFromFood, PRTronic, etc.) and MUST be used consistently.
+
+**Why:** Wrong format = incomplete lead generation, confused users, wasted time recreating files. This format is optimized for Clay import and covers complete ICP.
+
+**Column Structure (EXACT ORDER):**
+```csv
+Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt,Priority
+```
+
+**CRITICAL CONSTRAINTS:**
+
+1. **PRIORITY 1 CAN ONLY BE ONE FILTER** - Not multiple. Only the single highest-priority location × industry gets Priority 1.
+   - Priority sequence: 1, 2, 3, 4... in descending order of conversion potential
+   - NEVER have multiple filters with Priority 1
+
+2. **ONE filter per location × industry combination** - Never combine multiple locations into one filter
+   - Example: "Slovenia - Display Integration", "Austria - Display Integration" (two separate filters)
+   - NOT: "DACH Region - Display Integration" (one combined filter)
+
+3. **Title format:** "[Location] - [Industry]"
+   - Examples: "Slovenia - Display Integration", "Germany - Food Manufacturing"
+
+4. **PROMPT format (EXACT STRUCTURE):**
+   ```
+   [Industry description] companies in [Location] including: [segments]. Company size: [ranges]. Prioritize companies with evidence of: [signals]. Search terms: [local language terms].
+   ```
+
+   **Example:**
+   ```
+   Display hardware sourcing companies in Slovenia including: (A) equipment manufacturers embedding displays in products (kiosks, terminals, industrial machines, medical devices, gaming machines), (B) AV/digital signage system integrators delivering display projects for clients, (C) multi-site operators with signage needs (retail chains, hotel groups, healthcare networks, transport operators), or (D) specialized display application developers (parking systems, public information). Company size: 5-500 employees for manufacturers/integrators, 50-2000 for multi-site operators. Prioritize companies with evidence of: current product lines with displays, signage project portfolio, quality certifications, hiring for hardware/project/technical roles, or multi-location operations. Search terms: vgradni zaslon, zaslon na dotik, samopostrežni terminal, digitalno prikazovanje, AV integracija.
+   ```
+
+5. **ICP Match Prompt format (EXACT STRUCTURE):**
+   ```
+   Review this company's website and public information to determine if they are a good fit for [Client Name], [what client offers].
+
+   Return ONLY "YES" or "NO" based on these criteria:
+
+   RETURN "NO" IF ANY OF THESE ARE TRUE:
+   1. [Disqualifier 1]
+   2. [Disqualifier 2]
+   3. [Disqualifier 3]
+   ...
+
+   RETURN "YES" IF ALL OF THESE ARE TRUE:
+   1. [Qualifier 1]
+   2. [Qualifier 2]
+   3. [Qualifier 3]
+   ...
+
+   Base your decision on information found on company website, [relevant sections].
+
+   Return only: YES or NO
+   ```
+
+   **Example:**
+   ```
+   Review this company's website and public information to determine if they are a good fit for PRTronic, a display hardware supplier for OEMs, integrators, and operators.
+
+   Return ONLY "YES" or "NO" based on these criteria:
+
+   RETURN "NO" IF ANY OF THESE ARE TRUE:
+   1. Company is only a pure software company without hardware procurement responsibility
+   2. Company is a basic IT reseller without integration or specification role
+   3. Company manufactures consumer/home products only (residential gaming, home automation)
+   4. Company is headquartered outside DACH+Slovenia region
+   5. Company has fewer than 5 employees (too small for display procurement needs)
+   6. Company is only a retailer or distributor without own equipment development or integration projects
+
+   RETURN "YES" IF ALL OF THESE ARE TRUE:
+   1. Company EITHER manufactures equipment embedding displays OR integrates displays for client projects OR operates multiple locations with signage needs OR develops public display applications
+   2. Company is headquartered or operating in Slovenia with design/engineering presence
+   3. Company has 5-500 employees if manufacturer/integrator OR 50-2000 if multi-site operator
+   4. Evidence of display hardware needs (products with screens, signage portfolio, multi-site network, or specialized applications)
+   5. Company appears to need display sourcing for OEM products, client projects, or multi-location rollouts
+
+   Base your decision on information found on company website, Products page, Projects/Case Studies, Locations, About Us, and Careers sections.
+
+   Return only: YES or NO
+   ```
+
+6. **Date targeted:** Today's date in M/D/YYYY format (e.g., "10/16/2026")
+
+7. **Company List column:** Leave empty (blank)
+
+8. **Industry column:** Short industry name (e.g., "Display Integration", "Food Manufacturing")
+
+9. **Location column:** Country name (e.g., "Slovenia", "Austria", "Germany")
+
+**VIOLATION EXAMPLE (2026-10-16 - PRTronic):**
+- Created filters with multiple Priority 1 entries (Slovenia, Austria, Germany all Priority 1)
+- Used wrong PROMPT format (missing local language search terms)
+- Used wrong ICP Match Prompt format (missing YES/NO structure)
+- **This wasted time and required complete recreation of files**
+
+**Checklist Before Finalizing Clay Filter Prompts CSV:**
+- [ ] Read complete ICP Profile tab to count ALL industry segments
+- [ ] Created ONE filter per location × industry combination
+- [ ] Only ONE filter has Priority 1
+- [ ] PROMPT follows exact format with local language search terms
+- [ ] ICP Match Prompt follows exact YES/NO structure
+- [ ] Date targeted is today's date
+- [ ] Verified against reference examples (MoreFromFood, PRTronic)
+
+**Reference Files:**
+- `/public/clay-filters/PRTRONIC-CLAY-Filters-final.csv` - Correct format example
+- Look for MoreFromFood examples in previous client work
+
+**Rule Established:** 2026-10-16
+
+**This is a CRITICAL rule - wrong format = client cannot use files, must recreate from scratch**
+
+---
+
+### 1G. HARD RULES: Positions CSV Format (CRITICAL)
+
+**HARD RULE:** When creating Positions CSV during client onboarding, you MUST follow this EXACT format. This format has been validated across multiple clients and MUST be used consistently.
+
+**Why:** Wrong format = incomplete lead generation, wrong people contacted, confused users. Format must match Clay import requirements and cover all relevant job titles.
+
+**Column Structure Varies by Client Type:**
+
+**B2B SaaS/Services:**
+```csv
+SEQUENCE,Title,Industries to Target,Position List EN,Position List [Local],Notes
+```
+
+**Hardware/Manufacturing:**
+```csv
+TIER,Title,Segments to Target,Position List EN,Position List DE,Position List SL,Notes
+```
+
+**CRITICAL CONSTRAINTS:**
+
+1. **Position List in ONE cell** - Comma-separated titles, NOT split across List 1-7 columns
+   - CORRECT: "CEO,Chief Executive Officer,Managing Director,General Manager,President,Founder"
+   - WRONG: Separate columns for List 1, List 2, List 3, etc.
+
+2. **Local language columns** - Add separate columns for each relevant language
+   - German markets: Add "Position List DE" column
+   - Slovenian markets: Add "Position List SL" column
+   - Example: "Vodja razvoja,Vodja produktnega razvoja,Vodja tehnične razvoja"
+
+3. **Title variations: 50-150 per PRIMARY category** including:
+   - VP of X, Vice President of X, SVP of X, Senior Vice President of X
+   - Head of X, Director of X, Senior Director of X, Global Director of X
+   - Manager X, X Manager, Manager of X, Senior Manager of X
+   - Lead X, X Lead, Principal X, Chief X
+   - Local language equivalents (Leiter X, Vodja X, etc.)
+
+4. **Notes column:** When to target these positions and why
+   - Example: "OEMs & Integrators - Owns display specification, technical fit, qualification, and integration decisions. These are the technical gatekeepers who evaluate form factor, touch/interface specs, environmental requirements, and mounting constraints."
+
+5. **TIER/SEQUENCE classification:**
+   - **PRIMARY / SEQUENCE 1:** Core decision makers (50-150 titles each category)
+   - **SECONDARY / SEQUENCE 2:** Influencers (30-80 titles each category)
+   - **TERTIARY / TIER 3:** Fallback/small companies only (20-40 titles)
+
+**Example Structure (Hardware/Manufacturing):**
+
+```csv
+TIER,Title,Segments to Target,Position List EN,Position List DE,Position List SL,Notes
+PRIMARY,Engineering & Product Leadership,"OEMs • Equipment Manufacturers • Integrators • Specialized Applications","Technical Director,Director of Engineering,Engineering Director,Director Technical Development,Director of Technical Development,Hardware Lead,Hardware Engineering Lead,Lead Hardware Engineer,Product Manager,Technical Product Manager,Product Development Manager,Hardware Manager,Hardware Engineering Manager,Manager Hardware Development,Manager of Hardware,Head of Engineering,Head of Product,Head of Hardware,Head of Product Development,Head of Technical Development,VP Engineering,VP of Engineering,VP Product Development,VP of Product Development,VP Technical Development,VP of Technical Development,Chief Technical Officer,CTO","Entwicklungsleiter,Leiter Entwicklung,Entwicklungsmanager,Produktentwicklungsleiter,Leiter Produktentwicklung,Hardware-Entwicklungsleiter,Technischer Leiter,Leiter Technik,Leiter Engineering,Produktmanager,Technischer Produktmanager,Hardwaremanager,Manager Hardware,CTO","Vodja razvoja,Vodja produktnega razvoja,Vodja tehnične razvoja,Vodja inženiringa,Tehnični direktor,Direktor razvoja,Produktni manager,Tehnični produktni manager,Manager produktnega razvoja","OEMs & Integrators - Owns display specification, technical fit, qualification, and integration decisions. These are the technical gatekeepers who evaluate form factor, touch/interface specs, environmental requirements, and mounting constraints."
+```
+
+**VIOLATION EXAMPLE (2026-10-16 - PRTronic):**
+- Created positions with Position List split across List 1-7 columns
+- Used wrong column structure (Type instead of TIER)
+- Missing local language columns for German and Slovenian
+- Too few title variations (only 10-20 per category instead of 50-150)
+- **This wasted time and required complete recreation of files**
+
+**Checklist Before Finalizing Positions CSV:**
+- [ ] Column structure matches client type (B2B SaaS vs Hardware)
+- [ ] Position List in ONE cell (comma-separated)
+- [ ] Added local language columns for target markets
+- [ ] 50-150 title variations per PRIMARY category
+- [ ] 30-80 title variations per SECONDARY category
+- [ ] 20-40 title variations per TERTIARY category
+- [ ] Notes column explains when to target each tier
+- [ ] Verified against reference examples (Selekcija, PRTronic)
+
+**Reference Files:**
+- `/public/clay-filters/PRTRONIC-CLAY-Positions-final.csv` - Correct format example (Hardware)
+- Look for Selekcija examples in previous client work (B2B SaaS)
+
+**Rule Established:** 2026-10-16
+
+**This is a CRITICAL rule - wrong format = client contacts wrong people, lead gen fails**
+
+---
+
 ### 2. Adding a New Client Requires Multiple Files (CRITICAL - ALWAYS DO ALL)
 
 **HARD RULE:** When the user says "create a dashboard" for a new client, you MUST update ALL of these files. No exceptions. Client must appear in navigation immediately.
