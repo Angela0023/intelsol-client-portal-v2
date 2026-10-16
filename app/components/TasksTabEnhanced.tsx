@@ -412,10 +412,10 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
     client: clientId,
   });
 
-  // Filter states
-  const [filterAssignee, setFilterAssignee] = useState<'all' | 'Matej' | 'Frosina' | 'Filip'>('all');
-  const [filterStatus, setFilterStatus] = useState<'all' | 'pending' | 'done'>('all');
-  const [filterClient, setFilterClient] = useState<'all' | string>('all');
+  // Filter states (multi-select with arrays)
+  const [filterAssignees, setFilterAssignees] = useState<string[]>([]);
+  const [filterStatuses, setFilterStatuses] = useState<string[]>([]);
+  const [filterClients, setFilterClients] = useState<string[]>([]);
   const [filterDate, setFilterDate] = useState<DateFilter>('all');
   const [customDateRange, setCustomDateRange] = useState({ start: '', end: '' });
   const [showFilters, setShowFilters] = useState(false);
@@ -427,6 +427,35 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
   // Comments state
   const [showCommentsForTask, setShowCommentsForTask] = useState<string | null>(null);
   const [newComment, setNewComment] = useState('');
+
+  // Toggle filter selections
+  const toggleAssignee = (assignee: string) => {
+    setFilterAssignees((prev) =>
+      prev.includes(assignee) ? prev.filter((a) => a !== assignee) : [...prev, assignee]
+    );
+  };
+
+  const toggleStatus = (status: string) => {
+    setFilterStatuses((prev) =>
+      prev.includes(status) ? prev.filter((s) => s !== status) : [...prev, status]
+    );
+  };
+
+  const toggleClient = (client: string) => {
+    setFilterClients((prev) =>
+      prev.includes(client) ? prev.filter((c) => c !== client) : [...prev, client]
+    );
+  };
+
+  // Select/Deselect all for each filter type
+  const selectAllAssignees = () => setFilterAssignees(['Matej', 'Frosina', 'Filip']);
+  const deselectAllAssignees = () => setFilterAssignees([]);
+
+  const selectAllStatuses = () => setFilterStatuses(['pending', 'done']);
+  const deselectAllStatuses = () => setFilterStatuses([]);
+
+  const selectAllClients = () => setFilterClients(ALL_CLIENTS.map((c) => c.id));
+  const deselectAllClients = () => setFilterClients([]);
 
   // Drag and drop sensors
   const sensors = useSensors(
@@ -469,21 +498,21 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
   // Apply filters
   const filteredTasks = useMemo(() => {
     return tasks.filter((task) => {
-      // Assignee filter
-      if (filterAssignee !== 'all' && task.assignedTo !== filterAssignee) return false;
+      // Assignee filter (if any assignees selected, task must match one of them)
+      if (filterAssignees.length > 0 && !filterAssignees.includes(task.assignedTo)) return false;
 
-      // Status filter
-      if (filterStatus !== 'all' && task.status !== filterStatus) return false;
+      // Status filter (if any statuses selected, task must match one of them)
+      if (filterStatuses.length > 0 && !filterStatuses.includes(task.status)) return false;
 
-      // Client filter
-      if (filterClient !== 'all' && task.client !== filterClient) return false;
+      // Client filter (if any clients selected, task must match one of them)
+      if (filterClients.length > 0 && !filterClients.includes(task.client || '')) return false;
 
       // Date filter
       if (filterDate !== 'all' && !isDateInRange(task.dueDate, filterDate)) return false;
 
       return true;
     });
-  }, [tasks, filterAssignee, filterStatus, filterClient, filterDate, customDateRange]);
+  }, [tasks, filterAssignees, filterStatuses, filterClients, filterDate, customDateRange]);
 
   // Sort filtered tasks
   const sortedTasks = useMemo(() => {
@@ -506,18 +535,18 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
   // Count active filters
   const activeFiltersCount = useMemo(() => {
     let count = 0;
-    if (filterAssignee !== 'all') count++;
-    if (filterStatus !== 'all') count++;
-    if (filterClient !== 'all') count++;
+    if (filterAssignees.length > 0) count++;
+    if (filterStatuses.length > 0) count++;
+    if (filterClients.length > 0) count++;
     if (filterDate !== 'all') count++;
     return count;
-  }, [filterAssignee, filterStatus, filterClient, filterDate]);
+  }, [filterAssignees, filterStatuses, filterClients, filterDate]);
 
   // Clear all filters
   const clearFilters = () => {
-    setFilterAssignee('all');
-    setFilterStatus('all');
-    setFilterClient('all');
+    setFilterAssignees([]);
+    setFilterStatuses([]);
+    setFilterClients([]);
     setFilterDate('all');
     setCustomDateRange({ start: '', end: '' });
   };
@@ -806,54 +835,100 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
         </div>
 
         {showFilters && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-slate-200">
-            {/* Assignee filter */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4 border-t border-slate-200">
+            {/* Assignee filter (multi-select checkboxes) */}
             <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">Assignee</label>
-              <select
-                value={filterAssignee}
-                onChange={(e) => setFilterAssignee(e.target.value as typeof filterAssignee)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
-              >
-                <option value="all">All SNEs</option>
-                <option value="Matej">Matej</option>
-                <option value="Frosina">Frosina</option>
-                <option value="Filip">Filip</option>
-              </select>
-            </div>
-
-            {/* Status filter */}
-            <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">Status</label>
-              <select
-                value={filterStatus}
-                onChange={(e) => setFilterStatus(e.target.value as typeof filterStatus)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
-              >
-                <option value="all">All Tasks</option>
-                <option value="pending">Pending</option>
-                <option value="done">Completed</option>
-              </select>
-            </div>
-
-            {/* Client filter */}
-            <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">Client</label>
-              <select
-                value={filterClient}
-                onChange={(e) => setFilterClient(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#1a2647] focus:border-transparent outline-none"
-              >
-                <option value="all">All Clients</option>
-                {ALL_CLIENTS.map((client) => (
-                  <option key={client.id} value={client.id}>{client.name}</option>
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-xs font-medium text-slate-700">Assignee</label>
+                <button
+                  onClick={() => filterAssignees.length === 3 ? deselectAllAssignees() : selectAllAssignees()}
+                  className="text-xs text-blue-600 hover:text-blue-800"
+                >
+                  {filterAssignees.length === 3 ? 'Deselect All' : 'Select All'}
+                </button>
+              </div>
+              <div className="space-y-2">
+                {['Matej', 'Frosina', 'Filip'].map((assignee) => (
+                  <label key={assignee} className="flex items-center space-x-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={filterAssignees.includes(assignee)}
+                      onChange={() => toggleAssignee(assignee)}
+                      className="w-4 h-4 text-[#1a2647] border-slate-300 rounded focus:ring-2 focus:ring-[#1a2647]"
+                    />
+                    <span className="text-sm text-slate-700">{assignee}</span>
+                  </label>
                 ))}
-              </select>
+              </div>
+              {filterAssignees.length > 0 && (
+                <p className="text-xs text-slate-500 mt-2">{filterAssignees.length} selected</p>
+              )}
             </div>
 
-            {/* Date filter */}
+            {/* Status filter (multi-select checkboxes) */}
             <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">Due Date</label>
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-xs font-medium text-slate-700">Status</label>
+                <button
+                  onClick={() => filterStatuses.length === 2 ? deselectAllStatuses() : selectAllStatuses()}
+                  className="text-xs text-blue-600 hover:text-blue-800"
+                >
+                  {filterStatuses.length === 2 ? 'Deselect All' : 'Select All'}
+                </button>
+              </div>
+              <div className="space-y-2">
+                {[
+                  { value: 'pending', label: 'Pending' },
+                  { value: 'done', label: 'Completed' }
+                ].map((status) => (
+                  <label key={status.value} className="flex items-center space-x-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={filterStatuses.includes(status.value)}
+                      onChange={() => toggleStatus(status.value)}
+                      className="w-4 h-4 text-[#1a2647] border-slate-300 rounded focus:ring-2 focus:ring-[#1a2647]"
+                    />
+                    <span className="text-sm text-slate-700">{status.label}</span>
+                  </label>
+                ))}
+              </div>
+              {filterStatuses.length > 0 && (
+                <p className="text-xs text-slate-500 mt-2">{filterStatuses.length} selected</p>
+              )}
+            </div>
+
+            {/* Client filter (multi-select checkboxes with scrollable list) */}
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-xs font-medium text-slate-700">Client</label>
+                <button
+                  onClick={() => filterClients.length === ALL_CLIENTS.length ? deselectAllClients() : selectAllClients()}
+                  className="text-xs text-blue-600 hover:text-blue-800"
+                >
+                  {filterClients.length === ALL_CLIENTS.length ? 'Deselect All' : 'Select All'}
+                </button>
+              </div>
+              <div className="max-h-32 overflow-y-auto border border-slate-200 rounded-lg p-2 space-y-2">
+                {ALL_CLIENTS.map((client) => (
+                  <label key={client.id} className="flex items-center space-x-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={filterClients.includes(client.id)}
+                      onChange={() => toggleClient(client.id)}
+                      className="w-4 h-4 text-[#1a2647] border-slate-300 rounded focus:ring-2 focus:ring-[#1a2647]"
+                    />
+                    <span className="text-sm text-slate-700">{client.name}</span>
+                  </label>
+                ))}
+              </div>
+              {filterClients.length > 0 && (
+                <p className="text-xs text-slate-500 mt-2">{filterClients.length} selected</p>
+              )}
+            </div>
+
+            {/* Date filter (dropdown remains single-select) */}
+            <div>
+              <label className="block text-xs font-medium text-slate-700 mb-2">Due Date</label>
               <select
                 value={filterDate}
                 onChange={(e) => setFilterDate(e.target.value as DateFilter)}
@@ -871,7 +946,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
             {filterDate === 'custom' && (
               <>
                 <div>
-                  <label className="block text-xs font-medium text-slate-700 mb-1">From</label>
+                  <label className="block text-xs font-medium text-slate-700 mb-2">From</label>
                   <input
                     type="date"
                     value={customDateRange.start}
@@ -880,7 +955,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-slate-700 mb-1">To</label>
+                  <label className="block text-xs font-medium text-slate-700 mb-2">To</label>
                   <input
                     type="date"
                     value={customDateRange.end}
@@ -897,7 +972,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
         <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-200">
           <button
             onClick={() => {
-              setFilterStatus('pending');
+              setFilterStatuses(['pending']);
               setFilterDate('all');
             }}
             className="px-3 py-1 text-xs font-medium bg-amber-50 text-amber-700 rounded-full hover:bg-amber-100 transition-colors"
@@ -906,7 +981,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
           </button>
           <button
             onClick={() => {
-              setFilterStatus('pending');
+              setFilterStatuses(['pending']);
               setFilterDate('overdue');
             }}
             className="px-3 py-1 text-xs font-medium bg-red-50 text-red-700 rounded-full hover:bg-red-100 transition-colors"
@@ -915,7 +990,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
           </button>
           <button
             onClick={() => {
-              setFilterStatus('pending');
+              setFilterStatuses(['pending']);
               setFilterDate('thisWeek');
             }}
             className="px-3 py-1 text-xs font-medium bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition-colors"
@@ -924,7 +999,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
           </button>
           <button
             onClick={() => {
-              setFilterStatus('done');
+              setFilterStatuses(['done']);
               setFilterDate('all');
             }}
             className="px-3 py-1 text-xs font-medium bg-green-50 text-green-700 rounded-full hover:bg-green-100 transition-colors"
