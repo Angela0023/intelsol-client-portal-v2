@@ -588,5 +588,14 @@
     "dueDate": "2026-10-16",
     "order": 26,
     "comments": []
+  },
+  {
+    "id": "task_1792149869535_9cnxjtk",
+    "description": "CLARIFY: enrich leads from Logistics, Retail, and Maritime. Locations: Sweden, Norway, Finland, Denmark",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-16",
+    "order": 27,
+    "comments": []
   }
 ]
