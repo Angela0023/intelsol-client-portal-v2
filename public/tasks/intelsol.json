@@ -6,7 +6,8 @@
     "status": "pending",
     "dueDate": "2026-07-31",
     "order": 0,
-    "comments": []
+    "comments": [],
+    "client": "intelsol"
   },
   {
     "id": "task_1785432278082_ukybt1y",
@@ -15,7 +16,8 @@
     "status": "pending",
     "dueDate": "2026-08-03",
     "order": 1,
-    "comments": []
+    "comments": [],
+    "client": "intelsol"
   },
   {
     "id": "task_1786710057291_x4y1fwn",
@@ -24,7 +26,8 @@
     "status": "pending",
     "dueDate": "2026-08-17",
     "order": 2,
-    "comments": []
+    "comments": [],
+    "client": "intelsol"
   },
   {
     "id": "task_1788783761633_w0iuobz",
@@ -33,7 +36,8 @@
     "status": "pending",
     "dueDate": "2026-09-07",
     "order": 3,
-    "comments": []
+    "comments": [],
+    "client": "mbedtronix"
   },
   {
     "id": "task_1788783871548_2pz3xp3",
@@ -42,7 +46,8 @@
     "status": "pending",
     "dueDate": "2026-09-07",
     "order": 4,
-    "comments": []
+    "comments": [],
+    "client": "plantryx"
   },
   {
     "id": "task_1788879315669_kfaxsik",
@@ -58,7 +63,8 @@
         "createdAt": "2026-09-08T14:55:23.348Z",
         "createdBy": "Admin"
       }
-    ]
+    ],
+    "client": "adsigner"
   },
   {
     "id": "task_1788181182966_tprteu6",
@@ -67,7 +73,8 @@
     "status": "pending",
     "dueDate": "2026-09-07",
     "order": 6,
-    "comments": []
+    "comments": [],
+    "client": "intelsol"
   },
   {
     "id": "task_1786009825593_zyv2gsl",
@@ -76,7 +83,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 3,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1788856284378_4uja5jt",
@@ -85,7 +94,9 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 8,
-    "comments": []
+    "comments": [],
+    "client": "peoplefocus",
+    "completedAt": "2026-09-08"
   },
   {
     "id": "task_1788856344664_3th2p8k",
@@ -94,7 +105,9 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 10,
-    "comments": []
+    "comments": [],
+    "client": "panorate",
+    "completedAt": "2026-09-08"
   },
   {
     "id": "task_1788879375969_j216cr5",
@@ -103,7 +116,9 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 11,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-09-08"
   },
   {
     "id": "task_1788856250599_61cnq5b",
@@ -112,7 +127,9 @@
     "status": "done",
     "dueDate": "2026-09-11",
     "order": 12,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-09-11"
   },
   {
     "id": "task_1786709758636_tu7jj3p",
@@ -121,7 +138,9 @@
     "status": "done",
     "dueDate": "2026-08-17",
     "order": 4,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-08-17"
   },
   {
     "id": "task_1787058675049_057ti7c",
@@ -130,7 +149,9 @@
     "status": "done",
     "dueDate": "2026-08-18",
     "order": 9,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-18"
   },
   {
     "id": "task_1787045315604_vr7hncd",
@@ -139,7 +160,9 @@
     "status": "done",
     "dueDate": "2026-08-18",
     "order": 6,
-    "comments": []
+    "comments": [],
+    "client": "zen2fit",
+    "completedAt": "2026-08-18"
   },
   {
     "id": "task_1786624367835_kdrtdv9",
@@ -148,7 +171,9 @@
     "status": "done",
     "dueDate": "2026-08-14",
     "order": 7,
-    "comments": []
+    "comments": [],
+    "client": "peoplefocus",
+    "completedAt": "2026-08-14"
   },
   {
     "id": "task_1786624375112_5lhqto8",
@@ -157,7 +182,9 @@
     "status": "done",
     "dueDate": "2026-08-17",
     "order": 8,
-    "comments": []
+    "comments": [],
+    "client": "peoplefocus",
+    "completedAt": "2026-08-17"
   },
   {
     "id": "task_1786624117375_q0v1blf",
@@ -166,7 +193,9 @@
     "status": "done",
     "dueDate": "2026-08-14",
     "order": 9,
-    "comments": []
+    "comments": [],
+    "client": "mountaindrop",
+    "completedAt": "2026-08-14"
   },
   {
     "id": "task_1786624131701_6ps219u",
@@ -175,7 +204,9 @@
     "status": "done",
     "dueDate": "2026-08-14",
     "order": 10,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-08-14"
   },
   {
     "id": "task_1786624242747_66xzuqy",
@@ -184,7 +215,9 @@
     "status": "done",
     "dueDate": "2026-08-17",
     "order": 11,
-    "comments": []
+    "comments": [],
+    "client": "eblissai",
+    "completedAt": "2026-08-17"
   },
   {
     "id": "task_1786620525639_b35avyg",
@@ -193,7 +226,9 @@
     "status": "done",
     "dueDate": "2026-08-17",
     "order": 13,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-17"
   },
   {
     "id": "task_1786624324797_kp0r6oe",
@@ -202,7 +237,9 @@
     "status": "done",
     "dueDate": "2026-08-13",
     "order": 4,
-    "comments": []
+    "comments": [],
+    "client": "peoplefocus",
+    "completedAt": "2026-08-13"
   },
   {
     "id": "task_1785420655527_4u7j9lk",
@@ -211,7 +248,9 @@
     "status": "done",
     "dueDate": "2026-07-30",
     "order": 4,
-    "comments": []
+    "comments": [],
+    "client": "eblissai",
+    "completedAt": "2026-07-30"
   },
   {
     "id": "task_1786620359333_9hr9h6s",
@@ -220,7 +259,9 @@
     "status": "done",
     "dueDate": "2026-08-13",
     "order": 5,
-    "comments": []
+    "comments": [],
+    "client": "mountaindrop",
+    "completedAt": "2026-08-13"
   },
   {
     "id": "task_1786022382435_omrq65o",
@@ -229,7 +270,9 @@
     "status": "done",
     "dueDate": "2026-08-07",
     "order": 4,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-08-07"
   },
   {
     "id": "task_1786022195222_ttqbljc",
@@ -238,7 +281,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 1,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1786021360751_8rsw7fq",
@@ -247,7 +292,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 2,
-    "comments": []
+    "comments": [],
+    "client": "eblissai",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1786450020258_xt9ty7a",
@@ -256,7 +303,9 @@
     "status": "done",
     "dueDate": "2026-08-11",
     "order": 9,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-11"
   },
   {
     "id": "task_1785955970197_1t9qmsy",
@@ -265,7 +314,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 1,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1786013480785_sgmpxi2",
@@ -274,7 +325,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 2,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1786022433641_au0y5s8",
@@ -290,7 +343,9 @@
         "createdAt": "2026-08-06T13:46:46.959Z",
         "createdBy": "Admin"
       }
-    ]
+    ],
+    "client": "plantryx",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1786022347132_ank8nmi",
@@ -299,7 +354,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 4,
-    "comments": []
+    "comments": [],
+    "client": "tslab",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1785420551522_658mayx",
@@ -308,7 +365,9 @@
     "status": "done",
     "dueDate": "2026-07-30",
     "order": 0,
-    "comments": []
+    "comments": [],
+    "client": "demo",
+    "completedAt": "2026-07-30"
   },
   {
     "id": "task_1785420678576_ejax7kn",
@@ -317,7 +376,9 @@
     "status": "done",
     "dueDate": "2026-07-30",
     "order": 2,
-    "comments": []
+    "comments": [],
+    "client": "plantryx",
+    "completedAt": "2026-07-30"
   },
   {
     "id": "task_1785432200681_ve4fap2",
@@ -326,7 +387,9 @@
     "status": "done",
     "dueDate": "2026-07-31",
     "order": 3,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-07-31"
   },
   {
     "id": "task_1786009788243_dp7l3t1",
@@ -335,7 +398,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 9,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1786030453719_91yvhwr",
@@ -344,7 +409,9 @@
     "status": "done",
     "dueDate": "2026-08-06",
     "order": 13,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-08-06"
   },
   {
     "id": "task_1787062675963_pzbpkib",
@@ -353,7 +420,9 @@
     "status": "done",
     "dueDate": "2026-08-18",
     "order": 15,
-    "comments": []
+    "comments": [],
+    "client": "panorate",
+    "completedAt": "2026-08-18"
   },
   {
     "id": "task_1787146602337_dbqbzri",
@@ -362,7 +431,9 @@
     "status": "done",
     "dueDate": "2026-08-19",
     "order": 15,
-    "comments": []
+    "comments": [],
+    "client": "mbedtronix",
+    "completedAt": "2026-08-19"
   },
   {
     "id": "task_1788783188813_foatz47",
@@ -371,7 +442,9 @@
     "status": "done",
     "dueDate": "2026-09-07",
     "order": 16,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-09-07"
   },
   {
     "id": "task_1788783200430_rmspq1t",
@@ -380,7 +453,9 @@
     "status": "done",
     "dueDate": "2026-09-07",
     "order": 17,
-    "comments": []
+    "comments": [],
+    "client": "mountaindrop",
+    "completedAt": "2026-09-07"
   },
   {
     "id": "task_1788856145702_buif1tu",
@@ -389,7 +464,9 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 11,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-09-08"
   },
   {
     "id": "task_1788856193492_duoitwo",
@@ -398,7 +475,9 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 12,
-    "comments": []
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": "2026-09-08"
   },
   {
     "id": "task_1788856226121_36yxo3j",
@@ -407,7 +486,9 @@
     "status": "done",
     "dueDate": "2026-09-08",
     "order": 12,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-09-08"
   },
   {
     "id": "task_1791302432095_0gxk4rb",
@@ -416,7 +497,9 @@
     "status": "done",
     "dueDate": "2026-10-06",
     "order": 7,
-    "comments": []
+    "comments": [],
+    "client": "eblissai",
+    "completedAt": "2026-10-06"
   },
   {
     "id": "task_1791302461085_jdemtvo",
@@ -425,7 +508,8 @@
     "status": "pending",
     "dueDate": "2026-10-06",
     "order": 8,
-    "comments": []
+    "comments": [],
+    "client": "eblissai"
   },
   {
     "id": "task_1791302510503_d5d091t",
@@ -434,7 +518,9 @@
     "status": "done",
     "dueDate": "2026-10-06",
     "order": 9,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-10-06"
   },
   {
     "id": "task_1791302543314_r7pw595",
@@ -443,7 +529,9 @@
     "status": "done",
     "dueDate": "2026-10-07",
     "order": 10,
-    "comments": []
+    "comments": [],
+    "client": "zen2fit",
+    "completedAt": "2026-10-07"
   },
   {
     "id": "task_1791302571568_pqmbh7e",
@@ -452,7 +540,9 @@
     "status": "done",
     "dueDate": "2026-10-06",
     "order": 11,
-    "comments": []
+    "comments": [],
+    "client": "adsigner",
+    "completedAt": "2026-10-06"
   },
   {
     "id": "task_1791302590230_9rxz4lx",
@@ -461,7 +551,9 @@
     "status": "done",
     "dueDate": "2026-10-07",
     "order": 12,
-    "comments": []
+    "comments": [],
+    "client": "zen2fit",
+    "completedAt": "2026-10-07"
   },
   {
     "id": "task_1791302629293_ldyhax7",
@@ -470,7 +562,8 @@
     "status": "pending",
     "dueDate": "2026-10-07",
     "order": 13,
-    "comments": []
+    "comments": [],
+    "client": "intelsol"
   },
   {
     "id": "task_1791896414328_pid1wr6",
@@ -479,7 +572,9 @@
     "status": "done",
     "dueDate": "2026-10-13",
     "order": 14,
-    "comments": []
+    "comments": [],
+    "client": "selekcija",
+    "completedAt": "2026-10-13"
   },
   {
     "id": "task_1791922007166_8nur03r",
@@ -488,7 +583,8 @@
     "status": "pending",
     "dueDate": "2026-10-19",
     "order": 15,
-    "comments": []
+    "comments": [],
+    "client": "zen2fit"
   },
   {
     "id": "task_1791922030941_0r3aa63",
@@ -497,7 +593,8 @@
     "status": "pending",
     "dueDate": "2026-10-19",
     "order": 16,
-    "comments": []
+    "comments": [],
+    "client": "zen2fit"
   },
   {
     "id": "task_1791922042128_ke615mz",
@@ -506,7 +603,8 @@
     "status": "pending",
     "dueDate": "2026-10-19",
     "order": 17,
-    "comments": []
+    "comments": [],
+    "client": "zen2fit"
   },
   {
     "id": "task_1792063655898_q5fw6ym",
@@ -515,7 +613,8 @@
     "status": "done",
     "dueDate": "2026-10-15",
     "order": 18,
-    "comments": []
+    "comments": [],
+    "client": "morefromfood"
   },
   {
     "id": "task_1792328400000_sel001",
@@ -524,7 +623,9 @@
     "status": "done",
     "dueDate": "2026-10-16",
     "order": 19,
-    "comments": []
+    "comments": [],
+    "client": "selekcija",
+    "completedAt": "2026-10-16"
   },
   {
     "id": "task_1792328400001_mff001",
@@ -533,7 +634,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 20,
-    "comments": []
+    "comments": [],
+    "client": "morefromfood"
   },
   {
     "id": "task_1792328400002_ccr001",
@@ -542,7 +644,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 21,
-    "comments": []
+    "comments": [],
+    "client": "clevercraft"
   },
   {
     "id": "task_1792328400003_int001",
@@ -551,7 +654,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 22,
-    "comments": []
+    "comments": [],
+    "client": "intera"
   },
   {
     "id": "task_1792328400004_ebl001",
@@ -560,7 +664,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 23,
-    "comments": []
+    "comments": [],
+    "client": "eblissai"
   },
   {
     "id": "task_1792328400005_stj001",
@@ -569,7 +674,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 24,
-    "comments": []
+    "comments": [],
+    "client": "stojkov"
   },
   {
     "id": "task_1792328400006_bir001",
@@ -578,7 +684,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 25,
-    "comments": []
+    "comments": [],
+    "client": "birografika"
   },
   {
     "id": "task_1792328400007_prt001",
@@ -587,7 +694,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 26,
-    "comments": []
+    "comments": [],
+    "client": "prtronic"
   },
   {
     "id": "task_1792149869535_9cnxjtk",
@@ -596,7 +704,8 @@
     "status": "pending",
     "dueDate": "2026-10-16",
     "order": 27,
-    "comments": []
+    "comments": [],
+    "client": null
   },
   {
     "id": "task_1792150722322_bukb9v5",
@@ -605,6 +714,8 @@
     "status": "done",
     "dueDate": "2026-10-16",
     "order": 28,
-    "comments": []
+    "comments": [],
+    "client": "integraplast",
+    "completedAt": "2026-10-16"
   }
 ]

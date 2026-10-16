@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
-import TasksTab, { INTELSOL_DEFAULT_TASKS } from '../components/TasksTab';
+import TasksTabEnhanced from '../components/TasksTabEnhanced';
+import { INTELSOL_DEFAULT_TASKS } from '../components/TasksTab';
 import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
@@ -174,7 +175,7 @@ export default function IntelsolPage() {
           )}
           {activeTab === 'clients' && <ClientsTab clientId="intelsol" />}
           {activeTab === 'tasks' && (
-            <TasksTab clientId="intelsol" defaultTasks={INTELSOL_DEFAULT_TASKS} />
+            <TasksTabEnhanced clientId="intelsol" defaultTasks={INTELSOL_DEFAULT_TASKS} />
           )}
         </div>
       </div>
