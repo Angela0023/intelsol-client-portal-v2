@@ -476,7 +476,7 @@
     "id": "task_1791896414328_pid1wr6",
     "description": "Find leads for Selekcija.hr - Filip's first task",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-13",
     "order": 14,
     "comments": []
@@ -521,7 +521,7 @@
     "id": "task_1792328400000_sel001",
     "description": "Finalise Selekcija.hr lead list",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-16",
     "order": 19,
     "comments": []
