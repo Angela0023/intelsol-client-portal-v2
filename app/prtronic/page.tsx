@@ -262,66 +262,65 @@ function OverviewTab() {
 
         <ContentSection title="Buyer Personas & Email Sequences">
           <div className="space-y-4">
-            <SubSection title="PERSONA 1: Engineering/Product Leadership → SEQUENCE 1" variant="blue">
+            <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+              <div className="font-semibold text-blue-900 mb-3">How to Use Email Sequences</div>
+              <div className="text-sm text-gray-700 space-y-2">
+                <div>1. <strong>Clay Filter finds companies</strong> - All types mixed (OEMs, Integrators, Multi-Site Operators)</div>
+                <div>2. <strong>Find person by job title</strong> - Look up title in Positions CSV</div>
+                <div>3. <strong>Job title tells you which sequence to send</strong> - Match title → Sequence number</div>
+                <div className="mt-3 text-blue-900"><strong>Simple:</strong> Title = Sequence. No need to identify company type first.</div>
+              </div>
+            </div>
+
+            <SubSection title="Engineering/Product Leadership → SEQUENCE 1" variant="blue">
               <div className="space-y-2">
-                <div><strong>Titles:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja</div>
-                <div><strong>Target At:</strong> OEMs & Equipment Manufacturers</div>
+                <div><strong>Example Titles:</strong> Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja</div>
+                <div><strong>When You'll Find Them:</strong> OEMs and equipment manufacturers - Owns display specification and integration decisions</div>
                 <div><strong>Discovery Focus:</strong> Form factor requirements, touch/interface specifications, environmental conditions, mounting/integration constraints, replacement/redesign triggers</div>
                 <div><strong>Value Message:</strong> Assess the display configuration that matches your equipment specifications and integration requirements</div>
                 <div className="mt-2 p-2 bg-blue-50 border border-blue-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 1 (Engineering/Product focus)</div>
               </div>
             </SubSection>
 
-            <SubSection title="PERSONA 2: Purchasing/Procurement Leadership → SEQUENCE 2" variant="green">
+            <SubSection title="Purchasing/Procurement Leadership → SEQUENCE 2" variant="green">
               <div className="space-y-2">
-                <div><strong>Titles:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave</div>
-                <div><strong>Target At:</strong> ALL company types (OEMs, Integrators, Multi-Site Operators)</div>
+                <div><strong>Example Titles:</strong> Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave</div>
+                <div><strong>When You'll Find Them:</strong> All company types - Owns supplier selection and pricing</div>
                 <div><strong>Discovery Focus:</strong> Current supplier relationships, panel EOL/second-source needs, lead times, MOQ requirements, commercial terms</div>
                 <div><strong>Value Message:</strong> Review display supply options for consistent availability, competitive pricing and technical support</div>
                 <div className="mt-2 p-2 bg-green-50 border border-green-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 2 (Purchasing/Procurement focus)</div>
               </div>
             </SubSection>
 
-            <SubSection title="PERSONA 3: Project/Technical Leadership → SEQUENCE 3" variant="purple">
+            <SubSection title="Project/Technical Leadership → SEQUENCE 3" variant="purple">
               <div className="space-y-2">
-                <div><strong>Titles:</strong> Technical Director, AV/Signage Project Manager, Projektleiter</div>
-                <div><strong>Target At:</strong> AV/Signage Integrators, System Integrators</div>
+                <div><strong>Example Titles:</strong> Technical Director, AV/Signage Project Manager, Projektleiter</div>
+                <div><strong>When You'll Find Them:</strong> AV/signage integrators - Specifies hardware for client projects</div>
                 <div><strong>Discovery Focus:</strong> Client project pipeline, signage/AV installation requirements, display specifications for upcoming projects</div>
                 <div><strong>Value Message:</strong> Source the right display configuration for your next client installation with technical specification support</div>
                 <div className="mt-2 p-2 bg-purple-50 border border-purple-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 3 (Integrator/Project focus)</div>
               </div>
             </SubSection>
 
-            <SubSection title="PERSONA 4: Rollout/Programme Leadership → SEQUENCE 4" variant="amber">
+            <SubSection title="Rollout/Programme Leadership → SEQUENCE 4" variant="amber">
               <div className="space-y-2">
-                <div><strong>Titles:</strong> Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager</div>
-                <div><strong>Target At:</strong> Multi-Site Operators (Retail Chains, Hotel Groups, Healthcare Networks, Transport Operators)</div>
+                <div><strong>Example Titles:</strong> Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager</div>
+                <div><strong>When You'll Find Them:</strong> Multi-site operators (retail, hospitality, healthcare, transport) - Sponsors signage rollouts</div>
                 <div><strong>Discovery Focus:</strong> Funded rollout plans, site counts, information/signage objectives, deployment timeline, multi-location coordination</div>
                 <div><strong>Value Message:</strong> Scope a signage/information screen rollout with consistent hardware across your locations</div>
                 <div className="mt-2 p-2 bg-amber-50 border border-amber-200 rounded text-sm"><strong>Email Sequence:</strong> Send SEQUENCE 4 (Multi-Site Rollout focus)</div>
-                <div className="mt-2 p-2 bg-amber-50 border border-amber-200 rounded text-sm"><strong>Note:</strong> Contact the person responsible for specific rollout rather than assuming Marketing buys all screens.</div>
               </div>
             </SubSection>
 
-            <SubSection title="FALLBACK: Leadership (Small Firms Only)" variant="slate">
+            <SubSection title="Leadership (Small Firms Only)" variant="slate">
               <div className="space-y-2">
-                <div><strong>Titles:</strong> CEO, Owner, Managing Director, Geschäftsführer</div>
-                <div><strong>Target At:</strong> Companies under 50 employees (all types)</div>
+                <div><strong>Example Titles:</strong> CEO, Owner, Managing Director, Geschäftsführer</div>
+                <div><strong>When You'll Find Them:</strong> Small firms under 50 employees only - CEO/Owner handles both technical and commercial</div>
                 <div><strong>Discovery Focus:</strong> Verify direct involvement in display sourcing decisions vs. delegated authority</div>
-                <div><strong>Value Message:</strong> Same as relevant persona (depends on company type)</div>
-                <div className="mt-2 p-2 bg-slate-50 border border-slate-200 rounded text-sm"><strong>Email Sequence:</strong> Send sequence based on company type (SEQUENCE 1 for OEMs, SEQUENCE 3 for Integrators, SEQUENCE 4 for Multi-Site)</div>
+                <div><strong>Email Sequence:</strong> Use SEQUENCE 1 for OEMs, SEQUENCE 3 for Integrators, SEQUENCE 4 for Multi-Site operators</div>
+                <div className="mt-2 p-2 bg-slate-50 border border-slate-200 rounded text-sm"><strong>Note:</strong> Determine company type first, then send matching sequence</div>
               </div>
             </SubSection>
-          </div>
-
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <div className="font-semibold text-blue-900 mb-2">Quick Reference: Which Sequence for Which Company?</div>
-            <div className="text-sm text-gray-700 space-y-2">
-              <div><strong>OEM / Equipment Manufacturer:</strong> Contact PERSONA 1 (Engineering) + PERSONA 2 (Purchasing) → Send SEQUENCE 1 + SEQUENCE 2</div>
-              <div><strong>AV/Signage Integrator:</strong> Contact PERSONA 3 (Project Manager) + PERSONA 2 (Purchasing) → Send SEQUENCE 3 + SEQUENCE 2</div>
-              <div><strong>Multi-Site Operator:</strong> Contact PERSONA 4 (Rollout/Programme) + PERSONA 2 (Purchasing) → Send SEQUENCE 4 + SEQUENCE 2</div>
-              <div className="mt-2 text-amber-700"><strong>Note:</strong> PERSONA 2 (Purchasing) is universal - target at all company types with SEQUENCE 2</div>
-            </div>
           </div>
         </ContentSection>
 
