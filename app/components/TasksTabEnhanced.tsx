@@ -420,6 +420,12 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
   const [customDateRange, setCustomDateRange] = useState({ start: '', end: '' });
   const [showFilters, setShowFilters] = useState(false);
 
+  // Sort states
+  type SortBy = 'default' | 'description' | 'client' | 'assignee' | 'dueDate';
+  type SortDirection = 'asc' | 'desc';
+  const [sortBy, setSortBy] = useState<SortBy>('default');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+
   // Edit task state
   const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
   const [editedDescription, setEditedDescription] = useState('');
@@ -532,11 +538,47 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
 
   // Sort filtered tasks
   const sortedTasks = useMemo(() => {
-    const pending = filteredTasks
+    let tasksToSort = [...filteredTasks];
+
+    // Apply custom sorting if selected
+    if (sortBy !== 'default') {
+      tasksToSort.sort((a, b) => {
+        let compareA: string | number = '';
+        let compareB: string | number = '';
+
+        switch (sortBy) {
+          case 'description':
+            compareA = a.description.toLowerCase();
+            compareB = b.description.toLowerCase();
+            break;
+          case 'client':
+            compareA = (a.client || '').toLowerCase();
+            compareB = (b.client || '').toLowerCase();
+            break;
+          case 'assignee':
+            compareA = a.assignedTo.toLowerCase();
+            compareB = b.assignedTo.toLowerCase();
+            break;
+          case 'dueDate':
+            compareA = new Date(a.dueDate).getTime();
+            compareB = new Date(b.dueDate).getTime();
+            break;
+        }
+
+        if (compareA < compareB) return sortDirection === 'asc' ? -1 : 1;
+        if (compareA > compareB) return sortDirection === 'asc' ? 1 : -1;
+        return 0;
+      });
+
+      return tasksToSort;
+    }
+
+    // Default sorting: pending by order, done by completion date
+    const pending = tasksToSort
       .filter((t) => t.status === 'pending')
       .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
-    const done = filteredTasks
+    const done = tasksToSort
       .filter((t) => t.status === 'done')
       .sort((a, b) => {
         // Sort by completion date if available, otherwise by due date
@@ -546,7 +588,7 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
       });
 
     return [...pending, ...done];
-  }, [filteredTasks]);
+  }, [filteredTasks, sortBy, sortDirection]);
 
   // Count active filters
   const activeFiltersCount = useMemo(() => {
@@ -1018,7 +1060,35 @@ export default function TasksTabEnhanced({ clientId, defaultTasks }: TasksTabPro
       {/* Task list */}
       <div className="bg-white rounded-lg border border-slate-200 shadow-sm">
         <div className="p-4 border-b border-slate-200 flex items-center justify-between">
-          <h3 className="text-lg font-semibold text-slate-900">Tasks</h3>
+          <div className="flex items-center space-x-4">
+            <h3 className="text-lg font-semibold text-slate-900">Tasks</h3>
+
+            {/* Sort controls */}
+            <div className="flex items-center space-x-2">
+              <label className="text-xs text-slate-600 font-medium">Sort by:</label>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as SortBy)}
+                className="px-2 py-1 border border-slate-300 rounded text-xs focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-white"
+              >
+                <option value="default">Default</option>
+                <option value="description">Task Name</option>
+                <option value="client">Client</option>
+                <option value="assignee">Assignee</option>
+                <option value="dueDate">Due Date</option>
+              </select>
+
+              {sortBy !== 'default' && (
+                <button
+                  onClick={() => setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')}
+                  className="px-2 py-1 border border-slate-300 rounded text-xs hover:bg-slate-50 transition-colors"
+                  title={sortDirection === 'asc' ? 'Sort A to Z' : 'Sort Z to A'}
+                >
+                  {sortDirection === 'asc' ? 'A → Z' : 'Z → A'}
+                </button>
+              )}
+            </div>
+          </div>
           <div className="flex items-center space-x-2">
             {canEdit && dirty && (
               <button
