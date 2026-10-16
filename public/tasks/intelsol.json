@@ -597,5 +597,14 @@
     "dueDate": "2026-10-16",
     "order": 27,
     "comments": []
+  },
+  {
+    "id": "task_1792150722322_bukb9v5",
+    "description": "Integraplast - Create Dashboard",
+    "assignedTo": "Frosina",
+    "status": "done",
+    "dueDate": "2026-10-16",
+    "order": 28,
+    "comments": []
   }
 ]
