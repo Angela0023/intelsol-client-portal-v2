@@ -34,6 +34,7 @@ export default function MoreFromFoodPage() {
   useEffect(() => {
     const savedStatus = getClientStatus('morefromfood', 'Onboarding');
     setStatus(savedStatus);
+    setAssignee(getStoredAssignee('morefromfood', getClientAssignee('morefromfood')));
 
     const access = sessionStorage.getItem('clientAccess');
     if (access) {
