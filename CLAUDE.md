@@ -665,6 +665,170 @@ PRIMARY,Engineering & Product Leadership,"OEMs • Equipment Manufacturers • I
 
 **This is a CRITICAL rule - wrong format = client contacts wrong people, lead gen fails**
 
+### 1H. HARD RULES: ICP Match Prompt Creation (CRITICAL)
+
+**HARD RULE:** When creating ICP Match Prompts for Clay filters, follow this EXACT framework. These prompts determine which companies qualify for the client.
+
+**Why This Matters:** The ICP Match Prompt is what separates qualified prospects from non-fits. Wrong criteria = wasted outreach on wrong companies.
+
+---
+
+## ICP Checker Framework (For All Clients)
+
+### Phase 1: Define Qualification Criteria
+
+Before writing ANY ICP Match Prompt, answer these questions:
+
+1. **What does YES look like?**
+   - What specific business activities/operations qualify?
+   - What revenue/employee ranges apply?
+   - What geographic markets?
+   - What customer types or industries?
+
+2. **What does NO look like?**
+   - What disqualifies a company (list 5-7 specific disqualifiers)?
+   - What business models don't fit?
+   - What to explicitly exclude?
+
+3. **What's UNSURE?**
+   - What makes a company unclear without website verification?
+   - What information requires digging deeper?
+
+### Phase 2: ICP Match Prompt Structure
+
+**EXACT FORMAT (MANDATORY):**
+
+```
+Review this company's website and public information to determine if they are a good fit for [CLIENT NAME], [what client offers].
+
+Return ONLY "YES" or "NO" based on these criteria:
+
+RETURN "NO" IF ANY OF THESE ARE TRUE:
+1. [Disqualifier 1 - specific, measurable]
+2. [Disqualifier 2 - specific, measurable]
+3. [Disqualifier 3 - specific, measurable]
+4. [Disqualifier 4 - specific, measurable]
+5. [Disqualifier 5 - specific, measurable]
+[... up to 7 disqualifiers]
+
+RETURN "YES" IF ALL OF THESE ARE TRUE:
+1. [Qualifier 1 - specific, measurable]
+2. [Qualifier 2 - specific, measurable]
+3. [Qualifier 3 - specific, measurable]
+4. [Qualifier 4 - specific, measurable]
+[... up to 6 qualifiers]
+
+Base your decision on information found on company website, [relevant sections: Products page, About Us, Services, Careers, etc.].
+
+Return only: YES or NO
+```
+
+### Phase 3: Critical Rules for Disqualifiers & Qualifiers
+
+**DISQUALIFIERS (Make them specific, not vague):**
+
+❌ WRONG: "Company is not in the right industry"
+✅ CORRECT: "Company only manufactures consumer retail products without B2B operations"
+
+❌ WRONG: "Company doesn't have the right size"
+✅ CORRECT: "Company has fewer than 10 employees and no evidence of multi-site operations"
+
+**5-7 Disqualifiers should cover:**
+- Wrong business model (pure software, consultants, retailers without manufacturing, etc.)
+- Wrong geography (if geography-dependent)
+- Too small/too large (with specific numbers)
+- Missing critical function (no quality team, no manufacturing, no operations, etc.)
+- Explicit competitors or incompatible solutions
+
+**QUALIFIERS (Make them measurable, not aspirational):**
+
+❌ WRONG: "Company is growing and innovative"
+✅ CORRECT: "Company manufactures food products with documented production facilities or multi-location operations"
+
+❌ WRONG: "Company might need our solution"
+✅ CORRECT: "Company operates production lines with documented quality controls or certifications (IFS, BRCGS, FSSC 22000, ISO 22000)"
+
+**4-6 Qualifiers should cover:**
+- Explicit manufacturing/business activity (what they actually do)
+- Geographic match (if applicable)
+- Size range (if applicable)
+- Quality/operations signals (certifications, hiring, complexity)
+- Evidence of buying authority (department exists on website)
+
+---
+
+### Phase 4: Evaluation Rules (For All Stages)
+
+**Rule 1: Description-Based FIRST**
+- Evaluate based ONLY on what description/website explicitly states
+- Do NOT infer from company name or domain
+- If unclear → mark UNSURE for website scraping (don't guess YES/NO)
+
+**Rule 2: Ignore Pre-Assigned Classifications**
+- Ignore third-party industry/category fields (like Clay's "Industry" field)
+- Reason: These are often inaccurate
+- Trust only factual company statements
+
+**Rule 3: Ignore Unverified Metadata**
+- Don't use employee count, revenue, or funding in initial evaluation
+- These fields are frequently wrong in databases
+- Only verify during website scraping for UNSURE companies
+
+**Rule 4: Don't Disqualify for Competitor Usage**
+- If company uses competitor solution → Still potentially qualified
+- This is a BUYING SIGNAL (they have budget, understand value, may be unhappy)
+- Do NOT add "uses competitor X" as a disqualifier
+
+**Rule 5: Two-Pass Evaluation Strategy**
+- **Pass 1:** Use descriptions to mark YES/NO/UNSURE (batch, cheap)
+- **Pass 2:** Website scraping ONLY for UNSURE companies (targeted, expensive)
+- Saves 80-95% of scraping costs
+
+---
+
+### Phase 5: Common Pitfalls (Do NOT Repeat)
+
+❌ **Making disqualifiers too vague:**
+- "Not in our target market" → Instead: "Company is a pure-software B2B firm without operations"
+
+❌ **Making qualifiers too aspirational:**
+- "Company might benefit from our solution" → Instead: "Company has documented quality control processes"
+
+❌ **Excluding based on competitor usage:**
+- "Uses competitor tool X" → This signals buying intent, not disqualification
+
+❌ **Using unverified metadata:**
+- "Company has 50 employees" (from database) → Only use if you verify on their website/LinkedIn
+
+❌ **Ignoring third-party classification guidance:**
+- "Clay says they're in retail" → Verify on actual website; Clay is often wrong
+
+---
+
+### Phase 6: Validation Before Using
+
+**Before finalizing ICP Match Prompt, verify:**
+
+- [ ] 5-7 disqualifiers are SPECIFIC and MEASURABLE
+- [ ] 4-6 qualifiers are SPECIFIC and MEASURABLE
+- [ ] No disqualifier mentions "competitor usage"
+- [ ] No qualifiers mention unverified metadata (employee count, revenue)
+- [ ] Format matches EXACT structure above (YES/NO section headers, YES IF ALL, NO IF ANY)
+- [ ] Website sections specified ("Base your decision on...Products page, About Us, etc.")
+- [ ] Ends with "Return only: YES or NO"
+
+---
+
+**Reference Examples:**
+- `/public/clay-filters/PRTRONIC-CLAY-Filters-final.csv` - See ICP Match Prompt for Display Integration
+- MoreFromFood example (from 235-company evaluation) - Manufacturing disqualifiers and qualifiers
+
+**Rule Established:** 2026-10-16
+
+**This is a CRITICAL rule - wrong ICP Match Prompt = wrong companies contacted, wasted lead gen budget**
+
+---
+
 ---
 
 ### 2. Adding a New Client Requires Multiple Files (CRITICAL - ALWAYS DO ALL)
