@@ -1,0 +1,351 @@
+Country,Employee Size,Industry,Keywords,Priority
+United Kingdom,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+United Kingdom,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+United Kingdom,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+United Kingdom,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Germany,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Germany,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Germany,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Netherlands,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Netherlands,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Netherlands,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Poland,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Poland,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Poland,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Austria,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Austria,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Austria,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Italy,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Italy,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Italy,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Belgium,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Belgium,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Belgium,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Ireland,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Ireland,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Ireland,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Sweden,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Sweden,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Sweden,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,21-50,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,21-50,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,21-50,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,21-50,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,21-50,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,21-50,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,21-50,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,51-200,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",High
+Norway,201-500,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,201-500,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,201-500,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,201-500,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,201-500,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,201-500,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,201-500,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Medium
+Norway,501-1000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,501-1000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,501-1000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,501-1000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,501-1000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,501-1000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,501-1000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,Wellness and Fitness Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,Retail Health and Personal Care Products,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,Food and Beverage Services,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,Retail Pharmacies,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,"Health, Wellness and Fitness","supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,Alternative Medicine,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low
+Norway,1001-5000,Food and Beverage Retail,"supplements OR vitamins OR ""food supplements"" OR ""dietary supplements""",Low

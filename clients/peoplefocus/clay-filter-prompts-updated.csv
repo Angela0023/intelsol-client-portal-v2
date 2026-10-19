@@ -1,0 +1,226 @@
+Title,PROMPT,Location,Employee Range,Date targeted,Company List,ICP Match Prompt
+DE - 50-100,"Companies in Germany with 50-100 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Germany,50-100,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 50 employees or more than 100 employees
+3. Company is not located in Germany
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 50-100 employees
+2. Company is located in Germany
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DE - 100-500,"Companies in Germany with 100-500 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Germany,100-500,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 100 employees or more than 500 employees
+3. Company is not located in Germany
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 100-500 employees
+2. Company is located in Germany
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+DE - 500-1000,"Companies in Germany with 500-1000 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Germany,500-1000,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 500 employees or more than 1000 employees
+3. Company is not located in Germany
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 500-1000 employees
+2. Company is located in Germany
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+AT - 50-100,"Companies in Austria with 50-100 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Austria,50-100,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 50 employees or more than 100 employees
+3. Company is not located in Austria
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 50-100 employees
+2. Company is located in Austria
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+AT - 100-500,"Companies in Austria with 100-500 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Austria,100-500,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 100 employees or more than 500 employees
+3. Company is not located in Austria
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 100-500 employees
+2. Company is located in Austria
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+AT - 500-1000,"Companies in Austria with 500-1000 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Austria,500-1000,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 500 employees or more than 1000 employees
+3. Company is not located in Austria
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 500-1000 employees
+2. Company is located in Austria
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CH - 50-100,"Companies in Switzerland with 50-100 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Switzerland,50-100,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 50 employees or more than 100 employees
+3. Company is not located in Switzerland
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 50-100 employees
+2. Company is located in Switzerland
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CH - 100-500,"Companies in Switzerland with 100-500 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Switzerland,100-500,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 100 employees or more than 500 employees
+3. Company is not located in Switzerland
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 100-500 employees
+2. Company is located in Switzerland
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
+CH - 500-1000,"Companies in Switzerland with 500-1000 employees that are actively hiring IT talent (Software Engineers, Backend Developers, DevOps Engineers, Cloud Engineers, Java/Python Developers, IT Managers, IT Specialists). Prioritize companies with IT job postings open 30+ days, hiring for Talent Acquisition Manager/IT Recruiter, same job reposted multiple times, or showing growth signals (20%+ headcount growth, Series A/B funding, new CTO/VP Engineering).",Switzerland,500-1000,,,"Review this company's website and public information to determine if they are a good fit for People Focus, an IT recruitment agency connecting DACH companies with senior IT talent from Serbia.
+
+Return ONLY YES or NO based on these criteria:
+
+RETURN NO IF ANY OF THESE ARE TRUE:
+1. Company is a recruitment agency, staffing firm, or headhunter (check for keywords: recruitment, staffing, headhunting, talent solutions)
+2. Company has fewer than 500 employees or more than 1000 employees
+3. Company is not located in Switzerland
+4. Company has no visible software engineering or IT team
+5. Company is an existing People Focus client
+
+RETURN YES IF ALL OF THESE ARE TRUE:
+1. Company has 500-1000 employees
+2. Company is located in Switzerland
+3. Company shows at least ONE Tier 1 signal OR two or more Tier 2/3 signals:
+
+Tier 1: Active IT job postings 30+ days old (Software Engineer, Backend Developer, DevOps, Cloud Engineer, Java/Python Developer, IT Manager); Same job reposted multiple times; Job posting in multiple languages; Hiring for Talent Acquisition Manager or IT Recruiter.
+
+Tier 2: LinkedIn headcount grew 20%+ in last 6 months; Raised Series A/B in last 12 months; New office/product announced in last 90 days; New CTO/VP Engineering in last 90 days; Expanding to new European market.
+
+Tier 3: Glassdoor/Kununu reviews mentioning understaffed or slow to hire or overworked; CTO/CEO posts about hiring challenges; IT job open 90+ days.
+
+Base your decision on information found on the company website, About Us page, Products/Services page, Careers page, and recent news.
+
+Return only: YES or NO"
