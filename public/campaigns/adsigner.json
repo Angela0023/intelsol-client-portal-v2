@@ -7,7 +7,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 143,
+      "emailsSent": 151,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -214,7 +214,7 @@
     "month": "September",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 2397,
+      "emailsSent": 2405,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
