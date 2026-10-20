@@ -644,12 +644,12 @@
     "id": "task_1792328400001_mff001",
     "description": "Leads for MoreFromFood (at least 500)",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-16",
     "order": 20,
     "comments": [],
     "client": "morefromfood",
-    "completedAt": null
+    "completedAt": "2026-10-20T08:41:11.717Z"
   },
   {
     "id": "task_1792328400002_ccr001",
@@ -671,17 +671,6 @@
     "order": 22,
     "comments": [],
     "client": "intera",
-    "completedAt": null
-  },
-  {
-    "id": "task_1792328400004_ebl001",
-    "description": "Add more leads for eBliss AI (good until Tuesday next week)",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-10-16",
-    "order": 23,
-    "comments": [],
-    "client": "eblissai",
     "completedAt": null
   },
   {
@@ -741,7 +730,7 @@
   },
   {
     "id": "task_1792485585552_pezrm2i",
-    "description": "Moe Leads for PRTronic - CLAY",
+    "description": "More Leads for PRTronic - CLAY",
     "assignedTo": "Filip",
     "status": "pending",
     "dueDate": "2026-10-26",
