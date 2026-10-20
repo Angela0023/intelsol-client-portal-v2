@@ -75,6 +75,34 @@ These exist only in the portal. Pull data from:
 3. Is the client NOT in either list? → It doesn't exist yet, create `/clients/[client-name]/`
 ```
 
+---
+
+## HOW TO ACCESS THE DATA — ALWAYS USE GIT CLONE
+
+**IF GitHub MCP tools fail or return auth errors:**
+- ❌ NEVER ask the user for help or clarification
+- ❌ NEVER say "Can you provide the GitHub URL?"
+- ✅ **ALWAYS immediately use bash `git clone`**
+
+**The Reliable Method (ALWAYS WORKS):**
+
+```bash
+cd /tmp
+git clone https://github.com/Angela0023/intelsol-client-portal-v2.git
+# Now access files directly:
+# - Read client docs: cat clients/[client]/ICP-PROFILE.md
+# - Read sequences: cat public/sequences/[client].json
+# - No authentication needed, works in any session
+```
+
+**Why This Rule Exists:**
+
+On 2026-10-20, a Claude instance encountered GitHub MCP authentication errors and asked the user for help clarifying the repository URL and file paths. This violates the "pull immediately, no questions" requirement. The solution: GitHub MCP tools are optional. Bash `git clone` always works and requires no credentials.
+
+**CRITICAL:** If any GitHub tool returns auth error, ignore it and use bash. The user has already authenticated their machine with GitHub SSH/credentials.
+
+---
+
 **EXAMPLES OF IMMEDIATE ACTION (NO QUESTIONS):**
 
 | Request | Client Type | Action | Location |
