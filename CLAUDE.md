@@ -103,6 +103,28 @@ On 2026-10-20, a Claude instance encountered GitHub MCP authentication errors an
 
 ---
 
+## CLIENT ONBOARDING SKILL — Use This for New Clients
+
+**Available skill:** `/client-onboarding-intelsol`
+
+**Location:** `/Users/angelapetkovska/.claude/skills/client-onboarding-intelsol.md`
+
+When onboarding a new client, use this skill to:
+1. Extract ICP data from documentation
+2. Create complete portal dashboard (all required files per HARD RULE 0B)
+3. Generate Clay Filter Prompts CSV (ready for Google Sheets)
+4. Generate Positions CSV (ready for Google Sheets)
+5. Ensure everything is GitHub-synchronized
+
+**How to invoke:**
+```
+User: "Onboard [client] for the dashboard"
+→ Run: /client-onboarding-intelsol
+→ Skill handles everything end-to-end
+```
+
+---
+
 **EXAMPLES OF IMMEDIATE ACTION (NO QUESTIONS):**
 
 | Request | Client Type | Action | Location |
