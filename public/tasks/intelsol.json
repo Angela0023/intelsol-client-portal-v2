@@ -725,7 +725,8 @@
     "dueDate": "2026-10-26",
     "order": 28,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1792485628469_3c6j9jx",
@@ -735,7 +736,8 @@
     "dueDate": "2026-10-22",
     "order": 29,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1792485726405_m5d47um",
@@ -744,6 +746,17 @@
     "status": "pending",
     "dueDate": "2026-11-02",
     "order": 30,
+    "comments": [],
+    "client": "intelsol",
+    "completedAt": null
+  },
+  {
+    "id": "task_1792499002988_rpwl1qm",
+    "description": "Work on additional features - explained during call on call on 20/Oct/25",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-27",
+    "order": 31,
     "comments": [],
     "client": "intelsol"
   }
