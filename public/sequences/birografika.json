@@ -79,5 +79,32 @@
         "body": "{{FirstName}} -\n\nLast note on this - if you're managing label sourcing or looking at European manufacturing partners for recurring volumes, happy to discuss our approach to partnership and capacity planning.\n\nNo obligation, just a conversation about production capabilities, volume flexibility, and how we work with brands for long-term supply relationships.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
       }
     ]
+  },
+  {
+    "id": "general-sequence",
+    "tierName": "General Sequence",
+    "tierColor": "indigo",
+    "targetPersonas": "All roles - International leads outside Slovenia",
+    "messagingAngle": "European label manufacturing partner with proven quality, reliability, and production expertise",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Label sourcing for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with FMCG and consumer product manufacturers on label sourcing.\n\nBirografika is a European label manufacturer based in Serbia with 60+ years of experience producing labels for food, beverage, dairy, cosmetics, and consumer brands. We offer offset, flexo, and digital printing with full capabilities in die-cutting, lamination, and specialty finishing.\n\nOur strengths:\n- Proven production quality and reliability\n- ISO 9001, ISO 14001, FSC, and SEDEX certifications\n- Capacity for recurring volumes and multi-SKU programmes\n- Full pre-press support and technical partnership\n- Cost-effective European manufacturing\n\nWould it be useful to discuss label sourcing options for your requirements?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Label sourcing for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on label production partnership.\n\nWe work with manufacturers across Europe looking for:\n- Reliable label supplier for recurring orders\n- Production quality and finish consistency\n- Technical support and specification development\n- Documented quality certifications\n- Competitive economics without compromising quality\n\nBirografika brings manufacturing expertise, modern equipment (MPS EFC 430, Grafotronic, Rotoflex inspection), and direct partnership approach to support your label needs—whether for current production or future growth.\n\nWould a conversation about your label requirements and our capabilities make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - label manufacturing partnership",
+        "body": "{{FirstName}} -\n\nLast note—if you're sourcing labels or evaluating manufacturing partners, happy to discuss our capabilities and how we work with brands across Europe.\n\nNo obligation, just a straightforward conversation about production options, quality standards, and partnership approach.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
   }
 ]
