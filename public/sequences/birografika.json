@@ -10,19 +10,61 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Label sourcing evaluation for {{Company}}",
-        "body": "{{FirstName}} -\n\nI work with FMCG and beverage manufacturers on recurring label sourcing.\n\nBirografika is a European label printer (Subotica, Serbia - 60+ years) with offset, flexo, and digital capabilities serving brands across CEE and DACH markets.\n\nFor procurement teams, the value is typically:\n- Landed-cost comparison vs current suppliers (nearshore economics)\n- Production capacity for multi-SKU programmes\n- Quality certifications (ISO 9001, ISO 14001, FSC, SEDEX audited)\n- Reliable delivery with shorter lead times\n\nWould it be useful to compare costs and lead times for one recurring label specification?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nI work with FMCG and beverage manufacturers on recurring label sourcing.\n\nBirografika is a European label printer (Subotica, Serbia - 60+ years) with offset, flexo, and digital capabilities serving brands across CEE and DACH markets.\n\nFor procurement teams, the value is typically:\n- Landed-cost comparison vs current suppliers (nearshore economics)\n- Production capacity for multi-SKU programmes\n- Quality certifications (ISO 9001, ISO 14001, FSC, SEDEX audited)\n- Reliable delivery with shorter lead times\n\nWould it be useful to compare costs and lead times for one recurring label specification?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Ocena virov etiket za {{Company}}",
+            "body": "{{FirstName}} -\n\nDelam z proizvajalci FMCG in pijač na trajnostnem naboru etiket.\n\nBirografika je evropski proizvajalec etiket (Subotica, Srbija - 60+ let) s kompendijem offset, flekso in digitalnih zmogljivosti, ki služi blagovnim znamkam na trgih CEE in DACH.\n\nZa nabavne ekipe je vrednost običajno:\n- Primerjava cene dostave v primerjavi s sedanjimi dobavitelji (sosedska ekonomija)\n- Proizvodna zmogljivost za programe z več SKU\n- Certifikati kakovosti (ISO 9001, ISO 14001, FSC, SEDEX certificirane)\n- Zanesljiva dostava s krajšimi rokami\n\nAli bi bilo koristno primerjati stroške in roke za eno trajno specifikacijo etikete?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Procjena nabave naljepnica za {{Company}}",
+            "body": "{{FirstName}} -\n\nRadim s proizvođačima FMCG i pića na redovnoj nabavi naljepnica.\n\nBirografika je europski proizvođač naljepnica (Subotica, Srbija - 60+ godina) s mogućnostima ofsetnog, flekso i digitalnog tiska, koji služi markama na tržištima CEE i DACH.\n\nZa nabavne timove vrijednost je obično:\n- Usporedba cijene dostave u odnosu na trenutne dobavljače (priobalna ekonomija)\n- Proizvodna kapaciteta za programe s više SKU\n- Certifikati kvalitete (ISO 9001, ISO 14001, FSC, SEDEX certificiran)\n- Pouzdana dostava s kraćim vremenima\n\nBi li bilo korisno usporediti cijene i vremenske rokove za jednu redovitu specifikaciju naljepnice?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Etikettenbeschaffung für {{Company}} bewerten",
+            "body": "{{FirstName}} -\n\nIch arbeite mit FMCG- und Getränkeherstellern an wiederkehrender Etikettenbestellung zusammen.\n\nBirografika ist ein europäischer Etikettenhersteller (Subotica, Serbien - 60+ Jahre) mit Offset-, Flexo- und Digitaldruckfähigkeiten, der Marken auf den Märkten CEE und DACH bedient.\n\nFür Beschaffungsteams ist der Wert normalerweise:\n- Kostenvergleich gegenüber aktuellen Lieferanten (Nachbarschaftsöconomie)\n- Produktionskapazität für Multi-SKU-Programme\n- Qualitätszertifizierungen (ISO 9001, ISO 14001, FSC, SEDEX-zertifiziert)\n- Zuverlässige Lieferung mit kürzeren Lieferzeiten\n\nWäre es hilfreich, Kosten und Lieferzeiten für eine wiederkehrende Etikettenvorgabe zu vergleichen?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Label sourcing evaluation for {{Company}} - cost comparison",
-        "body": "{{FirstName}} -\n\nFollowing up on competitive label sourcing.\n\nMost procurement teams we work with are evaluating:\n- Second-source alternatives for cost benchmarking\n- European options to balance cost and supply reliability\n- Suppliers with documented quality standards (ISO, FSC, SEDEX)\n- Partners who can handle multi-site or SKU portfolio sourcing\n\nBirografika handles recurring label volumes for food, beverage, dairy, and consumer brands across Slovenia, Croatia, Hungary, Austria, and Germany.\n\nWould a quick call to review your current sourcing and technical requirements make sense?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nFollowing up on competitive label sourcing.\n\nMost procurement teams we work with are evaluating:\n- Second-source alternatives for cost benchmarking\n- European options to balance cost and supply reliability\n- Suppliers with documented quality standards (ISO, FSC, SEDEX)\n- Partners who can handle multi-site or SKU portfolio sourcing\n\nBirografika handles recurring label volumes for food, beverage, dairy, and consumer brands across Slovenia, Croatia, Hungary, Austria, and Germany.\n\nWould a quick call to review your current sourcing and technical requirements make sense?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Nadaljevanje: Ocena virov etiket za {{Company}} - primerjava cen",
+            "body": "{{FirstName}} -\n\nNadaljevanje konkurenčnega nabora etiket.\n\nVečina nabavnih ekip, s katerimi delamo, ocenjuje:\n- Druge možnosti virov za primerjavo cen\n- evropske možnosti, da uravnotežimo stroške in zanesljivost dostave\n- Dobavljače s dokumentiranimi standardi kakovosti (ISO, FSC, SEDEX)\n- Partnerje, ki lahko upravljajo nabor virov z več mest ali SKU\n\nBirografika obvladuje redne količine etiket za prehrambene, pijače, mlečne in potrošniške znamke v Sloveniji, Hrvataski, Madžarski, Avstriji in Nemčiji.\n\nAli bi bilo smiselno hitro poklicati, da pregledamo vaše trenutne zahteve za nabor in tehnične pogoje?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Nastavak: Procjena nabave naljepnica za {{Company}} - usporedba cijena",
+            "body": "{{FirstName}} -\n\nNastavak konkurentne nabave naljepnica.\n\nVeći dio nabavnih timova s kojima radimo evaluira:\n- Alternativne izvore za usporedbu cijena\n- Europske opcije za uravnoteženje cijene i pouzdanosti dostave\n- Dobavljače s dokumentiranim standardima kvalitete (ISO, FSC, SEDEX)\n- Partnere koji mogu rukovati nabavom portfelja multi-site ili SKU\n\nBirografika upravlja redovitim količinama naljepnica za hranu, piće, mliječne i potrošačke marke u Sloveniji, Hrvatskoj, Mađarskoj, Austriji i Njemačkoj.\n\nBi li bilo razumljivo brzo pozvati kako bi pregledali vaše trenutne zahtjeve za nabavu i tehničke specifikacije?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Nachtrag: Etikettenbeschaffung für {{Company}} bewerten - Kostenvergleich",
+            "body": "{{FirstName}} -\n\nFortlaufende Verfolgung der Etikettenbeschaffung im Wettbewerb.\n\nDie meisten Beschaffungsteams, mit denen wir zusammenarbeiten, bewerten:\n- Alternative Quellen für Kostenvergleiche\n- Europäische Optionen zur Balance zwischen Kosten und Lieferzuverlässigkeit\n- Lieferanten mit dokumentierten Qualitätsstandards (ISO, FSC, SEDEX)\n- Partner, die die Beschaffung von Multi-Site- oder SKU-Portfolios bewältigen können\n\nBirografika verwaltet wiederkehrende Etikettenmengen für Lebens- und Getränkemarken, Molkerei- und Verbrauchemarken in Slowenien, Kroatien, Ungarn, Österreich und Deutschland.\n\nWäre es sinnvoll, kurz anzurufen, um Ihre aktuellen Beschaffungs- und technischen Anforderungen zu überprüfen?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Last note - label supplier evaluation",
-        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers or managing costs for recurring label needs, happy to share our pricing model and production capabilities.\n\nNo obligation, just a straightforward review of production options, cost structure, and how we manage delivery reliability for recurring volumes.\n\nLet me know if a quick conversation would be useful.\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers or managing costs for recurring label needs, happy to share our pricing model and production capabilities.\n\nNo obligation, just a straightforward review of production options, cost structure, and how we manage delivery reliability for recurring volumes.\n\nLet me know if a quick conversation would be useful.\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Zadnja opomba - ocena dobavitelja etiket",
+            "body": "{{FirstName}} -\n\nZadnja opomba o tem - če ocenjujete dobavitelje etiket ali upravljate stroške za trajne potrebe etiket, sem vesel da delim naš ceneni model in proizvodne zmogljivosti.\n\nBrez obveznosti, le naravnost pregled proizvodnih možnosti, strukture stroškov in kako upravljamo zanesljivostjo dostave za trajne količine.\n\nMi sporočite, če bi bila hitra pogovor koristna.\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Zadnja napomena - procjena dobavljača naljepnica",
+            "body": "{{FirstName}} -\n\nZadnja napomena - ako procjenjujete dobavljače naljepnica ili upravljate troškove za redovite potrebe naljepnica, sretan sam što mogu podijeliti naš model cijena i proizvodne mogućnosti.\n\nBez obveze, samo direktan pregled opcija proizvodnje, strukture troškova i kako upravljamo pouzdanošću dostave za redovite količine.\n\nObavijestite me je li brzi razgovor bio koristan.\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Letzte Anmerkung - Bewertung des Etikettenherstellers",
+            "body": "{{FirstName}} -\n\nLetzte Anmerkung - wenn Sie Etikettenhersteller bewerten oder Kosten für wiederkehrende Etikettenbedarf verwalten, teile ich gerne unser Preismodell und Produktionsfähigkeiten.\n\nOhne Verpflichtung, nur eine unkomplizierte Überprüfung von Produktionsoptionen, Kostenstruktur und wie wir die Lieferzuverlässigkeit für wiederkehrende Mengen verwalten.\n\nLassen Sie mich wissen, wenn ein schnelles Gespräch nützlich wäre.\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       }
     ]
   },
@@ -37,19 +79,61 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Label production capabilities for {{Company}}",
-        "body": "{{FirstName}} -\n\nI work with packaging and technical teams on label sourcing decisions.\n\nBirografika is a European label manufacturer with 60+ years in flexo, offset, and digital production. Key technical capabilities:\n- Flexo printing (UV, Mark Andy equipment)\n- Offset printing (large-run capability)\n- Die-cutting, lamination, cold foil, embossing\n- Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films\n- Quality certifications: ISO 9001, ISO 14001, FSC certified, SEDEX audited\n\nFor technical teams, the value is consistent finish quality, full pre-press support, and reliable trial management.\n\nWould it be useful to discuss technical specifications and production options for your label requirements?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nI work with packaging and technical teams on label sourcing decisions.\n\nBirografika is a European label manufacturer with 60+ years in flexo, offset, and digital production. Key technical capabilities:\n- Flexo printing (UV, Mark Andy equipment)\n- Offset printing (large-run capability)\n- Die-cutting, lamination, cold foil, embossing\n- Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films\n- Quality certifications: ISO 9001, ISO 14001, FSC certified, SEDEX audited\n\nFor technical teams, the value is consistent finish quality, full pre-press support, and reliable trial management.\n\nWould it be useful to discuss technical specifications and production options for your label requirements?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Zmogljivosti proizvodnje etiket za {{Company}}",
+            "body": "{{FirstName}} -\n\nDelam s pakiranje in tehnični ekips na odločitvah nabore etiket.\n\nBirografika je evropski proizvajalec etiket s 60+ let v flekso, offset in digitalnem tisku. Ključne tehnične zmogljivosti:\n- Flekso tisk (UV, Mark Andy oprema)\n- Offset tisk (zmogljivost na velike proge)\n- Ročne rezanje, laminiranje, hladni foil, tiskanje\n- Materiali: papir, OPP/BOPP, PP, PE, duplex/triplex filmi\n- Sertifikati kakovosti: ISO 9001, ISO 14001, FSC certificirane, SEDEX preverjene\n\nZa tehnične ekipe je vrednost dosledna kakovost završetka, polna podpora pred-tiskom in zanesljivo upravljanje preskušanja.\n\nAli bi bilo koristno razpravljati tehnične specifikacije in proizvodne možnosti za vaše zahteve etiket?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Mogućnosti proizvodnje naljepnica za {{Company}}",
+            "body": "{{FirstName}} -\n\nRadim s timovima pakovanja i tehnike na odlukama nabave naljepnica.\n\nBirografika je europski proizvođač naljepnica s 60+ godina iskustva u flekso, offset i digitalnom tisku. Ključne tehničke mogućnosti:\n- Flekso tisk (UV, Mark Andy oprema)\n- Offset tisk (mogućnost za velike količine)\n- Ročno rezanje, laminiranje, hladni foil, tiskanje\n- Materijali: papir, OPP/BOPP, PP, PE, duplex/triplex filmovi\n- Certifikati kvalitete: ISO 9001, ISO 14001, FSC certificirane, SEDEX verificirane\n\nZa tehničke timove vrijednost je dosljedno kvaliteta završetka, potpuna podrška prije-tiska i pouzdano upravljanje ispitivanjem.\n\nBi li bilo korisno razgovarati o tehničkim specifikacijama i opcijama proizvodnje za vaše potrebe naljepnica?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Produktionsfähigkeiten für Etiketten für {{Company}}",
+            "body": "{{FirstName}} -\n\nIch arbeite mit Verpackungs- und Techniklisten zusammen, um Entscheidungen bei der Etikettenbeschaffung zu treffen.\n\nBirografika ist ein europäischer Etikettenhersteller mit 60+ Jahren Erfahrung in Flexo-, Offset- und Digitaldruck. Ключевые technische Fähigkeiten:\n- Flexodruck (UV, Mark Andy Ausrüstung)\n- Offsetdruck (großer Druckfähigkeit)\n- Handschneiden, Laminieren, Kaltfolie, Prägung\n- Materialien: Papier, OPP/BOPP, PP, PE, Duplex-/Triplexfolien\n- Qualitätszertifikate: ISO 9001, ISO 14001, FSC-zertifiziert, SEDEX-überprüft\n\nFür Techniklisten ist der Wert eine konsistente Oberflächenqualität, vollständige Vordruck-Unterstützung und zuverlässiges Testmanagement.\n\nWäre es hilfreich, Ihre technischen Spezifikationen und Produktionsoptionen für Ihre Etikettenanforderungen zu besprechen?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Label production capabilities for {{Company}} - technical fit",
-        "body": "{{FirstName}} -\n\nFollowing up on technical label sourcing.\n\nPackaging and technical teams we work with are often focused on:\n- Production quality and finish consistency across runs\n- Supplier capability to handle material changes and specification complexity\n- Quality documentation and certifications (ISO, FSC, HACCP, SEDEX)\n- Responsive pre-press support and trial management\n- European supplier reliability for multi-site rollouts\n\nBirografika's equipped with modern equipment (MPS EFC 430, Grafotronic, Rotoflex inspection) and quality systems to support packaging requirements across your product portfolio.\n\nWould a technical review call to walk through capabilities and specifications make sense?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nFollowing up on technical label sourcing.\n\nPackaging and technical teams we work with are often focused on:\n- Production quality and finish consistency across runs\n- Supplier capability to handle material changes and specification complexity\n- Quality documentation and certifications (ISO, FSC, HACCP, SEDEX)\n- Responsive pre-press support and trial management\n- European supplier reliability for multi-site rollouts\n\nBirografika's equipped with modern equipment (MPS EFC 430, Grafotronic, Rotoflex inspection) and quality systems to support packaging requirements across your product portfolio.\n\nWould a technical review call to walk through capabilities and specifications make sense?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Nadaljevanje: Zmogljivosti proizvodnje etiket za {{Company}} - tehnični opis",
+            "body": "{{FirstName}} -\n\nNadaljevanje tehnične nabore etiket.\n\nPackaging in tehnični ekipi, s katerimi delamo, so pogosto osredotočeni na:\n- Kakovost proizvodnje in doslednost završetka preko tekov\n- Zmogljivost dobavitelja za obravnavo sprememb materialov in zapletenosti specifikacij\n- Dokumentacija kakovosti in sertifikati (ISO, FSC, HACCP, SEDEX)\n- Odzivna podpora pred-tisku in upravljanje preskušanja\n- Zanesljivost evropskega dobavitelja za lansiranje na več mest\n\nBirografika je opremljena s sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in sistemi kakovosti za podporo zahtevam pakiranja v celotnem portfelju vaših proizvodov.\n\nAli bi bil tehnični pregled klica za pregled zmogljivosti in specifikacij smiseln?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Nastavak: Mogućnosti proizvodnje naljepnica za {{Company}} - tehnička primjena",
+            "body": "{{FirstName}} -\n\nNastavak tehnike nabave naljepnica.\n\nTimovi pakovanja i tehnike s kojima radimo često su usmjereni na:\n- Kvaliteta proizvodnje i doslednost završetka tijekom provedbe\n- Mogućnost dobavljača za rukovanje promjenama materijala i složenostima specifikacija\n- Dokumentacija kvalitete i certifikati (ISO, FSC, HACCP, SEDEX)\n- Reagenta podrška pred-tiska i upravljanje ispitivanjem\n- Pouzdanost europskog dobavljača za lansiranje na više lokacija\n\nBirografika je opremljena suvremenom opremom (MPS EFC 430, Grafotronic, Rotoflex inspekcija) i sustavima kvalitete za podršku zahtjevima pakovanja u vašem cijelom portfelju proizvoda.\n\nBi li tehnički pregled poziva za pregled mogućnosti i specifikacija bio smislen?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Nachtrag: Produktionsfähigkeiten für Etiketten für {{Company}} - technische Eignung",
+            "body": "{{FirstName}} -\n\nFortlaufende Verfolgung der technischen Etikettenbeschaffung.\n\nVerpackungs- und Techniklisten, mit denen wir zusammenarbeiten, konzentrieren sich oft auf:\n- Produktionsqualität und Oberflächenbeständigkeit über alle Läufe hinweg\n- Lieferantenfähigkeit für Materialänderungen und Spezifikationskomplexität\n- Qualitätsdokumentation und Zertifikate (ISO, FSC, HACCP, SEDEX)\n- Responsive Vordruck-Unterstützung und Testmanagement\n- Zuverlässigkeit europäischer Lieferanten für Multi-Site-Rollouts\n\nBirografika ist mit moderner Ausrüstung (MPS EFC 430, Grafotronic, Rotoflex-Inspektion) und Qualitätssystemen ausgestattet, um Verpackungsanforderungen in Ihrem gesamten Produktportfolio zu unterstützen.\n\nWäre ein technischer Überprüfungsanruf sinnvoll, um die Fähigkeiten und Spezifikationen durchzugehen?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Last note - technical label partner evaluation",
-        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers based on technical capabilities or managing specifications across product lines, happy to walk through our production process and quality systems.\n\nNo obligation, just a straightforward technical review of capabilities, material options, and how we support packaging development and trials.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers based on technical capabilities or managing specifications across product lines, happy to walk through our production process and quality systems.\n\nNo obligation, just a straightforward technical review of capabilities, material options, and how we support packaging development and trials.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Zadnja opomba - ocena tehnične partnerja etiket",
+            "body": "{{FirstName}} -\n\nZadnja opomba - če ocenjujete dobavitelje etiket glede na tehnične zmogljivosti ali upravljate specifikacije v različnih linijah proizvodov, sem vesel da sprehodim naš proizvodnji proces in sisteme kakovosti.\n\nBrez obveznosti, le naravnost tehnični pregled zmogljivosti, možnosti materialov in kako podpiramo razvoj pakovanja in preskušanja.\n\nMi sporočite, če bi bilo to koristno.\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Zadnja napomena - procjena tehničkog partnera za naljepnice",
+            "body": "{{FirstName}} -\n\nZadnja napomena - ako procjenjujete dobavljače naljepnica na osnovu tehničkih mogućnosti ili upravljate specifikacije u različitim linijama proizvoda, sretan sam što mogu pregledati našu proizvodnu procesu i sisteme kvalitete.\n\nBez obveze, samo direktan tehnički pregled mogućnosti, opcija materijala i kako podržavamo razvoj pakovanja i testiranja.\n\nObavijestite me je li to bilo korisno.\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Letzte Anmerkung - Bewertung des technischen Etikettenpartners",
+            "body": "{{FirstName}} -\n\nLetzte Anmerkung - wenn Sie Etikettenhersteller anhand ihrer Fähigkeiten bewerten oder Spezifikationen in verschiedenen Produktlinien verwalten, zeige ich gerne unseren Produktionsprozess und Qualitätssysteme.\n\nOhne Verpflichtung, nur eine unkomplizierte technische Überprüfung von Fähigkeiten, Materialoptionen und wie wir die Verpackungsentwicklung und Tests unterstützen.\n\nLassen Sie mich wissen, ob das nützlich wäre.\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       }
     ]
   },
@@ -64,19 +148,61 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "European label partner for {{Company}}",
-        "body": "{{FirstName}} -\n\nI reach out to manufacturing and supply chain leaders about recurring label sourcing.\n\nBirografika is a European label printer based in Serbia (60+ years, family-owned) serving FMCG brands across food, beverage, dairy, and consumer goods markets.\n\nFor operations and leadership teams, the value is:\n- Reliable European manufacturing partner you can build with long-term\n- Production capacity for recurring multi-SKU volumes\n- Nearshore economics and logistics (short lead times to CEE/DACH markets)\n- Quality and compliance (ISO certified, FSC, SEDEX audited, HACCP)\n- Direct partnership without intermediaries\n\nWould it be useful to explore a supply partnership for your recurring label needs?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nI reach out to manufacturing and supply chain leaders about recurring label sourcing.\n\nBirografika is a European label printer based in Serbia (60+ years, family-owned) serving FMCG brands across food, beverage, dairy, and consumer goods markets.\n\nFor operations and leadership teams, the value is:\n- Reliable European manufacturing partner you can build with long-term\n- Production capacity for recurring multi-SKU volumes\n- Nearshore economics and logistics (short lead times to CEE/DACH markets)\n- Quality and compliance (ISO certified, FSC, SEDEX audited, HACCP)\n- Direct partnership without intermediaries\n\nWould it be useful to explore a supply partnership for your recurring label needs?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Evropski partner etiket za {{Company}}",
+            "body": "{{FirstName}} -\n\nSe obračam k vodam proizvodnje in oskrbovalne verige o trajnem naboru etiket.\n\nBirografika je evropski proizvajalec etiket, ki je sedeži v Srbiji (60+ let, lastniško podjetje) in služi markam FMCG na trgih hrane, pijač, mlečnih in potrošniških proizvodov.\n\nZa ekipe operacij in vodstvijo je vrednost:\n- Zanesljiv evropski proizvodljni partner, s katerim se lahko dolgoročno gradite\n- Proizvodna zmogljivost za trajne količine multi-SKU\n- Sosedska ekonomija in logistika (kratki roki dostave na trgih CEE/DACH)\n- Kakovost in skladnost (ISO certificirane, FSC, SEDEX preverjene, HACCP)\n- Neposredna partnerstva brez posrednikov\n\nAli bi bilo koristno raziskati partnerstvo pri oskrbi za vaše trajne potrebe etiket?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Europski partner za naljepnice za {{Company}}",
+            "body": "{{FirstName}} -\n\nKontaktiram vođe proizvodnje i lance dobave o redovnoj nabavi naljepnica.\n\nBirografika je europski proizvođač naljepnica sa sjedištem u Srbiji (60+ godina, obiteljsko poduzeće) koji služi markama FMCG na tržištima hrane, pića, mlijeka i potrošačkih proizvoda.\n\nZa timove operacija i vodstva vrijednost je:\n- Pouzdan europski proizvodni partner s kojim možete dugoročno graditi\n- Proizvodna kapaciteta za redovite količine multi-SKU\n- Susjedska ekonomija i logistika (kratki roki dostave na tržištima CEE/DACH)\n- Kvaliteta i usklađenost (ISO certificirane, FSC, SEDEX verificirane, HACCP)\n- Izravna partnerstva bez posrednika\n\nBi li bilo korisno istražiti partnerstvo u nabavi za vaše redovite potrebe naljepnica?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Europäischer Etikettenpartner für {{Company}}",
+            "body": "{{FirstName}} -\n\nIch kontaktiere Produktions- und Supply-Chain-Leiter über wiederkehrende Etikettenbeschaffung.\n\nBirografika ist ein in Serbien ansässiger europäischer Etikettenhersteller (60+ Jahre, in Familienbesitz), der FMCG-Marken auf den Märkten für Lebensmittel, Getränke, Milchprodukte und Konsumgüter beliefert.\n\nFür Operations- und Führungsteams ist der Wert:\n- Zuverlässiger europäischer Produktionspartner, mit dem Sie langfristig wachsen können\n- Produktionskapazität für wiederkehrende Multi-SKU-Mengen\n- Nachbarländer-Wirtschaft und Logistik (kurze Lieferzeiten auf CEE/DACH-Märkte)\n- Qualität und Compliance (ISO-zertifiziert, FSC, SEDEX-überprüft, HACCP)\n- Direkte Partnerschaft ohne Vermittler\n\nWäre es hilfreich, eine Lieferpartnerschaft für Ihre wiederkehrenden Etikettenbedarf zu erkunden?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: European label partner for {{Company}} - partnership approach",
-        "body": "{{FirstName}} -\n\nFollowing up on label sourcing partnership.\n\nLeaders and operations teams we work with are typically looking for:\n- Manufacturing partner they can depend on for recurring volumes and growth\n- Competitive economics combined with quality and reliability\n- Direct relationship without middlemen or brokers\n- Flexibility to support seasonal volumes, multi-location rollouts, or portfolio changes\n- Partner with real production capacity and capability (not just trading)\n\nBirografika brings 60+ years of manufacturing expertise and capacity to handle beverage, dairy, food, and consumer brands across Europe - with commitment to long-term partnership.\n\nWould a conversation about supply planning and partnership structure make sense?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nFollowing up on label sourcing partnership.\n\nLeaders and operations teams we work with are typically looking for:\n- Manufacturing partner they can depend on for recurring volumes and growth\n- Competitive economics combined with quality and reliability\n- Direct relationship without middlemen or brokers\n- Flexibility to support seasonal volumes, multi-location rollouts, or portfolio changes\n- Partner with real production capacity and capability (not just trading)\n\nBirografika brings 60+ years of manufacturing expertise and capacity to handle beverage, dairy, food, and consumer brands across Europe - with commitment to long-term partnership.\n\nWould a conversation about supply planning and partnership structure make sense?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Nadaljevanje: Evropski partner etiket za {{Company}} - pristop k partnerstvih",
+            "body": "{{FirstName}} -\n\nNadaljevanje partnerstva nabore etiket.\n\nVodje in ekipe operacij, s katerimi delamo, običajno iščejo:\n- Proizvodni partner, na katerega se lahko zanašajo za trajne količine in rast\n- Konkurenčna ekonomija v kombinaciji s kakovostjo in zanesljivostjo\n- Neposreden odnos brez posrednikov ali brokerjev\n- Fleksibilnost za podporo sezonskih količin, lansiranja na več mest ali sprememb portfelja\n- Partner z resno proizodno zmogljivostjo in zmožnostjo (ne samo trgovina)\n\nBirografika prinašá 60+ let proizvodnega znanja in zmogljivosti za upravljanje pijač, mlečnih, hrane in potrošniških znamk po Evropi - s predanostjo dolgotrajnemu partnerstvu.\n\nAli bi bilo smiselno razgovor o načrtovanju oskrbe in strukturi partnerstva?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Nastavak: Europski partner za naljepnice za {{Company}} - pristup partnerstvu",
+            "body": "{{FirstName}} -\n\nNastavak partnerstva nabave naljepnica.\n\nVođe i timovi operacija s kojima radimo obično traže:\n- Proizvodni partner na koji se mogu osloniti za redovite količine i rast\n- Konkurentnu ekonomiju u kombinaciji s kvalitetom i pouzdanošću\n- Izravna odnosa bez posrednika ili brokera\n- Fleksibilnost za potporu sezonskih količina, lansiranja na više lokacija ili promjena portfelja\n- Partner sa pravim proizvodnim kapacitetom i mogućnostima (ne samo trgovanje)\n\nBirografika donosi 60+ godina proizvodnog iskustva i kapacitete da upravljanjem pićem, mliječnim, hrane i potrošačkim markama u cijeloj Europi - s predanošću dugoročnom partnerstvu.\n\nBi li razgovor o planiranju nabave i strukturi partnerstva bio smislen?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Nachtrag: Europäischer Etikettenpartner für {{Company}} - Partnerschaftsansatz",
+            "body": "{{FirstName}} -\n\nFortlaufende Verfolgung der Etikettenbeschaffungspartnerschaft.\n\nFührungs- und Betriebsteams, mit denen wir zusammenarbeiten, suchen typischerweise:\n- Produktionspartner, auf den sie sich für wiederkehrende Mengen und Wachstum verlassen können\n- Wettbewerbsfähige Wirtschaft kombiniert mit Qualität und Zuverlässigkeit\n- Direkte Beziehung ohne Vermittler oder Makler\n- Flexibilität zur Unterstützung saisonaler Mengen, Multi-Location-Rollouts oder Portfolioänderungen\n- Partner mit echtem Produktionskapazität und Fähigkeiten (nicht nur Handel)\n\nBirografika bringt 60+ Jahre Fertigungserfahrung und Kapazität mit, um Getränke-, Milch-, Lebensmittel- und Verbrauchemarken in ganz Europa zu verwalten - mit Engagement für langfristige Partnerschaften.\n\nWäre ein Gespräch über Beschaffungsplanung und Partnerschaftsstruktur sinnvoll?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Last note - label manufacturing partnership",
-        "body": "{{FirstName}} -\n\nLast note on this - if you're managing label sourcing or looking at European manufacturing partners for recurring volumes, happy to discuss our approach to partnership and capacity planning.\n\nNo obligation, just a conversation about production capabilities, volume flexibility, and how we work with brands for long-term supply relationships.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nLast note on this - if you're managing label sourcing or looking at European manufacturing partners for recurring volumes, happy to discuss our approach to partnership and capacity planning.\n\nNo obligation, just a conversation about production capabilities, volume flexibility, and how we work with brands for long-term supply relationships.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Zadnja opomba - partnerstvo proizvodnje etiket",
+            "body": "{{FirstName}} -\n\nZadnja opomba - če upravljate nabore etiket ali pogledate evropske proizvodne partnerje za trajne količine, sem vesel da razpravljam naš pristop k partnerstvu in planiranju zmogljivosti.\n\nBrez obveznosti, le pogovor o proizvodnih zmogljivosti, prožnosti količin in kako delamo z blagovnimi znamkami za dolgoročne odnose oskrbe.\n\nMi sporočite, če bi bilo to koristno.\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Zadnja napomena - partnerstvo proizvodnje naljepnica",
+            "body": "{{FirstName}} -\n\nZadnja napomena - ako upravljate nabavom naljepnica ili tražite europske proizvodne partnere za redovite količine, sretan sam što mogu raspraviti naš pristup partnerstvu i planiranju kapaciteta.\n\nBez obveze, samo razgovor o proizvodnim mogućnostima, fleksibilnosti količina i kako radimo s markama za dugoročne odnose nabave.\n\nObavijestite me je li to bilo korisno.\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Letzte Anmerkung - Partnerschaft für die Etikettenproduktion",
+            "body": "{{FirstName}} -\n\nLetzte Anmerkung - wenn Sie die Etikettenbeschaffung verwalten oder nach europäischen Produktionspartnern für wiederkehrende Mengen suchen, kann ich gerne unseren Ansatz zur Partnerschaft und Kapazitätsplanung besprechen.\n\nOhne Verpflichtung, nur ein Gespräch über Produktionsfähigkeiten, Mengenflexibilität und wie wir mit Marken für langfristige Lieferbeziehungen zusammenarbeiten.\n\nLassen Sie mich wissen, ob das nützlich wäre.\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       }
     ]
   },
@@ -91,19 +217,61 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Label sourcing for {{Company}}",
-        "body": "{{FirstName}} -\n\nI work with FMCG and consumer product manufacturers on label sourcing.\n\nBirografika is a European label manufacturer based in Serbia with 60+ years of experience producing labels for food, beverage, dairy, cosmetics, and consumer brands. We offer offset, flexo, and digital printing with full capabilities in die-cutting, lamination, and specialty finishing.\n\nOur strengths:\n- Proven production quality and reliability\n- ISO 9001, ISO 14001, FSC, and SEDEX certifications\n- Capacity for recurring volumes and multi-SKU programmes\n- Full pre-press support and technical partnership\n- Cost-effective European manufacturing\n\nWould it be useful to discuss label sourcing options for your requirements?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nI work with FMCG and consumer product manufacturers on label sourcing.\n\nBirografika is a European label manufacturer based in Serbia with 60+ years of experience producing labels for food, beverage, dairy, cosmetics, and consumer brands. We offer offset, flexo, and digital printing with full capabilities in die-cutting, lamination, and specialty finishing.\n\nOur strengths:\n- Proven production quality and reliability\n- ISO 9001, ISO 14001, FSC, and SEDEX certifications\n- Capacity for recurring volumes and multi-SKU programmes\n- Full pre-press support and technical partnership\n- Cost-effective European manufacturing\n\nWould it be useful to discuss label sourcing options for your requirements?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Nabora etiket za {{Company}}",
+            "body": "{{FirstName}} -\n\nDelam s proizvajalci FMCG in potrošniških izdelkov na nabori etiket.\n\nBirografika je evropski proizvajalec etiket s sedežem v Srbiji z 60+ letnim izkušnjami pri proizvodnji etiket za hrano, pijače, mlečne, kozmetične in potrošniške znamke. Ponujamo offset, flekso in digitalnega tiska s polno zmogljivostjo za ročno rezanje, laminiranje in posebne obdelave.\n\nNaše prednosti:\n- Dokazana kakovost in zanesljivost proizvodnje\n- Sertifikati ISO 9001, ISO 14001, FSC in SEDEX\n- Zmogljivost za trajne količine in programe multi-SKU\n- Polna podpora pred-tisku in tehnično partnerstvo\n- Stroškovno učinkovita evropska proizvodnja\n\nAli bi bilo koristno razpravljati možnosti nabore etiket za vaše zahteve?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Nabava naljepnica za {{Company}}",
+            "body": "{{FirstName}} -\n\nRadim s proizvođačima FMCG i potrošačkih proizvoda na nabavi naljepnica.\n\nBirografika je europski proizvođač naljepnica sa sjedištem u Srbiji s 60+ godina iskustva u proizvodnji naljepnica za hranu, piće, mliječne, kozmetičke i potrošačke marke. Nudimo offset, flekso i digitalni tisk s punom mogućnošću za ručno rezanje, laminiranje i specijalne obrade.\n\nNaše prednosti:\n- Dokazana kvaliteta i pouzdanost proizvodnje\n- Sertifikati ISO 9001, ISO 14001, FSC i SEDEX\n- Kapacitet za redovite količine i programe multi-SKU\n- Potpuna podrška pred-tiska i tehničko partnerstvo\n- Isplativo europska proizvodnja\n\nBi li bilo korisno razgovarati o opcijama nabave naljepnica za vaše zahtjeve?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Etikettenbeschaffung für {{Company}}",
+            "body": "{{FirstName}} -\n\nIch arbeite mit FMCG- und Konsumgüterherstellern an der Etikettenbeschaffung zusammen.\n\nBirografika ist ein in Serbien ansässiger europäischer Etikettenhersteller mit 60+ Jahren Erfahrung in der Herstellung von Etiketten für Lebensmittel-, Getränke-, Milch-, Kosmetik- und Verbrauchemarken. Wir bieten Offset-, Flexo- und Digitaldruck mit vollständigen Fähigkeiten für Handschneiden, Laminieren und Spezialbeschichtung.\n\nUnsere Stärken:\n- Nachgewiesene Produktionsqualität und Zuverlässigkeit\n- ISO 9001-, ISO 14001-, FSC- und SEDEX-Zertifizierungen\n- Kapazität für wiederkehrende Mengen und Multi-SKU-Programme\n- Vollständige Vordruck-Unterstützung und technisches Partnerschaftsprogramm\n- Kosteneffektive europäische Herstellung\n\nWäre es hilfreich, die Optionen zur Etikettenbeschaffung für Ihre Anforderungen zu besprechen?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Label sourcing for {{Company}}",
-        "body": "{{FirstName}} -\n\nFollowing up on label production partnership.\n\nWe work with manufacturers across Europe looking for:\n- Reliable label supplier for recurring orders\n- Production quality and finish consistency\n- Technical support and specification development\n- Documented quality certifications\n- Competitive economics without compromising quality\n\nBirografika brings manufacturing expertise, modern equipment (MPS EFC 430, Grafotronic, Rotoflex inspection), and direct partnership approach to support your label needs—whether for current production or future growth.\n\nWould a conversation about your label requirements and our capabilities make sense?\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nFollowing up on label production partnership.\n\nWe work with manufacturers across Europe looking for:\n- Reliable label supplier for recurring orders\n- Production quality and finish consistency\n- Technical support and specification development\n- Documented quality certifications\n- Competitive economics without compromising quality\n\nBirografika brings manufacturing expertise, modern equipment (MPS EFC 430, Grafotronic, Rotoflex inspection), and direct partnership approach to support your label needs—whether for current production or future growth.\n\nWould a conversation about your label requirements and our capabilities make sense?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Nadaljevanje: Nabora etiket za {{Company}}",
+            "body": "{{FirstName}} -\n\nNadaljevanje partnerstva proizvodnje etiket.\n\nDelamo z proizvajalci po Evropi, ki iščejo:\n- Zanesljiv dobavljač etiket za redne naročila\n- Kakovost proizvodnje in doslednost završetka\n- Tehnično podporo in razvoj specifikacij\n- Dokumentirane certifikate kakovosti\n- Konkurenčno ekonomijo brez oslabitve kakovosti\n\nBirografika prinesá proizvodno znanje, sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in neposreden pristop partnerstva za podporo vaših potreb etiket - bodisi za sedanjo proizvodnjo bodisi za bodočo rast.\n\nAli bi bil razgovor o vaših zahtevah etiket in naših zmogljivostih smiseln?\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Nastavak: Nabava naljepnica za {{Company}}",
+            "body": "{{FirstName}} -\n\nNastavak partnerstva proizvodnje naljepnica.\n\nRadim s proizvođačima diljem Europe koji traže:\n- Pouzdanog dobavljača naljepnica za redovne narudžbe\n- Kvalitetu proizvodnje i doslednost završetka\n- Tehničku potporu i razvoj specifikacija\n- Dokumentirane certifikate kvalitete\n- Konkurentnu ekonomiju bez oslabljenja kvalitete\n\nBirografika donosi proizvodno znanje, suvremenu opremu (MPS EFC 430, Grafotronic, Rotoflex inspekcija) i izravna pristupa partnerstva za potporu vaših potreba naljepnica - bilo za sadašnju proizvodnju ili budući rast.\n\nBi li razgovor o vašim zahtjevima naljepnica i našim mogućnostima bio smislen?\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Nachtrag: Etikettenbeschaffung für {{Company}}",
+            "body": "{{FirstName}} -\n\nFortlaufende Verfolgung der Partnerschaft für die Etikettenproduktion.\n\nWir arbeiten mit Herstellern in ganz Europa zusammen, die nach Folgendem suchen:\n- Zuverlässiger Etikettenhersteller für wiederkehrende Bestellungen\n- Produktionsqualität und Oberflächenbeständigkeit\n- Technische Unterstützung und Spezifikationsentwicklung\n- Dokumentierte Qualitätszertifikate\n- Wettbewerbsfähige Wirtschaft ohne Qualitätsbeeinträchtigung\n\nBirografika bringt Herstellungskompetenz, moderne Ausrüstung (MPS EFC 430, Grafotronic, Rotoflex-Inspektion) und einen direkten Partnerschaftsansatz mit, um Ihre Etikettenanforderungen zu unterstützen - sei es für die aktuelle Produktion oder für zukünftiges Wachstum.\n\nWäre ein Gespräch über Ihre Etikettenanforderungen und unsere Fähigkeiten sinnvoll?\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Last note - label manufacturing partnership",
-        "body": "{{FirstName}} -\n\nLast note—if you're sourcing labels or evaluating manufacturing partners, happy to discuss our capabilities and how we work with brands across Europe.\n\nNo obligation, just a straightforward conversation about production options, quality standards, and partnership approach.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+        "body": "{{FirstName}} -\n\nLast note—if you're sourcing labels or evaluating manufacturing partners, happy to discuss our capabilities and how we work with brands across Europe.\n\nNo obligation, just a straightforward conversation about production options, quality standards, and partnership approach.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]",
+        "translations": {
+          "slovenian": {
+            "subject": "Zadnja opomba - partnerstvo proizvodnje etiket",
+            "body": "{{FirstName}} -\n\nZadnja opomba - če nabiraš etikete ali ocenjuješ partnerje proizvodnje, sem vesel da razpravljam naše zmogljivosti in kako delamo z blagovnimi znamkami po Evropi.\n\nBrez obveznosti, le naravnost pogovor o proizvodnih možnostih, standardih kakovosti in pristopu partnerstva.\n\nMi sporočite, če bi bilo to koristno.\n\nLep pozdrav,\n[Ime pošiljalca]"
+          },
+          "croatian": {
+            "subject": "Zadnja napomena - partnerstvo proizvodnje naljepnica",
+            "body": "{{FirstName}} -\n\nZadnja napomena - ako nabavljaš naljepnice ili vrednovaš partnere proizvodnje, sretan sam što mogu razgovarati o našim mogućnostima i kako radimo s markama diljem Europe.\n\nBez obveze, samo direktan razgovor o opcijama proizvodnje, standardima kvalitete i pristupu partnerstva.\n\nObavijestite me je li to bilo korisno.\n\nSrdačan pozdrav,\n[Ime pošiljaoca]"
+          },
+          "german": {
+            "subject": "Letzte Anmerkung - Partnerschaft für die Etikettenproduktion",
+            "body": "{{FirstName}} -\n\nLetzte Anmerkung - wenn Sie Etiketten beschaffen oder Produktionspartner bewerten, kann ich gerne über unsere Fähigkeiten und die Zusammenarbeit mit Marken in ganz Europa sprechen.\n\nOhne Verpflichtung, nur ein unkompliziertes Gespräch über Produktionsoptionen, Qualitätsstandards und Partnerschaftsansatz.\n\nLassen Sie mich wissen, ob das nützlich wäre.\n\nBeste Grüße,\n[Name des Absenders]"
+          }
+        }
       }
     ]
   }
