@@ -102,6 +102,67 @@ On 2026-10-20, another Claude instance asked 3 clarifying questions about where 
 
 ---
 
+### 0B. NEW CLIENT ONBOARDING — GITHUB FIRST (CRITICAL)
+
+**HARD RULE:** Every new client MUST be documented on GitHub BEFORE portal files are created. No exceptions. No "we'll document it later."
+
+**The Workflow (MANDATORY FOR ALL NEW CLIENTS):**
+
+1. **Create GitHub documentation folder**
+   ```bash
+   mkdir clients/[client-name]
+   ```
+
+2. **Create ICP-PROFILE.md with:**
+   - Client overview (what they do, who they serve)
+   - ICP criteria (geography, company size, business models)
+   - Buyer personas (job titles, decision-making roles)
+   - Buying signals (Tier 1/2/3 indicators)
+   - Email sequence strategy (how many sequences, why)
+   - Any segmentation logic (if applicable)
+
+3. **Create supporting files (if applicable):**
+   - `sequences/` folder with sequence definitions
+   - `*.csv` files for lead lists or filter prompts
+   - `*.md` files for SOPs, call notes, analysis
+
+4. **Commit to GitHub**
+   ```bash
+   git add clients/[client-name]/
+   git commit -m "Add: [Client Name] documentation"
+   git push
+   ```
+
+5. **THEN create portal files:**
+   - `/public/sequences/[client].json`
+   - `/public/campaigns/[client].json`
+   - `/public/tasks/[client].json`
+   - `/app/[client]/page.tsx`
+
+**Why This Rule Exists:**
+
+**Before 2026-10-20:** 19 clients existed ONLY in the portal code (`/app/[client]/page.tsx`). Their ICP, personas, and strategy were scattered in React components with no version control history, no searchability, and zero protection against code loss. If that file broke, the entire client documentation was gone.
+
+**After this rule:** ALL clients (100% of them) will have a GitHub-backed single source of truth. The portal reads FROM GitHub documentation, not replaces it.
+
+**Consequences of Breaking This Rule:**
+- ❌ Client data becomes version-uncontrolled
+- ❌ No audit trail of ICP changes
+- ❌ Impossible to reference "what did we decide about this client?"
+- ❌ Portal code becomes a bloated documentation file
+- ❌ New team members can't find client info
+
+**Verification Checklist Before Creating Portal Files:**
+- [ ] `/clients/[client-name]/` folder exists on GitHub
+- [ ] `ICP-PROFILE.md` documents complete client strategy
+- [ ] All persona definitions are in GitHub, not just in portal code
+- [ ] Commit is pushed and visible on GitHub
+- [ ] Client documentation can be understood WITHOUT looking at portal code
+
+**Rule Established:** 2026-10-20
+
+---
+
 ### 0A. UPDATING DASHBOARD CONTENT — The Correct Workflow (CRITICAL)
 
 **RULE:** When updating dashboard content (sequences, tasks, campaigns, etc.), follow this EXACT workflow. NEVER hallucinate deployment problems.
