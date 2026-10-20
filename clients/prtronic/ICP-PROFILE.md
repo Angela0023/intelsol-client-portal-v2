@@ -1,144 +1,137 @@
-# PRTronic — ICP Profile
+# PRTRONIC - ICP PROFILE
 
-## Company Overview
+## Client Overview
 
-PRTronic provides display hardware and integration solutions for equipment manufacturers, system integrators, and professional display projects across Slovenia, Austria, Germany, and Switzerland (DACH region). They specialize in open-frame monitors, touch screens, digital signage, and custom display integration for industrial and commercial applications.
+**Company Name:** PRTronic  
+**Industry:** Display Solutions Manufacturing (OEM & Integrator Focus)  
+**Geographic Focus:** DACH region (Germany, Austria, Switzerland)  
 
-- **Service:** Display Hardware & Integration Solutions
-- **Markets:** Slovenia, Austria, Germany, Switzerland (DACH)
-- **Target Segment:** OEMs, System Integrators, Multi-Site Operators
-- **Website:** https://prtronic.si
+## Business Model
 
-## What PRTronic Offers
+Display solutions provider specializing in **open-frame and closed-frame displays, touch screens, digital signage, and custom display configurations** for equipment manufacturers, system integrators, and multi-location operators.
 
-- Open-frame and closed-frame monitors with customization options
-- Touch screens and display kits for equipment integration
-- Digital signage solutions for professional installations
-- High-brightness displays for challenging viewing environments
-- TFT/LCD modules with custom mechanical and firmware integration
-- Technical specification support (form factor, environment, touch, interfaces, mounting)
+**Primary Capabilities:**
+- Open-frame and closed-frame display solutions
+- Touch screen integration
+- Custom mechanical configurations
+- Display specifications support
+- Digital signage (indoor/outdoor, high-brightness options)
+- EOL notification and alternative sourcing support
+- Local DACH technical support in German
 
-## Target Market Summary
+**Key Differentiators:**
+- Engineering-focused approach (not commodity supplier)
+- Technical specification support throughout customer journey
+- Proactive EOL notification and supply reliability
+- Local DACH presence with native-language support
 
-Equipment manufacturers (OEMs), system integrators, and multi-site operators across DACH region who need display solutions for kiosks, industrial machinery, digital signage, or specialized applications like gaming machines and transport information systems.
+## Target Customer Types
 
----
+**Primary Customer Types:**
+1. **OEM Equipment Manufacturers** - Need displays integrated into equipment
+2. **AV/Signage System Integrators** - Need display sourcing for client installations
+3. **Multi-Site Operators** - Need consistent hardware across locations (Retail, Hospitality, Healthcare, Transport)
 
-## ICP Criteria
+**Geographic Focus:**
+- Germany (primary)
+- Austria
+- Switzerland
+- DACH region expansion
 
-### Geography
+## Customer Profile
 
-- **Slovenia:** Primary market (local presence confirmed)
-- **Austria:** DACH region (Klagenfurt office listed on website)
-- **Germany:** DACH region (priority: southern Germany, then wider coverage)
-- **Switzerland:** DACH region (included in market expansion)
+**OEM Equipment Manufacturers:**
+- Technical Director, Hardware Lead, Product Manager
+- Purchasing Manager, Strategic Buyer
+- Focus on form factor, mechanical integration, supply reliability
 
-**Note:** Filter by buying/design entity location. Record installation markets separately. Confirm service coverage, languages, export terms, and Swiss delivery arrangements with PRTronic.
+**AV/Signage System Integrators:**
+- Technical Director, AV/Signage Project Manager
+- Purchasing Manager
+- Focus on project support, specification assistance, timeline reliability
 
-### Company Size by Segment
+**Multi-Site Operators:**
+- Marketing Manager, IT Manager, Facilities Manager
+- Purchasing Manager, Rollout Manager
+- Focus on standardization, volume pricing, deployment coordination
 
-**A: OEMs & Equipment Manufacturers**
-- Sweet spot: 20-250 employees
-- Range: 10-500 employees
-- Include smaller established kiosk/terminal specialists with active products
-- Review larger groups by relevant business unit
+## Value Proposition
 
-**B: AV, Signage & System Integrators**
-- Range: 5-250 employees
-- Require hardware selection/integration responsibility and relevant project portfolio
+### For Technical/Engineering Buyers
+- **Display integration support:** Match form factor, mounting, mechanical requirements
+- **Specification expertise:** Touch interface, video inputs, brightness, environmental requirements
+- **Custom solutions:** Support for non-standard configurations
+- **Project success:** Technical guidance during design and proposal phases
+- **Supply reliability:** EOL notification and alternative options pre-qualified
 
-**C: Multi-Site Operators**
-- Discovery range: 50-2,000 employees
-- Prioritize central procurement and multiple display locations
-- Smaller groups can qualify with concrete project
+### For Procurement/Supply Buyers
+- **Supply consistency:** Proactive EOL notification and availability assurance
+- **Competitive pricing:** DACH-local support with competitive economics
+- **Volume options:** Standardized configurations for enterprise deployments
+- **Technical support:** Team support for specification assistance
+- **Local partnership:** German-language support and DACH presence
 
-**D: Specialized Applications**
-- Range: 10-1,000 employees
-- Project scope matters more than size
-- Confirm minimum volumes and viable customer economics with PRTronic
+## Key Differentiators
 
-### Business Models — Strong Fit
-
-- OEMs embedding displays in repeat-built products
-- Integrators delivering repeated hardware projects
-- Distributors with genuine technical value and agreed channel fit
-- Centrally managed location networks with phased deployments
-
-**Qualification:** Visible product/project + display role + specification/purchasing ownership + credible demand. Pure software companies qualify only if they also specify/procure display hardware.
-
----
-
-## Buyer Personas & Email Sequences
-
-**How to Use Email Sequences:**
-1. Clay Filter finds companies (all types mixed: OEMs, Integrators, Multi-Site Operators)
-2. Find person by job title (look up title in Positions CSV)
-3. Job title tells you which sequence to send (Match title → Sequence number)
-
-**Simple:** Title = Sequence. No need to identify company type first.
-
-### SEQUENCE 1: Engineering/Product Leadership
-- **Example Titles:** Technical Director, Hardware Lead, Product Manager, Entwicklungsleiter, Vodja razvoja
-- **When You'll Find Them:** OEMs and equipment manufacturers
-- **Discovery Focus:** Form factor requirements, touch/interface specifications, environmental conditions, mounting/integration constraints, replacement/redesign triggers
-- **Value Message:** Assess the display configuration that matches your equipment specifications and integration requirements
-
-### SEQUENCE 2: Purchasing/Procurement Leadership
-- **Example Titles:** Purchasing Manager, Strategic Buyer, Einkaufsleiter, Vodja nabave
-- **When You'll Find Them:** All company types
-- **Discovery Focus:** Current supplier relationships, panel EOL/second-source needs, lead times, MOQ requirements, commercial terms
-- **Value Message:** Review display supply options for consistent availability, competitive pricing and technical support
-
-### SEQUENCE 3: Project/Technical Leadership
-- **Example Titles:** Technical Director, AV/Signage Project Manager, Projektleiter
-- **When You'll Find Them:** AV/signage integrators
-- **Discovery Focus:** Client project pipeline, signage/AV installation requirements, display specifications for upcoming projects
-- **Value Message:** Source the right display configuration for your next client installation with technical specification support
-
-### SEQUENCE 4: Rollout/Programme Leadership
-- **Example Titles:** Marketing Manager, IT Manager, AV Manager, Facilities Manager, Rollout Manager
-- **When You'll Find Them:** Multi-site operators
-- **Discovery Focus:** Funded rollout plans, site counts, information/signage objectives, deployment timeline, multi-location coordination
-- **Value Message:** Scope a signage/information screen rollout with consistent hardware across your locations
-
-### Leadership (Small Firms Only)
-- **Example Titles:** CEO, Owner, Managing Director, Geschäftsführer
-- **When You'll Find Them:** Small firms under 50 employees
-- **Note:** Determine company type first, then send matching sequence
+1. **Engineering Partnership Model** - Not a commodity screen distributor, but technical partner
+2. **DACH Local Presence** - German-language support and local availability
+3. **Multi-Customer Type Expertise** - Proven across OEMs, integrators, and multi-site operators
+4. **EOL Management** - Proactive notification and pre-qualified alternatives
+5. **Project Support** - Specification assistance and timeline reliability
 
 ---
 
-## Buying Signals (3 Tiers)
+## EMAIL SEQUENCE STRATEGY
 
-### TIER 1: Strongest Signals
-- **Active Display Sourcing:** RFQ, replacement search, supplier review, or panel end-of-life affecting an identified product. Confirm scope and deadline.
-- **Upcoming Design or Rollout:** New terminal/machine prototype or funded signage deployment with display selection still open. Save project evidence URL.
+**Sequence Structure:** Position-based
 
-### TIER 2: Medium Signals
-- **Expansion or Redesign:** New sites, equipment range, or refurbishment with plausible screen requirements. Verify budget and sourcing ownership.
-- **Relevant Engineering/Project Role Hiring:** Hiring for kiosk, HMI or signage hardware delivery roles. Note: Hiring alone is not proof of a purchase.
+**Number of Sequences:** 2
 
-### TIER 3: Structural Fit Signals
-- **Installed/Product Fit:** Existing screen-equipped products, signage project portfolio, or multi-site network. This indicates fit evidence, not urgency.
+**Sequence A: Technical & Specification**
+- **Targets:** Technical Director, Hardware Lead, Product Manager (OEM/Integrator), AV/Signage Project Manager, Projektleiter, Entwicklungsleiter
+- **Messaging Angle:** Assess the display configuration that matches your equipment specifications and integration requirements (OEMs, Equipment Manufacturers, System Integrators)
+- **Decision Criteria:** These personas evaluate based on technical fit, integration requirements, form factor match, and project timeline support
+- **Email Focus:** "Here's how we support your technical requirements"
+- **Key Message:** Technical integration, specification support, custom solutions, project reliability
+
+**Sequence B: Supply & Procurement**
+- **Targets:** Purchasing Manager, Strategic Buyer (OEM/Integrator/Operator), Marketing Manager, IT Manager, Facilities Manager, Rollout Manager
+- **Messaging Angle:** Review display supply options for consistent availability, competitive pricing, and technical support (OEMs, Integrators, Multi-Site Operators)
+- **Decision Criteria:** These personas evaluate based on supply reliability, pricing, availability assurance, and standardization/deployment support
+- **Email Focus:** "Here's why we're the right supply partner"
+- **Key Message:** Supply reliability, EOL management, pricing, local support, enterprise deployment
+
+**Rationale:**
+PRTronic serves multiple customer types (OEMs, Integrators, Multi-Site Operators) but the **buying decision is fundamentally based on ROLE, not customer type**:
+- Technical buyers care about integration, specifications, and project support
+- Procurement buyers care about supply reliability, pricing, and availability
+
+Therefore, **Position-based (2 sequences)** consolidates the 4-persona approach into 2 focused sequences targeting decision criteria, not customer type. This allows single-message targeting across all customer types while maintaining role-specific value propositions.
 
 ---
 
-## Discovery Terms (German/Slovenian/English)
+## Lead Tier Distribution Strategy
 
-- **German:** Einbaumonitor, Touchdisplay, Kioskhersteller, Selbstbedienungsterminal, Systemintegrator
-- **Slovenian:** vgradni zaslon, zaslon na dotik, samopostrežni terminal, digitalno prikazovanje
-- **English:** open-frame monitor, touch display, kiosk manufacturer, self-service terminal, digital signage integrator
-
-**Note:** Verify company role manually - search terms alone don't confirm fit.
+**Initial Campaign Focus:**
+- Target technical/engineering leaders at OEM manufacturers
+- Target purchasing managers at established integrators and multi-site operators
+- Focus on decision-makers with active equipment/project pipelines
 
 ---
 
-## Exclusion Criteria
+## Success Metrics
 
-Do NOT contact:
-- Pure software companies without hardware procurement responsibility
-- Basic IT resellers without integration or specification role
-- Consumer/home products (residential gaming, home automation)
-- Companies outside DACH+Slovenia region
-- Micro companies with no product/funding
-- Previous unsubscribes/negative responses
+- **Response Rate Target:** 6-10% (B2B technical sales)
+- **Meeting Booking Rate:** 1.5-3% of emails sent
+- **Conversion to Qualified Lead:** 40-50% of booked meetings
+- **Sales Cycle:** 4-10 weeks (project/equipment dependent)
+
+---
+
+## Notes
+
+- Emphasize engineering partnership and technical support (not commodity positioning)
+- Highlight local DACH presence and German-language support
+- Use customer success stories (kiosk manufacturer, signage integrator, hotel group) to demonstrate expertise
+- Tailor Sequence A for OEM vs Integrator pain points separately in follow-ups (optional A/B testing)
+- Proactive EOL management is a key differentiator - emphasize in Sequence B

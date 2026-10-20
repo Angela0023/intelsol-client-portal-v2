@@ -1,188 +1,120 @@
-# Birografika — ICP Profile
+# BIROGRAFIKA - ICP PROFILE
 
-## Company Overview
+## Client Overview
 
-Birografika MB is a label and print production company based in Subotica, Serbia, with over 60 years of experience since 1963. They manufacture recurring industrial labels (flexo, offset, digital) for bottled beverages, dairy, processed food, and other FMCG segments across Central Europe.
+**Company Name:** Birografika  
+**Industry:** Label & Print Manufacturing (Specialty Labels)  
+**Geographic Focus:** Europe  
 
-- **Industry:** Label & Print Production
-- **Location:** Subotica, Serbia
-- **Website:** https://birografika.rs
-- **Experience:** 60+ years (since 1963)
+## Business Model
 
-## Primary Services
+Specialized label and print manufacturer focusing on **pressure-sensitive labels, roll labels, and specialty packaging** for FMCG, food, beverage, and cosmetics brands across Europe.
 
-- Flexo printing (UV Flexo, Mark Andy equipment)
-- Offset printing (large-run capability)
-- Digital printing
-- Specialized in recurring industrial labels
+**Primary Capabilities:**
+- Offset printing
+- Lamination
+- Die-cutting
+- Embossing
+- Specialty finishing
+- Full pre-press support
 
-## Equipment & Capabilities
+**Certifications:**
+- ISO certified
+- FSC certified
 
-- UV Flexo production
-- MPS EFC 430 (8 units, cold foil, lamination)
-- Grafotronic SCF 350 (die-cutting machine)
-- Rotoflex (automatic label cutting and inspection, VLI 250)
+## Target Industries & Customers
 
-## Materials Processed
+**Primary Industries:**
+- Food & Beverage (FMCG)
+- Cosmetics & Personal Care
+- Wellness & Supplements
+- Premium Retail
 
-Paper, OPP/BOPP, PP, PE, Duplex films, Triplex films
+**Secondary Markets:**
+- Branding Agencies
+- Packaging Agencies
+- Design Studios
 
-## Quality Standards & Certifications
+**Geographic Focus:**
+- Primarily European market
 
-- ISO 9001:2015 (Quality Management)
-- ISO 14001:2015 (Environmental Management)
-- ISO 45001:2018 (Occupational Health & Safety)
-- HACCP (Food Safety)
-- FSC Certified (Sustainable Sourcing)
-- SEDEX Audited (Ethical Supply Chain)
+## Customer Profile
 
-**Quality management policy:** April 2025
+**Primary Decision-Makers:**
+- Procurement Managers / Purchasing Directors
+- Packaging Development Managers / Packaging Engineers
+- Supply Chain & Operations Managers
+- CEO/Owners & Managing Directors
+- Brand Managers
+- Quality/Design Managers
 
-## Public Customer References
+## Value Proposition
 
-- Neoplanta (food/oils)
-- Pionir (confectionery)
-- Imlek (dairy)
-- Fruvita (beverages)
-- Premier Aqua (bottled water)
-- Tigar Tires (industrial)
-- Nectar (food/beverage)
+### For Operational/Technical Buyers (TIER 1-3)
+- **Cost efficiency:** Competitive label sourcing without compromising quality
+- **Production breadth:** Multi-SKU label programmes and variations
+- **Quality consistency:** ISO and FSC certifications
+- **Shorter lead times:** European-based manufacturing
+- **Technical partnership:** Specification development and pre-press support
 
----
+### For Strategic/Brand Buyers (TIER 4-6)
+- **Reliable European partner:** Consistent quality and delivery
+- **Brand support:** Design and pre-press guidance for label excellence
+- **Competitive economics:** Nearshore production advantages
+- **Long-term stability:** Proven manufacturing track record
+- **Programme coordination:** Support for multi-product label portfolios
 
-## Target Geography (4-Wave Rollout)
+## Key Differentiators
 
-### Wave 1: Nearby Tests
-**Countries:** Slovenia, Croatia, Hungary
-**Rationale:** Lower shipping, shorter lead time, culturally similar buyers
-
-### Wave 2: Strategic Scale
-**Countries:** Austria, Germany
-**Rationale:** High FMCG volume, cost-conscious, nearshore advantage
-
-### Wave 3: Expansion
-**Countries:** Czechia, Slovakia, Romania
-**Rationale:** CEE expansion markets
-
-### Wave 4: DACH Extension
-**Countries:** Switzerland
-**Rationale:** Premium FMCG segment, nearshore alternative to higher-cost local production
-
----
-
-## Company Size Targets
-
-### CORE: 50-500 Employees
-- Revenue: EUR 10-150M
-- Buyer Profile: Dedicated packaging buyer or packaging-aware procurement
-
-### SELECTIVE SMALL: 20-49 Employees
-- Revenue: EUR 3-10M
-- Buyer Profile: Owner/CEO is primary buyer
-
-### SELECTIVE LARGE: 501-2,000+ Employees
-- Revenue: EUR 150-500M+
-- Context: Second-source or cost-benchmarking only
+1. **European-Based Manufacturing** - Local production with shorter lead times
+2. **Niche Label Expertise** - Specialized in pressure-sensitive and roll labels for FMCG
+3. **Quality Certifications** - ISO and FSC certified for premium and sustainable brands
+4. **Design-Focused Support** - Pre-press and artwork assistance for brand presentation
+5. **Competitive Economics** - Cost-effective label production without quality compromise
 
 ---
 
-## Primary Industries (A-Tier)
+## EMAIL SEQUENCE STRATEGY
 
-- **A1:** Bottled water, juices, soft drinks, other beverages
-- **A2:** Dairy (milk, yogurt, kefir), edible oils
-- **A3:** Processed food, confectionery, snacks
+**Sequence Structure:** Position-based
 
-## Additional Segments (B-Tier)
+**Number of Sequences:** 2
 
-- Cosmetics & personal care
-- Household & industrial chemicals
-- Automotive fluids & lubricants
-- Wine & spirits
-- Pharmaceutical & nutraceuticals
+**Sequence A: Operational & Technical**
+- **Targets:** Procurement Manager (TIER 1), Packaging Manager (TIER 2), Supply Chain Director (TIER 3)
+- **Messaging Angle:** Evaluate Birografika as your label sourcing partner: cost comparison, technical feasibility, production capacity, delivery reliability, quality consistency (ISO/FSC certified)
+- **Decision Criteria:** These personas evaluate based on specs, cost, capacity, technical fit, and delivery reliability
+- **Email Focus:** "Here's how we meet your label requirements"
+- **Key Message:** Cost savings, capacity, technical breadth, European advantage
 
----
+**Sequence B: Strategic & Brand**
+- **Targets:** CEO/Owner/Managing Director (TIER 4), Brand Manager (TIER 5), Quality/Design Manager (TIER 6)
+- **Messaging Angle:** Partner with Birografika for premium brand labels: reliable European manufacturer, consistent quality, competitive economics, quality certifications, design and programme support
+- **Decision Criteria:** These personas evaluate based on partnership fit, long-term reliability, brand alignment, and quality standards
+- **Email Focus:** "Here's why we're the right long-term partner"
+- **Key Message:** Reliability, partnership, quality, brand fit, design support
 
-## Business Models
+**Rationale:**
+Birografika serves a niche market (FMCG labels) but the **procurement journey is fundamentally similar across all customer types**. The buying decision differs by ROLE, not by industry:
+- Operational buyers care about specs, cost, capacity, delivery
+- Strategic buyers care about partnership, reliability, brand fit, and long-term relationship
 
-- Own-brand manufacturers (primary target)
-- Private-label manufacturers
-- Contract manufacturers (co-packers)
-
----
-
-## Buyer Personas (6 Tiers)
-
-### TIER 1 (PRIMARY): Procurement/Purchasing
-- **Titles:** Head of Procurement, Purchasing Manager, Strategic Buyer, Packaging Buyer
-- **Role:** Default buyer for repeat contracts, supplier qualification, cost benchmarking
-- **Messaging:** Landed-cost comparison, nearshore advantage, competitive Serbian economics, second-source evaluation
-
-### TIER 2 (PRIMARY CHAMPION): Packaging
-- **Titles:** Packaging Manager, Head of Packaging, Packaging Development Manager
-- **Role:** Specifications, material changes, label-line compatibility, trials
-- **Messaging:** Technical capabilities, finish consistency, quality certifications, artwork support
-
-### TIER 3 (PRIMARY/CO-BUYER): Supply Chain/Operations/Production
-- **Titles:** Supply Chain Manager, Operations Director, Production Manager, Plant Manager
-- **Role:** Capacity planning, replenishment, delivery coordination, line expansion
-- **Messaging:** Repeat supply reliability, capacity planning, nearshore logistics advantage
-
-### TIER 4 (PRIMARY IN SMALLER FIRMS): Leadership
-- **Titles:** CEO, Managing Director, Owner, Founder
-- **Role:** Primary buyer when no dedicated packaging role exists
-- **Messaging:** Production partnership, reliable European partner, competitive economics
-
-### TIER 5 (SECONDARY): Marketing/Product
-- **Titles:** Marketing Manager, Brand Manager, Product Manager
-- **Role:** Rebrand champion, new SKU launch, specification briefing
-- **Messaging:** Rebrand support, new product launches, specification coordination
-
-### TIER 6 (TERTIARY): Quality/Technical
-- **Titles:** Quality Manager, QA Manager, Technical Manager
-- **Role:** Documentation, trials, application approval
-- **Messaging:** Quality documentation, trials, standards consistency
+Therefore, **Position-based (2 sequences)** is more effective than Industry-based, allowing unified messaging across the FMCG space with role-specific positioning.
 
 ---
 
-## Buying Signals
+## Success Metrics
 
-### TIER 1 (Strongest)
-- Active sourcing event (RFQ, supplier search, cost benchmarking)
-- Dated launch plan (Q3 2026 rebrand, H2 2026 new line)
-- New production line or filling equipment announced
-
-### TIER 2 (Moderate)
-- Market or channel expansion (new geography, retail entry)
-- Hiring for packaging, supply chain, or production roles
-- Sustainability or packaging redesign initiative
-
-### TIER 3 (Baseline)
-- Recurring volume evidence (many SKUs, consistent production)
-- Established FMCG brand with retail distribution
+- **Response Rate Target:** 8-12% (B2B manufacturing average)
+- **Meeting Booking Rate:** 2-4% of emails sent
+- **Conversion to Qualified Lead:** 40-60% of booked meetings
+- **Sales Cycle:** 4-8 weeks (operational focus)
 
 ---
 
-## Exclusion Criteria
+## Notes
 
-Do NOT target:
-- Direct competitors (other label printers)
-- Packaging brokers or agencies
-- Pure resellers or distributors
-- Services-only companies (no manufactured products)
-- Pre-launch brands with no existing volume
-
----
-
-## Email Sequence Strategy
-
-**Recommendation:** 2-3 sequences based on buyer tier
-
-- **Sequence A:** Procurement/Purchasing (cost, economics, supply reliability)
-- **Sequence B:** Packaging/Technical (quality, capabilities, specifications)
-- **Sequence C:** Operations/Leadership (partnership, volume, capacity)
-
-All sequences emphasize:
-- European-based production
-- Nearshore competitive advantage
-- Quality certifications & compliance
-- Recurring supply reliability
+- Strong initial focus on TIER 1-3 (procurement and operations)
+- Use TIER 4-5 for relationship building with decision influencers
+- Label specialization is a differentiator - emphasize technical label expertise in Sequence A
+- Consider A/B testing industry-specific subject lines (Food vs Cosmetics) within sequences
