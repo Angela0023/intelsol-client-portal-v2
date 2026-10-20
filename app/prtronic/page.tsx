@@ -105,7 +105,7 @@ export default function PRTronicPage() {
             </div>
           </div>
           <a
-            href="https://prtronic.si"
+            href="https://www.prtronic.at/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-indigo-600 hover:underline inline-block"
@@ -176,8 +176,8 @@ function OverviewTab() {
             <InfoCard label="Markets" value="Slovenia, Austria, Germany, Switzerland (DACH)" />
             <InfoCard label="Target Segment" value="OEMs, System Integrators, Multi-Site Operators" />
             <InfoCard label="Website" value={
-              <a href="https://prtronic.si" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                prtronic.si
+              <a href="https://www.prtronic.at/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                www.prtronic.at
               </a>
             } />
           </div>
