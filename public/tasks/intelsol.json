@@ -7,7 +7,8 @@
     "dueDate": "2026-07-31",
     "order": 0,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1785432278082_ukybt1y",
@@ -17,7 +18,8 @@
     "dueDate": "2026-08-03",
     "order": 1,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1786710057291_x4y1fwn",
@@ -27,7 +29,8 @@
     "dueDate": "2026-08-17",
     "order": 2,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1788783761633_w0iuobz",
@@ -37,7 +40,8 @@
     "dueDate": "2026-09-07",
     "order": 3,
     "comments": [],
-    "client": "mbedtronix"
+    "client": "mbedtronix",
+    "completedAt": null
   },
   {
     "id": "task_1788783871548_2pz3xp3",
@@ -47,7 +51,8 @@
     "dueDate": "2026-09-07",
     "order": 4,
     "comments": [],
-    "client": "plantryx"
+    "client": "plantryx",
+    "completedAt": null
   },
   {
     "id": "task_1788879315669_kfaxsik",
@@ -64,7 +69,8 @@
         "createdBy": "Admin"
       }
     ],
-    "client": "adsigner"
+    "client": "adsigner",
+    "completedAt": null
   },
   {
     "id": "task_1788181182966_tprteu6",
@@ -74,7 +80,8 @@
     "dueDate": "2026-09-07",
     "order": 6,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1786009825593_zyv2gsl",
@@ -509,7 +516,8 @@
     "dueDate": "2026-10-06",
     "order": 8,
     "comments": [],
-    "client": "eblissai"
+    "client": "eblissai",
+    "completedAt": null
   },
   {
     "id": "task_1791302510503_d5d091t",
@@ -563,7 +571,8 @@
     "dueDate": "2026-10-07",
     "order": 13,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": null
   },
   {
     "id": "task_1791896414328_pid1wr6",
@@ -584,7 +593,8 @@
     "dueDate": "2026-10-19",
     "order": 15,
     "comments": [],
-    "client": "zen2fit"
+    "client": "zen2fit",
+    "completedAt": null
   },
   {
     "id": "task_1791922030941_0r3aa63",
@@ -594,7 +604,8 @@
     "dueDate": "2026-10-19",
     "order": 16,
     "comments": [],
-    "client": "zen2fit"
+    "client": "zen2fit",
+    "completedAt": null
   },
   {
     "id": "task_1791922042128_ke615mz",
@@ -604,7 +615,8 @@
     "dueDate": "2026-10-19",
     "order": 17,
     "comments": [],
-    "client": "zen2fit"
+    "client": "zen2fit",
+    "completedAt": null
   },
   {
     "id": "task_1792063655898_q5fw6ym",
@@ -614,7 +626,8 @@
     "dueDate": "2026-10-15",
     "order": 18,
     "comments": [],
-    "client": "morefromfood"
+    "client": "morefromfood",
+    "completedAt": null
   },
   {
     "id": "task_1792328400000_sel001",
@@ -635,7 +648,8 @@
     "dueDate": "2026-10-16",
     "order": 20,
     "comments": [],
-    "client": "morefromfood"
+    "client": "morefromfood",
+    "completedAt": null
   },
   {
     "id": "task_1792328400002_ccr001",
@@ -645,7 +659,8 @@
     "dueDate": "2026-10-16",
     "order": 21,
     "comments": [],
-    "client": "clevercraft"
+    "client": "clevercraft",
+    "completedAt": null
   },
   {
     "id": "task_1792328400003_int001",
@@ -655,7 +670,8 @@
     "dueDate": "2026-10-16",
     "order": 22,
     "comments": [],
-    "client": "intera"
+    "client": "intera",
+    "completedAt": null
   },
   {
     "id": "task_1792328400004_ebl001",
@@ -665,17 +681,19 @@
     "dueDate": "2026-10-16",
     "order": 23,
     "comments": [],
-    "client": "eblissai"
+    "client": "eblissai",
+    "completedAt": null
   },
   {
     "id": "task_1792328400005_stj001",
-    "description": "Leads for Stojkov (at least 500)",
+    "description": "Leads for Stojkov (at least 200)",
     "assignedTo": "Filip",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-16",
     "order": 24,
     "comments": [],
-    "client": "stojkov"
+    "client": "stojkov",
+    "completedAt": "2026-10-20T08:39:05.965Z"
   },
   {
     "id": "task_1792328400006_bir001",
@@ -685,17 +703,19 @@
     "dueDate": "2026-10-16",
     "order": 25,
     "comments": [],
-    "client": "birografika"
+    "client": "birografika",
+    "completedAt": null
   },
   {
     "id": "task_1792328400007_prt001",
-    "description": "Leads for PR Tronic (at least 500)",
+    "description": "Leads for PR Tronic (at least 500) - Sales Nav",
     "assignedTo": "Filip",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-16",
     "order": 26,
     "comments": [],
-    "client": "prtronic"
+    "client": "prtronic",
+    "completedAt": "2026-10-20T08:38:39.656Z"
   },
   {
     "id": "task_1792149869535_9cnxjtk",
@@ -705,7 +725,8 @@
     "dueDate": "2026-10-16",
     "order": 27,
     "comments": [],
-    "client": null
+    "client": null,
+    "completedAt": null
   },
   {
     "id": "task_1792150722322_bukb9v5",
