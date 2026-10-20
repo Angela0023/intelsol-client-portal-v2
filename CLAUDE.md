@@ -29,6 +29,54 @@
 
 ---
 
+### 0. CLIENT DATA LOCATION — SINGLE SOURCE OF TRUTH (CRITICAL)
+
+**HARD RULE:** When accessing any client data (ICP, sequences, filters, documentation, etc.), ALWAYS use this repository and NEVER ask which repo to check.
+
+**The Rule:**
+- **ALL client data is in:** `https://github.com/Angela0023/intelsol-client-portal-v2`
+- **Specific location:** `/clients/[client-name]/`
+- **Clients in this repo:** bit, eblissai, intelsol, mbedtronix, mountaindrop, peoplefocus, tslab, xpose
+- **NO OTHER REPOSITORIES** contain client data (client-matej-lead-gen is obsolete)
+
+**What To Do When Asked to "Pull Client Data":**
+
+1. ✅ **ALWAYS start here:** Clone/pull from `https://github.com/Angela0023/intelsol-client-portal-v2`
+2. ✅ **ALWAYS look in:** `clients/[client-name]/` folder
+3. ✅ **NEVER ask:** "Which repository?" or "Where should I look?"
+4. ✅ **NEVER check:** Any other repository (client-matej-lead-gen, etc.)
+
+**What's in `/clients/[client-name]/`:**
+- `ICP-PROFILE.md` or `icp-documentation.md` — Client's ICP definition
+- `sequences/` folder — Email sequence definitions
+- `*.md` files — ICP profiles, SOPs, call notes, analysis docs
+- `*.csv` files — Lead lists, company databases, Clay filter prompts
+- `clay-filters/` folder — Clay Filter Prompts and Positions CSVs
+
+**Examples of Correct Behavior:**
+
+| Request | Action |
+|---------|--------|
+| "Pull PRTronic ICP" | Clone repo → Read `clients/prtronic/` (already in portal page.tsx) |
+| "Get mbedtronix sequences" | Clone repo → Read `clients/mbedtronix/sequences/` |
+| "Find xpose documentation" | Clone repo → Read `clients/xpose/*.md` |
+| "Show me intelsol lead lists" | Clone repo → Read `clients/intelsol/*.csv` |
+
+**Examples of WRONG Behavior (NEVER DO THIS):**
+
+❌ "I can't find PRTronic, should I check another repo?"
+❌ "Let me search client-matej-lead-gen for the sequences"
+❌ "Which repository has the client data?"
+❌ "Should I clone a different repo?"
+
+**Why This Rule Exists:**
+
+On 2026-10-20, confusion between two separate repositories (client-matej-lead-gen and intelsol-client-portal-v2) caused wasted time searching for client data in the wrong location. ALL repositories have been consolidated into `intelsol-client-portal-v2/clients/` folder. This ends the confusion permanently.
+
+**Rule Established:** 2026-10-20
+
+---
+
 ### 0A. UPDATING DASHBOARD CONTENT — The Correct Workflow (CRITICAL)
 
 **RULE:** When updating dashboard content (sequences, tasks, campaigns, etc.), follow this EXACT workflow. NEVER hallucinate deployment problems.
