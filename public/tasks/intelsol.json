@@ -738,5 +738,25 @@
     "comments": [],
     "client": "integraplast",
     "completedAt": "2026-10-16"
+  },
+  {
+    "id": "task_1792485585552_pezrm2i",
+    "description": "Moe Leads for PRTronic - CLAY",
+    "assignedTo": "Filip",
+    "status": "pending",
+    "dueDate": "2026-10-26",
+    "order": 28,
+    "comments": [],
+    "client": "intelsol"
+  },
+  {
+    "id": "task_1792485628469_3c6j9jx",
+    "description": "Leads for Stojkov (at least 500 more) - not industry specific (but demand for printing)",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-22",
+    "order": 29,
+    "comments": [],
+    "client": "intelsol"
   }
 ]
