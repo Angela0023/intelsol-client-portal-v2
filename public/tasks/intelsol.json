@@ -11,17 +11,6 @@
     "completedAt": null
   },
   {
-    "id": "task_1785432278082_ukybt1y",
-    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
-    "assignedTo": "Frosina",
-    "status": "pending",
-    "dueDate": "2026-08-03",
-    "order": 1,
-    "comments": [],
-    "client": "intelsol",
-    "completedAt": null
-  },
-  {
     "id": "task_1786710057291_x4y1fwn",
     "description": "Add variations in 3rd sequence: Intelsol | Test Variations",
     "assignedTo": "Matej",
@@ -745,6 +734,16 @@
     "status": "pending",
     "dueDate": "2026-10-22",
     "order": 29,
+    "comments": [],
+    "client": "intelsol"
+  },
+  {
+    "id": "task_1792485726405_m5d47um",
+    "description": "Run Email Guard deliverability test on all Intelsol mailboxes",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-11-02",
+    "order": 30,
     "comments": [],
     "client": "intelsol"
   }
