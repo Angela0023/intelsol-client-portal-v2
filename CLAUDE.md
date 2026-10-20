@@ -31,49 +31,74 @@
 
 ### 0. CLIENT DATA LOCATION — SINGLE SOURCE OF TRUTH (CRITICAL)
 
-**HARD RULE:** When accessing any client data (ICP, sequences, filters, documentation, etc.), ALWAYS use this repository and NEVER ask which repo to check.
+**HARD RULE:** When accessing ANY client data, pull immediately from `https://github.com/Angela0023/intelsol-client-portal-v2` and look up the client in the map below. NEVER ask clarifying questions about location or repository.
 
-**The Rule:**
+**The Golden Rule:**
 - **ALL client data is in:** `https://github.com/Angela0023/intelsol-client-portal-v2`
-- **Specific location:** `/clients/[client-name]/`
-- **Clients in this repo:** bit, eblissai, intelsol, mbedtronix, mountaindrop, peoplefocus, tslab, xpose
+- **Two types of clients exist** (see mapping below)
+- **Know which type, know where to look** — NO QUESTIONS ASKED
 - **NO OTHER REPOSITORIES** contain client data (client-matej-lead-gen is obsolete)
 
-**What To Do When Asked to "Pull Client Data":**
+---
 
-1. ✅ **ALWAYS start here:** Clone/pull from `https://github.com/Angela0023/intelsol-client-portal-v2`
-2. ✅ **ALWAYS look in:** `clients/[client-name]/` folder
-3. ✅ **NEVER ask:** "Which repository?" or "Where should I look?"
-4. ✅ **NEVER check:** Any other repository (client-matej-lead-gen, etc.)
+## CLIENT DATA LOCATION MAP (REQUIRED — MEMORIZE THIS)
 
-**What's in `/clients/[client-name]/`:**
-- `ICP-PROFILE.md` or `icp-documentation.md` — Client's ICP definition
-- `sequences/` folder — Email sequence definitions
-- `*.md` files — ICP profiles, SOPs, call notes, analysis docs
-- `*.csv` files — Lead lists, company databases, Clay filter prompts
-- `clay-filters/` folder — Clay Filter Prompts and Positions CSVs
+**TYPE A: Full Documentation Clients (8 clients)**
+These have complete documentation in `/clients/[client-name]/`
 
-**Examples of Correct Behavior:**
+| Client | ICP Location | Sequences | Lead Lists |
+|--------|--------------|-----------|-----------|
+| **bit** | `clients/bit/*.md` | `clients/bit/sequences/` | `clients/bit/*.csv` |
+| **eblissai** | `clients/eblissai/ICP-SUMMARY.md` | `clients/eblissai/sequences/` | `clients/eblissai/*.csv` |
+| **intelsol** | `clients/intelsol/icp-documentation.md` | `clients/intelsol/` | `clients/intelsol/*.csv` |
+| **mbedtronix** | `clients/mbedtronix/ICP-PROFILE.md` | `clients/mbedtronix/sequences/` | N/A |
+| **mountaindrop** | `clients/mountaindrop/*.md` | Portal only | N/A |
+| **peoplefocus** | `clients/peoplefocus/icp-brief.md` | `clients/peoplefocus/` | `clients/peoplefocus/*.csv` |
+| **tslab** | `clients/tslab/ICP-documentation.md` | `clients/tslab/` | `clients/tslab/*.csv` |
+| **xpose** | `clients/xpose/*.md` | `clients/xpose/` | `clients/xpose/*.csv` |
 
-| Request | Action |
-|---------|--------|
-| "Pull PRTronic ICP" | Clone repo → Read `clients/prtronic/` (already in portal page.tsx) |
-| "Get mbedtronix sequences" | Clone repo → Read `clients/mbedtronix/sequences/` |
-| "Find xpose documentation" | Clone repo → Read `clients/xpose/*.md` |
-| "Show me intelsol lead lists" | Clone repo → Read `clients/intelsol/*.csv` |
+**TYPE B: Portal-Only Clients (19 clients)**
+These exist only in the portal. Pull data from:
+- ICP/sequences: `/app/[client]/page.tsx` (static content + SequencesTab)
+- Sequences JSON: `/public/sequences/[client].json`
+- Campaigns: `/public/campaigns/[client].json`
 
-**Examples of WRONG Behavior (NEVER DO THIS):**
+`adsigner`, `beeit`, `birografika`, `bmevents`, `clevercraft`, `demo`, `dhm`, `integraplast`, `intera`, `morefromfood`, `pacia`, `panorate`, `plantryx`, `prtronic`, `selekcija`, `seyens`, `stojkov`, `wulf`, `zen2fit`
 
-❌ "I can't find PRTronic, should I check another repo?"
-❌ "Let me search client-matej-lead-gen for the sequences"
-❌ "Which repository has the client data?"
-❌ "Should I clone a different repo?"
+---
+
+**WHEN YOU SEE A REQUEST, USE THIS FLOWCHART (DO NOT SKIP):**
+
+```
+1. Is the client in TYPE A (8 clients)? YES → `/clients/[client-name]/`
+2. Is the client in TYPE B (19 clients)? YES → `/app/[client]/` + `/public/sequences/[client].json`
+3. Is the client NOT in either list? → It doesn't exist yet, create `/clients/[client-name]/`
+```
+
+**EXAMPLES OF IMMEDIATE ACTION (NO QUESTIONS):**
+
+| Request | Client Type | Action | Location |
+|---------|-----------|--------|----------|
+| "Pull mbedtronix ICP" | A | Read file | `clients/mbedtronix/ICP-PROFILE.md` |
+| "Get birografika sequences" | B | Read file + JSON | `/app/birografika/page.tsx` + `/public/sequences/birografika.json` |
+| "Show intelsol lead lists" | A | Read files | `clients/intelsol/List-1-Target-Now.csv` |
+| "Pull prtronic email sequences" | B | Read JSON | `/public/sequences/prtronic.json` |
+| "Get xpose ICP" | A | Read file | `clients/xpose/xpose-overview.md` |
+
+**WRONG BEHAVIOR (NEVER DO THIS):**
+
+❌ "Which repository has Birogafika's data?"
+❌ "Should I look in /clients/ or /app/?"
+❌ "Can you clarify where Birografika's ICP is stored?"
+❌ "I can't find the client, where should I search?"
 
 **Why This Rule Exists:**
 
-On 2026-10-20, confusion between two separate repositories (client-matej-lead-gen and intelsol-client-portal-v2) caused wasted time searching for client data in the wrong location. ALL repositories have been consolidated into `intelsol-client-portal-v2/clients/` folder. This ends the confusion permanently.
+On 2026-10-20, another Claude instance asked 3 clarifying questions about where to find Birogafika data instead of immediately pulling from the correct location (portal: `/app/birografika/` + `/public/sequences/birografika.json`). This wasted user time and violates the "pull immediately" requirement. The map above eliminates all ambiguity.
 
 **Rule Established:** 2026-10-20
+
+**Last Updated:** 2026-10-20
 
 ---
 
