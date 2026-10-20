@@ -1,55 +1,82 @@
 [
   {
-    "id": "sequence-a-operational-technical",
-    "tierName": "SEQUENCE A: Operational & Technical",
+    "id": "sequence-a-procurement-purchasing",
+    "tierName": "SEQUENCE A: Procurement & Purchasing",
     "tierColor": "blue",
-    "targetPersonas": "Procurement Manager, Packaging Manager, Supply Chain Director - (TIER 1+2+3)",
-    "messagingAngle": "Evaluate Birografika as your label sourcing partner: cost comparison, technical feasibility, production capacity, delivery reliability, quality consistency (ISO/FSC certified)",
+    "targetPersonas": "Procurement Manager, Head of Purchasing, Strategic Buyer, Packaging Buyer",
+    "messagingAngle": "Cost comparison, nearshore economics, landed-cost advantage, supply reliability, second-source evaluation",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Label production for {{Company}}",
-        "body": "{{FirstName}} -\n\nI work with European consumer brands and manufacturers on label and packaging sourcing for recurring FMCG needs.\n\nBirografika is a label and print specialist (based in [location], [employees], [facility size]) with capabilities across offset printing, lamination, die-cutting, embossing, and finishing.\n\nFor procurement, packaging, and supply chain teams, the key value is often:\n- Landed-cost comparison for recurring label specifications\n- Production capacity and technical breadth for multi-SKU programmes\n- European quality standards (ISO certified) with shorter lead times\n\nWould it be useful to compare production options for one recurring label specification?\n\nBest,\n[Sender Name]"
+        "subject": "Label sourcing evaluation for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with FMCG and beverage manufacturers on recurring label sourcing.\n\nBirografika is a European label printer (Subotica, Serbia - 60+ years) with offset, flexo, and digital capabilities serving brands across CEE and DACH markets.\n\nFor procurement teams, the value is typically:\n- Landed-cost comparison vs current suppliers (nearshore economics)\n- Production capacity for multi-SKU programmes\n- Quality certifications (ISO 9001, ISO 14001, FSC, SEDEX audited)\n- Reliable delivery with shorter lead times\n\nWould it be useful to compare costs and lead times for one recurring label specification?\n\nBest,\n[Sender Name]"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Label production for {{Company}}",
-        "body": "{{FirstName}} -\n\nFollowing up on label sourcing options.\n\nMost procurement and supply chain teams we work with are evaluating:\n- Second-source alternatives for existing suppliers\n- European options for cost and lead time management\n- Technical partners who understand label specifications and delivery coordination\n\nBirografika's production breadth covers pressure-sensitive labels, roll labels, specialty finishing with full pre-press support - serving brands across Europe.\n\nWould a 20-minute call to review your technical requirements and sourcing priorities make sense?\n\nBest,\n[Sender Name]"
+        "subject": "Re: Label sourcing evaluation for {{Company}} - cost comparison",
+        "body": "{{FirstName}} -\n\nFollowing up on competitive label sourcing.\n\nMost procurement teams we work with are evaluating:\n- Second-source alternatives for cost benchmarking\n- European options to balance cost and supply reliability\n- Suppliers with documented quality standards (ISO, FSC, SEDEX)\n- Partners who can handle multi-site or SKU portfolio sourcing\n\nBirografika handles recurring label volumes for food, beverage, dairy, and consumer brands across Slovenia, Croatia, Hungary, Austria, and Germany.\n\nWould a quick call to review your current sourcing and technical requirements make sense?\n\nBest,\n[Sender Name]"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Last note - label sourcing evaluation",
-        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers or managing specifications for recurring label needs, happy to share how we approach technical and commercial evaluation.\n\nNo obligation, just a straightforward review of production capabilities, quality standards, and sourcing economics for your specifications.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+        "subject": "Last note - label supplier evaluation",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers or managing costs for recurring label needs, happy to share our pricing model and production capabilities.\n\nNo obligation, just a straightforward review of production options, cost structure, and how we manage delivery reliability for recurring volumes.\n\nLet me know if a quick conversation would be useful.\n\nBest,\n[Sender Name]"
       }
     ]
   },
   {
-    "id": "sequence-b-strategic-brand",
-    "tierName": "SEQUENCE B: Strategic & Brand",
-    "tierColor": "amber",
-    "targetPersonas": "CEO/Owner/Managing Director, Brand Manager, Quality/Design Manager - (TIER 4+5+6)",
-    "messagingAngle": "Partner with Birografika for premium brand labels: reliable European manufacturer, consistent quality, competitive economics, quality certifications, design and programme support",
+    "id": "sequence-b-packaging-technical",
+    "tierName": "SEQUENCE B: Packaging & Technical",
+    "tierColor": "green",
+    "targetPersonas": "Packaging Manager, Head of Packaging, Packaging Development Manager, Quality Manager",
+    "messagingAngle": "Technical capabilities, quality standards, production consistency, finish quality, specifications support, trials and approval",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Label production partner for {{Company}}",
-        "body": "{{FirstName}} -\n\nI'm reaching out because {{Company}} likely manages label sourcing or brand presentation for your product lines.\n\nBirografika is a label and print specialist (based in [location]) specializing in pressure-sensitive labels, roll labels, and specialty packaging for food, beverage, cosmetics, and FMCG brands across Europe.\n\nProduction capabilities: offset printing, lamination, die-cutting, embossing, specialty finishing. Quality certifications: ISO certified, FSC certified.\n\nFor brands and agencies: we work as a reliable European manufacturing partner with competitive economics and full design/pre-press support.\n\nWould it be useful to compare production options for one recurring label specification?\n\nBest,\n[Sender Name]"
+        "subject": "Label production capabilities for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with packaging and technical teams on label sourcing decisions.\n\nBirografika is a European label manufacturer with 60+ years in flexo, offset, and digital production. Key technical capabilities:\n- Flexo printing (UV, Mark Andy equipment)\n- Offset printing (large-run capability)\n- Die-cutting, lamination, cold foil, embossing\n- Materials: paper, OPP/BOPP, PP, PE, duplex/triplex films\n- Quality certifications: ISO 9001, ISO 14001, FSC certified, SEDEX audited\n\nFor technical teams, the value is consistent finish quality, full pre-press support, and reliable trial management.\n\nWould it be useful to discuss technical specifications and production options for your label requirements?\n\nBest,\n[Sender Name]"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Label production partner for {{Company}}",
-        "body": "{{FirstName}} -\n\nFollowing up on label production partnership.\n\nMost brand leaders and agency founders we work with are looking for:\n- Reliable European manufacturer they can trust long-term\n- Competitive economics without compromising on quality or brand fit\n- Production breadth and design support for evolving label needs\n\nBirografika's been manufacturing labels for [years]+ - serving brands and agencies across Europe with consistent quality and reliable delivery.\n\nWould a brief call to explore how we could support your brand label strategy make sense?\n\nBest,\n[Sender Name]"
+        "subject": "Re: Label production capabilities for {{Company}} - technical fit",
+        "body": "{{FirstName}} -\n\nFollowing up on technical label sourcing.\n\nPackaging and technical teams we work with are often focused on:\n- Production quality and finish consistency across runs\n- Supplier capability to handle material changes and specification complexity\n- Quality documentation and certifications (ISO, FSC, HACCP, SEDEX)\n- Responsive pre-press support and trial management\n- European supplier reliability for multi-site rollouts\n\nBirografika's equipped with modern equipment (MPS EFC 430, Grafotronic, Rotoflex inspection) and quality systems to support packaging requirements across your product portfolio.\n\nWould a technical review call to walk through capabilities and specifications make sense?\n\nBest,\n[Sender Name]"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Last note - label production partnership",
-        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label production partners or looking at European manufacturing options for your brand, happy to walk through our approach to label production and partnership.\n\nNo obligation, just a straightforward conversation about production capabilities, quality standards, and how we support brand label strategy.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+        "subject": "Last note - technical label partner evaluation",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers based on technical capabilities or managing specifications across product lines, happy to walk through our production process and quality systems.\n\nNo obligation, just a straightforward technical review of capabilities, material options, and how we support packaging development and trials.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
+      }
+    ]
+  },
+  {
+    "id": "sequence-c-operations-leadership",
+    "tierName": "SEQUENCE C: Operations & Leadership",
+    "tierColor": "purple",
+    "targetPersonas": "Supply Chain Manager, Operations Director, Production Manager, Plant Manager, CEO/Owner",
+    "messagingAngle": "Partnership and reliability, production capacity, recurring supply, nearshore logistics, business partnership, volume planning",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "European label partner for {{Company}}",
+        "body": "{{FirstName}} -\n\nI reach out to manufacturing and supply chain leaders about recurring label sourcing.\n\nBirografika is a European label printer based in Serbia (60+ years, family-owned) serving FMCG brands across food, beverage, dairy, and consumer goods markets.\n\nFor operations and leadership teams, the value is:\n- Reliable European manufacturing partner you can build with long-term\n- Production capacity for recurring multi-SKU volumes\n- Nearshore economics and logistics (short lead times to CEE/DACH markets)\n- Quality and compliance (ISO certified, FSC, SEDEX audited, HACCP)\n- Direct partnership without intermediaries\n\nWould it be useful to explore a supply partnership for your recurring label needs?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: European label partner for {{Company}} - partnership approach",
+        "body": "{{FirstName}} -\n\nFollowing up on label sourcing partnership.\n\nLeaders and operations teams we work with are typically looking for:\n- Manufacturing partner they can depend on for recurring volumes and growth\n- Competitive economics combined with quality and reliability\n- Direct relationship without middlemen or brokers\n- Flexibility to support seasonal volumes, multi-location rollouts, or portfolio changes\n- Partner with real production capacity and capability (not just trading)\n\nBirografika brings 60+ years of manufacturing expertise and capacity to handle beverage, dairy, food, and consumer brands across Europe - with commitment to long-term partnership.\n\nWould a conversation about supply planning and partnership structure make sense?\n\nBest,\n[Sender Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last note - label manufacturing partnership",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're managing label sourcing or looking at European manufacturing partners for recurring volumes, happy to discuss our approach to partnership and capacity planning.\n\nNo obligation, just a conversation about production capabilities, volume flexibility, and how we work with brands for long-term supply relationships.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
       }
     ]
   }
