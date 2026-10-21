@@ -45,6 +45,7 @@ const ALL_CLIENTS = [
   { id: 'mountaindrop', name: 'Mountaindrop' },
   { id: 'eblissai', name: 'eBliss AI' },
   { id: 'askit', name: 'ASKIT AIVaaS' },
+    { id: 'dukegroup', name: 'DukeGroup' },
   { id: 'zen2fit', name: 'Zen2fit' },
   { id: 'panorate', name: 'Panorate' },
   { id: 'mbedtronix', name: 'MBEDTRONIX' },

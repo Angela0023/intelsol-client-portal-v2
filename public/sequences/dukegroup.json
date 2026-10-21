@@ -1,0 +1,126 @@
+[
+  {
+    "id": "sequence-si-lead",
+    "name": "SI LEAD - Slovenia Hotel Leadership",
+    "campaign": "SI LEAD",
+    "country": "Slovenia",
+    "track": "Hotel Leadership",
+    "targetPersonas": "Hotel Owner, Director, General Manager",
+    "messagingAngle": "Hotel planning and tableware strategy with local supplier relationship",
+    "clayFilter": "Slovenia - Hotel Leadership",
+    "targetPositions": "Owner/Director/GM",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Tableware for {{CompanyName}}",
+        "body": "Hello {{FirstName}},\n\nDukeGroup helps hotels select professional tableware.\n\n{{VerifiedConnection}}\n\nAre you planning to replenish or refresh equipment for your F&B operation in the coming months?\n\nIf this is relevant, we suggest a brief conversation with Dusan about your needs and a suitable selection.\n\nIf a colleague manages this area, an introduction to the right person would be helpful.\n\nBest regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "RE: Tableware for {{CompanyName}} - planning timeline",
+        "body": "Hello {{FirstName}},\n\nFollowing up on our note about tableware and equipment refresh.\n\nMost hotel leaders we work with are evaluating:\n- Refresh options for current operations\n- Equipment for renovations or new restaurant concepts\n- Suppliers with quality focus and reliable service\n- Portfolio brands that match hotel positioning\n\nDukeGroup represents several professional brands suited to quality hotels in Slovenia.\n\nWould a brief discussion of your plans be useful? If a colleague manages this area, we'd appreciate the introduction.\n\nBest regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final note - DukeGroup professional tableware for {{CompanyName}}",
+        "body": "Hello {{FirstName}},\n\nFinal note: if you're evaluating tableware or planning equipment refresh, we'd welcome the opportunity to discuss your needs and suitable options.\n\nDukeGroup works with hotels across Slovenia and has established relationships with leading manufacturers.\n\nWould a short conversation with Dusan be helpful? Best regards,\nIntelsol for DukeGroup"
+      }
+    ]
+  },
+  {
+    "id": "sequence-si-fnb",
+    "name": "SI FNB - Slovenia F&B & Procurement",
+    "campaign": "SI FNB",
+    "country": "Slovenia",
+    "track": "F&B & Procurement",
+    "targetPersonas": "F&B Director, Chef, Procurement Manager",
+    "messagingAngle": "Equipment selection and purchasing process for restaurant operations",
+    "clayFilter": "Slovenia - F&B and Procurement",
+    "targetPositions": "F&B Director/Manager, Chef, Procurement Manager",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Equipment selection for {{CompanyName}} restaurant",
+        "body": "Hello {{FirstName}},\n\nWe would like to understand how {{CompanyName}} selects tableware and whether any replenishment is planned.\n\nDukeGroup represents FIGGJO, SERAX and other brands for professional use.\n\nWould a brief discussion of your needs be useful?\n\nIs selection managed locally or through group procurement?\n\nBest regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "RE: Equipment selection for {{CompanyName}} - purchasing process",
+        "body": "Hello {{FirstName}},\n\nFollowing up on equipment and tableware for {{CompanyName}}.\n\nMost F&B teams and procurement managers we work with focus on:\n- Professional quality and durability\n- Design fit with restaurant concept\n- Reliable suppliers with good service\n- Clear process for approval and ordering\n\nDukeGroup works directly with hotels across Slovenia on supplier relationships and equipment selection.\n\nWould it be helpful to discuss your current process and needs? We can also connect with your director if needed.\n\nBest regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last message - DukeGroup tableware and equipment for {{CompanyName}}",
+        "body": "Hello {{FirstName}},\n\nLast message: if you're planning any tableware or restaurant equipment refresh, we'd welcome a discussion about your needs and DukeGroup's options.\n\nBest regards,\nIntelsol for DukeGroup"
+      }
+    ]
+  },
+  {
+    "id": "sequence-sr-lead",
+    "name": "SR LEAD - Serbia Hotel Leadership",
+    "campaign": "SR LEAD",
+    "country": "Serbia",
+    "track": "Hotel Leadership",
+    "targetPersonas": "Hotel Owner, Manager, General Manager",
+    "messagingAngle": "Hotel planning and tableware strategy with local supplier relationship",
+    "clayFilter": "Serbia - Hotel Leadership",
+    "targetPositions": "Owner/Director/GM",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Tableware za {{CompanyName}}",
+        "body": "Dear {{FirstName}},\n\nDukeGroup helps hotels select professional tableware.\n\n{{VerifiedConnection}}\n\nAre you planning to replenish or renew equipment for your hotel restaurant in the coming months?\n\nIf the topic is relevant, we suggest a short conversation with Dusan about your needs and suitable options.\n\nIf a colleague handles this, we would appreciate the name of the responsible person.\n\nBest regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "RE: Tableware za {{CompanyName}} - planning timeline",
+        "body": "Dear {{FirstName}},\n\nFollowing up on our note about professional tableware for your hotel.\n\nMost hotel leaders we work with are evaluating:\n- Equipment refresh for current operations\n- Supplies for renovations or new concepts\n- Quality suppliers with reliable service\n- Professional brands for quality positioning\n\nDukeGroup works with several leading manufacturers and has presence across Serbia.\n\nWould a short discussion of your plans be helpful? Best regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Final note - DukeGroup za {{CompanyName}}",
+        "body": "Dear {{FirstName}},\n\nFinal note: if you're evaluating tableware or planning equipment refresh, we'd welcome the opportunity to discuss your needs and suitable options.\n\nBest regards,\nIntelsol for DukeGroup"
+      }
+    ]
+  },
+  {
+    "id": "sequence-sr-fnb",
+    "name": "SR FNB - Serbia F&B & Procurement",
+    "campaign": "SR FNB",
+    "country": "Serbia",
+    "track": "F&B & Procurement",
+    "targetPersonas": "F&B Manager, Chef, Procurement Lead",
+    "messagingAngle": "Equipment selection and purchasing process for restaurant operations",
+    "clayFilter": "Serbia - F&B and Procurement",
+    "targetPositions": "F&B Director/Manager, Chef, Procurement Manager",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Equipment za {{CompanyName}} restorana",
+        "body": "Dear {{FirstName}},\n\nWe would like to understand how {{CompanyName}} selects tableware and whether replenishment is planned.\n\nDukeGroup represents several brands for professional use, including FIGGJO and SERAX.\n\nWould a short conversation about your needs be useful?\n\nDo you manage selection and purchasing locally or through central procurement?\n\nBest regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "RE: Equipment za {{CompanyName}} - purchasing process",
+        "body": "Dear {{FirstName}},\n\nFollowing up on equipment and tableware for {{CompanyName}}.\n\nMost F&B teams and procurement managers we work with focus on:\n- Professional quality and durability for daily use\n- Design that fits your restaurant concept\n- Reliable suppliers with good support\n- Clear process for approval and ordering\n\nDukeGroup works with hotels across Serbia and has established supplier relationships.\n\nWould it be helpful to discuss your process and current needs? Best regards,\nIntelsol for DukeGroup"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Last message - DukeGroup equipment za {{CompanyName}}",
+        "body": "Dear {{FirstName}},\n\nLast message: if you're planning any tableware or equipment refresh, we'd welcome a discussion about your needs and DukeGroup's options.\n\nBest regards,\nIntelsol for DukeGroup"
+      }
+    ]
+  }
+]

@@ -43,6 +43,7 @@ const CLIENT_NAMES = {
   'mountaindrop': 'Mountaindrop',
   'eblissai': 'eBliss AI',
   'askit': 'ASKIT',
+  'dukegroup': 'DukeGroup',
   'zen2fit': 'Zen2fit',
   'panorate': 'Panorate',
   'mbedtronix': 'MBEDTRONIX',
