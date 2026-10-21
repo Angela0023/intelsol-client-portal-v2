@@ -46,6 +46,17 @@ const CLIENT_NAMES = {
   'panorate': 'Panorate',
   'mbedtronix': 'MBEDTRONIX',
   'prtronic': 'PRTronic',
+  'clevercraft': 'Clever Craft',
+  'morefromfood': 'MoreFromFood',
+  'intrixcrm': 'Intrix CRM',
+  'seyens': 'Seyens',
+  'integraplast': 'Integraplast',
+  'selekcija': 'Selekcija.hr',
+  'stojkov': 'Stojkov',
+  'birografika': 'Birografika MB',
+  'pacia': 'PACIA',
+  'dhm': 'DHM',
+  'bmevents': 'BM Events',
 };
 
 // Remove emoji from start of text
