@@ -172,8 +172,8 @@ export default function ClevercraftPage() {
               <CampaignsTabDynamic clientId="askit" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="askit" />}
-          {activeTab === 'tasks' && <TasksTab clientId="askit" defaultTasks={CLEVERCRAFT_DEFAULT_TASKS} />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="askit" clientName="ASKIT" />}
+          {activeTab === 'tasks' && <TasksTab clientId="askit" defaultTasks={[]} />}
         </div>
       </div>
     </ClientLayout>
