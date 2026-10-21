@@ -64,9 +64,34 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     const sequencesContent = new TextDecoder('utf-8').decode(decoded);
     const sequences = JSON.parse(sequencesContent);
 
+    // Get the last commit date for this file
+    let lastUpdated: string | null = null;
+    try {
+      const commitsResponse = await fetch(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/commits?path=${sequencesPath}&ref=${GITHUB_BRANCH}&per_page=1`,
+        {
+          headers: {
+            'Authorization': `token ${context.env.GITHUB_TOKEN}`,
+            'User-Agent': 'Intelsol-Portal'
+          }
+        }
+      );
+
+      if (commitsResponse.ok) {
+        const commits = await commitsResponse.json();
+        if (commits && commits.length > 0) {
+          lastUpdated = commits[0].commit.committer.date;
+        }
+      }
+    } catch (error) {
+      console.error('Failed to fetch commit date:', error);
+      // Continue anyway, lastUpdated will be null
+    }
+
     return new Response(JSON.stringify({
       success: true,
-      sequences
+      sequences,
+      lastUpdated
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json; charset=utf-8' }
