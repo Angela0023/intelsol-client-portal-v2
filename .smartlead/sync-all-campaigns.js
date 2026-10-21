@@ -42,6 +42,7 @@ const CLIENT_NAMES = {
   'plantryx': 'Plantryx',
   'mountaindrop': 'Mountaindrop',
   'eblissai': 'eBliss AI',
+  'askit': 'ASKIT',
   'zen2fit': 'Zen2fit',
   'panorate': 'Panorate',
   'mbedtronix': 'MBEDTRONIX',

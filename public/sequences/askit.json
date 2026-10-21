@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sequence-1",
+    "tierName": "AIVaaS Strategic Transformation",
+    "tierColor": "red",
+    "targetPersonas": "CEO, Managing Director, Owner - Strategic decision makers leading company AI transformation",
+    "messagingAngle": "Transform isolated AI pilots into aligned business strategy and measurable value creation",
+    "clayFilter": "Slovenia - Manufacturing & Logistics",
+    "targetPositions": "CEO, Managing Director, Owner, Founder",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "AI pilots delivering results? (honest question)",
+        "body": "Hi [FirstName],\n\nMost companies invest heavily in AI, yet many pilot projects never scale beyond isolated experiments.\n\nWe work with ambitious leaders at manufacturing and logistics companies to move from fragmented AI efforts to a coherent business strategy where AI creates measurable value.\n\nWould a brief conversation about where AI could strengthen your competitive position over the next 2-3 years be useful?\n\nBest regards,\nAlešs team at ASKIT"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "From scattered tools to connected strategy",
+        "body": "Hi [FirstName],\n\nThe gap between AI investment and business results usually comes down to one thing: strategy and organization haven't evolved with the technology.\n\nWe help leaders like you move from individual tool deployments to a process-first approach—where AI ambition aligns with organizational capability and measurable outcomes.\n\nWould you be open to a brief exploratory conversation?\n\nBest regards,\nAlešs team at ASKIT"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "How [Company] approach AI differently",
+        "body": "Hi [FirstName],\n\nWe've worked with leaders in your sector who asked the same question: \"How do we move beyond optimization to new forms of value?\"\n\nAIVaaS is our methodology for that journey—connecting business ambition, organizational design, and measurable ROI.\n\nWould a brief conversation about AI strategy be worth your time?\n\nBest regards,\nAlešs team at ASKIT"
+      },
+      {
+        "emailNumber": 4,
+        "type": "Follow-Up 2",
+        "subject": "Last one: AI strategy alignment",
+        "body": "Hi [FirstName],\n\nJust checking in—are strategic AI conversations on the agenda for your leadership team right now?\n\nIf not today, would there be a better time to explore this?\n\nBest regards,\nAlešs team at ASKIT"
+      }
+    ]
+  },
+  {
+    "id": "sequence-2",
+    "tierName": "Business Academy Leadership Development",
+    "tierColor": "orange",
+    "targetPersonas": "HR Director, CHRO, L&D Director - Learning and talent leaders driving organizational capability",
+    "messagingAngle": "Build shared business understanding of AI across leadership team to enable aligned decisions and cultural change",
+    "clayFilter": "Slovenia - Leadership Development Programs",
+    "targetPositions": "HR Director, CHRO, Head of HR, L&D Director, Head of Learning & Development",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "AI literacy for your leadership team?",
+        "body": "Hi [FirstName],\n\nWe're seeing a common challenge: leadership teams understand AI's potential but speak different languages about it. Strategy, operations, finance, HR—each has their own interpretation.\n\nThe Business Power of AI is an internal leadership academy that builds shared business understanding across your team.\n\nMay we send you a brief outline to see if it fits your development plans?\n\nBest regards,\nAlešs team at ASKIT"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "What the academy covers",
+        "body": "Hi [FirstName],\n\nThe Business Power of AI academy is designed for groups of 5+ leaders from different functions. It develops business judgment about AI—not technical training, but shared language for strategy and decisions.\n\nParticipants align on ambition, value creation, and accountability for AI adoption.\n\nWould this be relevant for your leadership team?\n\nBest regards,\nAlešs team at ASKIT"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Who is this built for?",
+        "body": "Hi [FirstName],\n\nThe academy works best when:\n- Leadership team is actively growing or reorganizing\n- You're piloting AI initiatives and need shared understanding\n- You want change capability that sticks\n\nDoes any of this match where you are now?\n\nBest regards,\nAlešs team at ASKIT"
+      },
+      {
+        "emailNumber": 4,
+        "type": "Follow-Up 2",
+        "subject": "Right person for this conversation?",
+        "body": "Hi [FirstName],\n\nOne last question: is leadership development and AI capability-building something you're exploring this year?\n\nIf so, would it make sense to talk about the academy? If not, is there someone else on your leadership team I should reach out to?\n\nBest regards,\nAlešs team at ASKIT"
+      }
+    ]
+  }
+]

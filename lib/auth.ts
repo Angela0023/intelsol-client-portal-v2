@@ -1,7 +1,7 @@
 // Simple authentication for client portal
 // In production, use proper authentication (NextAuth.js, Auth0, etc.)
 
-export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'birografika' | 'bmevents' | 'prtronic' | 'dhm' | 'morefromfood' | 'pacia' | 'selekcija' | 'intera' | 'seyens' | 'integraplast' | 'demo';
+export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'birografika' | 'bmevents' | 'prtronic' | 'dhm' | 'morefromfood' | 'pacia' | 'selekcija' | 'intera' | 'seyens' | 'integraplast' | 'askit' | 'demo';
 
 export type Assignee = 'Frosina' | 'Matej' | 'Filip';
 
@@ -32,6 +32,7 @@ export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   intera: 'CRM.Croatia.Serbia.2026',
   seyens: 'Seyens.Science.Viz.2026',
   integraplast: 'Integraplast.Injection.2026',
+  askit: 'ASKIT.Leads.42',
   demo: 'demo2026', // Demo dashboard for presentations
 };
 
@@ -62,6 +63,7 @@ export const CLIENT_ASSIGNEES: Record<ClientAccess, Assignee | null> = {
   intera: 'Matej',
   seyens: 'Frosina',
   integraplast: 'Frosina',
+  askit: 'Filip',
   demo: null,
 };
 
@@ -76,7 +78,7 @@ export function checkAdminAccess(password: string): boolean {
 export function getAllowedClients(password: string): ClientAccess[] {
   // Admin can access all
   if (checkAdminAccess(password)) {
-    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus', 'plantryx', 'adsigner', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'seyens', 'integraplast', 'demo'];
+    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus', 'plantryx', 'adsigner', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'seyens', 'integraplast', 'askit', 'demo'];
   }
 
   // Check individual client access

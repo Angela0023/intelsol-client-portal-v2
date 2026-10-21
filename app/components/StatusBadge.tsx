@@ -91,6 +91,7 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   plantryx: 'Onboarding',
   mountaindrop: 'Onboarding',
   eblissai: 'Onboarding',
+  askit: 'Onboarding',
   zen2fit: 'Onboarding',
   panorate: 'Onboarding',
   mbedtronix: 'Onboarding',

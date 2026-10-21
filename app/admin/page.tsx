@@ -29,7 +29,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -42,6 +42,7 @@ export default function AdminPage() {
         plantryx: 'Plantryx',
         mountaindrop: 'Mountaindrop',
         eblissai: 'eBlissAI',
+        askit: 'ASKIT AIVaaS',
         zen2fit: 'Zen2Fit',
         panorate: 'Panorate Media',
         mbedtronix: 'MBEDTRONIX',
