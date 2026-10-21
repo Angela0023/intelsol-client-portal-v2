@@ -55,6 +55,10 @@ const tierColors: Record<string, { bg: string; border: string; text: string; bad
   amber: { bg: 'bg-amber-50', border: 'border-amber-500', text: 'text-amber-900', badge: 'bg-amber-600' },
   purple: { bg: 'bg-purple-50', border: 'border-purple-500', text: 'text-purple-900', badge: 'bg-purple-600' },
   indigo: { bg: 'bg-indigo-50', border: 'border-indigo-500', text: 'text-indigo-900', badge: 'bg-indigo-600' },
+  emerald: { bg: 'bg-emerald-50', border: 'border-emerald-500', text: 'text-emerald-900', badge: 'bg-emerald-600' },
+  orange: { bg: 'bg-orange-50', border: 'border-orange-500', text: 'text-orange-900', badge: 'bg-orange-600' },
+  cyan: { bg: 'bg-cyan-50', border: 'border-cyan-500', text: 'text-cyan-900', badge: 'bg-cyan-600' },
+  yellow: { bg: 'bg-yellow-50', border: 'border-yellow-500', text: 'text-yellow-900', badge: 'bg-yellow-600' },
 };
 
 export default function SequencesTab({ clientId }: SequencesTabProps) {
@@ -317,6 +321,10 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                             <option value="amber">Amber</option>
                             <option value="purple">Purple</option>
                             <option value="indigo">Indigo</option>
+                            <option value="emerald">Emerald</option>
+                            <option value="orange">Orange</option>
+                            <option value="cyan">Cyan</option>
+                            <option value="yellow">Yellow</option>
                           </select>
                         </div>
                       </div>
