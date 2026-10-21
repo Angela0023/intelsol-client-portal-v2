@@ -771,5 +771,22 @@
     "comments": [],
     "client": "intelsol",
     "completedAt": "2026-10-21T09:33:32.384Z"
+  },
+  {
+    "id": "task_1792612856758_4xzpjbt",
+    "description": "Complete the task with this AI - lead corrections and enrichment ",
+    "assignedTo": "Frosina",
+    "status": "pending",
+    "dueDate": "2026-10-22",
+    "order": 32,
+    "comments": [
+      {
+        "id": "comment_1792612869777_j70dkph",
+        "text": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/FMfcgzQhWxZntkgKjNwcRpkPKBdVgptC",
+        "createdAt": "2026-10-21T20:01:09.777Z",
+        "createdBy": "Admin"
+      }
+    ],
+    "client": "eblissai"
   }
 ]
