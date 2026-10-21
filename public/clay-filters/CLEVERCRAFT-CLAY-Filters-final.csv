@@ -1,0 +1,163 @@
+Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt,Priority
+IT Channel - North America,IT distributor and VAR companies in North America including: (A) distributors selling through reseller networks (equipment, software licensing, managed services), (B) VARs (Value-Added Resellers) building solutions on vendor platforms, (C) Managed Service Providers selling to SMB and Enterprise. Company size: $100M - $5B revenue. Prioritize companies with: multi-vendor channel programs, complex partner ordering requirements, CRM/ERP implementations, or partner program changes. Search terms: distributor VAR MSP reseller channel,IT distributor North America,Value Added Reseller software,Managed Service Provider tech.,"IT Channel Distribution, VARs, Managed Services",North America,10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a platform for orchestrating complex partner experiences and digital channel operations.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is a pure software vendor or consultancy without multi-tier channel/partner operations
+2. Company sells only through direct sales without a reseller or channel partner ecosystem
+3. Company has fewer than $100M in revenue (too small for platform complexity)
+4. Company is outside North America and Europe (geographic mismatch)
+5. Company is a pure retailer or e-commerce player without B2B channel operations
+6. Company uses competitor solutions (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company operates a channel program with multiple tiers (distributors, resellers, VARs, MSPs)
+2. Company has $100M+ revenue and uses enterprise CRM/ERP systems (Salesforce, Dynamics, Oracle, SAP)
+3. Company is headquartered or operating in North America
+4. Evidence of channel complexity: multi-vendor program, complex ordering, dealer networks, or program changes
+5. Company has leadership roles for partner experience, digital channels, or sales operations
+6. No evidence of using competitor partner management platforms
+
+Base your decision on information found on company website, Partner Program page, Channel Program section, About Us, Investor Relations, and Careers sections.
+
+Return only: YES or NO",1
+IT Channel - Europe,IT distributor and VAR companies in Europe including: (A) distributors selling through reseller networks (equipment, software licensing, managed services), (B) VARs (Value-Added Resellers) building solutions on vendor platforms, (C) Managed Service Providers selling to SMB and Enterprise, (D) European regional distributors with multi-country operations. Company size: 100M EUR - 5B EUR revenue. Prioritize companies with: multi-vendor channel programs, portal modernization initiatives, CRM/ERP changes, or partner program restructuring. Search terms: distributor VAR MSP Europa,IT distributor Europe,distributeur revendeur,Managed Service Provider DACH,VAR solution provider UK France.,"IT Channel Distribution, VARs, Managed Services",Europe,10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a partner experience platform for complex channel operations.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is a pure software vendor or consultancy without multi-tier channel/partner operations
+2. Company sells only direct without a reseller or channel ecosystem
+3. Company has fewer than 100M EUR revenue (too small for platform)
+4. Company is outside Europe (unless multinational with European operations)
+5. Company is a pure retailer without B2B channel operations
+6. Company is already using competitor solutions (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company operates a channel program with multiple tiers (distributors, resellers, VARs, MSPs)
+2. Company has 100M+ EUR revenue, uses enterprise systems (Salesforce, Dynamics, Liferay, WebInfinity)
+3. Company is headquartered or operating in Europe (UK, Germany, France, DACH, Nordics, etc.)
+4. Evidence of channel complexity: multi-vendor programs, complex ordering, partner networks, or program changes
+5. Company has leadership roles for digital transformation, partner experience, or channel operations
+6. No evidence of using competitor partner management platforms
+
+Base your decision on company website, Partner Program, Channel section, About Us, Investor Relations, and Careers pages.
+
+Return only: YES or NO",1
+Equipment Manufacturers with Dealer Networks - North America,Equipment and industrial product manufacturers in North America selling through dealer and distributor networks including: (A) manufacturers with embedded systems, hardware, or complex products sold through dealers, (B) companies with multi-tier dealer networks (equipment, industrial controls, machinery), (C) manufacturers with configuration-based ordering through partners. Company size: $100M - $10B revenue. Prioritize: companies with dealer portal modernization needs, order complexity, configuration management, or multi-site dealer networks. Search terms: equipment manufacturer dealer network,industrial manufacturer distributor,dealer portal,hardware manufacturer partners,complex product configuration dealer.,"Equipment Manufacturing, Dealer Networks, OEM/Integrators",North America,10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a partner experience platform for dealers and complex channel operations.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is pure software or services without physical product manufacturing
+2. Company sells only direct without dealer or distributor networks
+3. Company has fewer than $100M revenue
+4. Company is outside North America and Europe
+5. Company manufactures only consumer products (not B2B)
+6. Company already uses competitor platforms (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company manufactures equipment or complex products with dealer/distributor sales channels
+2. Company has $100M+ revenue, uses enterprise CRM/ERP (Salesforce, Dynamics, Oracle, SAP)
+3. Company is headquartered or operating in North America
+4. Evidence of dealer channel complexity: dealer portal, order configuration, multi-site networks, or program changes
+5. Company has leadership in digital transformation, dealer operations, or sales operations
+6. Website shows dealer/partner section, order management features, or portal technology
+
+Base your decision on company website, Dealer Program, Products, Partner/Distributor pages, About Us, and Careers.
+
+Return only: YES or NO",2
+Equipment Manufacturers with Dealer Networks - Europe,Equipment manufacturers in Europe selling through dealer and distributor networks including: (A) manufacturers with embedded systems or industrial products sold through dealers, (B) companies with multi-tier dealer networks across European markets, (C) manufacturers with configuration-based ordering requirements. Company size: 100M EUR - 10B EUR revenue. Prioritize: companies with dealer modernization, order complexity, multi-location networks, or CRM/ERP changes. Search terms: Maschinenhersteller Vertriebsnetz,equipment manufacturer distributor Europa,industrial manufacturer dealer portal,construction equipment dealer,industrial equipment partner Europe.,"Equipment Manufacturing, Dealer Networks, OEM/Integrators",Europe,10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a partner experience platform for dealers and channel operations.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is pure software or services without physical product manufacturing
+2. Company sells only direct without dealer networks
+3. Company has fewer than 100M EUR revenue
+4. Company is outside Europe
+5. Company manufactures only consumer products (not B2B)
+6. Company is already using competitor platforms (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company manufactures equipment or industrial products with European dealer/distributor networks
+2. Company has 100M+ EUR revenue, uses enterprise systems (Salesforce, Dynamics, Liferay, SAP)
+3. Company is headquartered or operating in Europe
+4. Evidence of dealer complexity: dealer portal, order configuration, multi-site networks, or program changes
+5. Company has leadership in digital transformation, dealer operations, or channel operations
+6. Website shows dealer section, partner portal, order management, or partner program details
+
+Base your decision on company website, Dealer Program, Products, Partner pages, About Us, Investor Relations, and Careers.
+
+Return only: YES or NO",2
+Private Equity & Buy & Build Platforms - North America,PE-backed platforms and companies executing buy-and-build strategies in North America including: (A) PE portfolio companies consolidating acquired businesses, (B) PE platforms managing multiple acquired companies with different partner/dealer programs, (C) Roll-up companies integrating operations across businesses. Company size: Any (focus on PE backing + multi-business integration). Prioritize: companies mid-acquisition or post-acquisition integration, consolidating partner programs, or aligning operations. Search terms: private equity portfolio companies,buy and build platform,acquisition integration North America,PE-backed consolidation,portfolio company integration.,"Private Equity, Buy & Build, Portfolio Integration",North America,10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a partner experience platform for post-acquisition integration and consolidation.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is pure venture-backed startup (not PE-backed, not multi-business)
+2. Company is single-business operation without acquisition history or integration needs
+3. Company is pure financial services or investment firm
+4. Company is outside North America
+5. No evidence of partner/channel operations across portfolio businesses
+6. Company already using competitor solutions (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company is PE-backed OR has executed 2+ acquisitions in past 3 years
+2. Company operates multiple businesses or portfolio with different partner/channel programs
+3. Company is headquartered or operating in North America
+4. Evidence of integration work: recent acquisitions, portfolio consolidation, operational alignment
+5. Company has leadership for integration, operations, CIO, or portfolio management
+6. Evidence of partner/channel operations needing consolidation or alignment post-acquisition
+
+Base your decision on company website, About Us, Investor Relations (if PE-backed), Leadership team, Acquisitions/News, and Careers.
+
+Return only: YES or NO",1
+Private Equity & Buy & Build Platforms - Europe,PE-backed platforms and companies executing buy-and-build strategies in Europe including: (A) European PE portfolio companies consolidating acquired businesses, (B) PE platforms managing multiple companies with different partner/channel programs, (C) Roll-up companies integrating operations and partner programs. Company size: Any (focus on PE backing + integration). Prioritize: companies with acquisition integration needs, partner program consolidation, or operational alignment. Search terms: Private Equity Europa,Buyout platform Europe,Akquisitionsintegration,Mehrheitsbeteiligung Konsolidierung,PE-Plattform Geschäftszusammenschluss.,"Private Equity, Buy & Build, Portfolio Integration",Europe,10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a partner experience platform for post-acquisition integration.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company is pure venture-backed startup without PE backing or multiple businesses
+2. Company is single-business without acquisition history
+3. Company is pure financial services firm
+4. Company is outside Europe
+5. No evidence of partner/channel operations needing consolidation
+6. Company using competitor solutions (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company is PE-backed OR has executed 2+ acquisitions in past 3 years
+2. Company operates multiple portfolio businesses with different partner/channel programs
+3. Company is headquartered or operating in Europe
+4. Evidence of integration work: recent acquisitions, portfolio consolidation, operational alignment
+5. Company has leadership for integration, operations, CIO, or portfolio management
+6. Evidence of partner/channel operations needing consolidation post-acquisition
+
+Base your decision on company website, About Us, Investor Relations, Leadership, Acquisitions/News, and Careers.
+
+Return only: YES or NO",1
+Channel-Led Technology & Software Companies - Global,Large technology and software companies with complex channel/partner programs in North America and Europe including: (A) software vendors with multi-tier channel (distributors, VARs, integrators), (B) SaaS platforms sold through partners, (C) technology companies managing large partner ecosystems. Company size: $500M - $100B+ revenue. Prioritize: companies with partner portal modernization, multi-tier channel, partner program restructuring, or digital transformation. Search terms: software vendor partner program,SaaS channel partners,technology distributor,software VAR ecosystem,platform partner network.,"Software/SaaS, Channel-Led Technology, Platform Partners",Global (North America + Europe),10/21/2026,,"Review this company's website and public information to determine if they are a good fit for Clever Craft, a partner experience platform for managing complex channel ecosystems.
+
+Return ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company sells exclusively direct (no channel or partner program)
+2. Company has fewer than $500M revenue
+3. Company is outside North America and Europe
+4. Company is pure consulting or professional services
+5. Company already using competitor solutions (ZIFT, Impartner, Introw, ChannelScaler, Euler)
+6. Company partner program is nascent or minimal (fewer than 50 active partners)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company operates a complex, multi-tier channel program (100+ partners or more)
+2. Company has $500M+ revenue, uses enterprise systems (Salesforce, Dynamics, Liferay, WebInfinity)
+3. Company is headquartered or operating in North America or Europe
+4. Evidence of partner complexity: partner portal, partner program page, multi-tier structure, integrations
+5. Company has leadership for partner experience, partner programs, digital transformation, or channel operations
+6. No evidence of using competitor partner management platforms
+7. Documented partner ecosystem with partner resources, enablement, or program details
+
+Base your decision on company website, Partner Program page, Channel Partners section, Partner Resources, About Us, Investor Relations, and Careers.
+
+Return only: YES or NO",3

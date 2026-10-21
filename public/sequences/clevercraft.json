@@ -1,217 +1,82 @@
 [
   {
-    "id": "campaign-01-distributors-digital",
-    "tierName": "CAMPAIGN 01: IT Distributors - Digital & eCommerce",
+    "id": "sequence-a-partner-experience",
+    "tierName": "SEQUENCE A: Partner Experience & Digital Leaders",
     "tierColor": "blue",
-    "targetPersonas": "Director of eCommerce; Head of Digital; VP Digital Transformation; Head of Partner Portal; Web Platform Manager",
-    "messagingAngle": "Connect reseller ordering with product, pricing and order data across existing systems. Buying signal: Portal modernization, CRM or ERP change, or a verified acquisition.",
+    "targetPersonas": "Director of eCommerce; Head of Digital; VP Digital Transformation; VP Partner Experience; Director Partner Programs; Head of Partner Operations; Director Customer Experience",
+    "messagingAngle": "Modernize how partners/dealers buy and engage through unified digital platforms. Target companies modernizing partner portals, implementing CRM/ERP systems, or launching partner program changes.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Reseller ordering at {{company}}",
-        "body": "Hi {{first_name}},\n\nResellers need reliable pricing, availability and order status to buy through a portal. When those details sit in different systems, even a good portal can leave them calling your team for answers.\n\nClever Craft connects existing systems so resellers can do more themselves. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs making reseller ordering more self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Partner ordering and engagement at {{company}}",
+        "body": "Hi {{first_name}},\n\nWhen partners or dealers need product information, pricing, or order status, fragmented systems leave them calling your team for answers. That's lost time for them and extra work for you.\n\nClever Craft connects existing systems—order management, pricing, product data—into a unified partner experience. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners globally.\n\nIs modernizing how your partners interact with you a priority right now at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
-        "subject": "Re: Reseller ordering at {{company}}",
-        "body": "Hi {{first_name}},\n\nReturning to my note on reseller ordering. Is helping resellers get answers without contacting your team part of your portal plans, or is the focus elsewhere?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Re: Partner ordering and engagement at {{company}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on partner experience. Is the bigger need improving self-service access to information, streamlining order processes, or something else entirely?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
-        "subject": "Re: Reseller ordering at {{company}}",
-        "body": "Hi {{first_name}},\n\nA portal upgrade can also create extra work for content teams. At NetApp, Clever Craft helped automate partner portal content migration, with more than 22,000 assets migrated in the published case study.\n\nIs moving content a concern in your portal plans?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Re: Partner ordering and engagement at {{company}}",
+        "body": "Hi {{first_name}},\n\nPortal changes can also mean managing content in two places during transition. At NetApp, Clever Craft automated content migration with over 22,000 assets migrated in the published case study.\n\nWould simplifying content management during a platform change matter for your team?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
   {
-    "id": "campaign-02-distributors-operations",
-    "tierName": "CAMPAIGN 02: IT Distributors - Sales Operations",
+    "id": "sequence-b-operations",
+    "tierName": "SEQUENCE B: Operations & Workflow Leaders",
     "tierColor": "green",
-    "targetPersonas": "Director of Sales Operations; Order Management Manager; Quote Desk Manager; Bid Desk Manager; Special Pricing Manager; Deal Desk Manager",
-    "messagingAngle": "Structure non-standard reseller orders and reduce manual handoffs into existing order systems. Buying signal: Evidence of manual order intake, special pricing workflows or post-acquisition operational alignment.",
+    "targetPersonas": "Director of Sales Operations; Order Management Manager; Quote Desk Manager; Bid Desk Manager; Special Pricing Manager; Deal Desk Manager; Rebates & Claims Manager; Sales Administration Manager",
+    "messagingAngle": "Reduce manual order handling and quote delays by structuring non-standard requests before they reach the desk. Target companies with manual order intake, special pricing workflows, or post-acquisition operational alignment needs.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Orders that need manual attention",
-        "body": "Hi {{first_name}},\n\nOrders with special pricing or missing details can take several exchanges before the order desk has what it needs. That leaves less time for requests that actually need a commercial decision.\n\nClever Craft helps organize and automate these orders around existing systems. In a published Fortune 500 technology vendor case study, we report an 80% reduction in non-standard order processing time.\n\nAre these orders a significant source of manual work at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Orders and quotes that need manual attention",
+        "body": "Hi {{first_name}},\n\nOrders with missing details, special pricing, or non-standard configurations take multiple exchanges before your team has what it needs to quote. Each round of clarification delays the sale and ties up your desk.\n\nClever Craft helps structure these requests before they reach you—collecting required details upfront, validating configurations, organizing pricing information. In published enterprise case studies, we've delivered an 80% reduction in non-standard order processing time.\n\nAre incomplete or complex orders a significant source of delays at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
-        "subject": "Re: Orders that need manual attention",
-        "body": "Hi {{first_name}},\n\nFollowing up on orders that need manual attention. Is the bigger issue gathering the right details or getting approvals, or are neither causing much work for your team?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Re: Orders and quotes that need manual attention",
+        "body": "Hi {{first_name}},\n\nReturning to order complexity. Is the bigger bottleneck gathering missing information, getting approvals, or matching details to your records?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
-        "subject": "Re: Orders that need manual attention",
-        "body": "Hi {{first_name}},\n\nOne way to reduce back-and-forth is to catch missing details before an order reaches the desk. Your team can then focus on pricing decisions and genuine exceptions.\n\nWould getting more complete requests upfront make a meaningful difference?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Re: Orders and quotes that need manual attention",
+        "body": "Hi {{first_name}},\n\nClearer requests also protect specialist time. When technical teams have complete information upfront, they focus on configuration decisions instead of chasing basic details.\n\nWould better organized requests before review help your workflow?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
   {
-    "id": "campaign-03-distributors-partner",
-    "tierName": "CAMPAIGN 03: IT Distributors - Partner Experience",
+    "id": "sequence-c-integration",
+    "tierName": "SEQUENCE C: Integration & Post-M&A Leaders",
     "tierColor": "purple",
-    "targetPersonas": "VP Partner Experience; Director of Partner Programs; Head of Partner Operations; Partner Programs Manager",
-    "messagingAngle": "Connect reseller onboarding, registration and compliance workflows with program operations. Buying signal: Partner program change, new channel leadership, or onboarding process redesign.",
+    "targetPersonas": "Integration Director; Group CIO; Portfolio Operations Director; Operating Partner with integration responsibility; Chief Information Officer; VP Integration",
+    "messagingAngle": "Connect acquired businesses' partner and operational data while keeping core platforms in place. Target companies mid-acquisition or executing post-acquisition integration mandates.",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Reseller onboarding at {{company}}",
-        "body": "Hi {{first_name}},\n\nGetting a new reseller ready to trade can involve several teams, from registration and compliance to account setup. When the steps are disconnected, partners may need to chase updates before they can start.\n\nClever Craft has automated onboarding, compliance and registration in enterprise channel programs. Our team has built partner-facing systems across four enterprise vendor programs.\n\nIs making reseller onboarding easier to complete a priority for your team at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Connecting systems after {{company}} acquired {{acquired_company}}",
+        "body": "Hi {{first_name}},\n\nAfter an acquisition, integrating partner programs before ERP and CRM systems are aligned can leave teams checking orders, customers, or inventory in separate places.\n\nClever Craft builds connections around existing platforms—letting acquired businesses share operational information without full system consolidation. Our experience includes bringing data from four enterprise systems together, which is relevant to this kind of work.\n\nIs aligning partner and operational data across the businesses an immediate priority for {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
-        "subject": "Re: Reseller onboarding at {{company}}",
-        "body": "Hi {{first_name}},\n\nComing back to reseller onboarding. Is the priority helping partners complete the steps themselves, giving your team a clearer view of progress, or something else?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Re: Connecting systems after acquisition",
+        "body": "Hi {{first_name}},\n\nFollowing up on your acquisition integration. Is the immediate focus connecting information across the businesses or planning a wider system migration? Understanding the timing helps me know if we're relevant.\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
-        "subject": "Re: Reseller onboarding at {{company}}",
-        "body": "Hi {{first_name}},\n\nProgram changes can mean updating the same information in several places. Clever Craft has kept content and program data aligned across multiple environments from one source.\n\nDoes keeping reseller information current take much manual work from your team?\n\nBest,\n{{sender_name}}\nClever Craft"
-      }
-    ]
-  },
-  {
-    "id": "campaign-04-vars-digital",
-    "tierName": "CAMPAIGN 04: VARs & Solution Providers - Digital",
-    "tierColor": "amber",
-    "targetPersonas": "Head of Digital; Director of eCommerce; VP Digital Transformation; Web Platform Manager; Director of Customer Experience with portal ownership",
-    "messagingAngle": "Bring vendor data into the reseller's digital workflows while retaining existing platforms. Buying signal: Verified multi-vendor channel model, digital platform change, or acquisition; HPE or HP hardware resale strengthens fit.",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Vendor data in your sales portal",
-        "body": "Hi {{first_name}},\n\nFor a solution provider working with several vendors, keeping product and program information current can mean working across multiple portals. Bringing that information into your own sales portal can help customers find answers and give your team fewer places to check.\n\nClever Craft connects vendor data with existing platforms. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs this on the digital agenda at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 2,
-        "type": "First Follow Up",
-        "subject": "Re: Vendor data in your sales portal",
-        "body": "Hi {{first_name}},\n\nFollowing up on vendor information in your sales portal. Is bringing those sources together a current priority, or are you focused on a different part of the customer experience?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Additional Value Follow Up",
-        "subject": "Re: Vendor data in your sales portal",
-        "body": "Hi {{first_name}},\n\nYou could start with one vendor connection that saves your team repeated lookups, then expand from there. Clever Craft can build that connection around your current platforms.\n\nIs there one vendor data source you would most like to bring into your portal?\n\nBest,\n{{sender_name}}\nClever Craft"
-      }
-    ]
-  },
-  {
-    "id": "campaign-05-vars-operations",
-    "tierName": "CAMPAIGN 05: VARs & Solution Providers - Sales Ops",
-    "tierColor": "indigo",
-    "targetPersonas": "Director of Sales Operations; Deal Desk Manager; Quote Desk Manager; Special Pricing Manager; Rebates and Claims Manager",
-    "messagingAngle": "Reconcile vendor deal, pricing and order data with internal sales records. Buying signal: Verified deal-registration or pricing reconciliation work, manual quoting, or sales-system alignment after an acquisition.",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Vendor pricing and quote delays",
-        "body": "Hi {{first_name}},\n\nWhen a quote depends on vendor deal registration or special pricing, sales teams may need to check several records before they can send it. If the details do not match, the quote can wait while someone resolves the difference.\n\nClever Craft brings vendor data into existing sales processes. We have built partner-facing systems across four enterprise vendor programs, so we understand the vendor side of those exchanges.\n\nDoes checking vendor information regularly hold up quotes at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 2,
-        "type": "First Follow Up",
-        "subject": "Re: Vendor pricing and quote delays",
-        "body": "Hi {{first_name}},\n\nReturning to vendor information and quotes. Which needs more attention from your team: confirming pricing, checking deal registration, or matching the details to your own records?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Additional Value Follow Up",
-        "subject": "Re: Vendor pricing and quote delays",
-        "body": "Hi {{first_name}},\n\nA mismatch should not mean checking every record again. We can help bring the relevant vendor details together and flag differences for your team to review.\n\nWould identifying those differences earlier help your quote desk?\n\nBest,\n{{sender_name}}\nClever Craft"
-      }
-    ]
-  },
-  {
-    "id": "campaign-06-manufacturers-digital",
-    "tierName": "CAMPAIGN 06: Equipment Manufacturers - Digital",
-    "tierColor": "blue",
-    "targetPersonas": "Head of Digital; Director of eCommerce; VP Digital Transformation; Head of Dealer Portal; Web Platform Manager",
-    "messagingAngle": "Connect dealer self-service with existing product, pricing and business systems. Buying signal: Dealer portal modernization, CRM or ERP change, or digital channel investment.",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Dealer self-service at {{company}}",
-        "body": "Hi {{first_name}},\n\nDealers need product details, pricing and order updates to serve their customers. If the portal cannot provide those answers, they may still need to email or call your team.\n\nClever Craft connects existing systems to support more self-service. Our team has built partner-facing systems across four enterprise technology vendor programs, used by tens of thousands of channel partners. That channel experience is relevant to dealer portals too.\n\nIs expanding dealer self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 2,
-        "type": "First Follow Up",
-        "subject": "Re: Dealer self-service at {{company}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on dealer self-service. Is better access to product information, pricing or order updates a priority, or does the portal already cover what dealers need?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Additional Value Follow Up",
-        "subject": "Re: Dealer self-service at {{company}}",
-        "body": "Hi {{first_name}},\n\nPortal changes can also mean managing content in two places during the transition. At NetApp, Clever Craft automated content migration and synchronization across the old and new partner portals.\n\nWould keeping dealer information current during a portal change be a concern for your team?\n\nBest,\n{{sender_name}}\nClever Craft"
-      }
-    ]
-  },
-  {
-    "id": "campaign-07-manufacturers-operations",
-    "tierName": "CAMPAIGN 07: Equipment Manufacturers - Sales Ops",
-    "tierColor": "green",
-    "targetPersonas": "Director of Sales Operations; Order Management Manager; Quote Desk Manager; Bid Desk Manager; Configuration Specialist; Sales Administration Manager",
-    "messagingAngle": "Structure dealer configuration requests and quote handoffs before they reach the order system. Buying signal: Verified factory order desk handling custom configurations by email, manual quotes or operational systems change.",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Dealer requests before the quote",
-        "body": "Hi {{first_name}},\n\nA dealer's custom configuration request can reach the quote desk before all the options and commercial details are clear. Each clarification adds another exchange before the team can prepare a quote.\n\nClever Craft helps structure non-standard order requests around existing systems. In enterprise channel environments, our delivered systems have processed $1B in order value annually for five consecutive years.\n\nAre incomplete dealer requests a recurring source of delays at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 2,
-        "type": "First Follow Up",
-        "subject": "Re: Dealer requests before the quote",
-        "body": "Hi {{first_name}},\n\nReturning to dealer configuration requests. Is gathering missing information taking much of the quote desk's time, or do requests usually arrive ready for review?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Additional Value Follow Up",
-        "subject": "Re: Dealer requests before the quote",
-        "body": "Hi {{first_name}},\n\nClearer requests can also protect engineering time. Collecting the required details upfront lets specialists focus on configuration decisions instead of chasing basic information.\n\nWould better information before the technical review help your team?\n\nBest,\n{{sender_name}}\nClever Craft"
-      }
-    ]
-  },
-  {
-    "id": "campaign-08-private-equity",
-    "tierName": "CAMPAIGN 08: Private Equity & Rollups - Integration",
-    "tierColor": "purple",
-    "targetPersonas": "Integration Director; Head of Digital Transformation; Group CIO; Portfolio Operations Director; Operating Partner with integration responsibility",
-    "messagingAngle": "Connect acquired businesses' data and workflows while core platforms remain in place. Buying signal: Confirmed acquisition or buy-and-build integration mandate. Prioritize the operating group over the fund unless the fund owns execution.",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Connecting systems after {{acquisition_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing {{acquisition_name}}, your integration plan may need the businesses to share information before their ERP and CRM systems are aligned. That can leave teams checking orders, customers or stock in separate places.\n\nClever Craft builds connections around existing platforms. Our experience includes bringing data structures from four separate enterprise systems together, which is relevant to this kind of work.\n\nIs sharing operational information across the businesses an immediate priority for {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 2,
-        "type": "First Follow Up",
-        "subject": "Re: Connecting systems after {{acquisition_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on {{acquisition_name}}. Is the immediate focus connecting information across the businesses or planning a wider system change? That would help me understand whether our approach is relevant.\n\nBest,\n{{sender_name}}\nClever Craft"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Additional Value Follow Up",
-        "subject": "Re: Connecting systems after {{acquisition_name}}",
-        "body": "Hi {{first_name}},\n\nThe first step could be one shared business need, such as a group view of orders, while local teams keep using their current systems. That gives the integration a focused starting point.\n\nWhich information would be most useful to share first?\n\nBest,\n{{sender_name}}\nClever Craft"
+        "subject": "Re: Connecting systems after acquisition",
+        "body": "Hi {{first_name}},\n\nThe first step could be one shared business need—like a group view of orders or partner performance—while local teams keep using their current systems. That gives integration a focused starting point.\n\nWhich information would be most useful to align first?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   }
