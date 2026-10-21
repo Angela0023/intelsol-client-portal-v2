@@ -1,251 +1,140 @@
 [
   {
-    "id": "sales-director",
-    "tierName": "PRIMARY: Sales Director/Commercial Director",
+    "id": "company-director",
+    "tierName": "Direktor podjetja in lastnik",
     "tierColor": "blue",
-    "targetPersonas": "Sales Director, Commercial Director, Head of Sales",
-    "messagingAngle": "Owns pipeline, quotations and team adoption - needs visibility of opportunities and next actions",
-    "languages": ["en", "hr", "sr"],
-    "defaultLanguage": "en",
-    "translations": {
-      "en": {
-        "tierName": "PRIMARY: Sales Director/Commercial Director",
-        "messagingAngle": "Owns pipeline, quotations and team adoption - needs visibility of opportunities and next actions",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Initial Outreach",
+    "targetPersonas": "Direktor podjetja, Lastnik, CEO",
+    "messagingAngle": "Pregled nad prodajo in vizibilnost upravljanja",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Prvo sporočilo",
+        "subject": "Sales visibility at {{company}}",
+        "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you currently keep track of open quotations and your sales team's next steps.\n\nIntrix CRM helps companies bring customer information, quotations and sales activities together. This gives management a clearer view of sales and helps the team follow up on open opportunities at the right time.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\nMatej Gostisa",
+        "translations": {
+          "slovenian": {
+            "subject": "Pregled nad prodajo v {{company}}",
+            "body": "Spoštovani {{first_name}},\n\npišem vam, ker me zanima, kako imate v podjetju urejen pregled nad odprtimi ponudbami in naslednjimi koraki prodajne ekipe.\n\nZ Intrix CRM podjetjem pomagamo povezati podatke o strankah, ponudbah in prodajnih aktivnostih. Tako ima vodstvo jasnejši pregled nad prodajo, ekipa pa lažje sledi odprtim priložnostim in pravočasno naredi naslednji korak.\n\nBi vam ustrezal kratek pogovor o tem?\n\nLep pozdrav,\nMatej Gostisa"
+          },
+          "english": {
             "subject": "Sales visibility at {{company}}",
             "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you currently keep track of open quotations and your sales team's next steps.\n\nIntrix CRM helps companies bring customer information, quotations and sales activities together. This gives management a clearer view of sales and helps the team follow up on open opportunities at the right time.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 2,
-            "type": "Follow-Up 1",
+          "croatian": {
+            "subject": "Pregled prodaje u tvrtki {{company}}",
+            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svojoj tvrtki pratite otvorene ponude i sljedeće korake prodajnog tima.\n\nUz Intrix CRM pomažemo tvrtkama povezati podatke o klijentima, ponudama i prodajnim aktivnostima. Tako uprava ima jasniji pregled prodaje, a tim lakše prati otvorene prilike i pravodobno poduzima sljedeći korak.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\nMatej Gostisa"
+          }
+        }
+      },
+      {
+        "emailNumber": 2,
+        "type": "Prvi opomnik",
+        "subject": "Re: Sales visibility at {{company}}",
+        "body": "Dear {{first_name}},\n\nI recently wrote to you about sales visibility at your company.\n\nIntrix lets you see which quotations are open, what has been agreed with customers and who is responsible for the next step—all in one place. This means less time gathering updates from colleagues and less chance of a sales opportunity being left without follow-up.\n\nIf this is relevant for your team, I'd be happy to show you how it works in practice on a brief call.\n\nBest regards,\nMatej Gostisa",
+        "translations": {
+          "slovenian": {
+            "subject": "Re: Pregled nad prodajo v {{company}}",
+            "body": "Spoštovani {{first_name}},\n\npred kratkim sem vam pisal glede pregleda nad prodajo v vašem podjetju.\n\nIntrix omogoča, da na enem mestu vidite, katere ponudbe so odprte, kaj je bilo dogovorjeno s strankami in kdo je odgovoren za naslednji korak. Tako je manj zbiranja informacij pri sodelavcih in manj možnosti, da kakšna prodajna priložnost ostane brez nadaljnje obravnave.\n\nČe je to pri vas aktualna tema, bi vam na kratkem klicu z veseljem predstavil, kako to deluje v praksi.\n\nLep pozdrav,\nMatej Gostisa"
+          },
+          "english": {
             "subject": "Re: Sales visibility at {{company}}",
             "body": "Dear {{first_name}},\n\nI recently wrote to you about sales visibility at your company.\n\nIntrix lets you see which quotations are open, what has been agreed with customers and who is responsible for the next step—all in one place. This means less time gathering updates from colleagues and less chance of a sales opportunity being left without follow-up.\n\nIf this is relevant for your team, I'd be happy to show you how it works in practice on a brief call.\n\nBest regards,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 3,
-            "type": "Follow-Up 2",
-            "subject": "Re: Sales visibility at {{company}}",
-            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving visibility into sales and customer information is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa"
-          }
-        ]
-      },
-      "hr": {
-        "tierName": "PRIMARNO: Direktor prodaje/Komercialni direktor",
-        "messagingAngle": "Vlada pipelineom, ponudama i prihvatanjem tima - trebam vidljivost mogućnosti i sljedećih koraka",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Inicijalni kontakt",
-            "subject": "Pregled prodaje u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u vašoj tvrtki pratite otvorene ponude i sljedeće korake prodajnog tima.\n\nUz Intrix CRM pomažemo tvrtkama povezati podatke o klijentima, ponudama i prodajnim aktivnostima. Tako uprava ima jasniji pregled prodaje, a tim lakše prati otvorene prilike i pravodobno poduzima sljedeći korak.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 2,
-            "type": "Prva opomena",
+          "croatian": {
             "subject": "Re: Pregled prodaje u tvrtki {{company}}",
             "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o pregledu prodaje u vašoj tvrtki.\n\nIntrix omogućuje da na jednom mjestu vidite koje su ponude otvorene, što je dogovoreno s klijentima i tko je odgovoran za sljedeći korak. To znači manje prikupljanja informacija od kolega i manju mogućnost da neka prodajna prilika ostane bez daljnjih aktivnosti.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcionira u praksi.\n\nLijep pozdrav,\nMatej Gostisa"
+          }
+        }
+      },
+      {
+        "emailNumber": 3,
+        "type": "Zadnje sporočilo",
+        "subject": "Re: Sales visibility at {{company}}",
+        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving visibility into sales and customer information is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa",
+        "translations": {
+          "slovenian": {
+            "subject": "Re: Pregled nad prodajo v {{company}}",
+            "body": "Spoštovani {{first_name}},\n\nše enkrat se oglašam, da preverim, ali je boljši pregled nad prodajo in informacijami o strankah trenutno za vas aktualna tema.\n\nČe je, se lahko dogovorimo za kratek pogovor. Če to področje pri vas vodi kdo drug, bom hvaležen za usmeritev na pravo osebo.\n\nČe trenutno ni prioriteta, popolnoma razumem.\n\nLep pozdrav,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 3,
-            "type": "Zadnja poruka",
+          "english": {
+            "subject": "Re: Sales visibility at {{company}}",
+            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving visibility into sales and customer information is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa"
+          },
+          "croatian": {
             "subject": "Re: Pregled prodaje u tvrtki {{company}}",
             "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio je li bolji pregled prodaje i informacija o klijentima trenutačno aktualna tema za vašu tvrtku.\n\nAko jest, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\nMatej Gostisa"
           }
-        ]
-      },
-      "sr": {
-        "tierName": "PRIMARNO: Direktor prodaje/Komerciјalni direktor",
-        "messagingAngle": "Upravlja pipelaјnom, ponudama i prihvatanjem tima - trebam vidljivost mogućnosti i sledećih koraka",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Inicijalni kontakt",
-            "subject": "Pregled prodaje u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u vašoj kompaniji pratite otvorene ponude i sledeće korake prodajnog tima.\n\nUz Intrix CRM pomažemo kompanijama povezati podatke o klijentima, ponudama i prodajnim aktivnostima. Tako uprava ima jasniji pregled prodaje, a tim lakše prati otvorene prilike i pravovremeno poduzima sledeći korak.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 2,
-            "type": "Prva napomena",
-            "subject": "Re: Pregled prodaje u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o pregledu prodaje u vašoj kompaniji.\n\nIntrix omogućava da na jednom mestu vidite koje su ponude otvorene, šta je dogovoreno sa klijentima i ko je odgovoran za sledeći korak. To znači manje prikupljanja informacija od kolega i manju mogućnost da neka prodajna prilika ostane bez daljih aktivnosti.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcioniše u praksi.\n\nLep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 3,
-            "type": "Poslednja poruka",
-            "subject": "Re: Pregled prodaje u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih proverio da li je bolji pregled prodaje i informacija o klijentima trenutno aktualna tema za vašu kompaniju.\n\nAko jeste, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran neko drugi, bio bih zahvalan što ćete me uputiti na pravu osobu.\n\nAko vam to trenutno nije prioritet, potpuno razumem.\n\nLep pozdrav,\nMatej Gostisa"
-          }
-        ]
+        }
       }
-    }
+    ]
   },
   {
-    "id": "managing-director",
-    "tierName": "PRIMARY: Managing Director/CEO",
-    "tierColor": "blue",
-    "targetPersonas": "Managing Director, Owner, CEO",
-    "messagingAngle": "Budget sponsor, needs commercial visibility and less dependence on individual knowledge",
-    "languages": ["en", "hr", "sr"],
-    "defaultLanguage": "en",
-    "translations": {
-      "en": {
-        "tierName": "PRIMARY: Managing Director/CEO",
-        "messagingAngle": "Budget sponsor, needs commercial visibility and less dependence on individual knowledge",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Initial Outreach",
-            "subject": "Sales visibility at {{company}}",
-            "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you currently keep track of open quotations and your sales team's next steps.\n\nIntrix CRM helps companies bring customer information, quotations and sales activities together. This gives management a clearer view of sales and helps the team follow up on open opportunities at the right time.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 2,
-            "type": "Follow-Up 1",
-            "subject": "Re: Sales visibility at {{company}}",
-            "body": "Dear {{first_name}},\n\nI recently wrote to you about sales visibility at your company.\n\nIntrix lets you see which quotations are open, what has been agreed with customers and who is responsible for the next step—all in one place. This means less time gathering updates from colleagues and less chance of a sales opportunity being left without follow-up.\n\nIf this is relevant for your team, I'd be happy to show you how it works in practice on a brief call.\n\nBest regards,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 3,
-            "type": "Follow-Up 2",
-            "subject": "Re: Sales visibility at {{company}}",
-            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving visibility into sales and customer information is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa"
-          }
-        ]
-      },
-      "hr": {
-        "tierName": "PRIMARNO: Direktor tvrtke/CEO",
-        "messagingAngle": "Budžetski sponzor, trebam komercijalnu vidljivost i manju ovisnost o pojedinačnom znanju",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Inicijalni kontakt",
-            "subject": "Pregled prodaje u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u vašoj tvrtki pratite otvorene ponude i sljedeće korake prodajnog tima.\n\nUz Intrix CRM pomažemo tvrtkama povezati podatke o klijentima, ponudama i prodajnim aktivnostima. Tako uprava ima jasniji pregled prodaje, a tim lakše prati otvorene prilike i pravodobno poduzima sljedeći korak.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 2,
-            "type": "Prva opomena",
-            "subject": "Re: Pregled prodaje u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o pregledu prodaje u vašoj tvrtki.\n\nIntrix omogućuje da na jednom mjestu vidite koje su ponude otvorene, što je dogovoreno s klijentima i tko je odgovoran za sljedeći korak. To znači manje prikupljanja informacija od kolega i manju mogućnost da neka prodajna prilika ostane bez daljnjih aktivnosti.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcionira u praksi.\n\nLijep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 3,
-            "type": "Zadnja poruka",
-            "subject": "Re: Pregled prodaje u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio je li bolji pregled prodaje i informacija o klijentima trenutačno aktualna tema za vašu tvrtku.\n\nAko jest, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\nMatej Gostisa"
-          }
-        ]
-      },
-      "sr": {
-        "tierName": "PRIMARNO: Direktor kompanije/CEO",
-        "messagingAngle": "Budžetski sponzor, trebam komerciјalnu vidljivost i manju zavisnost od pojedinačnog znanja",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Inicijalni kontakt",
-            "subject": "Pregled prodaje u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u vašoj kompaniji pratite otvorene ponude i sledeće korake prodajnog tima.\n\nUz Intrix CRM pomažemo kompanijama povezati podatke o klijentima, ponudama i prodajnim aktivnostima. Tako uprava ima jasniji pregled prodaje, a tim lakše prati otvorene prilike i pravovremeno poduzima sledeći korak.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 2,
-            "type": "Prva napomena",
-            "subject": "Re: Pregled prodaje u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o pregledu prodaje u vašoj kompaniji.\n\nIntrix omogućava da na jednom mestu vidite koje su ponude otvorene, šta je dogovoreno sa klijentima i ko je odgovoran za sledeći korak. To znači manje prikupljanja informacija od kolega i manju mogućnost da neka prodajna prilika ostane bez daljih aktivnosti.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcioniše u praksi.\n\nLep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 3,
-            "type": "Poslednja poruka",
-            "subject": "Re: Pregled prodaje u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih proverio da li je bolji pregled prodaje i informacija o klijentima trenutno aktualna tema za vašu kompaniju.\n\nAko jeste, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran neko drugi, bio bih zahvalan što ćete me uputiti na pravu osobu.\n\nAko vam to trenutno nije prioritet, potpuno razumem.\n\nLep pozdrav,\nMatej Gostisa"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "sales-representative",
-    "tierName": "SECONDARY: Sales Representative/Account Manager",
+    "id": "sales-manager",
+    "tierName": "Vodja prodaje in skrbnik strank",
     "tierColor": "green",
-    "targetPersonas": "Sales Representative, Account Manager, Key Account Manager",
-    "messagingAngle": "Practical user and champion - needs organized customer records and quotation tracking",
-    "languages": ["en", "hr", "sr"],
-    "defaultLanguage": "en",
-    "translations": {
-      "en": {
-        "tierName": "SECONDARY: Sales Representative/Account Manager",
-        "messagingAngle": "Practical user and champion - needs organized customer records and quotation tracking",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Initial Outreach",
+    "targetPersonas": "Vodja prodaje, Upravitelj računa, Skrbnik strank",
+    "messagingAngle": "Praktični korisnik - potrebna organizirana evidencija i praćenje ponuda",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Prvo sporočilo",
+        "subject": "Tracking quotations and customer activity at {{company}}",
+        "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you keep track of open quotations, customer agreements and upcoming sales activities in your day-to-day work.\n\nIntrix CRM helps sales teams bring this information together in one place. This means less searching through emails and separate records, making it easier to follow up on open opportunities and get back to customers at the right time.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\nMatej Gostisa",
+        "translations": {
+          "slovenian": {
+            "subject": "Spremljanje ponudb in strank v {{company}}",
+            "body": "Spoštovani {{first_name}},\n\npišem vam, ker me zanima, kako pri svojem delu spremljate odprte ponudbe, dogovore s strankami in naslednje prodajne aktivnosti.\n\nZ Intrix CRM pomagamo prodajnim ekipam zbrati te informacije na enem mestu. Tako je manj iskanja po e-pošti in različnih evidencah, lažje pa je slediti odprtim priložnostim in se pravočasno odzvati strankam.\n\nBi vam ustrezal kratek pogovor o tem?\n\nLep pozdrav,\nMatej Gostisa"
+          },
+          "english": {
             "subject": "Tracking quotations and customer activity at {{company}}",
             "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you keep track of open quotations, customer agreements and upcoming sales activities in your day-to-day work.\n\nIntrix CRM helps sales teams bring this information together in one place. This means less searching through emails and separate records, making it easier to follow up on open opportunities and get back to customers at the right time.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 2,
-            "type": "Follow-Up 1",
+          "croatian": {
+            "subject": "Praćenje ponuda i aktivnosti s klijentima u tvrtki {{company}}",
+            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svakodnevnom radu pratite otvorene ponude, dogovore s klijentima i sljedeće prodajne aktivnosti.\n\nUz Intrix CRM pomažemo prodajnim timovima objediniti te informacije na jednom mjestu. Tako je manje pretraživanja e-pošte i različitih evidencija, a lakše je pratiti otvorene prilike i pravodobno se javiti klijentima.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\nMatej Gostisa"
+          }
+        }
+      },
+      {
+        "emailNumber": 2,
+        "type": "Prvi opomnik",
+        "subject": "Re: Tracking quotations and customer activity at {{company}}",
+        "body": "Dear {{first_name}},\n\nI recently wrote to you about tracking quotations and customer activity.\n\nIntrix makes it easy to check what was last agreed with a customer, which quotation is still open and when to follow up. Colleagues can also access this information when taking over an account or covering for someone.\n\nIf this is relevant for your team, I'd be happy to show you how it works in practice on a brief call.\n\nBest regards,\nMatej Gostisa",
+        "translations": {
+          "slovenian": {
+            "subject": "Re: Spremljanje ponudb in strank v {{company}}",
+            "body": "Spoštovani {{first_name}},\n\npred kratkim sem vam pisal glede spremljanja ponudb in aktivnosti pri strankah.\n\nIntrix omogoča, da hitro preverite, kaj je bilo s stranko nazadnje dogovorjeno, katera ponudba je še odprta in kdaj je čas za ponoven stik. Te informacije so dostopne tudi sodelavcem, kadar kdo prevzame stranko ali nadomešča kolega.\n\nČe je to pri vas aktualna tema, bi vam na kratkem klicu z veseljem predstavil, kako to deluje v praksi.\n\nLep pozdrav,\nMatej Gostisa"
+          },
+          "english": {
             "subject": "Re: Tracking quotations and customer activity at {{company}}",
             "body": "Dear {{first_name}},\n\nI recently wrote to you about tracking quotations and customer activity.\n\nIntrix makes it easy to check what was last agreed with a customer, which quotation is still open and when to follow up. Colleagues can also access this information when taking over an account or covering for someone.\n\nIf this is relevant for your team, I'd be happy to show you how it works in practice on a brief call.\n\nBest regards,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 3,
-            "type": "Follow-Up 2",
-            "subject": "Re: Tracking quotations and customer activity at {{company}}",
-            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether making quotations and customer agreements easier to track is currently relevant for your team.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa"
-          }
-        ]
-      },
-      "hr": {
-        "tierName": "SEKUNDARNO: Prodajni predstavnik/Upravitelj računa",
-        "messagingAngle": "Praktični korisnik i zagovornik - trebam organizirane evidencije klijenata i praćenje ponuda",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Inicijalni kontakt",
-            "subject": "Praćenje ponuda i aktivnosti s klijentima u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svakodnevnom radu pratite otvorene ponude, dogovore s klijentima i sljedeće prodajne aktivnosti.\n\nUz Intrix CRM pomažemo prodajnim timovima objediniti te informacije na jednom mjestu. Tako je manje pretraživanja e-pošte i različitih evidencija, a lakše je pratiti otvorene prilike i pravodobno se javiti klijentima.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 2,
-            "type": "Prva opomena",
+          "croatian": {
             "subject": "Re: Praćenje ponuda i aktivnosti s klijentima u tvrtki {{company}}",
             "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o praćenju ponuda i aktivnosti s klijentima.\n\nIntrix omogućuje da brzo provjerite što je posljednje dogovoreno s klijentom, koja je ponuda još otvorena i kada je vrijeme za ponovni kontakt. Te su informacije dostupne i kolegama kada preuzimaju klijenta ili nekoga zamjenjuju.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcionira u praksi.\n\nLijep pozdrav,\nMatej Gostisa"
-          },
-          {
-            "emailNumber": 3,
-            "type": "Zadnja poruka",
-            "subject": "Re: Praćenje ponuda i aktivnosti s klijentima u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio je li jednostavnije praćenje ponuda i dogovora s klijentima trenutačno aktualna tema za vaš tim.\n\nAko jest, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovaran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\nMatej Gostisa"
           }
-        ]
+        }
       },
-      "sr": {
-        "tierName": "SEKUNDARNO: Prodajni predstavnik/Upravitelj klijenta",
-        "messagingAngle": "Praktični korisnik i zagovornik - trebam organizovane evidence klijenata i praćenje ponuda",
-        "emails": [
-          {
-            "emailNumber": 1,
-            "type": "Inicijalni kontakt",
-            "subject": "Praćenje ponuda i aktivnosti sa klijentima u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svakodnevnom radu pratite otvorene ponude, dogovore sa klijentima i sledeće prodajne aktivnosti.\n\nUz Intrix CRM pomažemo prodajnim timovima objediniti te informacije na jednom mestu. Tako je manje pretraživanja e-pošte i različitih evidencija, a lakše je pratiti otvorene prilike i pravovremeno se javiti klijentima.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLep pozdrav,\nMatej Gostisa"
+      {
+        "emailNumber": 3,
+        "type": "Zadnje sporočilo",
+        "subject": "Re: Tracking quotations and customer activity at {{company}}",
+        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether making quotations and customer agreements easier to track is currently relevant for your team.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa",
+        "translations": {
+          "slovenian": {
+            "subject": "Re: Spremljanje ponudb in strank v {{company}}",
+            "body": "Spoštovani {{first_name}},\n\nše enkrat se oglašam, da preverim, ali je lažje spremljanje ponudb in dogovorov s strankami trenutno za vas aktualna tema.\n\nČe je, se lahko dogovorimo za kratek pogovor. Če to področje pri vas vodi kdo drug, bom hvaležen za usmeritev na pravo osebo.\n\nČe trenutno ni prioriteta, popolnoma razumem.\n\nLep pozdrav,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 2,
-            "type": "Prva napomena",
-            "subject": "Re: Praćenje ponuda i aktivnosti sa klijentima u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o praćenju ponuda i aktivnosti sa klijentima.\n\nIntrix omogućava da brzo proverite šta je poslednje dogovoreno sa klijentom, koja je ponuda još otvorena i kada je vreme za ponovni kontakt. Te su informacije dostupne i kolegama kada preuzimaju klijenta ili nekoga zamenjuju.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcioniše u praksi.\n\nLep pozdrav,\nMatej Gostisa"
+          "english": {
+            "subject": "Re: Tracking quotations and customer activity at {{company}}",
+            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether making quotations and customer agreements easier to track is currently relevant for your team.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\nMatej Gostisa"
           },
-          {
-            "emailNumber": 3,
-            "type": "Poslednja poruka",
-            "subject": "Re: Praćenje ponuda i aktivnosti sa klijentima u kompaniji {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih proverio da li je jednostavnije praćenje ponuda i dogovora sa klijentima trenutno aktualna tema za vaš tim.\n\nAko jeste, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovaran neko drugi, bio bih zahvalan što ćete me uputiti na pravu osobu.\n\nAko vam to trenutno nije prioritet, potpuno razumem.\n\nLep pozdrav,\nMatej Gostisa"
+          "croatian": {
+            "subject": "Re: Praćenje ponuda i aktivnosti s klijentima u tvrtki {{company}}",
+            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio je li jednostavnije praćenje ponuda i dogovora s klijentima trenutačno aktualna tema za vaš tim.\n\nAko jest, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\nMatej Gostisa"
           }
-        ]
+        }
       }
-    }
+    ]
   }
 ]
