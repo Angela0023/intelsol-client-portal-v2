@@ -83,20 +83,23 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
 
       setSequences(data.sequences);
 
+      // Format timestamp helper
+      const formatTimestamp = (isoString: string): string => {
+        const date = new Date(isoString);
+        const day = date.getDate();
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const month = months[date.getMonth()];
+        const year = date.getFullYear().toString().slice(-2);
+        const hours = date.getHours().toString().padStart(2, '0');
+        const minutes = date.getMinutes().toString().padStart(2, '0');
+        return `${day}/${month}/${year} at ${hours}:${minutes} CEST`;
+      };
+
       // Set last updated time from API response or use current time
       if (data.lastUpdated) {
-        setLastUpdated(data.lastUpdated);
+        setLastUpdated(formatTimestamp(data.lastUpdated));
       } else {
-        const now = new Date();
-        const formattedTime = now.toLocaleDateString('en-GB', {
-          day: '2-digit',
-          month: 'short',
-          year: '2-digit'
-        }) + ' at ' + now.toLocaleTimeString('en-GB', {
-          hour: '2-digit',
-          minute: '2-digit'
-        }) + ' CEST';
-        setLastUpdated(formattedTime);
+        setLastUpdated(formatTimestamp(new Date().toISOString()));
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load sequences');

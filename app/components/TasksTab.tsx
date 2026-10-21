@@ -415,7 +415,7 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
 
       setTasks(migratedTasks);
 
-      // Set last updated timestamp
+      // Set last updated timestamp - must format the ISO string from API
       if (data.lastUpdated) {
         setLastUpdated(formatTimestamp(data.lastUpdated));
       } else {
