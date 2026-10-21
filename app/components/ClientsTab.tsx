@@ -54,7 +54,7 @@ const ALL_CLIENTS = [
   { id: 'prtronic', name: 'PRTronic' },
   { id: 'bmevents', name: 'BM Events' },
   { id: 'birografika', name: 'BiroGrafika' },
-  { id: 'clevercraft', name: 'CleverCraft' },
+  { id: 'clevercraft', name: 'Clever Craft' },
   { id: 'stojkov', name: 'Stojkov' },
   { id: 'selekcija', name: 'Selekcija.hr' },
   { id: 'intera', name: 'Intrix CRM' },

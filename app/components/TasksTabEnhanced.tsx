@@ -55,7 +55,7 @@ const ALL_CLIENTS = [
   { id: 'beeit', name: 'BeeIT' },
   { id: 'birografika', name: 'Birografika' },
   { id: 'bmevents', name: 'BM Events' },
-  { id: 'clevercraft', name: 'CleverCraft' },
+  { id: 'clevercraft', name: 'Clever Craft' },
   { id: 'demo', name: 'Demo' },
   { id: 'dhm', name: 'DHM' },
   { id: 'eblissai', name: 'eBliss AI' },
