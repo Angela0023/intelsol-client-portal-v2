@@ -40,17 +40,17 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Delam z proizvajalci FMCG in pijač na trajnostnem naboru etiket.
+Delam s proizvajalci FMCG izdelkov in pijač pri nabavi etiket za redno proizvodnjo.
 
-Birografika je evropski proizvajalec etiket (Subotica, Srbija - 60+ let) s kompendijem offset, flekso in digitalnih zmogljivosti, ki služi blagovnim znamkam na trgih CEE in DACH.
+Birografika je evropski proizvajalec etiket (Subotica, Srbija – več kot 60 let izkušenj) z offsetnim, fleksotiskom in digitalnim tiskom, ki služi blagovnim znamkam na trgih CEE in DACH.
 
 Za nabavne ekipe je vrednost običajno:
-- Primerjava cene dostave v primerjavi s sedanjimi dobavitelji (sosedska ekonomija)
+- Primerjava skupnih stroškov v primerjavi z obstoječimi dobavitelji (prednosti bližnje proizvodnje)
 - Proizvodna zmogljivost za programe z več SKU
 - Certifikati kakovosti (ISO 9001, ISO 14001, FSC, SEDEX certificirane)
 - Zanesljiva dostava s krajšimi rokami
 
-Ali bi bilo koristno primerjati stroške in roke za eno trajno specifikacijo etikete?
+Ali bi bilo koristno primerjati stroške in dobavne roke za eno od vaših rednih specifikacij etiket?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -88,17 +88,17 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Nadaljevanje konkurenčnega nabora etiket.
+Oglasim se glede nabave etiket.
 
 Večina nabavnih ekip, s katerimi delamo, ocenjuje:
 - Druge možnosti virov za primerjavo cen
-- evropske možnosti, da uravnotežimo stroške in zanesljivost dostave
+- Evropske možnosti, da uravnotežimo stroške in zanesljivost dostave
 - Dobavljače s dokumentiranimi standardi kakovosti (ISO, FSC, SEDEX)
-- Partnerje, ki lahko upravljajo nabor virov z več mest ali SKU
+- Partnerje, ki lahko podpirajo proizvodnjo na več lokacijah ali širok nabor SKU-jev.
 
-Birografika obvladuje redne količine etiket za prehrambene, pijače, mlečne in potrošniške znamke v Sloveniji, Hrvataski, Madžarski, Avstriji in Nemčiji.
+Birografika obvladuje redne količine etiket za prehrambene, pijače, mlečne in potrošniške znamke v Sloveniji, Hrvaski, Madžarski, Avstriji in Nemčiji.
 
-Ali bi bilo smiselno hitro poklicati, da pregledamo vaše trenutne zahteve za nabor in tehnične pogoje?
+Ali bi bil kratek klic smiseln, da pregledamo vaše trenutne zahteve za nabavo in tehnične pogoje?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -130,11 +130,11 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Zadnja opomba o tem - če ocenjujete dobavitelje etiket ali upravljate stroške za trajne potrebe etiket, sem vesel da delim naš ceneni model in proizvodne zmogljivosti.
+Zadnja opomba - če ocenjujete dobavitelje etiket ali upravljate stroške rednih naročil etiket, z veseljem predstavim naš cenovni model in proizvodne zmogljivosti.
 
-Brez obveznosti, le naravnost pregled proizvodnih možnosti, strukture stroškov in kako upravljamo zanesljivostjo dostave za trajne količine.
+Brez obveznosti, le naravnost pregled proizvodnih možnosti, strukture stroškov in kako zagotavljamo zanesljive dobave pri rednih naročilih.
 
-Mi sporočite, če bi bila hitra pogovor koristna.
+Sporočite mi, če bi bil kratek pogovor koristen.
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -180,18 +180,18 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Delam s pakiranje in tehnični ekips na odločitvah nabore etiket.
+Delam z ekipami za embalažo in tehniko pri odločitvah o nabavi etiket.
 
-Birografika je evropski proizvajalec etiket s 60+ let v flekso, offset in digitalnem tisku. Ključne tehnične zmogljivosti:
+Birografika je evropski proizvajalec etiket s 60+ let izkušenj v flekso, offset in digitalnem tisku. Ključne tehnične zmogljivosti:
 - Flekso tisk (UV, Mark Andy oprema)
-- Offset tisk (zmogljivost na velike proge)
-- Ročne rezanje, laminiranje, hladni foil, tiskanje
+- Offset tisk (za velike naklade)
+- Izsekovanje, laminiranje, hladni foil, tiskanje
 - Materiali: papir, OPP/BOPP, PP, PE, duplex/triplex filmi
-- Sertifikati kakovosti: ISO 9001, ISO 14001, FSC certificirane, SEDEX preverjene
+- Certifikati kakovosti: ISO 9001, ISO 14001, FSC certificirane, SEDEX preverjene
 
-Za tehnične ekipe je vrednost dosledna kakovost završetka, polna podpora pred-tiskom in zanesljivo upravljanje preskušanja.
+Za tehnične ekipe je vrednost dosledna kakovost končne obdelave, polna podpora pripravi za tisk in zanesljivo upravljanje preskušanja.
 
-Ali bi bilo koristno razpravljati tehnične specifikacije in proizvodne možnosti za vaše zahteve etiket?
+Ali bi bilo koristno razpravljati o tehničnih specifikacijah in proizvodnih možnostih za vaše zahteve etiket?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -230,18 +230,18 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Nadaljevanje tehnične nabore etiket.
+Oglasim se glede tehničnih vidikov proizvodnje etiket.
 
-Packaging in tehnični ekipi, s katerimi delamo, so pogosto osredotočeni na:
-- Kakovost proizvodnje in doslednost završetka preko tekov
+Ekipe za embalažo in tehnične ekipe, s katerimi delamo, so pogosto osredotočeni na:
+- Kakovost proizvodnje in doslednost končne obdelave med posameznimi proizvodnimi serijami
 - Zmogljivost dobavitelja za obravnavo sprememb materialov in zapletenosti specifikacij
-- Dokumentacija kakovosti in sertifikati (ISO, FSC, HACCP, SEDEX)
-- Odzivna podpora pred-tisku in upravljanje preskušanja
+- Dokumentacija kakovosti in certifikati (ISO, FSC, HACCP, SEDEX)
+- Odzivna podpora pripravi za tisk in upravljanje preskušanja
 - Zanesljivost evropskega dobavitelja za lansiranje na več mest
 
-Birografika je opremljena s sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in sistemi kakovosti za podporo zahtevam pakiranja v celotnem portfelju vaših proizvodov.
+Birografika je opremljena s sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in sistemi kakovosti za podporo zahtevam embalaže v celotnem portfelju vaših proizvodov.
 
-Ali bi bil tehnični pregled klica za pregled zmogljivosti in specifikacij smiseln?
+Ali bi bil tehnični pregled po telefonu smiseln?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -273,11 +273,11 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Zadnja opomba - če ocenjujete dobavitelje etiket glede na tehnične zmogljivosti ali upravljate specifikacije v različnih linijah proizvodov, sem vesel da sprehodim naš proizvodnji proces in sisteme kakovosti.
+Zadnja opomba - če ocenjujete dobavitelje etiket glede na tehnične zmogljivosti ali upravljate specifikacije v različnih linijah proizvodov, z veseljem predstavim naš proizvodni proces in sisteme kakovosti.
 
-Brez obveznosti, le naravnost tehnični pregled zmogljivosti, možnosti materialov in kako podpiramo razvoj pakovanja in preskušanja.
+Brez obveznosti, le naravnost tehnični pregled zmogljivosti, možnosti materialov in kako podpiramo razvoj embalaže in preskušanja.
 
-Mi sporočite, če bi bilo to koristno.
+Sporočite mi, če bi bilo to koristno.
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -323,14 +323,14 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Se obračam k vodam proizvodnje in oskrbovalne verige o trajnem naboru etiket.
+Obrnem se na vodje proizvodnje in dobavne verige o trajnem naboru etiket.
 
-Birografika je evropski proizvajalec etiket, ki je sedeži v Srbiji (60+ let, lastniško podjetje) in služi markam FMCG na trgih hrane, pijač, mlečnih in potrošniških proizvodov.
+Birografika je evropski proizvajalec etiket s sedežem v Srbiji (60+ let, lastniško podjetje) in služi markam FMCG na trgih hrane, pijač, mlečnih in potrošniških proizvodov.
 
-Za ekipe operacij in vodstvijo je vrednost:
-- Zanesljiv evropski proizvodljni partner, s katerim se lahko dolgoročno gradite
+Za operativne ekipe in vodstvo je vrednost:
+- Zanesljiv evropski proizvodni partner, s katerim se lahko dolgoročno gradite
 - Proizvodna zmogljivost za trajne količine multi-SKU
-- Sosedska ekonomija in logistika (kratki roki dostave na trgih CEE/DACH)
+- Prednosti bližnje proizvodnje in logistika (kratki roki dostave na trgih CEE/DACH)
 - Kakovost in skladnost (ISO certificirane, FSC, SEDEX preverjene, HACCP)
 - Neposredna partnerstva brez posrednikov
 
@@ -373,18 +373,18 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Nadaljevanje partnerstva nabore etiket.
+Oglasim se glede partnerstva pri dobavi etiket.
 
 Vodje in ekipe operacij, s katerimi delamo, običajno iščejo:
 - Proizvodni partner, na katerega se lahko zanašajo za trajne količine in rast
 - Konkurenčna ekonomija v kombinaciji s kakovostjo in zanesljivostjo
 - Neposreden odnos brez posrednikov ali brokerjev
 - Fleksibilnost za podporo sezonskih količin, lansiranja na več mest ali sprememb portfelja
-- Partner z resno proizodno zmogljivostjo in zmožnostjo (ne samo trgovina)
+- Partner z resnimi proizvodnimi zmogljivostmi (ne samo trgovina)
 
-Birografika prinašá 60+ let proizvodnega znanja in zmogljivosti za upravljanje pijač, mlečnih, hrane in potrošniških znamk po Evropi - s predanostjo dolgotrajnemu partnerstvu.
+Birografika prinaša 60+ let proizvodnega znanja in zmogljivosti za upravljanje pijač, mlečnih, hrane in potrošniških znamk po Evropi - s predanostjo dolgotrajnemu partnerstvu.
 
-Ali bi bilo smiselno razgovor o načrtovanju oskrbe in strukturi partnerstva?
+Ali bi bil pogovor o načrtovanju oskrbe in strukturi partnerstva smiseln?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -416,11 +416,11 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Zadnja opomba - če upravljate nabore etiket ali pogledate evropske proizvodne partnerje za trajne količine, sem vesel da razpravljam naš pristop k partnerstvu in planiranju zmogljivosti.
+Zadnja opomba - če upravljate nabore etiket ali iščete evropske proizvodne partnerje za trajne količine, z veseljem predstavim naš pristop k partnerstvu in planiranju zmogljivosti.
 
-Brez obveznosti, le pogovor o proizvodnih zmogljivosti, prožnosti količin in kako delamo z blagovnimi znamkami za dolgoročne odnose oskrbe.
+Brez obveznosti, le pogovor o proizvodnih zmogljivosti, prožnosti količin in kako delamo z blagovnimi znamkami za dolgoročna dobavna partnerstva.
 
-Mi sporočite, če bi bilo to koristno.
+Sporočite mi, če bi bilo to koristno.
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -461,23 +461,23 @@ Best,
 ---
 
 #### SLOVENIAN
-**Subject:** Nabora etiket za {{Company}}
+**Subject:** Nabava etiket za {{Company}}
 
 **Body:**
 {{FirstName}} -
 
-Delam s proizvajalci FMCG in potrošniških izdelkov na nabori etiket.
+Delam s proizvajalci FMCG in potrošniških izdelkov pri nabavi etiket.
 
-Birografika je evropski proizvajalec etiket s sedežem v Srbiji z 60+ letnim izkušnjami pri proizvodnji etiket za hrano, pijače, mlečne, kozmetične in potrošniške znamke. Ponujamo offset, flekso in digitalnega tiska s polno zmogljivostjo za ročno rezanje, laminiranje in posebne obdelave.
+Birografika je evropski proizvajalec etiket s sedežem v Srbiji z 60+ letnim izkušnjami pri proizvodnji etiket za hrano, pijače, mlečne, kozmetične in potrošniške znamke. Ponujamo offset, flekso in digitalni tisk ter celovite zmogljivosti izsekovanja, laminiranja in posebne obdelave.
 
 Naše prednosti:
 - Dokazana kakovost in zanesljivost proizvodnje
-- Sertifikati ISO 9001, ISO 14001, FSC in SEDEX
+- Certifikati ISO 9001, ISO 14001, FSC in SEDEX
 - Zmogljivost za trajne količine in programe multi-SKU
-- Polna podpora pred-tisku in tehnično partnerstvo
+- Polna podpora pripravi za tisk in tehnično partnerstvo
 - Stroškovno učinkovita evropska proizvodnja
 
-Ali bi bilo koristno razpravljati možnosti nabore etiket za vaše zahteve?
+Ali bi bilo koristno pogovoriti o možnostih nabave etiket za vaše zahteve?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -511,23 +511,23 @@ Best,
 ---
 
 #### SLOVENIAN
-**Subject:** Nadaljevanje: Nabora etiket za {{Company}}
+**Subject:** Nadaljevanje: Nabova etiket za {{Company}}
 
 **Body:**
 {{FirstName}} -
 
-Nadaljevanje partnerstva proizvodnje etiket.
+Oglasim se glede partnerstva pri dobavi etiket.
 
 Delamo z proizvajalci po Evropi, ki iščejo:
-- Zanesljiv dobavljač etiket za redne naročila
-- Kakovost proizvodnje in doslednost završetka
+- Zanesljiv dobavitelj etiket za redne naročila
+- Kakovost proizvodnje in doslednost končne obdelave
 - Tehnično podporo in razvoj specifikacij
 - Dokumentirane certifikate kakovosti
 - Konkurenčno ekonomijo brez oslabitve kakovosti
 
-Birografika prinesá proizvodno znanje, sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in neposreden pristop partnerstva za podporo vaših potreb etiket - bodisi za sedanjo proizvodnjo bodisi za bodočo rast.
+Birografika prinaša proizvodno znanje, sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in neposreden pristop partnerstva za podporo vaših potreb etiket - bodisi za sedanjo proizvodnjo bodisi za bodočo rast.
 
-Ali bi bil razgovor o vaših zahtevah etiket in naših zmogljivostih smiseln?
+Ali bi bil pogovor o vaših zahtevah etiket in naših zmogljivostih smiseln?
 
 Lep pozdrav,
 [Ime pošiljalca]
@@ -559,11 +559,11 @@ Best,
 **Body:**
 {{FirstName}} -
 
-Zadnja opomba - če nabiraš etikete ali ocenjuješ partnerje proizvodnje, sem vesel da razpravljam naše zmogljivosti in kako delamo z blagovnimi znamkami po Evropi.
+Zadnja opomba - če iščete dobavitelja etiket ali ocenjujete proizvodne partnerje, z veseljem predstavim naše zmogljivosti in kako delamo z blagovnimi znamkami po Evropi.
 
 Brez obveznosti, le naravnost pogovor o proizvodnih možnostih, standardih kakovosti in pristopu partnerstva.
 
-Mi sporočite, če bi bilo to koristno.
+Sporočite mi, če bi bilo to koristno.
 
 Lep pozdrav,
 [Ime pošiljalca]

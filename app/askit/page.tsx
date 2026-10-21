@@ -147,7 +147,7 @@ export default function AskitPage() {
         {/* Tab Content */}
         {activeTab === 'overview' && (
           <div className="space-y-6">
-            <ContentSection title="About ASKIT AIVaaS" icon={FileText}>
+            <ContentSection title="About ASKIT AIVaaS">
               <InfoCard label="Service Model" value="AI Value as a Service (AIVaaS)" />
               <InfoCard label="Primary Focus" value="Strategic AI transformation and organizational development" />
               <InfoCard label="Geographic Scope" value="Slovenia" />
@@ -156,7 +156,7 @@ export default function AskitPage() {
               <ListItem type="check">ROI measurement and value realization</ListItem>
             </ContentSection>
 
-            <ContentSection title="Campaign Structure" icon={Zap}>
+            <ContentSection title="Campaign Structure">
               <div className="space-y-4">
                 <div className="border-l-4 border-red-500 bg-red-50 p-4 rounded-r">
                   <h3 className="font-semibold text-red-900 mb-2">Campaign 1: AIVaaS Strategic Transformation</h3>
@@ -171,7 +171,7 @@ export default function AskitPage() {
               </div>
             </ContentSection>
 
-            <ContentSection title="Key Success Metrics" icon={TrendingUp}>
+            <ContentSection title="Key Success Metrics">
               <InfoCard label="Primary Target Companies" value="80+ employees, €10m+ revenue" />
               <InfoCard label="Minimum Leadership Structure" value="At least 5 leaders able to participate" />
               <InfoCard label="Industry Focus" value="Manufacturing, Logistics, Complex Operations" />
@@ -184,7 +184,7 @@ export default function AskitPage() {
 
         {activeTab === 'icp' && (
           <div className="space-y-6">
-            <ContentSection title="Target Company Profile" icon={Target}>
+            <ContentSection title="Target Company Profile">
               <div className="space-y-4">
                 <h3 className="font-semibold text-slate-900">Primary Segments</h3>
                 <div className="border-l-4 border-red-500 bg-red-50 p-4 rounded-r">
@@ -206,7 +206,7 @@ export default function AskitPage() {
               </div>
             </ContentSection>
 
-            <ContentSection title="Buyer Personas and Messaging" icon={Target}>
+            <ContentSection title="Buyer Personas and Messaging">
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold text-slate-900 mb-2">AIVaaS Campaign (CEO/MD/Owner)</h3>
@@ -223,7 +223,7 @@ export default function AskitPage() {
               </div>
             </ContentSection>
 
-            <ContentSection title="Pain Points and Triggers" icon={Target}>
+            <ContentSection title="Pain Points and Triggers">
               <ListItem type="check">AI pilots without clear business value or ROI</ListItem>
               <ListItem type="check">License costs with low adoption rates</ListItem>
               <ListItem type="check">AI delegated solely to IT without business context</ListItem>
@@ -232,11 +232,11 @@ export default function AskitPage() {
               <ListItem type="check">Leadership development and organizational change needs</ListItem>
             </ContentSection>
 
-            <ContentSection title="Exclusion Criteria" icon={Target}>
-              <ListItem type="x">Educational institutions, universities, education providers</ListItem>
-              <ListItem type="x">Companies with fewer than 80 employees (unless exceptional)</ListItem>
-              <ListItem type="x">Companies without sufficient leadership structure</ListItem>
-              <ListItem type="x">Existing customers, partners, or active opportunities</ListItem>
+            <ContentSection title="Exclusion Criteria">
+              <ListItem type="cross">Educational institutions, universities, education providers</ListItem>
+              <ListItem type="cross">Companies with fewer than 80 employees (unless exceptional)</ListItem>
+              <ListItem type="cross">Companies without sufficient leadership structure</ListItem>
+              <ListItem type="cross">Existing customers, partners, or active opportunities</ListItem>
             </ContentSection>
           </div>
         )}
@@ -269,9 +269,9 @@ export default function AskitPage() {
           </>
         )}
 
-        {activeTab === 'documents' && <DocumentsTabGeneric clientId="askit" />}
+        {activeTab === 'documents' && <DocumentsTabGeneric clientId="askit" clientName="ASKIT" />}
 
-        {activeTab === 'tasks' && <TasksTab clientId="askit" />}
+        {activeTab === 'tasks' && <TasksTab clientId="askit" defaultTasks={[]} />}
       </div>
     </ClientLayout>
   );

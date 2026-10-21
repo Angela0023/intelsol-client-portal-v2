@@ -34,7 +34,7 @@
         "translations": {
           "slovenian": {
             "subject": "Nadaljevanje: Ocena virov etiket za {{Company}} - primerjava cen",
-            "body": "{{FirstName}} -\n\nOglasim se glede nabave etiket.\n\nVečina nabavnih ekip, s katerimi delamo, ocenjuje:\n- Druge možnosti virov za primerjavo cen\n- Evropske možnosti, da uravnotežimo stroške in zanesljivost dostave\n- Dobavitelje s dokumentiranimi standardi kakovosti (ISO, FSC, SEDEX)\n- Partnerje, ki lahko podpirajo proizvodnjo na več lokacijah ali širok nabor SKU-jev.\n\nBirografika obvladuje redne količine etiket za prehrambene, pijače, mlečne in potrošniške znamke v Sloveniji, na Hrvaškem, Madžarski, Avstriji in Nemčiji.\n\nAli bi bil kratek klic smiseln, da pregledamo vaše trenutne zahteve za nabavo in tehnične pogoje?\n\nLep pozdrav,\n[Ime pošiljalca]"
+            "body": "{{FirstName}} -\n\nOglasim se glede nabave etiket.\n\nVečina nabavnih ekip, s katerimi delamo, ocenjuje:\n- Druge možnosti virov za primerjavo cen\n- Evropske možnosti, da uravnotežimo stroške in zanesljivost dostave\n- Dobavitelje s dokumentiranimi standardi kakovosti (ISO, FSC, SEDEX)\n- Partnerje, ki lahko podpirajo proizvodnjo na več lokacijah ali širok nabor SKU-jev.\n\nBirografika obvladuje redne količine etiket za prehrambene, pijače, mlečne in potrošniške znamke v Sloveniji, na Hrvaškem, Madžarskem, v Avstriji in Nemčiji.\n\nAli bi bil kratek klic smiseln, da pregledamo vaše trenutne zahteve za nabavo in tehnične pogoje?\n\nLep pozdrav,\n[Ime pošiljalca]"
           },
           "croatian": {
             "subject": "Nastavak: Procjena nabave naljepnica za {{Company}} - usporedba cijena",
@@ -122,7 +122,7 @@
         "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating label suppliers based on technical capabilities or managing specifications across product lines, happy to walk through our production process and quality systems.\n\nNo obligation, just a straightforward technical review of capabilities, material options, and how we support packaging development and trials.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]",
         "translations": {
           "slovenian": {
-            "subject": "Zadnja opomba - ocena tehnične partnerja etiket",
+            "subject": "Zadnja opomba - ocena tehničnega partnerja za etikete",
             "body": "{{FirstName}} -\n\nZadnja opomba - če ocenjujete dobavitelje etiket glede na tehnične zmogljivosti ali upravljate specifikacije v različnih linijah proizvodov, z veseljem predstavim naš proizvodni proces in sisteme kakovosti.\n\nBrez obveznosti, le naravnost tehnični pregled zmogljivosti, možnosti materialov in kako podpiramo razvoj embalaže in preskušanja.\n\nSporočite mi, če bi bilo to koristno.\n\nLep pozdrav,\n[Ime pošiljalca]"
           },
           "croatian": {
@@ -152,7 +152,7 @@
         "translations": {
           "slovenian": {
             "subject": "Evropski partner etiket za {{Company}}",
-            "body": "{{FirstName}} -\n\nObrnem se na vodje proizvodnje in dobavne verige o trajnem naboru etiket.\n\nBirografika je evropski proizvajalec etiket s sedežem v Srbiji (60+ let, lastniško podjetje) in služi markam FMCG na trgih hrane, pijač, mlečnih in potrošniških proizvodov.\n\nZa operativne ekipe in vodstvo je vrednost:\n- Zanesljiv evropski proizvodni partner, s katerim se lahko dolgoročno gradite\n- Proizvodna zmogljivost za trajne količine multi-SKU\n- Prednosti bližnje proizvodnje in logistika (kratki roki dostave na trgih CEE/DACH)\n- Kakovost in skladnost (ISO certificirane, FSC, SEDEX preverjene, HACCP)\n- Neposredna partnerstva brez posrednikov\n\nAli bi bilo koristno raziskati partnerstvo pri oskrbi za vaše trajne potrebe etiket?\n\nLep pozdrav,\n[Ime pošiljalca]"
+            "body": "{{FirstName}} -\n\nObrnem se na vodje proizvodnje in dobavne verige o trajnem naboru etiket.\n\nBirografika je evropski proizvajalec etiket s sedežem v Srbiji (60+ let, lastniško podjetje) in sodeluje z blagovnimi znamkami FMCG na trgih hrane, pijač, mlečnih in potrošniških proizvodov.\n\nZa operativne ekipe in vodstvo je vrednost:\n- Zanesljiv evropski proizvodni partner, s katerim se lahko dolgoročno gradite\n- Proizvodna zmogljivost za trajne količine multi-SKU\n- Prednosti bližnje proizvodnje in logistika (kratki roki dostave na trgih CEE/DACH)\n- Kakovost in skladnost (ISO certificirane, FSC, SEDEX preverjene, HACCP)\n- Neposredna partnerstva brez posrednikov\n\nAli bi bilo koristno raziskati partnerstvo pri oskrbi za vaše trajne potrebe etiket?\n\nLep pozdrav,\n[Ime pošiljalca]"
           },
           "croatian": {
             "subject": "Europski partner za naljepnice za {{Company}}",
@@ -221,7 +221,7 @@
         "translations": {
           "slovenian": {
             "subject": "Nabava etiket za {{Company}}",
-            "body": "{{FirstName}} -\n\nDelam s proizvajalci FMCG in potrošniških izdelkov pri nabavi etiket.\n\nBirografika je evropski proizvajalec etiket s sedežem v Srbiji z 60+ letnim izkušnjami pri proizvodnji etiket za hrano, pijače, mlečne, kozmetične in potrošniške znamke. Ponujamo offset, flekso in digitalni tisk ter celovite zmogljivosti izsekovanja, laminiranja in posebne obdelave.\n\nNaše prednosti:\n- Dokazana kakovost in zanesljivost proizvodnje\n- Certifikati ISO 9001, ISO 14001, FSC in SEDEX\n- Zmogljivost za trajne količine in programe multi-SKU\n- Polna podpora pripravi za tisk in tehnično partnerstvo\n- Stroškovno učinkovita evropska proizvodnja\n\nAli bi bilo koristno pogovoriti o možnostih nabave etiket za vaše zahteve?\n\nLep pozdrav,\n[Ime pošiljalca]"
+            "body": "{{FirstName}} -\n\nDelam s proizvajalci FMCG in potrošniških izdelkov pri nabavi etiket.\n\nBirografika je evropski proizvajalec etiket s sedežem v Srbiji z več kot 60 leti izkušenj pri proizvodnji etiket za hrano, pijače, mlečne, kozmetične in potrošniške znamke. Ponujamo offset, flekso in digitalni tisk ter celovite zmogljivosti izsekovanja, laminiranja in posebne obdelave.\n\nNaše prednosti:\n- Dokazana kakovost in zanesljivost proizvodnje\n- Certifikati ISO 9001, ISO 14001, FSC in SEDEX\n- Zmogljivost za trajne količine in programe multi-SKU\n- Polna podpora pripravi za tisk in tehnično partnerstvo\n- Stroškovno učinkovita evropska proizvodnja\n\nAli bi bilo koristno pogovoriti o možnostih nabave etiket za vaše zahteve?\n\nLep pozdrav,\n[Ime pošiljalca]"
           },
           "croatian": {
             "subject": "Nabava naljepnica za {{Company}}",
@@ -241,7 +241,7 @@
         "translations": {
           "slovenian": {
             "subject": "Nadaljevanje: Nabava etiket za {{Company}}",
-            "body": "{{FirstName}} -\n\nOglasim se glede partnerstva pri dobavi etiket.\n\nDelamo z proizvajalci po Evropi, ki iščejo:\n- Zanesljiv dobavitelj etiket za redna naročila\n- Kakovost proizvodnje in doslednost končne obdelave\n- Tehnično podporo in razvoj specifikacij\n- Dokumentirane certifikate kakovosti\n- Konkurenčno ekonomijo brez oslabitve kakovosti\n\nBirografika prinaša proizvodno znanje, sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in neposreden pristop partnerstva za podporo vaših potreb etiket - bodisi za sedanjo proizvodnjo bodisi za bodočo rast.\n\nAli bi bil pogovor o vaših zahtevah etiket in naših zmogljivostih smiseln?\n\nLep pozdrav,\n[Ime pošiljalca]"
+            "body": "{{FirstName}} -\n\nOglasim se glede partnerstva pri dobavi etiket.\n\nDelamo s proizvajalci po Evropi, ki iščejo:\n- Zanesljiv dobavitelj etiket za redna naročila\n- Kakovost proizvodnje in doslednost končne obdelave\n- Tehnično podporo in razvoj specifikacij\n- Dokumentirane certifikate kakovosti\n- Konkurenčno ekonomijo brez oslabitve kakovosti\n\nBirografika prinaša proizvodno znanje, sodobno opremo (MPS EFC 430, Grafotronic, Rotoflex inspekcija) in neposreden pristop partnerstva za podporo vaših potreb etiket - bodisi za sedanjo proizvodnjo bodisi za bodočo rast.\n\nAli bi bil pogovor o vaših zahtevah etiket in naših zmogljivostih smiseln?\n\nLep pozdrav,\n[Ime pošiljalca]"
           },
           "croatian": {
             "subject": "Nastavak: Nabava naljepnica za {{Company}}",
