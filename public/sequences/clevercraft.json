@@ -10,19 +10,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Reseller ordering at {{company}}",
-        "body": "Hi {{first_name}},\n\nResellers need reliable pricing, availability and order status to buy through a portal. When those details sit in different systems, even a good portal can leave them calling your team for answers.\n\nCleverCraft connects existing systems so resellers can do more themselves. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs making reseller ordering more self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nResellers need reliable pricing, availability and order status to buy through a portal. When those details sit in different systems, even a good portal can leave them calling your team for answers.\n\nClever Craft connects existing systems so resellers can do more themselves. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs making reseller ordering more self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Reseller ordering at {{company}}",
-        "body": "Hi {{first_name}},\n\nReturning to my note on reseller ordering. Is helping resellers get answers without contacting your team part of your portal plans, or is the focus elsewhere?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nReturning to my note on reseller ordering. Is helping resellers get answers without contacting your team part of your portal plans, or is the focus elsewhere?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Reseller ordering at {{company}}",
-        "body": "Hi {{first_name}},\n\nA portal upgrade can also create extra work for content teams. At NetApp, CleverCraft helped automate partner portal content migration, with more than 22,000 assets migrated in the published case study.\n\nIs moving content a concern in your portal plans?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nA portal upgrade can also create extra work for content teams. At NetApp, Clever Craft helped automate partner portal content migration, with more than 22,000 assets migrated in the published case study.\n\nIs moving content a concern in your portal plans?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -37,19 +37,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Orders that need manual attention",
-        "body": "Hi {{first_name}},\n\nOrders with special pricing or missing details can take several exchanges before the order desk has what it needs. That leaves less time for requests that actually need a commercial decision.\n\nCleverCraft helps organize and automate these orders around existing systems. In a published Fortune 500 technology vendor case study, we report an 80% reduction in non-standard order processing time.\n\nAre these orders a significant source of manual work at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nOrders with special pricing or missing details can take several exchanges before the order desk has what it needs. That leaves less time for requests that actually need a commercial decision.\n\nClever Craft helps organize and automate these orders around existing systems. In a published Fortune 500 technology vendor case study, we report an 80% reduction in non-standard order processing time.\n\nAre these orders a significant source of manual work at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Orders that need manual attention",
-        "body": "Hi {{first_name}},\n\nFollowing up on orders that need manual attention. Is the bigger issue gathering the right details or getting approvals, or are neither causing much work for your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nFollowing up on orders that need manual attention. Is the bigger issue gathering the right details or getting approvals, or are neither causing much work for your team?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Orders that need manual attention",
-        "body": "Hi {{first_name}},\n\nOne way to reduce back-and-forth is to catch missing details before an order reaches the desk. Your team can then focus on pricing decisions and genuine exceptions.\n\nWould getting more complete requests upfront make a meaningful difference?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nOne way to reduce back-and-forth is to catch missing details before an order reaches the desk. Your team can then focus on pricing decisions and genuine exceptions.\n\nWould getting more complete requests upfront make a meaningful difference?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -64,19 +64,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Reseller onboarding at {{company}}",
-        "body": "Hi {{first_name}},\n\nGetting a new reseller ready to trade can involve several teams, from registration and compliance to account setup. When the steps are disconnected, partners may need to chase updates before they can start.\n\nCleverCraft has automated onboarding, compliance and registration in enterprise channel programs. Our team has built partner-facing systems across four enterprise vendor programs.\n\nIs making reseller onboarding easier to complete a priority for your team at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nGetting a new reseller ready to trade can involve several teams, from registration and compliance to account setup. When the steps are disconnected, partners may need to chase updates before they can start.\n\nClever Craft has automated onboarding, compliance and registration in enterprise channel programs. Our team has built partner-facing systems across four enterprise vendor programs.\n\nIs making reseller onboarding easier to complete a priority for your team at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Reseller onboarding at {{company}}",
-        "body": "Hi {{first_name}},\n\nComing back to reseller onboarding. Is the priority helping partners complete the steps themselves, giving your team a clearer view of progress, or something else?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nComing back to reseller onboarding. Is the priority helping partners complete the steps themselves, giving your team a clearer view of progress, or something else?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Reseller onboarding at {{company}}",
-        "body": "Hi {{first_name}},\n\nProgram changes can mean updating the same information in several places. CleverCraft has kept content and program data aligned across multiple environments from one source.\n\nDoes keeping reseller information current take much manual work from your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nProgram changes can mean updating the same information in several places. Clever Craft has kept content and program data aligned across multiple environments from one source.\n\nDoes keeping reseller information current take much manual work from your team?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -91,19 +91,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Vendor data in your sales portal",
-        "body": "Hi {{first_name}},\n\nFor a solution provider working with several vendors, keeping product and program information current can mean working across multiple portals. Bringing that information into your own sales portal can help customers find answers and give your team fewer places to check.\n\nCleverCraft connects vendor data with existing platforms. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs this on the digital agenda at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nFor a solution provider working with several vendors, keeping product and program information current can mean working across multiple portals. Bringing that information into your own sales portal can help customers find answers and give your team fewer places to check.\n\nClever Craft connects vendor data with existing platforms. Our team has built partner-facing systems across four enterprise vendor programs, used by tens of thousands of channel partners.\n\nIs this on the digital agenda at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Vendor data in your sales portal",
-        "body": "Hi {{first_name}},\n\nFollowing up on vendor information in your sales portal. Is bringing those sources together a current priority, or are you focused on a different part of the customer experience?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nFollowing up on vendor information in your sales portal. Is bringing those sources together a current priority, or are you focused on a different part of the customer experience?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Vendor data in your sales portal",
-        "body": "Hi {{first_name}},\n\nYou could start with one vendor connection that saves your team repeated lookups, then expand from there. CleverCraft can build that connection around your current platforms.\n\nIs there one vendor data source you would most like to bring into your portal?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nYou could start with one vendor connection that saves your team repeated lookups, then expand from there. Clever Craft can build that connection around your current platforms.\n\nIs there one vendor data source you would most like to bring into your portal?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -118,19 +118,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Vendor pricing and quote delays",
-        "body": "Hi {{first_name}},\n\nWhen a quote depends on vendor deal registration or special pricing, sales teams may need to check several records before they can send it. If the details do not match, the quote can wait while someone resolves the difference.\n\nCleverCraft brings vendor data into existing sales processes. We have built partner-facing systems across four enterprise vendor programs, so we understand the vendor side of those exchanges.\n\nDoes checking vendor information regularly hold up quotes at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nWhen a quote depends on vendor deal registration or special pricing, sales teams may need to check several records before they can send it. If the details do not match, the quote can wait while someone resolves the difference.\n\nClever Craft brings vendor data into existing sales processes. We have built partner-facing systems across four enterprise vendor programs, so we understand the vendor side of those exchanges.\n\nDoes checking vendor information regularly hold up quotes at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Vendor pricing and quote delays",
-        "body": "Hi {{first_name}},\n\nReturning to vendor information and quotes. Which needs more attention from your team: confirming pricing, checking deal registration, or matching the details to your own records?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nReturning to vendor information and quotes. Which needs more attention from your team: confirming pricing, checking deal registration, or matching the details to your own records?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Vendor pricing and quote delays",
-        "body": "Hi {{first_name}},\n\nA mismatch should not mean checking every record again. We can help bring the relevant vendor details together and flag differences for your team to review.\n\nWould identifying those differences earlier help your quote desk?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nA mismatch should not mean checking every record again. We can help bring the relevant vendor details together and flag differences for your team to review.\n\nWould identifying those differences earlier help your quote desk?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -145,19 +145,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Dealer self-service at {{company}}",
-        "body": "Hi {{first_name}},\n\nDealers need product details, pricing and order updates to serve their customers. If the portal cannot provide those answers, they may still need to email or call your team.\n\nCleverCraft connects existing systems to support more self-service. Our team has built partner-facing systems across four enterprise technology vendor programs, used by tens of thousands of channel partners. That channel experience is relevant to dealer portals too.\n\nIs expanding dealer self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nDealers need product details, pricing and order updates to serve their customers. If the portal cannot provide those answers, they may still need to email or call your team.\n\nClever Craft connects existing systems to support more self-service. Our team has built partner-facing systems across four enterprise technology vendor programs, used by tens of thousands of channel partners. That channel experience is relevant to dealer portals too.\n\nIs expanding dealer self-service a priority at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Dealer self-service at {{company}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on dealer self-service. Is better access to product information, pricing or order updates a priority, or does the portal already cover what dealers need?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nFollowing up on dealer self-service. Is better access to product information, pricing or order updates a priority, or does the portal already cover what dealers need?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Dealer self-service at {{company}}",
-        "body": "Hi {{first_name}},\n\nPortal changes can also mean managing content in two places during the transition. At NetApp, CleverCraft automated content migration and synchronization across the old and new partner portals.\n\nWould keeping dealer information current during a portal change be a concern for your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nPortal changes can also mean managing content in two places during the transition. At NetApp, Clever Craft automated content migration and synchronization across the old and new partner portals.\n\nWould keeping dealer information current during a portal change be a concern for your team?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -172,19 +172,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Dealer requests before the quote",
-        "body": "Hi {{first_name}},\n\nA dealer's custom configuration request can reach the quote desk before all the options and commercial details are clear. Each clarification adds another exchange before the team can prepare a quote.\n\nCleverCraft helps structure non-standard order requests around existing systems. In enterprise channel environments, our delivered systems have processed $1B in order value annually for five consecutive years.\n\nAre incomplete dealer requests a recurring source of delays at {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nA dealer's custom configuration request can reach the quote desk before all the options and commercial details are clear. Each clarification adds another exchange before the team can prepare a quote.\n\nClever Craft helps structure non-standard order requests around existing systems. In enterprise channel environments, our delivered systems have processed $1B in order value annually for five consecutive years.\n\nAre incomplete dealer requests a recurring source of delays at {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Dealer requests before the quote",
-        "body": "Hi {{first_name}},\n\nReturning to dealer configuration requests. Is gathering missing information taking much of the quote desk's time, or do requests usually arrive ready for review?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nReturning to dealer configuration requests. Is gathering missing information taking much of the quote desk's time, or do requests usually arrive ready for review?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Dealer requests before the quote",
-        "body": "Hi {{first_name}},\n\nClearer requests can also protect engineering time. Collecting the required details upfront lets specialists focus on configuration decisions instead of chasing basic information.\n\nWould better information before the technical review help your team?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nClearer requests can also protect engineering time. Collecting the required details upfront lets specialists focus on configuration decisions instead of chasing basic information.\n\nWould better information before the technical review help your team?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   },
@@ -199,19 +199,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Connecting systems after {{acquisition_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing {{acquisition_name}}, your integration plan may need the businesses to share information before their ERP and CRM systems are aligned. That can leave teams checking orders, customers or stock in separate places.\n\nCleverCraft builds connections around existing platforms. Our experience includes bringing data structures from four separate enterprise systems together, which is relevant to this kind of work.\n\nIs sharing operational information across the businesses an immediate priority for {{company}}?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nFollowing {{acquisition_name}}, your integration plan may need the businesses to share information before their ERP and CRM systems are aligned. That can leave teams checking orders, customers or stock in separate places.\n\nClever Craft builds connections around existing platforms. Our experience includes bringing data structures from four separate enterprise systems together, which is relevant to this kind of work.\n\nIs sharing operational information across the businesses an immediate priority for {{company}}?\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 2,
         "type": "First Follow Up",
         "subject": "Re: Connecting systems after {{acquisition_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on {{acquisition_name}}. Is the immediate focus connecting information across the businesses or planning a wider system change? That would help me understand whether our approach is relevant.\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nFollowing up on {{acquisition_name}}. Is the immediate focus connecting information across the businesses or planning a wider system change? That would help me understand whether our approach is relevant.\n\nBest,\n{{sender_name}}\nClever Craft"
       },
       {
         "emailNumber": 3,
         "type": "Additional Value Follow Up",
         "subject": "Re: Connecting systems after {{acquisition_name}}",
-        "body": "Hi {{first_name}},\n\nThe first step could be one shared business need, such as a group view of orders, while local teams keep using their current systems. That gives the integration a focused starting point.\n\nWhich information would be most useful to share first?\n\nBest,\n{{sender_name}}\nCleverCraft"
+        "body": "Hi {{first_name}},\n\nThe first step could be one shared business need, such as a group view of orders, while local teams keep using their current systems. That gives the integration a focused starting point.\n\nWhich information would be most useful to share first?\n\nBest,\n{{sender_name}}\nClever Craft"
       }
     ]
   }
