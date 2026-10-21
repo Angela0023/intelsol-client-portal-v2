@@ -45,6 +45,7 @@ const CLIENT_NAMES = {
   'zen2fit': 'Zen2fit',
   'panorate': 'Panorate',
   'mbedtronix': 'MBEDTRONIX',
+  'prtronic': 'PRTronic',
 };
 
 // Remove emoji from start of text
