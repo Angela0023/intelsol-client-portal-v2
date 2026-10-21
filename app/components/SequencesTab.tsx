@@ -60,6 +60,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   const [saving, setSaving] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [isAdding, setIsAdding] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const { editMode, isAdmin } = useEditMode();
 
   const canEdit = editMode && isAdmin;
@@ -81,6 +82,22 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
       }
 
       setSequences(data.sequences);
+
+      // Set last updated time from API response or use current time
+      if (data.lastUpdated) {
+        setLastUpdated(data.lastUpdated);
+      } else {
+        const now = new Date();
+        const formattedTime = now.toLocaleDateString('en-GB', {
+          day: '2-digit',
+          month: 'short',
+          year: '2-digit'
+        }) + ' at ' + now.toLocaleTimeString('en-GB', {
+          hour: '2-digit',
+          minute: '2-digit'
+        }) + ' CEST';
+        setLastUpdated(formattedTime);
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load sequences');
     } finally {
@@ -229,6 +246,11 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
           <p className="text-sm text-slate-600 mt-1">
             Manage email sequences for different persona tiers or campaign types
           </p>
+          {lastUpdated && (
+            <p className="text-xs text-slate-500 mt-2">
+              Last updated: {lastUpdated}
+            </p>
+          )}
         </div>
         {canEdit && !editingId && (
           <button
