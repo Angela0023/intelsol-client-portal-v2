@@ -43,6 +43,8 @@ interface Sequence {
 
 interface SequencesTabProps {
   clientId: string;
+  language?: 'en' | 'hr' | 'sr';
+  onLanguageChange?: (lang: 'en' | 'hr' | 'sr') => void;
 }
 
 const tierColors: Record<string, { bg: string; border: string; text: string; badge: string }> = {
@@ -53,7 +55,7 @@ const tierColors: Record<string, { bg: string; border: string; text: string; bad
   indigo: { bg: 'bg-indigo-50', border: 'border-indigo-500', text: 'text-indigo-900', badge: 'bg-indigo-600' },
 };
 
-export default function SequencesTab({ clientId }: SequencesTabProps) {
+export default function SequencesTab({ clientId, language: propLanguage, onLanguageChange }: SequencesTabProps) {
   const [sequences, setSequences] = useState<Sequence[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -61,7 +63,18 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [isAdding, setIsAdding] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+  const [localLanguage, setLocalLanguage] = useState<'en' | 'hr' | 'sr'>(propLanguage || 'en');
   const { editMode, isAdmin } = useEditMode();
+
+  // Use prop language if provided, otherwise use local state
+  const currentLanguage = propLanguage || localLanguage;
+  const handleLanguageChange = (lang: 'en' | 'hr' | 'sr') => {
+    if (propLanguage) {
+      onLanguageChange?.(lang);
+    } else {
+      setLocalLanguage(lang);
+    }
+  };
 
   const canEdit = editMode && isAdmin;
 
@@ -239,7 +252,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
 
   return (
     <div className="space-y-6">
-      {/* Header with Add Button */}
+      {/* Header with Add Button and Language Toggle */}
       <div className="flex items-center justify-between">
         <div>
           <h3 className="text-lg font-semibold text-slate-900 flex items-center space-x-2">
@@ -255,15 +268,51 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
             </p>
           )}
         </div>
-        {canEdit && !editingId && (
-          <button
-            onClick={handleAddSequence}
-            className="flex items-center space-x-2 px-4 py-2 bg-[#1a2647] text-white rounded-lg hover:bg-[#0f1629] transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            <span>Add Sequence</span>
-          </button>
-        )}
+        <div className="flex items-center space-x-3">
+          {/* Language Toggle */}
+          <div className="flex items-center space-x-1 bg-slate-100 p-1 rounded-lg">
+            <button
+              onClick={() => handleLanguageChange('en')}
+              className={`px-3 py-1.5 rounded text-sm font-medium transition-colors ${
+                currentLanguage === 'en'
+                  ? 'bg-white text-slate-900 shadow-sm'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              🇬🇧 English
+            </button>
+            <button
+              onClick={() => handleLanguageChange('hr')}
+              className={`px-3 py-1.5 rounded text-sm font-medium transition-colors ${
+                currentLanguage === 'hr'
+                  ? 'bg-white text-slate-900 shadow-sm'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              🇭🇷 Hrvatski
+            </button>
+            <button
+              onClick={() => handleLanguageChange('sr')}
+              className={`px-3 py-1.5 rounded text-sm font-medium transition-colors ${
+                currentLanguage === 'sr'
+                  ? 'bg-white text-slate-900 shadow-sm'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              🇷🇸 Српски
+            </button>
+          </div>
+
+          {canEdit && !editingId && (
+            <button
+              onClick={handleAddSequence}
+              className="flex items-center space-x-2 px-4 py-2 bg-[#1a2647] text-white rounded-lg hover:bg-[#0f1629] transition-colors"
+            >
+              <Plus className="w-4 h-4" />
+              <span>Add Sequence</span>
+            </button>
+          )}
+        </div>
       </div>
 
       {sequences.length === 0 ? (

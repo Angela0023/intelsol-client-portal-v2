@@ -30,6 +30,7 @@ export default function InteraPage() {
   const [status, setStatus] = useState<ClientStatus>('Active');
   const [assignee, setAssignee] = useState<Assignee | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [sequenceLanguage, setSequenceLanguage] = useState<'en' | 'hr' | 'sr'>('en');
 
   useEffect(() => {
     setStatus(getClientStatus('intera', DEFAULT_STATUSES.intera));
@@ -154,7 +155,9 @@ export default function InteraPage() {
           {activeTab === 'icp' && <ICPAndPersonasTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
+          {activeTab === 'campaigns-sequences' && (
+            <CampaignsSequencesTab language={sequenceLanguage} onLanguageChange={setSequenceLanguage} />
+          )}
           {activeTab === 'performance' && (
             <>
               <PerformanceTabDynamic clientId="intera" />
@@ -484,10 +487,16 @@ Only answer "Yes" if you are confident this company:
   );
 }
 
-function CampaignsSequencesTab() {
+function CampaignsSequencesTab({
+  language,
+  onLanguageChange,
+}: {
+  language: 'en' | 'hr' | 'sr';
+  onLanguageChange: (lang: 'en' | 'hr' | 'sr') => void;
+}) {
   return (
     <>
-      <SequencesTab clientId="intera" />
+      <SequencesTab clientId="intera" language={language} onLanguageChange={onLanguageChange} />
       <div className="mt-8">
         <CampaignsTabGeneric />
       </div>
