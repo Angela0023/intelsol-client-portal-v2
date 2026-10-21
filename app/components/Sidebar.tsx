@@ -34,6 +34,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'eblissai', name: 'eBlissAI', icon: Building2, color: 'text-sky-600' },
     { id: 'askit', name: 'ASKIT AIVaaS', icon: Building2, color: 'text-red-600' },
     { id: 'dukegroup', name: 'DukeGroup', icon: Building2, color: 'text-emerald-600' },
+    { id: 'novavizija', name: 'Nova Vizija', icon: Building2, color: 'text-teal-600' },
     { id: 'zen2fit', name: 'Zen2Fit', icon: Building2, color: 'text-pink-600' },
     { id: 'panorate', name: 'Panorate Media', icon: Building2, color: 'text-slate-600' },
     { id: 'mbedtronix', name: 'MBEDTRONIX', icon: Building2, color: 'text-indigo-600' },

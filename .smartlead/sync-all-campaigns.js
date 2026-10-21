@@ -44,6 +44,7 @@ const CLIENT_NAMES = {
   'eblissai': 'eBliss AI',
   'askit': 'ASKIT',
   'dukegroup': 'DukeGroup',
+  'novavizija': 'Nova Vizija',
   'zen2fit': 'Zen2fit',
   'panorate': 'Panorate',
   'mbedtronix': 'MBEDTRONIX',
