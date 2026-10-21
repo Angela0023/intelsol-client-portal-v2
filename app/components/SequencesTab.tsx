@@ -408,84 +408,94 @@ export default function SequencesTab({ clientId, language: propLanguage, onLangu
                   </div>
                 )}
 
-                {/* Sequence Details */}
-                <div className={`${colors.bg} border-l-4 ${colors.border} p-3 rounded mb-4`}>
-                  {isEditing ? (
-                    <div className="space-y-3">
-                      <div>
-                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
-                          Sequence Tag (e.g., 📧 SEQUENCE 1: EMPLOYERS):
-                        </label>
-                        <input
-                          type="text"
-                          value={sequence.sequenceTag || ''}
-                          onChange={(e) => handleUpdateSequence(sequence.id, 'sequenceTag', e.target.value)}
-                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
-                          placeholder="📧 SEQUENCE 1: EMPLOYERS"
-                        />
-                      </div>
-                      <div>
-                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
-                          Industries Tags (e.g., 🏢 Banking, Pharma, IT...):
-                        </label>
-                        <input
-                          type="text"
-                          value={sequence.industriesTags || ''}
-                          onChange={(e) => handleUpdateSequence(sequence.id, 'industriesTags', e.target.value)}
-                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
-                          placeholder="🏢 Banking, Insurance, Pharma, Healthcare, IT..."
-                        />
-                      </div>
-                      <div>
-                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
-                          Personas Tags (e.g., 👤 HR Director, Head of HR...):
-                        </label>
-                        <input
-                          type="text"
-                          value={sequence.personasTags || ''}
-                          onChange={(e) => handleUpdateSequence(sequence.id, 'personasTags', e.target.value)}
-                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
-                          placeholder="👤 HR Director, Head of HR, HR Manager..."
-                        />
-                      </div>
-                      <div>
-                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
-                          Target Personas:
-                        </label>
-                        <input
-                          type="text"
-                          value={sequence.targetPersonas}
-                          onChange={(e) => handleUpdateSequence(sequence.id, 'targetPersonas', e.target.value)}
-                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
-                          placeholder="e.g., Director/Sr. Manager of Supply Chain, Demand Planning"
-                        />
-                      </div>
-                      <div>
-                        <label className={`text-sm font-medium ${colors.text} block mb-1`}>
-                          Messaging Angle:
-                        </label>
-                        <input
-                          type="text"
-                          value={sequence.messagingAngle}
-                          onChange={(e) => handleUpdateSequence(sequence.id, 'messagingAngle', e.target.value)}
-                          className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
-                          placeholder="e.g., Forecast accuracy, S&OP maturity, planning-cycle speed"
-                        />
-                      </div>
-                    </div>
-                  ) : (
-                    <>
-                      <p className={`text-sm font-medium ${colors.text} mb-1`}>Target Personas:</p>
-                      <p className={`text-sm ${colors.text} opacity-90 mb-2`}>{sequence.targetPersonas}</p>
-                      <p className={`text-sm font-medium ${colors.text} mb-1`}>Messaging Angle:</p>
-                      <p className={`text-sm ${colors.text} opacity-90`}>{sequence.messagingAngle}</p>
-                    </>
-                  )}
-                </div>
+                {/* Get language-specific content */}
+                {/* @ts-ignore - Handle dynamic language keys */}
+                {(() => {
+                  const langData = (sequence as any).translations?.[currentLanguage] || (sequence as any).translations?.en;
+                  const displayEmails = langData?.emails || (sequence as any).emails || [];
+                  const displayMessagingAngle = langData?.messagingAngle || sequence.messagingAngle;
+                  const displayTierName = langData?.tierName || sequence.tierName;
 
-                {/* Emails */}
-                <div className="space-y-3">
-                  {sequence.emails.map((email) => (
+                  return (
+                    <>
+                      {/* Sequence Details */}
+                      <div className={`${colors.bg} border-l-4 ${colors.border} p-3 rounded mb-4`}>
+                        {isEditing ? (
+                          <div className="space-y-3">
+                            <div>
+                              <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                                Sequence Tag (e.g., 📧 SEQUENCE 1: EMPLOYERS):
+                              </label>
+                              <input
+                                type="text"
+                                value={sequence.sequenceTag || ''}
+                                onChange={(e) => handleUpdateSequence(sequence.id, 'sequenceTag', e.target.value)}
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                                placeholder="📧 SEQUENCE 1: EMPLOYERS"
+                              />
+                            </div>
+                            <div>
+                              <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                                Industries Tags (e.g., 🏢 Banking, Pharma, IT...):
+                              </label>
+                              <input
+                                type="text"
+                                value={sequence.industriesTags || ''}
+                                onChange={(e) => handleUpdateSequence(sequence.id, 'industriesTags', e.target.value)}
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                                placeholder="🏢 Banking, Insurance, Pharma, Healthcare, IT..."
+                              />
+                            </div>
+                            <div>
+                              <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                                Personas Tags (e.g., 👤 HR Director, Head of HR...):
+                              </label>
+                              <input
+                                type="text"
+                                value={sequence.personasTags || ''}
+                                onChange={(e) => handleUpdateSequence(sequence.id, 'personasTags', e.target.value)}
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                                placeholder="👤 HR Director, Head of HR, HR Manager..."
+                              />
+                            </div>
+                            <div>
+                              <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                                Target Personas:
+                              </label>
+                              <input
+                                type="text"
+                                value={sequence.targetPersonas}
+                                onChange={(e) => handleUpdateSequence(sequence.id, 'targetPersonas', e.target.value)}
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                                placeholder="e.g., Director/Sr. Manager of Supply Chain, Demand Planning"
+                              />
+                            </div>
+                            <div>
+                              <label className={`text-sm font-medium ${colors.text} block mb-1`}>
+                                Messaging Angle:
+                              </label>
+                              <input
+                                type="text"
+                                value={sequence.messagingAngle}
+                                onChange={(e) => handleUpdateSequence(sequence.id, 'messagingAngle', e.target.value)}
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm"
+                                placeholder="e.g., Forecast accuracy, S&OP maturity, planning-cycle speed"
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <>
+                            <p className={`text-sm font-medium ${colors.text} mb-1`}>Target Personas:</p>
+                            <p className={`text-sm ${colors.text} opacity-90 mb-2`}>{sequence.targetPersonas}</p>
+                            <p className={`text-sm font-medium ${colors.text} mb-1`}>Messaging Angle:</p>
+                            <p className={`text-sm ${colors.text} opacity-90`}>{displayMessagingAngle}</p>
+                          </>
+                        )}
+                      </div>
+
+                      {/* Emails */}
+                      <div className="space-y-3">
+                        {displayEmails.map((email: any) => (
                     <div key={email.emailNumber} className="border border-slate-200 rounded-lg p-4">
                       <div className="flex items-center space-x-2 mb-3">
                         <span className={`${colors.badge} text-white text-xs font-bold px-2 py-1 rounded`}>
@@ -649,10 +659,13 @@ export default function SequencesTab({ clientId, language: propLanguage, onLangu
                             </div>
                           </details>
                         )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                      </div>
+                    </>
+                  );
+                })()}
 
                 {/* Edit Actions */}
                 {isEditing && (
