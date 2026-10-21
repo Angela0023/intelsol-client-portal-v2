@@ -765,10 +765,11 @@
     "id": "task_1792575206013_zo26mmf",
     "description": "update the Seyens sequences",
     "assignedTo": "Frosina",
-    "status": "pending",
+    "status": "done",
     "dueDate": "2026-10-21",
     "order": 32,
     "comments": [],
-    "client": "intelsol"
+    "client": "intelsol",
+    "completedAt": "2026-10-21T09:33:32.384Z"
   }
 ]
