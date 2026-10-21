@@ -341,6 +341,7 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
   const [error, setError] = useState('');
   const [dirty, setDirty] = useState(false);
   const [showAddForm, setShowAddForm] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [newTask, setNewTask] = useState<Omit<Task, 'id'>>({
     description: '',
     assignedTo: 'Matej',
@@ -379,6 +380,19 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
     return [...pending, ...done];
   }, [tasks]);
 
+  // Format timestamp as "14/Oct/26 at 16:23 CEST"
+  const formatTimestamp = (isoString: string): string => {
+    const date = new Date(isoString);
+    const day = date.getDate();
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = months[date.getMonth()];
+    const year = date.getFullYear().toString().slice(-2);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+
+    return `${day}/${month}/${year} at ${hours}:${minutes} CEST`;
+  };
+
   // Fetch tasks from GitHub
   const fetchTasks = useCallback(async () => {
     setLoading(true);
@@ -400,6 +414,13 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
       }));
 
       setTasks(migratedTasks);
+
+      // Set last updated timestamp
+      if (data.lastUpdated) {
+        setLastUpdated(formatTimestamp(data.lastUpdated));
+      } else {
+        setLastUpdated(formatTimestamp(new Date().toISOString()));
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load tasks');
       setTasks([]);
@@ -610,7 +631,14 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
       {/* Task list */}
       <div className="bg-white rounded-lg border border-slate-200 shadow-sm">
         <div className="p-4 border-b border-slate-200 flex items-center justify-between">
-          <h3 className="text-lg font-semibold text-slate-900">Tasks</h3>
+          <div>
+            <h3 className="text-lg font-semibold text-slate-900">Tasks</h3>
+            {lastUpdated && (
+              <p className="text-xs text-slate-500 mt-1">
+                Last updated: {lastUpdated}
+              </p>
+            )}
+          </div>
           <div className="flex items-center space-x-2">
             {canEdit && dirty && (
               <button
