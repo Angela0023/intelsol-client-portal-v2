@@ -15,10 +15,6 @@
         "subject": "Production and traceability at {{company}}",
         "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you currently connect production, procurement and sales information at your company.\n\nWith ProPIS ERP, Nova Vizija helps food producers bring these processes together in one operational system, with traceability from raw materials to finished products. This gives management a clearer view of operations and helps teams spend less time coordinating information across separate records.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
-          "english": {
-            "subject": "Production and traceability at {{company}}",
-            "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you currently connect production, procurement and sales information at your company.\n\nWith ProPIS ERP, Nova Vizija helps food producers bring these processes together in one operational system, with traceability from raw materials to finished products. This gives management a clearer view of operations and helps teams spend less time coordinating information across separate records.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
-          },
           "serbian": {
             "subject": "Proizvodnja i sljedivost u tvrtki {{company}}",
             "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svojoj tvrtki povezujete podatke o proizvodnji, nabavi i prodaji.\n\nUz ProPIS ERP u Novoj Viziji pomažemo proizvođačima hrane povezati te procese u jedinstven operativni sustav sa sljedivošću od sirovina do gotovih proizvoda. Tako uprava ima jasniji pregled poslovanja, a timovi troše manje vremena na usklađivanje podataka iz odvojenih evidencija.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
@@ -35,10 +31,6 @@
         "subject": "RE: Production and traceability at {{company}}",
         "body": "Dear {{first_name}},\n\nI recently wrote to you about connecting production, procurement and sales information.\n\nOne practical example is product traceability. ProPIS helps identify which finished products were made from a particular raw material, making it easier to establish which products are affected if a recall is needed.\n\nIf this is relevant for your company, I'd be happy to explain how it works in practice on a brief call.\n\nBest regards,\n{{sender_name}}",
         "translations": {
-          "english": {
-            "subject": "RE: Production and traceability at {{company}}",
-            "body": "Dear {{first_name}},\n\nI recently wrote to you about connecting production, procurement and sales information.\n\nOne practical example is product traceability. ProPIS helps identify which finished products were made from a particular raw material, making it easier to establish which products are affected if a recall is needed.\n\nIf this is relevant for your company, I'd be happy to explain how it works in practice on a brief call.\n\nBest regards,\n{{sender_name}}"
-          },
           "serbian": {
             "subject": "RE: Proizvodnja i sljedivost u tvrtki {{company}}",
             "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju podataka o proizvodnji, nabavi i prodaji.\n\nJedan od praktičnih primjera je sljedivost proizvoda. ProPIS pomaže utvrditi koji su gotovi proizvodi proizvedeni od određene sirovine. Tako je u slučaju opoziva lakše odrediti koji su proizvodi zahvaćeni.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcionira u praksi.\n\nLijep pozdrav,\n{{sender_name}}"
@@ -55,10 +47,6 @@
         "subject": "RE: Is production visibility relevant for {{company}}?",
         "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving production visibility and traceability is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\n{{sender_name}}",
         "translations": {
-          "english": {
-            "subject": "RE: Is production visibility relevant for {{company}}?",
-            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving production visibility and traceability is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\n{{sender_name}}"
-          },
           "serbian": {
             "subject": "RE: Jesu li bolji pregled proizvodnje i sljedivost aktualni za {{company}}?",
             "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio jesu li bolji pregled proizvodnje i sljedivost trenutačno aktualne teme za vašu tvrtku.\n\nAko jesu, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\n{{sender_name}}"
@@ -87,10 +75,6 @@
         "subject": "Connecting production systems at {{company}}",
         "body": "Dear {{first_name}},\n\nI'm reaching out to ask how your production, procurement and sales systems currently exchange information.\n\nProPIS ERP brings these operational processes together, including traceability from raw materials to finished products. The scope we would discuss covers these areas, while accounting and finance remain outside it.\n\nThe aim is to reduce manual data transfers and reliance on separate Excel records.\n\nWould you be open to a brief conversation about how this could fit your current setup?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
-          "english": {
-            "subject": "Connecting production systems at {{company}}",
-            "body": "Dear {{first_name}},\n\nI'm reaching out to ask how your production, procurement and sales systems currently exchange information.\n\nProPIS ERP brings these operational processes together, including traceability from raw materials to finished products. The scope we would discuss covers these areas, while accounting and finance remain outside it.\n\nThe aim is to reduce manual data transfers and reliance on separate Excel records.\n\nWould you be open to a brief conversation about how this could fit your current setup?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
-          },
           "serbian": {
             "subject": "Povezivanje proizvodnih sustava u tvrtki {{company}}",
             "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako vaši sustavi za proizvodnju, nabavu i prodaju trenutačno razmjenjuju podatke.\n\nProPIS ERP povezuje te operativne procese i omogućuje sljedivost od sirovina do gotovih proizvoda. Predmet razgovora bila bi ta područja, bez računovodstva i financija.\n\nCilj je smanjiti ručni prijenos podataka i oslanjanje na odvojene evidencije u Excelu.\n\nBi li vam odgovarao kratak razgovor o tome kako bi se rješenje moglo uklopiti u vaše postojeće okruženje?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
@@ -107,10 +91,6 @@
         "subject": "RE: System integration and operational efficiency",
         "body": "Dear {{first_name}},\n\nI recently wrote to you about connecting your operational systems.\n\nProPIS supports integration with scanners, machinery and packaging lines, helping teams capture and use information within the same operational system.\n\nIn an initial conversation, we could look at your existing setup and assess which connections would be relevant, including the link to your accounting system.\n\nIf this is a topic you're currently considering, I'd be happy to discuss it on a brief call.\n\nBest regards,\n{{sender_name}}",
         "translations": {
-          "english": {
-            "subject": "RE: System integration and operational efficiency",
-            "body": "Dear {{first_name}},\n\nI recently wrote to you about connecting your operational systems.\n\nProPIS supports integration with scanners, machinery and packaging lines, helping teams capture and use information within the same operational system.\n\nIn an initial conversation, we could look at your existing setup and assess which connections would be relevant, including the link to your accounting system.\n\nIf this is a topic you're currently considering, I'd be happy to discuss it on a brief call.\n\nBest regards,\n{{sender_name}}"
-          },
           "serbian": {
             "subject": "RE: Povezivanje proizvodnih sustava i operativna učinkovitost",
             "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava.\n\nProPIS podržava povezivanje sa skenerima, strojevima i linijama za pakiranje te timovima pomaže prikupljati i koristiti podatke unutar istog operativnog sustava.\n\nU uvodnom razgovoru mogli bismo razmotriti vaše postojeće okruženje i procijeniti koje bi veze bile relevantne, uključujući povezivanje s računovodstvenim sustavom.\n\nAko vam je ova tema aktualna, možemo dogovoriti kratak poziv.\n\nLijep pozdrav,\n{{sender_name}}"
@@ -127,10 +107,6 @@
         "subject": "RE: Is system integration a current priority for {{company}}?",
         "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether connecting production systems and reducing manual data transfers is currently relevant for your team.\n\nIf so, we could arrange a brief conversation. If someone else leads this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\n{{sender_name}}",
         "translations": {
-          "english": {
-            "subject": "RE: Is system integration a current priority for {{company}}?",
-            "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether connecting production systems and reducing manual data transfers is currently relevant for your team.\n\nIf so, we could arrange a brief conversation. If someone else leads this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\n{{sender_name}}"
-          },
           "serbian": {
             "subject": "RE: Jesu li povezivanje proizvodnih sustava prioritet za {{company}}?",
             "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio jesu li povezivanje proizvodnih sustava i smanjenje ručnog prijenosa podataka trenutačno aktualne teme za vaš tim.\n\nAko jesu, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\n{{sender_name}}"
