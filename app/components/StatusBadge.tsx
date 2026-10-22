@@ -109,4 +109,5 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   intera: 'Onboarding',
   integraplast: 'Active' as ClientStatus,
   seyens: 'Active',
+  pluritech: 'Onboarding',
 };

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "sequence-1",
+    "tierName": "SEQUENCE A: CEO / Owner / Managing Director",
+    "tierColor": "emerald",
+    "targetPersonas": "Business decision-makers and budget approvers responsible for company-wide security initiatives",
+    "messagingAngle": "Help employees recognize phishing to reduce business risk",
+    "clayFilter": "Slovenia - Accounting & Financial Services (Priority 1), and all other primary industries",
+    "targetPositions": "CEO, Owner, Managing Director, General Manager, Executive Director",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Phishing awareness training for {{Company}}'s office team",
+        "body": "{{FirstName}},\n\nDo your employees recognize deceptive emails? In office-based companies, phishing awareness is often occasional rather than consistent.\n\nReefSecure Angler helps companies like yours systematically improve how employees handle suspicious messages - through training and regular practice.\n\nWould a brief conversation about your current approach to employee awareness be useful?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Phishing awareness training for {{Company}}'s office team",
+        "body": "{{FirstName}},\n\nI'm following up on my earlier message about employee phishing awareness. Many companies we talk to are reviewing their training approach, especially when growing their office team.\n\nIf it makes sense, I'd be happy to discuss:\n- How to help employees recognize phishing patterns\n- Structured training that fits your team's workflow\n- Whether ReefSecure is a fit for your organization\n\nWould a 20-minute conversation be helpful?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Quick question about employee awareness at {{Company}}",
+        "body": "{{FirstName}},\n\nOne final thought - companies implementing training initiatives or reviewing security practices are often the ones who get the most value from systematic awareness programs.\n\nIf you're in that situation, or thinking about it, I'd welcome a brief call to explore whether ReefSecure Angler is right for {{Company}}.\n\nIf it's not the right time, no problem - I'll check back later.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  },
+  {
+    "id": "sequence-2",
+    "tierName": "SEQUENCE B: IT Manager / IT Responsible / Head of IT",
+    "tierColor": "blue",
+    "targetPersonas": "Technical stakeholders responsible for IT infrastructure and security decisions",
+    "messagingAngle": "Evaluate and implement phishing awareness infrastructure",
+    "clayFilter": "Slovenia - Accounting & Financial Services (if IT role exists), and other primary industries",
+    "targetPositions": "IT Manager, IT Director, Head of IT, IT Responsible, Information Security Manager, Systems Administrator",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Employee phishing awareness solution for {{Company}}",
+        "body": "{{FirstName}},\n\nDo you lead IT security or employee awareness at {{Company}}? \n\nReefSecure Angler is a phishing awareness platform designed for office-based teams. It helps companies systematically improve how employees handle suspicious emails.\n\nWould it make sense to review whether a structured awareness solution fits {{Company}}'s approach?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Employee phishing awareness solution for {{Company}}",
+        "body": "{{FirstName}},\n\nI'm checking in on my earlier message. We work with IT teams responsible for evaluating awareness training systems.\n\nIf {{Company}} is assessing security infrastructure or reviewing your current awareness approach, I'd be happy to discuss:\n- Technical integration with your existing systems\n- User adoption and implementation approach\n- How ReefSecure compares to alternatives\n\nWould a brief technical discussion be helpful?\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Quick question about {{Company}}'s security training",
+        "body": "{{FirstName}},\n\nOne last message - if you're undergoing IT infrastructure updates, evaluating new security tools, or dealing with staffing changes in your IT team, it might be worth 20 minutes to explore ReefSecure as an option.\n\nIf that's not relevant right now, no problem - I'll follow up later if timing changes.\n\nBest regards,\n[Your Name]"
+      }
+    ]
+  }
+]

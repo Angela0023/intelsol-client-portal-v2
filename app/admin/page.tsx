@@ -29,7 +29,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'dukegroup', 'novavizija', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens'];
+      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'dukegroup', 'novavizija', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens', 'pluritech'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         xpose: 'Xpose Solutions',
@@ -59,7 +59,8 @@ export default function AdminPage() {
         selekcija: 'Selekcija.hr',
         intera: 'Intrix CRM',
         integraplast: 'Integraplast',
-        seyens: 'Seyens'
+        seyens: 'Seyens',
+        pluritech: 'Pluritech ReefSecure Angler'
       };
 
       const allTasks: any[] = [];

@@ -62,6 +62,7 @@ const ALL_CLIENTS = [
   { id: 'intera', name: 'Intrix CRM' },
   { id: 'integraplast', name: 'Integraplast' },
   { id: 'seyens', name: 'Seyens' },
+  { id: 'pluritech', name: 'Pluritech ReefSecure' },
 ];
 
 export default function ClientsTab() {

@@ -60,6 +60,7 @@ const CLIENT_NAMES = {
   'pacia': 'PACIA',
   'dhm': 'DHM',
   'bmevents': 'BM Events',
+  'pluritech': 'Pluritech',
 };
 
 // Remove emoji from start of text
