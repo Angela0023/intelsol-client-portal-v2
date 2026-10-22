@@ -9,49 +9,49 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "en": {
-          "subject": "Nearshore carton production for {{Company}}",
-          "body": "{{FirstName}} -\n\nI work with European consumer brands and manufacturers on carton and box sourcing for recurring packaging needs.\n\nStojkov is a family-owned Serbian print and packaging manufacturer (founded 1963, 75 employees, 3,000 sq m facility) with capabilities across offset printing, lamination, die-cutting, foil stamping, and embossing.\n\nFor procurement, packaging, and supply chain teams, the key value is often:\n- Landed-cost comparison for recurring specifications (nearshore advantage: 15-25% vs. Asian sourcing)\n- Production capacity and technical breadth for multi-SKU programmes\n- European quality standards (ISO 9001/14001/45001, FSC, SEDEX audited) with shorter lead times\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
-        },
-        "sr": {
-          "subject": "Proizvodnja kartona u blizini za {{Company}}",
-          "body": "{{FirstName}} -\n\nRadim sa evropskim brendovima za potrošače i proizvođačima na nabavci kartona i kutija za ponavljajuće potrebe pakovanja.\n\nStojkov je porodična srpska štamparija i proizvođač ambalaže (osnovan 1963, 75 zaposlenih, 3.000 sq m objekta) sa mogućnostima u ofsetu, laminaciji, rezanju, zlatotisku i embosingu.\n\nZa timove nabavke, pakovanja i lanca snabdevanja, ključna vrednost je često:\n- Poređenje cena za ponavljajuće specifikacije (prednost bliskosti: 15-25% u odnosu na azijsku nabavku)\n- Kapacitet proizvodnje i tehnička širina za multi-SKU programe\n- Evropski standardi kvaliteta (ISO 9001/14001/45001, FSC, SEDEX auditan) sa kraćim vremenima isporuke\n\nBilo bi li korisno da poredimo opcije proizvodnje za jednu ponavljajuću specifikaciju kartona ili kutije?\n\nNajbolje,\n[Ime pošiljaoca]"
-        },
-        "sl": {
-          "subject": "Proizvodnja kartona v bližini za {{Company}}",
-          "body": "{{FirstName}} -\n\nDelam z evropskimi blagovnimi znamkami in proizvajalci pri nabavi kartona in škatel za ponavljajoče potrebe pakiranje.\n\nStojkov je družinsko podjetje, srbska tiskarna in proizvajalec embalaže (ustanovljeno 1963, 75 zaposlenih, 3.000 sq m prostorov) z zmogljivostmi v ofsetnem tisku, laminiranju, rezanju, folijskem tisku in embosiranju.\n\nZa nabavne, embalažne in oskrbne timove je ključna vrednost pogosto:\n- Primerjava cen za ponavljajoče specifikacije (prednost bližine: 15-25% v primerjavi z azijsko nabavo)\n- Proizvodni kapaciteti in tehnična raznolikost za multi-SKU programe\n- Evropski standardi kakovosti (ISO 9001/14001/45001, FSC, SEDEX audit) s krajšimi rokami dostave\n\nBi bilo koristno, da primerjamo možnosti proizvodnje za eno ponavljajočo specifikacijo kartona ali škatle?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+        "subject": "Nearshore carton production for {{Company}}",
+        "body": "{{FirstName}} -\n\nI work with European consumer brands and manufacturers on carton and box sourcing for recurring packaging needs.\n\nStojkov is a family-owned Serbian print and packaging manufacturer (founded 1963, 75 employees, 3,000 sq m facility) with capabilities across offset printing, lamination, die-cutting, foil stamping, and embossing.\n\nFor procurement, packaging, and supply chain teams, the key value is often:\n- Landed-cost comparison for recurring specifications (nearshore advantage: 15-25% vs. Asian sourcing)\n- Production capacity and technical breadth for multi-SKU programmes\n- European quality standards (ISO 9001/14001/45001, FSC, SEDEX audited) with shorter lead times\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "serbian": {
+            "subject": "Proizvodnja kartona u blizini za {{Company}}",
+            "body": "{{FirstName}} -\n\nRadim sa evropskim brendovima za potrošače i proizvođačima na nabavci kartona i kutija za ponavljajuće potrebe pakovanja.\n\nStojkov je porodična srpska štamparija i proizvođač ambalaže (osnovan 1963, 75 zaposlenih, 3.000 sq m objekta) sa mogućnostima u ofsetu, laminaciji, rezanju, zlatotisku i embosingu.\n\nZa timove nabavke, pakovanja i lanca snabdevanja, ključna vrednost je često:\n- Poređenje cena za ponavljajuće specifikacije (prednost bliskosti: 15-25% u odnosu na azijsku nabavku)\n- Kapacitet proizvodnje i tehnička širina za multi-SKU programe\n- Evropski standardi kvaliteta (ISO 9001/14001/45001, FSC, SEDEX auditan) sa kraćim vremenima isporuke\n\nBilo bi li korisno da poredimo opcije proizvodnje za jednu ponavljajuću specifikaciju kartona ili kutije?\n\nNajbolje,\n[Ime pošiljaoca]"
+          },
+          "slovenian": {
+            "subject": "Proizvodnja kartona v bližini za {{Company}}",
+            "body": "{{FirstName}} -\n\nDelam z evropskimi blagovnimi znamkami in proizvajalci pri nabavi kartona in škatel za ponavljajoče potrebe pakiranje.\n\nStojkov je družinsko podjetje, srbska tiskarna in proizvajalec embalaže (ustanovljeno 1963, 75 zaposlenih, 3.000 sq m prostorov) z zmogljivostmi v ofsetnem tisku, laminiranju, rezanju, folijskem tisku in embosiranju.\n\nZa nabavne, embalažne in oskrbne timove je ključna vrednost pogosto:\n- Primerjava cen za ponavljajoče specifikacije (prednost bližine: 15-25% v primerjavi z azijsko nabavo)\n- Proizvodni kapaciteti in tehnična raznolikost za multi-SKU programe\n- Evropski standardi kakovosti (ISO 9001/14001/45001, FSC, SEDEX audit) s krajšimi rokami dostave\n\nBi bilo koristno, da primerjamo možnosti proizvodnje za eno ponavljajočo specifikacijo kartona ali škatle?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+          }
         }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "en": {
-          "subject": "Re: Nearshore carton production for {{Company}}",
-          "body": "{{FirstName}} -\n\nFollowing up on carton sourcing options.\n\nMost procurement and supply chain teams we work with are evaluating:\n- Second-source alternatives for existing suppliers\n- Nearshore European options for cost and lead time management\n- Technical partners who understand packaging specifications, compliance, and delivery coordination\n\nStojkov's production breadth covers folding cartons, rigid boxes, specialty packaging with full finishing capabilities - serving brands across Slovenia, Austria, Germany, and Switzerland.\n\nWould a 20-minute call to review your technical requirements and sourcing priorities make sense?\n\nBest,\n[Sender Name]"
-        },
-        "sr": {
-          "subject": "Re: Proizvodnja kartona u blizini za {{Company}}",
-          "body": "{{FirstName}} -\n\nPratim vašu nabavku opcija za kartone.\n\nVećina timova nabavke i lanca snabdevanja sa kojima radimo vrši evaluaciju:\n- Alternativnih izvora za postojeće dobavljače\n- Opcije u blizini evropskog tržišta za upravljanje troškovima i rokovima\n- Tehničke partnere koji razumeju specifikacije pakovanja, usaglašenost i koordinaciju dostave\n\nProizvodne mogućnosti Stojkova obuhvataju savijajuće kartone, kutije, specijalne ambalaže sa svim završnim mogućnostima - služeći brend iz Slovenije, Austrije, Nemačke i Švajcarske.\n\nBi li razgovor od 20 minuta bio koristan da pregledam vaše tehničke zahteve i prioritete nabavke?\n\nNajbolje,\n[Ime pošiljaoca]"
-        },
-        "sl": {
-          "subject": "Re: Proizvodnja kartona v bližini za {{Company}}",
-          "body": "{{FirstName}} -\n\nSpremljam vaše možnosti za nabavo kartona.\n\nVečina nabavnih in oskrbnih timov, s katerimi delam, ocenjuje:\n- Alternativne vire za obstoječe dobavitelje\n- Možnosti v bližnji Evropi za upravljanje stroškov in rokov dostave\n- Tehnične partnerje, ki razumejo specifikacije embalaže, skladnost in usklajevanje dostave\n\nProizvodne zmogljivosti Stojkova zajemajo prepogljive kartone, škatel, posebno embalažo s polno zaključno zmogljivostjo - služijo blagovno znamko iz Slovenije, Avstrije, Nemčije in Švice.\n\nBi bil klican 20 minut koristen za pregled vaših tehničnih zahtev in prioritet nabave?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+        "subject": "Re: Nearshore carton production for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on carton sourcing options.\n\nMost procurement and supply chain teams we work with are evaluating:\n- Second-source alternatives for existing suppliers\n- Nearshore European options for cost and lead time management\n- Technical partners who understand packaging specifications, compliance, and delivery coordination\n\nStojkov's production breadth covers folding cartons, rigid boxes, specialty packaging with full finishing capabilities - serving brands across Slovenia, Austria, Germany, and Switzerland.\n\nWould a 20-minute call to review your technical requirements and sourcing priorities make sense?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "serbian": {
+            "subject": "Re: Proizvodnja kartona u blizini za {{Company}}",
+            "body": "{{FirstName}} -\n\nPratim vašu nabavku opcija za kartone.\n\nVećina timova nabavke i lanca snabdevanja sa kojima radimo vrši evaluaciju:\n- Alternativnih izvora za postojeće dobavljače\n- Opcije u blizini evropskog tržišta za upravljanje troškovima i rokovima\n- Tehničke partnere koji razumeju specifikacije pakovanja, usaglašenost i koordinaciju dostave\n\nProizvodne mogućnosti Stojkova obuhvataju savijajuće kartone, kutije, specijalne ambalaže sa svim završnim mogućnostima - služeći brend iz Slovenije, Austrije, Nemačke i Švajcarske.\n\nBi li razgovor od 20 minuta bio koristan da pregledam vaše tehničke zahteve i prioritete nabavke?\n\nNajbolje,\n[Ime pošiljaoca]"
+          },
+          "slovenian": {
+            "subject": "Re: Proizvodnja kartona v bližini za {{Company}}",
+            "body": "{{FirstName}} -\n\nSpremljam vaše možnosti za nabavo kartona.\n\nVečina nabavnih in oskrbnih timov, s katerimi delam, ocenjuje:\n- Alternativne vire za obstoječe dobavitelje\n- Možnosti v bližnji Evropi za upravljanje stroškov in rokov dostave\n- Tehnične partnerje, ki razumejo specifikacije embalaže, skladnost in usklajevanje dostave\n\nProizvodne zmogljivosti Stojkova zajemajo prepogljive kartone, škatel, posebno embalažo s polno zaključno zmogljivostjo - služijo blagovno znamko iz Slovenije, Avstrije, Nemčije in Švice.\n\nBi bil klican 20 minut koristen za pregled vaših tehničnih zahtev in prioritet nabave?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+          }
         }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "en": {
-          "subject": "Last note - carton sourcing evaluation",
-          "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging suppliers or managing specifications for recurring carton needs, happy to share how we approach technical and commercial evaluation.\n\nNo obligation, just a straightforward review of production capabilities, quality standards, and nearshore economics for your specifications.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
-        },
-        "sr": {
-          "subject": "Poslednja napomena - evaluacija nabavke kartona",
-          "body": "{{FirstName}} -\n\nPoslednja napomena - ako ste u procesu evaluacije dobavljača pakovanja ili upravljanja specifikacijama za ponavljajuće potrebe kartona, radoval bih se da podelim kako pristupamo tehničkoj i komercijalnoj evaluaciji.\n\nBez obaveza, samo jasan pregled mogućnosti proizvodnje, standarda kvaliteta i ekonomije bliskosti za vaše specifikacije.\n\nJavite mi ako bi to bilo korisno.\n\nNajbolje,\n[Ime pošiljaoca]"
-        },
-        "sl": {
-          "subject": "Zadnja opomba - ocena nabave kartona",
-          "body": "{{FirstName}} -\n\nZadnja opomba - če ocenjujete dobavitelje embalaže ali upravljate specifikacije za ponavljajoče potrebe kartona, vesel bi, da delim, kako pristopimo k tehnični in komercialni oceni.\n\nBrez obveznosti, samo odkrit pregled proizvodnih zmogljivosti, standardov kakovosti in ekonomije bližine za vaše specifikacije.\n\nJavite mi, če bi to bilo koristno.\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+        "subject": "Last note - carton sourcing evaluation",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging suppliers or managing specifications for recurring carton needs, happy to share how we approach technical and commercial evaluation.\n\nNo obligation, just a straightforward review of production capabilities, quality standards, and nearshore economics for your specifications.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]",
+        "translations": {
+          "serbian": {
+            "subject": "Poslednja napomena - evaluacija nabavke kartona",
+            "body": "{{FirstName}} -\n\nPoslednja napomena - ako ste u procesu evaluacije dobavljača pakovanja ili upravljanja specifikacijama za ponavljajuće potrebe kartona, radoval bih se da podelim kako pristupamo tehničkoj i komercijalnoj evaluaciji.\n\nBez obaveza, samo jasan pregled mogućnosti proizvodnje, standarda kvaliteta i ekonomije bliskosti za vaše specifikacije.\n\nJavite mi ako bi to bilo korisno.\n\nNajbolje,\n[Ime pošiljaoca]"
+          },
+          "slovenian": {
+            "subject": "Zadnja opomba - ocena nabave kartona",
+            "body": "{{FirstName}} -\n\nZadnja opomba - če ocenjujete dobavitelje embalaže ali upravljate specifikacije za ponavljajoče potrebe kartona, vesel bi, da delim, kako pristopimo k tehnični in komercialni oceni.\n\nBrez obveznosti, samo odkrit pregled proizvodnih zmogljivosti, standardov kakovosti in ekonomije bližine za vaše specifikacije.\n\nJavite mi, če bi to bilo koristno.\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+          }
         }
       }
     ]
@@ -66,49 +66,49 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "en": {
-          "subject": "European packaging production partner for {{Company}}",
-          "body": "{{FirstName}} -\n\nI'm reaching out because {{Company}} likely manages packaging sourcing or brand presentation for your product lines.\n\nStojkov is a family-owned Serbian packaging manufacturer (founded 1963, 75 employees, 3,000 sq m facility) specializing in premium folding cartons, rigid boxes, and specialty packaging for cosmetics, food, wellness, and publishing brands across Europe.\n\nProduction capabilities: B1 UV hybrid offset, lamination, die-cutting, foil stamping, embossing. Certifications: ISO 9001/14001/45001, FSC, SEDEX audited.\n\nFor brands and agencies: we work as a reliable European manufacturing partner with competitive Serbian production economics and full design/artwork support.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]"
-        },
-        "sr": {
-          "subject": "Evropski partner za proizvodnju ambalaže za {{Company}}",
-          "body": "{{FirstName}} -\n\nKontaktiram vas jer {{Company}} verovatno upravljate nabavkom ambalaže ili prezentacijom brenda za linije proizvoda.\n\nStojkov je porodično poduzeće, srpska štamparija i proizvođač ambalaže (osnovan 1963, 75 zaposlenih, 3.000 sq m objekta) koja se specijalizuje u premium savijajućim kartonima, kutijama i specijalnoj ambalaži za kozmetiku, hranu, wellness i izdavačke brendove u Evropi.\n\nMogućnosti proizvodnje: B1 UV hibrid ofset, laminacija, rezanje, zlatotisk, embosing. Sertifikati: ISO 9001/14001/45001, FSC, SEDEX auditan.\n\nZa brendove i agencije: Radimo kao pouzdan evropski partner za proizvodnju sa konkurentnom srpskom ekonomijom proizvodnje i punom podrškom za dizajn i grafiku.\n\nBilo bi li korisno da poredimo opcije proizvodnje za jednu ponavljajuću specifikaciju kartona ili kutije?\n\nNajbolje,\n[Ime pošiljaoca]"
-        },
-        "sl": {
-          "subject": "Evropski partner za proizvodnjo embalaže za {{Company}}",
-          "body": "{{FirstName}} -\n\nStopnjujem se v stik z vami, ker {{Company}} verjetno upravljate nabavo embalaže ali predstavitev blagovno znamke za linije proizvodov.\n\nStojkov je družinsko podjetje, srbska tiskarna in proizvajalec embalaže (ustanovljeno 1963, 75 zaposlenih, 3.000 sq m prostorov), ki se specializira za premium prepogljive kartone, škatel in posebno embalažo za kozmetiko, hrano, wellness in založniške blagovno znamke v Evropi.\n\nZmogljivosti proizvodnje: B1 UV hibridni ofset, laminiranje, rezanje, folijsko tiskanje, embosiranje. Sertifikati: ISO 9001/14001/45001, FSC, SEDEX audit.\n\nZa blagovno znamke in agencije: Delujemo kot zanesljivi evropski partner za proizvodnjo s konkurenčno srbsko ekonomijo proizvodnje in popolno podporo za oblikovanje in grafiko.\n\nBi bilo koristno, da primerjamo možnosti proizvodnje za eno ponavljajočo specifikacijo kartona ali škatle?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+        "subject": "European packaging production partner for {{Company}}",
+        "body": "{{FirstName}} -\n\nI'm reaching out because {{Company}} likely manages packaging sourcing or brand presentation for your product lines.\n\nStojkov is a family-owned Serbian packaging manufacturer (founded 1963, 75 employees, 3,000 sq m facility) specializing in premium folding cartons, rigid boxes, and specialty packaging for cosmetics, food, wellness, and publishing brands across Europe.\n\nProduction capabilities: B1 UV hybrid offset, lamination, die-cutting, foil stamping, embossing. Certifications: ISO 9001/14001/45001, FSC, SEDEX audited.\n\nFor brands and agencies: we work as a reliable European manufacturing partner with competitive Serbian production economics and full design/artwork support.\n\nWould it be useful to compare production options for one recurring carton or box specification?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "serbian": {
+            "subject": "Evropski partner za proizvodnju ambalaže za {{Company}}",
+            "body": "{{FirstName}} -\n\nKontaktiram vas jer {{Company}} verovatno upravljate nabavkom ambalaže ili prezentacijom brenda za linije proizvoda.\n\nStojkov je porodično poduzeće, srpska štamparija i proizvođač ambalaže (osnovan 1963, 75 zaposlenih, 3.000 sq m objekta) koja se specijalizuje u premium savijajućim kartonima, kutijama i specijalnoj ambalaži za kozmetiku, hranu, wellness i izdavačke brendove u Evropi.\n\nMogućnosti proizvodnje: B1 UV hibrid ofset, laminacija, rezanje, zlatotisk, embosing. Sertifikati: ISO 9001/14001/45001, FSC, SEDEX auditan.\n\nZa brendove i agencije: Radimo kao pouzdan evropski partner za proizvodnju sa konkurentnom srpskom ekonomijom proizvodnje i punom podrškom za dizajn i grafiku.\n\nBilo bi li korisno da poredimo opcije proizvodnje za jednu ponavljajuću specifikaciju kartona ili kutije?\n\nNajbolje,\n[Ime pošiljaoca]"
+          },
+          "slovenian": {
+            "subject": "Evropski partner za proizvodnjo embalaže za {{Company}}",
+            "body": "{{FirstName}} -\n\nStopnjujem se v stik z vami, ker {{Company}} verjetno upravljate nabavo embalaže ali predstavitev blagovno znamke za linije proizvodov.\n\nStojkov je družinsko podjetje, srbska tiskarna in proizvajalec embalaže (ustanovljeno 1963, 75 zaposlenih, 3.000 sq m prostorov), ki se specializira za premium prepogljive kartone, škatel in posebno embalažo za kozmetiko, hrano, wellness in založniške blagovno znamke v Evropi.\n\nZmogljivosti proizvodnje: B1 UV hibridni ofset, laminiranje, rezanje, folijsko tiskanje, embosiranje. Sertifikati: ISO 9001/14001/45001, FSC, SEDEX audit.\n\nZa blagovno znamke in agencije: Delujemo kot zanesljivi evropski partner za proizvodnjo s konkurenčno srbsko ekonomijo proizvodnje in popolno podporo za oblikovanje in grafiko.\n\nBi bilo koristno, da primerjamo možnosti proizvodnje za eno ponavljajočo specifikacijo kartona ali škatle?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+          }
         }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "en": {
-          "subject": "Re: European packaging production partner for {{Company}}",
-          "body": "{{FirstName}} -\n\nFollowing up on packaging partnership.\n\nMost brand leaders and agency founders we work with are looking for:\n- Reliable European manufacturing partner they can trust long-term\n- Competitive economics without compromising on quality or brand fit\n- Production breadth and design support for evolving packaging needs\n\nStojkov's been manufacturing premium packaging for 60+ years - serving brands and agencies across Slovenia, Austria, Germany, and Switzerland with consistent quality and reliable delivery.\n\nWould a brief call to explore how we could support your packaging strategy make sense?\n\nBest,\n[Sender Name]"
-        },
-        "sr": {
-          "subject": "Re: Evropski partner za proizvodnju ambalaže za {{Company}}",
-          "body": "{{FirstName}} -\n\nPratim partnerstvo u ambalaži.\n\nVećina vodećih brendova i osnivača agencija sa kojima radimo traži:\n- Pouzdanog evropskog partnera za proizvodnju u kojem mogu verovati dugoročno\n- Konkurentnu ekonomiju bez kompromisa na kvalitetu ili podudaranju brenda\n- Proizvodnu širinu i podršku za dizajn za rastuće potrebe ambalaže\n\nStojkov je proizvodio premium ambalažu više od 60 godina - služeći brendove i agencije iz Slovenije, Austrije, Nemačke i Švajcarske sa konzistentnom kvalitetom i pouzdanom dostavom.\n\nBi li razgovor za razmatranje kako bismo mogli da podrži vašu strategiju ambalaže bio koristan?\n\nNajbolje,\n[Ime pošiljaoca]"
-        },
-        "sl": {
-          "subject": "Re: Evropski partner za proizvodnjo embalaže za {{Company}}",
-          "body": "{{FirstName}} -\n\nSpremljam partnerstvo pri embalaži.\n\nVečina vodilnih blagovno znamk in ustanoviteljev agencij, s katerimi delam, išče:\n- Zanesljivega evropskega partnerja za proizvodnjo, ki mu lahko zaupate dolgoročno\n- Konkurenčno gospodarstvo brez kompromisov pri kakovosti ali ujemanju blagovno znamke\n- Proizvodno raznolikost in podporo za oblikovanje za rastoče potrebe embalaže\n\nStojkov proizvaja premium embalažo že več kot 60 let - služi blagovnim znamkam in agencijam iz Slovenije, Avstrije, Nemčije in Švice s dosledna kakovostjo in zanesljivo dostavo.\n\nBi bil razgovor za preučevanje, kako bi lahko podprli vašo strategijo embalaže, koristen?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+        "subject": "Re: European packaging production partner for {{Company}}",
+        "body": "{{FirstName}} -\n\nFollowing up on packaging partnership.\n\nMost brand leaders and agency founders we work with are looking for:\n- Reliable European manufacturing partner they can trust long-term\n- Competitive economics without compromising on quality or brand fit\n- Production breadth and design support for evolving packaging needs\n\nStojkov's been manufacturing premium packaging for 60+ years - serving brands and agencies across Slovenia, Austria, Germany, and Switzerland with consistent quality and reliable delivery.\n\nWould a brief call to explore how we could support your packaging strategy make sense?\n\nBest,\n[Sender Name]",
+        "translations": {
+          "serbian": {
+            "subject": "Re: Evropski partner za proizvodnju ambalaže za {{Company}}",
+            "body": "{{FirstName}} -\n\nPratim partnerstvo u ambalaži.\n\nVećina vodećih brendova i osnivača agencija sa kojima radimo traži:\n- Pouzdanog evropskog partnera za proizvodnju u kojem mogu verovati dugoročno\n- Konkurentnu ekonomiju bez kompromisa na kvalitetu ili podudaranju brenda\n- Proizvodnu širinu i podršku za dizajn za rastuće potrebe ambalaže\n\nStojkov je proizvodio premium ambalažu više od 60 godina - služeći brendove i agencije iz Slovenije, Austrije, Nemačke i Švajcarske sa konzistentnom kvalitetom i pouzdanom dostavom.\n\nBi li razgovor za razmatranje kako bismo mogli da podrži vašu strategiju ambalaže bio koristan?\n\nNajbolje,\n[Ime pošiljaoca]"
+          },
+          "slovenian": {
+            "subject": "Re: Evropski partner za proizvodnjo embalaže za {{Company}}",
+            "body": "{{FirstName}} -\n\nSpremljam partnerstvo pri embalaži.\n\nVečina vodilnih blagovno znamk in ustanoviteljev agencij, s katerimi delam, išče:\n- Zanesljivega evropskega partnerja za proizvodnjo, ki mu lahko zaupate dolgoročno\n- Konkurenčno gospodarstvo brez kompromisov pri kakovosti ali ujemanju blagovno znamke\n- Proizvodno raznolikost in podporo za oblikovanje za rastoče potrebe embalaže\n\nStojkov proizvaja premium embalažo že več kot 60 let - služi blagovnim znamkam in agencijam iz Slovenije, Avstrije, Nemčije in Švice s dosledna kakovostjo in zanesljivo dostavo.\n\nBi bil razgovor za preučevanje, kako bi lahko podprli vašo strategijo embalaže, koristen?\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+          }
         }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "en": {
-          "subject": "Last note - packaging partnership",
-          "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging production partners or looking at European manufacturing options for your brand, happy to walk through our approach to premium packaging and partnership.\n\nNo obligation, just a straightforward conversation about production capabilities, quality standards, and how we support brand packaging strategy.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]"
-        },
-        "sr": {
-          "subject": "Poslednja napomena - partnerstvo ambalaže",
-          "body": "{{FirstName}} -\n\nPoslednja napomena - ako ste u procesu evaluacije partnera za ambalaže ili razmatranja opcija evropske proizvodnje za vašu marku, radoval bih se da prođem kroz naš pristup premium ambalaži i partnerstvu.\n\nBez obaveza, samo jasan razgovor o mogućnostima proizvodnje, standardima kvaliteta i kako podržavamo strategiju ambalaže brenda.\n\nJavite mi da li bi to bilo korisno.\n\nNajbolje,\n[Ime pošiljaoca]"
-        },
-        "sl": {
-          "subject": "Zadnja opomba - partnerstvo pri embalaži",
-          "body": "{{FirstName}} -\n\nZadnja opomba - če ocenjujete partnerja za embalažo ali premislite o možnostih evropske proizvodnje za vašo blagovno znamko, bi se veselil, da pregledam naš pristop k premium embalaži in partnerstvu.\n\nBrez obveznosti, samo odkrit pogovor o proizvodnih zmogljivostih, standardih kakovosti in kako podpiramo strategijo embalaže blagovno znamke.\n\nJavite mi, ali bi to bilo koristno.\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+        "subject": "Last note - packaging partnership",
+        "body": "{{FirstName}} -\n\nLast note on this - if you're evaluating packaging production partners or looking at European manufacturing options for your brand, happy to walk through our approach to premium packaging and partnership.\n\nNo obligation, just a straightforward conversation about production capabilities, quality standards, and how we support brand packaging strategy.\n\nLet me know if that would be useful.\n\nBest,\n[Sender Name]",
+        "translations": {
+          "serbian": {
+            "subject": "Poslednja napomena - partnerstvo ambalaže",
+            "body": "{{FirstName}} -\n\nPoslednja napomena - ako ste u procesu evaluacije partnera za ambalaže ili razmatranja opcija evropske proizvodnje za vašu marku, radoval bih se da prođem kroz naš pristup premium ambalaži i partnerstvu.\n\nBez obaveza, samo jasan razgovor o mogućnostima proizvodnje, standardima kvaliteta i kako podržavamo strategiju ambalaže brenda.\n\nJavite mi da li bi to bilo korisno.\n\nNajbolje,\n[Ime pošiljaoca]"
+          },
+          "slovenian": {
+            "subject": "Zadnja opomba - partnerstvo pri embalaži",
+            "body": "{{FirstName}} -\n\nZadnja opomba - če ocenjujete partnerja za embalažo ali premislite o možnostih evropske proizvodnje za vašo blagovno znamko, bi se veselil, da pregledam naš pristop k premium embalaži in partnerstvu.\n\nBrez obveznosti, samo odkrit pogovor o proizvodnih zmogljivostih, standardih kakovosti in kako podpiramo strategijo embalaže blagovno znamke.\n\nJavite mi, ali bi to bilo koristno.\n\nLepo pozdravljeni,\n[Ime pošiljaoca]"
+          }
         }
       }
     ]
