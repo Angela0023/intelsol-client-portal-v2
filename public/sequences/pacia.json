@@ -40,20 +40,20 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Guest enquiry capacity at [Company Name]?",
-        "body": "Hi [First Name],\n\nI noticed [Company Name] serves guests - which likely means your reception or reservations team handles a lot of repeat questions about bookings, policies, amenities, and local information.\n\nPACIA helps Slovenian tourism businesses improve that enquiry coverage. We build a bespoke AI support agent using your existing information - booking policies, guest FAQs, property details - with multilingual capability across web, email, and social channels.\n\nStart with one defined category (like booking confirmation or check-in procedures), and improve capacity during peak periods without stretching your team.\n\nTypical implementation: 4 weeks.\n\nWorth a 20-minute conversation to see if there's a fit?\n\nBest,\n[Your Name]"
+        "subject": "Vprašanja gostov pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\npri turističnih ponudnikih se velik del komunikacije z gosti pogosto vrti okoli podobnih vprašanj — prihod, parkiranje, storitve, pravila, lokacija, ponudba in podobno.\n\nKako to danes rešujete pri {{company_name}}, predvsem izven delovnega časa ali kadar gostje pišejo v različnih jezikih?\n\nPri PACIA izdelujemo prilagojene AI sisteme za podporo, ki gostom odgovarjajo na podlagi dejanskih informacij podjetja.\n\nPrvi korak je običajno zelo konkreten: pogledamo, katere vrste vprašanj se dovolj pogosto ponavljajo, da bi jih bilo smiselno avtomatizirati.\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: Guest enquiry capacity",
-        "body": "Hi [First Name],\n\nFollowing up on my message about improving guest enquiry coverage at [Company Name].\n\nMost tourism businesses we work with face two specific challenges:\n1. Repeat guest questions (booking details, policies, amenities) that consume staff time\n2. Coverage gaps during busy periods or outside business hours\n\nThe AI agent handles those recurring enquiries using your approved information - including multilingual support if needed - letting your team focus on guests who need personalized assistance.\n\nRelevant for [Company Name]?\n\nBest,\n[Your Name]"
+        "subject": "Re: Vprašanja gostov pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up.\n\nPri hotelih in drugih turističnih ponudnikih je zanimivo predvsem to, da se ista vprašanja pogosto pojavljajo pred prihodom, zvečer, med vikendi ali v različnih jezikih.\n\nTakšne informacijske poizvedbe je mogoče obravnavati avtomatizirano, medtem ko zahtevnejši primeri še vedno ostanejo ekipi.\n\nČe je tudi pri vas to opazen del komunikacije z gosti, lahko na kratkem klicu pogledamo, ali obstaja smiseln prvi primer uporabe.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Final follow-up - guest support",
-        "body": "Hi [First Name],\n\nLast follow-up on this.\n\nIf [Company Name] is looking to improve guest enquiry capacity or consistency - particularly around recurring questions or peak period coverage - PACIA could be a fit.\n\nWe've helped other Slovenian tourism businesses reduce the time their teams spend on repeat enquiries, making routine information easier for guests to access.\n\nHappy to have a brief conversation if the timing works.\n\nBest,\n[Your Name]"
+        "subject": "Re: Vprašanja gostov pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli gostom omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pokažem, kako to rešujemo pri PACIA.\n\nČe trenutno ni aktualno, brez težav.\n\nJe smiselno, da se na kratko slišimo?\n\nLep pozdrav,\n\n\n"
       }
     ]
   }
