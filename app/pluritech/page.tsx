@@ -8,7 +8,7 @@ import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
-import TasksTab from '../components/TasksTab';
+import TasksTab, { PLURITECH_DEFAULT_TASKS } from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
@@ -160,7 +160,7 @@ export default function PluritechPage() {
             </>
           )}
           {activeTab === 'documents' && <DocumentsTabGeneric clientId="pluritech" />}
-          {activeTab === 'tasks' && <TasksTab clientId="pluritech" />}
+          {activeTab === 'tasks' && <TasksTab clientId="pluritech" defaultTasks={PLURITECH_DEFAULT_TASKS} />}
         </div>
       </div>
     </ClientLayout>

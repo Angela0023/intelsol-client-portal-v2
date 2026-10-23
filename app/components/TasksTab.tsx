@@ -880,3 +880,33 @@ export const INTELSOL_DEFAULT_TASKS: Task[] = [
     comments: [],
   },
 ];
+
+export const PLURITECH_DEFAULT_TASKS: Task[] = [
+  {
+    id: 'pluritech_1',
+    description: 'Build initial lead list for Slovenia - Accounting & Financial tier 1',
+    assignedTo: 'Frosina',
+    status: 'pending',
+    dueDate: '2026-06-02',
+    order: 0,
+    comments: [],
+  },
+  {
+    id: 'pluritech_2',
+    description: 'Verify ICP match for first batch of 50 leads using Clay filters',
+    assignedTo: 'Frosina',
+    status: 'pending',
+    dueDate: '2026-06-05',
+    order: 1,
+    comments: [],
+  },
+  {
+    id: 'pluritech_3',
+    description: 'Set up email sequences in SmartLead for CEO and IT Manager campaigns',
+    assignedTo: 'Matej',
+    status: 'pending',
+    dueDate: '2026-06-08',
+    order: 2,
+    comments: [],
+  },
+];
