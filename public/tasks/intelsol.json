@@ -787,6 +787,17 @@
         "createdBy": "Admin"
       }
     ],
-    "client": "eblissai"
+    "client": "eblissai",
+    "completedAt": null
+  },
+  {
+    "id": "task_1792778866415_hr9yk05",
+    "description": "Add more mailboxes for Zen2Fit - currently only 4 active",
+    "assignedTo": "Matej",
+    "status": "pending",
+    "dueDate": "2026-10-26",
+    "order": 33,
+    "comments": [],
+    "client": "zen2fit"
   }
 ]
