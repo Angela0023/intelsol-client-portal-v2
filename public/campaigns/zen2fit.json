@@ -2,7 +2,7 @@
   {
     "campaignName": "🍃 Zen2fit | Hungary - Finance | Tier 3",
     "dateLaunched": "10/13/2026",
-    "totalLeads": 74,
+    "totalLeads": 0,
     "leadsEmailed": 0,
     "month": "October",
     "status": "DRAFTED",
@@ -25,7 +25,7 @@
   {
     "campaignName": "🍃 Zen2fit | Hungary - Finance | Tier 2",
     "dateLaunched": "10/13/2026",
-    "totalLeads": 448,
+    "totalLeads": 0,
     "leadsEmailed": 0,
     "month": "October",
     "status": "DRAFTED",
@@ -48,7 +48,7 @@
   {
     "campaignName": "🍃 Zen2fit | Hungary - Finance | Tier 1",
     "dateLaunched": "10/13/2026",
-    "totalLeads": 33,
+    "totalLeads": 0,
     "leadsEmailed": 0,
     "month": "October",
     "status": "DRAFTED",
@@ -143,7 +143,7 @@
     "totalLeads": 424,
     "leadsEmailed": 264,
     "month": "September",
-    "status": "PAUSED",
+    "status": "ACTIVE",
     "performance": {
       "emailsSent": 557,
       "opens": 0,
