@@ -1,5 +1,5 @@
 SEQUENCE,Title,Industries to Target,Position List EN,Notes
-"Sequence 1: R&D Learning & Capability Development (PRIMARY BUYER)","R&D Learning & Development Manager - Direct Decision Authority","Pharmaceuticals / Biotechnology / Life Sciences R&D; Semiconductors / AI Research / Advanced Materials / Photonics / Advanced Manufacturing","R&D Learning & Development Manager; R&D L&D Manager; Scientific Training Manager; R&D Academy Lead; Capability Development Lead; R&D Capability Manager; L&D Business Partner for R&D; Learning & Development Business Partner (R&D); Talent Development Manager; Learning Programme Manager; Early Careers Manager; Graduate Development Manager; Scientist Development Manager; Researcher Development Lead; Organization Development Manager (R&D); Strategic Development Manager (Science/R&D); Research Training Manager; Science L&D Manager","WHO: Found in companies with 100+ R&D staff and visible scientist development infrastructure. Direct report to Chief Scientific Officer, VP R&D, VP Talent, or Chief Learning Officer. This is THE primary buyer for Seyens - they own research training calendars, evaluate external providers, control learning budgets, and have explicit responsibility for scientist capability development.
+"Sequence 1: R&D Learning & Capability Development (PRIMARY BUYER)","R&D Learning & Development Manager - Direct Decision Authority","Life Sciences (Pharmaceuticals, Biotechnology, Medical Devices, Diagnostics, Scientific Instruments); Deep-Tech (Semiconductors, AI, Advanced Materials, Photonics, Advanced Manufacturing, Chemicals)","R&D Learning & Development Manager; R&D L&D Manager; Scientific Training Manager; R&D Academy Lead; Capability Development Lead; R&D Capability Manager; L&D Business Partner for R&D; Learning & Development Business Partner (R&D); Talent Development Manager; Learning Programme Manager; Early Careers Manager; Graduate Development Manager; Scientist Development Manager; Researcher Development Lead; Organization Development Manager (R&D); Strategic Development Manager (Science/R&D); Research Training Manager; Science L&D Manager","WHO: Found in companies with 100+ R&D staff and visible scientist development infrastructure. Direct report to Chief Scientific Officer, VP R&D, VP Talent, or Chief Learning Officer. This is THE primary buyer for Seyens - they own research training calendars, evaluate external providers, control learning budgets, and have explicit responsibility for scientist capability development.
 
 WHERE: Present in: (1) Large pharma/biotech with R&D academies; (2) Deep-tech companies with research centers; (3) Multi-site organizations with centralized or site-based L&D for scientists.
 
@@ -7,21 +7,17 @@ WHEN: Target when company has visible L&D program, research academy, poster sess
 
 WHAT: Direct authority over: researcher training calendars, external provider selection and budget, internal course offerings, development programs for scientists. They recognize gaps in visual communication training and actively search for specialist solutions.
 
-BUYING TRIGGER: Company invests in scientist development (visible L&D roles, budget for training, symposia/poster programs). Problem recognition: researchers lack systematic training in visual communication of data. They seek specialist training, not generic presentation courses.
-
-STRATEGIC INTENT (Per Sequence 1): Make L&D manager recognize relevant gap, trust credibility, build interest in evaluating. Emphasis on applicability and specialist expertise.
-
 APPLY CLAY FILTERS:
-- PRIMARY: Filter 1 (Life Sciences) - if targeting pharma/biotech with L&D academy
-- PRIMARY: Filter 2 (Deep-Tech) - if targeting semiconductors/AI with technical forums
-- SECONDARY: Filter 3 (Research-Intensive) - secondary markets with organized research culture
+- Filters 1, 2, 3: Life Sciences across all priority geographies
+- Filters 4, 5, 6: Deep-Tech across all priority geographies
+- Filter 7: Secondary markets with organized research culture
 
 EXPANSION MODEL: One successful cohort can expand to multiple teams within R&D, repeat annually, or grow to other sites in multi-site organizations.
 
 HOW TO VERIFY: LinkedIn title search, look for reports to R&D/CSO or VP Talent, check company careers page for L&D job postings, verify scientist development programs on website.
 
 NOTES: This role may use various titles. If title doesn't say 'L&D' or 'Training,' verify person supports R&D/scientific populations and has visible development responsibility. Do NOT target generic HR L&D roles without R&D connection."
-"Sequence 2: R&D & Scientific Leadership (ROUTING / SPONSOR)","Research Leadership with Budget Authority or Site-Based Decision Power","Pharmaceuticals / Biotechnology / Life Sciences R&D; Semiconductors / AI Research / Advanced Materials / Photonics / Advanced Manufacturing","VP of R&D; Head of R&D; Director of R&D; Research Director; VP of Research; Head of Research; Site Head; Chief Scientific Officer; CSO; VP Scientific Affairs; Head of Research Operations; Director of Research Operations; Chief Research Officer; VP Scientific Operations; Director of Scientific Affairs; Distinguished Scientist (R&D focus); Research Center Director; Global Head of Research; VP Technical Affairs","WHO: Research leaders with direct authority over R&D teams. In larger companies, may not own training budgets directly but can sponsor pilots, allocate team time, or introduce to training decision maker. In site-based organizations, site head or research director controls local team development and training budgets. This role is more often a ROUTER than a primary buyer.
+"Sequence 2: R&D & Scientific Leadership (ROUTING / SPONSOR)","Research Leadership with Budget Authority or Site-Based Decision Power","Life Sciences (Pharmaceuticals, Biotechnology, Medical Devices, Diagnostics, Scientific Instruments); Deep-Tech (Semiconductors, AI, Advanced Materials, Photonics, Advanced Manufacturing, Chemicals)","VP of R&D; Head of R&D; Director of R&D; Research Director; VP of Research; Head of Research; Site Head; Chief Scientific Officer; CSO; VP Scientific Affairs; Head of Research Operations; Director of Research Operations; Chief Research Officer; VP Scientific Operations; Director of Scientific Affairs; Distinguished Scientist (R&D focus); Research Center Director; Global Head of Research; VP Technical Affairs","WHO: Research leaders with direct authority over R&D teams. In larger companies, may not own training budgets directly but can sponsor pilots, allocate team time, or introduce to training decision maker. In site-based organizations, site head or research director controls local team development and training budgets. This role is more often a ROUTER than a primary buyer.
 
 WHERE: Present in: (1) Large pharma/biotech as global or regional research leaders; (2) Deep-tech companies as research directors or center heads; (3) Multi-site organizations where site heads have local R&D budget authority.
 
@@ -29,16 +25,14 @@ WHEN: Target when: (1) No dedicated R&D L&D role exists (company still deciding 
 
 WHAT: May control or influence: team development budgets, pilot budgets, training calendar for their site/team, external partnerships. They care about researcher capability, succession planning, competitive technical advantage, and retention of high-value scientists.
 
-ROUTING INTENT: In most cases, the strategic value of this contact is the introduction to the L&D owner. Per Sequence 2 Email 3: ""If researcher development is managed by an R&D training or L&D colleague at {{company}}, could you point me towards the right person?"" This is more valuable than polite interest from the research leader.
+APPLY CLAY FILTERS:
+- Filters 1, 2, 3: Life Sciences across all priority geographies
+- Filters 4, 5, 6: Deep-Tech across all priority geographies
+- Filter 7: Secondary markets with research leadership structure
+
+ROUTING INTENT: In most cases, the strategic value of this contact is the introduction to the L&D owner. Email 3 asks: 'If researcher development is managed by an R&D training or L&D colleague at {{company}}, could you point me towards the right person?' This is more valuable than polite interest from the research leader alone.
 
 SITE-BASED MODEL (Critical insight): In Roche, Boehringer Ingelheim, Novartis: site heads (Research Director, VP R&D at individual sites) may own or control local training budgets. These are TIER-1 buyers even if not global R&D heads.
-
-APPLY CLAY FILTERS:
-- PRIMARY: Filter 1 (Life Sciences) - pharma/biotech research directors or site heads
-- PRIMARY: Filter 2 (Deep-Tech) - deep-tech research directors or center heads with local authority
-- SECONDARY: Filter 3 (Research-Intensive) - emerging market research leaders with budget
-
-STRATEGIC INTENT (Per Sequence 2): Reach research leaders close enough to teams to sponsor or authorize training. Use to identify right owner in larger companies. Do NOT treat every global VP R&D as high-priority; focus on directors, site heads, leaders with identifiable teams and LOCAL budgets.
 
 EXPANSION MODEL: Initial engagement at site level can lead to company-wide rollout if successful. Multi-site organizations can expand to other sites once one site validates.
 
@@ -47,28 +41,27 @@ EXPECTED OUTCOMES: (1) Pilot training authorization for their team/site; (2) Int
 HOW TO VERIFY: LinkedIn title and reporting structure, check if they have team reports (indicates budgetary authority), verify site structure (multi-site companies show site head roles), look for research operations or team development responsibility.
 
 NOTES: Not all research leaders have training budgets. Global R&D heads may require routing to site leads. Site heads in multinational companies are often more impactful buyers than global functions."
-"Sequence 3: Scientific Programmes & Events (ENTRY POINT - REQUIRES VERIFICATION)","Scientific Programmes & Event Organizers (With Verified Researcher Cohort)","Pharmaceuticals / Biotechnology / Life Sciences R&D; Semiconductors / AI Research / Advanced Materials / Photonics / Advanced Manufacturing","Scientific Communications Manager (internal); Scientific Communications Lead; Research Programme Manager; R&D Programme Manager; Research Symposium Manager; Technical Community Lead; Research Academy Manager; Poster Day Organizer; Senior Scientist (programme lead); Principal Scientist (training lead); Scientific Communications Director; Technical Community Manager; Research Community Manager; Internal Communications Manager (Science); Publications Manager (R&D); Research Community Lead; Scientific Events Manager; Research Knowledge Manager","WHO: Internal role managing organized researcher cohorts, events, or communication infrastructure. Often a scientist or engineer who organizes symposia, poster sessions, technical forums, academy cohorts, or internal research communication. Usually reports to R&D leadership or L&D.
+"Sequence 3: Scientific Programmes & Events (ENTRY POINT - REQUIRES VERIFICATION)","Scientific Programmes & Event Organizers (With Verified Researcher Cohort)","Life Sciences (Pharmaceuticals, Biotechnology, Medical Devices, Diagnostics, Scientific Instruments); Deep-Tech (Semiconductors, AI, Advanced Materials, Photonics, Advanced Manufacturing, Chemicals)","Scientific Communications Manager (internal); Scientific Communications Lead; Research Programme Manager; R&D Programme Manager; Research Symposium Manager; Technical Community Lead; Research Academy Manager; Poster Day Organizer; Senior Scientist (programme lead); Principal Scientist (training lead); Scientific Communications Director; Technical Community Manager; Research Community Manager; Internal Communications Manager (Science); Publications Manager (R&D); Research Community Lead; Scientific Events Manager; Research Knowledge Manager","WHO: Internal role managing organized researcher cohorts, events, or communication infrastructure. Often a scientist or engineer who organizes symposia, poster sessions, technical forums, academy cohorts, or internal research communication. Usually reports to R&D leadership or L&D.
 
 WHERE: Present in companies with: (1) Annual research symposia with 50+ presenter participants; (2) Regular poster sessions or research showcase events; (3) Research academies or internal technical development programs; (4) Cross-team technical forums or technical community programs; (5) Research bootcamps or new researcher onboarding.
 
-WHEN: Target ONLY when a specific, verified event is identified. Per Sequence 3: ""If the event's activities are not publicly known, we should not invent them."" Timing is critical - contact 6-12 months before event planning, or when organizing committee is actively planning.
+WHEN: Target ONLY when a specific, verified event is identified. Per Sequence 3: 'If the event's activities are not publicly known, we should not invent them.' Timing is critical - contact 6-12 months before event planning, or when organizing committee is actively planning.
 
 WHAT: Controls: event agenda, speaker/trainer selection, participant recruiting, portion of event budget for training. Often NOT the final training budget owner but excellent champion for identifying cohort size, researcher communication gaps, and routing to L&D/research leadership.
 
 VERIFICATION REQUIREMENT (Critical): Before sending Sequence 3, verify: (1) Specific event name and URL/registration page; (2) Organizer's name and title; (3) Confirmed researcher participant count and activities; (4) Event timing and planning cycle.
 
-STRATEGIC INTENT (Per Sequence 3): Connect offer directly to verified event organizer is already running. Success depends entirely on research quality - do NOT use generic event messaging. The timing trigger (researcher presentation, poster prep) is the clearest positive indicator.
-
 APPLY CLAY FILTERS:
-- Use ANY filter as entry point, but ONLY if event is verified as real and matching filter criteria
-- Life Sciences Filter (Filter 1): International conferences, research symposia, poster sessions
-- Deep-Tech Filter (Filter 2): Technical forums, engineering symposia, research conferences
-- Emerging Markets (Filter 3): Regional research programs, technical community events
+- Filters 1, 2, 3: Life Sciences when organizing symposia/forums/academy programs
+- Filters 4, 5, 6: Deep-Tech when organizing technical forums/symposia
+- Filter 7: Secondary markets when organizing research programs
+
+STRATEGIC INTENT (Per Sequence 3): Connect offer directly to verified event organizer is already running. Success depends entirely on research quality - do NOT use generic event messaging. The timing trigger (researcher presentation, poster prep) is the clearest positive indicator.
 
 EXPECTED OUTCOMES: (1) Event-specific workshop proposal; (2) Evaluation via free training places; (3) Introduction to responsible L&D person; (4) Future event pipeline (annual conference planning).
 
 HOW TO VERIFY: LinkedIn event postings, company website events page, event registration systems, program committees listed publicly, press releases about conferences/symposia, university or association partnerships.
 
-ROUTING LOGIC: Event organizer may NOT be training budget owner. If organizer shows interest, ask: ""Who approves external trainers for this event?"" and ""Is there an R&D learning or L&D colleague involved in this planning?"" Route to that person for budget discussion.
+ROUTING LOGIC: Event organizer may NOT be training budget owner. If organizer shows interest, ask: 'Who approves external trainers for this event?' and 'Is there an R&D learning or L&D colleague involved in this planning?' Route to that person for budget discussion.
 
-NOTES: Success depends on concrete event verification, not speculation. A researcher asking ""is this relevant?"" about a real event is more valuable than 100 generic prospect meetings. Use this sequence ONLY with verified information. For ambiguous or unverified events, use Sequence 1 or 2 instead."
+NOTES: Success depends on concrete event verification, not speculation. A researcher asking 'is this relevant?' about a real event is more valuable than 100 generic prospect meetings. Use this sequence ONLY with verified information. For ambiguous or unverified events, use Sequence 1 or 2 instead."
