@@ -1,5 +1,5 @@
 Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt,Priority
-"Life Sciences - Organizational Research Culture (100+ Scientists, Multi-Site or L&D Academy)","Find pharmaceutical, biotechnology, or life sciences companies in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland with 100+ R&D or scientific staff and evidence of organized research communication infrastructure.
+"Life Sciences - Organizational Research Culture (100+ Scientists, Multi-Site or L&D Academy)","Find research-intensive life science companies including pharmaceuticals, biotechnology, medical devices, diagnostics and scientific instrument manufacturers in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland with 100+ R&D or scientific staff and evidence of organized research communication infrastructure.
 
 REQUIRED ORGANIZATIONAL SIGNALS (at least 2 must be publicly verifiable):
 1. Website mentions research academy, scientist development program, L&D curriculum for scientists, or capability development
@@ -28,7 +28,7 @@ RETURN ""NO"" IF ANY OF THESE ARE TRUE:
 RETURN ""YES"" IF ALL OF THESE ARE TRUE:
 1. Company has 100+ R&D or scientific staff verified via LinkedIn, company website, or annual reports
 2. Company is based in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland
-3. Company's core business is commercial pharmaceuticals, biotechnology, or life sciences R&D
+3. Company's core business is research-intensive life sciences (pharmaceuticals, biotechnology, medical devices, diagnostics, scientific instruments, or life sciences R&D)
 4. Company shows publicly verifiable evidence of organized research communication (at least 2 of the required signals above)
 5. Company demonstrates investment in researcher development through visible programs, roles, or infrastructure
 6. Company has multi-site structure OR established L&D academy (enables expansion model)
