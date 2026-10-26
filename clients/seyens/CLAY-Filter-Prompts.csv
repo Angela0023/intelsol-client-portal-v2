@@ -1,0 +1,115 @@
+Title,PROMPT,Industry,Location,Date targeted,Company List,ICP Match Prompt,Priority
+"Life Sciences Innovation Leaders - DACH + North America + UK/Ireland (100+ Researchers, Structured L&D)","Find pharmaceutical, biotechnology, or life sciences companies in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland. Company must have 100+ R&D or scientific staff (non-negotiable). Company must show evidence of structured L&D programs, internal training initiatives, scientist development academies, or visible investment in researcher capability.
+
+CRITICAL SIGNALS (at least 2 must be present):
+1. Website mentions 'scientist development,' 'researcher training,' 'L&D program,' 'research academy,' or 'capability development'
+2. Careers page shows graduate training programs, early-career fellowships, or postdoc mentorship structures
+3. LinkedIn shows dedicated L&D, Training, or Capability roles reporting to R&D leadership
+4. Company publications or news mention internal scientific symposia, poster sessions, or technical conferences
+5. Annual report or sustainability report mentions 'researcher development' or 'scientific talent' as strategic priority
+
+RETURN ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has fewer than 100 R&D or scientific staff (verified via LinkedIn or company website)
+2. Company is a university, academic program, government research lab, or nonprofit research institute
+3. Company website shows NO evidence of structured L&D programs, scientist development, or training initiatives
+4. Company appears to be Contract Research Organization (CRO) or consulting firm (not operating company)
+5. Company is based outside priority geographies (not DACH, North America, or UK/Ireland)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 100+ R&D or scientific staff (verified via LinkedIn, company website, or annual report)
+2. Company is based in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland
+3. Company's core business is commercial pharmaceuticals, biotechnology, or life sciences R&D (not academic/nonprofit)
+4. Company shows EVIDENCE of structured L&D: training programs, academies, capability development initiatives, or researcher mentorship
+5. Company appears to have organizational mechanism for scientist development (dedicated L&D roles, budgets, or programs)
+
+IMPORTANT - These companies APPEAR to match but are ACTUAL BAD FITS:
+- CROs and clinical research organizations (contract-based, not core R&D capability development)
+- Medical device consulting firms (project-based, not repeatable cohort training)
+- University-affiliated research institutes (nonprofit structure, different budget model)
+- Early-stage biotech (<5 years) with minimal formal L&D infrastructure
+- Pharma companies with only commercial/sales L&D (not scientist-focused training)
+- Regional subsidiaries without local L&D budget authority
+
+Base your decision on: company website, About Us page, Careers page, R&D section, LinkedIn profiles of R&D leadership, and annual/sustainability reports.
+
+Return only: YES or NO","Pharmaceutical Manufacturing; Biotechnology; Biotechnology Research; Medical Devices; Medical and Diagnostic Laboratories; Medical Equipment Manufacturing; Life Sciences R&D; Research Services; Diagnostics; Scientific Instruments Manufacturing","Germany; Austria; Switzerland; United States; Canada; United Kingdom; Ireland",10/26/2026,,Review this company to determine if they are a good fit for Seyens - a digital platform specializing in scientist and researcher visual communication training.
+
+These are repeat customers with structured R&D and documented L&D programs that support multiple researcher cohorts annually. Seyens training works best when embedded in existing scientist development structures.,1
+"Deep-Tech Innovation Leaders - DACH + North America + UK/Ireland (100+ Technical Staff, High R&D Investment)","Find semiconductor, AI research, advanced materials, photonics, advanced manufacturing, or chemicals companies in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland. Company must have 100+ R&D or technical staff (non-negotiable). Company must show evidence of research-intensive operations through patents, technical publications, or PhD-heavy technical teams.
+
+CRITICAL SIGNALS (at least 2 must be present):
+1. Company has visible patent portfolio (10+ patents filed in last 2 years) - check USPTO, WIPO, or European Patent Office
+2. Technical team profiles on LinkedIn show 30%+ holding PhD or advanced technical degrees
+3. Company publishes technical research papers, conference presentations, or whitepapers
+4. Website mentions 'research,' 'innovation,' 'technical excellence,' or 'R&D' prominently in business model
+5. Annual report or press releases describe R&D investment, technical breakthroughs, or advanced manufacturing capabilities
+
+RETURN ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has fewer than 100 R&D or technical staff (verified via LinkedIn or company website)
+2. Company is a university, government research lab, or nonprofit research institute
+3. Company website shows NO evidence of research-intensive operations (no patents, publications, or technical depth)
+4. Company appears to be software-only or IT services with minimal deep-tech R&D
+5. Company is based outside priority geographies (not DACH, North America, or UK/Ireland)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 100+ R&D or technical staff, ideally with 30%+ PhD-level employees (verified via LinkedIn, patents, or publications)
+2. Company is based in Germany, Austria, Switzerland, United States, Canada, United Kingdom, or Ireland
+3. Company's core business is semiconductors, AI research, advanced materials, photonics, advanced manufacturing, or industrial chemicals R&D
+4. Company shows EVIDENCE of research intensity: patent activity, technical publications, or PhD-heavy teams
+5. Company demonstrates significant R&D investment through technical innovation, product development, or research capabilities
+
+IMPORTANT - These companies APPEAR to match but are ACTUAL BAD FITS:
+- Software companies marketing 'AI research' without core ML/technical staff
+- Design consultancies or IT service providers (not operating R&D)
+- Manufacturing companies without R&D (contract manufacturing, not innovation-driven)
+- Startups claiming deep-tech status but <50 technical staff or <2 years history
+- Companies with patents but no indication of internal technical capability (acquired IP only)
+- Academic spinouts without independent operating R&D teams
+
+Base your decision on: company website, About Us page, Patents/IP sections, LinkedIn profiles of technical leadership, press releases about R&D, and technical publications/conferences.
+
+Return only: YES or NO","Semiconductors; Semiconductor Manufacturing; Artificial Intelligence Research; AI Platform Development; Advanced Materials Manufacturing; Chemical Manufacturing; Photonics; Industrial Automation; Advanced Manufacturing; Nanotechnology Research; Materials Science; Optical Equipment Manufacturing; Industrial Machinery Manufacturing; Robotics Manufacturing; Optics Manufacturing; Electronics Manufacturing","Germany; Austria; Switzerland; United States; Canada; United Kingdom; Ireland",10/26/2026,,Review this company to determine if they are a good fit for Seyens - a digital platform specializing in technical researcher and engineer visual communication training.
+
+These are innovation-driven organizations where researchers regularly present complex technical work and need training in clear visual communication of scientific data.,2
+"Research-Intensive Organizations - Secondary Markets (50+ R&D Staff, Proven Innovation Culture)","Find pharmaceutical, biotechnology, life sciences, semiconductors, AI research, advanced materials, medical devices, diagnostics, or scientific instruments companies in Netherlands, Belgium, Denmark, Sweden, France, Singapore, or Australia. Company must have 50+ R&D or scientific staff. Company must show evidence of serious research commitment through organizational structure, publications, or patent activity.
+
+CRITICAL SIGNALS (at least 2 must be present):
+1. Company website describes 'research,' 'innovation,' or 'R&D' as core to business strategy (not peripheral)
+2. LinkedIn shows dedicated R&D, Research, or Science leadership roles (VP/Director/Head level)
+3. Company has patent activity (5+ patents in last 2 years) OR publishes in peer-reviewed journals OR presents at major conferences
+4. Careers page shows research-focused positions (Scientists, Researchers, Engineers with PhD preference)
+5. Annual report or company news describes R&D investment, research collaborations, or technical partnerships with universities
+
+RETURN ONLY ""YES"" or ""NO"" based on these criteria:
+
+RETURN ""NO"" IF ANY OF THESE ARE TRUE:
+1. Company has fewer than 50 R&D or scientific staff (verified via LinkedIn or company website)
+2. Company is a university, academic research institute, or government lab
+3. Company website shows NO evidence of serious research commitment or R&D operations
+4. Company is a regional sales/distribution operation with no local R&D capability
+5. Company is based outside secondary markets (not Netherlands, Belgium, Denmark, Sweden, France, Singapore, or Australia)
+
+RETURN ""YES"" IF ALL OF THESE ARE TRUE:
+1. Company has 50+ R&D or scientific staff (verified via LinkedIn, organizational structure, or career listings)
+2. Company is based in Netherlands, Belgium, Denmark, Sweden, France, Singapore, or Australia
+3. Company's core business is research-intensive: pharmaceuticals, biotechnology, life sciences, semiconductors, advanced materials, medical devices, diagnostics, or scientific instruments
+4. Company shows evidence of research commitment: patents, publications, R&D leadership structure, or technical partnerships
+5. Company demonstrates investment in researcher capability and development
+
+IMPORTANT - These companies APPEAR to match but are ACTUAL BAD FITS:
+- Regional subsidiaries of larger companies without local R&D authority
+- Contract research or outsourced R&D providers (not core capability)
+- Life sciences companies focused only on sales/marketing (minimal R&D)
+- Startups claiming R&D focus but with founder-only technical team (<10 actual R&D staff)
+- Companies with legacy research labs undergoing downsizing or closure
+- Distributors or resellers of scientific equipment (not operating R&D)
+
+Base your decision on: company website, About Us page, LinkedIn organization page, press releases about R&D, patent/publication evidence, and career pages.
+
+Return only: YES or NO","Pharmaceutical Manufacturing; Biotechnology; Biotechnology Research; Life Sciences R&D; Medical Devices; Medical and Diagnostic Laboratories; Medical Equipment Manufacturing; Semiconductors; Artificial Intelligence Research; Advanced Materials Manufacturing; Chemical Manufacturing; Scientific Instruments Manufacturing; Diagnostics; Nanotechnology Research; Materials Science; Research Services","Netherlands; Belgium; Denmark; Sweden; France; Singapore; Australia",10/26/2026,,Review this company to determine if they are a good fit for Seyens - a digital platform for researcher and technical team communication training.
+
+Secondary markets where English-language specialist training is accepted and Seyens pricing is realistic. Focus on companies with global operations and serious research commitment.,3
