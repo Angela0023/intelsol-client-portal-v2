@@ -202,7 +202,7 @@ export default function SeyensPage() {
           </div>
         );
 
-      case 'icp-profile':
+      case 'icp':
         return (
           <div className="space-y-6">
             <ContentSection title="Ideal Customer Profile">
