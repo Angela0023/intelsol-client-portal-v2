@@ -12,13 +12,13 @@
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
-      "replies": 27,
-      "replyRate": "7.26",
+      "replies": 28,
+      "replyRate": "7.53",
       "bounces": 4,
       "bounceRate": "1.08",
       "unsubscribed": 0,
-      "interested": 14,
-      "interestedRate": "3.76",
+      "interested": 15,
+      "interestedRate": "4.03",
       "notInterested": 0
     }
   },
@@ -35,8 +35,8 @@
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
-      "replies": 29,
-      "replyRate": "2.15",
+      "replies": 30,
+      "replyRate": "2.23",
       "bounces": 20,
       "bounceRate": "1.48",
       "unsubscribed": 0,
@@ -1974,29 +1974,6 @@
       "unsubscribed": 0,
       "interested": 49,
       "interestedRate": "3.22",
-      "notInterested": 0
-    }
-  },
-  {
-    "campaignName": "🏆 Intelsol | Sequence 12.5. | HR + SRB | Old Leads",
-    "dateLaunched": "5/12/2026",
-    "totalLeads": 1288,
-    "leadsEmailed": 1286,
-    "month": "May",
-    "status": "COMPLETED",
-    "performance": {
-      "emailsSent": 3658,
-      "opens": 0,
-      "openRate": "0.00",
-      "clicks": 0,
-      "clickRate": "0.00",
-      "replies": 116,
-      "replyRate": "9.02",
-      "bounces": 40,
-      "bounceRate": "3.11",
-      "unsubscribed": 0,
-      "interested": 64,
-      "interestedRate": "4.98",
       "notInterested": 0
     }
   },
