@@ -204,92 +204,129 @@ export default function SeyensPage() {
 
       case 'icp':
         return (
+          <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
+            <div className="space-y-4">
+              <div className="bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded">
+                <p className="font-semibold text-cyan-900 mb-2">Primary Target</p>
+                <p className="text-cyan-800">
+                  Research-intensive companies with substantial R&D or scientific workforce (100+ scientists/engineers ideal, 50+ minimum) and organizational infrastructure for staff development including research academies, symposia, or dedicated L&D.
+                </p>
+              </div>
+
+              <h4 className="font-semibold text-slate-900 mt-6 mb-3">Must-Have Characteristics:</h4>
+              <ul className="space-y-2">
+                <ListItem type="check">100+ scientists/engineers ideal (50+ minimum when structured L&D exists)</ListItem>
+                <ListItem type="check">Research-intensive culture with publications, patents or conference participation</ListItem>
+                <ListItem type="check">Internal R&D academy, learning curriculum, or dedicated L&D support for scientists</ListItem>
+                <ListItem type="check">Regular research events: symposia, poster sessions, technical forums or onboarding cohorts</ListItem>
+                <ListItem type="check">Multi-site or global R&D organization (or concentrated R&D at identifiable site)</ListItem>
+                <ListItem type="check">Clear organizational owner of scientist development or training budget</ListItem>
+                <ListItem type="check">High-income markets where English-language specialist training is standard</ListItem>
+              </ul>
+
+              <h4 className="font-semibold text-slate-900 mt-6 mb-3">Target Industries:</h4>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                {[
+                  'Pharmaceuticals',
+                  'Biotechnology',
+                  'Medical Devices',
+                  'Semiconductors',
+                  'AI/Advanced Materials',
+                  'Advanced Manufacturing',
+                  'Diagnostics',
+                  'Scientific Instruments',
+                  'Chemicals',
+                ].map((industry) => (
+                  <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm">
+                    {industry}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ContentSection>
+        );
+
+      case 'personas':
+        return (
           <div className="space-y-6">
-            <ContentSection title="Ideal Customer Profile">
-              <div className="space-y-4">
-                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                  <h5 className="font-semibold text-blue-900 mb-3">Best-Fit Customers (Real Examples)</h5>
+            <ContentSection title="Red Flags (Disqualifiers)" icon={<Target className="w-5 h-5" />}>
+              <ul className="space-y-2">
+                <ListItem type="cross">Very early-stage startups with fewer than ~20-30 researchers and no structured L&D budget</ListItem>
+                <ListItem type="cross">Companies looking for generic presentation, sales-pitch or PowerPoint training</ListItem>
+                <ListItem type="cross">Organizations buying only low-cost, high-volume lectures (cannot support interactive cohort training)</ListItem>
+                <ListItem type="cross">Teams where the need is primarily marketing/brand design rather than scientists communicating technical work</ListItem>
+                <ListItem type="cross">Large companies where the contact has no connection to R&D learning or no path to budget owner</ListItem>
+                <ListItem type="cross">Universities, doctoral schools, or publicly funded academic research programs</ListItem>
+              </ul>
+            </ContentSection>
+
+            <ContentSection title="Best-Fit Examples" icon={<Filter className="w-5 h-5" />}>
+              <div className="space-y-3">
+                <div className="bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded">
+                  <h5 className="font-semibold text-cyan-900 mb-2">Confirmed Customers</h5>
                   <ul className="space-y-2">
-                    <ListItem type="check">IBM Research Zurich - Advanced corporate research environment; repeat customer</ListItem>
+                    <ListItem type="check">IBM Research Zurich - Advanced corporate research environment</ListItem>
                     <ListItem type="check">Roche - Large science-led organization with substantial researcher populations</ListItem>
-                    <ListItem type="check">Boehringer Ingelheim - Research-intensive pharmaceutical environment with scientists as core audience</ListItem>
+                    <ListItem type="check">Boehringer Ingelheim - Research-intensive pharmaceutical environment</ListItem>
                   </ul>
-                  <p className="text-blue-800 mt-3 text-sm">
-                    Common denominator: Substantial scientific/R&D workforce, recurring communication needs, organizational mechanism for staff development
-                  </p>
                 </div>
 
                 <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                  <h5 className="font-semibold text-green-900 mb-3">Dream Customers (Illustrative Profiles)</h5>
+                  <h5 className="font-semibold text-green-900 mb-2">Comparable Dream Customers</h5>
                   <ul className="space-y-2">
                     <ListItem type="check">Novartis - Global pharmaceutical R&D with large scientific teams and multiple sites</ListItem>
                     <ListItem type="check">ASML - Highly technical, research-intensive engineering organization</ListItem>
                     <ListItem type="check">NVIDIA Research - Large populations of advanced technical researchers</ListItem>
                     <ListItem type="check">AstraZeneca, Novo Nordisk, Infineon, BioNTech</ListItem>
                   </ul>
-                  <p className="text-green-800 mt-3 text-sm">
-                    These are examples of the profile, not a closed target list. Goal: uncover comparable companies we don't already know.
-                  </p>
-                </div>
-
-                <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-                  <h5 className="font-semibold text-red-900 mb-3">Bad-Fit Customers (Exclusions)</h5>
-                  <ul className="space-y-2">
-                    <ListItem type="check">Very early-stage startups with fewer than ~20-30 researchers and no structured L&D budget</ListItem>
-                    <ListItem type="check">Companies looking for generic presentation, sales-pitch or PowerPoint training</ListItem>
-                    <ListItem type="check">Organizations buying only low-cost, high-volume lectures (cannot support interactive cohort training)</ListItem>
-                    <ListItem type="check">Teams where the need is primarily marketing/brand design rather than scientists communicating technical work</ListItem>
-                    <ListItem type="check">Large companies where the contact has no connection to R&D learning or no path to budget owner</ListItem>
-                  </ul>
                 </div>
               </div>
             </ContentSection>
 
-            <ContentSection title="Company Size Criteria">
+            <ContentSection title="Target Geography" icon={<Filter className="w-5 h-5" />}>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-slate-900 mb-3">Primary Markets:</h4>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                    {[
+                      'Germany',
+                      'Austria',
+                      'Switzerland',
+                      'United States',
+                      'Canada',
+                      'United Kingdom',
+                      'Ireland',
+                    ].map((country) => (
+                      <div key={country} className="bg-cyan-100 px-3 py-2 rounded text-sm font-medium">
+                        {country}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-slate-900 mb-3">Secondary Markets:</h4>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                    {[
+                      'Belgium',
+                      'Netherlands',
+                      'France',
+                      'Sweden',
+                      'Singapore',
+                      'Australia',
+                    ].map((country) => (
+                      <div key={country} className="bg-slate-100 px-3 py-2 rounded text-sm">
+                        {country}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </ContentSection>
+
+            <ContentSection title="Business Model Indicators" icon={<TrendingUp className="w-5 h-5" />}>
               <div className="space-y-3">
-                <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
-                  <h5 className="font-semibold text-slate-900 mb-2">R&D Population is Key (Total Employee Count is a Rough Proxy)</h5>
-                  <ul className="space-y-2">
-                    <ListItem type="check"><strong>Ideal:</strong> Identifiable R&D population of 100+ scientists/engineers (no upper limit)</ListItem>
-                    <ListItem type="check"><strong>Good:</strong> 50+ scientists when structured L&D and clear cohort exists</ListItem>
-                    <ListItem type="check"><strong>For R&D-heavy biotech/deep-tech:</strong> Companies from ~200 total employees can be attractive</ListItem>
-                    <ListItem type="check"><strong>For diversified industrial companies:</strong> Prioritize 1,000+ employees unless substantial research unit can be identified</ListItem>
-                  </ul>
-                  <p className="text-slate-800 mt-3 text-sm">
-                    Sweet spot: Large enough to support repeated cohorts but not so diffuse that no one owns researcher development
-                  </p>
-                </div>
-              </div>
-            </ContentSection>
-
-            <ContentSection title="Geographic Focus">
-              <div className="space-y-3">
-                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                  <h5 className="font-semibold text-blue-900 mb-2">Priority Markets</h5>
-                  <ul className="space-y-2">
-                    <ListItem type="check">DACH region (Germany, Austria, Switzerland)</ListItem>
-                    <ListItem type="check">North America (US, Canada)</ListItem>
-                    <ListItem type="check">UK and Ireland</ListItem>
-                  </ul>
-                </div>
-
-                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
-                  <h5 className="font-semibold text-green-900 mb-2">Secondary Markets</h5>
-                  <ul className="space-y-2">
-                    <ListItem type="check">Rest of Europe</ListItem>
-                    <ListItem type="check">Singapore</ListItem>
-                    <ListItem type="check">Australia</ListItem>
-                  </ul>
-                  <p className="text-green-800 mt-3 text-sm">
-                    No hard geographic restriction. Prioritize high-income, research-intensive markets where English-language specialist training is normal and Seyens pricing is realistic.
-                  </p>
-                </div>
-              </div>
-            </ContentSection>
-
-            <ContentSection title="Business Model Indicators">
-              <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
-                <h5 className="font-semibold text-indigo-900 mb-3">Particularly Strong Fits</h5>
+                <h4 className="font-semibold text-slate-900 mb-3">Particularly Strong Fits</h4>
                 <ul className="space-y-2">
                   <ListItem type="check">Multi-site or global R&D organizations</ListItem>
                   <ListItem type="check">Companies with internal R&D academy, learning curriculum or dedicated L&D support for scientists/engineers</ListItem>
@@ -297,9 +334,6 @@ export default function SeyensPage() {
                   <ListItem type="check">Research cultures with high publication, patent and conference activity</ListItem>
                   <ListItem type="check">Companies where one successful engagement can expand across teams, sites or yearly cohorts</ListItem>
                 </ul>
-                <p className="text-indigo-800 mt-3 text-sm">
-                  High growth/VC backing alone is not a sufficient signal unless it translates into meaningful R&D workforce and training budget.
-                </p>
               </div>
             </ContentSection>
           </div>
