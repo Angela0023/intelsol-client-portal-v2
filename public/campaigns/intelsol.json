@@ -1978,6 +1978,29 @@
     }
   },
   {
+    "campaignName": "🏆 Intelsol | Sequence 12.5. | HR + SRB | Old Leads",
+    "dateLaunched": "5/12/2026",
+    "totalLeads": 1288,
+    "leadsEmailed": 1286,
+    "month": "May",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 3658,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 116,
+      "replyRate": "9.02",
+      "bounces": 40,
+      "bounceRate": "3.11",
+      "unsubscribed": 0,
+      "interested": 64,
+      "interestedRate": "4.98",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🏆 Intelsol | Generic sequence | Ne, Den, Sw, No - copy",
     "dateLaunched": "4/20/2026",
     "totalLeads": 922,
