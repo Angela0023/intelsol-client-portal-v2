@@ -12,19 +12,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Podpora strankam pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nopazil sem, da ima {{company_name}} precej razvit spletni prodajni kanal.\n\nZanima me, kako danes pri vas rešujete ponavljajoča se vprašanja kupcev glede dostave, vračil, izdelkov in podobnih informacij?\n\nPri PACIA za podjetja pripravljamo prilagojene AI sisteme za podporo strankam, ki odgovarjajo na podlagi njihovega dejanskega poslovnega znanja in pravil.\n\nNe gre toliko za generičnega chatbota kot za to, da ugotovimo, kateri del podpore je pri posameznem podjetju smiselno razbremeniti.\n\nBi bil kratek pogovor na to temo smiseln?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\nopazil sem, da ima {{company_name}} precej razvit spletni prodajni kanal – v obdobjih kot so črni petek in decembarske počitnice zagotovo dobite vrhunec povpraševanja s strani kupcev.\n\nZanima me, kako danes pri vas rešujete ponavljajoča sa vprašanja kupcev glede dostave, vračil, izdelkov in podobnih informacij?\n\nPri PACIA za podjetja pripravljamo prilagojene AI sisteme za podporo strankam, ki odgovarjajo na podlagi njihovega dejanskega poslovnega znanja in pravil.\n\nNe gre toliko za generičnega chatbota kot za to, da ugotovimo, kateri del podpore je pri posameznem podjetju smiselno razbremeniti.\n\nBi bil kratek pogovor na to temo smiseln?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Podpora strankam pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up na spodnje sporočilo.\n\nPri spletnih trgovcih so pogosto dober prvi primer vprašanja, ki se ves čas ponavljajo — na primer glede dostave, vračil, razpoložljivosti ali informacij o izdelkih.\n\nIdeja ni zamenjati vaše ekipe, ampak odstraniti del rutinskega dela, da se lahko posveti zahtevnejšim primerom.\n\nČe je to relevantno tudi pri vas, lahko na kratkem klicu pogledamo, kateri del podpore bi bil sploh smiseln za tak pristop.\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up.\n\nPri spletnih trgovcih so pogosto dober prvi primer vprašanja, ki se ves čas ponavljajo — na primer glede dostave, vračil, razpoložljivosti ali informacij o izdelkih.\n\nIdeja ni zamenjati vaše ekipe, ampak odstraniti del rutinskega dela, da se vaši zaposleni lahko osredotočijo na zahtevnejše primere.\n\nNa kratkem klicu bi lahko preverili, kateri del vaše podpore bi bil smiseln avtomatizirati.\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: Podpora strankam pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nČe imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, z veseljem pokažem, kako se tega lotevamo pri nas.\n\nČe trenutno ni prioriteta, tudi popolnoma razumem.\n\nLep pozdrav,"
+        "body": "Pozdravljeni {{first_name}},\n\nČe imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, vam lahko pripravim personaliziran demo našega AI agenta – na podlagi informacij s vaše spletne strani.\n\nČe trenutno ni prioriteta, tudi popolnoma razumem.\n\nLep pozdrav,"
       }
     ]
   },
@@ -41,19 +41,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Vprašanja gostov pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\npri turističnih ponudnikih se velik del komunikacije z gosti pogosto vrti okoli podobnih vprašanj — prihod, parkiranje, storitve, pravila, lokacija, ponudba in podobno.\n\nKako to danes rešujete pri {{company_name}}, predvsem izven delovnega časa ali kadar gostje pišejo v različnih jezikih?\n\nPri PACIA izdelujemo prilagojene AI sisteme za podporo, ki gostom odgovarjajo na podlagi dejanskih informacij podjetja.\n\nPrvi korak je običajno zelo konkreten: pogledamo, katere vrste vprašanj se dovolj pogosto ponavljajo, da bi jih bilo smiselno avtomatizirati.\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\npri turističnih ponudnikih – hotelih, restavracijah, parkih, smučiščih, turističnih točkah – se velik del komunikacije z obiskovalci pogosto vrti omkring podobnih vprašanj: prihod, rezervacije, storitve, lokacija, odpiralni časi in podobno.\n\nKako to danes rešujete pri {{company_name}}, predvsem izven delovnega časa ali kadar obiskovalci pišejo v različnih jezikih?\n\nPri PACIA izdelujemo prilagojene AI sisteme za podporo, ki obiskovalcem odgovarjajo na podlagi dejanskih informacij vaše ponudbe – in kar je še posebej važno: AI lahko tudi sprejema in potrjuje rezervacije, kar je pogosto večina povpraševanja.\n\nKako to funkcionira, je razloženo tukaj: https://www.pacia-support.com/sl/how-it-works\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Vprašanja gostov pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up.\n\nPri hotelih in drugih turističnih ponudnikih je zanimivo predvsem to, da se ista vprašanja pogosto pojavljajo pred prihodom, zvečer, med vikendi ali v različnih jezikih.\n\nTakšne informacijske poizvedbe je mogoče obravnavati avtomatizirano, medtem ko zahtevnejši primeri še vedno ostanejo ekipi.\n\nČe je tudi pri vas to opazen del komunikacije z gosti, lahko na kratkem klicu pogledamo, ali obstaja smiseln prvi primer uporabe.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up.\n\nPri turističnih ponudnikih je zanimivo predvsem to, da se ista vprašanja pogosto pojavljajo pred prihodom, zvečer, med vikendi ali v različnih jezikih.\n\nTakšne poizvedke lahko AI odgovori takoj – tudi takrat, ko je vaša ekipa prost ali sploh ni dostopna.\n\nNa kratkem klicu bi lahko pogledali, kateri del komunikacije z obiskovalci bi bil smiseln avtomatizirati.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: Vprašanja gostov pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli gostom omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pokažem, kako to rešujemo pri PACIA.\n\nČe trenutno ni aktualno, brez težav.\n\nJe smiselno, da se na kratko slišimo?\n\nLep pozdrav,\n\n\n"
+        "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravim personaliziran demo našega AI agenta – na podlagi podatkov s vaše spletne strani.\n\nČe trenutno ni aktualno, brez težav.\n\nJe smiselno, da se na kratko slišimo?\n\nLep pozdrav,\n"
       }
     ]
   }
