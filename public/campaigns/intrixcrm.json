@@ -1,8 +1,54 @@
 [
   {
+    "campaignName": "📈 Intrix CRM | Serbia | Tier B",
+    "dateLaunched": "10/27/2026",
+    "totalLeads": 170,
+    "leadsEmailed": 0,
+    "month": "October",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
+    "campaignName": "📈 Intrix CRM | Serbia | Tier A",
+    "dateLaunched": "10/27/2026",
+    "totalLeads": 57,
+    "leadsEmailed": 0,
+    "month": "October",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "📈 Intrix CRM | Croatia | Tier B",
     "dateLaunched": "10/22/2026",
-    "totalLeads": 0,
+    "totalLeads": 53,
     "leadsEmailed": 0,
     "month": "October",
     "status": "DRAFTED",
@@ -25,7 +71,7 @@
   {
     "campaignName": "📈 Intrix CRM | Croatia | Tier A",
     "dateLaunched": "10/22/2026",
-    "totalLeads": 0,
+    "totalLeads": 109,
     "leadsEmailed": 0,
     "month": "October",
     "status": "DRAFTED",

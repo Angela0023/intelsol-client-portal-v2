@@ -99,18 +99,18 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 312,
+      "emailsSent": 424,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
-      "replies": 14,
-      "replyRate": "6.48",
+      "replies": 18,
+      "replyRate": "8.33",
       "bounces": 2,
       "bounceRate": "0.93",
       "unsubscribed": 0,
-      "interested": 0,
-      "interestedRate": "0.00",
+      "interested": 1,
+      "interestedRate": "0.46",
       "notInterested": 0
     }
   },
