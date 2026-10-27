@@ -12,48 +12,48 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Production and traceability at {{company}}",
-        "body": "Dear {{first_name}},\n\nI'm reaching out to ask how you currently connect production, procurement and sales information at your company.\n\nWith ProPIS ERP, Nova Vizija helps food producers bring these processes together in one operational system, with traceability from raw materials to finished products. This gives management a clearer view of operations and helps teams spend less time coordinating information across separate records.\n\nWould you be open to a brief conversation about this?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
+        "subject": "How {{company}} connects production, procurement and sales information",
+        "body": "Dear {{first_name}},\n\nHow does your company currently connect information across production, procurement and sales?\n\nAt Nova Vizija, we help food producers bring these processes together in a single operational system - ProPIS ERP. It provides full traceability from raw materials to finished products, gives management a clearer view of day-to-day operations, and cuts the time teams spend reconciling information across otherwise separate records.\n\nWould you be open to a short call or a meeting to see whether this could be useful for you?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
           "serbian": {
-            "subject": "Proizvodnja i sljedivost u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svojoj tvrtki povezujete podatke o proizvodnji, nabavi i prodaji.\n\nUz ProPIS ERP u Novoj Viziji pomažemo proizvođačima hrane povezati te procese u jedinstven operativni sustav sa sljedivošću od sirovina do gotovih proizvoda. Tako uprava ima jasniji pregled poslovanja, a timovi troše manje vremena na usklađivanje podataka iz odvojenih evidencija.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "subject": "Kako {{company}} povezuje podatke iz proizvodnje, nabave i prodaje",
+            "body": "Poštovani {{first_name}},\n\nKako vaša tvrtka trenutačno povezuje podatke iz proizvodnje, nabave i prodaje?\n\nU Novoj Viziji pomažemo proizvođačima hrane da te procese ujedine u jedan operativni sustav - ProPIS ERP. Omogućuje potpunu sljedivost od sirovina do gotovih proizvoda, daje upravi jasniji pregled svakodnevnih operacija i smanjuje vrijeme koje timovi troše na usklađivanje podataka iz odvojenih evidencija.\n\nBi li vam odgovarao kratak poziv ili sastanak da biste vidjeli je li ovo korisno za vašu tvrtku?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           },
           "croatian": {
-            "subject": "Proizvodnja i sljedivost u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako u svojoj tvrtki povezujete podatke o proizvodnji, nabavi i prodaji.\n\nUz ProPIS ERP u Novoj Viziji pomažemo proizvođačima hrane povezati te procese u jedinstven operativni sustav sa sljedivošću od sirovina do gotovih proizvoda. Tako uprava ima jasniji pregled poslovanja, a timovi troše manje vremena na usklađivanje podataka iz odvojenih evidencija.\n\nBi li vam odgovarao kratak razgovor o tome?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "subject": "Kako {{company}} povezuje podatke iz proizvodnje, nabave i prodaje",
+            "body": "Poštovani {{first_name}},\n\nKako vaša tvrtka trenutačno povezuje podatke iz proizvodnje, nabave i prodaje?\n\nU Novoj Viziji pomažemo proizvođačima hrane da te procese ujedine u jedan operativni sustav - ProPIS ERP. Omogućuje potpunu sljedivost od sirovina do gotovih proizvoda, daje upravi jasniji pregled svakodnevnih operacija i smanjuje vrijeme koje timovi troše na usklađivanje podataka iz odvojenih evidencija.\n\nBi li vam odgovarao kratak poziv ili sastanak da biste vidjeli je li ovo korisno za vašu tvrtku?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "RE: Production and traceability at {{company}}",
-        "body": "Dear {{first_name}},\n\nI recently wrote to you about connecting production, procurement and sales information.\n\nOne practical example is product traceability. ProPIS helps identify which finished products were made from a particular raw material, making it easier to establish which products are affected if a recall is needed.\n\nIf this is relevant for your company, I'd be happy to explain how it works in practice on a brief call.\n\nBest regards,\n{{sender_name}}",
+        "subject": "RE: Production and traceability - a practical example",
+        "body": "Dear {{first_name}},\n\nI wrote to you recently about connecting production, procurement and sales information, and wanted to share one practical example: traceability.\n\nWith ProPIS, you can see right away which finished products were made from a specific raw material batch. If a recall is ever needed, you know exactly which products are affected, with simple and comprehensive gathering of all required data.\n\nIf this is relevant for your company, I'd be glad to show you how it works in practice on a short call/meeting.\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
           "serbian": {
-            "subject": "RE: Proizvodnja i sljedivost u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju podataka o proizvodnji, nabavi i prodaji.\n\nJedan od praktičnih primjera je sljedivost proizvoda. ProPIS pomaže utvrditi koji su gotovi proizvodi proizvedeni od određene sirovine. Tako je u slučaju opoziva lakše odrediti koji su proizvodi zahvaćeni.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcionira u praksi.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Proizvodnja i sljedivost - praktičan primjer",
+            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju podataka iz proizvodnje, nabave i prodaje, a sada želim podijeliti jedan praktičan primjer: sljedivost.\n\nUz ProPIS, odmah možete vidjeti koji su gotovi proizvodi proizvedeni iz određene serije sirovine. Ako je ikada potreban opoziv, točno znate koji su proizvodi zahvaćeni, sa jednostavnim i sveobuhvatnim prikupljanjem svih potrebnih podataka.\n\nAko je ovo relevantno za vašu tvrtku, rado bih vam pokazao kako to funkcionira u praksi kroz kratak poziv/sastanak.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           },
           "croatian": {
-            "subject": "RE: Proizvodnja i sljedivost u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju podataka o proizvodnji, nabavi i prodaji.\n\nJedan od praktičnih primjera je sljedivost proizvoda. ProPIS pomaže utvrditi koji su gotovi proizvodi proizvedeni od određene sirovine. Tako je u slučaju opoziva lakše odrediti koji su proizvodi zahvaćeni.\n\nAko vam je ova tema aktualna, rado bih vam u kratkom pozivu predstavio kako to funkcionira u praksi.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Proizvodnja i sljedivost - praktičan primjer",
+            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju podataka iz proizvodnje, nabave i prodaje, a sada želim podijeliti jedan praktičan primjer: sljedivost.\n\nUz ProPIS, odmah možete vidjeti koji su gotovi proizvodi proizvedeni iz određene serije sirovine. Ako je ikada potreban opoziv, točno znate koji su proizvodi zahvaćeni, sa jednostavnim i sveobuhvatnim prikupljanjem svih potrebnih podataka.\n\nAko je ovo relevantno za vašu tvrtku, rado bih vam pokazao kako to funkcionira u praksi kroz kratak poziv/sastanak.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "RE: Is production visibility relevant for {{company}}?",
-        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether improving production visibility and traceability is currently relevant for your company.\n\nIf so, we could arrange a brief conversation. If someone else oversees this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\n{{sender_name}}",
+        "subject": "RE: Is production visibility something you're exploring?",
+        "body": "Dear {{first_name}},\n\nI wanted to briefly follow up on my previous emails: is better production visibility and traceability something your company is looking at right now?\n\nIf so, I'd be happy to set up a short call/meeting. If someone else is responsible for this area, I'd be grateful if you could point me to them.\n\nIn case this is not a priority right now in your organisation, I won't take up more of your time. I'd be glad to reconnect in the future if that changes.\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
           "serbian": {
-            "subject": "RE: Jesu li bolji pregled proizvodnje i sljedivost aktualni za {{company}}?",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio jesu li bolji pregled proizvodnje i sljedivost trenutačno aktualne teme za vašu tvrtku.\n\nAko jesu, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Jesu li bolji pregled proizvodnje i sljedivost nešto što istražujete?",
+            "body": "Poštovani {{first_name}},\n\nŽelio bih se na kratko osvrnuti na moje prethodne e-poruke: je li bolji pregled proizvodnje i sljedivost nešto što vaša tvrtka trenutačno istražuje?\n\nAko je tako, bio bih sretan da organiziram kratak poziv/sastanak. Ako je netko drugi odgovoran za ovo područje, bio bih zahvalan ako biste me mogli uputiti prema toj osobi.\n\nAko ovo trenutačno nije prioritet u vašoj organizaciji, neću vam dalje uzimati vrijeme. Bio bih sretan da se ponovno javim u budućnosti ako se to promijeni.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           },
           "croatian": {
-            "subject": "RE: Jesu li bolji pregled proizvodnje i sljedivost aktualni za {{company}}?",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio jesu li bolji pregled proizvodnje i sljedivost trenutačno aktualne teme za vašu tvrtku.\n\nAko jesu, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Jesu li bolji pregled proizvodnje i sljedivost nešto što istražujete?",
+            "body": "Poštovani {{first_name}},\n\nŽelio bih se na kratko osvrnuti na moje prethodne e-poruke: je li bolji pregled proizvodnje i sljedivost nešto što vaša tvrtka trenutačno istražuje?\n\nAko je tako, bio bih sretan da organiziram kratak poziv/sastanak. Ako je netko drugi odgovoran za ovo područje, bio bih zahvalan ako biste me mogli uputiti prema toj osobi.\n\nAko ovo trenutačno nije prioritet u vašoj organizaciji, neću vam dalje uzimati vrijeme. Bio bih sretan da se ponovno javim u budućnosti ako se to promijeni.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       }
@@ -72,48 +72,48 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Connecting production systems at {{company}}",
-        "body": "Dear {{first_name}},\n\nI'm reaching out to ask how your production, procurement and sales systems currently exchange information.\n\nProPIS ERP brings these operational processes together, including traceability from raw materials to finished products. The scope we would discuss covers these areas, while accounting and finance remain outside it.\n\nThe aim is to reduce manual data transfers and reliance on separate Excel records.\n\nWould you be open to a brief conversation about how this could fit your current setup?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
+        "subject": "How {{company}}'s production systems share information",
+        "body": "Dear {{first_name}},\n\nHow do your production, procurement and sales systems currently share information?\n\nProPIS ERP brings these operational processes into one system, with full traceability from raw materials to finished products. It covers operations only, so your existing accounting and finance software stays as it is.\n\nThe goal is simple: fewer manual data transfers and less reliance on disconnected spreadsheets and records.\n\nWould you be open to a short call to see how this could fit your current setup?\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
           "serbian": {
-            "subject": "Povezivanje proizvodnih sustava u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako vaši sustavi za proizvodnju, nabavu i prodaju trenutačno razmjenjuju podatke.\n\nProPIS ERP povezuje te operativne procese i omogućuje sljedivost od sirovina do gotovih proizvoda. Predmet razgovora bila bi ta područja, bez računovodstva i financija.\n\nCilj je smanjiti ručni prijenos podataka i oslanjanje na odvojene evidencije u Excelu.\n\nBi li vam odgovarao kratak razgovor o tome kako bi se rješenje moglo uklopiti u vaše postojeće okruženje?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "subject": "Kako su proizvodnjski sustavi {{company}} povezani za razmjenu podataka",
+            "body": "Poštovani {{first_name}},\n\nKako vaši sustavi za proizvodnju, nabavu i prodaju trenutačno dijele informacije?\n\nProPIS ERP ujedinjava te operativne procese u jedan sustav, sa potpunom sljedivošću od sirovina do gotovih proizvoda. Pokriva samo operacije, tako da vaš postojeći računovodstveni i financijski softver ostaje nepromijenjen.\n\nCilj je jednostavan: manje ručnog prijenosa podataka i manje oslanjanja na nepovezane proračunske tablice i evidencije.\n\nBi li bili spremni za kratak poziv kako biste vidjeli kako bi se ovo moglo prilagoditi vašoj trenutačnoj postavci?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           },
           "croatian": {
-            "subject": "Povezivanje proizvodnih sustava u tvrtki {{company}}",
-            "body": "Poštovani {{first_name}},\n\njavljam vam se jer me zanima kako vaši sustavi za proizvodnju, nabavu i prodaju trenutačno razmjenjuju podatke.\n\nProPIS ERP povezuje te operativne procese i omogućuje sljedivost od sirovina do gotovih proizvoda. Predmet razgovora bila bi ta područja, bez računovodstva i financija.\n\nCilj je smanjiti ručni prijenos podataka i oslanjanje na odvojene evidencije u Excelu.\n\nBi li vam odgovarao kratak razgovor o tome kako bi se rješenje moglo uklopiti u vaše postojeće okruženje?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "subject": "Kako su proizvodnjski sustavi {{company}} povezani za razmjenu podataka",
+            "body": "Poštovani {{first_name}},\n\nKako vaši sustavi za proizvodnju, nabavu i prodaju trenutačno dijele informacije?\n\nProPIS ERP ujedinjava te operativne procese u jedan sustav, sa potpunom sljedivošću od sirovina do gotovih proizvoda. Pokriva samo operacije, tako da vaš postojeći računovodstveni i financijski softver ostaje nepromijenjen.\n\nCilj je jednostavan: manje ručnog prijenosa podataka i manje oslanjanja na nepovezane proračunske tablice i evidencije.\n\nBi li bili spremni za kratak poziv kako biste vidjeli kako bi se ovo moglo prilagoditi vašoj trenutačnoj postavci?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "RE: System integration and operational efficiency",
-        "body": "Dear {{first_name}},\n\nI recently wrote to you about connecting your operational systems.\n\nProPIS supports integration with scanners, machinery and packaging lines, helping teams capture and use information within the same operational system.\n\nIn an initial conversation, we could look at your existing setup and assess which connections would be relevant, including the link to your accounting system.\n\nIf this is a topic you're currently considering, I'd be happy to discuss it on a brief call.\n\nBest regards,\n{{sender_name}}",
+        "subject": "RE: System integration - production floor to operations",
+        "body": "Dear {{first_name}},\n\nI wrote to you recently about connecting your operational systems. One thing worth adding: ProPIS integrates with scanners, machinery and packaging lines, so data from the production floor flows straight into the same system your teams already work in.\n\nOn a first call, we could look at your current setup together and identify which connections would be most useful, including the link to your accounting system.\n\nIf this is something you're considering, I'd be happy to talk it through.\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
           "serbian": {
-            "subject": "RE: Povezivanje proizvodnih sustava i operativna učinkovitost",
-            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava.\n\nProPIS podržava povezivanje sa skenerima, strojevima i linijama za pakiranje te timovima pomaže prikupljati i koristiti podatke unutar istog operativnog sustava.\n\nU uvodnom razgovoru mogli bismo razmotriti vaše postojeće okruženje i procijeniti koje bi veze bile relevantne, uključujući povezivanje s računovodstvenim sustavom.\n\nAko vam je ova tema aktualna, možemo dogovoriti kratak poziv.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Integracija sustava - proizvodni pogon do operacija",
+            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava. Jednom vrijedna napomena: ProPIS se integrira sa skenerima, mašinama i linijama za pakiranje, tako da podaci sa proizvodnog pogona direktno teku u isti sustav sa kojim vaši timovi već rade.\n\nNa prvom pozivu, mogli bismo zajedno pogledati vašu trenutačnu postavku i identificirati koje veze bi bile najkorisnije, uključujući vezu sa vašim računovodstvenim sustavom.\n\nAko je ovo nešto što razmatrate, bio bih sretan da razgovaramo o tome.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           },
           "croatian": {
-            "subject": "RE: Povezivanje proizvodnih sustava i operativna učinkovitost",
-            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava.\n\nProPIS podržava povezivanje sa skenerima, strojevima i linijama za pakiranje te timovima pomaže prikupljati i koristiti podatke unutar istog operativnog sustava.\n\nU uvodnom razgovoru mogli bismo razmotriti vaše postojeće okruženje i procijeniti koje bi veze bile relevantne, uključujući povezivanje s računovodstvenim sustavom.\n\nAko vam je ova tema aktualna, možemo dogovoriti kratak poziv.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Integracija sustava - proizvodni pogon do operacija",
+            "body": "Poštovani {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava. Jednom vrijedna napomena: ProPIS se integrira sa skenerima, mašinama i linijama za pakiranje, tako da podaci sa proizvodnog pogona direktno teku u isti sustav sa kojim vaši timovi već rade.\n\nNa prvom pozivu, mogli bismo zajedno pogledati vašu trenutačnu postavku i identificirati koje veze bi bile najkorisnije, uključujući vezu sa vašim računovodstvenim sustavom.\n\nAko je ovo nešto što razmatrate, bio bih sretan da razgovaramo o tome.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "RE: Is system integration a current priority for {{company}}?",
-        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether connecting production systems and reducing manual data transfers is currently relevant for your team.\n\nIf so, we could arrange a brief conversation. If someone else leads this area, I'd appreciate being pointed in the right direction.\n\nIf it isn't a priority at the moment, I completely understand.\n\nBest regards,\n{{sender_name}}",
+        "subject": "RE: Is system integration on your roadmap?",
+        "body": "Dear {{first_name}},\n\nI wanted to briefly follow up on my previous emails: is connecting your production systems and cutting down on manual data transfers something your team is looking at right now?\n\nIf so, I'd be happy to set up a short call. If someone else is responsible for this area, I'd be grateful if you could point me to them.\n\nIn case this is not a priority right now in your organisation, I won't take up more of your time. I'd be glad to reconnect in the future if that changes.\n\nBest regards,\n{{sender_name}}\n{{sender_title}} | Nova Vizija",
         "translations": {
           "serbian": {
-            "subject": "RE: Jesu li povezivanje proizvodnih sustava prioritet za {{company}}?",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio jesu li povezivanje proizvodnih sustava i smanjenje ručnog prijenosa podataka trenutačno aktualne teme za vaš tim.\n\nAko jesu, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Jesu li integracija sustava na vašem planu razvoja?",
+            "body": "Poštovani {{first_name}},\n\nŽelio bih se na kratko osvrnuti na moje prethodne e-poruke: je li povezivanje vaših proizvodnih sustava i smanjenje ručnog prijenosa podataka nešto što vaš tim trenutačno istražuje?\n\nAko je tako, bio bih sretan da organiziram kratak poziv. Ako je netko drugi odgovoran za ovo područje, bio bih zahvalan ako biste me mogli uputiti prema toj osobi.\n\nAko ovo trenutačno nije prioritet u vašoj organizaciji, neću vam dalje uzimati vrijeme. Bio bih sretan da se ponovno javim u budućnosti ako se to promijeni.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           },
           "croatian": {
-            "subject": "RE: Jesu li povezivanje proizvodnih sustava prioritet za {{company}}?",
-            "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio jesu li povezivanje proizvodnih sustava i smanjenje ručnog prijenosa podataka trenutačno aktualne teme za vaš tim.\n\nAko jesu, možemo dogovoriti kratak razgovor. Ako je za ovo područje odgovoran netko drugi, bio bih zahvalan da me uputite na pravu osobu.\n\nAko vam to trenutačno nije prioritet, potpuno razumijem.\n\nLijep pozdrav,\n{{sender_name}}"
+            "subject": "RE: Jesu li integracija sustava na vašem planu razvoja?",
+            "body": "Poštovani {{first_name}},\n\nŽelio bih se na kratko osvrnuti na moje prethodne e-poruke: je li povezivanje vaših proizvodnih sustava i smanjenje ručnog prijenosa podataka nešto što vaš tim trenutačno istražuje?\n\nAko je tako, bio bih sretan da organiziram kratak poziv. Ako je netko drugi odgovoran za ovo područje, bio bih zahvalan ako biste me mogli uputiti prema toj osobi.\n\nAko ovo trenutačno nije prioritet u vašoj organizaciji, neću vam dalje uzimati vrijeme. Bilo bih sretan da se ponovno javim u budućnosti ako se to promijeni.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       }
