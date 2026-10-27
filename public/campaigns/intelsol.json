@@ -552,29 +552,6 @@
     }
   },
   {
-    "campaignName": "🏆 Intelsol | US Sales Nav | 10/Aug/26 | Consumer Goods Mfg (B2B) | $5-50MIL | 1-50 empl. - Unpersonalized",
-    "dateLaunched": "8/10/2026",
-    "totalLeads": 19,
-    "leadsEmailed": 19,
-    "month": "August",
-    "status": "COMPLETED",
-    "performance": {
-      "emailsSent": 57,
-      "opens": 0,
-      "openRate": "0.00",
-      "clicks": 0,
-      "clickRate": "0.00",
-      "replies": 0,
-      "replyRate": "0.00",
-      "bounces": 0,
-      "bounceRate": "0.00",
-      "unsubscribed": 0,
-      "interested": 0,
-      "interestedRate": "0.00",
-      "notInterested": 0
-    }
-  },
-  {
     "campaignName": "🏆 Intelsol | US Sales Nav | 10/Aug/26 | Consumer Goods Mfg (B2B) | $5-50MIL | 1-50 empl. | Personalized V2",
     "dateLaunched": "8/10/2026",
     "totalLeads": 282,
