@@ -79,5 +79,35 @@
         "body": "Hi {{first_name}},\n\nLast note - if improving employee experience while managing IT ops costs is on your roadmap, we'd be a natural conversation.\n\nHappy to share a quick case study with a company similar to {{company_name}}. Just let me know.\n\nBest,\n{{sender_name}}"
       }
     ]
+  },
+  {
+    "id": "strategic-infrastructure-complexity",
+    "tierName": "SEQUENCE 4: Strategic Infrastructure Leaders - Complex Incident Resolution",
+    "tierColor": "orange",
+    "targetPersonas": "CIO, CTO, Chief Architect, Chief AI Officer, SVP/VP IT Operations, Senior Director Infrastructure",
+    "messagingAngle": "AI reasoning across multiple systems resolves complex multi-tool, multi-team incidents in minutes vs. days - enterprise guardrails included",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Complex IT incident resolution at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nWhat happens when your most complex IT issues consume days of effort, multiple teams and multiple tools—while the business expects IT to move faster with fewer resources?\n\nOne application failure recently required 4 tools, 5 teams, 6–8 hours of effort, and 1–2 days to resolve.\n\neBlissAI handled it in 20 minutes, with just 5 minutes of human involvement—~99% less effort and tool consolidation.\n\nThat's the difference between automating predefined workflows and using AI that can reason across systems, diagnose and execute the right action, and continuously learn—all within enterprise guardrails.\n\nNow multiply that across thousands of endpoints and hundreds of incidents: dramatically lower operating cost, higher productivity, reduced downtime and revenue loss—and the ability to scale IT without scaling headcount.\n\nDoes that map to challenges {{company_name}} is seeing in IT operations?\n\nBest,\n{{sender_name}}"
+      }
+    ]
+  },
+  {
+    "id": "tactical-operations-ticket-resolution",
+    "tierName": "SEQUENCE 5: Tactical Operations - Ticket Resolution & Throughput",
+    "tierColor": "teal",
+    "targetPersonas": "EUC Manager, Service Desk Manager, Help Desk Manager, IT Support Director, Operations Manager",
+    "messagingAngle": "AI handles multi-system reasoning for faster incident resolution—less operational effort, better SLA adherence, less hiring pressure",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Faster incident resolution at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nOne application failure recently required 4 tools, 5 teams, 6–8 hours of effort, and 1–2 days to resolve.\n\neBlissAI handled it in 20 minutes, with just 5 minutes of human involvement.\n\nThat's the difference between automating predefined workflows and using AI that can reason across systems, take action, and operate within enterprise guardrails.\n\nAs IT environments get more complex, that can mean faster resolution, less operational effort, and less pressure to add headcount.\n\nDoes that map to challenges {{company_name}} is seeing in IT operations?\n\nBest,\n{{sender_name}}"
+      }
+    ]
   }
 ]
