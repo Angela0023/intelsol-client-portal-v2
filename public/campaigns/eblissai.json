@@ -1,13 +1,13 @@
 [
   {
-    "campaignName": "🤖 eBliss AI | US Lookalikes | NEW 2",
+    "campaignName": "🤖 eBliss AI | US Lookalikes | NEW 1",
     "dateLaunched": "10/28/2026",
-    "totalLeads": 30,
-    "leadsEmailed": 0,
+    "totalLeads": 152,
+    "leadsEmailed": 16,
     "month": "October",
-    "status": "DRAFTED",
+    "status": "ACTIVE",
     "performance": {
-      "emailsSent": 0,
+      "emailsSent": 16,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -23,12 +23,12 @@
     }
   },
   {
-    "campaignName": "🤖 eBliss AI | US Lookalikes | NEW 1",
+    "campaignName": "🤖 eBliss AI | US Lookalikes | NEW 2 | Open Rate Tracking",
     "dateLaunched": "10/28/2026",
-    "totalLeads": 152,
+    "totalLeads": 30,
     "leadsEmailed": 0,
     "month": "October",
-    "status": "DRAFTED",
+    "status": "ACTIVE",
     "performance": {
       "emailsSent": 0,
       "opens": 0,
@@ -145,7 +145,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 147,
+      "emailsSent": 169,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -168,15 +168,15 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 142,
+      "emailsSent": 162,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
       "replies": 1,
       "replyRate": "1.03",
-      "bounces": 5,
-      "bounceRate": "5.15",
+      "bounces": 6,
+      "bounceRate": "6.19",
       "unsubscribed": 0,
       "interested": 0,
       "interestedRate": "0.00",
@@ -191,7 +191,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 103,
+      "emailsSent": 104,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -260,7 +260,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 113,
+      "emailsSent": 114,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
