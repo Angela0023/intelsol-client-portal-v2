@@ -69,6 +69,9 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [isAdding, setIsAdding] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+  const [lastUpdatedBy, setLastUpdatedBy] = useState<string | null>(null);
+  const [showingConfirmation, setShowingConfirmation] = useState(false);
+  const [confirmationMessage, setConfirmationMessage] = useState('');
   const { editMode, isAdmin } = useEditMode();
 
   const canEdit = editMode && isAdmin;
@@ -109,6 +112,11 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
       } else {
         setLastUpdated(formatTimestamp(new Date().toISOString()));
       }
+
+      // Set last updated by user
+      if (data.lastUpdatedBy) {
+        setLastUpdatedBy(data.lastUpdatedBy);
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load sequences');
     } finally {
@@ -119,10 +127,13 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   const saveSequences = async (updatedSequences: Sequence[]) => {
     setSaving(true);
     try {
+      // Get the current user from sessionStorage
+      const currentUser = sessionStorage.getItem('currentUser') || 'Unknown';
+
       const response = await fetch('/api/sequences/update', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ clientId, sequences: updatedSequences }),
+        body: JSON.stringify({ clientId, sequences: updatedSequences, updatedBy: currentUser }),
       });
 
       const data = await response.json();
@@ -131,7 +142,16 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
         throw new Error(data.error || 'Failed to save sequences');
       }
 
-      // Refetch from GitHub to get the updated SHA
+      // Show confirmation message
+      setShowingConfirmation(true);
+      setConfirmationMessage(`Updated on ${new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: '2-digit' })} at ${new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false })} CEST by ${currentUser}`);
+
+      // Hide confirmation after 4 seconds
+      setTimeout(() => {
+        setShowingConfirmation(false);
+      }, 4000);
+
+      // Refetch from GitHub to get the updated SHA and metadata
       await fetchSequences();
       setEditingId(null);
       setIsAdding(false);
@@ -247,6 +267,22 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
 
   return (
     <div className="space-y-6">
+      {/* Confirmation Banner */}
+      {showingConfirmation && (
+        <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-start space-x-3">
+          <div className="flex-shrink-0">
+            <svg className="h-5 w-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div className="flex-1">
+            <p className="text-sm font-medium text-green-900">Changes saved successfully</p>
+            <p className="text-xs text-green-700 mt-1">{confirmationMessage}</p>
+            <p className="text-xs text-green-700 mt-1">✓ Changes have been saved to your portal</p>
+          </div>
+        </div>
+      )}
+
       {/* Header with Add Button and Language Toggle */}
       <div className="flex items-center justify-between">
         <div>
@@ -259,7 +295,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
           </p>
           {lastUpdated && (
             <p className="text-xs text-slate-500 mt-2">
-              Last updated: {lastUpdated}
+              Last updated: {lastUpdated} {lastUpdatedBy && `by ${lastUpdatedBy}`}
             </p>
           )}
         </div>

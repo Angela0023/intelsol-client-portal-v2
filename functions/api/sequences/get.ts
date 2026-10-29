@@ -66,6 +66,8 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
 
     // Get the last commit date for this file
     let lastUpdated: string | null = null;
+    let lastUpdatedBy: string | null = null;
+
     try {
       const commitsResponse = await fetch(
         `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/commits?path=${sequencesPath}&ref=${GITHUB_BRANCH}&per_page=1`,
@@ -88,10 +90,36 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       // Continue anyway, lastUpdated will be null
     }
 
+    // Try to get metadata file with user info
+    try {
+      const metadataPath = `public/sequences/${clientId}.metadata.json`;
+      const metadataResponse = await fetch(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${metadataPath}?ref=${GITHUB_BRANCH}`,
+        {
+          headers: {
+            'Authorization': `token ${context.env.GITHUB_TOKEN}`,
+            'User-Agent': 'Intelsol-Portal'
+          }
+        }
+      );
+
+      if (metadataResponse.ok) {
+        const metadataFile = await metadataResponse.json();
+        const decodedMetadata = Uint8Array.from(atob(metadataFile.content), c => c.charCodeAt(0));
+        const metadataContent = new TextDecoder('utf-8').decode(decodedMetadata);
+        const metadata = JSON.parse(metadataContent);
+        lastUpdatedBy = metadata.lastUpdatedBy || null;
+      }
+    } catch (error) {
+      console.error('Failed to fetch metadata:', error);
+      // Continue anyway, lastUpdatedBy will be null
+    }
+
     return new Response(JSON.stringify({
       success: true,
       sequences,
-      lastUpdated
+      lastUpdated,
+      lastUpdatedBy
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json; charset=utf-8' }

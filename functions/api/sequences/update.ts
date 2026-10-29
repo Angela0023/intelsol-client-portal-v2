@@ -15,7 +15,7 @@ const GITHUB_BRANCH = 'main';
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
-    const { clientId, sequences } = await context.request.json();
+    const { clientId, sequences, updatedBy } = await context.request.json();
 
     if (!clientId || !sequences) {
       return new Response(JSON.stringify({ error: 'Missing clientId or sequences' }), {
@@ -72,7 +72,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
           'User-Agent': 'Intelsol-Portal'
         },
         body: JSON.stringify({
-          message: `Update email sequences for ${clientId}`,
+          message: `Update email sequences for ${clientId}${updatedBy ? ` by ${updatedBy}` : ''}`,
           content,
           branch: GITHUB_BRANCH,
           ...(sha && { sha })
@@ -84,6 +84,54 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       const errorData = await updateResponse.json();
       console.error('GitHub API error:', errorData);
       throw new Error(errorData.message || `GitHub API returned ${updateResponse.status}`);
+    }
+
+    // Also update metadata file with last update info
+    const metadataPath = `public/sequences/${clientId}.metadata.json`;
+    const metadata = {
+      lastUpdated: new Date().toISOString(),
+      lastUpdatedBy: updatedBy || 'Unknown'
+    };
+
+    // Get current metadata SHA if it exists
+    const metadataGetResponse = await fetch(
+      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${metadataPath}?ref=${GITHUB_BRANCH}`,
+      {
+        headers: {
+          'Authorization': `token ${context.env.GITHUB_TOKEN}`,
+          'User-Agent': 'Intelsol-Portal'
+        }
+      }
+    );
+
+    let metadataSha: string | undefined;
+    if (metadataGetResponse.ok) {
+      const currentMetadata = await metadataGetResponse.json();
+      metadataSha = currentMetadata.sha;
+    }
+
+    // Update metadata file
+    const metadataContent = btoa(unescape(encodeURIComponent(JSON.stringify(metadata, null, 2))));
+    const metadataUpdateResponse = await fetch(
+      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${metadataPath}`,
+      {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${context.env.GITHUB_TOKEN}`,
+          'Content-Type': 'application/json',
+          'User-Agent': 'Intelsol-Portal'
+        },
+        body: JSON.stringify({
+          message: `Update metadata for ${clientId}`,
+          content: metadataContent,
+          branch: GITHUB_BRANCH,
+          ...(metadataSha && { sha: metadataSha })
+        })
+      }
+    );
+
+    if (!metadataUpdateResponse.ok) {
+      console.warn('Failed to update metadata file, but sequences were updated successfully');
     }
 
     return new Response(JSON.stringify({

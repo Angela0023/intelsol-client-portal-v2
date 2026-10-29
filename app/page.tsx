@@ -30,6 +30,26 @@ export default function Home() {
     // Store access in sessionStorage (in production, use proper auth)
     sessionStorage.setItem('clientAccess', JSON.stringify(allowedClients));
 
+    // Store the logged-in user identity (Admin or client name) for attribution
+    let currentUser = '';
+    if (allowedClients.includes('admin')) {
+      currentUser = 'Admin';
+    } else {
+      // Format client name for display (e.g., 'tslab' -> 'TSLab', 'peoplefocus' -> 'PeopleFocus')
+      const clientName = allowedClients[0];
+      currentUser = clientName
+        .split(/(?=[A-Z])|[-_]/)
+        .map((word, i) => {
+          if (word.length === 0) return '';
+          // For acronyms like 'ts' in 'tslab', keep them uppercase
+          if (word.length <= 2) return word.toUpperCase();
+          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        })
+        .filter(word => word.length > 0)
+        .join('');
+    }
+    sessionStorage.setItem('currentUser', currentUser);
+
     // Also set a cookie for API authentication
     document.cookie = `intelsol_session=${allowedClients.join(',')}; path=/; max-age=86400; SameSite=Strict`;
 
