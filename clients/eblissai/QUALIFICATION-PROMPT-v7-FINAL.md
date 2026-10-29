@@ -1,6 +1,6 @@
 Review this company's website and public information to determine if they are a good fit for eBlissAI, an Autonomous Execution Layer that diagnoses and resolves L2/L3 endpoint IT issues.
 
-Return ONLY "YES", "YES (Signal-Based)", or "NO"
+Return ONLY "YES" or "NO"
 
 ---
 
@@ -32,45 +32,39 @@ RETURN "NO" IF ANY OF THESE ARE TRUE:
 
 6. Company is FiServ (existing customer)
 
----
+7. Company's PRIMARY BUSINESS is fintech, financial software, or selling financial/trading software platforms:
 
-RETURN "YES (SIGNAL-BASED)" IF:
-
-- Company is ONLY one of these tier-1 global depository banks: JPMorgan Chase, Bank of America, Wells Fargo, Citigroup, Goldman Sachs, Morgan Stanley, HSBC, Deutsche Bank, Barclays, UBS, or BNP Paribas
-- AND meets all ICP criteria (enterprise scale, industry, operating IT infrastructure)
-- These banks have known slow procurement cycles and heavy regulatory/compliance review processes (SR 11-7 MRM requirements) that require trigger-based outreach
-- Strategy: Search for trigger signals (new CIO hire, platform renewal, public outage, SLA breach, Q4 budget planning), then reach out when signals appear
-- Do NOT add to routine cold-outreach campaigns until trigger signal identified
-- All other financial-services companies (including American Express, regional banks, insurance companies, asset managers, fintechs) should be evaluated as standard YES if they meet ICP criteria 1-5
+- Examples: Revolut, Bloomberg, Robinhood, Interactive Brokers, Stripe, Square, Wise, PayPal
+- These are technology/software vendors in the financial space, not operators of financial institutions
+- They build financial software products, not operate as banks or insurance companies
+- Note: Traditional banks, insurance companies, and financial institutions that OPERATE (not SELL) financial services = YES (different category)
 
 ---
 
-RETURN "YES" IF:
+RETURN "YES" IF ALL OF THESE ARE TRUE:
 
-Company meets criteria 1-3 below. Criterion 4 (IT signals) should increase confidence, but absence of public signals should NOT automatically disqualify a company that clearly meets enterprise scale + industry criteria.
-
-1. Company has 5,000+ managed endpoints OR approximately 3,000+ employees in a distributed enterprise/knowledge-worker environment
+1. Company has 3,000+ employees (or 5,000+ managed endpoints)
 
 - Verify via LinkedIn, About page, company website, or press releases
-- Note: Endpoints matter more than headcount. A company with 5,000+ endpoints qualifies even if <3,000 employees. A company with 3,500 office-only employees may not qualify.
+- Endpoints matter more than headcount
 
 2. Company operates in one of these industries:
 
-- Manufacturing (all sectors - automotive, semiconductors, pharmaceuticals, chemicals, electronics, aerospace, machinery, metals, food & beverage, etc.)
-- Retail (multi-location retail chains, restaurant chains, hospitality)
+- Manufacturing (all sectors)
+- Retail (multi-location chains, restaurants, hospitality)
 - Financial Services (banks, insurance, asset management, PE, hedge funds, RIAs)
 - Technology/SaaS/Infrastructure (operating large internal IT, not selling IT products)
 - Airlines/Transportation/Logistics
 - Telecommunications operators (not vendors)
 - Healthcare/Pharmaceuticals
 - Energy/Utilities
-- Large Consulting/SI firms (Deloitte, KPMG, PwC, Cognizant, EY - for their own internal IT operations, with 10,000+ employees)
+- Large Consulting/SI firms (Deloitte, KPMG, PwC, Cognizant, EY - for their own internal IT, 10,000+ employees)
 - Managed Service Providers (MSPs) with large internal IT operations
 - Food & Beverage
 - Consumer Goods
 - Aerospace/Defense (operators, not vendors)
-- Large Education (universities, major school systems with 3,000+ staff and enterprise IT operations)
-- Large Government (federal, state, or local agencies with enterprise-scale IT operations and distributed workforce)
+- Large Education (universities, major school systems)
+- Large Government (federal, state, or local agencies)
 
 3. Company's core business is OPERATING in their industry, NOT selling technology:
 
@@ -79,8 +73,8 @@ Company meets criteria 1-3 below. Criterion 4 (IT signals) should increase confi
 - Banks/insurance that provide financial services
 - Airlines/logistics that move people/goods
 - Healthcare systems that operate hospitals
-- Consulting firms that provide professional services (and have large internal IT)
-- MSPs that provide IT services (and have large internal IT operations)
+- Consulting firms that provide professional services
+- MSPs that provide IT services
 - SaaS companies with 5,000+ employees AND significant internal IT
 
 4. Evidence suggests complex IT operations (signals increase confidence; absence does NOT disqualify):
@@ -102,4 +96,4 @@ Company meets criteria 1-3 below. Criterion 4 (IT signals) should increase confi
 
 ---
 
-Return only: YES, YES (Signal-Based), or NO
+Return only: YES or NO
