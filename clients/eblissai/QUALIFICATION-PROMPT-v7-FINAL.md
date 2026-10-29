@@ -1,241 +1,106 @@
-# eBlissAI Company Qualification Prompt (v7 - Final)
+Review this company's website and public information to determine if they are a good fit for eBlissAI, an Autonomous Execution Layer that diagnoses and resolves L2/L3 endpoint IT issues.
 
-**Purpose:** Determine if a company is a good-fit prospect for eBlissAI's Autonomous Execution Layer
-**Based On:** ICP Questionnaire v6a (Sept 9, 2026) + Client Approval Feedback
-**Last Updated:** October 27, 2026
-**Owner:** Angela Petkovska / INTELSOL
+Return ONLY "YES", "YES (Signal-Based)", or "NO"
 
 ---
 
-## THE PROMPT
+RETURN "NO" IF ANY OF THESE ARE TRUE:
 
-Return ONLY one of: **"YES"** | **"YES (Signal-Based)"** | **"NO"**
+1. Company's PRIMARY BUSINESS is building and selling technology products that overlap with IT operations:
 
-**Note:** "YES (Signal-Based)" means search for trigger signals now, then reach out when signals appear (see section below)
+- Specifically: ITSM vendors, endpoint management vendors, IT infrastructure vendors, IT automation vendors, autonomous remediation platforms
+- Examples: servicenow.com, bmc.com, microsoft.com, apple.com, oracle.com, sap.com, salesforce.com, adobe.com, intel.com, cisco.com, dell.com, hp.com, vmware.com, ibm.com
+- If they SELL enterprise IT infrastructure, ITSM platforms, endpoint management, IT operations automation, or autonomous remediation products = NO
+- If they USE these tools internally for their own operations = continue evaluating
+- Exception: SaaS/software companies with 5,000+ employees AND demonstrable internal IT operations CAN qualify (examples: PTC, Pega, Dynatrace, HubSpot, Progress, Appian)
 
----
+2. Company is a direct competitor:
 
-### RETURN "NO" IF ANY OF THESE ARE TRUE:
+- nanoheal.com, tanium.com, nexthink.com, lakeside.com, controlup.com, consoleconnect.com, ivanti.com, riverbed.com
+- Note: If a company USES Tanium/Nexthink/Lakeside/Ivanti for their own IT = POSITIVE signal, not exclusion
 
-**1. Company's PRIMARY BUSINESS is building and selling technology products**
-   - Check company domain to verify their core business
-   - Examples: servicenow.com, bmc.com, microsoft.com, apple.com, oracle.com, sap.com, salesforce.com, adobe.com, intel.com, cisco.com, dell.com, hp.com, vmware.com, ibm.com
-   - **Exception:** If company USES these tools internally for their own IT operations (not selling them) → continue evaluating
-   - **Note:** Software companies with 5,000+ employees AND demonstrable internal IT operations CAN qualify (see: PTC, Pega, Dynatrace, etc.)
+3. Company is a known build-not-buy organization:
 
-**2. Company is a direct competitor**
-   - Check domain: nanoheal.com, tanium.com, nexthink.com, lakeside.com, controlup.com, consoleconnect.com, ivanti.com, riverbed.com
-   - **Exception:** If company USES Tanium/Nexthink/Lakeside/Ivanti for their own IT = POSITIVE signal, not disqualification
+- Netflix, Google, Alphabet, Amazon, AWS, Meta/Facebook, Lockheed Martin
 
-**3. Company is a known build-not-buy organization**
-   - Netflix, Google, Alphabet, Amazon, AWS, Meta/Facebook, Lockheed Martin
-   - These companies build their own internal IT solutions rather than buy external tools
+4. Company explicitly states they already have fully autonomous self-healing AI endpoints deployed
 
-**4. Company already has fully autonomous self-healing AI endpoints deployed**
-   - Evidence: Website explicitly states autonomous remediation or self-healing endpoints are live
-   - Signal: If they've already solved this problem, they're not a prospect
+5. Company is a GSI partner already engaged with eBlissAI:
 
-**5. Company is a GSI partner already engaged with eBlissAI**
-   - Accenture, CapGemini, Coforge, HCL, InfoSys, LTM, TCS, Tech Mahindra, Wipro
-   - These are partnership channels, not end-customer targets
+- Accenture, CapGemini, Coforge, HCL, InfoSys, LTM, TCS, Tech Mahindra, Wipro
+- Note: Other large consulting/SI firms (Deloitte, KPMG, PwC, Cognizant, EY) are evaluated separately as potential internal IT customers
 
-**6. Company is FiServ (existing direct customer)**
-   - Already engaged
+6. Company is FiServ (existing customer)
 
 ---
 
-### RETURN "YES (SIGNAL-BASED)" IF:
+RETURN "YES (SIGNAL-BASED)" IF:
 
-Company is a large US depository bank with significant regulatory/procurement friction:
-
-**Banks that qualify as YES but require signal-based outreach only:**
-- JPMorgan Chase (jpmorganchase.com)
-- Bank of America (bankofamerica.com)
-- Wells Fargo (wellsfargo.com)
-
-**Why Signal-Based:**
-- ✓ Meets all YES criteria (3,000+ employees, Financial Services, complex IT ops)
-- ✗ Heavy regulatory/procurement friction (SR 11-7 MRM requirements)
-- ✗ Slow decision-making cycles (6-12 months vs. 2-4 months for others)
-- ✗ Cold outreach typically goes unread/unactionable
-
-**Strategy: Signal-Based Outreach ONLY**
-- Search for trigger signals now (new CIO hire, platform renewal, public outage, SLA breach, Q4 budget planning)
-- When trigger signal appears, reference it directly in initial outreach
-- Example: "Saw Wells Fargo announced ServiceNow Q4 renewal — great timing for autonomous remediation layer"
+- Company is a top-tier global financial institution with significant regulatory oversight and enterprise IT complexity
+- Specifically: JPMorgan Chase, Bank of America, Wells Fargo, Citigroup, Goldman Sachs, Morgan Stanley, HSBC, Deutsche Bank, Barclays, UBS, BNP Paribas (or similar tier-1 global banks)
+- Meets all ICP criteria (enterprise scale, industry, operating IT infrastructure)
+- Known to have slow procurement cycles and heavy regulatory/compliance review processes that require trigger-based outreach
+- Strategy: Search for trigger signals (new CIO hire, platform renewal, public outage, SLA breach, Q4 budget planning), then reach out when signals appear
 - Do NOT add to routine cold-outreach campaigns until trigger signal identified
-
-**All other Financial Services companies (Goldman Sachs, Citigroup, HSBC, Morgan Stanley, American Express, BlackRock, etc.)** = Standard YES → proactive outreach
-
----
-
-### RETURN "YES" IF ALL OF THESE ARE TRUE:
-
-**1. Company has 3,000+ employees (or strong evidence of 3,000+ endpoints)**
-   - Verify via: LinkedIn company page, About Us page, press releases, job postings, Crunchbase
-   - **Sweet spot:** 10,000 +/- employees (but 3,000 is hard minimum)
-
-**2. Company operates in one of these industries:**
-
-   **TIER 1 (HIGHEST PRIORITY):**
-   - Manufacturing (automotive, industrial equipment, machinery, chemicals, food, oil & gas, mining)
-   - Retail (multi-location chains, restaurant/QSR chains, hospitality, hotels, casinos)
-   - Financial Services (diversified banks, insurance, PE firms, hedge funds, RIAs, investment management)
-
-   **TIER 2 (HIGH PRIORITY):**
-   - Technology / SaaS / Infrastructure (companies operating large internal IT, even if they build software)
-   - Airlines / Transportation / Logistics
-   - Telecommunications operators (not vendors)
-   - Healthcare / Pharmaceuticals / Biotech
-   - Energy / Utilities
-
-   **TIER 3 (SECONDARY PRIORITY):**
-   - Large Consulting / SI firms (Deloitte, KPMG, PwC, Cognizant, EY - for their OWN internal IT operations, 10,000+ employees)
-   - Managed Service Providers (MSPs) with large internal IT operations
-   - Food & Beverage (manufacturers and distributors)
-   - Consumer Goods
-   - Aerospace / Defense (operators and manufacturers, not defense contractors without large IT)
-   - Education (universities, large school systems)
-   - Government (federal, state, local agencies)
-   - Insurance (depository and alternative risk carriers)
-
-**3. Company's core business is OPERATING in their industry, NOT primarily selling IT technology**
-   - ✓ Manufacturers that make physical products (even if they also use/sell software)
-   - ✓ Retailers that sell consumer goods
-   - ✓ Banks/Insurance that provide financial services
-   - ✓ Airlines/Logistics that move people or goods
-   - ✓ Healthcare systems that operate hospitals
-   - ✓ Consulting firms that provide professional services (with large internal IT)
-   - ✓ Universities that operate educational institutions
-   - ✓ Telecom/Cable operators that provide connectivity
-   - ✓ Software companies IF they have 5,000+ employees AND operate significant internal IT (see Exception in RETURN NO section)
-   - ✗ Pure software/IT vendors (unless exception applies)
-
-**4. Website shows evidence of complex IT operations (find AT LEAST ONE of these):**
-   - ✓ Mentions using ITSM tools (ServiceNow, BMC Helix, Cherwell, ServiceTitan, etc.) — **STRONG POSITIVE**
-   - ✓ Mentions endpoint management tools (Microsoft Intune, Jamf, Tanium, Ivanti, etc.) — **STRONG POSITIVE**
-   - ✓ Mentions DEX/employee experience tools (Nexthink, Lakeside SysTrack, Qualtrics XM, etc.) — **VERY STRONG POSITIVE**
-   - ✓ Job postings for: IT Support, Help Desk, Desktop Support, Service Desk, IT Operations, End User Computing, Digital Workplace, EUC, Infrastructure roles
-   - ✓ Mentions distributed workforce, multiple locations, global operations
-   - ✓ References IT incidents, tickets, help desk systems, or employee technology support
-   - ✓ Uses Microsoft Intune, Azure Virtual Desktop, Windows 365 (signals modern endpoint stack)
-   - ✓ Mentions Anthropic/Claude commercial relationship — **NATURAL EXTENSION SALE**
-
-**5. No evidence company has already solved this with autonomous self-healing AI**
-   - Confirm they don't have Moveworks, Aisera, or similar already deployed for endpoint automation
-   - Note: Having Moveworks/Aisera for chatbot support is POSITIVE signal, not blocker (different category)
+- Note: Regional banks, insurance companies, asset managers, fintechs, and other financial-services companies should be evaluated as standard YES if they meet ICP criteria
 
 ---
 
-## INDUSTRY REFERENCE TABLE
+RETURN "YES" IF:
 
-| Industry | Include? | Notes |
-|----------|----------|-------|
-| Manufacturing (all types) | ✓ YES | Tier 1 priority |
-| Retail (multi-location chains) | ✓ YES | Tier 1 priority |
-| Financial Services | ✓ YES | Banks, insurance, PE, hedge funds, RIAs; Tier 1 |
-| Technology / SaaS | ✓ YES (with size check) | IF 5,000+ employees AND internal IT; Tier 2 |
-| Airlines / Transportation | ✓ YES | Tier 2 priority |
-| Telecom Operators | ✓ YES | NOT vendors; Tier 2 |
-| Healthcare / Pharma / Biotech | ✓ YES | Tier 2 priority |
-| Energy / Utilities | ✓ YES | Tier 2 priority |
-| Consulting / SI (Big 4, mid-market) | ✓ YES (Deloitte, KPMG, PwC, Cognizant, EY for internal IT) | Tier 3; must be 10K+ employees |
-| MSPs | ✓ YES | IF they have large internal IT; Tier 3 |
-| Food & Beverage | ✓ YES | Manufacturers, distributors; Tier 3 |
-| Consumer Goods | ✓ YES | Tier 3 |
-| Aerospace / Defense | ✓ YES (operators/manufacturers) | NOT pure defense contractors; Tier 3 |
-| Education | ✓ YES | Universities, large school systems; Tier 3 |
-| Government | ✓ YES | Federal, state, local agencies; Tier 3 |
-| Insurance | ✓ YES | All types; Tier 3 |
-| IT Infrastructure / Cloud Vendors | ✗ NO | Build-not-buy core business |
-| ITSM / Endpoint Software Vendors | ✗ NO | Direct competitors or build-not-buy |
-| Cybersecurity Vendors | ✗ NO | NOT a fit for endpoint remediation |
+Company meets criteria 1-3 below. Criterion 4 (IT signals) should increase confidence, but absence of public signals should NOT automatically disqualify a company that clearly meets enterprise scale + industry criteria.
 
----
+1. Company has 5,000+ managed endpoints OR approximately 3,000+ employees in a distributed enterprise/knowledge-worker environment
 
-## HOW TO USE THIS PROMPT
+- Verify via LinkedIn, About page, company website, or press releases
+- Note: Endpoints matter more than headcount. A company with 5,000+ endpoints qualifies even if <3,000 employees. A company with 3,500 office-only employees may not qualify.
 
-1. **Review company domain** — Determine if it's a software/IT vendor (return NO)
-2. **Verify company size** — 3,000+ employees minimum (check LinkedIn)
-3. **Identify industry** — Is it in Tier 1, 2, or 3?
-4. **Search website for signals** — ITSM, DEX, UEM tools, job postings, IT operations
-5. **Check for conflicts** — Build-not-buy culture, existing autonomous AI, GSI partnership
-6. **Check if large US bank** — If JPMorgan Chase, Bank of America, or Wells Fargo → return "YES (Signal-Based)"
-7. **Return YES, YES (Signal-Based), or NO** — Based on criteria above
+2. Company operates in one of these industries:
 
----
+- Manufacturing (all sectors - automotive, semiconductors, pharmaceuticals, chemicals, electronics, aerospace, machinery, metals, food & beverage, etc.)
+- Retail (multi-location retail chains, restaurant chains, hospitality)
+- Financial Services (banks, insurance, asset management, PE, hedge funds, RIAs)
+- Technology/SaaS/Infrastructure (operating large internal IT, not selling IT products)
+- Airlines/Transportation/Logistics
+- Telecommunications operators (not vendors)
+- Healthcare/Pharmaceuticals
+- Energy/Utilities
+- Large Consulting/SI firms (Deloitte, KPMG, PwC, Cognizant, EY - for their own internal IT operations, with 10,000+ employees)
+- Managed Service Providers (MSPs) with large internal IT operations
+- Food & Beverage
+- Consumer Goods
+- Aerospace/Defense (operators, not vendors)
+- Large Education (universities, major school systems with 3,000+ staff and enterprise IT operations)
+- Large Government (federal, state, or local agencies with enterprise-scale IT operations and distributed workforce)
 
-## COMMON EDGE CASES
+3. Company's core business is OPERATING in their industry, NOT selling technology:
 
-| Scenario | Decision | Why |
-|----------|----------|-----|
-| Software company with 5,000+ employees | EVALUATE | May pass if Tier 3 applies (internal IT evidence required) |
-| Uses Tanium/Nexthink internally | YES, continue | Positive signal of IT maturity |
-| Has Moveworks for chatbot support | YES, continue | Different category; not endpoint automation |
-| University/School system | EVALUATE | Tier 3; check size (3,000+ staff) and IT complexity |
-| Government agency | EVALUATE | Tier 3; check IT operations evidence |
-| Insurance company | YES | Explicit in Tier 3 |
-| Consulting firm (Deloitte, KPMG, etc.) | EVALUATE | YES if 10,000+ employees; NO if smaller |
-| Pure DevOps / Cloud-native software co. | NO | Build-not-buy culture likely |
-| Company using Copilot / Claude internally | YES, continue | Positive signal; natural extension sale opportunity |
-| Large US bank (JPM, BoA, Wells Fargo) | YES (Signal-Based) | Strong ICP fit but regulatory friction requires signal-based outreach only |
-| Financial Services non-US bank | YES | Standard proactive outreach (no regulatory friction barrier) |
+- Manufacturers that make physical products
+- Retailers that sell to consumers
+- Banks/insurance that provide financial services
+- Airlines/logistics that move people/goods
+- Healthcare systems that operate hospitals
+- Consulting firms that provide professional services (and have large internal IT)
+- MSPs that provide IT services (and have large internal IT operations)
+- SaaS companies with 5,000+ employees AND significant internal IT
 
----
+4. Evidence suggests complex IT operations (signals increase confidence; absence does NOT disqualify):
 
-## EXAMPLES: APPROVED GOOD CLIENTS (150+ in database)
+- Mentions using ITSM tools (ServiceNow, BMC Helix, Cherwell, etc.) ← POSITIVE signal
+- Mentions endpoint management tools (Microsoft Intune, Jamf, Tanium, Ivanti, etc.) ← POSITIVE signal
+- Mentions DEX tools (Nexthink, Lakeside SysTrack, etc.) ← STRONG POSITIVE signal
+- Job postings for: IT Support, Help Desk, Desktop Support, Service Desk, IT Operations, End User Computing, Digital Workplace, EUC
+- Mentions distributed workforce, multiple locations, or global operations
+- References IT incidents, tickets, help desk, or employee technology support
+- Uses Microsoft Intune, Azure Virtual Desktop, Windows 365 ← signals modern endpoint stack
+- Note: Most large enterprises do NOT publicly advertise their IT stack. Absence of visible signals should NOT automatically disqualify a company that clearly meets enterprise scale + industry criteria.
 
-**Manufacturing:** Standex, Graco, Teradyne, Entegris, Dorman Products, Armstrong, Scotts Miracle-Gro, Winebago, Belden, G-III, Stoneridge, Vermeer, Swagelok, Allegro Micro, Hypertherm, Timex, Conair, Boston Beer, Craneco, Pitch Bowes
+5. No evidence company has already deployed autonomous endpoint remediation:
 
-**Healthcare / Pharma / Biotech:** Dana-Farber, Vertex, Haemonetics, Alnylam, Moderna, Insulet, Hologic, Enovis, Incyte, InterSystems, Sheppard Pratt, Kennedy Krieger, Multiple health systems, Akron Children's, Aultman
-
-**Financial Services:** Eastern Bank, Jefferies, BBH, DE Shaw, Interactive Brokers, DTCC, Equitable, Trow Price, FirstHorizon, Credit Acceptance, Commerce Bank, Wesbanco, Fannie Mae, Freddie Mac, Carlyle, Genworth, Berkley, Amica, AFICA, PRA Group, CinFin, Atlantic Union, Kemper
-
-**Retail / Hospitality:** LLBean, Stewart Leonard's, Ocean State Job Lot, Hasbro, Papa Johns, CoStar, Costar Group
-
-**Insurance:** Blue Cross MA, Blue Cross NC, Plymouth Rock, GDI, NJCOURTS, NJM, Horizonblue, PHLY, PAHC, Beneva, Laurentian, BCBSal, Definitive Financial
-
-**Telecom / Tech:** Ciena, Rapid7, ZiffDavis, IAC, PTC, Pega, Progress, Dynatrace, Appian, Alarm, Blackbaud, PayLocity, DesCart, Bottomline, HubSpot, IAC
-
-**Energy / Utilities:** Avangrid, CMS Energy, Emera, Irving Oil, Tronox
-
-**Transportation / Logistics:** Hyster-Yale, Descartes, MDA Space, Magellan Aero, Russelmetals, ATS Automation
-
-**Education:** Tufts, URI, UMaine, UDel, WVU, App State, UNB, Prince Edward Island
-
-**Other:** Casella Waste, FM Global, Kroll, Evolent, Nordson, IDEX, Graco
+- Check for autonomous remediation products already live
+- Distinction: Chatbot/AI assistant (Moveworks, Aisera for employee support) = POSITIVE signal. Autonomous endpoint remediation (explicit self-healing) = POTENTIAL conflict.
+- Most Moveworks/Aisera deployments are employee chatbots, not endpoint automation—different problems and do NOT disqualify.
 
 ---
 
-## VERSION HISTORY
-
-| Version | Date | Changes |
-|---------|------|---------|
-| v6a | Sept 9, 2026 | ICP baseline: 3,000+ endpoints, autonomous execution layer, mid/large enterprises |
-| v6.5 | Oct 10, 2026 | Added software company exception; clarified Build vs Use distinction |
-| v7 (Final) | Oct 27, 2026 | Client approval; consolidated with good-client examples; industry tiers clarified |
-| v7.1 | Oct 29, 2026 | Added "YES (Signal-Based)" tier for large US depository banks; clarified trigger-based outreach strategy |
-| v7.2 | Oct 29, 2026 | Renamed "YES (Opportunistic Only)" to "YES (Signal-Based)" throughout for clarity; emphasizes signal-search-first approach |
-
----
-
-## HOW TO APPLY AT SCALE
-
-**For bulk company screening:**
-1. Create a spreadsheet with company domains
-2. For each company, visit website + LinkedIn
-3. Apply this prompt systematically (build → size → industry → signals)
-4. Mark as YES / NO / EVALUATE (if borderline)
-5. Only EVALUATE cases need manual review
-
-**For API / Automation:**
-- This prompt is suitable for Claude API, language models, or web scraping + ML classification
-- Recommend human review for EVALUATE cases before outreach
-
-**For continuous updates:**
-- As you identify new good/bad-fit customers, add to Good Clients table
-- Update version number when changing qualification logic
-
----
-
-**To use this in practice:** Copy the "THE PROMPT" section and use with your company data.
+Return only: YES, YES (Signal-Based), or NO
