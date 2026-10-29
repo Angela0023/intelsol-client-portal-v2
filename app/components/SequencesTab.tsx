@@ -74,7 +74,9 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   const [confirmationMessage, setConfirmationMessage] = useState('');
   const { editMode, isAdmin } = useEditMode();
 
-  const canEdit = editMode && isAdmin;
+  // Clients can always edit their own sequences
+  // Admins need to toggle edit mode to edit any sequences
+  const canEdit = isAdmin ? editMode : true;
 
   useEffect(() => {
     fetchSequences();
