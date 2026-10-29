@@ -9,9 +9,9 @@
 
 ## THE PROMPT
 
-Return ONLY one of: **"YES"** | **"YES (Opportunistic Only)"** | **"NO"**
+Return ONLY one of: **"YES"** | **"YES (Signal-Based)"** | **"NO"**
 
-**Note:** "YES (Opportunistic Only)" means trigger-based outreach only (see section below)
+**Note:** "YES (Signal-Based)" means search for trigger signals now, then reach out when signals appear (see section below)
 
 ---
 
@@ -44,26 +44,26 @@ Return ONLY one of: **"YES"** | **"YES (Opportunistic Only)"** | **"NO"**
 
 ---
 
-### RETURN "YES (OPPORTUNISTIC ONLY)" IF:
+### RETURN "YES (SIGNAL-BASED)" IF:
 
 Company is a large US depository bank with significant regulatory/procurement friction:
 
-**Banks that qualify as YES but require trigger-based outreach only:**
+**Banks that qualify as YES but require signal-based outreach only:**
 - JPMorgan Chase (jpmorganchase.com)
 - Bank of America (bankofamerica.com)
 - Wells Fargo (wellsfargo.com)
 
-**Why Opportunistic Only:**
+**Why Signal-Based:**
 - ✓ Meets all YES criteria (3,000+ employees, Financial Services, complex IT ops)
 - ✗ Heavy regulatory/procurement friction (SR 11-7 MRM requirements)
 - ✗ Slow decision-making cycles (6-12 months vs. 2-4 months for others)
 - ✗ Cold outreach typically goes unread/unactionable
 
-**Strategy: Trigger-Based Outreach ONLY**
-- Wait for a specific trigger event (new CIO hire, platform renewal, public outage, SLA breach, Q4 budget planning)
-- When trigger occurs, reference it directly in initial outreach
+**Strategy: Signal-Based Outreach ONLY**
+- Search for trigger signals now (new CIO hire, platform renewal, public outage, SLA breach, Q4 budget planning)
+- When trigger signal appears, reference it directly in initial outreach
 - Example: "Saw Wells Fargo announced ServiceNow Q4 renewal — great timing for autonomous remediation layer"
-- Do NOT add to routine cold-outreach campaigns
+- Do NOT add to routine cold-outreach campaigns until trigger signal identified
 
 **All other Financial Services companies (Goldman Sachs, Citigroup, HSBC, Morgan Stanley, American Express, BlackRock, etc.)** = Standard YES → proactive outreach
 
@@ -160,8 +160,8 @@ Company is a large US depository bank with significant regulatory/procurement fr
 3. **Identify industry** — Is it in Tier 1, 2, or 3?
 4. **Search website for signals** — ITSM, DEX, UEM tools, job postings, IT operations
 5. **Check for conflicts** — Build-not-buy culture, existing autonomous AI, GSI partnership
-6. **Check if large US bank** — If JPMorgan Chase, Bank of America, or Wells Fargo → return "YES (Opportunistic Only)"
-7. **Return YES, YES (Opportunistic Only), or NO** — Based on criteria above
+6. **Check if large US bank** — If JPMorgan Chase, Bank of America, or Wells Fargo → return "YES (Signal-Based)"
+7. **Return YES, YES (Signal-Based), or NO** — Based on criteria above
 
 ---
 
@@ -178,7 +178,7 @@ Company is a large US depository bank with significant regulatory/procurement fr
 | Consulting firm (Deloitte, KPMG, etc.) | EVALUATE | YES if 10,000+ employees; NO if smaller |
 | Pure DevOps / Cloud-native software co. | NO | Build-not-buy culture likely |
 | Company using Copilot / Claude internally | YES, continue | Positive signal; natural extension sale opportunity |
-| Large US bank (JPM, BoA, Wells Fargo) | YES (Opportunistic Only) | Strong ICP fit but regulatory friction requires trigger-based outreach only |
+| Large US bank (JPM, BoA, Wells Fargo) | YES (Signal-Based) | Strong ICP fit but regulatory friction requires signal-based outreach only |
 | Financial Services non-US bank | YES | Standard proactive outreach (no regulatory friction barrier) |
 
 ---
@@ -214,7 +214,8 @@ Company is a large US depository bank with significant regulatory/procurement fr
 | v6a | Sept 9, 2026 | ICP baseline: 3,000+ endpoints, autonomous execution layer, mid/large enterprises |
 | v6.5 | Oct 10, 2026 | Added software company exception; clarified Build vs Use distinction |
 | v7 (Final) | Oct 27, 2026 | Client approval; consolidated with good-client examples; industry tiers clarified |
-| v7.1 | Oct 29, 2026 | Added "YES (Opportunistic Only)" tier for large US depository banks; clarified trigger-based outreach strategy |
+| v7.1 | Oct 29, 2026 | Added "YES (Signal-Based)" tier for large US depository banks; clarified trigger-based outreach strategy |
+| v7.2 | Oct 29, 2026 | Renamed "YES (Opportunistic Only)" to "YES (Signal-Based)" throughout for clarity; emphasizes signal-search-first approach |
 
 ---
 
