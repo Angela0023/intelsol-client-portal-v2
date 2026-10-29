@@ -230,29 +230,6 @@
     }
   },
   {
-    "campaignName": "🤖 eBliss AI | NEW 1 | Tier 1",
-    "dateLaunched": "10/9/2026",
-    "totalLeads": 5,
-    "leadsEmailed": 5,
-    "month": "October",
-    "status": "COMPLETED",
-    "performance": {
-      "emailsSent": 10,
-      "opens": 0,
-      "openRate": "0.00",
-      "clicks": 0,
-      "clickRate": "0.00",
-      "replies": 0,
-      "replyRate": "0.00",
-      "bounces": 0,
-      "bounceRate": "0.00",
-      "unsubscribed": 0,
-      "interested": 0,
-      "interestedRate": "0.00",
-      "notInterested": 0
-    }
-  },
-  {
     "campaignName": "🤖 eBliss AI | NEW 2 | Tier 2",
     "dateLaunched": "10/9/2026",
     "totalLeads": 61,
