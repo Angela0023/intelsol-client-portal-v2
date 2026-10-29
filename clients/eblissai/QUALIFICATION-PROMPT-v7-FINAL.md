@@ -36,13 +36,12 @@ RETURN "NO" IF ANY OF THESE ARE TRUE:
 
 RETURN "YES (SIGNAL-BASED)" IF:
 
-- Company is a top-tier global financial institution with significant regulatory oversight and enterprise IT complexity
-- Specifically: JPMorgan Chase, Bank of America, Wells Fargo, Citigroup, Goldman Sachs, Morgan Stanley, HSBC, Deutsche Bank, Barclays, UBS, BNP Paribas (or similar tier-1 global banks)
-- Meets all ICP criteria (enterprise scale, industry, operating IT infrastructure)
-- Known to have slow procurement cycles and heavy regulatory/compliance review processes that require trigger-based outreach
+- Company is ONLY one of these tier-1 global depository banks: JPMorgan Chase, Bank of America, Wells Fargo, Citigroup, Goldman Sachs, Morgan Stanley, HSBC, Deutsche Bank, Barclays, UBS, or BNP Paribas
+- AND meets all ICP criteria (enterprise scale, industry, operating IT infrastructure)
+- These banks have known slow procurement cycles and heavy regulatory/compliance review processes (SR 11-7 MRM requirements) that require trigger-based outreach
 - Strategy: Search for trigger signals (new CIO hire, platform renewal, public outage, SLA breach, Q4 budget planning), then reach out when signals appear
 - Do NOT add to routine cold-outreach campaigns until trigger signal identified
-- Note: Regional banks, insurance companies, asset managers, fintechs, and other financial-services companies should be evaluated as standard YES if they meet ICP criteria
+- All other financial-services companies (including American Express, regional banks, insurance companies, asset managers, fintechs) should be evaluated as standard YES if they meet ICP criteria 1-5
 
 ---
 
