@@ -1,5 +1,51 @@
 [
   {
+    "campaignName": "🤖 eBliss AI | Canada Lookalikes | NEW 2 | Open Rate Tracking - copy",
+    "dateLaunched": "10/30/2026",
+    "totalLeads": 148,
+    "leadsEmailed": 85,
+    "month": "October",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 85,
+      "opens": 53,
+      "openRate": "62.35",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "2.35",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
+    "campaignName": "🤖 eBliss AI | UK | Manufacturing | NEW 1",
+    "dateLaunched": "10/30/2026",
+    "totalLeads": 166,
+    "leadsEmailed": 100,
+    "month": "October",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 100,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 6,
+      "replyRate": "6.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🤖 eBliss AI | Canada Lookalikes | NEW 1",
     "dateLaunched": "10/29/2026",
     "totalLeads": 99,
@@ -237,7 +283,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 111,
+      "emailsSent": 113,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -260,7 +306,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 109,
+      "emailsSent": 111,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -304,9 +350,9 @@
     "totalLeads": 61,
     "leadsEmailed": 61,
     "month": "October",
-    "status": "ACTIVE",
+    "status": "COMPLETED",
     "performance": {
-      "emailsSent": 117,
+      "emailsSent": 121,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
