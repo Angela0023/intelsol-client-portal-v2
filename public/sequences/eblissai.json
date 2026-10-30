@@ -1,5 +1,47 @@
 [
   {
+    "id": "new-sequences-scott-strategic",
+    "tierName": "New Sequences by Scott - Sequence 1: Strategic",
+    "tierColor": "red",
+    "targetPersonas": "CIO, CTO, VP IT Operations, Senior Directors",
+    "messagingAngle": "Complex IT incident resolution: AI reasoning across systems reduces 1-2 days to 20 minutes with enterprise guardrails",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "{{company_name}}: Complex IT incident resolution",
+        "body": "Hi {{first_name}},\n\nWhat happens when your most complex IT issues consume days of effort, multiple teams and multiple tools—while the business expects IT to move faster with fewer resources?\n\nOne application failure recently required 4 tools, 5 teams, 6–8 hours of effort, and 1–2 days to resolve.\n\neBlissAI handled it in 20 minutes, with just 5 minutes of manual involvement—~99% less effort and tool consolidation.\n\nThat's the difference between automating predefined workflows and using AI that can reason across systems, diagnose and execute the appropriate response, while continuously improving within enterprise guardrails.\n\nMultiply that across large endpoint environments and incidents: dramatically lower operating overhead, higher productivity, reduced downtime and revenue loss—and the ability to scale IT without scaling headcount.\n\nDoes that map to challenges {{company_name}} is seeing in IT operations?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: {{company_name}}: Complex IT incident resolution",
+        "body": "Hi {{first_name}},\n\nFollowing up on the IT ops question from my earlier email.\n\nIf reducing incident resolution effort by ~99% while avoiding headcount additions is on your radar, I can walk you through how eBlissAI handles complex failures in 15 minutes—just a live demo, no pitch.\n\nEither way, let me know so I can close the loop.\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      }
+    ]
+  },
+  {
+    "id": "new-sequences-scott-tactical",
+    "tierName": "New Sequences by Scott - Sequence 2: Tactical",
+    "tierColor": "darkred",
+    "targetPersonas": "IT Managers, Service Delivery Managers, Operations Leaders",
+    "messagingAngle": "Incident resolution speed: AI reasoning handles complex failures in 20 minutes vs 2 days, reducing operational effort and headcount pressure",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "{{company_name}}: Faster incident resolution",
+        "body": "Hi {{first_name}},\n\nOne application failure recently required 4 tools, 5 teams, 6–8 hours of effort, and 1–2 days to resolve.\n\neBlissAI handled it in 20 minutes, with just 5 minutes of manual involvement.\n\nThat's the difference between automating predefined workflows and using AI that can reason across systems, perform actions, and operate within enterprise guardrails.\n\nAs IT environments become more complex, that can mean faster resolution, less operational effort, and less pressure to add headcount.\n\nDoes that map to challenges {{company_name}} is seeing in IT operations?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: {{company_name}}: Faster incident resolution",
+        "body": "Hi {{first_name}},\n\nCircling back on the IT ops question from my earlier email.\n\nIf the 20-minute vs. 2-day resolution gap is relevant to {{company_name}}, I can show you a walkthrough in 15 minutes—no pitch, just the platform solving a live incident.\n\nIf timing's not right or it's not a fit, totally understand—just let me know either way.\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      }
+    ]
+  },
+  {
     "id": "head-digital-workplace-employee-experience",
     "tierName": "SEQUENCE 1: Head of Digital Workplace - Cost + Revenue Protection",
     "tierColor": "purple",
