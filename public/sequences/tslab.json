@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "decision-makers-collaboration",
+    "tierName": "SEQUENCE 1: Decision Makers",
+    "tierColor": "blue",
+    "targetPersonas": "CEO, Founder, Decision Makers",
+    "messagingAngle": "Collaboration opportunity for supplement brands and manufacturers",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Collaboration opportunity with a fast-growing contract manufacturer",
+        "body": "Hi {{first_name}},\n\nI hope you're doing well.\n\nI'm reaching out because I believe our companies could be a good fit to work together.\n\nI'm the Founder & CEO of TS LAB®, a Slovenia-based contract manufacturer focused on capsule-based food supplements and bulk capsule manufacturing. We are GMP, HACCP, FDA registered, and Organic accredited, and manufacture for more than 50 supplement brands across Europe and internationally, giving us a broad market perspective and a global industry outlook.\n\nOver the past few years, TS LAB® has become one of the fastest-growing companies in Slovenia, and we regularly exhibit at Vitafoods Europe, where we work closely with some of the industry's leading brands, Amazon retailers, pharmacy groups, and retail chains.\n\nBecause we manufacture for companies across multiple European markets, we gain a unique view of what's actually selling. Categories such as Longevity, Cognitive Health, Beauty-from-Within, and Gut Health continue to see exceptional growth. We regularly help our partners identify emerging areas, refine existing formulations, and introduce additional products to market quickly.\n\nWhether you're looking to expand your product portfolio, improve manufacturing efficiency, increase margins, or simply add a reliable production partner, I'd be happy to explore whether we could create value together.\n\nIf you think it would be worthwhile, I'd be delighted to arrange a short chat and exchange ideas.\n\nLooking forward to hearing from you.\n\nKind regards,\nTilen Suhadolnik\n\nFounder & CEO | TS LAB®\nts-lab.eu\n+386 40 373 333"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: {{previous_subject}}",
+        "body": "Hi {{first_name}},\n\nJust wanted to add one quick point to my previous message.\n\nBecause we manufacture for over 50 brands across different European markets, we're constantly seeing which formulations and categories are performing well and where demand is shifting. Categories like Longevity, Cognitive Health, and Beauty-from-Within continue to show strong growth.\n\nIf you're considering expanding into any of these areas or refining your existing product line, I'd be happy to share what we're seeing and explore whether we could support your goals.\n\nNo pressure, just thought it might be valuable.\n\nBest,\nTilen Suhadolnik\n\nFounder & CEO | TS LAB®\nts-lab.eu\n+386 40 373 333"
+      }
+    ]
+  },
+  {
+    "id": "procurement-contact",
+    "tierName": "SEQUENCE 2: Procurement",
+    "tierColor": "green",
+    "targetPersonas": "Sourcing Manager, Procurement Lead, Private Label Manager",
+    "messagingAngle": "Looking to connect with procurement/sourcing teams",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Quick introduction - TS LAB® contract manufacturing",
+        "body": "Hi {{first_name}},\n\nI'm reaching out because I don't have a direct contact for the relevant department, so I'd appreciate a quick hand.\n\nWe are TS LAB®, a Slovenia-based contract manufacturer specializing in capsule-based food supplements and bulk capsule manufacturing.\n\nWe are GMP, HACCP, FDA registered, and Organic accredited, currently manufacturing for more than 50 companies across the EU.\n\nI'd like to connect with whoever handles Sourcing, Procurement, or Private Label development at your company, to explore whether there's a fit for collaboration.\n\nCould you point me to the right contact, or forward this along? It would genuinely mean a lot to be connected with the right person for this.\n\nThank you for your time!\n\nKind regards,\nTilen Suhadolnik\n\nFounder & CEO | TS LAB®\nts-lab.eu\n+386 40 373 333"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Follow-up: Sourcing & Procurement",
+        "body": "Hey {{first_name}},\n\nI wanted to follow up on my previous message in case it got lost in the shuffle.\n\nWe're looking to connect with whoever oversees Sourcing, Procurement, or Private Label development at your company, to see if there's potential for collaboration.\n\nIf you could point me in the right direction or forward this along, I'd really appreciate it.\n\nThank you!\n\nKind regards,\nTilen Suhadolnik\n\nFounder & CEO | TS LAB®\nts-lab.eu\n+386 40 373 333"
+      }
+    ]
+  }
+]
