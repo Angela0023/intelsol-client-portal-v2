@@ -1,0 +1,56 @@
+[
+  {
+    "id": "intrix-sequence-a-open-offers",
+    "tierName": "Sequence A: Otvorene ponude – pregled i odgovornost",
+    "tierColor": "blue",
+    "targetPersonas": "Sales Managers, VP Sales, Sales Directors",
+    "messagingAngle": "Open offers often get lost in communication and responsibility gaps - Intrix CRM provides visibility of all offers, agreements, and ownership",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Otvorene ponude – pregled i odgovornost",
+        "body": "Dobar dan {{first_name}},\n\nU mnogim kompanijama ponude ostaju otvorene nedeljama jer niko ne zna ko je odgovoran za sledeći korak. Menadžment za to sazna tek kada je prilika već izgubljena.\n\nIntrix CRM povezuje podatke o klijentima, ponude i aktivnosti prodajnog tima, tako da u svakom trenutku možete da vidite šta je u toku i gde je potrebno reagovati.\n\nAko vam ovo zvuči zanimljivo, rado ću vam pokazati kako to funkcioniše u praksi tokom kratkog razgovora od 15 minuta. Da li vam odgovara neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nBrigita Kovačević"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Otvorene ponude – pregled i odgovornost",
+        "body": "Dobar dan {{first_name}},\n\nJavljam vam se ponovo povodom prethodnog mejla o praćenju otvorenih ponuda.\n\nKoliko vam je vremena danas potrebno da saznate u kojoj je fazi neka ponuda i ko je odgovoran za sledeći korak? U većini kompanija to podrazumeva nekoliko poziva i mejlova sa kolegama.\n\nU Intrix CRM-u sve ove informacije vidite na jednom mestu: otvorene ponude, dogovore sa klijentima i osobe zadužene za njih. Menadžment ima pregled bez dodatnih provera, a nijedna poslovna prilika se ne zaboravlja.\n\nAko vas ovo zanima, izdvojite 15 minuta i pokazaću vam kako to funkcioniše u praksi. Da li vam odgovara neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nBrigita Kovačević"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Otvorene ponude – pregled i odgovornost",
+        "body": "Dobar dan {{first_name}},\n\nOvo je moja poslednja poruka u vezi sa pregledom prodaje i praćenjem otvorenih ponuda.\n\nKratak odgovor je sasvim dovoljan:\n\n1 – tema je aktuelna, hajde da dogovorimo razgovor\n2 – neko drugi je zadužen za to (bio/la bih vam zahvalna na preporuci kome mogu da se obratim)\n3 – trenutno nam to nije prioritet\n\nU svakom slučaju, hvala vam na izdvojenom vremenu.\n\nSrdačan pozdrav,\nBrigita Kovačević"
+      }
+    ]
+  },
+  {
+    "id": "intrix-sequence-b-scattered-info",
+    "tierName": "Sequence B: Gde su rasute informacije o vašim klijentima?",
+    "tierColor": "green",
+    "targetPersonas": "Sales Managers, Account Managers, VP Sales",
+    "messagingAngle": "Customer information scattered across multiple tools and systems creates inefficiency and missed follow-ups - Intrix CRM centralizes everything",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Gde su rasute informacije o vašim klijentima?",
+        "body": "Dobar dan {{first_name}},\n\nU prodaji su informacije o klijentima često rasute na više mesta: deo je u mejlovima, deo u Excel tabelama, a deo u beleškama ili se jednostavno pamti. Kada treba da se javite klijentu ili da ga prepustite kolegi, pronalaženje tih informacija oduzima vreme.\n\nU Intrix CRM-u sve vidite na jednom mestu: otvorene ponude, sve dogovore sa klijentima i podsetnike za sledeći korak. Tako nijedan klijent nije zaboravljen i uvek se javljate na vreme.\n\nAko vam je ovo poznato, rado ću vam pokazati kako to funkcioniše u praksi tokom kratkog razgovora od 15 minuta. Da li vam odgovara neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nBrigita Kovačević"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Gde su rasute informacije o vašim klijentima?",
+        "body": "Dobar dan {{first_name}},\n\nJavljam vam se ponovo povodom prethodnog mejla.\n\nZamislite da ste na godišnjem odmoru, a vaš važan klijent pozove kolegu. Da li on zna šta ste se poslednji put dogovorili i koje su ponude još uvek otvorene?\n\nU Intrix CRM-u svi dogovori, ponude i podsetnici za sledeći kontakt nalaze se na jednom mestu. Kolega koji vas menja ili preuzima klijenta odmah zna dokle ste stigli, a kada se vratite, ne morate ničega da se prisećate.\n\nAko vas ovo zanima, rado ću vam pokazati kako to funkcioniše za 15 minuta. Da li vam odgovara neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nBrigita Kovačević"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Gde su rasute informacije o vašim klijentima?",
+        "body": "Dobar dan {{first_name}},\n\nOvo je moja poslednja poruka u vezi sa praćenjem ponuda i dogovora sa klijentima.\n\nKratak odgovor je sasvim dovoljan:\n\n1 – tema je aktuelna, hajde da dogovorimo razgovor\n2 – neko drugi u našoj kompaniji donosi odluke o tome (bio/la bih vam zahvalna na preporuci kome mogu da se obratim)\n3 – trenutno nam to nije prioritet\n\nU svakom slučaju, hvala vam na izdvojenom vremenu i želim vam mnogo uspeha u prodaji.\n\nSrdačan pozdrav,\nBrigita Kovačević"
+      }
+    ]
+  }
+]
