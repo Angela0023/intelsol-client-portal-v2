@@ -1,17 +1,14 @@
 // Simple authentication for client portal
 // In production, use proper authentication (NextAuth.js, Auth0, etc.)
 
-export type ClientAccess = 'admin' | 'xpose' | 'tslab' | 'beeit' | 'intelsol' | 'wulf' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'birografika' | 'bmevents' | 'prtronic' | 'dhm' | 'morefromfood' | 'pacia' | 'selekcija' | 'intera' | 'seyens' | 'integraplast' | 'askit' | 'dukegroup' | 'novavizija' | 'pluritech' | 'demo';
+export type ClientAccess = 'admin' | 'tslab' | 'intelsol' | 'peoplefocus' | 'plantryx' | 'adsigner' | 'mountaindrop' | 'eblissai' | 'zen2fit' | 'panorate' | 'mbedtronix' | 'clevercraft' | 'stojkov' | 'birografika' | 'bmevents' | 'prtronic' | 'dhm' | 'morefromfood' | 'pacia' | 'selekcija' | 'intera' | 'seyens' | 'integraplast' | 'askit' | 'dukegroup' | 'novavizija' | 'pluritech' | 'demo';
 
 export type Assignee = 'Frosina' | 'Matej' | 'Filip';
 
 export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
   admin: 'Portal.Master.24', // Matej + team access
-  xpose: 'Beauty.Leads.47',
   tslab: 'Capsule.Supply.29',
-  beeit: 'Agency.Track.56',
   intelsol: 'Portal.Master.24',
-  wulf: 'Mountain.Path.83',
   peoplefocus: 'Talent.Team.91',
   plantryx: 'plantryx2026',
   adsigner: 'Email.Brand.42',
@@ -41,11 +38,8 @@ export const CLIENT_PASSWORDS: Record<ClientAccess, string> = {
 
 export const CLIENT_ASSIGNEES: Record<ClientAccess, Assignee | null> = {
   admin: null,
-  xpose: 'Frosina',
   tslab: 'Matej',
-  beeit: 'Filip',
   intelsol: 'Matej',
-  wulf: 'Frosina',
   peoplefocus: 'Filip',
   plantryx: 'Matej',
   adsigner: 'Frosina',
@@ -84,7 +78,7 @@ export function checkAdminAccess(password: string): boolean {
 export function getAllowedClients(password: string): ClientAccess[] {
   // Admin can access all
   if (checkAdminAccess(password)) {
-    return ['admin', 'xpose', 'tslab', 'beeit', 'intelsol', 'wulf', 'peoplefocus', 'plantryx', 'adsigner', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'seyens', 'integraplast', 'askit', 'dukegroup', 'novavizija', 'pluritech', 'demo'];
+    return ['admin', 'tslab', 'intelsol', 'peoplefocus', 'plantryx', 'adsigner', 'mountaindrop', 'eblissai', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'seyens', 'integraplast', 'askit', 'dukegroup', 'novavizija', 'pluritech', 'demo'];
   }
 
   // Check individual client access

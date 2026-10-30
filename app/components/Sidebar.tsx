@@ -22,12 +22,9 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
 
   const defaultClients: Client[] = [
     { id: 'demo', name: 'Demo (Sample)', icon: Building2, color: 'text-cyan-600' },
-    { id: 'xpose', name: 'Xpose Solutions', icon: Building2, color: 'text-blue-600' },
     { id: 'tslab', name: 'TS Lab', icon: Building2, color: 'text-green-600' },
     { id: 'adsigner', name: 'AdSigner', icon: Building2, color: 'text-teal-600' },
-    { id: 'beeit', name: 'BeeIt', icon: Building2, color: 'text-amber-600' },
     { id: 'intelsol', name: 'Intelsol', icon: Building2, color: 'text-violet-600' },
-    { id: 'wulf', name: 'WULF Arts', icon: Building2, color: 'text-orange-600' },
     { id: 'peoplefocus', name: 'People Focus', icon: Building2, color: 'text-purple-600' },
     { id: 'plantryx', name: 'Plantryx', icon: Building2, color: 'text-indigo-600' },
     { id: 'mountaindrop', name: 'Mountaindrop', icon: Building2, color: 'text-emerald-600' },

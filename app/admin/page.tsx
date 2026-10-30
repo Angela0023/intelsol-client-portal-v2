@@ -29,16 +29,13 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'xpose', 'tslab', 'adsigner', 'beeit', 'intelsol', 'peoplefocus', 'wulf', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'dukegroup', 'novavizija', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens', 'pluritech'];
+      const clientIds = ['demo', 'tslab', 'adsigner', 'intelsol', 'peoplefocus', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'dukegroup', 'novavizija', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens', 'pluritech'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
-        xpose: 'Xpose Solutions',
         tslab: 'TS Lab',
         adsigner: 'AdSigner',
-        beeit: 'BeeIt',
         intelsol: 'Intelsol',
         peoplefocus: 'PeopleFocus',
-        wulf: 'Wulf',
         plantryx: 'Plantryx',
         mountaindrop: 'Mountaindrop',
         eblissai: 'eBlissAI',
@@ -111,14 +108,6 @@ export default function AdminPage() {
       bgColor: 'bg-cyan-50',
     },
     {
-      id: 'xpose',
-      name: 'Xpose Solutions',
-      industry: 'Healthcare Technology',
-      color: 'bg-blue-100 text-blue-600',
-      borderColor: 'border-blue-200',
-      bgColor: 'bg-blue-50',
-    },
-    {
       id: 'tslab',
       name: 'TS Lab',
       industry: 'Food Supplement Manufacturing',
@@ -135,28 +124,12 @@ export default function AdminPage() {
       bgColor: 'bg-teal-50',
     },
     {
-      id: 'beeit',
-      name: 'BeeIt',
-      industry: 'eCommerce Development',
-      color: 'bg-amber-100 text-amber-600',
-      borderColor: 'border-amber-200',
-      bgColor: 'bg-amber-50',
-    },
-    {
       id: 'intelsol',
       name: 'Intelsol',
       industry: 'Lead Generation Agency',
       color: 'bg-violet-100 text-violet-600',
       borderColor: 'border-violet-200',
       bgColor: 'bg-violet-50',
-    },
-    {
-      id: 'wulf',
-      name: 'WULF Arts',
-      industry: '3D Production Studio',
-      color: 'bg-orange-100 text-orange-600',
-      borderColor: 'border-orange-200',
-      bgColor: 'bg-orange-50',
     },
     {
       id: 'plantryx',
@@ -361,18 +334,6 @@ export default function AdminPage() {
                         </span>
                         <span className="text-xs bg-white px-2 py-1 rounded border border-slate-200">
                           Performance
-                        </span>
-                        <span className="text-xs bg-white px-2 py-1 rounded border border-slate-200">
-                          Tasks
-                        </span>
-                      </>
-                    ) : client.id === 'wulf' ? (
-                      <>
-                        <span className="text-xs bg-white px-2 py-1 rounded border border-slate-200">
-                          Overview
-                        </span>
-                        <span className="text-xs bg-white px-2 py-1 rounded border border-slate-200">
-                          Spam Check
                         </span>
                         <span className="text-xs bg-white px-2 py-1 rounded border border-slate-200">
                           Tasks

@@ -52,7 +52,6 @@ interface TasksTabProps {
 // Available clients for dropdown
 const ALL_CLIENTS = [
   { id: 'adsigner', name: 'AdSigner' },
-  { id: 'beeit', name: 'BeeIT' },
   { id: 'birografika', name: 'Birografika' },
   { id: 'bmevents', name: 'BM Events' },
   { id: 'clevercraft', name: 'Clever Craft' },
@@ -74,8 +73,6 @@ const ALL_CLIENTS = [
   { id: 'seyens', name: 'Seyens' },
   { id: 'stojkov', name: 'Stojkov' },
   { id: 'tslab', name: 'TS Lab' },
-  { id: 'wulf', name: 'Wulf' },
-  { id: 'xpose', name: 'Xpose' },
   { id: 'zen2fit', name: 'Zen2Fit' },
 ];
 

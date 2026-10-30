@@ -761,36 +761,6 @@ export default function TasksTab({ clientId, defaultTasks }: TasksTabProps) {
 }
 
 // Default tasks per client
-export const XPOSE_DEFAULT_TASKS: Task[] = [
-  {
-    id: 'xpose_1',
-    description: 'Launch Tier 2 campaign targeting mid-size dermatology clinics',
-    assignedTo: 'Matej',
-    status: 'pending',
-    dueDate: '2026-06-02',
-    order: 0,
-    comments: [],
-  },
-  {
-    id: 'xpose_2',
-    description: 'Review ad detection enrichment accuracy in Clay',
-    assignedTo: 'Frosina',
-    status: 'pending',
-    dueDate: '2026-06-06',
-    order: 1,
-    comments: [],
-  },
-  {
-    id: 'xpose_3',
-    description: 'Export verified leads to SmartLead for sequencing',
-    assignedTo: 'Matej',
-    status: 'done',
-    dueDate: '2026-05-23',
-    order: 2,
-    comments: [],
-  },
-];
-
 export const TSLAB_DEFAULT_TASKS: Task[] = [
   {
     id: 'tslab_1',
@@ -816,36 +786,6 @@ export const TSLAB_DEFAULT_TASKS: Task[] = [
     assignedTo: 'Frosina',
     status: 'done',
     dueDate: '2026-05-20',
-    order: 2,
-    comments: [],
-  },
-];
-
-export const BEEIT_DEFAULT_TASKS: Task[] = [
-  {
-    id: 'beeit_1',
-    description: 'Review Track B ICP documentation with client',
-    assignedTo: 'Matej',
-    status: 'pending',
-    dueDate: '2026-06-03',
-    order: 0,
-    comments: [],
-  },
-  {
-    id: 'beeit_2',
-    description: 'Start Tier 2 agency scraping for Benelux region',
-    assignedTo: 'Frosina',
-    status: 'pending',
-    dueDate: '2026-06-09',
-    order: 1,
-    comments: [],
-  },
-  {
-    id: 'beeit_3',
-    description: 'Set up Clay table for DACH market Tier 1 agencies',
-    assignedTo: 'Matej',
-    status: 'pending',
-    dueDate: '2026-06-12',
     order: 2,
     comments: [],
   },
