@@ -48,6 +48,8 @@ interface Sequence {
 
 interface SequencesTabProps {
   clientId: string;
+  sequenceApprovalStatus?: 'Pending' | 'Confirmed';
+  onSequenceApprovalStatusChange?: (status: 'Pending' | 'Confirmed') => void;
 }
 
 const tierColors: Record<string, { bg: string; border: string; text: string; badge: string }> = {
@@ -214,33 +216,6 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
     );
   };
 
-  const handleToggleStatus = async (id: string) => {
-    const sequence = sequences.find((s) => s.id === id);
-    if (!sequence) return;
-
-    const newStatus = sequence.status === 'confirmed' ? 'pending' : 'confirmed';
-    const updatedSequences = sequences.map((s) =>
-      s.id === id ? { ...s, status: newStatus } : s
-    );
-
-    setSequences(updatedSequences);
-    await saveSequences(updatedSequences);
-  };
-
-  const getOverallStatus = () => {
-    if (sequences.length === 0) return 'pending';
-    const allConfirmed = sequences.every((s) => s.status === 'confirmed');
-    return allConfirmed ? 'confirmed' : 'pending';
-  };
-
-  const handleToggleAllStatus = async () => {
-    const currentStatus = getOverallStatus();
-    const newStatus = currentStatus === 'confirmed' ? 'pending' : 'confirmed';
-    const updatedSequences = sequences.map((s) => ({ ...s, status: newStatus }));
-
-    setSequences(updatedSequences);
-    await saveSequences(updatedSequences);
-  };
 
   const handleSave = async () => {
     const sequence = sequences.find((s) => s.id === editingId);
@@ -317,10 +292,36 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
       {/* Header with Add Button and Language Toggle */}
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="text-lg font-semibold text-slate-900 flex items-center space-x-2">
-            <Mail className="w-5 h-5" />
-            <span>Email Sequences</span>
-          </h3>
+          <div className="flex items-center space-x-3 mb-1">
+            <h3 className="text-lg font-semibold text-slate-900 flex items-center space-x-2">
+              <Mail className="w-5 h-5" />
+              <span>Email Sequences</span>
+            </h3>
+            {sequenceApprovalStatus && onSequenceApprovalStatusChange && (
+              <div className="relative inline-block">
+                <select
+                  value={sequenceApprovalStatus}
+                  onChange={(e) => onSequenceApprovalStatusChange(e.target.value as 'Pending' | 'Confirmed')}
+                  className={`px-3 py-1 text-xs font-semibold rounded-full border appearance-none cursor-pointer pr-6 ${
+                    sequenceApprovalStatus === 'Confirmed'
+                      ? 'bg-green-100 text-green-700 border-green-200'
+                      : 'bg-yellow-100 text-yellow-700 border-yellow-200'
+                  }`}
+                >
+                  <option value="Pending">Pending</option>
+                  <option value="Confirmed">Confirmed</option>
+                </select>
+                <svg
+                  className="absolute right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 pointer-events-none opacity-60"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            )}
+          </div>
           <p className="text-sm text-slate-600 mt-1">
             Manage email sequences for different persona tiers or campaign types
           </p>
@@ -331,19 +332,6 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
           )}
         </div>
         <div className="flex items-center space-x-3">
-          {canEdit && sequences.length > 0 && (
-            <button
-              onClick={handleToggleAllStatus}
-              className={`px-4 py-2 text-sm font-semibold rounded-lg transition-colors ${
-                getOverallStatus() === 'confirmed'
-                  ? 'bg-green-100 text-green-700 hover:bg-green-200'
-                  : 'bg-yellow-100 text-yellow-700 hover:bg-yellow-200'
-              }`}
-              title={`Mark all as ${getOverallStatus() === 'confirmed' ? 'Pending' : 'Confirmed'}`}
-            >
-              {getOverallStatus() === 'confirmed' ? '✓ All Confirmed' : '◯ Pending Confirmation'}
-            </button>
-          )}
           {canEdit && !editingId && (
             <button
               onClick={handleAddSequence}

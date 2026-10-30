@@ -12,6 +12,7 @@ import TasksTab from '../components/TasksTab';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
+import SequenceApprovalBadge, { getSequenceApprovalStatus, setSequenceApprovalStatus, type SequenceApprovalStatus } from '../components/SequenceApprovalBadge';
 import {
   FileText,
   Target,
@@ -38,11 +39,13 @@ export default function PACIAPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [status, setStatus] = useState<ClientStatus>('Onboarding');
   const [assignee, setAssignee] = useState<Assignee | null>(null);
+  const [sequenceApprovalStatus, setSequenceApprovalStatusState] = useState<SequenceApprovalStatus>('Pending');
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     setStatus(getClientStatus('pacia', DEFAULT_STATUSES.pacia));
     setAssignee(getStoredAssignee('pacia', getClientAssignee('pacia')));
+    setSequenceApprovalStatusState(getSequenceApprovalStatus('pacia'));
 
     // Check if user is admin
     const access = sessionStorage.getItem('clientAccess');
@@ -96,6 +99,11 @@ export default function PACIAPage() {
     setStoredAssignee('pacia', newAssignee);
   };
 
+  const handleSequenceApprovalStatusChange = (newStatus: SequenceApprovalStatus) => {
+    setSequenceApprovalStatusState(newStatus);
+    setSequenceApprovalStatus('pacia', newStatus);
+  };
+
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
     // Update URL without page reload
@@ -123,6 +131,7 @@ export default function PACIAPage() {
                 <h1 className="text-3xl font-bold text-slate-900">PACIA</h1>
                 <StatusBadge status={status} onStatusChange={handleStatusChange} size="md" />
                 {isAdmin && <AssigneeBadge assignee={assignee} onAssigneeChange={handleAssigneeChange} size="md" />}
+                {isAdmin && <SequenceApprovalBadge status={sequenceApprovalStatus} onStatusChange={handleSequenceApprovalStatusChange} size="md" />}
               </div>
               <p className="text-slate-600 mt-1">Bespoke AI Customer Support for Slovenian Businesses</p>
               <a
@@ -565,7 +574,11 @@ export default function PACIAPage() {
   function CampaignsSequencesTab() {
     return (
       <>
-        <SequencesTab clientId="pacia" />
+        <SequencesTab
+          clientId="pacia"
+          sequenceApprovalStatus={sequenceApprovalStatus}
+          onSequenceApprovalStatusChange={handleSequenceApprovalStatusChange}
+        />
         <div className="mt-8">
           <CampaignsTabGeneric />
         </div>
