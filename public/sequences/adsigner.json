@@ -54,7 +54,8 @@
           }
         }
       }
-    ]
+    ],
+    "status": "confirmed"
   },
   {
     "id": "it-lead-technical-deployment",
