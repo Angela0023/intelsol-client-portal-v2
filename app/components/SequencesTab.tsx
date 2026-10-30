@@ -43,6 +43,7 @@ interface Sequence {
   targetPersonas: string;
   messagingAngle: string;
   emails: Email[];
+  status?: 'pending' | 'confirmed';
 }
 
 interface SequencesTabProps {
@@ -213,6 +214,19 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
     );
   };
 
+  const handleToggleStatus = async (id: string) => {
+    const sequence = sequences.find((s) => s.id === id);
+    if (!sequence) return;
+
+    const newStatus = sequence.status === 'confirmed' ? 'pending' : 'confirmed';
+    const updatedSequences = sequences.map((s) =>
+      s.id === id ? { ...s, status: newStatus } : s
+    );
+
+    setSequences(updatedSequences);
+    await saveSequences(updatedSequences);
+  };
+
   const handleSave = async () => {
     const sequence = sequences.find((s) => s.id === editingId);
     if (!sequence) return;
@@ -370,24 +384,41 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                       <h4 className="text-lg font-semibold text-slate-900">{sequence.tierName}</h4>
                     )}
                   </div>
-                  {canEdit && !editingId && (
-                    <div className="flex items-center space-x-2">
-                      <button
-                        onClick={() => setEditingId(sequence.id)}
-                        className="p-2 text-[#1a2647] hover:bg-slate-100 rounded-lg transition-colors"
-                        title="Edit"
-                      >
-                        <Edit2 className="w-4 h-4" />
-                      </button>
-                      <button
-                        onClick={() => handleDeleteSequence(sequence.id)}
-                        className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                        title="Delete"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
-                    </div>
-                  )}
+                  <div className="flex items-center space-x-2">
+                    {canEdit && (
+                      <>
+                        <button
+                          onClick={() => handleToggleStatus(sequence.id)}
+                          className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors ${
+                            sequence.status === 'confirmed'
+                              ? 'bg-green-100 text-green-700 hover:bg-green-200'
+                              : 'bg-yellow-100 text-yellow-700 hover:bg-yellow-200'
+                          }`}
+                          title={`Mark as ${sequence.status === 'confirmed' ? 'Pending' : 'Confirmed'}`}
+                        >
+                          {sequence.status === 'confirmed' ? '✓ Confirmed' : '◯ Pending'}
+                        </button>
+                        {!editingId && (
+                          <>
+                            <button
+                              onClick={() => setEditingId(sequence.id)}
+                              className="p-2 text-[#1a2647] hover:bg-slate-100 rounded-lg transition-colors"
+                              title="Edit"
+                            >
+                              <Edit2 className="w-4 h-4" />
+                            </button>
+                            <button
+                              onClick={() => handleDeleteSequence(sequence.id)}
+                              className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                              title="Delete"
+                            >
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          </>
+                        )}
+                      </>
+                    )}
+                  </div>
                 </div>
 
                 {/* Sequence Tags - Prominent Display */}
