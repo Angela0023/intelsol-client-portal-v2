@@ -73,7 +73,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   const [lastUpdatedBy, setLastUpdatedBy] = useState<string | null>(null);
   const [showingConfirmation, setShowingConfirmation] = useState(false);
   const [confirmationMessage, setConfirmationMessage] = useState('');
-  const [approvalStatus, setApprovalStatusState] = useState<'Pending' | 'Confirmed'>('Pending');
+  const [approvalStatus, setApprovalStatusState] = useState<'Pending' | 'Confirmed' | 'Fixes Needed'>('Pending');
   const { editMode, isAdmin } = useEditMode();
 
   // Clients can always edit their own sequences
@@ -83,7 +83,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
   // Load approval status from localStorage on mount
   useEffect(() => {
     const stored = localStorage.getItem(`intelsol_sequences_approval_${clientId}`);
-    if (stored === 'Pending' || stored === 'Confirmed') {
+    if (stored === 'Pending' || stored === 'Confirmed' || stored === 'Fixes Needed') {
       setApprovalStatusState(stored);
     }
   }, [clientId]);
@@ -267,7 +267,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
     setIsAdding(false);
   };
 
-  const handleApprovalStatusChange = (newStatus: 'Pending' | 'Confirmed') => {
+  const handleApprovalStatusChange = (newStatus: 'Pending' | 'Confirmed' | 'Fixes Needed') => {
     setApprovalStatusState(newStatus);
     localStorage.setItem(`intelsol_sequences_approval_${clientId}`, newStatus);
   };
@@ -327,15 +327,18 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
               <div className="relative inline-block">
                 <select
                   value={approvalStatus}
-                  onChange={(e) => handleApprovalStatusChange(e.target.value as 'Pending' | 'Confirmed')}
+                  onChange={(e) => handleApprovalStatusChange(e.target.value as 'Pending' | 'Confirmed' | 'Fixes Needed')}
                   className={`px-3 py-1 text-xs font-semibold rounded-full border appearance-none cursor-pointer pr-6 ${
                     approvalStatus === 'Confirmed'
                       ? 'bg-green-100 text-green-700 border-green-200'
+                      : approvalStatus === 'Fixes Needed'
+                      ? 'bg-red-100 text-red-700 border-red-200'
                       : 'bg-yellow-100 text-yellow-700 border-yellow-200'
                   }`}
                 >
                   <option value="Pending">Pending</option>
                   <option value="Confirmed">Confirmed</option>
+                  <option value="Fixes Needed">Fixes Needed</option>
                 </select>
                 <svg
                   className="absolute right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 pointer-events-none opacity-60"
@@ -351,6 +354,8 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
               <span className={`px-3 py-1 text-xs font-semibold rounded-full border ${
                 approvalStatus === 'Confirmed'
                   ? 'bg-green-100 text-green-700 border-green-200'
+                  : approvalStatus === 'Fixes Needed'
+                  ? 'bg-red-100 text-red-700 border-red-200'
                   : 'bg-yellow-100 text-yellow-700 border-yellow-200'
               }`}>
                 {approvalStatus}
