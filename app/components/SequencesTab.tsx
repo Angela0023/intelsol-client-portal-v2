@@ -322,7 +322,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
               <Mail className="w-5 h-5" />
               <span>Email Sequences</span>
             </h3>
-            {/* Approval Status Badge - editable by admin only */}
+            {/* Approval Status Badge - ALWAYS visible, only admin in edit mode can change */}
             {isAdmin && editMode ? (
               <div className="relative inline-block">
                 <select
@@ -346,7 +346,8 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
-            ) : (
+            ) : null}
+            {!editMode || !isAdmin ? (
               <span className={`px-3 py-1 text-xs font-semibold rounded-full border ${
                 approvalStatus === 'Confirmed'
                   ? 'bg-green-100 text-green-700 border-green-200'
@@ -354,7 +355,7 @@ export default function SequencesTab({ clientId }: SequencesTabProps) {
               }`}>
                 {approvalStatus}
               </span>
-            )}
+            ) : null}
           </div>
           <p className="text-sm text-slate-600 mt-1">
             Manage email sequences for different persona tiers or campaign types
