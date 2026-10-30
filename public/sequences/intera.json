@@ -54,7 +54,8 @@
           }
         }
       }
-    ]
+    ],
+    "status": "confirmed"
   },
   {
     "id": "sales-manager",
@@ -111,6 +112,7 @@
           }
         }
       }
-    ]
+    ],
+    "status": "confirmed"
   }
 ]
