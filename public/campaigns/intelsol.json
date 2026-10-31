@@ -667,6 +667,29 @@
     }
   },
   {
+    "campaignName": "🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. - Unpersonalized",
+    "dateLaunched": "8/6/2026",
+    "totalLeads": 94,
+    "leadsEmailed": 94,
+    "month": "August",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 272,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "1.06",
+      "bounces": 4,
+      "bounceRate": "4.26",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🏆 Intelsol | US Sales Nav | 06/Aug/26 | Medical Equipment Mfg (B2B) | $5-$50M | 1-10 empl. | Personalized V2",
     "dateLaunched": "8/6/2026",
     "totalLeads": 46,
