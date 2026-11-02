@@ -354,9 +354,9 @@ function ICPAndPersonasTab() {
         </div>
       </ContentSection>
 
-      <ContentSection title="Buyer Personas & Decision-Makers">
+      <ContentSection title="Buyer Personas & Target Decision-Makers">
         <p className="text-slate-600 mb-4">
-          ASKIT AIVaaS has TWO distinct campaigns with different primary buyers, pain points, and CTAs. Do NOT combine personas in the same sequence.
+          ASKIT AIVaaS has TWO distinct campaigns with different primary buyers and CTAs. These are the ONLY personas being targeted in outbound sequences. Do NOT combine them in the same sequence.
         </p>
 
         <div className="space-y-4">
@@ -364,8 +364,8 @@ function ICPAndPersonasTab() {
 
           <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-blue-900">TIER 1 PERSONA: CEO / Managing Director / Owner</h3>
-              <span className="px-2 py-1 bg-blue-200 text-blue-800 text-xs font-semibold rounded">PRIMARY BUYER</span>
+              <h3 className="font-bold text-blue-900">PRIMARY DECISION-MAKER: CEO / Managing Director / Owner</h3>
+              <span className="px-2 py-1 bg-blue-200 text-blue-800 text-xs font-semibold rounded">TARGETED</span>
             </div>
             <div className="space-y-2 text-slate-700">
               <p><strong>Sourcing Titles:</strong> CEO, Chief Executive Officer, General Manager, Managing Director, President of Management Board, Owner, Founder</p>
@@ -375,48 +375,14 @@ function ICPAndPersonasTab() {
             </div>
           </div>
 
-          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-            <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-green-900">TIER 2 PERSONA: CIO / IT Director / Digital Transformation Lead</h3>
-              <span className="px-2 py-1 bg-green-200 text-green-800 text-xs font-semibold rounded">SUPPORTING STAKEHOLDER</span>
-            </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>Sourcing Titles:</strong> CIO, Chief Information Officer, IT Director, Head of Digital Transformation, Chief AI Officer, Head of AI</p>
-              <p><strong>Role:</strong> Important stakeholder but does not automatically own company's overall AI strategy</p>
-              <p><strong>Pain Points:</strong> From individual tools to aligned accountability and processes</p>
-            </div>
-          </div>
-
-          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
-            <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-purple-900">TIER 2 PERSONA: Finance Leadership</h3>
-              <span className="px-2 py-1 bg-purple-200 text-purple-800 text-xs font-semibold rounded">SUPPORTING STAKEHOLDER</span>
-            </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>Sourcing Titles:</strong> CFO, Finance Director, Head of Finance</p>
-              <p><strong>Pain Points:</strong> Demonstrating business value and ROI from AI investments</p>
-            </div>
-          </div>
-
-          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
-            <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-amber-900">TIER 3 PERSONA: Operations Leadership</h3>
-              <span className="px-2 py-1 bg-amber-200 text-amber-800 text-xs font-semibold rounded">SUPPORTING STAKEHOLDER</span>
-            </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>Sourcing Titles:</strong> COO, Operations Director, Head of Operations</p>
-              <p><strong>Role:</strong> Selected contacts for business and operations opportunities</p>
-            </div>
-          </div>
-
           <hr className="my-6" />
 
           <h3 className="font-bold text-slate-900 text-lg border-b pb-2">Campaign 2: Business Academy for In-House Leadership Education</h3>
 
-          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-blue-900">TIER 1 PERSONA: HR Leadership & L&D</h3>
-              <span className="px-2 py-1 bg-blue-200 text-blue-800 text-xs font-semibold rounded">PRIMARY BUYER</span>
+              <h3 className="font-bold text-green-900">PRIMARY DECISION-MAKER: HR Leadership & L&D</h3>
+              <span className="px-2 py-1 bg-green-200 text-green-800 text-xs font-semibold rounded">TARGETED</span>
             </div>
             <div className="space-y-2 text-slate-700">
               <p><strong>Sourcing Titles:</strong> CHRO, Chief HR Officer, HR Director, Head of HR, People & Culture Director, L&D Director, Head of Learning & Development, Learning & Development Manager</p>
@@ -427,9 +393,9 @@ function ICPAndPersonasTab() {
           </div>
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <p className="font-semibold text-blue-900 mb-2">Critical: Slovenian Title Aliases</p>
+            <p className="font-semibold text-blue-900 mb-2">Slovenian Title Aliases for Sourcing</p>
             <p className="text-blue-800 text-sm">
-              For Slovenian sourcing, also search: Direktor, Generalni direktor, Predsednik uprave, Direktor kadrovske službe, Vodja kadrovske službe, Vodja izobraževanja in razvoja, Direktor financ, Direktor operacij
+              For Slovenian companies, also search: Direktor, Generalni direktor, Predsednik uprave, Direktor kadrovske službe, Vodja kadrovske službe, Vodja izobraževanja in razvoja
             </p>
           </div>
         </div>
