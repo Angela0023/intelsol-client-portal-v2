@@ -129,22 +129,33 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
     );
   }
 
+  // Helper function to check if open rate is being tracked
+  const isOpenRateTracked = (openRate?: string): boolean => {
+    return openRate !== undefined && openRate !== '0.00';
+  };
+
   // Calculate overall metrics
   const totalLeadsInCampaigns = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
   const totalLeadsEmailed = campaigns.reduce((sum, c) => sum + c.leadsEmailed, 0);
-  const totalEmailsSent = campaigns.reduce((sum, c) => sum + (c.performance?.emailsSent || 0), 0);
-  const totalOpens = campaigns.reduce((sum, c) => sum + (c.performance?.opens || 0), 0);
   const totalReplies = campaigns.reduce((sum, c) => sum + (c.performance?.replies || 0), 0);
   const totalBounces = campaigns.reduce((sum, c) => sum + (c.performance?.bounces || 0), 0);
   const totalInterested = campaigns.reduce((sum, c) => sum + (c.performance?.interested || 0), 0);
 
-  const avgOpenRate = totalEmailsSent > 0 ? ((totalOpens / totalEmailsSent) * 100).toFixed(2) : '0.00';
+  // Only sum open rates from campaigns that are tracking them
+  const trackedCampaigns = campaigns.filter(c => isOpenRateTracked(c.performance?.openRate));
+  const totalEmailsSentTracked = trackedCampaigns.reduce((sum, c) => sum + (c.performance?.emailsSent || 0), 0);
+  const totalOpens = trackedCampaigns.reduce((sum, c) => sum + (c.performance?.opens || 0), 0);
+
+  const avgOpenRate = totalEmailsSentTracked > 0 ? ((totalOpens / totalEmailsSentTracked) * 100).toFixed(2) : 'NA';
   const avgReplyRate = totalLeadsEmailed > 0 ? ((totalReplies / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgBounceRate = totalLeadsEmailed > 0 ? ((totalBounces / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgInterestedRate = totalLeadsEmailed > 0 ? ((totalInterested / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
 
-  // Calculate max values for heat map coloring
-  const maxOpenRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.openRate || '0')));
+  // Calculate max values for heat map coloring (only for tracked open rates)
+  const trackedOpenRates = campaigns
+    .filter(c => isOpenRateTracked(c.performance?.openRate))
+    .map(c => parseFloat(c.performance?.openRate || '0'));
+  const maxOpenRate = trackedOpenRates.length > 0 ? Math.max(...trackedOpenRates) : 0;
   const maxReplyRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.replyRate || '0')));
   const maxInterestedRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.interestedRate || '0')));
 
@@ -190,7 +201,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
               <Mail className="w-4 h-4 text-green-600" />
               <p className="text-xs text-green-700 font-medium">Open Rate</p>
             </div>
-            <p className="text-xl lg:text-3xl font-bold text-green-900">{avgOpenRate}%</p>
+            <p className="text-xl lg:text-3xl font-bold text-green-900">{avgOpenRate === 'NA' ? 'NA' : `${avgOpenRate}%`}</p>
             <p className="text-xs text-green-600 mt-1">{totalOpens.toLocaleString()} opens</p>
           </div>
 
@@ -260,8 +271,8 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                 <div className="grid grid-cols-3 gap-2 text-xs">
                   <div>
                     <span className="text-slate-500">Opens:</span>
-                    <span className={`font-semibold ml-1 ${campaign.performance?.openRate ? getHeatMapColor(parseFloat(campaign.performance.openRate), maxOpenRate) : 'text-slate-400'}`}>
-                      {campaign.performance?.openRate ? `${campaign.performance.openRate}%` : 'NA'}
+                    <span className={`font-semibold ml-1 ${isOpenRateTracked(campaign.performance?.openRate) ? getHeatMapColor(parseFloat(campaign.performance!.openRate), maxOpenRate) : 'text-slate-400'}`}>
+                      {isOpenRateTracked(campaign.performance?.openRate) ? `${campaign.performance.openRate}%` : 'NA'}
                     </span>
                   </div>
                   <div>
@@ -327,9 +338,9 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                       {campaign.leadsEmailed.toLocaleString()}
                     </td>
                     <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
-                      {campaign.performance?.openRate ? (
+                      {isOpenRateTracked(campaign.performance?.openRate) ? (
                         <>
-                          <div className={`font-semibold ${getHeatMapColor(parseFloat(campaign.performance.openRate), maxOpenRate)}`}>
+                          <div className={`font-semibold ${getHeatMapColor(parseFloat(campaign.performance!.openRate), maxOpenRate)}`}>
                             {campaign.performance.openRate}%
                           </div>
                           <div className="text-slate-500 text-[10px]">{campaign.performance.opens || 0}</div>
