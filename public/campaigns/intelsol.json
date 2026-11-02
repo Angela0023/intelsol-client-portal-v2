@@ -1,5 +1,28 @@
 [
   {
+    "campaignName": "🏆 Intelsol | Sequence | 2.11. | Slovenia | Clay | CEOs | ",
+    "dateLaunched": "11/2/2026",
+    "totalLeads": 20,
+    "leadsEmailed": 19,
+    "month": "November",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 19,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 1,
+      "replyRate": "5.26",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🏆 Intelsol | Sequence | 5.10. | Slovenia | Clay | CEOs |",
     "dateLaunched": "10/5/2026",
     "totalLeads": 372,
@@ -7,7 +30,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 1028,
+      "emailsSent": 1064,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -30,7 +53,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 3435,
+      "emailsSent": 3645,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,

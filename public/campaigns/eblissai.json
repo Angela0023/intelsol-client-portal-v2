@@ -30,7 +30,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 166,
+      "emailsSent": 168,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -212,7 +212,7 @@
     "totalLeads": 23,
     "leadsEmailed": 23,
     "month": "October",
-    "status": "ACTIVE",
+    "status": "COMPLETED",
     "performance": {
       "emailsSent": 46,
       "opens": 0,
