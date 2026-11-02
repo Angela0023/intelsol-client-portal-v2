@@ -133,15 +133,18 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   const totalLeadsInCampaigns = campaigns.reduce((sum, c) => sum + c.totalLeads, 0);
   const totalLeadsEmailed = campaigns.reduce((sum, c) => sum + c.leadsEmailed, 0);
   const totalEmailsSent = campaigns.reduce((sum, c) => sum + (c.performance?.emailsSent || 0), 0);
+  const totalOpens = campaigns.reduce((sum, c) => sum + (c.performance?.opens || 0), 0);
   const totalReplies = campaigns.reduce((sum, c) => sum + (c.performance?.replies || 0), 0);
   const totalBounces = campaigns.reduce((sum, c) => sum + (c.performance?.bounces || 0), 0);
   const totalInterested = campaigns.reduce((sum, c) => sum + (c.performance?.interested || 0), 0);
 
+  const avgOpenRate = totalEmailsSent > 0 ? ((totalOpens / totalEmailsSent) * 100).toFixed(2) : '0.00';
   const avgReplyRate = totalLeadsEmailed > 0 ? ((totalReplies / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgBounceRate = totalLeadsEmailed > 0 ? ((totalBounces / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
   const avgInterestedRate = totalLeadsEmailed > 0 ? ((totalInterested / totalLeadsEmailed) * 100).toFixed(2) : '0.00';
 
   // Calculate max values for heat map coloring
+  const maxOpenRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.openRate || '0')));
   const maxReplyRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.replyRate || '0')));
   const maxInterestedRate = Math.max(...campaigns.map(c => parseFloat(c.performance?.interestedRate || '0')));
 
@@ -170,7 +173,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
           </span>
         ) : null}
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
           {/* Total Leads */}
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 p-3 lg:p-4 shadow-sm">
             <div className="flex items-center space-x-2 mb-1">
@@ -179,6 +182,16 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
             </div>
             <p className="text-xl lg:text-3xl font-bold text-blue-900">{totalLeadsInCampaigns.toLocaleString()}</p>
             <p className="text-xs text-blue-600 mt-1">{totalLeadsEmailed.toLocaleString()} emailed</p>
+          </div>
+
+          {/* Open Rate */}
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg border border-green-200 p-3 lg:p-4 shadow-sm">
+            <div className="flex items-center space-x-2 mb-1">
+              <Mail className="w-4 h-4 text-green-600" />
+              <p className="text-xs text-green-700 font-medium">Open Rate</p>
+            </div>
+            <p className="text-xl lg:text-3xl font-bold text-green-900">{avgOpenRate}%</p>
+            <p className="text-xs text-green-600 mt-1">{totalOpens.toLocaleString()} opens</p>
           </div>
 
           {/* Reply Rate */}
@@ -244,7 +257,13 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     <span className="font-semibold text-blue-700 ml-1">{campaign.leadsEmailed.toLocaleString()}</span>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="grid grid-cols-3 gap-2 text-xs">
+                  <div>
+                    <span className="text-slate-500">Opens:</span>
+                    <span className={`font-semibold ml-1 ${campaign.performance?.openRate ? getHeatMapColor(parseFloat(campaign.performance.openRate), maxOpenRate) : 'text-slate-400'}`}>
+                      {campaign.performance?.openRate ? `${campaign.performance.openRate}%` : 'NA'}
+                    </span>
+                  </div>
                   <div>
                     <span className="text-slate-500">Replies:</span>
                     <span className={`font-semibold ml-1 ${getHeatMapColor(parseFloat(campaign.performance?.replyRate || '0'), maxReplyRate)}`}>
@@ -282,6 +301,9 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     Emailed
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
+                    Open Rate
+                  </th>
+                  <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
                     Replies
                   </th>
                   <th className="text-center px-4 py-3 text-xs font-semibold text-slate-500 uppercase tracking-wider whitespace-nowrap">
@@ -303,6 +325,18 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
                     </td>
                     <td className="px-4 py-3 text-xs text-center font-semibold text-blue-700 whitespace-nowrap">
                       {campaign.leadsEmailed.toLocaleString()}
+                    </td>
+                    <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
+                      {campaign.performance?.openRate ? (
+                        <>
+                          <div className={`font-semibold ${getHeatMapColor(parseFloat(campaign.performance.openRate), maxOpenRate)}`}>
+                            {campaign.performance.openRate}%
+                          </div>
+                          <div className="text-slate-500 text-[10px]">{campaign.performance.opens || 0}</div>
+                        </>
+                      ) : (
+                        <div className="text-slate-400 font-semibold">NA</div>
+                      )}
                     </td>
                     <td className="px-4 py-3 text-xs text-center whitespace-nowrap">
                       <div className={`font-semibold ${getHeatMapColor(parseFloat(campaign.performance?.replyRate || '0'), maxReplyRate)}`}>
