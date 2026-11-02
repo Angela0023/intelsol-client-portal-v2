@@ -131,7 +131,7 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
 
   // Helper function to check if open rate is being tracked
   const isOpenRateTracked = (openRate?: string): boolean => {
-    return openRate !== undefined && openRate !== '0.00';
+    return openRate !== undefined && openRate !== '0.00' && parseFloat(openRate) > 0;
   };
 
   // Calculate overall metrics
@@ -142,7 +142,10 @@ export default function PerformanceTabDynamic({ clientId }: PerformanceTabDynami
   const totalInterested = campaigns.reduce((sum, c) => sum + (c.performance?.interested || 0), 0);
 
   // Only sum open rates from campaigns that are tracking them
-  const trackedCampaigns = campaigns.filter(c => isOpenRateTracked(c.performance?.openRate));
+  const trackedCampaigns = campaigns.filter(c => {
+    const openRate = c.performance?.openRate;
+    return openRate !== undefined && openRate !== '0.00' && parseFloat(openRate) > 0;
+  });
   const totalEmailsSentTracked = trackedCampaigns.reduce((sum, c) => sum + (c.performance?.emailsSent || 0), 0);
   const totalOpens = trackedCampaigns.reduce((sum, c) => sum + (c.performance?.opens || 0), 0);
 
