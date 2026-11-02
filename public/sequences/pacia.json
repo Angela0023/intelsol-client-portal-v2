@@ -24,7 +24,7 @@
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: Podpora strankam pri {{company_name}}",
-        "body": "Pozdravljeni g./ga. {{second_name}},\n\nČe imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, vam lahko pripravim personaliziran demo našega AI agenta.\n\nBi bili proti temu, da vam pošljem dostop do demo AI agenta personaliziranega za vas?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni g./ga. {{second_name}},\n\nČe imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, vam lahko pripravim personaliziran demo našega AI agenta.\n\nBi nasprotovali temu, da vam pošljem dostop do vašega personaliziranega demo AI agenta?\n\nLep pozdrav,\n"
       }
     ]
   },
