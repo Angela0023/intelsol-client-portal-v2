@@ -41,19 +41,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Vprašanja gostov pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\npri turističnih ponudnikih – hotelih, restavracijah, parkih, smučiščih, turističnih točkah – se velik del komunikacije z obiskovalci pogosto vrti omkring podobnih vprašanj: prihod, rezervacije, storitve, lokacija, odpiralni časi in podobno.\n\nKako to danes rešujete pri {{company_name}}, predvsem izven delovnega časa ali kadar obiskovalci pišejo v različnih jezikih?\n\nPri PACIA izdelujemo prilagojene AI sisteme za podporo, ki obiskovalcem odgovarjajo na podlagi dejanskih informacij vaše ponudbe – in kar je še posebej važno: AI lahko tudi sprejema in potrjuje rezervacije, kar je pogosto večina povpraševanja.\n\nKako to funkcionira, je razloženo tukaj: https://www.pacia-support.com/sl/how-it-works\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\npri turističnih ponudnikih, kot so hoteli, restavracije, parki, smučišča ali različne turistične točke, se velik del komunikacije z obiskovalci pogosto vrti okrog podobnih vprašanj: prihod, rezervacije, storitve, lokacija, odpiralni časi in podobno.\n\nKako to danes rešujete pri {{company_name}}, predvsem izven delovnega časa ali kadar obiskovalci pišejo v različnih jezikih?\n\nPri podjetju PACIA izdelujemo prilagojene AI sisteme za podporo, ki obiskovalcem odgovarjajo na podlagi dejanskih informacij vaše ponudbe. Nekaj kar bi se vam morda zdelo uporabno je to, da lahko AI tudi sprejema in potrjuje rezervacije, kar je pogosto večina povpraševanja.\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Vprašanja gostov pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up.\n\nPri turističnih ponudnikih je zanimivo predvsem to, da se ista vprašanja pogosto pojavljajo pred prihodom, zvečer, med vikendi ali v različnih jezikih.\n\nTakšne poizvedke lahko AI odgovori takoj – tudi takrat, ko je vaša ekipa prost ali sploh ni dostopna.\n\nNa kratkem klicu bi lahko pogledali, kateri del komunikacije z obiskovalci bi bil smiseln avtomatizirati.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\nsamo kratek follow-up.\n\nPri turističnih ponudnikih je pogosto predvsem to, da se ista vprašanja pojavljajo pred prihodom, zvečer, med vikendi ali v različnih jezikih.\n\nTakšne poizvedbe lahko AI odgovori takoj, tudi takrat, ko je vaša ekipa doma ali na dopustu.\n\nNa kratkem klicu bi lahko pogledali, kateri del komunikacije z obiskovalci bi bil smiseln avtomatizirati.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: Vprašanja gostov pri {{company_name}}",
-        "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravim personaliziran demo našega AI agenta – na podlagi podatkov s vaše spletne strani.\n\nČe trenutno ni aktualno, brez težav.\n\nJe smiselno, da se na kratko slišimo?\n\nLep pozdrav,\n"
+        "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravim personaliziran demo našega AI agenta.\n\nBi nasprotovali temu, da vam pošljem dostop do vašega personaliziranega demo AI agenta?\n\nLep pozdrav,\n"
       }
     ]
   }
