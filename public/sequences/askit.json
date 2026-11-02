@@ -38,34 +38,34 @@
     "id": "sequence-2",
     "tierName": "Business Academy Leadership Development",
     "tierColor": "orange",
-    "targetPersonas": "HR Director, CHRO, L&D Director - Learning and talent leaders driving organizational capability",
-    "messagingAngle": "Build shared business understanding of AI across leadership team to enable aligned decisions and cultural change",
+    "targetPersonas": "HR direktorji, CHRO, vodje kadrovskih služb in razvoja zaposlenih (L&D). ",
+    "messagingAngle": "Cilj: vzpostaviti zanimanje za interni program The Business Power of AI.",
     "clayFilter": "Slovenia - Leadership Development Programs",
     "targetPositions": "HR Director, CHRO, Head of HR, L&D Director, Head of Learning & Development",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI literacy for your leadership team?",
-        "body": "Hi [FirstName],\n\nWe're seeing a common challenge: leadership teams understand AI's potential but speak different languages about it. Strategy, operations, finance, HR—each has their own interpretation.\n\nThe Business Power of AI is an internal leadership academy that builds shared business understanding across your team.\n\nMay we send you a brief outline to see if it fits your development plans?\n\nBest regards,\nAlešs team at ASKIT"
+        "subject": "Re: AI in razvoj vodstva",
+        "body": "Spoštovani g. {{lastName}},\n\nv podjetjih umetno inteligenco pogosto uvajajo posamezni oddelki, vodstvena ekipa pa nima nujno skupnega razumevanja, kaj to pomeni za poslovno strategijo in prihodnje odločitve.\n\nPri AIVaaS smo zato razvili interni program The Business Power of AI, namenjen vodjem, ki želijo bolje razumeti poslovni potencial umetne inteligence in svojo vlogo pri njenem uvajanju.\n\nProgram presega klasična izobraževanja o uporabi AI orodij in se osredotoča na strateško razmišljanje, poslovne priložnosti ter usklajevanje vodstvene ekipe.\n\nČe je razvoj tovrstnih kompetenc aktualen tudi pri vas, me zanima, ali bi bil smiseln kratek pogovor o možnostih izvedbe programa v vašem podjetju?\n\nLep pozdrav,\n{{signature}}\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "What the academy covers",
-        "body": "Hi [FirstName],\n\nThe Business Power of AI academy is designed for groups of 5+ leaders from different functions. It develops business judgment about AI—not technical training, but shared language for strategy and decisions.\n\nParticipants align on ambition, value creation, and accountability for AI adoption.\n\nWould this be relevant for your leadership team?\n\nBest regards,\nAlešs team at ASKIT"
+        "subject": "Re: AI in razvoj vodstva",
+        "body": "Spoštovani g. {{lastName}},\n\nsamo na kratko se navezujem na spodnje sporočilo.\n\nBi bila tema razvoja AI kompetenc vodstvene ekipe v {{companyName}} v tem obdobju relevantna?\n\nLep pozdrav,\n\n{{signature}}\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Who is this built for?",
-        "body": "Hi [FirstName],\n\nThe academy works best when:\n- Leadership team is actively growing or reorganizing\n- You're piloting AI initiatives and need shared understanding\n- You want change capability that sticks\n\nDoes any of this match where you are now?\n\nBest regards,\nAlešs team at ASKIT"
+        "subject": "Re: AI in razvoj vodstva",
+        "body": "Spoštovani g. {{lastName}},\n\nker nisem prejel odgovora, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe boste v prihodnje načrtovali razvoj vodstvene ekipe na področju umetne inteligence, bomo z veseljem predstavili možnosti internega programa The Business Power of AI.\n\nLep pozdrav,\n{{signature}}\n"
       },
       {
         "emailNumber": 4,
-        "type": "Follow-Up 2",
-        "subject": "Right person for this conversation?",
-        "body": "Hi [FirstName],\n\nOne last question: is leadership development and AI capability-building something you're exploring this year?\n\nIf so, would it make sense to talk about the academy? If not, is there someone else on your leadership team I should reach out to?\n\nBest regards,\nAlešs team at ASKIT"
+        "type": "/",
+        "subject": "/",
+        "body": "/"
       }
     ]
   }
