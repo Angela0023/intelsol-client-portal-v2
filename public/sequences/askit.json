@@ -11,26 +11,26 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI pilots delivering results? (honest question)",
-        "body": "Hi [FirstName],\n\nMost companies invest heavily in AI, yet many pilot projects never scale beyond isolated experiments.\n\nWe work with ambitious leaders at manufacturing and logistics companies to move from fragmented AI efforts to a coherent business strategy where AI creates measurable value.\n\nWould a brief conversation about where AI could strengthen your competitive position over the next 2-3 years be useful?\n\nBest regards,\nAlešs team at ASKIT"
+        "subject": "AI in konkurenčnost podjetja",
+        "body": "Spoštovani g. {{lastName}},\n\nvečina podjetij danes umetno inteligenco uporablja predvsem za optimizacijo procesov, zniževanje stroškov in izboljšanje produktivnosti.\n\nVendar se njen večji poslovni potencial odpira drugje – pri ustvarjanju nove vrednosti za kupce, razvoju poslovnih modelov in dolgoročni konkurenčni prednosti.\n\nPri AIVaaS se ukvarjamo prav s tem prehodom: kako AI iz orodja za izboljšanje učinkovitosti postane del poslovne strategije.\n\nČe je razmislek o takšnih priložnostih aktualen tudi pri vas, me zanima, ali bi bil smiseln kratek pogovor o njihovem potencialu za vaše podjetje?\n\nLep pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "From scattered tools to connected strategy",
-        "body": "Hi [FirstName],\n\nThe gap between AI investment and business results usually comes down to one thing: strategy and organization haven't evolved with the technology.\n\nWe help leaders like you move from individual tool deployments to a process-first approach—where AI ambition aligns with organizational capability and measurable outcomes.\n\nWould you be open to a brief exploratory conversation?\n\nBest regards,\nAlešs team at ASKIT"
+        "subject": "Re: AI in konkurenčnost podjetja",
+        "body": "Spoštovani g. {{lastName}},\n\nsamo na kratko se navezujem na spodnje sporočilo.\n\nBi bil pogovor o strateškem potencialu AI za {{companyName}} v tem obdobju relevanten?\n\nLep pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "How [Company] approach AI differently",
-        "body": "Hi [FirstName],\n\nWe've worked with leaders in your sector who asked the same question: \"How do we move beyond optimization to new forms of value?\"\n\nAIVaaS is our methodology for that journey—connecting business ambition, organizational design, and measurable ROI.\n\nWould a brief conversation about AI strategy be worth your time?\n\nBest regards,\nAlešs team at ASKIT"
+        "subject": "Re: AI in konkurenčnost podjetja",
+        "body": "Spoštovani g. {{lastName}},\n\nker nisem prejel odgovora, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe se boste v prihodnje ukvarjali z vprašanjem, kako lahko AI poleg večje učinkovitosti prispeva tudi k novi poslovni vrednosti, bomo z veseljem na voljo za pogovor.\n\nHvala za vaš čas in vse dobro.\n\nLep pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 4,
-        "type": "Follow-Up 2",
-        "subject": "Last one: AI strategy alignment",
-        "body": "Hi [FirstName],\n\nJust checking in—are strategic AI conversations on the agenda for your leadership team right now?\n\nIf not today, would there be a better time to explore this?\n\nBest regards,\nAlešs team at ASKIT"
+        "type": "",
+        "subject": "/",
+        "body": "/"
       }
     ]
   },
