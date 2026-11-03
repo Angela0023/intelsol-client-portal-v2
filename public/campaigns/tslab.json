@@ -1,5 +1,51 @@
 [
   {
+    "campaignName": "🧪 TS Lab | Belgium AMAZON MULTI COUNTRY 9.9 | Support, Procurement",
+    "dateLaunched": "11/3/2026",
+    "totalLeads": 9,
+    "leadsEmailed": 0,
+    "month": "November",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
+    "campaignName": "🧪 TS Lab | Belgium AMAZON MULTI COUNTRY 9.9 | Decision Makers",
+    "dateLaunched": "11/3/2026",
+    "totalLeads": 13,
+    "leadsEmailed": 0,
+    "month": "November",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🧪 TS Lab | UK AMAZON 1641 |  Decision Makers",
     "dateLaunched": "10/6/2026",
     "totalLeads": 480,

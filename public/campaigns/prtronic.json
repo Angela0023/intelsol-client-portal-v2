@@ -138,6 +138,29 @@
     }
   },
   {
+    "campaignName": "🖥️ PRTronic | Austria - Display Integration | Tier 2",
+    "dateLaunched": "10/20/2026",
+    "totalLeads": 21,
+    "leadsEmailed": 21,
+    "month": "October",
+    "status": "COMPLETED",
+    "performance": {
+      "emailsSent": 60,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "9.52",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🖥️ PRTronic | Austria - Display Integration | Tier 1",
     "dateLaunched": "10/20/2026",
     "totalLeads": 4,
