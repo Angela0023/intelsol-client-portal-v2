@@ -1,5 +1,68 @@
 [
   {
+    "id": "seq-simplified-1",
+    "tierName": "SIMPLIFIED: Version 1 - Simple",
+    "tierColor": "gray",
+    "targetPersonas": "All personas - testing pure referral approach",
+    "messagingAngle": "Ultra-simple ask for connection, no pitch",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Endpoint IT operations at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for endpoint IT operations, particularly complex incidents escalated beyond the service desk.\n\nWould that fall under your team, or could you point me in the right direction?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Following up - endpoint IT operations",
+        "body": "Hi {{first_name}},\n\nJust following up on my previous email about finding the right person at {{company_name}} responsible for endpoint IT operations.\n\nWould that be you, or could you point me to the right person?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      }
+    ]
+  },
+  {
+    "id": "seq-simplified-2",
+    "tierName": "SIMPLIFIED: Version 2 - With Context (Direct)",
+    "tierColor": "cyan",
+    "targetPersonas": "All personas - testing simple pitch approach",
+    "messagingAngle": "Simple ask + one sentence value prop",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "L2/L3 endpoint support at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for complex endpoint IT incidents that get escalated beyond the service desk.\n\nAt eBlissAI, we help enterprise IT teams automate the investigation and resolution of these incidents, reducing the workload on senior engineers.\n\nWould that fall under your team, or could you point me in the right direction?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: L2/L3 endpoint support at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about complex endpoint IT incidents.\n\nAre you the right person to discuss this with, or should I reach out to someone else?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      }
+    ]
+  },
+  {
+    "id": "seq-simplified-3",
+    "tierName": "SIMPLIFIED: Version 3 - Conversational",
+    "tierColor": "rose",
+    "targetPersonas": "All personas - testing conversational approach",
+    "messagingAngle": "Soft tone, no heavy pitch",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Endpoint IT escalations",
+        "body": "Hi {{first_name}},\n\nI'm trying to connect with the person at {{company_name}} who oversees complex end-user IT issues that require investigation beyond the service desk.\n\nWe're working with enterprise IT teams to reduce the time senior engineers spend investigating and resolving these escalations.\n\nWould you happen to be the right person, or could you point me in the right direction?\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: Endpoint IT escalations",
+        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for endpoint IT escalations at {{company_name}}.\n\nIf that's you, great. If not, a quick referral would help a lot.\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+      }
+    ]
+  },
+  {
     "id": "new-sequences-scott-strategic",
     "tierName": "New Sequences by Scott - Sequence 1: Strategic",
     "tierColor": "red",
