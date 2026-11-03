@@ -89,6 +89,10 @@
           "slovenian": {
             "subject": "Kje so vaši podatki o strankah razpršeni?",
             "body": "Spoštovani {{first_name}},\n\nv prodaji se informacije o stranki običajno nahajajo na več mestih: del v e-pošti, del v Excelu, del v opombah ali v glavi. Ko je potrebno poslati sledilni odziv ali stranko predati kolegi, iskanje teh informacij vzame čas.\n\nV Intrix CRM-u na enem mestu vidite odprte ponudbe, vse dogovore s stranko in opomnik za naslednji korak. Na ta način se nobena stranka ne pozabi in se vedno javite pravočasno.\n\nČe vam je to poznano, vam z veseljem v kratkem pogovoru od 15 minut pokažem, kako to izgleda v praksi. Vam kaj časa prihodnji teden?\n\nSpoštljiv pozdrav,\nBrigita Kovačević"
+          },
+          "serbian": {
+            "subject": "Gde su vam informacije o klijentima raspršene?",
+            "body": "Poštovani {{first_name}},\n\nU prodaji se informacije o klijentu obično nalaze na više mesta: deo u e-pošti, dio u Excelu, a deo u beleškama ili u glavi. Kada treba poslati follow-up ili predati klijenta kolegi, traženje tih informacija oduzima puno vremena.\n\nU Intrix CRM-u na jednom mestu vidite otvorene ponude, sve dogovore sa klijentom i podsetnike za sledeći korak. Tako se niti jedan klijent ne zaboravi i uvek se javljate na vreme.\n\nUkoliko vam je to poznato, rado ću vam u kratkom razgovoru od 15 minuta pokazati kako to izgleda u praksi. Odgovara li vam neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nGoran Fillipović"
           }
         }
       },
@@ -105,6 +109,10 @@
           "slovenian": {
             "subject": "Kaj, če vam ključni stranko pokliče, medtem ko ste odsotni?",
             "body": "Spoštovani {{first_name}},\n\nnadaljujem se na svoje prejšnje sporočilo.\n\nPredstavljajte si, da ste na letnem dopustu, vaš ključni stranski pa pokliče kolega. Ve, kaj ste zadnje dogovorili in katera ponudba je še odprta?\n\nV Intrix CRM-u se vsi dogovori, ponudbe in opomniki za naslednji stik nahajajo na enem mestu. Kolega, ki vas zamenja ali prevzame stranko, takoj ve, kje ste se ustavili, vi pa se po vrnitvi ne morate ničesar spomniti.\n\nČe vas to zanima, vam z veseljem v 15 minutah pokažem, kako to izgleda v praksi. Vam kaj časa prihodnji teden?\n\nSpoštljiv pozdrav,\nBrigita Kovačević"
+          },
+          "serbian": {
+            "subject": "Šta ako vam ključni klijent pozove dok ste odsutni?",
+            "body": "Poštovani {{first_name}},\n\nNadovezujem se na svoj prethodni mail.\n\nZamislite da ste na godišnjem odmoru, a vaš ključni klijent pozove kolegu. Da li kolega zna šta ste poslednje dogovorili i koja ponuda je još uvek otvorena?\n\nU Intrix CRM-u svi dogovori, ponude i podsetnici za sledeći kontakt nalaze se na jednom mestu. Kolega koji vas menja ili preuzima klijenta odmah zna gde ste stali, a vi nakon povratka ne morate ništa da se prisećate.\n\nUkoliko vam je to zanimljivo, rado ću vam u 15 minuta pokazati kako to izgleda u praksi. Da li vam odgovara neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nGoran Filipović"
           }
         }
       },
@@ -121,6 +129,10 @@
           "slovenian": {
             "subject": "Hitro vprašanje o spremljanju strank",
             "body": "Spoštovani {{first_name}},\n\nzadnjič se javljam v zvezi s spremljanjem ponudb in dogovorov s strankami.\n\nZadoščal bi kratek odgovor:\n1 – tema je aktualna, dogovorimo se za pogovor\n2 – pri nas o tem odloča nekdo drug (bil bi hvaležen za kontakt)\n3 – trenutno ni prioriteta\n\nV vsakem primeru se vam zahvaljujem na času in veliko uspeha v prodaji.\n\nSpoštljiv pozdrav,\nBrigita Kovačević"
+          },
+          "serbian": {
+            "subject": "Brzo pitanje o praćenju ponuda",
+            "body": "Poštovani {{first_name}},\n\nJoš ovaj put se javljam u vezi sa praćenjem ponuda i dogovora sa klijentima.\n\nDovoljan mi je kratak odgovor:\n1 – tema je aktuelna, dogovorimo razgovor\n2 – o tome kod nas odlučuje neko drugi (bio bih zahvalan na kontaktu)\n3 – trenutno nije prioritet\n\nU svakom slučaju, hvala vam na vremenu i puno uspeha u prodaji.\n\nSrdačan pozdrav,\nGoran Filipović"
           }
         }
       }
