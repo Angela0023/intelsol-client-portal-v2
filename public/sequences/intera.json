@@ -19,6 +19,10 @@
           "slovenian": {
             "subject": "Odprte ponudbe - pregled in odgovornost",
             "body": "Spoštovani {{first_name}},\n\nv mnogih podjetjih ponudbe ostanejo odprte tedne, ker nihče ne ve, kdo je odgovoren za naslednji korak. Vodstvo to izve šele, ko je priložnost že izgubljena.\n\nIntrix CRM povezuje podatke o strankah, ponudbah in aktivnostih prodajnega tima, zato v vsakem trenutku vidite, kaj je v teku in kje je potrebno ukrepanje.\n\nČe vas to zanima, vam z veseljem v kratkem pogovoru od 15 minut pokažem, kako to izgleda v praksi. Vam kaj časa prihodnji teden?\n\nSpoštljiv pozdrav,\nBrigita Kovačević"
+          },
+          "serbian": {
+            "subject": "Otvorene ponude - vidljivost i odgovornost",
+            "body": "Poštovani {{first_name}},\n\nU mnogim firmama ponude ostaju otvorene nedeljama jer niko ne zna ko je zadužen za naredni korak. Uprava za to sazna tek onda kada je prilika već izgubljena.\n\nIntrix CRM povezuje podatke o klijentima, ponudama i aktivnostima prodajnog tima, pa u svakom trenutku vidite šta je u toku i gde treba reagovati.\n\nAko vam je to zanimljivo, rado bih vam u kratkom razgovoru od 15 minuta pokazala kako to izgleda u praksi. Odgovara li vam neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nGoran Filipović"
           }
         }
       },
@@ -35,6 +39,10 @@
           "slovenian": {
             "subject": "Koliko časa je potrebno, da ugotovite status ponudbe?",
             "body": "Spoštovani {{first_name}},\n\nnadaljujem se na svoje prejšnje sporočilo o spremljanju odprtih ponudb.\n\nKoliko časa vam danes vzame, da ugotovite, v kateri fazi je neka ponudba in kdo je odgovoren za naslednji korak? V večini podjetij to pomeni več klicev in e-sporočil kolegom.\n\nV Intrixu te informacije vidite na enem mestu: odprte ponudbe, vse dogovore s stranko in opomnik za naslednji korak. Vodstvo ima pregled brez dodatnih povpraševanj, in nobena priložnost ni pozabljena.\n\nČe vas to zanima, si vzamete 15 minut in vam pokažem, kako to izgleda v praksi. Vam kaj časa prihodnji teden?\n\nSpoštljiv pozdrav,\nBrigita Kovačević"
+          },
+          "serbian": {
+            "subject": "Koliko vremena je potrebno da se sazna status ponude?",
+            "body": "Poštovani {{first_name}},\n\nNadovezujem se na svoj prethodni mail o praćenju otvorenih ponuda.\n\nKoliko vam je danas potrebno da saznate u kojoj je fazi neka ponuda i ko je zadužen za sljedeći korak? U većini firmi to znači nekoliko poziva i mailova kolegama.\n\nU Intrixu te informacije vidite na jednom mestu: otvorene ponude, dogovore sa klijentima i odgovorne osobe. Uprava ima pregled bez dodatnog ispitivanja, a niti jedna prilika ne ostaje zaboravljena.\n\nAko vam je to zanimljivo, odvojite 15 minuta i ja ću vam pokazati kako to izgleda u praksi. Odgovara li vam neki termin sledeće nedelje?\n\nSrdačan pozdrav,\nGoran Filipović"
           }
         }
       },
@@ -51,6 +59,10 @@
           "slovenian": {
             "subject": "Hitro vprašanje o odprtih ponudbah",
             "body": "Spoštovani {{first_name}},\n\nzadnjič se javljam v zvezi s pregledom prodaje in spremljanjem odprtih ponudb.\n\nZadoščal bi kratek odgovor:\n1 – tema je aktualna, dogovorimo se za pogovor\n2 – za to je odgovoren nekdo drug (bil bi hvaležen za kontakt)\n3 – trenutno ni prioriteta\n\nV vsakem primeru se vam zahvaljujem na času.\n\nSpoštljiv pozdrav,\nBrigita Kovačević"
+          },
+          "serbian": {
+            "subject": "Brzo pitanje o otvorenim ponudama",
+            "body": "Poštovani {{first_name}},\n\nJoš ovog puta se javljam u vezi sa pregledom prodaje i praćenjem otvorenih ponuda.\n\nDovoljan mi je kratak odgovor:\n1 – tema je aktualna, dogovorimo razgovor\n2 – za to je zadužen neko drugi (bio bih zahvan na kontaktu)\n3 – trenutno nije prioritet\n\nU svakom slučaju, hvala vam na vremenu.\n\nSrdačan pozdrav,\nGoran Filipović"
           }
         }
       }
