@@ -29,7 +29,7 @@ export default function AdminPage() {
 
     // Fetch recent tasks from all clients
     const fetchAllTasks = async () => {
-      const clientIds = ['demo', 'tslab', 'adsigner', 'intelsol', 'peoplefocus', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'dukegroup', 'novavizija', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens', 'pluritech'];
+      const clientIds = ['demo', 'tslab', 'adsigner', 'intelsol', 'peoplefocus', 'plantryx', 'mountaindrop', 'eblissai', 'askit', 'dukegroup', 'novavizija', 'noticetheelephant', 'zen2fit', 'panorate', 'mbedtronix', 'clevercraft', 'stojkov', 'birografika', 'bmevents', 'prtronic', 'dhm', 'morefromfood', 'pacia', 'selekcija', 'intera', 'integraplast', 'seyens', 'pluritech'];
       const clientNames: Record<string, string> = {
         demo: 'Demo (Sample)',
         tslab: 'TS Lab',
@@ -42,6 +42,7 @@ export default function AdminPage() {
         askit: 'ASKIT AIVaaS',
         dukegroup: 'DukeGroup',
         novavizija: 'Nova Vizija',
+        noticetheelephant: 'Notice the Elephant',
         zen2fit: 'Zen2Fit',
         panorate: 'Panorate Media',
         mbedtronix: 'MBEDTRONIX',
