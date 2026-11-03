@@ -1,5 +1,6 @@
 'use client';
 
+// Notice the Elephant client dashboard - November 2026
 import { useState, useEffect } from 'react';
 import ClientLayout from '../components/ClientLayout';
 import { ContentSection, CodeBlock, InfoCard, ListItem } from '../components/ContentSection';
