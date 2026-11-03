@@ -1,5 +1,86 @@
 [
   {
+    "id": "seq-simplified-1",
+    "tierName": "SIMPLIFIED: Version 1 - Simple",
+    "tierColor": "gray",
+    "targetPersonas": "All personas - testing pure referral approach",
+    "messagingAngle": "Ultra-simple ask for connection, no pitch",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Wellness programs at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for employee wellness and benefits programs.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Quick question on wellness at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nJust following up on my previous email about employee wellness programs at {{company_name}}.\n\nIs this something you handle, or can you point me to the right person?\n\nBest,\nMatej\nZen2Fit"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Final Follow-Up",
+        "subject": "Wellness benefits lead at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nLast note - I'm just trying to connect with whoever handles wellness programs at {{company_name}}.\n\nIf that's not you, no worries - just a quick referral would help.\n\nBest,\nMatej"
+      }
+    ]
+  },
+  {
+    "id": "seq-simplified-2",
+    "tierName": "SIMPLIFIED: Version 2 - With Context (Direct)",
+    "tierColor": "cyan",
+    "targetPersonas": "All personas - testing simple pitch approach",
+    "messagingAngle": "Simple ask + one sentence value prop",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Employee wellness at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for employee wellness and benefits programs.\n\nAt Zen2Fit, we help companies consolidate fragmented wellness into one platform with better employee engagement.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: Employee wellness at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about consolidating wellness programs.\n\nJust trying to find the right person at {{company_name}} to discuss this with.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Final Follow-Up",
+        "subject": "One more thing on wellness",
+        "body": "Hi {{first_name}},\n\nLast email from me.\n\nIf employee wellness programs are on your radar, I'd like to connect you with the right person at Zen2Fit. If not, no problem.\n\nBest,\nMatej"
+      }
+    ]
+  },
+  {
+    "id": "seq-simplified-3",
+    "tierName": "SIMPLIFIED: Version 3 - Conversational",
+    "tierColor": "rose",
+    "targetPersonas": "All personas - testing conversational approach",
+    "messagingAngle": "Soft tone, social proof included",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Employee wellness programs",
+        "body": "Hi {{first_name}},\n\nI'm trying to connect with the person at {{company_name}} who oversees employee wellness and benefits.\n\nWe work with companies like NLB and Carlsberg to bring fitness, mental health, and nutrition programs together on one platform.\n\nIs that you, or could you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up",
+        "subject": "Re: Employee wellness programs",
+        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for employee wellness at {{company_name}}.\n\nAre you the person I should be talking to, or would you mind pointing me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Final Follow-Up",
+        "subject": "Last one",
+        "body": "Hi {{first_name}},\n\nIf you're the wellness lead at {{company_name}}, I'd like to show you what we do. If not, a quick intro to the right person would be really helpful.\n\nBest,\nMatej"
+      }
+    ]
+  },
+  {
     "id": "seq1",
     "tierName": "Sequence 1: HR Directors - Retention & ROI",
     "tierColor": "purple",
