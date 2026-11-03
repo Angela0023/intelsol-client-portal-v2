@@ -1,5 +1,28 @@
 [
   {
+    "campaignName": "🏆 Intelsol | Sequence | 3.11. | Slovenia | Clay | Sales leaders",
+    "dateLaunched": "11/3/2026",
+    "totalLeads": 134,
+    "leadsEmailed": 98,
+    "month": "November",
+    "status": "ACTIVE",
+    "performance": {
+      "emailsSent": 98,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 2,
+      "replyRate": "2.04",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🏆 Intelsol | Sequence | 2.11. | Slovenia | Clay | CEOs | ",
     "dateLaunched": "11/2/2026",
     "totalLeads": 20,
@@ -122,7 +145,7 @@
     "month": "September",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 5425,
+      "emailsSent": 5449,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -302,22 +325,22 @@
     "campaignName": "🏆 Intelsol | US CLAY | 11/Sept/26 | Software & IT | $500K-1MIL | 2-50 empl. | Personalized V1",
     "dateLaunched": "9/11/2026",
     "totalLeads": 1174,
-    "leadsEmailed": 908,
+    "leadsEmailed": 918,
     "month": "September",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 1525,
+      "emailsSent": 1555,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
       "replies": 15,
-      "replyRate": "1.65",
-      "bounces": 151,
-      "bounceRate": "16.63",
+      "replyRate": "1.63",
+      "bounces": 152,
+      "bounceRate": "16.56",
       "unsubscribed": 0,
       "interested": 6,
-      "interestedRate": "0.66",
+      "interestedRate": "0.65",
       "notInterested": 0
     }
   },
