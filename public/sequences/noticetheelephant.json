@@ -1,0 +1,114 @@
+[
+  {
+    "id": "automotive-mobility",
+    "tierName": "SEQUENCE 1: Automotive and Mobility",
+    "tierColor": "blue",
+    "targetPersonas": "Marketing Director, Digital Director, Product Communications Manager",
+    "messagingAngle": "Product communication, market expansion, digital presence",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Marketing at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm trying to find the right person at {{company_name}} responsible for digital marketing and product communication.\n\nAt Notice the Elephant, we help companies with marketing campaigns, content and websites.\n\nWould that be you, or could you point me to the right person?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nJust following up on my note below.\n\nDo you handle this at {{company_name}}, or would a colleague be better to contact?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nOne last note from me. Is support with upcoming campaigns or product launches something your team is considering?\n\nIf it's not a priority, no problem.\n\nBest,\n{{sender_name}}"
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "id": "sports-ecommerce",
+    "tierName": "SEQUENCE 2: Commercial Sports and Sports Ecommerce",
+    "tierColor": "green",
+    "targetPersonas": "Marketing Director, Ecommerce Manager, Event Director, Digital Leader",
+    "messagingAngle": "Campaign effectiveness, sales optimization, audience engagement",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Digital marketing at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm looking for the person at {{company_name}} who looks after digital campaigns and online sales.\n\nAt Notice the Elephant, we work on campaigns and websites for sports events and brands.\n\nWould this sit with you, or someone else on the team?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nJust checking whether you're the right person for this.\n\nWho would be best to speak with about digital campaigns at {{company_name}}?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nIs outside support with campaigns for an upcoming event, season or collection something you're considering?\n\nHappy to leave it here if the timing isn't right.\n\nBest,\n{{sender_name}}"
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "id": "scientific-research",
+    "tierName": "SEQUENCE 3: Private Scientific and Research-Intensive",
+    "tierColor": "amber",
+    "targetPersonas": "Communications Director, Marketing Leader, Product Manager, R&D Communications Specialist",
+    "messagingAngle": "Complex communication, stakeholder messaging, research communication",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Communications at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm trying to connect with the person at {{company_name}} responsible for communicating your products and research to customers and partners.\n\nAt Notice the Elephant, we help organisations turn complex scientific topics into clear content and digital communication.\n\nWould you be the right person, or could you point me in the right direction?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nFollowing up on my note below.\n\nDoes product and research communication fall under your team, or would someone else be better to contact?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nAre you considering any outside support with content or communication around upcoming products or research projects?\n\nIf it's not relevant at the moment, no problem.\n\nBest,\n{{sender_name}}"
+      }
+    ],
+    "status": "confirmed"
+  },
+  {
+    "id": "website-redesign",
+    "tierName": "SEQUENCE 4: Website Redesign",
+    "tierColor": "purple",
+    "targetPersonas": "Marketing Director, IT Director, Operations Manager, Website Owner",
+    "messagingAngle": "Website strategy, conversion optimization, project planning",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Website at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm looking for the person at {{company_name}} responsible for the company website.\n\nAt Notice the Elephant, we help companies plan and redesign their websites, from content and structure through to delivery.\n\nWould that be you, or someone else on the team?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nJust following up to check who looks after website projects at {{company_name}}.\n\nWould you be the right person to ask?\n\nBest,\n{{sender_name}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "",
+        "body": "Hi {{first_name}},\n\nIs a website redesign something you're considering over the coming months?\n\nIf it's not on the agenda, happy to leave it here.\n\nBest,\n{{sender_name}}"
+      }
+    ],
+    "status": "confirmed"
+  }
+]
