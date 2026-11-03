@@ -1,0 +1,21 @@
+Position,Job Title Variants,Seniority,Segment,Search Priority,Notes
+"Marketing Director","Marketing Director, VP Marketing, Director of Marketing, Head of Marketing",Director/VP,"Automotive, Sports/Ecommerce, Scientific, Website Redesign",High,Primary decision maker across all segments
+"Chief Marketing Officer","Chief Marketing Officer, CMO",C-Level,All,High,Executive sponsor for larger projects
+"Digital Director","Digital Director, VP Digital, Director of Digital",Director,All,High,Responsible for digital strategy and channels
+"Ecommerce Manager","Ecommerce Manager, VP Ecommerce, Head of Ecommerce, Ecommerce Director",Manager/Director,Sports/Ecommerce,High,Primary decision maker for ecommerce segment
+"Content Director","Content Director, VP Content, Head of Content",Director,All,Medium,Evaluates content and communication strategy
+"Communications Director","Communications Director, VP Communications, Head of Communications",Director,Scientific/Research,High,Primary decision maker for R&D companies
+"Product Marketing Manager","Product Marketing Manager, VP Product Marketing, Director of Product Marketing",Manager/Director,"Automotive, Scientific",Medium,Evaluates product communication strategy
+"Marketing Manager","Marketing Manager, Senior Marketing Manager",Manager,All,Medium,May be decision maker in smaller organizations
+"IT Director","IT Director, VP IT, CTO, Head of IT",Director,Website Redesign,Medium,Technical evaluator for website projects
+"Chief Information Officer","Chief Information Officer, CIO",C-Level,Website Redesign,Medium,Technical sponsor for larger projects
+"Operations Manager","Operations Manager, VP Operations, Director of Operations",Manager/Director,Website Redesign,Medium,May own website budget or project management
+"CEO/Founder","Chief Executive Officer, Founder, President, Owner",C-Level,All,Medium,Ultimate decision maker for investment decisions
+"Event Director","Event Director, Head of Events, VP Events, Event Manager",Director/Manager,Sports/Events,High,Primary decision maker for commercial events
+"Chief Operating Officer","Chief Operating Officer, COO",C-Level,All,Low,Budget authority for major projects
+"R&D Director","R&D Director, VP Research, Director of Innovation, Head of R&D",Director,Scientific/Research,Medium,Technical evaluator for research-intensive companies
+"Scientific Communications Manager","Scientific Communications Manager, Head of Science Communications, Director of Research Communications",Manager/Director,Scientific/Research,High,Specialized role in pharma/biotech/medtech
+"Brand Manager","Brand Manager, Director of Brand, VP Brand",Manager/Director,Sports/Ecommerce,Medium,May influence website and campaign strategy
+"Customer Experience Manager","Director of Customer Experience, VP CX, Head of CX",Director,"Website Redesign, Ecommerce",Medium,Evaluates website conversion and user experience
+"Growth Manager","Growth Manager, VP Growth, Director of Growth, Growth Lead",Manager/Director,All,Medium,Emerging title in digital-forward companies
+"Marketing Operations Manager","Marketing Operations Manager, Head of MarOps, Director of Marketing Operations",Manager,All,Low,Manages marketing technology and workflows
