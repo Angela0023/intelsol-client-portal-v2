@@ -28,9 +28,9 @@
     "totalLeads": 372,
     "leadsEmailed": 372,
     "month": "October",
-    "status": "ACTIVE",
+    "status": "COMPLETED",
     "performance": {
-      "emailsSent": 1064,
+      "emailsSent": 1070,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -53,7 +53,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 3648,
+      "emailsSent": 3795,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
