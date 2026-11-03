@@ -58,7 +58,7 @@
         "emailNumber": 2,
         "type": "Follow-Up",
         "subject": "Re: Endpoint IT escalations",
-        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for endpoint IT escalations at {{company_name}}.\n\nIf that's you, great. If not, a quick referral would help a lot.\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
+        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for endpoint IT escalations at {{company_name}}.\n\nIf that's you, awesome. If not, a quick referral would help a lot.\n\nBest,\nScott M. Lincoln\nVice President, Sales & Partner Ecosystems, Americas\nPhone: (508) 969-4440\neblissai.com"
       }
     ]
   },
