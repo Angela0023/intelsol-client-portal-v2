@@ -346,6 +346,76 @@ function OverviewTab() {
           </div>
         </div>
       </ContentSection>
+
+      <ContentSection title="Decisions to Confirm with Dusan (Before Launch)" icon={<CheckSquare className="w-5 h-5" />}>
+        <p className="text-slate-600 text-sm mb-4">All items below require written approval from Dusan before campaign launch. ICP approval does not replace the cooperation contract.</p>
+
+        <div className="space-y-3">
+          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+            <h4 className="font-semibold text-blue-900 mb-1">1. Scope & Personas</h4>
+            <p className="text-slate-700 text-sm">Confirm: Hotels only in SI/SR, four campaigns, local working responsibilities, room bands indicative</p>
+          </div>
+
+          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+            <h4 className="font-semibold text-blue-900 mb-1">2. Hotel Priorities</h4>
+            <p className="text-slate-700 text-sm">Confirm: 4-5 stars, boutique, strong F&B; exceptional 3-star after review; no compulsory country quota</p>
+          </div>
+
+          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+            <h4 className="font-semibold text-blue-900 mb-1">3. Central Purchasing Rules</h4>
+            <p className="text-slate-700 text-sm">Confirm: Include local group buying units; foreign headquarters outside initial scope</p>
+          </div>
+
+          <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
+            <h4 className="font-semibold text-green-900 mb-1">4. Portfolio & Brand Claims</h4>
+            <p className="text-slate-700 text-sm">Confirm: Current catalogues, approved claims, references, categories, distribution territory, any exclusivity</p>
+          </div>
+
+          <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
+            <h4 className="font-semibold text-green-900 mb-1">5. Commercial Feasibility</h4>
+            <p className="text-slate-700 text-sm">Confirm: Minimum value, quantities, margins, samples, delivery, service, Serbia logistics requirements</p>
+          </div>
+
+          <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
+            <h4 className="font-semibold text-green-900 mb-1">6. Suppression List</h4>
+            <p className="text-slate-700 text-sm">Confirm: Full list, related properties, existing customers, active projects before first import</p>
+          </div>
+
+          <div className="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
+            <h4 className="font-semibold text-amber-900 mb-1">7. Senders & Channels</h4>
+            <p className="text-slate-700 text-sm">Confirm: Selected domains, approved signature, language, permitted channels, opt-out requirements</p>
+          </div>
+
+          <div className="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
+            <h4 className="font-semibold text-amber-900 mb-1">8. Meeting Quality Criteria & Capacity</h4>
+            <p className="text-slate-700 text-sm">Confirm: Quality definition, Dusan's weekly capacity, meeting format, calendar availability</p>
+          </div>
+
+          <div className="bg-purple-50 p-3 rounded border-l-4 border-purple-500">
+            <h4 className="font-semibold text-purple-900 mb-1">9. Lead Definition & Capacity</h4>
+            <p className="text-slate-700 text-sm">Confirm: Definition of 1,000 leads, inclusion of four campaigns, message and research limits</p>
+          </div>
+
+          <div className="bg-purple-50 p-3 rounded border-l-4 border-purple-500">
+            <h4 className="font-semibold text-purple-900 mb-1">10. Contract & Commission</h4>
+            <p className="text-slate-700 text-sm">Confirm: Fees, pilot period, termination, commission basis/rate, payments, excluded costs, attribution</p>
+          </div>
+
+          <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+            <h4 className="font-semibold text-slate-900 mb-1">11. Measurement & Ownership</h4>
+            <p className="text-slate-700 text-sm">Confirm: KPIs, response times, record ownership, access, retention, export rules</p>
+          </div>
+
+          <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+            <h4 className="font-semibold text-slate-900 mb-1">12. Opportunity Attribution</h4>
+            <p className="text-slate-700 text-sm">Confirm: Attribution window, multiple properties in group, repeat orders, partial payments, dispute process</p>
+          </div>
+        </div>
+
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+          <p className="text-red-900 text-sm"><strong>Critical:</strong> Do not automatically attribute entire group or all future orders. Attribute opportunity to INTELSOL only when: (1) new source is recorded, (2) no prior active DukeGroup opportunity exists, and (3) DukeGroup accepts it in writing.</p>
+        </div>
+      </ContentSection>
     </>
   );
 }
@@ -353,6 +423,30 @@ function OverviewTab() {
 function ICPAndPersonasTab() {
   return (
     <>
+      <ContentSection title="Evidence Labels & Verification Standards" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+            <h4 className="font-semibold text-blue-900 mb-1">Confirmed in Context</h4>
+            <p className="text-slate-700 text-sm">Stated in DukeGroup correspondence or official communications</p>
+          </div>
+
+          <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
+            <h4 className="font-semibold text-green-900 mb-1">Web Verified</h4>
+            <p className="text-slate-700 text-sm">Checked directly on the cited website or official source</p>
+          </div>
+
+          <div className="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
+            <h4 className="font-semibold text-amber-900 mb-1">Proposed</h4>
+            <p className="text-slate-700 text-sm">An operational recommendation requiring Dusan's approval before implementation</p>
+          </div>
+
+          <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+            <h4 className="font-semibold text-slate-900 mb-1">Contractual Terms</h4>
+            <p className="text-slate-700 text-sm">Require separate confirmation with INTELSOL and DukeGroup</p>
+          </div>
+        </div>
+      </ContentSection>
+
       <ContentSection title="Hotel Targeting Criteria" icon={<Target className="w-5 h-5" />}>
         <div className="space-y-6">
           <div>
@@ -1014,6 +1108,38 @@ Would a short conversation about your needs be useful? Do you manage selection a
             <p className="text-slate-700 text-sm font-mono">Research → Verified & Eligible → Active Campaign → Reply → Qualified → Meeting Booked → Meeting Held → Opportunity Accepted → Proposal → Order → Paid</p>
             <p className="text-slate-700 text-sm mt-2"><strong>Closing Statuses:</strong> Unsuitable, Suppressed, Not Interested, Later, Unreachable, Lost (with reason)</p>
             <p className="text-slate-700 text-sm mt-2"><strong>Important:</strong> Accepted opportunity = DukeGroup validated real need and defined next sales step. Booking alone does NOT create opportunity. Rescheduling is NOT a new meeting.</p>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Opportunity Attribution Rules:</p>
+            <p className="text-blue-800 text-sm mb-3"><strong>Proposed:</strong> Attribute an opportunity to INTELSOL only when ALL of the following are true:</p>
+            <ol className="list-decimal list-inside space-y-1 text-blue-800 text-sm">
+              <li>The new source is recorded in handoff documentation</li>
+              <li>No prior active DukeGroup opportunity exists for this hotel/contact</li>
+              <li>DukeGroup accepts the opportunity in writing</li>
+            </ol>
+            <p className="text-blue-800 text-sm mt-3"><strong>Critical Rules:</strong></p>
+            <ul className="list-disc list-inside space-y-1 text-blue-800 text-sm">
+              <li>Do NOT automatically attribute entire group or all future orders</li>
+              <li>Define attribution window (time period for credit)</li>
+              <li>Define handling of multiple properties within a group</li>
+              <li>Define handling of repeat orders and partial payments</li>
+              <li>Define dispute process if attribution is unclear</li>
+            </ul>
+          </div>
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <p className="font-semibold text-green-900 mb-2">Operational Agreement - Contact Management:</p>
+            <p className="text-green-800 text-sm mb-3">Before launch, INTELSOL and DukeGroup must confirm responsibilities for:</p>
+            <ul className="list-disc list-inside space-y-1 text-green-800 text-sm">
+              <li><strong>Contact sources:</strong> Who provides hotel/contact lists and verification data</li>
+              <li><strong>Permitted channels:</strong> Email, phone, LinkedIn, or other channels by country</li>
+              <li><strong>Recipient notices:</strong> What information must be disclosed in outreach</li>
+              <li><strong>Retention:</strong> How long contact and engagement data is retained</li>
+              <li><strong>Deletion:</strong> Process for removing contacts from active campaigns</li>
+              <li><strong>Objection records:</strong> How opt-outs and do-not-contact requests are logged and honored</li>
+            </ul>
+            <p className="text-green-800 text-sm mt-3"><strong>Important:</strong> This operational agreement is NOT legal approval of any particular contact source or channel. Separate legal review may be required for GDPR compliance and local regulations.</p>
           </div>
         </div>
       </ContentSection>
