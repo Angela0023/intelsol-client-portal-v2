@@ -1,97 +1,175 @@
 [
   {
-    "id": "sequence-1",
-    "tierName": "SEQUENCE A: Hotel leadership and operational owners",
-    "tierColor": "emerald",
-    "campaign": "SI LEAD",
-    "country": "Slovenia",
-    "track": "Hotel Leadership",
-    "targetPersonas": "Hotel Managers, General Managers, Hotel Directors, and local owners actively involved in running the hotel and making purchasing decisions.",
-    "messagingAngle": "Explore upcoming tableware replenishment, replacement or refurbishment needs across hotel restaurants, breakfast service and banqueting. Introduce DukeGroup’s professional tableware portfolio and invite a brief conversation about the hotel’s plans.",
-    "clayFilter": "Slovenia - Hotel Leadership",
-    "targetPositions": "Owner/Director/GM",
+    "id": "hotel-leadership-en",
+    "tierName": "Hotel Directors & Local Owner Directors",
+    "tierColor": "blue",
+    "language": "English",
+    "targetPersonas": "Hotel Directors, General Managers, Local Owner Directors - Hotel leadership with budget authority",
+    "messagingAngle": "Explore upcoming tableware replenishment, replacement or refurbishment needs. Introduce DukeGroup's professional tableware portfolio.",
+    "sendingSchedule": "Follow-up 1 after 4-5 business days, Follow-up 2 after another 5-7 business days",
     "emails": [
       {
         "emailNumber": 1,
-        "type": "Initial Outreach",
+        "type": "Initial Email",
         "subject": "Tableware for {{company}}",
-        "body": "Dear {{first_name}},\nI’m reaching out to ask whether you are planning to replenish or update the tableware for your hotel restaurant, breakfast service or other dining areas in the coming months.\n\nAt DukeGroup, we specialise in professional tableware for hotels. We represent brands such as FIGGJO and SERAX and help select porcelain, glassware, cutlery and other items to suit each hotel’s needs and concept.\n\nWould you be open to a brief conversation about your plans and how we could work together?\n\nBest regards,\n{{signature}}"
+        "body": "Dear {{first_name}},\n\nI'm reaching out to ask whether you are planning to replenish or update the tableware for your hotel restaurant, breakfast service or other dining areas in the coming months.\n\nAt DukeGroup, we specialise in professional tableware for hotels. We represent brands such as FIGGJO and SERAX and help select porcelain, glassware, cutlery and other items to suit each hotel's needs and concept.\n\nWould you be open to a brief conversation about your plans and how we could work together?\n\nBest regards,\nDusan\n{{signature}}"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
+        "type": "First Follow-up (4-5 business days)",
         "subject": "RE: Tableware for {{company}}",
-        "body": "Dear {{first_name}},\nI recently wrote to you about tableware for your hotel.\n\nA conversation could also be useful if you are simply planning to replenish existing stock or select new items for a particular part of your offering, such as breakfast, the restaurant or banqueting.\n\nBased on your needs, I could present a focused selection of products from our portfolio.\n\nAre any of these purchases currently on your agenda?\n\nBest regards,\n{{signature}}\n"
+        "body": "Dear {{first_name}},\n\nI recently wrote to you about tableware for your hotel.\n\nA conversation could also be useful if you are simply planning to replenish existing stock or select new items for a particular part of your offering, such as breakfast, the restaurant or banqueting.\n\nBased on your needs, I could present a focused selection of products from our portfolio.\n\nAre any of these purchases currently on your agenda?\n\nBest regards,\nDusan\n{{signature}}"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
+        "type": "Final Follow-up (5-7 business days)",
         "subject": "RE: Tableware for {{company}}",
-        "body": "Dear {{first_name}},\n\nI’m getting back in touch to see whether selecting or replenishing tableware is currently relevant for your hotel.\n\nIf so, we could arrange a brief conversation. If a colleague manages this area, I would appreciate being pointed in the right direction.\n\nIf you are planning purchases for a later date, please let me know when it would be a good time to reconnect.\n\nBest regards,\n\n{{signature}}\n"
+        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether selecting or replenishing tableware is currently relevant for your hotel.\n\nIf so, we could arrange a brief conversation. If a colleague manages this area, I would appreciate being pointed in the right direction.\n\nIf you are planning purchases for a later date, please let me know when it would be a good time to reconnect.\n\nBest regards,\nDusan\n{{signature}}"
       }
     ]
   },
   {
-    "id": "sequence-2",
-    "tierName": "SEQUENCE B: F&B managers and Executive Chefs",
-    "tierColor": "orange",
-    "campaign": "SI FNB",
-    "country": "Slovenia",
-    "track": "F&B & Procurement",
-    "targetPersonas": "F&B Managers, F&B Directors, Executive Chefs, and Heads of Hotel Restaurants involved in selecting professional tableware.",
-    "messagingAngle": "Explore tableware needs based on food presentation, service style and the team’s practical requirements. Introduce relevant product options and, where appropriate, FIGGJO customised decor.",
-    "clayFilter": "Slovenia - F&B and Procurement",
-    "targetPositions": "F&B Director/Manager, Chef, Procurement Manager",
+    "id": "hotel-leadership-hr",
+    "tierName": "Direktori hotela i lokalni vlasnici direktori",
+    "tierColor": "blue",
+    "language": "Croatian",
+    "targetPersonas": "Direktori hotela, General menadžeri, Lokalni vlasnici direktori - Hotelski vođstvo s pravom odluke",
+    "messagingAngle": "Provjera potreba za dopunom ili obnovu stone opreme. Predstavljanje DukeGroup portfelja.",
+    "sendingSchedule": "Prvi podsjetnik nakon 4-5 radnih dana, Završna poruka nakon dodatnih 5-7 radnih dana",
     "emails": [
       {
         "emailNumber": 1,
-        "type": "Initial Outreach",
+        "type": "Prva poruka",
+        "subject": "Stolna oprema za {{company}}",
+        "body": "Poštovani {{first_name}},\n\nzanima me planirate li u nadolazećim mjesecima dopunu ili obnovu stolne opreme za hotelski restoran, posluživanje doručka ili druge ugostiteljske prostore.\n\nU DukeGroupu specijalizirani smo za profesionalnu stolnu opremu za hotele. Zastupamo brendove poput FIGGJO i SERAX te pomažemo pri odabiru porculana, čaša, pribora za jelo i drugih proizvoda prema potrebama i konceptu hotela.\n\nBi li vam odgovarao kratak razgovor o vašim planovima i mogućnostima suradnje?\n\nLijep pozdrav,\nDusan\n{{signature}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Prvi podsjetnik (4-5 radnih dana)",
+        "subject": "RE: Stolna oprema za {{company}}",
+        "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o stolnoj opremi za vaš hotel.\n\nRazgovor može biti koristan i ako planirate samo dopunu postojećeg inventara ili novi odabir za pojedini dio ponude, primjerice doručak, restoran ili bankete.\n\nPrema vašim potrebama mogao bih vam predstaviti uži izbor proizvoda iz našeg portfelja.\n\nJe li neka od tih nabava trenutačno aktualna kod vas?\n\nLijep pozdrav,\nDusan\n{{signature}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Završna poruka (5-7 radnih dana)",
+        "subject": "RE: Stolna oprema za {{company}}",
+        "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio je li odabir ili dopuna stolne opreme trenutačno aktualna tema za vaš hotel.\n\nAko jest, možemo dogovoriti kratak razgovor. Ako to područje vodi netko od kolega, bio bih zahvalan da me uputite na pravu osobu.\n\nAko nabavu planirate kasnije, slobodno mi javite kada bi bilo prikladno ponovno se javiti.\n\nLijep pozdrav,\nDusan\n{{signature}}"
+      }
+    ]
+  },
+  {
+    "id": "hotel-leadership-sr",
+    "tierName": "Direktori hotela i lokalni vlasnici direktori",
+    "tierColor": "blue",
+    "language": "Serbian (Latin)",
+    "targetPersonas": "Direktori hotela, General menadžeri, Lokalni vlasnici direktori - Hotelsko rukovodstvo sa pravom odluke",
+    "messagingAngle": "Provjera potreba za dopunom ili obnovu stone opreme. Predstavljanje DukeGroup portfolija.",
+    "sendingSchedule": "Prvi podsjetnik nakon 4-5 radnih dana, Završna poruka nakon dodatnih 5-7 radnih dana",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Prva poruka",
+        "subject": "Stona oprema za {{company}}",
+        "body": "Poštovani {{first_name}},\n\nzanima me da li u narednim mesecima planirate dopunu ili obnovu stone opreme za hotelski restoran, posluživanje doručka ili druge ugostiteljske prostore.\n\nU DukeGroupu smo specijalizovani za profesionalnu stonu opremu za hotele. Zastupamo brendove kao što su FIGGJO i SERAX i pomažemo pri izboru porcelana, čaša, pribora za jelo i drugih proizvoda prema potrebama i konceptu hotela.\n\nDa li bi vam odgovarao kratak razgovor o vašim planovima i mogućnostima saradnje?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Prvi podsjetnik (4-5 radnih dana)",
+        "subject": "RE: Stona oprema za {{company}}",
+        "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o stonoj opremi za vaš hotel.\n\nRazgovor može biti koristan i ako planirate samo dopunu postojećeg inventara ili novi izbor za pojedini deo ponude, na primer doručak, restoran ili bankete.\n\nNa osnovu vaših potreba mogao bih da vam predstavim uži izbor proizvoda iz našeg portfolija.\n\nDa li je neka od ovih nabavki trenutno aktuelna kod vas?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Završna poruka (5-7 radnih dana)",
+        "subject": "RE: Stona oprema za {{company}}",
+        "body": "Poštovani {{first_name}},\n\njavljam se još jednom da proverim da li je izbor ili dopuna stone opreme trenutno aktuelna tema za vaš hotel.\n\nAko jeste, možemo da dogovorimo kratak razgovor. Ako ovu oblast vodi neko od kolega, bio bih zahvalan da me uputite na pravu osobu.\n\nAko nabavku planirate kasnije, slobodno mi javite kada bi bilo pogodno da se ponovo javim.\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+      }
+    ]
+  },
+  {
+    "id": "fnb-managers-en",
+    "tierName": "F&B Managers & Executive Chefs",
+    "tierColor": "green",
+    "language": "English",
+    "targetPersonas": "F&B Managers, F&B Directors, Executive Chefs, Head Chefs - Food and beverage operations leaders",
+    "messagingAngle": "Explore tableware needs based on food presentation, service style and team's practical requirements. Introduce relevant product options and FIGGJO customised decor.",
+    "sendingSchedule": "Follow-up 1 after 4-5 business days, Follow-up 2 after another 5-7 business days",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Email",
         "subject": "Tableware for your hotel restaurant",
-        "body": "Dear {{first_name}},\n\nI’m reaching out to ask whether you are planning to add to your tableware selection or explore new ways to present dishes in your hotel restaurant.\n\nAt DukeGroup, we work with international professional tableware brands, including FIGGJO and SERAX. We help select items based on your style of service, food presentation and team’s needs.\n\nWould a brief conversation about what could be relevant for your restaurant be useful?\n\nBest regards,\n\n{{signature}}\n"
+        "body": "Dear {{first_name}},\n\nI'm reaching out to ask whether you are planning to add to your tableware selection or explore new ways to present dishes in your hotel restaurant.\n\nAt DukeGroup, we work with international professional tableware brands, including FIGGJO and SERAX. We help select items based on your style of service, food presentation and team's needs.\n\nWould a brief conversation about what could be relevant for your restaurant be useful?\n\nBest regards,\nDusan\n{{signature}}"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
+        "type": "First Follow-up (4-5 business days)",
         "subject": "RE: Tableware for your hotel restaurant",
-        "body": "Dear {{first_name}},\n\nI’m following up on my message about tableware for your restaurant.\n\nAlongside plates and other items, we can also present FIGGJO’s customised decor options if you would like to reflect your hotel or restaurant’s visual identity in your tableware.\n\nIf you let me know which part of your tableware selection you would like to add to, I can put together a few relevant suggestions for review.\n\nWould this be useful for any upcoming purchases?\n\nBest regards,\n\n{{signature}}\n"
+        "body": "Dear {{first_name}},\n\nI'm following up on my message about tableware for your restaurant.\n\nAlongside plates and other items, we can also present FIGGJO's customised decor options if you would like to reflect your hotel or restaurant's visual identity in your tableware.\n\nIf you let me know which part of your tableware selection you would like to add to, I can put together a few relevant suggestions for review.\n\nWould this be useful for any upcoming purchases?\n\nBest regards,\nDusan\n{{signature}}"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
+        "type": "Final Follow-up (5-7 business days)",
         "subject": "RE: Tableware for your hotel restaurant",
-        "body": "Dear {{first_name}},\n\nI’m getting back in touch to see whether a conversation about tableware for your restaurant would be useful at the moment.\n\nIf you select items together with procurement or hotel management, the relevant colleague could also join the conversation.\n\nIf now is not the right time, I would be grateful to know when you usually plan tableware replenishment.\n\nBest regards,\n\n{{signature}}\n"
+        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether a conversation about tableware for your restaurant would be useful at the moment.\n\nIf you select items together with procurement or hotel management, the relevant colleague could also join the conversation.\n\nIf now is not the right time, I would be grateful to know when you usually plan tableware replenishment.\n\nBest regards,\nDusan\n{{signature}}"
       }
     ]
   },
   {
-    "id": "sequence-3",
-    "tierName": "SEQUENCE C: Serbia Hotel Leadership",
-    "tierColor": "cyan",
-    "campaign": "SR LEAD",
-    "country": "Serbia",
-    "track": "Hotel Leadership",
-    "targetPersonas": "Hotel Owner, Manager, General Manager - Strategic decision makers for hotel operations and F&B investments",
-    "messagingAngle": "Hotel planning and tableware strategy with local supplier relationship",
-    "clayFilter": "Serbia - Hotel Leadership",
-    "targetPositions": "Owner/Director/GM",
+    "id": "fnb-managers-hr",
+    "tierName": "F&B menadžeri i glavni kuhari",
+    "tierColor": "green",
+    "language": "Croatian",
+    "targetPersonas": "F&B menadžeri, F&B direktori, Izvršni kuhári, Glavni kuhári - Lideri hrane i pića",
+    "messagingAngle": "Provjera potreba za odabirom stone opreme na temelju prezentacije jela, stila posluživanja i potreba tima. Predstavljanje relevantnih opcija i FIGGJO prilagođenog dekora.",
+    "sendingSchedule": "Prvi podsjetnik nakon 4-5 radnih dana, Završna poruka nakon dodatnih 5-7 radnih dana",
     "emails": [
       {
         "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Tableware za {{CompanyName}}",
-        "body": "Dear {{FirstName}},\n\nDukeGroup helps hotels select professional tableware.\n\n{{VerifiedConnection}}\n\nAre you planning to replenish or renew equipment for your hotel restaurant in the coming months?\n\nIf the topic is relevant, we suggest a short conversation with Dusan about your needs and suitable options.\n\nIf a colleague handles this, we would appreciate the name of the responsible person.\n\nBest regards,\nIntelsol for DukeGroup"
+        "type": "Prva poruka",
+        "subject": "Stolna oprema za vaš hotelski restoran",
+        "body": "Poštovani {{first_name}},\n\nzanima me planirate li dopunu stolne opreme ili tražite nove mogućnosti za prezentaciju jela u hotelskom restoranu.\n\nU DukeGroupu surađujemo s međunarodnim brendovima profesionalne stolne opreme, među kojima su FIGGJO i SERAX. Pri odabiru polazimo od vašeg načina posluživanja, prezentacije jela i potreba tima.\n\nBi li vam koristio kratak razgovor o tome što bi bilo zanimljivo za vaš restoran?\n\nLijep pozdrav,\nDusan\n{{signature}}"
       },
       {
         "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "RE: Tableware za {{CompanyName}} - planning timeline",
-        "body": "Dear {{FirstName}},\n\nFollowing up on our note about professional tableware for your hotel.\n\nMost hotel leaders we work with are evaluating:\n- Equipment refresh for current operations\n- Supplies for renovations or new concepts\n- Quality suppliers with reliable service\n- Professional brands for quality positioning\n\nDukeGroup works with several leading manufacturers and has presence across Serbia.\n\nWould a short discussion of your plans be helpful? Best regards,\nIntelsol for DukeGroup"
+        "type": "Prvi podsjetnik (4-5 radnih dana)",
+        "subject": "RE: Stolna oprema za vaš hotelski restoran",
+        "body": "Poštovani {{first_name}},\n\njavljam se ponovno vezano uz odabir stolne opreme za vaš restoran.\n\nUz odabir tanjura i drugih proizvoda, kod brenda FIGGJO možemo predstaviti i mogućnost dekora po mjeri ako biste opremu željeli uskladiti s vizualnim identitetom hotela ili restorana.\n\nAko mi javite koji dio ponude želite dopuniti, mogu vam pripremiti nekoliko relevantnih prijedloga za pregled.\n\nBi li vam to koristilo pri nekoj od planiranih nabava?\n\nLijep pozdrav,\nDusan\n{{signature}}"
       },
       {
         "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Final note - DukeGroup za {{CompanyName}}",
-        "body": "Dear {{FirstName}},\n\nFinal note: if you're evaluating tableware or planning equipment refresh, we'd welcome the opportunity to discuss your needs and suitable options.\n\nBest regards,\nIntelsol for DukeGroup"
+        "type": "Završna poruka (5-7 radnih dana)",
+        "subject": "RE: Stolna oprema za vaš hotelski restoran",
+        "body": "Poštovani {{first_name}},\n\njavljam se još jednom kako bih provjerio bi li vam razgovor o stolnoj opremi za vaš restoran trenutačno bio koristan.\n\nAko odabir provodite zajedno s nabavom ili upravom hotela, u razgovor se može uključiti i odgovorni kolega.\n\nAko tema trenutačno nije aktualna, bio bih zahvalan na informaciji kada obično planirate dopunu opreme.\n\nLijep pozdrav,\nDusan\n{{signature}}"
+      }
+    ]
+  },
+  {
+    "id": "fnb-managers-sr",
+    "tierName": "F&B menadžeri i šefovi kuhinje",
+    "tierColor": "green",
+    "language": "Serbian (Latin)",
+    "targetPersonas": "F&B menadžeri, F&B direktori, Izvršni šefovi kuhinje, Glavni šefovi - Lideri hrane i pića",
+    "messagingAngle": "Provjera potreba za odabirom stone opreme na osnovu prezentacije jela, stila posluživanja i potreba tima. Predstavljanje relevantnih opcija i FIGGJO prilagođenog dekora.",
+    "sendingSchedule": "Prvi podsjetnik nakon 4-5 radnih dana, Završna poruka nakon dodatnih 5-7 radnih dana",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Prva poruka",
+        "subject": "Stona oprema za vaš hotelski restoran",
+        "body": "Poštovani {{first_name}},\n\nzanima me da li planirate dopunu stone opreme ili tražite nove mogućnosti za prezentaciju jela u hotelskom restoranu.\n\nU DukeGroupu sarađujemo sa međunarodnim brendovima profesionalne stone opreme, među kojima su FIGGJO i SERAX. Pri izboru polazimo od vašeg načina posluživanja, prezentacije jela i potreba tima.\n\nDa li bi vam koristio kratak razgovor o tome šta bi bilo zanimljivo za vaš restoran?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Prvi podsjetnik (4-5 radnih dana)",
+        "subject": "RE: Stona oprema za vaš hotelski restoran",
+        "body": "Poštovani {{first_name}},\n\njavljam se ponovo povodom izbora stone opreme za vaš restoran.\n\nPored izbora tanjira i drugih proizvoda, kod brenda FIGGJO možemo da predstavimo i mogućnost dekora po meri ako biste želeli da opremu uskladite sa vizuelnim identitetom hotela ili restorana.\n\nAko mi javite koji deo ponude želite da dopunite, mogu da vam pripremim nekoliko relevantnih predloga za pregled.\n\nDa li bi vam to koristilo pri nekoj od planiranih nabavki?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Završna poruka (5-7 radnih dana)",
+        "subject": "RE: Stona oprema za vaš hotelski restoran",
+        "body": "Poštovani {{first_name}},\n\njavljam se još jednom da proverim da li bi vam razgovor o stonoj opremi za vaš restoran trenutno bio koristan.\n\nAko izbor obavljate zajedno sa nabavkom ili upravom hotela, u razgovor može da se uključi i odgovorni kolega.\n\nAko tema trenutno nije aktuelna, bio bih zahvalan na informaciji kada obično planirate dopunu opreme.\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
       }
     ]
   }
