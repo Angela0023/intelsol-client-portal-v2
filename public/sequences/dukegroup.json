@@ -33,33 +33,33 @@
   },
   {
     "id": "sequence-2",
-    "tierName": "SEQUENCE B: Slovenia F&B & Procurement",
+    "tierName": "SEQUENCE B: F&B managers and Executive Chefs",
     "tierColor": "orange",
     "campaign": "SI FNB",
     "country": "Slovenia",
     "track": "F&B & Procurement",
-    "targetPersonas": "F&B Director, Chef, Procurement Manager - Operational and purchasing decision makers for restaurant equipment",
-    "messagingAngle": "Equipment selection and purchasing process for restaurant operations",
+    "targetPersonas": "F&B managers and Executive Chefs",
+    "messagingAngle": "",
     "clayFilter": "Slovenia - F&B and Procurement",
     "targetPositions": "F&B Director/Manager, Chef, Procurement Manager",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "Equipment selection for {{CompanyName}} restaurant",
-        "body": "Hello {{FirstName}},\n\nWe would like to understand how {{CompanyName}} selects tableware and whether any replenishment is planned.\n\nDukeGroup represents FIGGJO, SERAX and other brands for professional use.\n\nWould a brief discussion of your needs be useful?\n\nIs selection managed locally or through group procurement?\n\nBest regards,\nIntelsol for DukeGroup"
+        "subject": "Tableware for your hotel restaurant",
+        "body": "Dear {{first_name}},\n\nI’m reaching out to ask whether you are planning to add to your tableware selection or explore new ways to present dishes in your hotel restaurant.\n\nAt DukeGroup, we work with international professional tableware brands, including FIGGJO and SERAX. We help select items based on your style of service, food presentation and team’s needs.\n\nWould a brief conversation about what could be relevant for your restaurant be useful?\n\nBest regards,\n\n{{signature}}\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "RE: Equipment selection for {{CompanyName}} - purchasing process",
-        "body": "Hello {{FirstName}},\n\nFollowing up on equipment and tableware for {{CompanyName}}.\n\nMost F&B teams and procurement managers we work with focus on:\n- Professional quality and durability\n- Design fit with restaurant concept\n- Reliable suppliers with good service\n- Clear process for approval and ordering\n\nDukeGroup works directly with hotels across Slovenia on supplier relationships and equipment selection.\n\nWould it be helpful to discuss your current process and needs? We can also connect with your director if needed.\n\nBest regards,\nIntelsol for DukeGroup"
+        "subject": "RE: Tableware for your hotel restaurant",
+        "body": "Dear {{first_name}},\n\nI’m following up on my message about tableware for your restaurant.\n\nAlongside plates and other items, we can also present FIGGJO’s customised decor options if you would like to reflect your hotel or restaurant’s visual identity in your tableware.\n\nIf you let me know which part of your tableware selection you would like to add to, I can put together a few relevant suggestions for review.\n\nWould this be useful for any upcoming purchases?\n\nBest regards,\n\n{{signature}}\n"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Last message - DukeGroup tableware and equipment for {{CompanyName}}",
-        "body": "Hello {{FirstName}},\n\nLast message: if you're planning any tableware or restaurant equipment refresh, we'd welcome a discussion about your needs and DukeGroup's options.\n\nBest regards,\nIntelsol for DukeGroup"
+        "subject": "RE: Tableware for your hotel restaurant",
+        "body": "Dear {{first_name}},\n\nI’m getting back in touch to see whether a conversation about tableware for your restaurant would be useful at the moment.\n\nIf you select items together with procurement or hotel management, the relevant colleague could also join the conversation.\n\nIf now is not the right time, I would be grateful to know when you usually plan tableware replenishment.\n\nBest regards,\n\n{{signature}}\n"
       }
     ]
   },
