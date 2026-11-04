@@ -263,6 +263,60 @@ function OverviewTab() {
         </div>
       </ContentSection>
 
+      <ContentSection title="Brand Portfolio & Product Positioning" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p className="text-slate-600 text-sm">
+            DukeGroup represents six European brands. Each brand is positioned for specific hotel needs. Strategy: start with hotel need, then select 1-2 relevant brands.
+          </p>
+
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+            <h3 className="font-bold text-blue-900 mb-2">FIGGJO</h3>
+            <p className="text-slate-700 text-sm mb-2"><strong>Role in Outreach:</strong> Professional porcelain and customized decor</p>
+            <p className="text-slate-700 text-sm"><strong>Verified:</strong> Official website confirms porcelain & custom decor. DukeGroup confirms order specific terms.</p>
+          </div>
+
+          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+            <h3 className="font-bold text-green-900 mb-2">SERAX</h3>
+            <p className="text-slate-700 text-sm mb-2"><strong>Role in Outreach:</strong> Selection for visual concept of hotel table after catalogue review</p>
+            <p className="text-slate-700 text-sm"><strong>Verified:</strong> Portfolio inclusion confirmed. Dušan approves relevant collections per project.</p>
+          </div>
+
+          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
+            <h3 className="font-bold text-amber-900 mb-2">PORDAMSA</h3>
+            <p className="text-slate-700 text-sm mb-2"><strong>Role in Outreach:</strong> Selection for food presentation and hotel F&B operations</p>
+            <p className="text-slate-700 text-sm"><strong>Note:</strong> Proposed sales angle. Do not assert material properties without evidence.</p>
+          </div>
+
+          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <h3 className="font-bold text-purple-900 mb-2">JARS</h3>
+            <p className="text-slate-700 text-sm mb-2"><strong>Role in Outreach:</strong> Selection for table character and gastronomic concepts</p>
+            <p className="text-slate-700 text-sm"><strong>Note:</strong> Proposed sales angle. Verify origin and properties for each product.</p>
+          </div>
+
+          <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
+            <h3 className="font-bold text-indigo-900 mb-2">INFINITO DESIGN</h3>
+            <p className="text-slate-700 text-sm mb-2"><strong>Role in Outreach:</strong> Relevant hotel selections from general or nautical catalogue</p>
+            <p className="text-slate-700 text-sm"><strong>Note:</strong> Nautical catalogue is supporting material only, not a reason to target vessels.</p>
+          </div>
+
+          <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <h3 className="font-bold text-slate-900 mb-2">ARTILUGIS</h3>
+            <p className="text-slate-700 text-sm mb-2"><strong>Role in Outreach:</strong> Complementary selection based on identified hotel needs</p>
+            <p className="text-slate-700 text-sm"><strong>Note:</strong> Confirm relevant product categories and items before presentation.</p>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+            <p className="font-semibold text-red-900 mb-2">Critical Rules for Product Claims:</p>
+            <ul className="list-disc list-inside space-y-1 text-red-800 text-sm">
+              <li>Do NOT create six brand campaigns or send every catalogue in first message</li>
+              <li>Claims about durability, washing, stock, delivery, price, warranty require current evidence</li>
+              <li>Do NOT promise savings, faster delivery, reduced breakage, or higher food sales without supporting evidence</li>
+              <li>All claims require explicit DukeGroup approval</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
       <ContentSection title="Service Delivery Model">
         <div className="bg-rose-50 border-l-4 border-rose-500 p-4 rounded">
           <p className="text-slate-800 font-medium mb-2">INTELSOL's Role:</p>
@@ -281,13 +335,14 @@ function OverviewTab() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-1">Pilot Approach</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700 text-sm">
-              <li>Days 1-14: Verify hotel list quality + test first 20 records per campaign + small launch batch (25-50 per campaign)</li>
-              <li>Days 15-30: Analyze reply quality + refine targeting + expand volume</li>
-              <li>Days 31-60: Reallocate capacity based on meeting quality across campaigns</li>
-              <li>Days 61-90: Review accepted opportunities and decide next phase</li>
+            <h4 className="font-semibold text-slate-900 mb-1">90-Day Pilot Delivery Plan</h4>
+            <ul className="list-disc list-inside space-y-2 text-slate-700 text-sm">
+              <li><strong>Days 1-14:</strong> Confirm Dušan's ICP & suppression list. Verify first 20 records per campaign. Launch small batch (25-50 per campaign).</li>
+              <li><strong>Days 15-30:</strong> Analyze actual replies and quality. Refine personas and messaging. Increase volume only when quality is sound.</li>
+              <li><strong>Days 31-60:</strong> Reallocate capacity across four campaigns based on meeting quality held.</li>
+              <li><strong>Days 61-90:</strong> Review accepted opportunities, proposals, orders, and time to next step. Decide whether to continue.</li>
             </ul>
+            <p className="text-slate-600 text-sm mt-2">Weekly reporting covers volume, replies, meetings, rejection reasons, and concrete changes. Sales cycles may outlast the pilot - keep tracking open cohorts.</p>
           </div>
         </div>
       </ContentSection>
@@ -434,41 +489,85 @@ function ICPAndPersonasTab() {
       </ContentSection>
 
       <ContentSection title="Buying Signals for Hotels" icon={<Users className="w-5 h-5" />}>
-        <p className="text-slate-600 mb-4">
-          Evidence that a hotel may need professional tableware:
-        </p>
-
-        <div className="space-y-3">
-          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Hotel Renovation or Refresh</h4>
-            <p className="text-slate-700">News, website updates, or LinkedIn posts about F&B refresh, restaurant renovation, or complete property update</p>
+        <div className="space-y-4 mb-6">
+          <div className="bg-slate-50 border-l-4 border-slate-700 p-4 rounded">
+            <p className="font-semibold text-slate-900 mb-2">Signal Verification Requirements:</p>
+            <p className="text-slate-700 text-sm mb-3">For each signal, AI must record: URL, review date, supporting excerpt, finding, and confidence label (confirmed, likely, or unknown). Never invent information.</p>
           </div>
 
-          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: New Property Opening or Expansion</h4>
-            <p className="text-slate-700">New hotel opening, new restaurant/bar concept, or banquet space expansion at existing property</p>
-          </div>
+          <div className="space-y-3">
+            <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+              <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Hotel Renovation or Refresh</h4>
+              <p className="text-slate-700 text-sm">Official announcement with location and date. Priority when purchasing route is verified.</p>
+            </div>
 
-          <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Management or Ownership Change</h4>
-            <p className="text-slate-700">New hotel director, new F&B manager, new owner (often triggers operational upgrades including equipment)</p>
-          </div>
+            <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+              <h4 className="font-semibold text-blue-900 mb-1">TIER 1: New Property Opening or Expansion</h4>
+              <p className="text-slate-700 text-sm">Confirmed opening or new restaurant/banquet space. Approach F&B or Chef with relevant question.</p>
+            </div>
 
-          <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
-            <h4 className="font-semibold text-green-900 mb-1">TIER 2: Events/Banquet Expansion</h4>
-            <p className="text-slate-700">Hotel announcing new event spaces, wedding venues, or conference room expansion</p>
-          </div>
+            <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
+              <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Management or Ownership Change</h4>
+              <p className="text-slate-700 text-sm">New hotel director or F&B leader with verified start date. Reason to explore needs, not proof of intent.</p>
+            </div>
 
-          <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
-            <h4 className="font-semibold text-green-900 mb-1">TIER 2: Recent Accreditation or Award</h4>
-            <p className="text-slate-700">Michelin recognition, ISO certifications, or design/quality awards for F&B operations</p>
-          </div>
+            <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
+              <h4 className="font-semibold text-green-900 mb-1">TIER 2: Banqueting, Weddings, or Conferences</h4>
+              <p className="text-slate-700 text-sm">Actual hotel offering verified. Explore replenishment and inventory standardization.</p>
+            </div>
 
-          <div className="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
-            <h4 className="font-semibold text-amber-900 mb-1">TIER 3: Seasonal High Demand</h4>
-            <p className="text-slate-700">Summer season for mountain/ski resorts, conference season, local event patterns that trigger replacements</p>
+            <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
+              <h4 className="font-semibold text-green-900 mb-1">TIER 2: Recent Accreditation or Award</h4>
+              <p className="text-slate-700 text-sm">Michelin recognition, ISO certifications, design awards. Signal of quality commitment and potential need.</p>
+            </div>
+
+            <div className="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
+              <h4 className="font-semibold text-amber-900 mb-1">TIER 3: Seasonal Planning or Budget Cycles</h4>
+              <p className="text-slate-700 text-sm">Confirm timing in conversation; do not infer from month alone. Agree suitable scope and recontact date.</p>
+            </div>
           </div>
         </div>
+
+        <ContentSection title="Eligibility Gates & Scoring System">
+          <div className="space-y-4">
+            <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+              <p className="font-semibold text-red-900 mb-2">Hard Filters (Check in Order - Failed = Exclusion):</p>
+              <ol className="list-decimal list-inside space-y-1 text-red-800 text-sm">
+                <li><strong>Country:</strong> Slovenia or Serbia only</li>
+                <li><strong>Property Type:</strong> Hotel with F&B operations (no standalone restaurants/bars)</li>
+                <li><strong>Local Authority:</strong> Verified operational responsibility in SI or SR</li>
+                <li><strong>Suppression:</strong> Not on existing customer, active opportunity, or do-not-contact list</li>
+              </ol>
+            </div>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+              <p className="font-semibold text-blue-900 mb-2">Scoring (0-10 scale - Only after gates passed):</p>
+              <ul className="list-disc list-inside space-y-1 text-blue-800 text-sm">
+                <li><strong>F&B Fit (0-3):</strong> Restaurant/banquet strength and tableware relevance</li>
+                <li><strong>Current Need (0-3):</strong> Renovation, opening, or verified replenishment project</li>
+                <li><strong>Local Access (0-3):</strong> Direct contact with decision-making authority</li>
+                <li><strong>Clear Timing (0-1):</strong> Known timeline for purchasing decision</li>
+              </ul>
+              <div className="mt-3 text-sm">
+                <p className="text-blue-900 font-semibold mb-1">Priority Classification:</p>
+                <p className="text-blue-800"><strong>A (8-10):</strong> Strong F&B, verified local authority, current project</p>
+                <p className="text-blue-800"><strong>B (5-7):</strong> Suitable hotel with local role, need/timing unknown</p>
+                <p className="text-blue-800"><strong>C (0-4):</strong> Central purchasing OR weak F&B - research status</p>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 border-l-4 border-slate-700 p-4 rounded">
+              <p className="font-semibold text-slate-900 mb-2">Quality Control Process:</p>
+              <ul className="list-disc list-inside space-y-1 text-slate-700 text-sm">
+                <li>Manually review first 20 records per campaign</li>
+                <li>Review 10% of every import after initial batch</li>
+                <li>Manually review every ambiguous case</li>
+                <li>Pause affected import if errors found (country, persona, suppression)</li>
+                <li>Record all findings with source URL, review date, confidence level</li>
+              </ul>
+            </div>
+          </div>
+        </ContentSection>
       </ContentSection>
 
       <ContentSection title="Research & Verification Process" icon={<Users className="w-5 h-5" />}>
@@ -710,6 +809,289 @@ function CampaignsSequencesTab() {
       </ContentSection>
 
       <SequencesTab clientId="dukegroup" />
+
+      <ContentSection title="Email Message Templates (Master Copy)" icon={<Mail className="w-5 h-5" />}>
+        <p className="text-slate-600 text-sm mb-4">Master English templates below. Localize to Slovenian and Serbian before sending. Keep underlying claims, qualification criteria, and local purchasing questions consistent.</p>
+
+        <div className="space-y-4">
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+            <h3 className="font-bold text-blue-900 mb-3">SI Campaign 1: Slovenia - Hotel Leadership Track</h3>
+            <div className="space-y-2">
+              <div>
+                <p className="font-semibold text-blue-900 text-sm">Subject:</p>
+                <p className="text-slate-700 text-sm font-mono">Tableware for [hotel]</p>
+              </div>
+              <div>
+                <p className="font-semibold text-blue-900 text-sm">Body:</p>
+                <p className="text-slate-700 text-sm font-mono whitespace-pre-wrap">Hello [name],
+
+DukeGroup helps hotels select professional tableware. [Verified connection to the hotel.]
+
+Are you planning to replenish or refresh equipment for your F&B operation in the coming months?
+
+If this is relevant, we suggest a brief conversation with Dusan about your needs and a suitable selection. If a colleague manages this area, an introduction to the right person would be helpful.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+            <h3 className="font-bold text-green-900 mb-3">SI Campaign 2: Slovenia - F&B/Procurement Track</h3>
+            <div className="space-y-2">
+              <div>
+                <p className="font-semibold text-green-900 text-sm">Subject:</p>
+                <p className="text-slate-700 text-sm font-mono">Equipment selection for [hotel restaurant]</p>
+              </div>
+              <div>
+                <p className="font-semibold text-green-900 text-sm">Body:</p>
+                <p className="text-slate-700 text-sm font-mono whitespace-pre-wrap">Hello [name],
+
+We would like to understand how [hotel] selects tableware and whether any replenishment is planned.
+
+DukeGroup represents FIGGJO, SERAX and other brands for professional use.
+
+Would a brief discussion of your needs be useful? Is selection managed locally or through group procurement?</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <h3 className="font-bold text-purple-900 mb-3">SR Campaign 1: Serbia - Hotel Leadership Track</h3>
+            <div className="space-y-2">
+              <div>
+                <p className="font-semibold text-purple-900 text-sm">Subject:</p>
+                <p className="text-slate-700 text-sm font-mono">Tableware for [hotel]</p>
+              </div>
+              <div>
+                <p className="font-semibold text-purple-900 text-sm">Body:</p>
+                <p className="text-slate-700 text-sm font-mono whitespace-pre-wrap">Dear [name],
+
+DukeGroup helps hotels select professional tableware. [Verified fact about the hotel.]
+
+Are you planning to replenish or renew equipment for your hotel restaurant in the coming months?
+
+If the topic is relevant, we suggest a short conversation with Dusan about your needs and suitable options. If a colleague handles this, we would appreciate the name of the responsible person.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
+            <h3 className="font-bold text-amber-900 mb-3">SR Campaign 2: Serbia - F&B/Procurement Track</h3>
+            <div className="space-y-2">
+              <div>
+                <p className="font-semibold text-amber-900 text-sm">Subject:</p>
+                <p className="text-slate-700 text-sm font-mono">Equipment for [hotel restaurant]</p>
+              </div>
+              <div>
+                <p className="font-semibold text-amber-900 text-sm">Body:</p>
+                <p className="text-slate-700 text-sm font-mono whitespace-pre-wrap">Dear [name],
+
+We would like to understand how [hotel] selects tableware and whether replenishment is planned.
+
+DukeGroup represents several brands for professional use, including FIGGJO and SERAX.
+
+Would a short conversation about your needs be useful? Do you manage selection and purchasing locally or through central procurement?</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+            <p className="font-semibold text-red-900 mb-2">Template Requirements:</p>
+            <ul className="list-disc list-inside space-y-1 text-red-800 text-sm">
+              <li>Replace bracketed text with verified information only</li>
+              <li>Clearly identify sender and add approved signature</li>
+              <li>Include simple way to stop further contact (opt-out link)</li>
+              <li>Localize to Slovenian (SI campaigns) or Serbian Latin (SR campaigns) before sending</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Suppression & Contact Management" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+            <p className="font-semibold text-red-900 mb-2">Before First Import:</p>
+            <p className="text-red-800 text-sm mb-3">Dusan supplies: existing customers, active conversations, open proposals, projects, refusals, and do-not-contact requests. INTELSOL reconciles with opt-out and bounced address records.</p>
+            <p className="text-red-800 text-sm"><strong>Required fields:</strong> Property name, legal entity, domain, known contacts, email, group/buying unit, suppression reason, scope, date, expiry, and owner.</p>
+          </div>
+
+          <div className="space-y-3">
+            <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+              <h4 className="font-semibold text-slate-900 mb-1">Opt Out or Do Not Contact Request</h4>
+              <p className="text-slate-700 text-sm"><strong>Scope:</strong> Single contact OR company/group if explicitly requested</p>
+              <p className="text-slate-700 text-sm"><strong>Reactivation:</strong> Only after documented change of preference</p>
+            </div>
+
+            <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+              <h4 className="font-semibold text-slate-900 mb-1">Existing Customer or Active Project</h4>
+              <p className="text-slate-700 text-sm"><strong>Scope:</strong> Agreed property, legal entity, or buying unit</p>
+              <p className="text-slate-700 text-sm"><strong>Reactivation:</strong> Only with Dusan's approval and separate attribution rules</p>
+            </div>
+
+            <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+              <h4 className="font-semibold text-slate-900 mb-1">Hard Bounce or Invalid Address</h4>
+              <p className="text-slate-700 text-sm"><strong>Scope:</strong> Immediately suppress specific address</p>
+              <p className="text-slate-700 text-sm"><strong>Reactivation:</strong> Only after fresh verification of valid business contact</p>
+            </div>
+
+            <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+              <h4 className="font-semibold text-slate-900 mb-1">Not the Right Time</h4>
+              <p className="text-slate-700 text-sm"><strong>Scope:</strong> Contact with agreed recontact date</p>
+              <p className="text-slate-700 text-sm"><strong>Reactivation:</strong> On agreed date if no other suppression applies</p>
+            </div>
+
+            <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+              <h4 className="font-semibold text-slate-900 mb-1">Duplicate or Parallel Campaign</h4>
+              <p className="text-slate-700 text-sm"><strong>Scope:</strong> One master record and one active sequence</p>
+              <p className="text-slate-700 text-sm"><strong>Action:</strong> Merge history before continuing</p>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+            <p className="font-semibold text-blue-900 mb-2">Execution & Audit Trail:</p>
+            <ul className="list-disc list-inside space-y-1 text-blue-800 text-sm">
+              <li>Normalize email addresses, domains, and legal names while retaining property relationships</li>
+              <li>Check suppression on import AND immediately before every send</li>
+              <li>Process replies and opt-outs continuously (deadline: 1 business day max)</li>
+              <li>Block further sends immediately when suppression is detected</li>
+              <li>Limit access to people who need data for agreed work</li>
+            </ul>
+          </div>
+
+          <div className="bg-slate-100 p-3 rounded">
+            <p className="text-slate-700 text-sm"><strong>Known Suppression Entries (From Dusan's Correspondence):</strong></p>
+            <p className="text-slate-600 text-sm mt-2">• ISTRABENZ Turizem - Investigate related properties</p>
+            <p className="text-slate-600 text-sm">• Hotel CUBO Ljubljana (associated with MRKULIC COMPANY d.o.o.) - Related to above</p>
+            <p className="text-slate-600 text-sm italic">Note: This is NOT a complete confirmed list. Full suppression must be aligned with Dusan before launch.</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Opportunity Handoff & Qualification" icon={<TrendingUp className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Qualified Meeting Criteria (Mandatory):</p>
+            <ul className="list-disc list-inside space-y-1 text-blue-800 text-sm">
+              <li>Eligible hotel in Slovenia or Serbia</li>
+              <li>Verified relevant local contact with decision-making authority</li>
+              <li>Expressed interest in discussing tableware needs</li>
+              <li>Confirmed meeting time with known next step</li>
+              <li>At least initial use case captured and purchasing role identified</li>
+            </ul>
+            <p className="text-blue-800 text-sm mt-3"><strong>Important:</strong> "Send a catalogue" = information request, NOT qualified meeting. "Interesting next year" = nurture with agreed recontact date. Without local path to selection/procurement, meeting is not qualified yet.</p>
+          </div>
+
+          <div className="bg-slate-50 p-3 rounded border-l-4 border-slate-500">
+            <h4 className="font-semibold text-slate-900 mb-2">Handoff Responsibility Stage-by-Stage:</h4>
+            <div className="space-y-2 text-sm">
+              <p><strong>Research & Activation (INTELSOL):</strong> Verify ICP, persona, evidence, suppression</p>
+              <p><strong>Approval (DukeGroup):</strong> Approve priorities, exclusions, permitted claims</p>
+              <p><strong>Positive Reply (INTELSOL):</strong> Stop sequence and qualify need</p>
+              <p><strong>Support (DukeGroup):</strong> Answer technical and commercial questions</p>
+              <p><strong>Meeting (INTELSOL):</strong> Agree time and prepare handoff notes</p>
+              <p><strong>Meeting (DukeGroup):</strong> Dusan confirms attendance and leads presentation</p>
+              <p><strong>Post-Meeting (INTELSOL):</strong> Update status and track agreed next step</p>
+              <p><strong>Post-Meeting (DukeGroup):</strong> Quality assessment and next step within 2 business days</p>
+            </div>
+          </div>
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+            <p className="font-semibold text-green-900 mb-2">Required Handoff Record:</p>
+            <p className="text-green-800 text-sm mb-3">Hotel name, country, legal entity, group, domain, buying unit ID. Contact name, title, business contact details, local remit. Source and verification date. Campaign and first touch. Reply summary. Needs and use case. Decision role. Local or central procurement. Timing and budget (or explicit unknown). Brand interest. Agreed next step. Meeting time and participants. Suppression check history.</p>
+          </div>
+
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+            <p className="font-semibold text-amber-900 mb-2">Proposed Service Levels:</p>
+            <ul className="list-disc list-inside space-y-1 text-amber-800 text-sm">
+              <li>INTELSOL acts on positive replies within 1 business day</li>
+              <li>DukeGroup confirms acceptance or requests missing info within 1 business day</li>
+              <li>Handoff notes ready at least 24 hours before meeting</li>
+              <li>DukeGroup returns quality assessment and next step within 2 business days after meeting</li>
+            </ul>
+          </div>
+
+          <div className="bg-slate-50 border-l-4 border-slate-500 p-4 rounded">
+            <p className="font-semibold text-slate-900 mb-2">Opportunity Status Progression:</p>
+            <p className="text-slate-700 text-sm font-mono">Research → Verified & Eligible → Active Campaign → Reply → Qualified → Meeting Booked → Meeting Held → Opportunity Accepted → Proposal → Order → Paid</p>
+            <p className="text-slate-700 text-sm mt-2"><strong>Closing Statuses:</strong> Unsuitable, Suppressed, Not Interested, Later, Unreachable, Lost (with reason)</p>
+            <p className="text-slate-700 text-sm mt-2"><strong>Important:</strong> Accepted opportunity = DukeGroup validated real need and defined next sales step. Booking alone does NOT create opportunity. Rescheduling is NOT a new meeting.</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="KPIs & 90-Day Success Metrics" icon={<BarChart3 className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <p className="text-slate-600 text-sm">These are proposed operating thresholds for the pilot, not guarantees. Report by country, campaign, first contact cohort, and buying unit. Always show absolute counts alongside percentages for small samples.</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-blue-50 p-4 rounded border border-blue-200">
+              <h4 className="font-semibold text-blue-900 mb-2">Database Quality</h4>
+              <p className="text-blue-800 text-sm">Eligible records / manually reviewed records</p>
+              <p className="text-blue-900 font-semibold text-sm mt-2">Target: At least 95%</p>
+            </div>
+
+            <div className="bg-blue-50 p-4 rounded border border-blue-200">
+              <h4 className="font-semibold text-blue-900 mb-2">Hard Bounce Rate</h4>
+              <p className="text-blue-800 text-sm">Permanently rejected addresses / first delivery attempts</p>
+              <p className="text-blue-900 font-semibold text-sm mt-2">Target: Below 2%</p>
+            </div>
+
+            <div className="bg-green-50 p-4 rounded border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">Positive Reply Rate</h4>
+              <p className="text-green-800 text-sm">Unique contacts expressing relevant interest / delivered first contacts</p>
+              <p className="text-green-900 font-semibold text-sm mt-2">Target: 2-5%</p>
+            </div>
+
+            <div className="bg-green-50 p-4 rounded border border-green-200">
+              <h4 className="font-semibold text-green-900 mb-2">Qualified Meeting Rate</h4>
+              <p className="text-green-800 text-sm">Unique qualified bookings / delivered first contacts</p>
+              <p className="text-green-900 font-semibold text-sm mt-2">Target: 0.5-1.5%</p>
+            </div>
+
+            <div className="bg-purple-50 p-4 rounded border border-purple-200">
+              <h4 className="font-semibold text-purple-900 mb-2">Attendance Rate</h4>
+              <p className="text-purple-800 text-sm">Meetings held / booked meetings due to take place</p>
+              <p className="text-purple-900 font-semibold text-sm mt-2">Target: At least 75%</p>
+            </div>
+
+            <div className="bg-purple-50 p-4 rounded border border-purple-200">
+              <h4 className="font-semibold text-purple-900 mb-2">Opportunity Acceptance</h4>
+              <p className="text-purple-800 text-sm">DukeGroup accepted opportunities / meetings held</p>
+              <p className="text-purple-900 font-semibold text-sm mt-2">Target: At least 60%</p>
+            </div>
+          </div>
+
+          <div className="bg-slate-50 p-4 rounded border border-slate-200">
+            <p className="font-semibold text-slate-900 mb-2">Conversion Funnel Illustration (for 1,000 delivered first contacts):</p>
+            <div className="text-sm text-slate-700 space-y-1">
+              <p>• Positive replies (2-5%): 20-50 replies</p>
+              <p>• Qualified bookings (0.5-1.5%): 5-15 meetings</p>
+              <p>• Meetings held (75% attendance): approximately 4-11 meetings</p>
+              <p>• Opportunities accepted (60%): approximately 2-7 opportunities</p>
+              <p className="text-slate-600 italic mt-2">These rates are unvalidated and illustrative only - not guaranteed to occur together.</p>
+            </div>
+          </div>
+
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+            <p className="font-semibold text-amber-900 mb-2">Weekly Reporting Requirements:</p>
+            <ul className="list-disc list-inside space-y-1 text-amber-800 text-sm">
+              <li>Volume delivered per campaign</li>
+              <li>Reply counts and reply quality assessment</li>
+              <li>Meeting bookings held vs. scheduled</li>
+              <li>Rejection reasons and patterns</li>
+              <li>Concrete changes made based on feedback</li>
+            </ul>
+          </div>
+
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+            <p className="font-semibold text-blue-900 mb-2">Important Notes:</p>
+            <ul className="list-disc list-inside space-y-1 text-blue-800 text-sm">
+              <li>Sales cycles may outlast the 90-day pilot - keep tracking open cohorts</li>
+              <li>DukeGroup records sales outcomes and cohorts (never invent pipeline value)</li>
+              <li>Decisions to expand or adjust recorded in writing with Dusan</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
     </>
   );
 }
