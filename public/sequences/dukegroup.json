@@ -12,19 +12,19 @@
         "emailNumber": 1,
         "type": "Initial Email",
         "subject": "Tableware for {{company}}",
-        "body": "Dear {{first_name}},\n\nI'm reaching out to ask whether you are planning to replenish or update the tableware for your hotel restaurant, breakfast service or other dining areas in the coming months.\n\nAt DukeGroup, we specialise in professional tableware for hotels. We represent brands such as FIGGJO and SERAX and help select porcelain, glassware, cutlery and other items to suit each hotel's needs and concept.\n\nWould you be open to a brief conversation about your plans and how we could work together?\n\nBest regards,\nDusan\n{{signature}}"
+        "body": "Dear {{first_name}},\n\nI'm reaching out to ask whether you are planning to replenish or update the tableware for your hotel restaurant, breakfast service or other dining areas in the coming months.\n\nAt DukeGroup, we specialise in professional tableware for hotels. We represent brands such as FIGGJO and SERAX and help select porcelain, glassware, cutlery and other items to suit each hotel's needs and concept.\n\nWould you be open to a brief conversation about your plans and how we could work together?\n\nBest regards,\n{{signature}}"
       },
       {
         "emailNumber": 2,
         "type": "First Follow-up (4-5 business days)",
         "subject": "RE: Tableware for {{company}}",
-        "body": "Dear {{first_name}},\n\nI recently wrote to you about tableware for your hotel.\n\nA conversation could also be useful if you are simply planning to replenish existing stock or select new items for a particular part of your offering, such as breakfast, the restaurant or banqueting.\n\nBased on your needs, I could present a focused selection of products from our portfolio.\n\nAre any of these purchases currently on your agenda?\n\nBest regards,\nDusan\n{{signature}}"
+        "body": "Dear {{first_name}},\n\nI recently wrote to you about tableware for your hotel.\n\nA conversation could also be useful if you are simply planning to replenish existing stock or select new items for a particular part of your offering, such as breakfast, the restaurant or banqueting.\n\nBased on your needs, I could present a focused selection of products from our portfolio.\n\nAre any of these purchases currently on your agenda?\n\nBest regards,\n{{signature}}"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-up (5-7 business days)",
         "subject": "RE: Tableware for {{company}}",
-        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether selecting or replenishing tableware is currently relevant for your hotel.\n\nIf so, we could arrange a brief conversation. If a colleague manages this area, I would appreciate being pointed in the right direction.\n\nIf you are planning purchases for a later date, please let me know when it would be a good time to reconnect.\n\nBest regards,\nDusan\n{{signature}}"
+        "body": "Dear {{first_name}},\n\nI'm getting back in touch to see whether selecting or replenishing tableware is currently relevant for your hotel.\n\nIf so, we could arrange a brief conversation. If a colleague manages this area, I would appreciate being pointed in the right direction.\n\nIf you are planning purchases for a later date, please let me know when it would be a good time to reconnect.\n\nBest regards,\n{{signature}}"
       }
     ]
   },
