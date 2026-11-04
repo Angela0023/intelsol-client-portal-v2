@@ -1,13 +1,13 @@
 [
   {
     "id": "sequence-1",
-    "tierName": "SEQUENCE A: Hotel directors and local owner directors",
+    "tierName": "SEQUENCE A: Hotel leadership and operational owners",
     "tierColor": "emerald",
     "campaign": "SI LEAD",
     "country": "Slovenia",
     "track": "Hotel Leadership",
-    "targetPersonas": "Hotel directors and local owner directors",
-    "messagingAngle": "",
+    "targetPersonas": "Hotel Managers, General Managers, Hotel Directors, and local owners actively involved in running the hotel and making purchasing decisions.",
+    "messagingAngle": "Explore upcoming tableware replenishment, replacement or refurbishment needs across hotel restaurants, breakfast service and banqueting. Introduce DukeGroup’s professional tableware portfolio and invite a brief conversation about the hotel’s plans.",
     "clayFilter": "Slovenia - Hotel Leadership",
     "targetPositions": "Owner/Director/GM",
     "emails": [
