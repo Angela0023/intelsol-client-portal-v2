@@ -186,109 +186,108 @@ function OverviewTab() {
       <ContentSection title="Client Overview" icon={<FileText className="w-5 h-5" />}>
         <div className="space-y-4">
           <p>
-            <strong>DukeGroup</strong> is a business orchestration platform that streamlines the entire partner experience lifecycle - from onboarding and enablement to order management and program performance tracking. Built specifically for companies that go to market through channel/partner ecosystems.
+            <strong>DukeGroup</strong> supplies professional tableware brands to hotels in Slovenia and Serbia. They represent six leading European brands (FIGGJO, SERAX, PORDAMSA, JARS, INFINITO DESIGN, ARTILUGIS) and help hotels select and order high-quality dishes, plates, silverware, and table linens for F&B operations, banquets, and restaurant renewals.
           </p>
 
-          <div className="bg-rose-50 border-l-4 border-rose-500 p-4 rounded">
-            <p className="font-semibold text-rose-900 mb-2">Core Value Proposition:</p>
-            <p className="text-rose-800">
-              Connect hotel decision makers with quality tableware suppliers with a unified platform that handles everything from partner sign-up and training to complex multi-tier ordering and program compliance tracking.
+          <div className="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded">
+            <p className="font-semibold text-emerald-900 mb-2">Core Value Proposition:</p>
+            <p className="text-emerald-800">
+              Help hotel decision makers select professional tableware that matches their concept, improves guest experience, and supports their F&B operations - with guidance on replenishment, renovation, and new opening projects.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard label="Platform Focus" value="Professional Tableware Distribution" />
-            <InfoCard label="Go-to-Market Motion" value="Channel / Partner-Led" />
-            <InfoCard label="Order Value Processed" value="$5B+ Annually" />
-            <InfoCard label="Enterprise Programs" value="4+ Major Vendors" />
-            <InfoCard label="Reference Customer" value="NetApp (Ralph Nissler)" />
-            <InfoCard label="Partner Scale" value="Tens of Thousands of Users" />
+            <InfoCard label="Target Markets" value="Slovenia & Serbia Only" />
+            <InfoCard label="Primary Product Category" value="Professional Tableware" />
+            <InfoCard label="Brand Portfolio" value="6 European Brands" />
+            <InfoCard label="Customer Type" value="Hotels with F&B Operations" />
+            <InfoCard label="Hotel Categories" value="3-5+ Stars & Boutique" />
+            <InfoCard label="Service Model" value="Direct Personal Sales" />
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Platform Capabilities" icon={<Layers className="w-5 h-5" />}>
+      <ContentSection title="Hotel Targeting Criteria" icon={<Layers className="w-5 h-5" />}>
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Business Orchestration Features:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Hotel Characteristics (Priority Tiers):</h4>
             <ul className="space-y-2">
-              <ListItem type="check">Partner onboarding and enablement workflows</ListItem>
-              <ListItem type="check">Complex order management (multi-tier, configurator-based)</ListItem>
-              <ListItem type="check">Program compliance and performance tracking</ListItem>
-              <ListItem type="check">Automated partner communications and notifications</ListItem>
-              <ListItem type="check">Integration with CRM, ERP, and e-commerce systems</ListItem>
-              <ListItem type="check">Partner portal and self-service capabilities</ListItem>
+              <ListItem type="check"><strong>A (Highest Priority):</strong> 4-5 star hotels with strong F&B, local decision-making authority, verified current project</ListItem>
+              <ListItem type="check"><strong>B (Secondary):</strong> 3-5 star boutique/design hotels with F&B operation and local management</ListItem>
+              <ListItem type="check"><strong>C (Lower Priority):</strong> Group purchasing without clear local decision route, or weak F&B operations</ListItem>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Technology Integrations:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Hotel Needs Signals:</h4>
             <ul className="space-y-2">
-              <ListItem>Salesforce (SFDC)</ListItem>
-              <ListItem>Microsoft Dynamics</ListItem>
-              <ListItem>Liferay</ListItem>
-              <ListItem>WebInfinity</ListItem>
+              <ListItem>Hotel renovation or F&B refresh projects</ListItem>
+              <ListItem>New restaurant opening or launch</ListItem>
+              <ListItem>Banquet or events expansion</ListItem>
+              <ListItem>Equipment replenishment or replacement</ListItem>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Hard Exclusions:</h4>
+            <ul className="space-y-2">
+              <ListItem type="cross">Standalone restaurants, bars, cafes (must be hotels only)</ListItem>
+              <ListItem type="cross">Hotels outside Slovenia & Serbia</ListItem>
+              <ListItem type="cross">Hotels with no F&B operation or restaurant</ListItem>
+              <ListItem type="cross">No local decision-making authority (foreign HQ controls all)</ListItem>
+              <ListItem type="cross">Closed properties or unverifiable contact information</ListItem>
             </ul>
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Campaign Focus" icon={<Target className="w-5 h-5" />}>
+      <ContentSection title="Campaign Architecture" icon={<Target className="w-5 h-5" />}>
         <div className="space-y-4">
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <p className="font-semibold text-blue-900 mb-2">Outbound B2B Strategy:</p>
-            <p className="text-blue-800">
-              Targeting companies with complex partner ecosystems who are struggling with fragmented systems, manual workflows, or aging legacy partner management platforms.
-            </p>
+            <p className="font-semibold text-blue-900 mb-2">Four Parallel Campaigns:</p>
+            <p className="text-blue-800 mb-2">Separated by country and buying decision process (hotel leadership vs. F&B/procurement):</p>
+            <ul className="text-blue-800 space-y-1 text-sm">
+              <li><strong>SI Campaign 1:</strong> Slovenia - Hotel Leadership Track</li>
+              <li><strong>SI Campaign 2:</strong> Slovenia - F&B/Procurement Track</li>
+              <li><strong>SR Campaign 1:</strong> Serbia - Hotel Leadership Track</li>
+              <li><strong>SR Campaign 2:</strong> Serbia - F&B/Procurement Track</li>
+            </ul>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard label="Primary Markets" value="North America & Europe" />
-            <InfoCard label="Company Size" value="Enterprise ($1B+) & Mid-Market ($100M+)" />
-            <InfoCard label="Go-to-Market" value="Channel/Partner-Led Companies" />
-            <InfoCard label="Tone" value="Consultative" />
+            <InfoCard label="Total New Leads/Month Capacity" value="Up to 1,000" color="bg-amber-50 text-amber-700" />
+            <InfoCard label="Leads per Campaign" value="250 (Target Math)" color="bg-amber-50 text-amber-700" />
+            <InfoCard label="Initial Sequence" value="3 Messages Max" color="bg-amber-50 text-amber-700" />
+            <InfoCard label="Message Touches" value="Day 1, Day 5, Day 12" color="bg-amber-50 text-amber-700" />
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Value Proposition">
+      <ContentSection title="Service Delivery Model">
         <div className="bg-rose-50 border-l-4 border-rose-500 p-4 rounded">
-          <p className="text-slate-800 font-medium">
-            Replace fragmented spreadsheets, emails, and legacy portals with a unified partner experience platform that actually works the way your business does - handling complex orders, multi-tier channel structures, and program compliance without requiring an army of support staff.
-          </p>
+          <p className="text-slate-800 font-medium mb-2">INTELSOL's Role:</p>
+          <p className="text-slate-800 text-sm mb-3">Research hotel eligibility → Verify local contacts → Qualify buying process → Book meetings with verified local decision makers.</p>
+
+          <p className="text-slate-800 font-medium mb-2">DukeGroup's Role:</p>
+          <p className="text-slate-800 text-sm">Personal presentations → Solution design → Proposals → Closing → Order fulfillment.</p>
         </div>
 
         <div className="mt-4 space-y-3">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-1">Primary Pain Addressed</h4>
+            <h4 className="font-semibold text-slate-900 mb-1">Success Metric</h4>
             <p className="text-slate-700">
-              Companies with mature channel programs waste enormous resources managing partners through disconnected systems - spreadsheets for tracking, emails for orders, separate portals for training, manual processes for compliance. This creates partner friction, operational bottlenecks, and missed revenue opportunities.
+              Qualified meetings held with verified local decision makers who can validate hotel needs and open the buying process.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-1">Proof Points</h4>
-            <ul className="list-disc list-inside space-y-1 text-slate-700">
-              <li>NetApp reference customer (Ralph Nissler can be named)</li>
-              <li>$5B+ in order value processed annually</li>
-              <li>4 enterprise vendor programs running on the platform</li>
-              <li>Tens of thousands of partner users supported</li>
-              <li>Integration with major systems (SFDC, Dynamics, Liferay, WebInfinity)</li>
+            <h4 className="font-semibold text-slate-900 mb-1">Pilot Approach</h4>
+            <ul className="list-disc list-inside space-y-1 text-slate-700 text-sm">
+              <li>Days 1-14: Verify hotel list quality + test first 20 records per campaign + small launch batch (25-50 per campaign)</li>
+              <li>Days 15-30: Analyze reply quality + refine targeting + expand volume</li>
+              <li>Days 31-60: Reallocate capacity based on meeting quality across campaigns</li>
+              <li>Days 61-90: Review accepted opportunities and decide next phase</li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-1">Messaging Tone</h4>
-            <p className="text-slate-700">
-              Consultative - lead with understanding their partner ecosystem complexity, show you've solved similar problems at scale, focus on operational efficiency and partner satisfaction outcomes rather than feature lists.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-1">Call to Action</h4>
-            <p className="text-slate-700">
-              "Reach out to learn more" or "Get in touch to see how DukeGroup can help"
-            </p>
           </div>
         </div>
       </ContentSection>
@@ -299,224 +298,215 @@ function OverviewTab() {
 function ICPAndPersonasTab() {
   return (
     <>
-      <ContentSection title="Company-Level ICP" icon={<Target className="w-5 h-5" />}>
+      <ContentSection title="Hotel Targeting Criteria" icon={<Target className="w-5 h-5" />}>
         <div className="space-y-6">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Target Geography:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Geography:</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <InfoCard label="North America" value="Equal Weight" color="bg-rose-50 text-rose-700" />
-              <InfoCard label="Europe" value="Equal Weight" color="bg-blue-50 text-blue-700" />
+              <InfoCard label="Slovenia" value="Primary Market" color="bg-blue-50 text-blue-700" />
+              <InfoCard label="Serbia" value="Primary Market" color="bg-blue-50 text-blue-700" />
             </div>
+            <p className="text-slate-600 text-sm mt-3">Local operational responsibility required. Foreign ownership is acceptable if local management controls F&B operations and tableware selection.</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Company Size:</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <InfoCard label="Enterprise" value="$1B+ Revenue" color="bg-violet-50 text-violet-700" />
-              <InfoCard label="Mid-Market" value="$100M+ Revenue" color="bg-indigo-50 text-indigo-700" />
+            <h4 className="font-semibold text-slate-900 mb-3">Hotel Categories & Size:</h4>
+            <div className="space-y-2">
+              <InfoCard label="Star Ratings" value="3-5+ Stars, Boutique, Design, Wellness, Resort, Conference" />
+              <InfoCard label="Room Count" value="Small (up to 49) to Large (150+)" />
+              <InfoCard label="Priority" value="Strong F&B operation and identifiable tableware budget" />
             </div>
+            <p className="text-slate-600 text-sm mt-3">Size is a guide, not a rule. F&B strength and local purchasing authority take precedence over room count.</p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Target Industries / Verticals:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Hotel Types by Priority:</h4>
             <div className="space-y-3">
-              <div className="bg-rose-50 border-l-4 border-rose-500 p-3 rounded">
-                <p className="font-semibold text-rose-900 text-sm mb-1">IT Channel:</p>
-                <p className="text-rose-800 text-sm">VARs (Value-Added Resellers), Distributors, Managed Service Providers (MSPs)</p>
+              <div className="bg-emerald-50 border-l-4 border-emerald-500 p-3 rounded">
+                <p className="font-semibold text-emerald-900 text-sm mb-1">Priority A - Strong F&B + Local Authority:</p>
+                <p className="text-emerald-800 text-sm">4-5 star hotels or strong boutique/design hotels with documented F&B operation, local decision-making, AND verified current project (renovation, opening, refresh).</p>
               </div>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
-                <p className="font-semibold text-blue-900 text-sm mb-1">Equipment Manufacturers:</p>
-                <p className="text-blue-800 text-sm">Companies selling through dealer/distributor networks</p>
+                <p className="font-semibold text-blue-900 text-sm mb-1">Priority B - Suitable Hotel + Local Role:</p>
+                <p className="text-blue-800 text-sm">3-4 star hotel or good F&B operation with local management. Need or timing remains unknown, but location/management suggests opportunity.</p>
               </div>
-              <div className="bg-purple-50 border-l-4 border-purple-500 p-3 rounded">
-                <p className="font-semibold text-purple-900 text-sm mb-1">Private Equity Buy & Build:</p>
-                <p className="text-purple-800 text-sm">PE-backed platforms integrating acquired companies' partner programs</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Technology Stack Indicators:</h4>
-            <p className="text-slate-700 mb-3">
-              Companies using these technologies are likely to have the integration requirements and scale that make DukeGroup a strong fit:
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              <div className="bg-blue-50 border border-blue-200 p-3 rounded text-center">
-                <p className="text-sm font-semibold text-blue-900">Salesforce</p>
-              </div>
-              <div className="bg-green-50 border border-green-200 p-3 rounded text-center">
-                <p className="text-sm font-semibold text-green-900">Microsoft Dynamics</p>
-              </div>
-              <div className="bg-purple-50 border border-purple-200 p-3 rounded text-center">
-                <p className="text-sm font-semibold text-purple-900">Liferay</p>
-              </div>
-              <div className="bg-amber-50 border border-amber-200 p-3 rounded text-center">
-                <p className="text-sm font-semibold text-amber-900">WebInfinity</p>
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded">
+                <p className="font-semibold text-amber-900 text-sm mb-1">Priority C - Central Purchasing or Weak F&B:</p>
+                <p className="text-amber-800 text-sm">Group purchasing without verified local decision route, or hotel with weak F&B operation. Keep in research status, activate after verification.</p>
               </div>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Competitor Technologies (EXCLUDE):</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Hard Exclusions (Do NOT Contact):</h4>
             <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded">
-              <p className="font-semibold text-red-900 mb-2">Do NOT contact companies using:</p>
               <ul className="text-red-800 text-sm space-y-1">
-                <ListItem type="cross">ZIFT</ListItem>
-                <ListItem type="cross">Impartner</ListItem>
-                <ListItem type="cross">Introw</ListItem>
-                <ListItem type="cross">ChannelScaler</ListItem>
-                <ListItem type="cross">Euler</ListItem>
+                <ListItem type="cross">Standalone restaurants, bars, cafes, apartments, hostels, campsites</ListItem>
+                <ListItem type="cross">Closed properties or fabricated contact information</ListItem>
+                <ListItem type="cross">Hotels outside Slovenia or Serbia</ListItem>
+                <ListItem type="cross">No relevant local responsibility or foreign HQ with exclusive control</ListItem>
+                <ListItem type="cross">Prior suppression entries or do-not-contact requests</ListItem>
               </ul>
             </div>
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Buyer Personas">
+      <ContentSection title="Buyer Personas & Decision Hierarchy">
         <p className="text-slate-600 mb-4">
-          DukeGroup sells to leaders responsible for partner experience, partner programs, or digital transformation in channel-led companies.
+          For every hotel contact, identify their role in the buying process: Initiator, Technical Influencer, Process Owner, or Budget Approver. Title alone does not prove authority.
         </p>
 
         <div className="space-y-4">
-          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <div className="bg-emerald-50 p-4 rounded-lg border border-emerald-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-blue-900">PRIMARY PERSONA 1: Director of eCommerce</h3>
-              <span className="px-2 py-1 bg-blue-200 text-blue-800 text-xs font-semibold rounded">PRIMARY</span>
+              <h3 className="font-bold text-emerald-900">PRIMARY: Hotel Director / General Manager</h3>
+              <span className="px-2 py-1 bg-emerald-200 text-emerald-800 text-xs font-semibold rounded">FIRST CONTACT</span>
             </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>Typical Background:</strong> Owns digital partner ordering experience and portal functionality</p>
-              <p><strong>Pain Points:</strong> Partners complain about clunky ordering process, current system can't handle complex configurations, integration with back-end systems is manual</p>
-              <p><strong>Success Metrics:</strong> Order accuracy, processing speed, partner portal adoption, reduction in support tickets</p>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Local Titles:</strong> Direktor hotela, Generalni direktor, Vodja hotela (SI) | Direktor hotela, Generalni menadzer (SR)</p>
+              <p><strong>Role:</strong> Can validate hotel needs and open the actual buying process. Has budget authority for F&B operations.</p>
+              <p><strong>Next Step:</strong> If hotel has strong F&B, may need introduction to Chef or F&B Manager. If central decision-making, clarify local approval process.</p>
             </div>
           </div>
 
-          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-green-900">PRIMARY PERSONA 2: Head of Digital / VP Digital Transformation</h3>
-              <span className="px-2 py-1 bg-green-200 text-green-800 text-xs font-semibold rounded">PRIMARY</span>
+              <h3 className="font-bold text-blue-900">PRIMARY: F&B Manager / Director</h3>
+              <span className="px-2 py-1 bg-blue-200 text-blue-800 text-xs font-semibold rounded">PROCESS OWNER</span>
             </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>Typical Background:</strong> Owns digital transformation initiatives including modernizing partner experience</p>
-              <p><strong>Pain Points:</strong> Legacy systems don't integrate, partner experience is fragmented across multiple tools, company losing partner mindshare to competitors with better digital experiences</p>
-              <p><strong>Success Metrics:</strong> Partner satisfaction scores, digital adoption rates, operational efficiency gains, ROI on platform investments</p>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Local Titles:</strong> Vodja gostinstva, Vodja hrane in pijace (SI) | Menadzer hrane i pica, Direktor F&B (SR)</p>
+              <p><strong>Role:</strong> Owns tableware selection and specifications. Manages procurement process. Can introduce solution to hotel leadership.</p>
+              <p><strong>Next Step:</strong> Technical specifications, samples, pricing. Then requires hotel director or GM approval.</p>
             </div>
           </div>
 
           <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-purple-900">PRIMARY PERSONA 3: Partner Experience / Partner Programs Leader</h3>
-              <span className="px-2 py-1 bg-purple-200 text-purple-800 text-xs font-semibold rounded">PRIMARY</span>
+              <h3 className="font-bold text-purple-900">TECHNICAL INFLUENCER: Executive Chef / Sous Chef</h3>
+              <span className="px-2 py-1 bg-purple-200 text-purple-800 text-xs font-semibold rounded">INFLUENCER</span>
             </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>Typical Titles:</strong> VP Partner Experience, Director Partner Programs, Head of Partner Operations</p>
-              <p><strong>Pain Points:</strong> Partners struggle with onboarding, program compliance tracking is manual, can't get visibility into partner performance, internal teams waste time on repetitive partner support</p>
-              <p><strong>Success Metrics:</strong> Partner engagement levels, program compliance rates, time-to-productivity for new partners, partner lifetime value</p>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Local Titles:</strong> Izvrsni chef, Glavni kuhar (SI) | Sef kuhinje, Glavnom kuhar (SR)</p>
+              <p><strong>Role:</strong> Specifies technical requirements and quality standards. Validates fit for kitchen operations.</p>
+              <p><strong>Important:</strong> Treat as technical influencer UNTIL purchasing authority is verified. Do not position as primary decision maker.</p>
             </div>
           </div>
 
           <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-amber-900">SECONDARY PERSONA 1: Director of Sales Operations</h3>
-              <span className="px-2 py-1 bg-amber-200 text-amber-800 text-xs font-semibold rounded">SECONDARY</span>
+              <h3 className="font-bold text-amber-900">SECONDARY: Procurement Manager</h3>
+              <span className="px-2 py-1 bg-amber-200 text-amber-800 text-xs font-semibold rounded">PROCESS MANAGER</span>
             </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>When to Target:</strong> When partner channel is a major revenue driver and sales ops owns channel performance</p>
-              <p><strong>Pain Points:</strong> Can't get clean data on partner pipeline, deal registration process is broken, incentive/rebate tracking is manual nightmare</p>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Local Titles:</strong> Vodja nabave, Rukovodilac nabavke (SI/SR)</p>
+              <p><strong>Role:</strong> Manages supplier relationships and ordering process. May be group-level for multi-property chains.</p>
+              <p><strong>When to Use:</strong> After initial need is validated by hotel/F&B leadership. Use for implementation details and ongoing orders.</p>
             </div>
           </div>
 
           <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
             <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-slate-900">SECONDARY PERSONA 2: Order Management / Quote Desk Manager</h3>
-              <span className="px-2 py-1 bg-slate-200 text-slate-800 text-xs font-semibold rounded">SECONDARY</span>
+              <h3 className="font-bold text-slate-900">DO NOT TARGET: Support Roles</h3>
+              <span className="px-2 py-1 bg-slate-200 text-slate-800 text-xs font-semibold rounded">EXCLUDE</span>
             </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>When to Target:</strong> When order management is a major bottleneck in the partner experience</p>
-              <p><strong>Pain Points:</strong> Team spends entire day manually processing partner orders, error rates are high, partners bypass system and email/call orders in</p>
-            </div>
-          </div>
-
-          <div className="bg-rose-50 p-4 rounded-lg border border-rose-200">
-            <div className="flex items-start justify-between mb-2">
-              <h3 className="font-bold text-rose-900">SECONDARY PERSONA 3: Director of Customer Experience</h3>
-              <span className="px-2 py-1 bg-rose-200 text-rose-800 text-xs font-semibold rounded">SECONDARY</span>
-            </div>
-            <div className="space-y-2 text-slate-700">
-              <p><strong>When to Target:</strong> When partners are treated as "customers" from an experience standpoint</p>
-              <p><strong>Pain Points:</strong> Partner NPS is declining, partners churn to competitors with better self-service, support team overwhelmed with basic partner questions that should be automated</p>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <ul className="list-disc list-inside space-y-1">
+                <li>Reception / General inbox (can help route, but not qualified)</li>
+                <li>Marketing, HR, IT, Reservations (no operational role)</li>
+                <li>Property owners without local operational role</li>
+              </ul>
             </div>
           </div>
         </div>
+
+        <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+          <p className="font-semibold text-blue-900 mb-2">Verification Questions for Any Contact:</p>
+          <ul className="text-blue-800 text-sm space-y-1">
+            <li>• Who selects tableware and who approves the order?</li>
+            <li>• Do you purchase independently or through a group?</li>
+            <li>• Can you introduce a new supplier, and how is this approved?</li>
+            <li>• Does the decision cover one property or several?</li>
+            <li>• Who owns the next step locally?</li>
+          </ul>
+        </div>
       </ContentSection>
 
-      <ContentSection title="Buying Signals & Targeting Logic">
+      <ContentSection title="Buying Signals for Hotels" icon={<Users className="w-5 h-5" />}>
         <p className="text-slate-600 mb-4">
-          These signals indicate companies are actively experiencing pain with their current partner management approach and may be in-market for a solution.
+          Evidence that a hotel may need professional tableware:
         </p>
 
         <div className="space-y-3">
           <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: M&A Activity</h4>
-            <p className="text-slate-700">Company has recently acquired or been acquired - often triggers partner program consolidation/modernization</p>
+            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Hotel Renovation or Refresh</h4>
+            <p className="text-slate-700">News, website updates, or LinkedIn posts about F&B refresh, restaurant renovation, or complete property update</p>
           </div>
 
           <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: CRM/ERP System Changes</h4>
-            <p className="text-slate-700">Implementing or migrating CRM/ERP systems - prime time to fix partner experience integration</p>
+            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: New Property Opening or Expansion</h4>
+            <p className="text-slate-700">New hotel opening, new restaurant/bar concept, or banquet space expansion at existing property</p>
           </div>
 
           <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Partner Program Changes</h4>
-            <p className="text-slate-700">Launching new partner tiers, restructuring incentives, or announcing partner program overhaul</p>
+            <h4 className="font-semibold text-blue-900 mb-1">TIER 1: Management or Ownership Change</h4>
+            <p className="text-slate-700">New hotel director, new F&B manager, new owner (often triggers operational upgrades including equipment)</p>
           </div>
 
           <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
-            <h4 className="font-semibold text-green-900 mb-1">TIER 2: Legacy System Indicators</h4>
-            <p className="text-slate-700">Job postings mention "modernizing partner portal" or "replacing legacy partner systems"</p>
+            <h4 className="font-semibold text-green-900 mb-1">TIER 2: Events/Banquet Expansion</h4>
+            <p className="text-slate-700">Hotel announcing new event spaces, wedding venues, or conference room expansion</p>
           </div>
 
           <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
-            <h4 className="font-semibold text-green-900 mb-1">TIER 2: Digital Transformation Hiring</h4>
-            <p className="text-slate-700">Recently hired VP Digital Transformation, Head of Partner Experience, or Director of eCommerce</p>
+            <h4 className="font-semibold text-green-900 mb-1">TIER 2: Recent Accreditation or Award</h4>
+            <p className="text-slate-700">Michelin recognition, ISO certifications, or design/quality awards for F&B operations</p>
           </div>
 
           <div className="bg-amber-50 p-3 rounded border-l-4 border-amber-500">
-            <h4 className="font-semibold text-amber-900 mb-1">TIER 3: Partner Growth Signals</h4>
-            <p className="text-slate-700">Announcing expansion of partner network, opening new geographic markets through partners, launching new partner types</p>
+            <h4 className="font-semibold text-amber-900 mb-1">TIER 3: Seasonal High Demand</h4>
+            <p className="text-slate-700">Summer season for mountain/ski resorts, conference season, local event patterns that trigger replacements</p>
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="How We Identify Target Companies" icon={<Users className="w-5 h-5" />}>
+      <ContentSection title="Research & Verification Process" icon={<Users className="w-5 h-5" />}>
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Firmographic Fit:</h4>
+            <h4 className="font-semibold text-slate-900 mb-2">Hotel Research Priority:</h4>
             <p className="text-slate-700">
-              Enterprise or mid-market company ($100M+ revenue) in IT Channel, Equipment Manufacturing, or PE Buy & Build that sells through a partner/channel ecosystem. Presence in North America or Europe. Uses enterprise CRM/ERP systems (SFDC, Dynamics, etc.).
+              Verify on official hotel website first, then local group websites, official announcements. Use directories and professional profiles as supporting sources. When sources conflict, escalate for manual review.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Decision-Maker Contacts:</h4>
+            <h4 className="font-semibold text-slate-900 mb-2">Contact Verification:</h4>
             <p className="text-slate-700">
-              Primary: Director of eCommerce, Head of Digital, VP Digital Transformation, Partner Experience/Programs leaders. Secondary: Director of Sales Operations, Order Management Manager, Director of Customer Experience.
+              For every contact, verify: current role at hotel, local operational responsibility, involvement in F&B decision-making. Recheck role before activation; proposed maximum research age is 30 days.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Exclusion Rules:</h4>
+            <h4 className="font-semibold text-slate-900 mb-2">Priority Gates (Check in Order):</h4>
             <ul className="space-y-2">
-              <ListItem type="cross">Companies already using ZIFT, Impartner, Introw, ChannelScaler, or Euler</ListItem>
-              <ListItem type="cross">Companies with purely direct sales models (no channel/partner ecosystem)</ListItem>
-              <ListItem type="cross">Companies below $100M revenue (too small for platform complexity)</ListItem>
+              <ListItem><strong>Country:</strong> Slovenia or Serbia only</ListItem>
+              <ListItem><strong>Property Type:</strong> Hotel with F&B operations (exclude standalone restaurants)</ListItem>
+              <ListItem><strong>Local Authority:</strong> Verified local management or decision-making role</ListItem>
+              <ListItem><strong>Suppression Check:</strong> Not on existing customer list, active opportunity list, or do-not-contact requests</ListItem>
+              <ListItem><strong>Scoring:</strong> Only after all gates passed - 0-10 scale based on F&B fit, current need, local access, timing</ListItem>
             </ul>
           </div>
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <p className="font-semibold text-blue-900 mb-2">Prioritization:</p>
-            <p className="text-blue-800">
-              Target Tier 1 buying signals first (M&A, CRM/ERP changes, partner program changes) as these indicate active in-market timing. Work Tier 2 and 3 in parallel as nurture sequences.
-            </p>
+            <p className="font-semibold text-blue-900 mb-2">Quality Control Process:</p>
+            <ul className="text-blue-800 text-sm space-y-1">
+              <li>• Manually review first 20 records per campaign</li>
+              <li>• Review 10% of every import after initial batch</li>
+              <li>• Manually review every ambiguous case</li>
+              <li>• Pause affected import if errors found in country, persona, or suppression</li>
+              <li>• All findings recorded with source URL, review date, confidence level</li>
+            </ul>
           </div>
         </div>
       </ContentSection>
@@ -527,47 +517,55 @@ function ICPAndPersonasTab() {
 function FiltersTab() {
   return (
     <>
-      <ContentSection title="Data Enrichment Filters" icon={<Filter className="w-5 h-5" />}>
+      <ContentSection title="Clay Filter Criteria" icon={<Filter className="w-5 h-5" />}>
         <p className="text-slate-600 mb-4">
-          Clay filters and data enrichment criteria for identifying target companies and decision-makers.
+          Hotel targeting criteria for Clay filters. Four separate campaigns organized by country and buyer decision process.
         </p>
 
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Firmographic Filters:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Geography & Hotel Targeting:</h4>
             <ul className="space-y-2">
-              <ListItem><strong>Geography:</strong> North America (US, Canada), Europe (equal weight)</ListItem>
-              <ListItem><strong>Revenue:</strong> $100M+ (mid-market and enterprise)</ListItem>
-              <ListItem><strong>Industries:</strong> IT Channel (VARs, Distributors, MSPs), Equipment Manufacturers, PE Buy & Build platforms</ListItem>
-              <ListItem><strong>Go-to-Market Motion:</strong> Channel-led or partner-led sales model</ListItem>
+              <ListItem><strong>Slovenia:</strong> Hotels only, with F&B operation, local decision-making</ListItem>
+              <ListItem><strong>Serbia:</strong> Hotels only, with F&B operation, local decision-making</ListItem>
+              <ListItem><strong>Exclude:</strong> Restaurants, bars, cafes, hostels, apartments (standalone properties)</ListItem>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Technology Stack Filters:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Hotel Classification Filters:</h4>
             <ul className="space-y-2">
-              <ListItem><strong>Include if using:</strong> Salesforce, Microsoft Dynamics, Liferay, WebInfinity</ListItem>
-              <ListItem><strong>Exclude if using:</strong> ZIFT, Impartner, Introw, ChannelScaler, Euler (direct competitors)</ListItem>
+              <ListItem><strong>Priority A (Target First):</strong> 4-5 star hotels + strong F&B + local authority + current project verified</ListItem>
+              <ListItem><strong>Priority B (Secondary):</strong> 3-5 star boutique/design + F&B operation + local management + unknown timing</ListItem>
+              <ListItem><strong>Priority C (Research):</strong> Group purchasing without local route OR weak F&B operations</ListItem>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Buying Signal Enrichment:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Hotel Signals for Clay Enrichment:</h4>
             <ul className="space-y-2">
-              <ListItem><strong>M&A Activity:</strong> Recent acquisitions, merger announcements, PE backing</ListItem>
-              <ListItem><strong>System Changes:</strong> CRM/ERP implementation projects, digital transformation initiatives</ListItem>
-              <ListItem><strong>Program Changes:</strong> Partner program restructuring, new partner tier launches</ListItem>
-              <ListItem><strong>Hiring Signals:</strong> VP Digital Transformation, Head of Partner Experience, Director of eCommerce roles</ListItem>
+              <ListItem><strong>Current Project Signals:</strong> Renovation, F&B refresh, new opening, banquet expansion, new concept</ListItem>
+              <ListItem><strong>Management Changes:</strong> New director, new F&B manager, new owner (triggers upgrades)</ListItem>
+              <ListItem><strong>Quality/Awards:</strong> Michelin recognition, ISO certifications, design awards, accreditations</ListItem>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Contact Data Requirements:</h4>
+            <h4 className="font-semibold text-slate-900 mb-3">Contact Targeting by Campaign:</h4>
             <ul className="space-y-2">
-              <ListItem><strong>Primary Titles:</strong> Director of eCommerce, Head of Digital, VP Digital Transformation, VP/Director Partner Experience, Director Partner Programs, Head of Partner Operations</ListItem>
-              <ListItem><strong>Secondary Titles:</strong> Director Sales Operations, Order Management Manager, Quote Desk Manager, Director Customer Experience</ListItem>
-              <ListItem><strong>Email Required:</strong> Yes (business email preferred)</ListItem>
-              <ListItem><strong>LinkedIn:</strong> Highly preferred for validation and multi-touch sequences</ListItem>
+              <ListItem><strong>Hotel Leadership Track:</strong> Hotel Director, General Manager (primary contacts for hotel-level decisions)</ListItem>
+              <ListItem><strong>F&B/Procurement Track:</strong> F&B Manager, Executive Chef, Procurement Manager (operational roles)</ListItem>
+              <ListItem><strong>Exclude Roles:</strong> Reception, marketing, HR, IT, reservations (no procurement authority)</ListItem>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Suppression Criteria:</h4>
+            <ul className="space-y-2">
+              <ListItem>Existing customers (confirmed in DukeGroup records)</ListItem>
+              <ListItem>Active opportunity hotels (currently in discussion with DukeGroup)</ListItem>
+              <ListItem>Do-not-contact requests (explicit opt-outs)</ListItem>
+              <ListItem>Closed properties or unverifiable information</ListItem>
             </ul>
           </div>
         </div>
@@ -579,45 +577,45 @@ function FiltersTab() {
 function PromptsTab() {
   return (
     <>
-      <ContentSection title="AI-Powered Prospect Research" icon={<Code className="w-5 h-5" />}>
+      <ContentSection title="AI Evaluation Prompts for Hotels" icon={<Code className="w-5 h-5" />}>
         <p className="text-slate-600 mb-4">
-          AI prompts for identifying buying signals and prioritizing prospects.
+          AI prompts for researching and qualifying hotels for target campaigns.
         </p>
 
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">M&A Activity Signal (Tier 1)</h4>
-            <CodeBlock code="Has this company been involved in M&A activity (acquisition, merger, or PE backing) in the past 12 months? Look for: press releases, news articles, SEC filings, company announcements about acquisitions or being acquired. Return YES with details if found, NO if not." />
+            <h4 className="font-semibold text-slate-900 mb-2">Hotel F&B Strength Assessment</h4>
+            <CodeBlock code="Does this hotel have a strong F&B operation? Look for: detailed website description of restaurants, bars, conference facilities, or banquet spaces; menus or culinary information; F&B-specific manager or chef bios; or dedicated pages for dining venues. Return YES with details if found, NO if no clear F&B focus." />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">CRM/ERP System Change Signal (Tier 1)</h4>
-            <CodeBlock code="Is this company currently implementing, migrating, or recently changed their CRM or ERP system? Look for: job postings mentioning CRM/ERP implementations, press releases about system upgrades, LinkedIn posts from employees about system migrations, news about Salesforce/Dynamics/SAP projects. Return YES with details if found, NO if not." />
+            <h4 className="font-semibold text-slate-900 mb-2">Hotel Renovation/Project Signals (Tier 1)</h4>
+            <CodeBlock code="Is this hotel currently undergoing renovation or announcing a new project? Look for: recent news about F&B refresh, restaurant renovation, new opening, banquet space expansion; website updates with 'coming soon' or 'newly renovated'; LinkedIn posts or press releases about property updates. Return YES with project details and date if found, NO if not." />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Partner Program Change Signal (Tier 1)</h4>
-            <CodeBlock code="Has this company announced changes to their partner program in the past 12 months? Look for: new partner tier structures, partner program relaunch announcements, changes to partner incentives/rebates, partner portal updates. Return YES with details if found, NO if not." />
+            <h4 className="font-semibold text-slate-900 mb-2">Management Change Signals (Tier 1)</h4>
+            <CodeBlock code="Has this hotel recently changed management? Look for: new hotel director or general manager bios on website; new F&B manager or head chef information; LinkedIn posts announcing new leadership arrivals; press releases about management changes. Return YES with new manager names and titles if found, NO if not." />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Legacy System Indicator (Tier 2)</h4>
-            <CodeBlock code="Does this company show signs of using legacy partner management systems? Look for: job postings mentioning 'modernize partner portal' or 'replace legacy partner system', old portal technology (WebSphere, old Liferay versions), partner complaints about portal on social media/reviews. Return YES with details if found, NO if not." />
+            <h4 className="font-semibold text-slate-900 mb-2">Hotel Category & Star Rating</h4>
+            <CodeBlock code="What is this hotel's star rating and primary category? Look for: official star rating (3/4/5 stars), hotel type (boutique, design, wellness, resort, conference); online review sites (Google, TripAdvisor); official hotel classification. Return the confirmed star rating and category, or 'Unknown' if not clearly stated." />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Digital Transformation Hiring Signal (Tier 2)</h4>
-            <CodeBlock code="Has this company recently hired (past 6 months) a VP Digital Transformation, Head of Partner Experience, or Director of eCommerce? Check LinkedIn for new hires in these roles. Return YES with name and title if found, NO if not." />
+            <h4 className="font-semibold text-slate-900 mb-2">Local Decision-Making Authority</h4>
+            <CodeBlock code="Does this hotel have local management authority for F&B procurement, or is this controlled by foreign headquarters? Look for: hotel management team bios with Slovenia/Serbia location; independent hotel status; local ownership; or group structure with local F&B director. Return 'Local Authority' if independent or local management found, 'Group Controlled' if central headquarters appears to control decisions, or 'Unknown' if unclear." />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Partner Growth Signal (Tier 3)</h4>
-            <CodeBlock code="Is this company actively expanding their partner network? Look for: announcements about entering new geographic markets through partners, launching new partner types (MSP, VAR, etc.), press releases about growing partner ecosystem. Return YES with details if found, NO if not." />
+            <h4 className="font-semibold text-slate-900 mb-2">Quality/Accreditation Signals (Tier 2)</h4>
+            <CodeBlock code="Does this hotel have quality certifications or awards? Look for: Michelin recognition or recommendation; ISO certifications; design awards; published menus or culinary reputation; professional certifications; local tourism board awards. Return YES with specific certifications found, or NO if none evident." />
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Competitor Technology Check (Exclusion)</h4>
-            <CodeBlock code="Does this company use any of these competitor platforms: ZIFT, Impartner, Introw, ChannelScaler, Euler? Check their website technology stack, job postings mentioning these platforms, case studies/testimonials on competitor websites. Return YES with platform name if found, NO if clear they don't use these." />
+            <h4 className="font-semibold text-slate-900 mb-2">Tableware Procurement Need</h4>
+            <CodeBlock code="What evidence suggests this hotel may need professional tableware? Look for: mention of high-quality dining, gourmet restaurants, banquet facilities, events or conferences, multi-cuisine offerings, or recent property renovations. Return YES if purchasing need is likely based on hotel type/operations, or NO if unclear." />
           </div>
         </div>
       </ContentSection>
@@ -628,10 +626,90 @@ function PromptsTab() {
 function CampaignsSequencesTab() {
   return (
     <>
+      <ContentSection title="Four-Campaign Architecture" icon={<Zap className="w-5 h-5" />}>
+        <p className="text-slate-600 mb-4">
+          DukeGroup campaigns target hotels in Slovenia and Serbia, separated by country and buyer decision process (hotel leadership vs. F&B/procurement operations).
+        </p>
+
+        <div className="space-y-4">
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+            <h3 className="font-bold text-blue-900 mb-2">SI Campaign 1: Slovenia - Hotel Leadership Track</h3>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Audience:</strong> Hotel Directors, General Managers with budget authority</p>
+              <p><strong>Approach:</strong> Lead with hotel need validation, mention verified projects, offer discussion with Dusan</p>
+              <p><strong>Messaging:</strong> Professional tableware for hotel renovations, F&B refresh, or new concepts</p>
+              <p><strong>Target:</strong> 250 hotels (mathematical allocation)</p>
+            </div>
+          </div>
+
+          <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+            <h3 className="font-bold text-green-900 mb-2">SI Campaign 2: Slovenia - F&B/Procurement Track</h3>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Audience:</strong> F&B Managers, Executive Chefs, Procurement specialists</p>
+              <p><strong>Approach:</strong> Understand hotel's selection process, ask about timing, clarify local vs. group procurement</p>
+              <p><strong>Messaging:</strong> Technical specifications, brand portfolio, quality standards, customization options</p>
+              <p><strong>Target:</strong> 250 hotels (mathematical allocation)</p>
+            </div>
+          </div>
+
+          <div className="bg-purple-50 p-4 rounded-lg border border-purple-200">
+            <h3 className="font-bold text-purple-900 mb-2">SR Campaign 1: Serbia - Hotel Leadership Track</h3>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Audience:</strong> Hotel Directors, General Managers with budget authority</p>
+              <p><strong>Approach:</strong> Lead with hotel need validation, mention verified projects, offer discussion with Dusan</p>
+              <p><strong>Messaging:</strong> Professional tableware for hotel renovations, F&B refresh, or new concepts</p>
+              <p><strong>Target:</strong> 250 hotels (mathematical allocation)</p>
+            </div>
+          </div>
+
+          <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
+            <h3 className="font-bold text-amber-900 mb-2">SR Campaign 2: Serbia - F&B/Procurement Track</h3>
+            <div className="space-y-2 text-slate-700 text-sm">
+              <p><strong>Audience:</strong> F&B Managers, Executive Chefs, Procurement specialists</p>
+              <p><strong>Approach:</strong> Understand hotel's selection process, ask about timing, clarify local vs. group procurement</p>
+              <p><strong>Messaging:</strong> Technical specifications, brand portfolio, quality standards, customization options</p>
+              <p><strong>Target:</strong> 250 hotels (mathematical allocation)</p>
+            </div>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Sequencing Rules" icon={<Mail className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Initial Sequence (3 touches maximum):</h4>
+            <ul className="space-y-2 text-slate-700 text-sm">
+              <ListItem><strong>Day 1:</strong> Initial outreach with verified hotel fact + need question</ListItem>
+              <ListItem><strong>Day 5:</strong> Substantive follow-up with additional context or offer</ListItem>
+              <ListItem><strong>Day 12:</strong> Final short message (option to proceed or continue nurture)</ListItem>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Automation Stops When:</h4>
+            <ul className="space-y-2 text-slate-700 text-sm">
+              <ListItem>Positive reply received (hand to DukeGroup)</ListItem>
+              <ListItem>Negative reply or opt-out (suppress)</ListItem>
+              <ListItem>Out of office reply (resume after return date)</ListItem>
+              <ListItem>Hard bounce (remove from future campaigns)</ListItem>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-2">Overlapping Contacts Rule:</h4>
+            <p className="text-slate-700 text-sm mb-2">
+              One contact = one active campaign. If contact replies positively, stop automated outreach across the hotel. Approach second contact only after:
+            </p>
+            <ul className="space-y-1 text-slate-700 text-sm list-disc list-inside">
+              <li>Manual review of first response (min 10 business days)</li>
+              <li>First sequence has ended</li>
+              <li>Only after DukeGroup approves next approach</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
       <SequencesTab clientId="dukegroup" />
-      <div className="mt-8">
-        <CampaignsTabGeneric />
-      </div>
     </>
   );
 }
