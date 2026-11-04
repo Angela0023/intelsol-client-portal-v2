@@ -157,19 +157,19 @@
         "emailNumber": 1,
         "type": "Prva poruka",
         "subject": "Stona oprema za vaš hotelski restoran",
-        "body": "Poštovani {{first_name}},\n\nzanima me da li planirate dopunu stone opreme ili tražite nove mogućnosti za prezentaciju jela u hotelskom restoranu.\n\nU DukeGroupu sarađujemo sa međunarodnim brendovima profesionalne stone opreme, među kojima su FIGGJO i SERAX. Pri izboru polazimo od vašeg načina posluživanja, prezentacije jela i potreba tima.\n\nDa li bi vam koristio kratak razgovor o tome šta bi bilo zanimljivo za vaš restoran?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+        "body": "Poštovani {{first_name}},\n\nzanima me da li planirate dopunu stone opreme ili tražite nove mogućnosti za prezentaciju jela u hotelskom restoranu.\n\nU DukeGroupu sarađujemo sa međunarodnim brendovima profesionalne stone opreme, među kojima su FIGGJO i SERAX. Pri izboru polazimo od vašeg načina posluživanja, prezentacije jela i potreba tima.\n\nDa li bi vam koristio kratak razgovor o tome šta bi bilo zanimljivo za vaš restoran?\n\nSrdačan pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 2,
         "type": "Prvi podsjetnik (4-5 radnih dana)",
         "subject": "RE: Stona oprema za vaš hotelski restoran",
-        "body": "Poštovani {{first_name}},\n\njavljam se ponovo povodom izbora stone opreme za vaš restoran.\n\nPored izbora tanjira i drugih proizvoda, kod brenda FIGGJO možemo da predstavimo i mogućnost dekora po meri ako biste želeli da opremu uskladite sa vizuelnim identitetom hotela ili restorana.\n\nAko mi javite koji deo ponude želite da dopunite, mogu da vam pripremim nekoliko relevantnih predloga za pregled.\n\nDa li bi vam to koristilo pri nekoj od planiranih nabavki?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+        "body": "Poštovani {{first_name}},\n\njavljam se ponovo povodom izbora stone opreme za vaš restoran.\n\nPored izbora tanjira i drugih proizvoda, kod brenda FIGGJO možemo da predstavimo i mogućnost dekora po meri ako biste želeli da opremu uskladite sa vizuelnim identitetom hotela ili restorana.\n\nAko mi javite koji deo ponude želite da dopunite, mogu da vam pripremim nekoliko relevantnih predloga za pregled.\n\nDa li bi vam to koristilo pri nekoj od planiranih nabavki?\n\nSrdačan pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 3,
         "type": "Završna poruka (5-7 radnih dana)",
         "subject": "RE: Stona oprema za vaš hotelski restoran",
-        "body": "Poštovani {{first_name}},\n\njavljam se još jednom da proverim da li bi vam razgovor o stonoj opremi za vaš restoran trenutno bio koristan.\n\nAko izbor obavljate zajedno sa nabavkom ili upravom hotela, u razgovor može da se uključi i odgovorni kolega.\n\nAko tema trenutno nije aktuelna, bio bih zahvalan na informaciji kada obično planirate dopunu opreme.\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+        "body": "Poštovani {{first_name}},\n\njavljam se još jednom da proverim da li bi vam razgovor o stonoj opremi za vaš restoran trenutno bio koristan.\n\nAko izbor obavljate zajedno sa nabavkom ili upravom hotela, u razgovor može da se uključi i odgovorni kolega.\n\nAko tema trenutno nije aktuelna, bio bih zahvalan na informaciji kada obično planirate dopunu opreme.\n\nSrdačan pozdrav,\n{{signature}}"
       }
     ]
   }
