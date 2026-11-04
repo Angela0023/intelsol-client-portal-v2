@@ -94,37 +94,5 @@
         "body": "Dear {{FirstName}},\n\nFinal note: if you're evaluating tableware or planning equipment refresh, we'd welcome the opportunity to discuss your needs and suitable options.\n\nBest regards,\nIntelsol for DukeGroup"
       }
     ]
-  },
-  {
-    "id": "sequence-4",
-    "tierName": "SEQUENCE D: Serbia F&B & Procurement",
-    "tierColor": "yellow",
-    "campaign": "SR FNB",
-    "country": "Serbia",
-    "track": "F&B & Procurement",
-    "targetPersonas": "F&B Manager, Chef, Procurement Lead - Operational and purchasing decision makers for restaurant equipment",
-    "messagingAngle": "Equipment selection and purchasing process for restaurant operations",
-    "clayFilter": "Serbia - F&B and Procurement",
-    "targetPositions": "F&B Director/Manager, Chef, Procurement Manager",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Equipment za {{CompanyName}} restorana",
-        "body": "Dear {{FirstName}},\n\nWe would like to understand how {{CompanyName}} selects tableware and whether replenishment is planned.\n\nDukeGroup represents several brands for professional use, including FIGGJO and SERAX.\n\nWould a short conversation about your needs be useful?\n\nDo you manage selection and purchasing locally or through central procurement?\n\nBest regards,\nIntelsol for DukeGroup"
-      },
-      {
-        "emailNumber": 2,
-        "type": "Follow-Up 1",
-        "subject": "RE: Equipment za {{CompanyName}} - purchasing process",
-        "body": "Dear {{FirstName}},\n\nFollowing up on equipment and tableware for {{CompanyName}}.\n\nMost F&B teams and procurement managers we work with focus on:\n- Professional quality and durability for daily use\n- Design that fits your restaurant concept\n- Reliable suppliers with good support\n- Clear process for approval and ordering\n\nDukeGroup works with hotels across Serbia and has established supplier relationships.\n\nWould it be helpful to discuss your process and current needs? Best regards,\nIntelsol for DukeGroup"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Last message - DukeGroup equipment za {{CompanyName}}",
-        "body": "Dear {{FirstName}},\n\nLast message: if you're planning any tableware or equipment refresh, we'd welcome a discussion about your needs and DukeGroup's options.\n\nBest regards,\nIntelsol for DukeGroup"
-      }
-    ]
   }
 ]
