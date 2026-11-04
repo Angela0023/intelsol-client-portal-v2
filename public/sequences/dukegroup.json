@@ -70,19 +70,19 @@
         "emailNumber": 1,
         "type": "Prva poruka",
         "subject": "Stona oprema za {{company}}",
-        "body": "Poštovani {{first_name}},\n\nzanima me da li u narednim mesecima planirate dopunu ili obnovu stone opreme za hotelski restoran, posluživanje doručka ili druge ugostiteljske prostore.\n\nU DukeGroupu smo specijalizovani za profesionalnu stonu opremu za hotele. Zastupamo brendove kao što su FIGGJO i SERAX i pomažemo pri izboru porcelana, čaša, pribora za jelo i drugih proizvoda prema potrebama i konceptu hotela.\n\nDa li bi vam odgovarao kratak razgovor o vašim planovima i mogućnostima saradnje?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+        "body": "Poštovani {{first_name}},\n\nzanima me da li u narednim mesecima planirate dopunu ili obnovu stone opreme za hotelski restoran, posluživanje doručka ili druge ugostiteljske prostore.\n\nU DukeGroupu smo specijalizovani za profesionalnu stonu opremu za hotele. Zastupamo brendove kao što su FIGGJO i SERAX i pomažemo pri izboru porcelana, čaša, pribora za jelo i drugih proizvoda prema potrebama i konceptu hotela.\n\nDa li bi vam odgovarao kratak razgovor o vašim planovima i mogućnostima saradnje?\n\nSrdačan pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 2,
         "type": "Prvi podsjetnik (4-5 radnih dana)",
         "subject": "RE: Stona oprema za {{company}}",
-        "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o stonoj opremi za vaš hotel.\n\nRazgovor može biti koristan i ako planirate samo dopunu postojećeg inventara ili novi izbor za pojedini deo ponude, na primer doručak, restoran ili bankete.\n\nNa osnovu vaših potreba mogao bih da vam predstavim uži izbor proizvoda iz našeg portfolija.\n\nDa li je neka od ovih nabavki trenutno aktuelna kod vas?\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+        "body": "Poštovani {{first_name}},\n\nnedavno sam vam pisao o stonoj opremi za vaš hotel.\n\nRazgovor može biti koristan i ako planirate samo dopunu postojećeg inventara ili novi izbor za pojedini deo ponude, na primer doručak, restoran ili bankete.\n\nNa osnovu vaših potreba mogao bih da vam predstavim uži izbor proizvoda iz našeg portfolija.\n\nDa li je neka od ovih nabavki trenutno aktuelna kod vas?\n\nSrdačan pozdrav,\n{{signature}}"
       },
       {
         "emailNumber": 3,
         "type": "Završna poruka (5-7 radnih dana)",
         "subject": "RE: Stona oprema za {{company}}",
-        "body": "Poštovani {{first_name}},\n\njavljam se još jednom da proverim da li je izbor ili dopuna stone opreme trenutno aktuelna tema za vaš hotel.\n\nAko jeste, možemo da dogovorimo kratak razgovor. Ako ovu oblast vodi neko od kolega, bio bih zahvalan da me uputite na pravu osobu.\n\nAko nabavku planirate kasnije, slobodno mi javite kada bi bilo pogodno da se ponovo javim.\n\nSrdačan pozdrav,\nDusan\n{{signature}}"
+        "body": "Poštovani {{first_name}},\n\njavljam se još jednom da proverim da li je izbor ili dopuna stone opreme trenutno aktuelna tema za vaš hotel.\n\nAko jeste, možemo da dogovorimo kratak razgovor. Ako ovu oblast vodi neko od kolega, bio bih zahvalan da me uputite na pravu osobu.\n\nAko nabavku planirate kasnije, slobodno mi javite kada bi bilo pogodno da se ponovo javim.\n\nSrdačan pozdrav,\n{{signature}}"
       }
     ]
   },
