@@ -26,7 +26,8 @@
         "subject": "Re: Podpora strankam pri {{company_name}}",
         "body": "Pozdravljeni g./ga. {{second_name}},\n\nČe imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, vam lahko pripravim personaliziran demo našega AI agenta.\n\nBi nasprotovali temu, da vam pošljem dostop do vašega personaliziranega demo AI agenta?\n\nLep pozdrav,\n"
       }
-    ]
+    ],
+    "status": "confirmed"
   },
   {
     "id": "tourism-hospitality",
@@ -55,7 +56,8 @@
         "subject": "Re: Vprašanja gostov pri {{company_name}}",
         "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravim personaliziran demo našega AI agenta.\n\nBi nasprotovali temu, da vam pošljem dostop do vašega personaliziranega demo AI agenta?\n\nLep pozdrav,\n"
       }
-    ]
+    ],
+    "status": "confirmed"
   },
   {
     "id": "ecommerce-retail-option-b",
@@ -84,7 +86,8 @@
         "subject": "Re: Podpora strankam pri {{company_name}}",
         "body": "Pozdravljeni {{first_name}},\n\nče imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, vam lahko pripravimo personaliziran demo našega AI agenta.\n\nBi želeli, da vam pripravimo kratek demo na primeru vašega podjetja?\n\nLep pozdrav,\nDavid\nPACIA"
       }
-    ]
+    ],
+    "status": "confirmed"
   },
   {
     "id": "tourism-hospitality-option-b",
@@ -113,6 +116,7 @@
         "subject": "Re: Vprašanja gostov pri {{company_name}}",
         "body": "Pozdravljeni {{first_name}},\n\nče bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravimo personaliziran demo našega AI agenta.\n\nBi želeli, da vam pripravimo kratek demo na primeru vašega podjetja?\n\nLep pozdrav,\nDavid\nPACIA"
       }
-    ]
+    ],
+    "status": "confirmed"
   }
 ]
