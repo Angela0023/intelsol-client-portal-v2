@@ -97,7 +97,7 @@
     "totalLeads": 216,
     "leadsEmailed": 216,
     "month": "October",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "performance": {
       "emailsSent": 627,
       "opens": 0,
