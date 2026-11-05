@@ -56,5 +56,63 @@
         "body": "Pozdravljeni {{first_name}},\n\nČe bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravim personaliziran demo našega AI agenta.\n\nBi nasprotovali temu, da vam pošljem dostop do vašega personaliziranega demo AI agenta?\n\nLep pozdrav,\n"
       }
     ]
+  },
+  {
+    "id": "ecommerce-retail-option-b",
+    "tierName": "E-commerce & Retail (Option B)",
+    "tierColor": "orange",
+    "targetPersonas": "All positions - Owner/CEO, COO, Head of Support/Customer Service, Head of Customer Experience",
+    "messagingAngle": "Reduce time spent on recurring delivery, returns, and product enquiries",
+    "clayFilter": "Slovenia - E-commerce & Retail",
+    "targetPositions": "All positions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Podpora strankam pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\npred črnim petkom in decembrsko sezono me zanima, kako pri {{company_name}} obvladujete ponavljajoča sa vprašanja kupcev glede dostave, vračil in izdelkov.\n\nPri PACIA za podjetja pripravljamo prilagojene AI sisteme za podporo strankam, ki odgovarjajo na podlagi vaših poslovnih informacij in pravil.\n\nSkupaj lahko preverimo, kateri del podpore bi bilo pri vas smiselno razbremeniti.\n\nBi bil kratek pogovor o tem smiseln?\n\nLep pozdrav,\nDavid\nPACIA"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Podpora strankam pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\npri spletnih trgovcih se pogosto ponavljajo vprašanja glede dostave, vračil, razpoložljivosti in informacij o izdelkih.\n\nDel teh vprašanj lahko obravnava AI podpora na podlagi vaših informacij, tudi izven delovnega časa. Tako se lahko vaša ekipa bolj posveti zahtevnejšim primerom.\n\nNa kratkem klicu bi lahko preverili, kateri del vaše podpore bi bilo smiselno avtomatizirati.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\nDavid\nPACIA"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Podpora strankam pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\nče imate pri {{company_name}} precej ponavljajočih se vprašanj kupcev in razmišljate, kako bi del podpore razbremenili brez dodatnega zaposlovanja, vam lahko pripravimo personaliziran demo našega AI agenta.\n\nBi želeli, da vam pripravimo kratek demo na primeru vašega podjetja?\n\nLep pozdrav,\nDavid\nPACIA"
+      }
+    ]
+  },
+  {
+    "id": "tourism-hospitality-option-b",
+    "tierName": "Tourism & Hospitality (Option B)",
+    "tierColor": "purple",
+    "targetPersonas": "All positions - Owner/CEO, COO, Head of Support/Customer Service, Head of Customer Experience",
+    "messagingAngle": "Improve guest enquiry coverage and capacity during peak periods, handle multilingual support",
+    "clayFilter": "Slovenia - Tourism & Hospitality",
+    "targetPositions": "All positions",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "Vprašanja gostov pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\npri komunikaciji z gosti se pogosto ponavljajo podobna vprašanja glede prihoda, rezervacij, storitev in drugih praktičnih informacij.\n\nKako to danes rešujete pri {{company_name}}, predvsem izven delovnega časa ali kadar obiskovalci pišejo v različnih jezikih?\n\nPri PACIA izdelujemo prilagojene AI sisteme za podporo, ki obiskovalcem odgovarjajo na podlagi informacij o vaši ponudbi. Pomagajo lahko tudi pri vprašanjih pred rezervacijo in obiskovalce usmerijo k oddaji povpraševanja.\n\nBi bil kratek pogovor smiseln?\n\nLep pozdrav,\nDavid\nPACIA"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: Vprašanja gostov pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\npri turističnih ponudnikih se ista vprašanja pogosto ponavljajo pred prihodom, zvečer, med vikendi ali v različnih jezikih.\n\nNa takšna vprašanja lahko AI podpora odgovarja tudi takrat, ko vaša ekipa ni na voljo, na podlagi informacij, ki jih določite vi.\n\nNa kratkem klicu bi lahko pogledali, kateri del komunikacije z obiskovalci bi bilo pri vas smiselno avtomatizirati.\n\nBi vam ustrezalo 20 minut?\n\nLep pozdrav,\nDavid\nPACIA"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: Vprašanja gostov pri {{company_name}}",
+        "body": "Pozdravljeni {{first_name}},\n\nče bi želeli obiskovalcem omogočiti hitrejši dostop do informacij tudi izven delovnega časa ali v več jezikih, ne da bi s tem dodatno obremenili ekipo, vam lahko pripravimo personaliziran demo našega AI agenta.\n\nBi želeli, da vam pripravimo kratek demo na primeru vašega podjetja?\n\nLep pozdrav,\nDavid\nPACIA"
+      }
+    ]
   }
 ]
