@@ -1,0 +1,7 @@
+Position,Job Title Variants,Seniority,Segment,Search Priority,Notes
+"Owner/CEO","Owner, CEO, Founder, Managing Director, President",C-Level,"E-commerce & Retail, Tourism & Hospitality",High,Growth, operating cost, impact of support on small management team; first contact in founder-led businesses
+"COO/Operations Lead","COO, Operations Director, Head of Operations",Director,"E-commerce & Retail, Tourism & Hospitality",High,Staff capacity, process consistency, peak demand; likely business sponsor
+"Head of Support/Customer Service","Head of Support, Head of Customer Service, Support Manager, Customer Service Manager",Manager,"E-commerce & Retail, Tourism & Hospitality",High,Repeated questions, backlogs, quality, team time; treat as likely internal champion
+"Head of Customer Experience","Head of CX, Customer Experience Manager, Director of Customer Experience",Director,"E-commerce & Retail, Tourism & Hospitality",High,Consistent information and customer effort across channels
+"Digital Transformation Lead","Digital Transformation Manager, Head of Digital, Digital Director",Director,"E-commerce & Retail, Tourism & Hospitality",Medium,Feasible automation project with measurable ownership; link support use case to existing improvement initiative
+"CTO/Technology Lead","CTO, Chief Technology Officer, Head of Technology, IT Manager",Director,"E-commerce & Retail, Tourism & Hospitality",Low,Access, integration effort, security, maintenance; include once business use case established; don't assume ownership of support budget
