@@ -37,19 +37,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Employee wellness at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for employee wellness and benefits programs.\n\nAt Zen2Fit, we help companies consolidate fragmented wellness into one platform with better employee engagement.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for employee wellness and benefits programs.\n\nAt Zen2Fit, we help companies consolidate fragmented wellness into one platform with better employee engagement.\n\nWould that be you, or can you point me in the right direction?\n\nBest,"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
         "subject": "Re: Employee wellness at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about consolidating wellness programs.\n\nJust trying to find the right person at {{company_name}} to discuss this with.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about consolidating wellness programs.\n\nJust trying to find the right person at {{company_name}} to discuss this with.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\n"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-Up",
         "subject": "One more thing on wellness",
-        "body": "Hi {{first_name}},\n\nLast email from me.\n\nIf employee wellness programs are on your radar, I'd like to connect you with the right person at Zen2Fit. If not, no problem.\n\nBest,\nMatej"
+        "body": "Hi {{first_name}},\n\nLast email from me.\n\nIf employee wellness programs are on your radar, I'd like to connect you with the right person at Zen2Fit. If not, no problem.\n\nBest,\n"
       }
     ]
   },
