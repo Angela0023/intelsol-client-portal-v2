@@ -64,19 +64,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Employee wellness programs",
-        "body": "Hi {{first_name}},\n\nI'm trying to connect with the person at {{company_name}} who oversees employee wellness and benefits.\n\nWe work with companies like NLB and Carlsberg to bring fitness, mental health, and nutrition programs together on one platform.\n\nIs that you, or could you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\nI'm trying to connect with the person at {{company_name}} who oversees employee wellness and benefits.\n\nWe work with companies like NLB and Carlsberg to bring fitness, mental health, and nutrition programs together on one platform.\n\nIs that you, or could you point me in the right direction?\n\nBest,\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
         "subject": "Re: Employee wellness programs",
-        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for employee wellness at {{company_name}}.\n\nAre you the person I should be talking to, or would you mind pointing me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for employee wellness at {{company_name}}.\n\nAre you the person I should be talking to, or would you mind pointing me in the right direction?\n\nBest,\n"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-Up",
         "subject": "Last one",
-        "body": "Hi {{first_name}},\n\nIf you're the wellness lead at {{company_name}}, I'd like to show you what we do. If not, a quick intro to the right person would be really helpful.\n\nBest,\nMatej"
+        "body": "Hi {{first_name}},\n\nIf you're the wellness lead at {{company_name}}, I'd like to show you what we do. If not, a quick intro to the right person would be really helpful.\n\nBest,"
       }
     ]
   },
