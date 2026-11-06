@@ -10,19 +10,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Wellness programs at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for employee wellness and benefits programs.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for employee wellness and benefits programs.\n\nWould that be you, or can you point me in the right direction?\n\nBest,\n"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
         "subject": "Quick question on wellness at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nJust following up on my previous email about employee wellness programs at {{company_name}}.\n\nIs this something you handle, or can you point me to the right person?\n\nBest,\nMatej\nZen2Fit"
+        "body": "Hi {{first_name}},\n\nJust following up on my previous email about employee wellness programs at {{company_name}}.\n\nIs this something you handle, or can you point me to the right person?\n\nBest,\n"
       },
       {
         "emailNumber": 3,
         "type": "Final Follow-Up",
         "subject": "Wellness benefits lead at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nLast note - I'm just trying to connect with whoever handles wellness programs at {{company_name}}.\n\nIf that's not you, no worries - just a quick referral would help.\n\nBest,\nMatej"
+        "body": "Hi {{first_name}},\n\nLast note - I'm just trying to connect with whoever handles wellness programs at {{company_name}}.\n\nIf that's not you, no worries - just a quick referral would help.\n\nBest,\n"
       }
     ]
   },
