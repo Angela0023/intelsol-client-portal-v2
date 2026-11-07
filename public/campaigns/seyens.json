@@ -2,12 +2,12 @@
   {
     "campaignName": "🧬 Seyens | Life Sciences - US | R&D Learning & Capability Development",
     "dateLaunched": "11/6/2026",
-    "totalLeads": 0,
-    "leadsEmailed": 0,
+    "totalLeads": 193,
+    "leadsEmailed": 6,
     "month": "November",
-    "status": "DRAFTED",
+    "status": "ACTIVE",
     "performance": {
-      "emailsSent": 0,
+      "emailsSent": 6,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
