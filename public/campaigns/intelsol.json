@@ -35,13 +35,13 @@
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
-      "replies": 9,
-      "replyRate": "3.20",
+      "replies": 10,
+      "replyRate": "3.56",
       "bounces": 5,
       "bounceRate": "1.78",
       "unsubscribed": 0,
-      "interested": 2,
-      "interestedRate": "0.71",
+      "interested": 3,
+      "interestedRate": "1.07",
       "notInterested": 0
     }
   },
