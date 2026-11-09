@@ -40,7 +40,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in konkurenčnost podjetja",
-            "body": "Spoštovani {{lastName}},\n\nker nisem prejel odgovora, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe se boste v prihodnje ukvarjali z vprašanjem, kako lahko AI poleg večje učinkovitosti prispeva tudi k novi poslovni vrednosti, bomo z veseljem na voljo za pogovor.\n\nHvala za vaš čas in vse dobro.\n\nLep pozdrav,\n{{signature}}"
+            "body": "Spoštovani {{lastName}},\n\nker odgovora na prejšnje sporočilo ni bilo, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe se boste v prihodnje ukvarjali z vprašanjem, kako lahko AI poleg večje učinkovitosti prispeva tudi k novi poslovni vrednosti, bomo z veseljem na voljo za pogovor.\n\nHvala za vaš čas in vse dobro.\n\nLep pozdrav,\n{{signature}}"
           }
         }
       }
@@ -87,7 +87,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in razvoj vodstva",
-            "body": "Spoštovani {{lastName}},\n\nker nisem prejel odgovora, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe boste v prihodnje načrtovali razvoj vodstvene ekipe na področju umetne inteligence, bomo z veseljem predstavili možnosti internega programa The Business Power of AI.\n\nLep pozdrav,\n{{signature}}"
+            "body": "Spoštovani {{lastName}},\n\nker odgovora na prejšnje sporočilo ni bilo, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe boste v prihodnje načrtovali razvoj vodstvene ekipe na področju umetne inteligence, bomo z veseljem predstavili možnosti internega programa The Business Power of AI.\n\nLep pozdrav,\n{{signature}}"
           }
         }
       }
