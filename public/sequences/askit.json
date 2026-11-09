@@ -16,7 +16,7 @@
         "translations": {
           "slovenian": {
             "subject": "AI in konkurenčnost podjetja",
-            "body": "Spoštovani {{lastName}},\n\nvečina podjetij danes umetno inteligenco uporablja predvsem za optimizacijo procesov, zniževanje stroškov in izboljšanje produktivnosti.\n\nVendar se njen večji poslovni potencial odpira drugje – pri ustvarjanju nove vrednosti za kupce, razvoju novih poslovnih modelov in gradnji dolgoročne konkurenčne prednosti.\n\nPri AIVaaS se ukvarjamo prav s tem prehodom: kako AI iz orodja za izboljšanje učinkovitosti postane del poslovne strategije.\n\nČe je razmislek o takšnih priložnostih aktualen tudi pri vas, me zanima, ali bi bil smiseln kratek pogovor o njihovem potencialu za {{companyName}}?\n\nLep pozdrav,\n{{signature}}"
+            "body": "Pozdravljeni, {{firstName}},\n\nvečina podjetij danes umetno inteligenco uporablja predvsem za optimizacijo procesov, zniževanje stroškov in izboljšanje produktivnosti.\n\nVendar se njen večji poslovni potencial odpira drugje – pri ustvarjanju nove vrednosti za kupce, razvoju novih poslovnih modelov in gradnji dolgoročne konkurenčne prednosti.\n\nPri AIVaaS se ukvarjamo prav s tem prehodom: kako AI iz orodja za izboljšanje učinkovitosti postane del poslovne strategije.\n\nČe je razmislek o takšnih priložnostih aktualen tudi pri vas, me zanima, ali bi bil smiseln kratek pogovor o njihovem potencialu za {{companyName}}?\n\nLep pozdrav,\n{{signature}}"
           }
         }
       },
@@ -28,7 +28,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in konkurenčnost podjetja",
-            "body": "Spoštovani {{lastName}},\n\nsamo na kratko se navezujem na spodnje sporočilo.\n\nBi bil pogovor o strateškem potencialu AI za {{companyName}} v tem obdobju relevanten?\n\nLep pozdrav,\n{{signature}}"
+            "body": "Pozdravljeni, {{firstName}},\n\nsamo na kratko se navezujem na spodnje sporočilo.\n\nBi bil pogovor o strateškem potencialu AI za {{companyName}} v tem obdobju relevanten?\n\nLep pozdrav,\n{{signature}}"
           }
         }
       },
@@ -40,7 +40,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in konkurenčnost podjetja",
-            "body": "Spoštovani {{lastName}},\n\nker odgovora na prejšnje sporočilo ni bilo, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe se boste v prihodnje ukvarjali z vprašanjem, kako lahko AI poleg večje učinkovitosti prispeva tudi k novi poslovni vrednosti, bomo z veseljem na voljo za pogovor.\n\nHvala za vaš čas in vse dobro.\n\nLep pozdrav,\n{{signature}}"
+            "body": "Pozdravljeni, {{firstName}},\n\nker odgovora na prejšnje sporočilo ni bilo, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe se boste v prihodnje ukvarjali z vprašanjem, kako lahko AI poleg večje učinkovitosti prispeva tudi k novi poslovni vrednosti, bomo z veseljem na voljo za pogovor.\n\nHvala za vaš čas in vse dobro.\n\nLep pozdrav,\n{{signature}}"
           }
         }
       }
@@ -63,7 +63,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in razvoj vodstva",
-            "body": "Spoštovani {{lastName}},\n\nv podjetjih umetno inteligenco pogosto uvajajo posamezni oddelki, vodstvena ekipa pa nima nujno skupnega razumevanja, kaj to pomeni za poslovno strategijo in prihodnje odločitve.\n\nPri AIVaaS smo zato razvili interni program The Business Power of AI, namenjen vodjem, ki želijo bolje razumeti poslovni potencial umetne inteligence in svojo vlogo pri njenem uvajanju.\n\nProgram presega klasična izobraževanja o uporabi AI orodij in se osredotoča na strateško razmišljanje, poslovne priložnosti ter usklajevanje vodstvene ekipe.\n\nČe je razvoj tovrstnih kompetenc aktualen tudi pri vas, me zanima, ali bi bil smiseln kratek pogovor o možnostih izvedbe programa v vašem podjetju?\n\nLep pozdrav,\n{{signature}}"
+            "body": "Pozdravljeni, {{firstName}},\n\nv podjetjih umetno inteligenco pogosto uvajajo posamezni oddelki, vodstvena ekipa pa nima nujno skupnega razumevanja, kaj to pomeni za poslovno strategijo in prihodnje odločitve.\n\nPri AIVaaS smo zato razvili interni program The Business Power of AI, namenjen vodjem, ki želijo bolje razumeti poslovni potencial umetne inteligence in svojo vlogo pri njenem uvajanju.\n\nProgram presega klasična izobraževanja o uporabi AI orodij in se osredotoča na strateško razmišljanje, poslovne priložnosti ter usklajevanje vodstvene ekipe.\n\nČe je razvoj tovrstnih kompetenc aktualen tudi pri vas, me zanima, ali bi bil smiseln kratek pogovor o možnostih izvedbe programa v vašem podjetju?\n\nLep pozdrav,\n{{signature}}"
           }
         }
       },
@@ -75,7 +75,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in razvoj vodstva",
-            "body": "Spoštovani {{lastName}},\n\nsamo na kratko se navezujem na spodnje sporočilo.\n\nBi bila tema razvoja AI kompetenc vodstvene ekipe v {{companyName}} v tem obdobju relevantna?\n\nLep pozdrav,\n{{signature}}"
+            "body": "Pozdravljeni, {{firstName}},\n\nsamo na kratko se navezujem na spodnje sporočilo.\n\nBi bila tema razvoja AI kompetenc vodstvene ekipe v {{companyName}} v tem obdobju relevantna?\n\nLep pozdrav,\n{{signature}}"
           }
         }
       },
@@ -87,7 +87,7 @@
         "translations": {
           "slovenian": {
             "subject": "Re: AI in razvoj vodstva",
-            "body": "Spoštovani {{lastName}},\n\nker odgovora na prejšnje sporočilo ni bilo, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe boste v prihodnje načrtovali razvoj vodstvene ekipe na področju umetne inteligence, bomo z veseljem predstavili možnosti internega programa The Business Power of AI.\n\nLep pozdrav,\n{{signature}}"
+            "body": "Pozdravljeni, {{firstName}},\n\nker odgovora na prejšnje sporočilo ni bilo, predvidevam, da tema trenutno ni med vašimi prioritetami.\n\nČe boste v prihodnje načrtovali razvoj vodstvene ekipe na področju umetne inteligence, bomo z veseljem predstavili možnosti internega programa The Business Power of AI.\n\nLep pozdrav,\n{{signature}}"
           }
         }
       }
