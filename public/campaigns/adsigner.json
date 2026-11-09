@@ -189,7 +189,7 @@
     "totalLeads": 81,
     "leadsEmailed": 150,
     "month": "September",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "performance": {
       "emailsSent": 303,
       "opens": 0,
@@ -212,7 +212,7 @@
     "totalLeads": 2441,
     "leadsEmailed": 1240,
     "month": "September",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "performance": {
       "emailsSent": 3112,
       "opens": 0,

@@ -26,22 +26,22 @@
     "campaignName": "🏭 Integraplast | Contract Injection Moulders | Slovenia",
     "dateLaunched": "11/5/2026",
     "totalLeads": 93,
-    "leadsEmailed": 64,
+    "leadsEmailed": 74,
     "month": "November",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 82,
+      "emailsSent": 107,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
-      "replies": 1,
-      "replyRate": "1.56",
+      "replies": 2,
+      "replyRate": "2.70",
       "bounces": 0,
       "bounceRate": "0.00",
       "unsubscribed": 0,
       "interested": 1,
-      "interestedRate": "1.56",
+      "interestedRate": "1.35",
       "notInterested": 0
     }
   }
