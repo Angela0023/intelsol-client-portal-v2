@@ -25,6 +25,7 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     { id: 'tslab', name: 'TS Lab', icon: Building2, color: 'text-green-600' },
     { id: 'adsigner', name: 'AdSigner', icon: Building2, color: 'text-teal-600' },
     { id: 'intelsol', name: 'Intelsol', icon: Building2, color: 'text-violet-600' },
+    { id: 'skillifai', name: 'Skillifai', icon: Building2, color: 'text-blue-600' },
     { id: 'peoplefocus', name: 'People Focus', icon: Building2, color: 'text-purple-600' },
     { id: 'plantryx', name: 'Plantryx', icon: Building2, color: 'text-indigo-600' },
     { id: 'mountaindrop', name: 'Mountaindrop', icon: Building2, color: 'text-emerald-600' },
