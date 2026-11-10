@@ -42,7 +42,7 @@ export const CLIENT_ASSIGNEES: Record<ClientAccess, Assignee | null> = {
   admin: null,
   tslab: 'Matej',
   intelsol: 'Matej',
-  skillifai: 'Matej',
+  skillifai: 'Frosina',
   peoplefocus: 'Filip',
   plantryx: 'Matej',
   adsigner: 'Frosina',
