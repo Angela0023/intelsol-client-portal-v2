@@ -18,10 +18,8 @@ import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChar
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
   { id: 'icp', label: 'ICP Profile', icon: Target },
-  { id: 'triggers', label: 'Buying Triggers', icon: TrendingUp },
-  { id: 'filters', label: 'Buying Signals', icon: Filter },
+  { id: 'filters', label: 'Clay Filters', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
-  { id: 'messaging', label: 'Outreach & Messaging', icon: Mail },
   { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
@@ -52,7 +50,7 @@ export default function SkillifaiPage() {
     }
 
     // Internal tabs that should be hidden from non-admin users
-    const internalTabs = ['filters', 'prompts', 'messaging'];
+    const internalTabs = ['filters', 'prompts'];
 
     // Read initial tab from URL pathname
     const path = window.location.pathname;
@@ -154,10 +152,8 @@ export default function SkillifaiPage() {
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPAndPersonasTab />}
-          {activeTab === 'triggers' && <BuyingTriggersTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
-          {activeTab === 'messaging' && <MessagingTab />}
           {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
@@ -368,56 +364,6 @@ function ICPAndPersonasTab() {
             </ul>
           </div>
         </div>
-      </ContentSection>
-    </>
-  );
-}
-
-function BuyingTriggersTab() {
-  return (
-    <>
-      <ContentSection title="What Triggers a Purchase?" icon={<TrendingUp className="w-5 h-5" />}>
-        <div className="space-y-3">
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
-            <p className="font-medium text-blue-900">Hypotheses to validate:</p>
-            <ul className="space-y-1 text-blue-800 text-sm mt-2">
-              <li>• Management launches an AI initiative</li>
-              <li>• Company purchases AI licences (Copilot, ChatGPT, etc.)</li>
-              <li>• HR plans employee development</li>
-              <li>• Internal AI pilot stalls or fails</li>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Problems They Experience" icon={<Target className="w-5 h-5" />}>
-        <ul className="space-y-2">
-          <ListItem>Employees use AI inconsistently; lack clear use cases</ListItem>
-          <ListItem>Repetitive tasks remain manual despite AI availability</ListItem>
-          <ListItem>Pilots don't become part of everyday workflows</ListItem>
-          <ListItem>Unused AI licences</ListItem>
-          <ListItem>Time lost on documents, reporting, content preparation</ListItem>
-          <ListItem>Duplicated work across teams</ListItem>
-          <ListItem>Risk exposure in handling data with AI tools</ListItem>
-        </ul>
-      </ContentSection>
-
-      <ContentSection title="Business Impact" icon={<BarChart3 className="w-5 h-5" />}>
-        <ul className="space-y-2">
-          <ListItem>Lost time on routine tasks</ListItem>
-          <ListItem>Underutilized software investments</ListItem>
-          <ListItem>Missed productivity gains</ListItem>
-          <ListItem>Compliance and data-handling risks</ListItem>
-        </ul>
-      </ContentSection>
-
-      <ContentSection title="Urgency Drivers (To Validate)" icon={<TrendingUp className="w-5 h-5" />}>
-        <ul className="space-y-2">
-          <ListItem>Training planning deadline</ListItem>
-          <ListItem>Approved annual budget</ListItem>
-          <ListItem>Director/leadership mandate to act</ListItem>
-          <ListItem>Failed internal implementation attempts</ListItem>
-        </ul>
       </ContentSection>
     </>
   );

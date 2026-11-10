@@ -1,133 +1,133 @@
 [
   {
-    "id": "skillifai-simple-referral",
-    "tierName": "SIMPLIFIED: Version 1 - Simple Referral",
+    "id": "skillifai-simple-qualifier",
+    "tierName": "SIMPLIFIED: Version 1 - Simple Qualifier",
     "tierColor": "blue",
-    "targetPersonas": "All personas - testing pure referral approach",
-    "messagingAngle": "Ultra-simple ask for connection, no pitch",
+    "targetPersonas": "All personas - initial qualification",
+    "messagingAngle": "Ultra-simple ask to understand their AI adoption stage",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI adoption & training at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for AI adoption or team skills development.\n\nWould that fall under your team, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "AI training for {{company_name}}'s team",
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for AI adoption or team skills development.\n\nWe work with Slovenian SMEs to move teams from AI pilots that stall to practical, embedded adoption through structured training.\n\nWould that be your area, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
-        "subject": "Following up - AI adoption at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nJust following up on my previous email about finding the right person at {{company_name}} responsible for AI adoption or team training.\n\nWould that be you, or could you point me to the right person?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: AI training for {{company_name}}'s team",
+        "body": "Hi {{first_name}},\n\nQuick follow-up on AI skills development at {{company_name}}.\n\nIf you're exploring how to move your teams from AI tools to actual adoption, worth a brief conversation?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       }
     ]
   },
   {
-    "id": "skillifai-with-context-direct",
-    "tierName": "SIMPLIFIED: Version 2 - With Context (Direct)",
+    "id": "skillifai-context-training-focus",
+    "tierName": "SIMPLIFIED: Version 2 - Training-Focused",
     "tierColor": "green",
-    "targetPersonas": "All personas - testing simple pitch approach",
-    "messagingAngle": "Simple ask + one sentence value prop",
+    "targetPersonas": "All personas - introducing departmental training entry point",
+    "messagingAngle": "Simple pitch with focus on AI training programs",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI skills adoption at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for AI adoption or team skills development.\n\nAt Skillifai, we help teams implement practical AI skills and adoption into everyday workflows—from training to broader implementation projects.\n\nWould that fall under your team, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Structured AI training for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for AI adoption or team skills development.\n\nMost teams at {{company_name}}'s scale have AI tools available—Copilot, ChatGPT, etc.—but without structured training, those tools sit underused and inconsistent.\n\nWe help Slovenian SMEs move from AI pilots to practical adoption through departmental training programs that embed AI into everyday workflows.\n\nWould that be your area, or could you point me to the right person?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
-        "subject": "Re: AI skills adoption at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on my previous email about AI skills adoption at {{company_name}}.\n\nAre you the right person to discuss this with, or should I reach out to someone else?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: Structured AI training for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nFollowing up on AI skills training for {{company_name}}.\n\nAre you managing team skills development or AI adoption, or should I reach out to someone else?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       }
     ]
   },
   {
-    "id": "skillifai-conversational",
-    "tierName": "SIMPLIFIED: Version 3 - Conversational",
+    "id": "skillifai-conversational-adoption",
+    "tierName": "SIMPLIFIED: Version 3 - Conversational Adoption Focus",
     "tierColor": "purple",
-    "targetPersonas": "All personas - testing conversational approach",
-    "messagingAngle": "Soft tone, no heavy pitch",
+    "targetPersonas": "All personas - soft conversational tone",
+    "messagingAngle": "Conversational, no heavy pitch, focus on adoption readiness",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI adoption at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI'm trying to connect with the person at {{company_name}} who oversees AI adoption or team skills development.\n\nWe work with SMEs across Slovenia to help teams build practical AI skills and integrate them into business processes.\n\nWould you happen to be the right person, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "AI adoption readiness at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nI'm trying to connect with the right person at {{company_name}} who oversees AI adoption or team skills development.\n\nWe work with SMEs across Slovenia to help teams move past AI pilots that stall. Most often, it's not the tools—it's training and adoption readiness.\n\nStructured AI training programs get teams from \"we have ChatGPT\" to \"AI is embedded in how we work.\"\n\nWould you be the right person to explore this, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
-        "subject": "Re: AI adoption at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on finding the right person for AI adoption at {{company_name}}.\n\nIf that's you, awesome. If not, a quick referral would help a lot.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: AI adoption readiness at {{company_name}}",
+        "body": "Hi {{first_name}},\n\nFollowing up on AI adoption at {{company_name}}.\n\nIf building team adoption readiness is relevant for 2026, a quick conversation could help clarify what's possible.\n\nIf not, no worries—just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       }
     ]
   },
   {
-    "id": "skillifai-ceo-director-strategy",
+    "id": "skillifai-ceo-director-productivity",
     "tierName": "SEQUENCE 1: CEO/Director - Strategic AI Adoption",
     "tierColor": "red",
     "targetPersonas": "CEO, Director, Managing Director, Owner",
-    "messagingAngle": "Strategic AI adoption unlocks team productivity and reduces operational workload while building competitive advantage",
+    "messagingAngle": "Strategic AI adoption through training programs unlocks team productivity, reduces operational workload, builds competitive advantage",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI adoption strategy for {{company_name}}",
-        "body": "Hi {{first_name}},\n\nMost teams at {{company_name}}'s scale have AI tools available (Copilot, ChatGPT, etc.)—but without structured training and adoption, those tools sit underused.\n\nWe work with Slovenian SMEs to move from AI inconsistency to practical adoption: clear workflows, team training, and integration into everyday processes.\n\nTypical outcomes in 3-6 months:\n- 40-60% reduction in manual repetitive tasks\n- Clear AI use cases embedded in key processes\n- Team confidence and adoption up significantly\n\nWorth a brief conversation to see if there's a fit?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      },
-      {
-        "emailNumber": 2,
-        "type": "Follow-Up",
-        "subject": "Re: AI adoption strategy for {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on AI adoption at {{company_name}}.\n\nIf scaling team productivity and reducing manual workload through structured AI adoption is on your roadmap, I can walk you through how we approach this in 15 minutes.\n\nNo pitch—just how Slovenian teams at your scale have built AI adoption without the usual friction.\n\nEither way, let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      },
-      {
-        "emailNumber": 3,
-        "type": "Follow-Up 2",
-        "subject": "Re: AI adoption strategy for {{company_name}}",
-        "body": "Hi {{first_name}},\n\nLast note—if AI adoption or team skills development is becoming a priority, we'd be a natural conversation.\n\nHappy to share how other SMEs at {{company_name}}'s size have approached this. Just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      }
-    ]
-  },
-  {
-    "id": "skillifai-hr-ld-team-skills",
-    "tierName": "SEQUENCE 2: HR/L&D - Team Skills & Development",
-    "tierColor": "orange",
-    "targetPersonas": "HR Director, HR Manager, Head of HR, Head of L&D (50+ employees)",
-    "messagingAngle": "Build team AI competency and readiness—structured training moves pilots to adoption and reduces skill gaps",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "AI skills development program for {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} is likely exploring or piloting AI adoption—but pilots often stall without structured training and adoption support.\n\nWe work with HR and L&D teams to design and run AI skills programs that move pilots into everyday workflows.\n\nWhat we typically help with:\n- Practical AI use cases for your key business processes\n- Structured team training (departmental or cross-functional)\n- Ongoing adoption support and skill building\n\nResult: Teams move from inconsistent AI use to embedded, practical adoption.\n\nWorth a quick call to explore fit for {{company_name}}?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "AI adoption strategy for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nMost teams at {{company_name}}'s scale have AI tools available—Copilot, ChatGPT, etc.—but without structured training and adoption support, those tools sit underused and inconsistent across departments.\n\nWe work with Slovenian SMEs to move from AI inconsistency to practical adoption: clear workflows, structured team training, and integration into everyday processes.\n\nTypical outcomes in 3-6 months after departmental training:\n- 40-60% reduction in manual repetitive tasks (documents, reporting, data entry)\n- Clear AI use cases embedded in key processes\n- Team adoption and confidence significantly improved\n\nWorth a brief conversation to see if there's a fit for {{company_name}}?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: AI skills development program for {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on structured AI training for {{company_name}}.\n\nWe ask because companies at your stage—they've bought AI tools or launched pilots, but team readiness and adoption is the bottleneck.\n\nStructured training bridges that gap. Quick call to see if that maps to {{company_name}}'s situation?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: AI adoption strategy for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nFollowing up on AI adoption at {{company_name}}.\n\nIf scaling team productivity through structured AI training is on your roadmap for 2026, I can walk you through how we approach this in 15 minutes.\n\nNo pitch—just how SMEs at {{company_name}}'s size have moved from AI pilots to embedded adoption.\n\nEither way, let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: AI skills development program for {{company_name}}",
-        "body": "Hi {{first_name}},\n\nLast note—if building team AI readiness is on your development roadmap for 2026, we'd be a good conversation.\n\nHappy to share case studies from similar-sized teams we've worked with. Just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: AI adoption strategy for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nLast note—if AI training and team adoption is becoming a priority, we'd be a natural conversation.\n\nHappy to share how other Slovenian SMEs at {{company_name}}'s size have structured their approach. Just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       }
     ]
   },
   {
-    "id": "skillifai-operations-process-efficiency",
+    "id": "skillifai-hr-ld-team-readiness",
+    "tierName": "SEQUENCE 2: HR/L&D - Team AI Readiness & Training",
+    "tierColor": "orange",
+    "targetPersonas": "HR Director, HR Manager, Head of HR, Head of L&D, Head of Training (50+ employees preferred)",
+    "messagingAngle": "Build team AI competency and readiness—structured training programs move pilots into adoption and close skill gaps",
+    "emails": [
+      {
+        "emailNumber": 1,
+        "type": "Initial Outreach",
+        "subject": "AI training program for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} is likely exploring or piloting AI adoption—but pilots often stall without structured training and adoption support.\n\nWe work with HR and L&D teams to design and run AI skills programs that move pilots from \"testing\" to \"embedded adoption\" in everyday workflows.\n\nWhat we typically help with:\n- Practical AI use cases tailored to your key business processes\n- Structured team training (departmental or cross-functional)\n- Ongoing adoption support and skill building\n\nResult: Teams move from inconsistent AI use to clear, embedded adoption—reducing manual workload and building competitive advantage.\n\nWorth a quick call to explore fit for {{company_name}}?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+      },
+      {
+        "emailNumber": 2,
+        "type": "Follow-Up 1",
+        "subject": "Re: AI training program for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nFollowing up on structured AI training for {{company_name}}'s teams.\n\nWe ask because companies at your stage—they've bought AI tools or launched pilots, but team readiness and adoption is the real bottleneck.\n\nStructured training bridges that gap fast. Quick call to see if that maps to {{company_name}}'s situation?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+      },
+      {
+        "emailNumber": 3,
+        "type": "Follow-Up 2",
+        "subject": "Re: AI training program for {{company_name}}'s teams",
+        "body": "Hi {{first_name}},\n\nLast note—if building team AI readiness and skills is on your development roadmap for 2026, we'd be a good fit.\n\nHappy to share case studies from similar-sized teams we've worked with. Just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+      }
+    ]
+  },
+  {
+    "id": "skillifai-operations-efficiency",
     "tierName": "SEQUENCE 3: Operations Leaders - Process AI Integration",
     "tierColor": "teal",
-    "targetPersonas": "COO, Operations Director, Head of Operations, Process Improvement Lead",
-    "messagingAngle": "AI integration into key processes reduces manual work, improves speed, and frees operations teams for higher-value work",
+    "targetPersonas": "COO, Operations Director, Head of Operations, Process Improvement Lead, Operations Manager",
+    "messagingAngle": "AI integration into key processes reduces manual work significantly, frees operations teams for higher-value strategic work",
     "emails": [
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "AI process optimization at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nRepetitive operational tasks—documents, reporting, data entry, content prep—often consume 30-40% of operational team time at {{company_name}}'s scale.\n\nStructured AI integration into key workflows can cut that significantly, freeing your team for higher-value work.\n\nWe help operations teams identify and integrate practical AI into their most repetitive processes—with training and adoption support built in.\n\nWorth exploring how this could apply to {{company_name}}'s operations?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "body": "Hi {{first_name}},\n\nRepetitive operational tasks—documents, reporting, data entry, content prep—often consume 30-40% of operational team time at {{company_name}}'s scale.\n\nStructured AI integration into key workflows can reduce that significantly, freeing your team for higher-value, strategic work.\n\nWe help operations teams:\n- Identify the most repetitive, high-impact processes\n- Integrate practical AI into those workflows\n- Train teams for smooth adoption\n- Measure time freed and efficiency gains\n\nWorth exploring how this could apply to {{company_name}}'s operations?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       },
       {
         "emailNumber": 2,
