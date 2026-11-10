@@ -84,6 +84,7 @@ export const DEFAULT_STATUSES: Record<string, ClientStatus> = {
   tslab: 'Active',
   adsigner: 'Onboarding',
   intelsol: 'Active',
+  skillifai: 'Onboarding',
   peoplefocus: 'Onboarding',
   plantryx: 'Onboarding',
   mountaindrop: 'Onboarding',
