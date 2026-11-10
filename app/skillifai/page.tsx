@@ -13,7 +13,7 @@ import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -506,125 +506,6 @@ Only answer "Yes" if confident the company:
             </p>
           </div>
         </div>
-      </ContentSection>
-    </>
-  );
-}
-
-function MessagingTab() {
-  return (
-    <>
-      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
-        <p className="font-semibold text-amber-900 mb-1">Internal Tab - Admin Only:</p>
-        <p className="text-amber-800 text-sm">
-          This tab contains your outreach and messaging strategy and is only visible to your team.
-        </p>
-      </div>
-
-      <ContentSection title="Why Skillifai Wins" icon={<Target className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-3">Positioning</h4>
-            <p className="text-slate-600 text-sm mb-3">Skillifai differentiates through:</p>
-            <ul className="space-y-2">
-              <ListItem>Practical AI use in everyday business tasks</ListItem>
-              <ListItem>Phased approach: training → broader projects</ListItem>
-              <ListItem>Team adaptation: tailored to company needs</ListItem>
-              <ListItem>Implementation support: not just training, but adoption</ListItem>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Key Messaging" icon={<FileText className="w-5 h-5" />}>
-        <div className="space-y-3">
-          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
-            <p className="font-semibold text-green-900 mb-2">✅ DO Say:</p>
-            <ul className="space-y-1 text-green-800 text-sm">
-              <li>• Practical AI skills adoption</li>
-              <li>• Business process integration</li>
-              <li>• Potential for follow-on projects (EUR 10,000+)</li>
-            </ul>
-          </div>
-          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
-            <p className="font-semibold text-red-900 mb-2">❌ Do NOT Say:</p>
-            <ul className="space-y-1 text-red-800 text-sm">
-              <li>• Claim guaranteed savings or ROI</li>
-              <li>• Invent metrics</li>
-            </ul>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Messaging Guardrails" icon={<Mail className="w-5 h-5" />}>
-        <div className="space-y-3">
-          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
-            <p className="font-semibold text-slate-900 mb-1">Tone:</p>
-            <p className="text-slate-600 text-sm">Professional, consultative, direct</p>
-          </div>
-          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
-            <p className="font-semibold text-slate-900 mb-1">Language:</p>
-            <p className="text-slate-600 text-sm">Slovenian (primary market)</p>
-          </div>
-          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
-            <p className="font-semibold text-slate-900 mb-1">Style:</p>
-            <p className="text-slate-600 text-sm">Concise, specific, no exaggeration, minimal jargon, no high-pressure tactics</p>
-          </div>
-          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
-            <p className="font-semibold text-slate-900 mb-1">Positioning:</p>
-            <p className="text-slate-600 text-sm">Practical AI adoption → business process integration → custom projects</p>
-          </div>
-          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
-            <p className="font-semibold text-slate-900 mb-1">Avoid:</p>
-            <p className="text-slate-600 text-sm">"Guaranteed results," "ROI claims," technical jargon, pressure to book</p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Call to Action" icon={<Mail className="w-5 h-5" />}>
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-          <p className="font-semibold text-blue-900 mb-2">Proposed CTA:</p>
-          <p className="text-blue-800 italic mb-3">"Let's check if this topic is relevant for your team—short 15-min intro call?"</p>
-
-          <p className="font-semibold text-blue-900 mb-2 mt-4">Qualification Before Handover:</p>
-          <ul className="space-y-1 text-blue-800 text-sm">
-            <li>• INTELSOL validates company fit</li>
-            <li>• Interest in AI adoption confirmed</li>
-            <li>• Basic need identified</li>
-            <li>• Commercial potential realistic (EUR 10,000+ pathway)</li>
-            <li>• Context and communication history documented</li>
-          </ul>
-
-          <p className="font-semibold text-blue-900 mb-2 mt-4">Success Definition:</p>
-          <p className="text-blue-800 text-sm italic">A reply or initial contact is NOT a qualified lead; qualification occurs after fit assessment.</p>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Proof Points (To Confirm with Skillifai)" icon={<Target className="w-5 h-5" />}>
-        <div className="space-y-3">
-          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
-            <p className="font-semibold text-green-900 mb-2">✅ Can Use (Pending Permission):</p>
-            <ul className="space-y-1 text-green-800 text-sm">
-              <li>• Customer case studies (HS Plus, Petrol, Makro 5)</li>
-              <li>• Project descriptions and results</li>
-              <li>• Certifications and awards</li>
-            </ul>
-          </div>
-          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
-            <p className="font-semibold text-red-900 mb-2">❌ Do NOT Invent:</p>
-            <p className="text-red-800 text-sm">ROI or guaranteed savings</p>
-          </div>
-        </div>
-      </ContentSection>
-
-      <ContentSection title="Pre-Launch Approvals Required from Skillifai" icon={<CheckSquare className="w-5 h-5" />}>
-        <ul className="space-y-2">
-          <ListItem>Core messaging & positioning</ListItem>
-          <ListItem>Personalisation samples</ListItem>
-          <ListItem>Senders and email signatures</ListItem>
-          <ListItem>Standard reply templates</ListItem>
-          <ListItem>Exclusion list and related domains</ListItem>
-        </ul>
       </ContentSection>
     </>
   );
