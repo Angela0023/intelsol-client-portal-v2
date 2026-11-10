@@ -13,13 +13,15 @@ import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
 import FileUpload from '../components/FileUpload';
 import FileList from '../components/FileList';
-import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen } from 'lucide-react';
+import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail } from 'lucide-react';
 
 const tabs = [
   { id: 'overview', label: 'Overview', icon: FileText },
   { id: 'icp', label: 'ICP Profile', icon: Target },
-  { id: 'filters', label: 'Clay Filters', icon: Filter },
+  { id: 'triggers', label: 'Buying Triggers', icon: TrendingUp },
+  { id: 'filters', label: 'Buying Signals', icon: Filter },
   { id: 'prompts', label: 'AI Prompts', icon: Code },
+  { id: 'messaging', label: 'Outreach & Messaging', icon: Mail },
   { id: 'campaigns-sequences', label: 'Campaigns & Sequences', icon: Zap },
   { id: 'performance', label: 'Performance', icon: BarChart3 },
   { id: 'documents', label: 'Documents', icon: FolderOpen },
@@ -50,7 +52,7 @@ export default function SkillifaiPage() {
     }
 
     // Internal tabs that should be hidden from non-admin users
-    const internalTabs = ['filters', 'prompts'];
+    const internalTabs = ['filters', 'prompts', 'messaging'];
 
     // Read initial tab from URL pathname
     const path = window.location.pathname;
@@ -152,8 +154,10 @@ export default function SkillifaiPage() {
         <div className="space-y-6">
           {activeTab === 'overview' && <OverviewTab />}
           {activeTab === 'icp' && <ICPAndPersonasTab />}
+          {activeTab === 'triggers' && <BuyingTriggersTab />}
           {activeTab === 'filters' && <FiltersTab />}
           {activeTab === 'prompts' && <PromptsTab />}
+          {activeTab === 'messaging' && <MessagingTab />}
           {activeTab === 'campaigns-sequences' && <CampaignsSequencesTab />}
           {activeTab === 'performance' && (
             <>
@@ -174,36 +178,43 @@ export default function SkillifaiPage() {
 function OverviewTab() {
   return (
     <>
-      <ContentSection title="Company Overview" icon={<FileText className="w-5 h-5" />}>
+      <ContentSection title="What They Sell" icon={<FileText className="w-5 h-5" />}>
         <div className="space-y-4">
           <p>
-            Skillifai develops practical AI skills and helps companies introduce AI into business processes through departmental training programmes and broader AI adoption solutions.
+            Skillifai develops practical AI skills and helps companies introduce AI into business processes through:
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InfoCard label="Focus" value="AI Skills & Adoption" />
-            <InfoCard label="Target Market" value="Slovenia" />
-            <InfoCard label="Business Model" value="B2B Training & Consulting" />
-            <InfoCard label="Employee Range" value="20–250" />
-          </div>
+          <ul className="space-y-2">
+            <ListItem>Departmental AI training programmes</ListItem>
+            <ListItem>Broader AI adoption and implementation solutions</ListItem>
+            <ListItem>Custom projects (EUR 10,000+)</ListItem>
+          </ul>
         </div>
       </ContentSection>
 
-      <ContentSection title="What Skillifai Offers" icon={<TrendingUp className="w-5 h-5" />}>
-        <ul className="space-y-2">
-          <ListItem type="check">Practical AI skills training for business processes</ListItem>
-          <ListItem type="check">AI adoption and implementation support</ListItem>
-          <ListItem type="check">Departmental AI training programmes</ListItem>
-          <ListItem type="check">Broader AI projects (EUR 10,000+)</ListItem>
-        </ul>
+      <ContentSection title="Target Market" icon={<Target className="w-5 h-5" />}>
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+          <p className="font-semibold text-blue-900 mb-2">Primary Focus:</p>
+          <p className="text-blue-800">
+            Slovenian SMEs with approximately 20–250 employees with sufficiently large relevant teams.
+          </p>
+        </div>
       </ContentSection>
 
-      <ContentSection title="Target Market Summary" icon={<Target className="w-5 h-5" />}>
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-          <p className="font-semibold text-blue-900 mb-2">Who Skillifai Serves:</p>
-          <p className="text-blue-800">
-            Slovenian SMEs with 20–250 employees and sufficiently large relevant teams, including companies in manufacturing, logistics, professional services, and other sectors with strong AI adoption potential.
-          </p>
+      <ContentSection title="Best-Fit Customers" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded">
+            <p className="font-semibold text-amber-900 mb-2">Current Customers (To Be Confirmed)</p>
+            <ul className="space-y-1 text-amber-800 text-sm">
+              <li>• HS Plus <span className="italic">(relationship status & approval pending)</span></li>
+              <li>• Petrol <span className="italic">(relationship status & approval pending)</span></li>
+              <li>• Makro 5 <span className="italic">(relationship status & approval pending)</span></li>
+            </ul>
+            <p className="text-amber-800 text-xs mt-2">Permission to reference and inclusion in best-fit list must be confirmed before outreach use.</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-2">Dream Customers</p>
+            <p className="text-slate-600 text-sm">To be confirmed with Skillifai during strategy session.</p>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -213,120 +224,200 @@ function OverviewTab() {
 function ICPAndPersonasTab() {
   return (
     <>
-      <ContentSection title="Ideal Customer Profile" icon={<Target className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900 mb-3">MUST HAVE:</h4>
-          <ul className="space-y-2">
-            <ListItem type="check">Located in Slovenia</ListItem>
-            <ListItem type="check">20–250 employees (sweet spot: 50+)</ListItem>
-            <ListItem type="check">Sufficiently large relevant team for AI training impact</ListItem>
-            <ListItem type="check">Public financial data available</ListItem>
-            <ListItem type="check">Commercial potential for EUR 10,000+ projects</ListItem>
-          </ul>
-
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
-            <p className="font-semibold text-blue-900 mb-2">Target Company Size:</p>
-            <p className="text-blue-800 text-sm">
-              50–250 employees with established operations and readiness for AI adoption
-            </p>
+      <ContentSection title="Geography" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+            <p className="font-semibold text-green-900 mb-1">Primary:</p>
+            <p className="text-green-800 text-sm">Slovenia (all regions, equal priority)</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-1">Future:</p>
+            <p className="text-slate-600 text-sm">Croatia (post-validation expansion, NOT in initial lists)</p>
           </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Disqualifiers" icon={<Target className="w-5 h-5" />}>
-        <ul className="space-y-2">
-          <ListItem type="cross">Outside Slovenia</ListItem>
-          <ListItem type="cross">Software development or IT services</ListItem>
-          <ListItem type="cross">IT outsourcing or IT consulting</ListItem>
-          <ListItem type="cross">Management or business consulting</ListItem>
-          <ListItem type="cross">Too few relevant team members</ListItem>
-          <ListItem type="cross">No management support for AI adoption</ListItem>
-        </ul>
+      <ContentSection title="Company Size" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+            <p className="font-semibold text-blue-900 mb-1">Sweet Spot:</p>
+            <p className="text-blue-800 text-sm">50–250 employees</p>
+          </div>
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+            <p className="font-semibold text-blue-900 mb-1">Lower Bound:</p>
+            <p className="text-blue-800 text-sm">20 employees (if team is sufficiently large and potential is clear)</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-2">Assessment Factors:</p>
+            <ul className="space-y-1 text-slate-600 text-sm">
+              <li>• Relevant team size for training impact</li>
+              <li>• Public financial data available</li>
+              <li>• Commercial potential for EUR 10,000+ projects</li>
+              <li>• Growth trajectory</li>
+            </ul>
+          </div>
+        </div>
       </ContentSection>
 
       <ContentSection title="Target Industries" icon={<Filter className="w-5 h-5" />}>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          {[
-            'Manufacturing',
-            'Logistics',
-            'Wholesale/Distribution',
-            'Professional Services',
-            'Retail',
-            'Hospitality',
-            'Real Estate',
-            'Finance',
-            'Healthcare',
-          ].map((industry) => (
-            <div key={industry} className="bg-blue-100 px-3 py-2 rounded text-sm">
-              {industry}
+        <div className="space-y-4">
+          <div>
+            <p className="font-semibold text-slate-900 mb-2">Tier 1 (Strongest Fit):</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+              {['Manufacturing', 'Wholesale & distribution', 'Logistics'].map((industry) => (
+                <div key={industry} className="bg-green-100 px-3 py-2 rounded text-sm">
+                  {industry}
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          <div>
+            <p className="font-semibold text-slate-900 mb-2">Tier 2 (Confirmed Fit):</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+              {['Professional services', 'Retail', 'Hospitality', 'Real estate', 'Finance', 'Insurance', 'Healthcare', 'Pharmaceuticals'].map((industry) => (
+                <div key={industry} className="bg-blue-100 px-3 py-2 rounded text-sm">
+                  {industry}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="font-semibold text-slate-900 mb-2">To Assess Manually:</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+              {['Construction', 'Tourism', 'Legal, accounting, architectural firms (do not auto-exclude)'].map((industry) => (
+                <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm border border-slate-200">
+                  {industry}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </ContentSection>
 
-      <ContentSection title="Target Job Titles / Buyer Personas" icon={<Users className="w-5 h-5" />}>
-        <div className="space-y-6">
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-            <p className="font-semibold text-blue-900 mb-2">Target Decision Makers</p>
-            <p className="text-blue-800 text-sm">
-              Primary focus: CEO, Directors, and business leaders. Secondary focus: HR/L&D leaders at 50+ employees.
-            </p>
-          </div>
+      <ContentSection title="Business Model Characteristics" icon={<Target className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem>Relevant team size for training</ListItem>
+          <ListItem>Repetitive document, administrative, analytical processes</ListItem>
+          <ListItem>Sales processes with manual components</ListItem>
+          <ListItem>B2B and B2C both in scope</ListItem>
+          <ListItem>AI adoption potential (not yet heavily saturated in their market)</ListItem>
+        </ul>
+      </ContentSection>
 
-          {/* Tier 1: Executive */}
+      <ContentSection title="Exclude Explicitly" icon={<Target className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem type="cross">Software development / IT services</ListItem>
+          <ListItem type="cross">IT outsourcing / IT consulting</ListItem>
+          <ListItem type="cross">Management & business consulting</ListItem>
+          <ListItem type="cross">Direct competitors (list TBD)</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Decision Makers & Buying Roles" icon={<Users className="w-5 h-5" />}>
+        <div className="space-y-6">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2 mb-3">
               <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                 <span className="text-blue-600 font-bold text-sm">1</span>
               </div>
-              <h4 className="font-semibold text-slate-900 text-lg">Company Leadership (Tier 1)</h4>
+              <h4 className="font-semibold text-slate-900">Primary Buyer (Tier 1) – 75% Focus</h4>
             </div>
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-3">
-              <p className="text-blue-900 text-sm">
-                C-level executives and directors who approve training and broader AI projects.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {[
-                'CEO',
-                'Director',
-                'Managing Director',
-                'Owner',
-              ].map((position, index) => (
-                <div key={index} className="bg-blue-50 border border-blue-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mb-2">
+              <p className="text-blue-900 font-medium text-sm mb-1">Company Leadership</p>
+              <p className="text-blue-800 text-sm mb-2">CEO, Director, Managing Director, Owner</p>
+              <p className="text-blue-800 text-xs italic">Best for: SMEs (20–250 employees) with training + broader AI project potential</p>
             </div>
           </div>
 
-          {/* Tier 2: HR */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2 mb-3">
               <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                 <span className="text-green-600 font-bold text-sm">2</span>
               </div>
-              <h4 className="font-semibold text-slate-900 text-lg">HR & Learning Development (Tier 2)</h4>
+              <h4 className="font-semibold text-slate-900">Secondary Buyer (Tier 2) – 25% Focus</h4>
             </div>
-            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-3">
-              <p className="text-green-900 text-sm">
-                HR leaders responsible for team skills development and training. Most effective at 50+ employees.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-              {[
-                'HR Director',
-                'HR Manager',
-                'Head of HR',
-                'Head of L&D',
-              ].map((position, index) => (
-                <div key={index} className="bg-green-50 border border-green-200 rounded px-2 py-1.5 text-xs">
-                  {position}
-                </div>
-              ))}
+            <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded mb-2">
+              <p className="text-green-900 font-medium text-sm mb-1">HR & Learning & Development</p>
+              <p className="text-green-800 text-sm mb-2">HR Director, HR Manager, Head of HR, Head of L&D</p>
+              <p className="text-green-800 text-xs italic">Best for: 50+ employees with established HR function. Focus: Team skills development initiatives</p>
             </div>
           </div>
+
+          <div>
+            <div className="flex items-center space-x-2 mb-3">
+              <div className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center">
+                <span className="text-slate-600 font-bold text-sm">3</span>
+              </div>
+              <h4 className="font-semibold text-slate-900">Future Testing (Not Initial Priority)</h4>
+            </div>
+            <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+              <p className="text-slate-900 font-medium text-sm mb-1">Operations, Sales & Marketing</p>
+              <p className="text-slate-600 text-sm mb-2">COO, Operations Director, Head of Sales, Head of Marketing</p>
+              <p className="text-slate-600 text-xs italic">Use Case: Champion for specific AI use cases (later stage)</p>
+            </div>
+          </div>
+
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+            <p className="font-semibold text-amber-900 mb-2">Targeting Strategy</p>
+            <ul className="space-y-1 text-amber-800 text-sm">
+              <li>• <strong>75% focus:</strong> CEO/Director outreach</li>
+              <li>• <strong>25% focus:</strong> HR/L&D (50+ employees primarily)</li>
+              <li>• <strong>One active campaign per company</strong> (avoid duplicate contact)</li>
+              <li>• A/B test by industry, persona, and message</li>
+              <li>• Adjust targeting based on results after 6 weeks</li>
+            </ul>
+          </div>
         </div>
+      </ContentSection>
+    </>
+  );
+}
+
+function BuyingTriggersTab() {
+  return (
+    <>
+      <ContentSection title="What Triggers a Purchase?" icon={<TrendingUp className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+            <p className="font-medium text-blue-900">Hypotheses to validate:</p>
+            <ul className="space-y-1 text-blue-800 text-sm mt-2">
+              <li>• Management launches an AI initiative</li>
+              <li>• Company purchases AI licences (Copilot, ChatGPT, etc.)</li>
+              <li>• HR plans employee development</li>
+              <li>• Internal AI pilot stalls or fails</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Problems They Experience" icon={<Target className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem>Employees use AI inconsistently; lack clear use cases</ListItem>
+          <ListItem>Repetitive tasks remain manual despite AI availability</ListItem>
+          <ListItem>Pilots don't become part of everyday workflows</ListItem>
+          <ListItem>Unused AI licences</ListItem>
+          <ListItem>Time lost on documents, reporting, content preparation</ListItem>
+          <ListItem>Duplicated work across teams</ListItem>
+          <ListItem>Risk exposure in handling data with AI tools</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Business Impact" icon={<BarChart3 className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem>Lost time on routine tasks</ListItem>
+          <ListItem>Underutilized software investments</ListItem>
+          <ListItem>Missed productivity gains</ListItem>
+          <ListItem>Compliance and data-handling risks</ListItem>
+        </ul>
+      </ContentSection>
+
+      <ContentSection title="Urgency Drivers (To Validate)" icon={<TrendingUp className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem>Training planning deadline</ListItem>
+          <ListItem>Approved annual budget</ListItem>
+          <ListItem>Director/leadership mandate to act</ListItem>
+          <ListItem>Failed internal implementation attempts</ListItem>
+        </ul>
       </ContentSection>
     </>
   );
@@ -342,42 +433,56 @@ function FiltersTab() {
         </p>
       </div>
 
-      <ContentSection title="Clay Search Criteria" icon={<Filter className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <h4 className="font-semibold text-slate-900 mb-3">Geography:</h4>
-          <ul className="space-y-2">
-            <ListItem>Slovenia (primary market)</ListItem>
-          </ul>
-
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Company Size:</h4>
-          <ul className="space-y-2">
-            <ListItem>20–250 employees (optimal: 50+)</ListItem>
-            <ListItem>Exclude: smaller companies without team capacity</ListItem>
-          </ul>
-
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Target Industries:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            {[
-              'Manufacturing',
-              'Logistics & Distribution',
-              'Professional Services',
-              'Retail',
-              'Hospitality',
-              'Real Estate',
-              'Finance',
-              'Healthcare',
-            ].map((industry) => (
-              <div key={industry} className="bg-slate-100 px-3 py-2 rounded text-sm border border-slate-200">
-                {industry}
-              </div>
-            ))}
+      <ContentSection title="Technology & Buying Signals" icon={<Filter className="w-5 h-5" />}>
+        <div className="space-y-6">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Tools & Platforms (Hypotheses to Validate)</h4>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li>• Microsoft 365 / Copilot</li>
+              <li>• Google Workspace</li>
+              <li>• ChatGPT</li>
+              <li>• Business CRM/ERP systems</li>
+              <li>• Other AI tools</li>
+            </ul>
+            <p className="text-xs text-slate-500 mt-2"><em>Note: No tool is a mandatory filter. Validate technology patterns with best-fit customer data.</em></p>
           </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Keywords & Signals:</h4>
-          <CodeBlock code={`AI OR Copilot OR ChatGPT OR "artificial intelligence" OR "machine learning" OR digitalisation OR "digital transformation" OR "skills development" OR "team training"`} />
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Verified Buying Signals</h4>
+            <div className="space-y-3">
+              <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+                <p className="font-semibold text-green-900 mb-1">Tier 1 - Explicit need for AI training</p>
+                <p className="text-green-800 text-sm">Published request, plan, or expressed interest from decision-maker; record source, date, target team</p>
+              </div>
+              <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+                <p className="font-semibold text-green-900 mb-1">Tier 1 - Active AI project facing obstacles</p>
+                <p className="text-green-800 text-sm">Verified pilot/project with stated adoption or implementation problem; licence purchase alone is insufficient</p>
+              </div>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+                <p className="font-semibold text-blue-900 mb-1">Tier 2 - AI tool or licence rollout</p>
+                <p className="text-blue-800 text-sm">Documented Copilot or similar tool adoption; verify scope and training needs</p>
+              </div>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+                <p className="font-semibold text-blue-900 mb-1">Tier 2 - Digitalisation or skills development programme</p>
+                <p className="text-blue-800 text-sm">Specific programme, responsible person, training plan; verify current and AI-relevant</p>
+              </div>
+              <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+                <p className="font-semibold text-slate-900 mb-1">Tier 3 - Team growth or leadership change</p>
+                <p className="text-slate-600 text-sm">New hires or new leadership tasked with process improvement; weak signal without additional verified need</p>
+              </div>
+            </div>
+          </div>
 
-          <h4 className="font-semibold text-slate-900 mt-6 mb-3">Exclusions:</h4>
-          <CodeBlock code={`NOT (software development OR "IT services" OR "IT consulting" OR "IT outsourcing" OR "management consulting" OR "business consulting")`} />
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Where to Find Signals</h4>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li>• LinkedIn profile changes (new hires, promotions)</li>
+              <li>• Company news (funding, partnerships, AI announcements)</li>
+              <li>• LinkedIn job postings (training, operations, process improvement roles)</li>
+              <li>• Company website (digitalisation, AI strategy mentions)</li>
+              <li>• Industry publications and press releases</li>
+            </ul>
+          </div>
         </div>
       </ContentSection>
     </>
@@ -455,6 +560,125 @@ Only answer "Yes" if confident the company:
             </p>
           </div>
         </div>
+      </ContentSection>
+    </>
+  );
+}
+
+function MessagingTab() {
+  return (
+    <>
+      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
+        <p className="font-semibold text-amber-900 mb-1">Internal Tab - Admin Only:</p>
+        <p className="text-amber-800 text-sm">
+          This tab contains your outreach and messaging strategy and is only visible to your team.
+        </p>
+      </div>
+
+      <ContentSection title="Why Skillifai Wins" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-3">Positioning</h4>
+            <p className="text-slate-600 text-sm mb-3">Skillifai differentiates through:</p>
+            <ul className="space-y-2">
+              <ListItem>Practical AI use in everyday business tasks</ListItem>
+              <ListItem>Phased approach: training → broader projects</ListItem>
+              <ListItem>Team adaptation: tailored to company needs</ListItem>
+              <ListItem>Implementation support: not just training, but adoption</ListItem>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Key Messaging" icon={<FileText className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+            <p className="font-semibold text-green-900 mb-2">✅ DO Say:</p>
+            <ul className="space-y-1 text-green-800 text-sm">
+              <li>• Practical AI skills adoption</li>
+              <li>• Business process integration</li>
+              <li>• Potential for follow-on projects (EUR 10,000+)</li>
+            </ul>
+          </div>
+          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+            <p className="font-semibold text-red-900 mb-2">❌ Do NOT Say:</p>
+            <ul className="space-y-1 text-red-800 text-sm">
+              <li>• Claim guaranteed savings or ROI</li>
+              <li>• Invent metrics</li>
+            </ul>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Messaging Guardrails" icon={<Mail className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-1">Tone:</p>
+            <p className="text-slate-600 text-sm">Professional, consultative, direct</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-1">Language:</p>
+            <p className="text-slate-600 text-sm">Slovenian (primary market)</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-1">Style:</p>
+            <p className="text-slate-600 text-sm">Concise, specific, no exaggeration, minimal jargon, no high-pressure tactics</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-1">Positioning:</p>
+            <p className="text-slate-600 text-sm">Practical AI adoption → business process integration → custom projects</p>
+          </div>
+          <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded">
+            <p className="font-semibold text-slate-900 mb-1">Avoid:</p>
+            <p className="text-slate-600 text-sm">"Guaranteed results," "ROI claims," technical jargon, pressure to book</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Call to Action" icon={<Mail className="w-5 h-5" />}>
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+          <p className="font-semibold text-blue-900 mb-2">Proposed CTA:</p>
+          <p className="text-blue-800 italic mb-3">"Let's check if this topic is relevant for your team—short 15-min intro call?"</p>
+
+          <p className="font-semibold text-blue-900 mb-2 mt-4">Qualification Before Handover:</p>
+          <ul className="space-y-1 text-blue-800 text-sm">
+            <li>• INTELSOL validates company fit</li>
+            <li>• Interest in AI adoption confirmed</li>
+            <li>• Basic need identified</li>
+            <li>• Commercial potential realistic (EUR 10,000+ pathway)</li>
+            <li>• Context and communication history documented</li>
+          </ul>
+
+          <p className="font-semibold text-blue-900 mb-2 mt-4">Success Definition:</p>
+          <p className="text-blue-800 text-sm italic">A reply or initial contact is NOT a qualified lead; qualification occurs after fit assessment.</p>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Proof Points (To Confirm with Skillifai)" icon={<Target className="w-5 h-5" />}>
+        <div className="space-y-3">
+          <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+            <p className="font-semibold text-green-900 mb-2">✅ Can Use (Pending Permission):</p>
+            <ul className="space-y-1 text-green-800 text-sm">
+              <li>• Customer case studies (HS Plus, Petrol, Makro 5)</li>
+              <li>• Project descriptions and results</li>
+              <li>• Certifications and awards</li>
+            </ul>
+          </div>
+          <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+            <p className="font-semibold text-red-900 mb-2">❌ Do NOT Invent:</p>
+            <p className="text-red-800 text-sm">ROI or guaranteed savings</p>
+          </div>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Pre-Launch Approvals Required from Skillifai" icon={<CheckSquare className="w-5 h-5" />}>
+        <ul className="space-y-2">
+          <ListItem>Core messaging & positioning</ListItem>
+          <ListItem>Personalisation samples</ListItem>
+          <ListItem>Senders and email signatures</ListItem>
+          <ListItem>Standard reply templates</ListItem>
+          <ListItem>Exclusion list and related domains</ListItem>
+        </ul>
       </ContentSection>
     </>
   );
