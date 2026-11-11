@@ -10,8 +10,7 @@ import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
-import FileUpload from '../components/FileUpload';
-import FileList from '../components/FileList';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, Mail, Award, MapPin, Building2, Briefcase, Gift, CheckCircle } from 'lucide-react';
 import BestFitsTab from '../components/BestFitsTab_NEW';
 import CampaignsTabContent from './CampaignsTabContent';
@@ -165,7 +164,7 @@ export default function PlantryxPage() {
               <CampaignsTabDynamic clientId="plantryx" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTab />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="plantryx" clientName="Plantryx" />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="plantryx" defaultTasks={[]} />
           )}
@@ -1167,31 +1166,6 @@ function CampaignsSequencesTab() {
       <div className="mt-8">
         <CampaignsTabContent />
       </div>
-    </>
-  );
-}
-
-function DocumentsTab() {
-  const [refreshTrigger, setRefreshTrigger] = useState(0);
-
-  const handleUploadComplete = () => {
-    setRefreshTrigger(prev => prev + 1);
-  };
-
-  return (
-    <>
-      <ContentSection title="Uploaded Documents" icon={<FolderOpen className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <p className="text-slate-600">
-              Upload and manage documents for Plantryx. All uploaded files will be available for download.
-            </p>
-            <FileUpload clientId="plantryx" onUploadComplete={handleUploadComplete} />
-          </div>
-
-          <FileList clientId="plantryx" refreshTrigger={refreshTrigger} />
-        </div>
-      </ContentSection>
     </>
   );
 }
