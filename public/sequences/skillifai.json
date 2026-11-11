@@ -57,20 +57,20 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI training program for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nI noticed {{company_name}} is likely exploring or piloting AI adoption—but pilots often stall without structured training and adoption support.\n\nWe work with HR and L&D teams to design and run AI skills programs that move pilots from \"testing\" to \"embedded adoption\" in everyday workflows.\n\nWhat we typically help with:\n- Practical AI use cases tailored to your key business processes\n- Structured team training (departmental or cross-functional)\n- Ongoing adoption support and skill building\n\nResult: Teams move from inconsistent AI use to clear, embedded adoption—reducing manual workload and building competitive advantage.\n\nWorth a quick call to explore fit for {{company_name}}?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Praktično AI izobraževanje za zaposlene",
+        "body": "Spoštovani,\n\nzanima me, ali v okviru izobraževanj za zaposlene pri vas razmišljate tudi o praktični uporabi umetne inteligence.\n\nPri Skillifai izvajamo delavnice, na katerih zaposleni spoznajo, kako lahko umetno inteligenco uporabijo pri svojih vsakodnevnih nalogah.\n\nČe je tema pri vas aktualna, bi vam na kratkem klicu z veseljem predstavila, kako potekajo delavnice, in se z vami pogovorila o tem, kaj bi bilo uporabno za vaše ekipe. Ste morda na voljo v tem ali prihodnjem tednu?\n\nLep pozdrav,\n%signature%"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: AI training program for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nFollowing up on structured AI training for {{company_name}}'s teams.\n\nWe ask because companies at your stage—they've bought AI tools or launched pilots, but team readiness and adoption is the real bottleneck.\n\nStructured training bridges that gap fast. Quick call to see if that maps to {{company_name}}'s situation?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: Praktično AI izobraževanje za zaposlene",
+        "body": "Spoštovani,\n\nupam, da ste prejeli moje prejšnje sporočilo. Če razmišljate o izobraževanju zaposlenih na področju umetne inteligence, bi vam na kratkem klicu z veseljem predstavila, kako potekajo naše praktične delavnice.\n\nVam lahko predlagam termin za prihodnji teden?\n\nLep pozdrav,\n%signature%"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: AI training program for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nLast note—if building team AI readiness and skills is on your development roadmap for 2026, we'd be a good fit.\n\nHappy to share case studies from similar-sized teams we've worked with. Just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: Praktično AI izobraževanje za zaposlene",
+        "body": "Spoštovani,\n\npred kratkim sem vam pisala glede praktičnih delavnic o uporabi umetne inteligence pri delu. Rada bi še enkrat preverila, ali je to tema, ki jo pri vas vključujete v načrt izobraževanj za zaposlene.\n\nČe je, vam z veseljem predlagam termin za kratek klic. Če trenutno ni med vašimi prioritetami, popolnoma razumem.\n\nHvala in lep pozdrav,\n%signature%"
       }
     ]
   },
