@@ -1,7 +1,7 @@
 [
   {
     "id": "skillifai-simple-qualifier",
-    "tierName": "Fallback — No Direct Contact",
+    "tierName": "Fallback - No Direct Contact",
     "tierColor": "blue",
     "targetPersonas": "General company inbox when no direct contact is available.",
     "messagingAngle": "A short request to be put in touch with the person responsible for AI adoption or employee training.",
