@@ -666,7 +666,7 @@ export default function SeyensPage() {
         );
 
       case 'documents':
-        return <DocumentsTabGeneric clientId="seyens" />;
+        return <DocumentsTabGeneric clientId="seyens" clientName="Seyens" />;
 
       case 'tasks':
         return <TasksTab clientId="seyens" />;
