@@ -31,19 +31,19 @@
         "emailNumber": 1,
         "type": "Initial Outreach",
         "subject": "Uporaba umetne inteligence v {{company_name}}",
-        "body": "Spoštovani,\n\nzanima me, ali pri vas trenutno razmišljate, kako bi umetno inteligenco vključili v vsakdanje delo.\n\nPri Skillifai podjetjem pomagamo uvajati umetno inteligenco v vsakdanje delo, od praktičnih izobraževanj za zaposlene do širših projektov uvajanja AI v poslovne procese.\n\nČe je tema pri vas aktualna, z veseljem skočim z vami na kratek klic, da se pogovoriva, kje bi bilo smiselno začeti. Ste morda na voljo v tem ali prihodnjem tednu?\n\nLep pozdrav,\n%signature%"
+        "body": "Spoštovani,\n\nzanima me, ali pri vas trenutno razmišljate, kako bi umetno inteligenco vključili v vsakdanje delo.\n\nPri Skillifai podjetjem pomagamo uvajati umetno inteligenco v vsakdanje delo, od praktičnih izobraževanj za zaposlene do širših projektov uvajanja AI v poslovne procese.\n\nČe je tema pri vas aktualna, predlgam kratek klic, da se pogovoriva, kje bi bilo smiselno začeti. Ste morda na voljo v tem ali prihodnjem tednu?\n\nLep pozdrav,\nSelina Staltner\nvodja projektov\n\nSkillifai d.o.o.\nDalmatinova 2, 1000 Ljubljana, Slovenija\n\nM:  +386 41 703 444\nW:  www.skillifai.me"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
         "subject": "Re: Uporaba umetne inteligence v {{company_name}}",
-        "body": "Spoštovani,\n\nupam, da ste prejeli moje prejšnje sporočilo. Če pri vas razmišljate o uvedbi umetne inteligence, bi vam na kratkem klicu z veseljem predstavila, kako se tega lotimo pri Skillifai.\n\nVam lahko predlagam termin za prihodnji teden?\n\nLep pozdrav,\n%signature%"
+        "body": "Spoštovani,\n\nupam, da ste prejeli moje prejšnje sporočilo. Če pri vas razmišljate o uvedbi umetne inteligence, bi vam na kratkem klicu z veseljem predstavila, kako se tega lotimo pri Skillifai.\n\nVam lahko predlagam termin za prihodnji teden?\n\nLep pozdrav,\nSelina Staltner\nvodja projektov\n\nSkillifai d.o.o.\nDalmatinova 2, 1000 Ljubljana, Slovenija\n\nM:  +386 41 703 444\nW:  www.skillifai.me"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
         "subject": "Re: Uporaba umetne inteligence v {{company_name}}",
-        "body": "Spoštovani {{first_name}},\n\npred kratkim sem vam pisala glede uporabe umetne inteligence pri delu. Rada bi še enkrat preverila, ali je to tema, ki jo pri vas trenutno odpirate.\n\nČe je, vam z veseljem predlagam termin za kratek klic. Če trenutno ni med vašimi prioritetami, popolnoma razumem.\n\nHvala in lep pozdrav,\n%signature%"
+        "body": "Spoštovani {{first_name}},\n\npred kratkim sem vam pisala glede uporabe umetne inteligence pri delu. Rada bi še enkrat preverila, ali je to tema, ki jo pri vas trenutno odpirate.\n\nČe je, vam z veseljem predlagam termin za kratek klic. Če trenutno ni med vašimi prioritetami, popolnoma razumem.\n\nHvala in lep pozdrav,\nSelina Staltner\nvodja projektov\n\nSkillifai d.o.o.\nDalmatinova 2, 1000 Ljubljana, Slovenija\n\nM:  +386 41 703 444\nW:  www.skillifai.me"
       }
     ]
   },
