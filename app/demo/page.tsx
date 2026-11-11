@@ -8,11 +8,10 @@ import SequencesTab from '../components/SequencesTab';
 import CampaignsTabDynamic from '../components/CampaignsTabDynamic';
 import PerformanceTabDynamic from '../components/PerformanceTabDynamic';
 import CampaignsTabGeneric from '../components/CampaignsTabGeneric';
+import DocumentsTabGeneric from '../components/DocumentsTabGeneric';
 import StatusBadge, { getClientStatus, setClientStatus, DEFAULT_STATUSES, type ClientStatus } from '../components/StatusBadge';
 import { getClientAssignee, type Assignee } from '../../lib/auth';
 import AssigneeBadge, { getStoredAssignee, setStoredAssignee } from '../components/AssigneeBadge';
-import FileUpload from '../components/FileUpload';
-import FileList from '../components/FileList';
 import { Target, Users, Filter, Code, TrendingUp, FileText, CheckSquare, BarChart3, Zap, FolderOpen, AlertTriangle, Mail } from 'lucide-react';
 
 const tabs = [
@@ -178,7 +177,7 @@ export default function DemoPage() {
               <CampaignsTabDynamic clientId="demo" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTab />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="demo" clientName="Demo" />}
           {activeTab === 'tasks' && (
             <TasksTab clientId="demo" defaultTasks={[]} />
           )}
@@ -536,38 +535,6 @@ function CampaignsSequencesTab() {
       <div className="mt-8">
         <CampaignsTabGeneric />
       </div>
-    </>
-  );
-}
-
-function DocumentsTab() {
-  const [refreshTrigger, setRefreshTrigger] = useState(0);
-
-  const handleUploadComplete = () => {
-    setRefreshTrigger(prev => prev + 1);
-  };
-
-  return (
-    <>
-      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded mb-6">
-        <p className="font-semibold text-amber-900 mb-1">Demo Dashboard - Full Functionality:</p>
-        <p className="text-amber-800 text-sm">
-          This demo includes real file upload and download. Files shown below are sample documents. Try uploading a file to see how it works!
-        </p>
-      </div>
-
-      <ContentSection title="Uploaded Documents" icon={<FolderOpen className="w-5 h-5" />}>
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <p className="text-slate-600">
-              Upload and manage documents for your campaigns. All uploaded files will be available for download.
-            </p>
-            <FileUpload clientId="demo" onUploadComplete={handleUploadComplete} />
-          </div>
-
-          <FileList clientId="demo" refreshTrigger={refreshTrigger} />
-        </div>
-      </ContentSection>
     </>
   );
 }

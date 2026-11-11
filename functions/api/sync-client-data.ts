@@ -40,6 +40,7 @@ const VALID_CLIENTS = [
   'wulf',
   'pacia',
   'seyens',
+  'skillifai',
   'all'
 ];
 
