@@ -49,10 +49,10 @@
   },
   {
     "id": "skillifai-hr-ld-team-readiness",
-    "tierName": "SEQUENCE 2: HR/L&D - Team AI Readiness & Training",
+    "tierName": "HR - Practical AI Training",
     "tierColor": "orange",
-    "targetPersonas": "HR Director, HR Manager, Head of HR, Head of L&D, Head of Training (50+ employees preferred)",
-    "messagingAngle": "Build team AI competency and readiness—structured training programs move pilots into adoption and close skill gaps",
+    "targetPersonas": "HR Manager, Head of HR, HR Director. Also consider HR Generalists, Heads of L&D or Training, and Office Managers",
+    "messagingAngle": "Ask whether practical AI training fits the company’s employee development plans. Introduce workshops that show employees how to use AI in their everyday work.",
     "emails": [
       {
         "emailNumber": 1,
