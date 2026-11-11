@@ -21,27 +21,6 @@
     ]
   },
   {
-    "id": "skillifai-context-training-focus",
-    "tierName": "SIMPLIFIED: Version 2 - Training-Focused",
-    "tierColor": "green",
-    "targetPersonas": "All personas - introducing departmental training entry point",
-    "messagingAngle": "Simple pitch with focus on AI training programs",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "Structured AI training for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for AI adoption or team skills development.\n\nMost teams at {{company_name}}'s scale have AI tools available—Copilot, ChatGPT, etc.—but without structured training, those tools sit underused and inconsistent.\n\nWe help Slovenian SMEs move from AI pilots to practical adoption through departmental training programs that embed AI into everyday workflows.\n\nWould that be your area, or could you point me to the right person?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      },
-      {
-        "emailNumber": 2,
-        "type": "Follow-Up",
-        "subject": "Re: Structured AI training for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nFollowing up on AI skills training for {{company_name}}.\n\nAre you managing team skills development or AI adoption, or should I reach out to someone else?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      }
-    ]
-  },
-  {
     "id": "skillifai-conversational-adoption",
     "tierName": "SIMPLIFIED: Version 3 - Conversational Adoption Focus",
     "tierColor": "purple",
