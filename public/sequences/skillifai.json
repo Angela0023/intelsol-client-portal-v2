@@ -51,20 +51,20 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI adoption strategy for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nMost teams at {{company_name}}'s scale have AI tools available—Copilot, ChatGPT, etc.—but without structured training and adoption support, those tools sit underused and inconsistent across departments.\n\nWe work with Slovenian SMEs to move from AI inconsistency to practical adoption: clear workflows, structured team training, and integration into everyday processes.\n\nTypical outcomes in 3-6 months after departmental training:\n- 40-60% reduction in manual repetitive tasks (documents, reporting, data entry)\n- Clear AI use cases embedded in key processes\n- Team adoption and confidence significantly improved\n\nWorth a brief conversation to see if there's a fit for {{company_name}}?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Uporaba umetne inteligence v {{company_name}}",
+        "body": "Spoštovani,\n\nzanima me, ali pri vas trenutno razmišljate, kako bi umetno inteligenco vključili v vsakdanje delo.\n\nPri Skillifai podjetjem pomagamo uvajati umetno inteligenco v vsakdanje delo, od praktičnih izobraževanj za zaposlene do širših projektov uvajanja AI v poslovne procese.\n\nČe je tema pri vas aktualna, z veseljem skočim z vami na kratek klic, da se pogovoriva, kje bi bilo smiselno začeti. Ste morda na voljo v tem ali prihodnjem tednu?\n\nLep pozdrav,\n%signature%"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up 1",
-        "subject": "Re: AI adoption strategy for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nFollowing up on AI adoption at {{company_name}}.\n\nIf scaling team productivity through structured AI training is on your roadmap for 2026, I can walk you through how we approach this in 15 minutes.\n\nNo pitch—just how SMEs at {{company_name}}'s size have moved from AI pilots to embedded adoption.\n\nEither way, let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: Uporaba umetne inteligence v {{company_name}}",
+        "body": "Spoštovani,\n\nupam, da ste prejeli moje prejšnje sporočilo. Če pri vas razmišljate o uvedbi umetne inteligence, bi vam na kratkem klicu z veseljem predstavila, kako se tega lotimo pri Skillifai.\n\nVam lahko predlagam termin za prihodnji teden?\n\nLep pozdrav,\n%signature%"
       },
       {
         "emailNumber": 3,
         "type": "Follow-Up 2",
-        "subject": "Re: AI adoption strategy for {{company_name}}'s teams",
-        "body": "Hi {{first_name}},\n\nLast note—if AI training and team adoption is becoming a priority, we'd be a natural conversation.\n\nHappy to share how other Slovenian SMEs at {{company_name}}'s size have structured their approach. Just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: Uporaba umetne inteligence v {{company_name}}",
+        "body": "Spoštovani {{first_name}},\n\npred kratkim sem vam pisala glede uporabe umetne inteligence pri delu. Rada bi še enkrat preverila, ali je to tema, ki jo pri vas trenutno odpirate.\n\nČe je, vam z veseljem predlagam termin za kratek klic. Če trenutno ni med vašimi prioritetami, popolnoma razumem.\n\nHvala in lep pozdrav,\n%signature%"
       }
     ]
   },
