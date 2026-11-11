@@ -9,14 +9,14 @@
       {
         "emailNumber": 1,
         "type": "Initial Outreach",
-        "subject": "AI training for {{company_name}}'s team",
-        "body": "Hi {{first_name}},\n\nI'm reaching out to find the right person at {{company_name}} responsible for AI adoption or team skills development.\n\nWe work with Slovenian SMEs to move teams from AI pilots that stall to practical, embedded adoption through structured training.\n\nWould that be your area, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Uporaba umetne inteligence pri delu",
+        "body": "Spoštovani,\n\npišem v upanju, da se povežem z osebo, ki pri vas skrbi za uvajanje umetne inteligence v delo ali za usposabljanje zaposlenih na tem področju.\n\nPri Skillifai podjetjem pomagamo ugotoviti, pri katerih nalogah bi jim umetna inteligenca lahko koristila, in z ekipami preizkusimo njeno uporabo pri vsakdanjem delu. Z osebo, ki to področje pokriva pri vas, bi se rada na kratko pogovorila o tem, ali je tema trenutno aktualna tudi za vaše ekipe.\n\nHvaležna vam bom, če ji posredujete moje sporočilo.\n\nLep pozdrav,\n%signature%"
       },
       {
         "emailNumber": 2,
         "type": "Follow-Up",
-        "subject": "Re: AI training for {{company_name}}'s team",
-        "body": "Hi {{first_name}},\n\nQuick follow-up on AI skills development at {{company_name}}.\n\nIf you're exploring how to move your teams from AI tools to actual adoption, worth a brief conversation?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
+        "subject": "Re: Uporaba umetne inteligence pri delu",
+        "body": "Spoštovani,\n\nupam, da ste prejeli moje prejšnje sporočilo. Če je uporaba umetne inteligence pri delu pri vas aktualna, bi se rada na kratko pogovorila z osebo, ki skrbi za to področje.\n\nHvaležna vam bom, če ji posredujete moje sporočilo.\n\nLep pozdrav,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
       }
     ]
   },
