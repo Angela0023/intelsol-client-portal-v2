@@ -21,27 +21,6 @@
     ]
   },
   {
-    "id": "skillifai-conversational-adoption",
-    "tierName": "SIMPLIFIED: Version 3 - Conversational Adoption Focus",
-    "tierColor": "purple",
-    "targetPersonas": "All personas - soft conversational tone",
-    "messagingAngle": "Conversational, no heavy pitch, focus on adoption readiness",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "AI adoption readiness at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nI'm trying to connect with the right person at {{company_name}} who oversees AI adoption or team skills development.\n\nWe work with SMEs across Slovenia to help teams move past AI pilots that stall. Most often, it's not the tools—it's training and adoption readiness.\n\nStructured AI training programs get teams from \"we have ChatGPT\" to \"AI is embedded in how we work.\"\n\nWould you be the right person to explore this, or could you point me in the right direction?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      },
-      {
-        "emailNumber": 2,
-        "type": "Follow-Up",
-        "subject": "Re: AI adoption readiness at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on AI adoption at {{company_name}}.\n\nIf building team adoption readiness is relevant for 2026, a quick conversation could help clarify what's possible.\n\nIf not, no worries—just let me know.\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      }
-    ]
-  },
-  {
     "id": "skillifai-ceo-director-productivity",
     "tierName": "CEO / Director - Practical AI Adoption",
     "tierColor": "red",
