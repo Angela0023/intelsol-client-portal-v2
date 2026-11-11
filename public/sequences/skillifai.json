@@ -1,10 +1,10 @@
 [
   {
     "id": "skillifai-simple-qualifier",
-    "tierName": "SIMPLIFIED: Version 1 - Simple Qualifier",
+    "tierName": "Fallback — No Direct Contact",
     "tierColor": "blue",
-    "targetPersonas": "All personas - initial qualification",
-    "messagingAngle": "Ultra-simple ask to understand their AI adoption stage",
+    "targetPersonas": "General company inbox when no direct contact is available.",
+    "messagingAngle": "A short request to be put in touch with the person responsible for AI adoption or employee training.",
     "emails": [
       {
         "emailNumber": 1,
