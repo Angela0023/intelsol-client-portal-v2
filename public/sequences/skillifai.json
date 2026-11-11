@@ -73,26 +73,5 @@
         "body": "Spoštovani,\n\npred kratkim sem vam pisala glede praktičnih delavnic o uporabi umetne inteligence pri delu. Rada bi še enkrat preverila, ali je to tema, ki jo pri vas vključujete v načrt izobraževanj za zaposlene.\n\nČe je, vam z veseljem predlagam termin za kratek klic. Če trenutno ni med vašimi prioritetami, popolnoma razumem.\n\nHvala in lep pozdrav,\n%signature%"
       }
     ]
-  },
-  {
-    "id": "skillifai-operations-efficiency",
-    "tierName": "SEQUENCE 3: Operations Leaders - Process AI Integration",
-    "tierColor": "teal",
-    "targetPersonas": "COO, Operations Director, Head of Operations, Process Improvement Lead, Operations Manager",
-    "messagingAngle": "AI integration into key processes reduces manual work significantly, frees operations teams for higher-value strategic work",
-    "emails": [
-      {
-        "emailNumber": 1,
-        "type": "Initial Outreach",
-        "subject": "AI process optimization at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nRepetitive operational tasks—documents, reporting, data entry, content prep—often consume 30-40% of operational team time at {{company_name}}'s scale.\n\nStructured AI integration into key workflows can reduce that significantly, freeing your team for higher-value, strategic work.\n\nWe help operations teams:\n- Identify the most repetitive, high-impact processes\n- Integrate practical AI into those workflows\n- Train teams for smooth adoption\n- Measure time freed and efficiency gains\n\nWorth exploring how this could apply to {{company_name}}'s operations?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      },
-      {
-        "emailNumber": 2,
-        "type": "Follow-Up",
-        "subject": "Re: AI process optimization at {{company_name}}",
-        "body": "Hi {{first_name}},\n\nFollowing up on process AI integration at {{company_name}}.\n\nIf reducing manual operational workload and freeing your team for strategic work is relevant, quick call to explore?\n\nBest,\nSkillifai Team\nAI Skills & Adoption\nskilifai.si"
-      }
-    ]
   }
 ]
