@@ -170,7 +170,7 @@ export default function PACIAPage() {
             <CampaignsTabDynamic clientId="pacia" />
           </>
         )}
-        {activeTab === 'documents' && <DocumentsTabGeneric clientId="pacia" />}
+        {activeTab === 'documents' && <DocumentsTabGeneric clientId="pacia" clientName="Pacia" />}
         {activeTab === 'tasks' && <TasksTab clientId="pacia" />}
       </div>
     </ClientLayout>

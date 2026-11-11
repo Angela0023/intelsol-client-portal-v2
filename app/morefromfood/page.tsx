@@ -147,7 +147,7 @@ export default function MoreFromFoodPage() {
               <CampaignsTabDynamic clientId="morefromfood" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="morefromfood" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="morefromfood" clientName="MoreFromFood" />}
           {activeTab === 'tasks' && <TasksTab clientId="morefromfood" defaultTasks={[]} />}
         </div>
       </div>

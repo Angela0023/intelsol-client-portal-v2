@@ -151,7 +151,7 @@ export default function PRTronicPage() {
               <CampaignsTabDynamic clientId="prtronic" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="prtronic" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="prtronic" clientName="Prtronic" />}
           {activeTab === 'tasks' && <TasksTab clientId="prtronic" />}
         </div>
       </div>

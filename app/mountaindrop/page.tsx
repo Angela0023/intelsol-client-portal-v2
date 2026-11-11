@@ -172,7 +172,7 @@ export default function MountaindropPage() {
               <CampaignsTabDynamic clientId="mountaindrop" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="mountaindrop" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="mountaindrop" clientName="MountainDrop" />}
           {activeTab === 'tasks' && <TasksTab clientId="mountaindrop" defaultTasks={MOUNTAINDROP_DEFAULT_TASKS} />}
         </div>
       </div>

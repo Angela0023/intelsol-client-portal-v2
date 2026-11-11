@@ -172,7 +172,7 @@ export default function ClevercraftPage() {
               <CampaignsTabDynamic clientId="clevercraft" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="clevercraft" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="clevercraft" clientName="CleverCraft" />}
           {activeTab === 'tasks' && <TasksTab clientId="clevercraft" defaultTasks={CLEVERCRAFT_DEFAULT_TASKS} />}
         </div>
       </div>

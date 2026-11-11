@@ -140,7 +140,7 @@ export default function DHMPage() {
               <CampaignsTabDynamic clientId="dhm" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="dhm" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="dhm" clientName="DHM" />}
           {activeTab === 'tasks' && <TasksTab clientId="dhm" />}
         </div>
       </div>

@@ -174,7 +174,7 @@ export default function EblissAIPage() {
               <CampaignsTabDynamic clientId="eblissai" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="eblissai" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="eblissai" clientName="eBLISSai" />}
           {activeTab === 'tasks' && <TasksTab clientId="eblissai" />}
         </div>
       </div>

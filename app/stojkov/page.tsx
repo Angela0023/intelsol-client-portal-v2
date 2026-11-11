@@ -172,7 +172,7 @@ export default function StojkovPage() {
               <CampaignsTabDynamic clientId="stojkov" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="stojkov" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="stojkov" clientName="Stojkov" />}
           {activeTab === 'tasks' && <TasksTab clientId="stojkov" defaultTasks={STOJKOV_DEFAULT_TASKS} />}
         </div>
       </div>

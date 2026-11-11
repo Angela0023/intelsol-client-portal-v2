@@ -830,7 +830,7 @@ ANALYZE THE WEBSITE AND OUTPUT:
           </>
         )}
 
-        {activeTab === 'documents' && <DocumentsTabGeneric clientId="panorate" />}
+        {activeTab === 'documents' && <DocumentsTabGeneric clientId="panorate" clientName="Panorate" />}
 
         {activeTab === 'tasks' && <TasksTab clientId="panorate" defaultTasks={PANORATE_DEFAULT_TASKS} />}
       </div>

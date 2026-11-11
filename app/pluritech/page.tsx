@@ -159,7 +159,7 @@ export default function PluritechPage() {
               <CampaignsTabDynamic clientId="pluritech" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="pluritech" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="pluritech" clientName="Pluritech" />}
           {activeTab === 'tasks' && <TasksTab clientId="pluritech" defaultTasks={PLURITECH_DEFAULT_TASKS} />}
         </div>
       </div>
