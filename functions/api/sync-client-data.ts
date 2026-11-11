@@ -34,6 +34,12 @@ const VALID_CLIENTS = [
   'morefromfood',
   'selekcija',
   'intera',
+  'integraplast',
+  'xpose',
+  'beeit',
+  'wulf',
+  'pacia',
+  'seyens',
   'all'
 ];
 

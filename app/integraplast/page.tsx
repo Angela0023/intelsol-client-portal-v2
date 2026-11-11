@@ -172,7 +172,7 @@ export default function IntegraplastPage() {
               <CampaignsTabDynamic clientId="integraplast" />
             </>
           )}
-          {activeTab === 'documents' && <DocumentsTabGeneric clientId="integraplast" />}
+          {activeTab === 'documents' && <DocumentsTabGeneric clientId="integraplast" clientName="Integraplast" />}
           {activeTab === 'tasks' && <TasksTab clientId="integraplast" defaultTasks={INTEGRAPLAST_DEFAULT_TASKS} />}
         </div>
       </div>
