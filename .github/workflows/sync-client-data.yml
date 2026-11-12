@@ -272,7 +272,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add public/campaigns/*.json public/data/*.csv
+          git add public/campaigns/*.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
