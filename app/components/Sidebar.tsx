@@ -168,28 +168,36 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
           </p>
         </div>
 
-        {filteredClients.map((client, index) => (
-          <div
-            key={client.id}
-            draggable={isAdmin}
-            onDragStart={() => handleDragStart(index)}
-            onDragOver={(e) => handleDragOver(e, index)}
-            onDragEnd={handleDragEnd}
-            className={isAdmin ? 'cursor-move' : ''}
-          >
-            <Link
-              href={`/${client.id}`}
-              className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
-                pathname.startsWith(`/${client.id}`)
-                  ? 'bg-[#1a2647] text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
-              }`}
+        {filteredClients.map((client, index) => {
+          const status = typeof window !== 'undefined' ? localStorage.getItem(`intelsol_status_${client.id}`) : null;
+          const isOnHold = status === 'Hold';
+
+          return (
+            <div
+              key={client.id}
+              draggable={isAdmin}
+              onDragStart={() => handleDragStart(index)}
+              onDragOver={(e) => handleDragOver(e, index)}
+              onDragEnd={handleDragEnd}
+              className={isAdmin ? 'cursor-move' : ''}
+              title={isOnHold ? 'This client is on hold' : ''}
             >
-              <client.icon className={`w-5 h-5 ${pathname.startsWith(`/${client.id}`) ? 'text-white' : client.color}`} />
-              <span className="font-medium">{client.name}</span>
-            </Link>
-          </div>
-        ))}
+              <Link
+                href={`/${client.id}`}
+                className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                  isOnHold ? 'opacity-50' : ''
+                } ${
+                  pathname.startsWith(`/${client.id}`)
+                    ? 'bg-[#1a2647] text-white'
+                    : 'text-slate-700 hover:bg-slate-100'
+                }`}
+              >
+                <client.icon className={`w-5 h-5 ${pathname.startsWith(`/${client.id}`) ? 'text-white' : client.color}`} />
+                <span className={`font-medium ${isOnHold ? 'line-through' : ''}`}>{client.name}</span>
+              </Link>
+            </div>
+          );
+        })}
       </nav>
 
       {/* Footer */}
