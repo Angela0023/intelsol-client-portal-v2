@@ -196,7 +196,12 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
         </div>
 
         {/* Client List */}
-        {!isClientsHidden && filteredClients.map((client, index) => {
+        {filteredClients.map((client, index) => {
+          // Always show Demo, hide others when collapsed
+          if (isClientsHidden && client.id !== 'demo') {
+            return null;
+          }
+
           const status = typeof window !== 'undefined' ? localStorage.getItem(`intelsol_status_${client.id}`) : null;
           const isOnHold = status === 'Hold';
 
