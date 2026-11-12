@@ -120,7 +120,7 @@
     "totalLeads": 50,
     "leadsEmailed": 50,
     "month": "October",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "performance": {
       "emailsSent": 140,
       "opens": 0,

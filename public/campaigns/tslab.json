@@ -5,7 +5,7 @@
     "totalLeads": 152,
     "leadsEmailed": 152,
     "month": "November",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "performance": {
       "emailsSent": 166,
       "opens": 0,
@@ -212,7 +212,7 @@
     "totalLeads": 320,
     "leadsEmailed": 320,
     "month": "September",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "performance": {
       "emailsSent": 871,
       "opens": 0,
