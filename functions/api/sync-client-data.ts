@@ -41,7 +41,7 @@ const VALID_CLIENTS = [
   'pacia',
   'seyens',
   'skillifai',
-  'integraplast',
+  'noticetheelephant',
   'all'
 ];
 
