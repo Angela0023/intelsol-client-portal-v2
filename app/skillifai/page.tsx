@@ -51,10 +51,10 @@ export default function SkillifaiPage() {
     // Internal tabs that should be hidden from non-admin users
     const internalTabs = ['filters', 'prompts'];
 
-    // Read initial tab from URL pathname
-    const path = window.location.pathname;
-    const tabFromPath = path.split('/').pop();
-    const validTab = tabs.find(t => t.id === tabFromPath);
+    // Read initial tab from URL query parameter
+    const params = new URLSearchParams(window.location.search);
+    const tabFromUrl = params.get('tab');
+    const validTab = tabs.find(t => t.id === tabFromUrl);
     // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
     if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
       setActiveTab(validTab.id);
@@ -62,9 +62,9 @@ export default function SkillifaiPage() {
 
     // Handle browser back/forward
     const handlePopState = () => {
-      const path = window.location.pathname;
-      const tabFromPath = path.split('/').pop();
-      const validTab = tabs.find(t => t.id === tabFromPath);
+      const params = new URLSearchParams(window.location.search);
+      const tabFromUrl = params.get('tab');
+      const validTab = tabs.find(t => t.id === tabFromUrl);
       // Only set the tab if it's valid AND (user is admin OR it's not an internal tab)
       if (validTab && (userIsAdmin || !internalTabs.includes(validTab.id))) {
         setActiveTab(validTab.id);
@@ -89,8 +89,8 @@ export default function SkillifaiPage() {
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
     // Update URL without page reload
-    const newPath = tabId === 'overview' ? '/skillifai' : `/skillifai/${tabId}`;
-    window.history.pushState({}, '', newPath);
+    const newUrl = tabId === 'overview' ? '/skillifai' : `/skillifai?tab=${tabId}`;
+    window.history.pushState({}, '', newUrl);
   };
 
   // Filter tabs based on admin access
