@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, FileText, BarChart3, Users, Building2, Search } from 'lucide-react';
+import { Home, FileText, BarChart3, Users, Building2, Search, ChevronRight, ChevronLeft } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 interface SidebarProps {
@@ -55,8 +55,9 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
   const [clients, setClients] = useState<Client[]>(defaultClients);
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>('');
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
-  // Load saved order from localStorage on mount
+  // Load saved order and collapsed state from localStorage on mount
   useEffect(() => {
     const savedOrder = localStorage.getItem('intelsol_client_order');
     if (savedOrder) {
@@ -74,6 +75,16 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
         setClients([...orderedClients, ...newClients]);
       } catch (e) {
         console.error('Failed to parse client order:', e);
+      }
+    }
+
+    // Load collapsed state
+    const savedCollapsed = localStorage.getItem('intelsol_sidebar_collapsed');
+    if (savedCollapsed) {
+      try {
+        setIsCollapsed(JSON.parse(savedCollapsed));
+      } catch (e) {
+        console.error('Failed to parse sidebar collapsed state:', e);
       }
     }
   }, []);
@@ -110,6 +121,12 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     setDraggedIndex(null);
   };
 
+  const toggleCollapse = () => {
+    const newState = !isCollapsed;
+    setIsCollapsed(newState);
+    localStorage.setItem('intelsol_sidebar_collapsed', JSON.stringify(newState));
+  };
+
   const filteredClients = clients
     .filter((client) => isAdmin || clientAccess.includes(client.id))
     .filter((client) =>
@@ -120,16 +137,23 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
     );
 
   return (
-    <aside className="w-64 bg-slate-50 border-r border-slate-200 flex flex-col">
+    <aside className={`${isCollapsed ? 'w-20' : 'w-64'} bg-slate-50 border-r border-slate-200 flex flex-col transition-all duration-300`}>
       {/* Logo */}
-      <div className="p-6 border-b border-slate-200">
-        <Link href="/" className="flex items-center justify-center">
+      <div className="p-4 border-b border-slate-200 flex items-center justify-between">
+        <Link href="/" className="flex items-center justify-center flex-1">
           <img
             src="/intelsol-logo.png"
             alt="IntElsol"
-            className="h-10 w-auto"
+            className={`${isCollapsed ? 'h-8' : 'h-10'} w-auto`}
           />
         </Link>
+        <button
+          onClick={toggleCollapse}
+          className="ml-1 p-1 hover:bg-slate-200 rounded transition-colors"
+          title={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+        >
+          {isCollapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
+        </button>
       </div>
 
       {/* Navigation */}
@@ -144,29 +168,33 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
             }`}
           >
             <Home className="w-5 h-5" />
-            <span className="font-medium">Dashboard</span>
+            {!isCollapsed && <span className="font-medium">Dashboard</span>}
           </Link>
         )}
 
         {/* Search Bar */}
-        <div className="pt-4 px-4">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400" />
-            <input
-              type="text"
-              placeholder="Search clients..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-3 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a2647] focus:border-transparent bg-white"
-            />
+        {!isCollapsed && (
+          <div className="pt-4 px-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Search clients..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-3 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a2647] focus:border-transparent bg-white"
+              />
+            </div>
           </div>
-        </div>
+        )}
 
-        <div className="pt-4 pb-2 px-4">
-          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
-            Clients
-          </p>
-        </div>
+        {!isCollapsed && (
+          <div className="pt-4 pb-2 px-4">
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
+              Clients
+            </p>
+          </div>
+        )}
 
         {filteredClients.map((client, index) => {
           const status = typeof window !== 'undefined' ? localStorage.getItem(`intelsol_status_${client.id}`) : null;
@@ -180,11 +208,11 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
               onDragOver={(e) => handleDragOver(e, index)}
               onDragEnd={handleDragEnd}
               className={isAdmin ? 'cursor-move' : ''}
-              title={isOnHold ? 'This client is on hold' : ''}
+              title={isCollapsed ? client.name : (isOnHold ? 'This client is on hold' : '')}
             >
               <Link
                 href={`/${client.id}`}
-                className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                className={`flex items-center ${isCollapsed ? 'justify-center' : 'space-x-3'} px-4 py-3 rounded-lg transition-colors ${
                   isOnHold ? 'opacity-50' : ''
                 } ${
                   pathname.startsWith(`/${client.id}`)
@@ -192,8 +220,8 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
                     : 'text-slate-700 hover:bg-slate-100'
                 }`}
               >
-                <client.icon className={`w-5 h-5 ${pathname.startsWith(`/${client.id}`) ? 'text-white' : client.color}`} />
-                <span className={`font-medium ${isOnHold ? 'line-through' : ''}`}>{client.name}</span>
+                <client.icon className={`w-5 h-5 flex-shrink-0 ${pathname.startsWith(`/${client.id}`) ? 'text-white' : client.color}`} />
+                {!isCollapsed && <span className={`font-medium ${isOnHold ? 'line-through' : ''}`}>{client.name}</span>}
               </Link>
             </div>
           );
@@ -201,11 +229,13 @@ export default function Sidebar({ clientAccess }: SidebarProps) {
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t border-slate-200">
-        <p className="text-xs text-slate-500 text-center">
-          © 2026 IntElsol. All rights reserved.
-        </p>
-      </div>
+      {!isCollapsed && (
+        <div className="p-4 border-t border-slate-200">
+          <p className="text-xs text-slate-500 text-center">
+            © 2026 IntElsol. All rights reserved.
+          </p>
+        </div>
+      )}
     </aside>
   );
 }
