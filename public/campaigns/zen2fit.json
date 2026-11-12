@@ -30,7 +30,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 225,
+      "emailsSent": 226,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -53,7 +53,7 @@
     "month": "October",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 234,
+      "emailsSent": 236,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
@@ -214,18 +214,18 @@
     "month": "September",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 806,
+      "emailsSent": 810,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
-      "replies": 18,
-      "replyRate": "4.58",
+      "replies": 19,
+      "replyRate": "4.83",
       "bounces": 16,
       "bounceRate": "4.07",
       "unsubscribed": 0,
-      "interested": 0,
-      "interestedRate": "0.00",
+      "interested": 1,
+      "interestedRate": "0.25",
       "notInterested": 0
     }
   }
