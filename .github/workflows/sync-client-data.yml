@@ -32,6 +32,7 @@ on:
           - morefromfood
           - selekcija
           - intera
+          - skillifai
           - all
 
   # Run daily at 4 AM CEST (2 AM UTC) for all clients
@@ -101,6 +102,7 @@ jobs:
               'morefromfood': 'MoreFromFood',
               'selekcija': 'Selekcija',
               'intera': 'Intrix CRM',
+              'skillifai': 'Skillifai',
           }
 
           def remove_emoji(text):
