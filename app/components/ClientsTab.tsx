@@ -224,6 +224,14 @@ export default function ClientsTab() {
   const filteredMetrics = useMemo(() => {
     // First, filter
     let result = allMetrics.filter(client => {
+      // Exclude clients with "Hold" status
+      if (typeof window !== 'undefined') {
+        const status = localStorage.getItem(`intelsol_status_${client.clientId}`);
+        if (status === 'Hold') {
+          return false;
+        }
+      }
+
       // Client name filter
       if (filters.clientName && !client.clientName.toLowerCase().includes(filters.clientName.toLowerCase())) {
         return false;

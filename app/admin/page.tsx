@@ -304,7 +304,7 @@ export default function AdminPage() {
         <div>
           <h2 className="text-xl font-semibold text-slate-900 mb-4">Clients</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {clients.map((client) => (
+            {clients.filter((client) => statuses[client.id] !== 'Hold').map((client) => (
               <Link
                 key={client.id}
                 href={`/${client.id}`}
