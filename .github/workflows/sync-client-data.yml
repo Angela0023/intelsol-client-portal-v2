@@ -268,6 +268,18 @@ jobs:
             exit 1
           fi
 
+      - name: Commit and Push Campaign Updates
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add public/campaigns/*.json public/data/*.csv
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update: Campaign data sync at $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
       - name: Sync Summary
         run: |
           echo "✅ Client data synced successfully to Cloudflare R2"
