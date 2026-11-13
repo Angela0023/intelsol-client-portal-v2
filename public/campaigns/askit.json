@@ -1,24 +1,24 @@
 [
   {
-    "campaignName": "🔮 ASKIT AI | Slovenia - Manufacturing Complex Operations",
+    "campaignName": "🔮 ASKIT AI | Slovenia - Tier 1 - Strategic Decision Maker",
     "dateLaunched": "11/9/2026",
     "totalLeads": 186,
-    "leadsEmailed": 118,
+    "leadsEmailed": 122,
     "month": "November",
     "status": "ACTIVE",
     "performance": {
-      "emailsSent": 168,
+      "emailsSent": 180,
       "opens": 0,
       "openRate": "0.00",
       "clicks": 0,
       "clickRate": "0.00",
       "replies": 2,
-      "replyRate": "1.69",
-      "bounces": 3,
-      "bounceRate": "2.54",
+      "replyRate": "1.64",
+      "bounces": 5,
+      "bounceRate": "4.10",
       "unsubscribed": 0,
       "interested": 1,
-      "interestedRate": "0.85",
+      "interestedRate": "0.82",
       "notInterested": 0
     }
   }
