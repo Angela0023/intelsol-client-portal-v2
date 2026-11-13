@@ -1,5 +1,28 @@
 [
   {
+    "campaignName": "🤝 CleverCraft | IT Channel - North America | Tier 3",
+    "dateLaunched": "11/13/2026",
+    "totalLeads": 394,
+    "leadsEmailed": 0,
+    "month": "November",
+    "status": "DRAFTED",
+    "performance": {
+      "emailsSent": 0,
+      "opens": 0,
+      "openRate": "0.00",
+      "clicks": 0,
+      "clickRate": "0.00",
+      "replies": 0,
+      "replyRate": "0.00",
+      "bounces": 0,
+      "bounceRate": "0.00",
+      "unsubscribed": 0,
+      "interested": 0,
+      "interestedRate": "0.00",
+      "notInterested": 0
+    }
+  },
+  {
     "campaignName": "🤝 CleverCraft | IT Channel - North America | Tier 2",
     "dateLaunched": "11/13/2026",
     "totalLeads": 300,
