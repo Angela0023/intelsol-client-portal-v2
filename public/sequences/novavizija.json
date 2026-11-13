@@ -81,7 +81,7 @@
           },
           "croatian": {
             "subject": "Kako proizvodni sustavi tvrtke {{company}} razmjenjuju podatke",
-            "body": "Bok {{first_name}},\n\nKako vaši sustavi za proizvodnju, nabavu i prodaju trenutačno dijele informacije?\n\nProPIS ERP objedinjuje te operativne procese u jedan sustav, uz potpunu sljedivost od sirovina do gotovih proizvoda. Pokriva samo operacije, tako da vaš postojeći računovodstveni i financijski softver može ostati nepromijenjen.\n\nCilj je jednostavan: manje ručnog prijenosa podataka i manje oslanjanja na nepovezane proračunske tablice i evidencije.\n\nBiste li bili spremni za kratak poziv kako biste vidjeli kako bi se ovo moglo prilagoditi vašoj trenutačnoj postavci?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "body": "Bok, {{first_name}},\n\nKako trenutačno povezujete svoje sustave za proizvodnju, nabavu i prodaju?\n\nProPIS ERP objedinjuje te operativne procese u jedan sustav, uz potpunu sljedivost od sirovina do gotovih proizvoda. Namijenjen je operativnim procesima, tako da vaš postojeći računovodstveni i financijski softver može ostati nepromijenjen.\n\nCilj je jednostavan: manje ručnog prijenosa podataka i manje oslanjanja na nepovezane proračunske tablice i evidencije.\n\nBiste li bili otvoreni za kratak razgovor o tome kako bi se ProPIS mogao uklopiti u vaše postojeće sustave?\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       },
@@ -97,7 +97,7 @@
           },
           "croatian": {
             "subject": "RE: Integracija sustava - proizvodni pogon do operacija",
-            "body": "Bok {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava. Još jedna važna napomena: ProPIS se integrira sa skenerima, strojevima i linijama za pakiranje, tako da podaci iz proizvodnog pogona izravno dolaze u isti sustav u kojem vaši timovi već rade.\n\nNa prvom pozivu mogli bismo zajedno pogledati vašu trenutačnu postavku i utvrditi koje bi veze bile najkorisnije, uključujući povezivanje s vašim računovodstvenim sustavom.\n\nAko je ovo nešto što razmatrate, bio bih sretan da razgovaramo o tome.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "body": "Bok, {{first_name}},\n\nNedavno sam vam pisao o povezivanju vaših operativnih sustava. Htio bih spomenuti još jednu mogućnost: ProPIS se može povezati sa skenerima, strojevima i linijama za pakiranje, tako da se podaci iz proizvodnog pogona izravno prenose u sustav.\n\nTijekom kratkog razgovora mogli bismo zajedno pogledati vaše postojeće sustave i utvrditi koja bi povezivanja bila najkorisnija, uključujući povezivanje s računovodstvenim sustavom.\n\nAko je ovo relevantno za vašu tvrtku, rado bih dogovorio kratak razgovor.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       },
@@ -113,7 +113,7 @@
           },
           "croatian": {
             "subject": "RE: Je li integracija sustava u vašem planu razvoja?",
-            "body": "Bok {{first_name}},\n\nŽelio bih se na kratko osvrnuti na moje prethodne e-poruke: je li povezivanje vaših proizvodnih sustava i smanjenje ručnog prijenosa podataka nešto što vaš tim trenutačno istražuje?\n\nAko je tako, bio bih sretan da organiziram kratak poziv. Ako je netko drugi odgovoran za ovo područje, bio bih zahvalan ako biste me mogli uputiti prema toj osobi.\n\nAko ovo trenutačno nije prioritet u vašoj organizaciji, neću vam dalje uzimati vrijeme. Bilo bi mi drago da se ponovno javim u budućnosti ako se to promijeni.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
+            "body": "Bok, {{first_name}},\n\nSamo bih se kratko nadovezao na svoje prethodne e-poruke. Je li povezivanje proizvodnih sustava i smanjenje ručnog prijenosa podataka nešto što vaš tim trenutačno razmatra?\n\nAko jest, rado bih dogovorio kratak razgovor. Ako je netko drugi zadužen za ovo područje, bio bih vam zahvalan ako biste me mogli uputiti na tu osobu.\n\nAko vam ovo trenutačno nije prioritet, neću vas više zadržavati. Rado bih se ponovno javio u budućnosti ako se situacija promijeni.\n\nLijep pozdrav,\n{{sender_name}}\n{{sender_title}} | Nova Vizija"
           }
         }
       }
